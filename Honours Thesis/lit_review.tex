@@ -1,0 +1,50 @@
+Hello
+
+\begin{itemize}
+    \item Liebeck, 1984: Let $G$ be a primitive group of degree $n$ (i.e. $G$ is a permutation group on $\Omega$ with $|\Omega| = n$). Then one of the following holds:
+          \begin{enumerate}[(i)]
+              \item $G$ is \textbf{large base}, i.e. there are integers $m$ and $r \geq 1$ with $\Alt(m)^r \unlhd G \leq \Sym(m) \wr \Sym(r)$, where $\Sym(m)$ acts on $k$-element subsets of $\{1,\dotsc,m\}$ and the wreath product has the product action of degree $n = \binom{m}{k}^r$,
+              \item $b(G) < 9\log n$.
+          \end{enumerate}
+    \item Moscatiello and Roney-Dougal, 2021 (Thm 1): Let $G$ be primitive permutation group of degree $n$. If $G$ is not large base, then either:
+          \begin{enumerate}[(i)]
+              \item $G$ is the Mathieu group $\mathrm{M}_{24}$ in its 5-transitive action of degree 24,
+              \item $b(G) \leq \lceil\log n\rceil + 1$.
+          \end{enumerate}
+          Furthermore, there are infinitely many such groups for which $b(G) > \log n + 1$.
+    \item Moscatiello and Roney-Dougal, 2021 (Thm 5): Let $G$ be primitive subgroup of $\Sym(\Omega)$ with $|\Omega| = n$. Then $b(G) \geq \log n + 1$ iff $G$ is one of following:
+          \begin{enumerate}[(i)]
+              \item A subgroup of $\mathrm{AGL}_d(2)$ with $b(G) = d + 1 = \log n + 1$.
+              \item The group $\Sp_d(2)$ acting on cosets of $\mathrm{GO}^-_d(2)$ with $d \geq 4$ (then $\log n + 1 < b(G) = \lceil\log n\rceil + 1$).
+              \item A Mathieu group $\mathrm{M}_n$ in its natural permutation representation with $n \in \{12,23,24\}$. If $n = 12$ or $23$ then $b(G) = \lceil\log n\rceil + 1$, while if $n = 24$ then $b = 7 > \lceil\log n\rceil + 1$
+          \end{enumerate}
+    \item QUESTION from Moscatiello and Roney-Dougal, 2021: Which primitive groups $G \leq \Sym(n)$ satisfy $b(G) = \log n + 1$? (Note: $G \leq \mathrm{AGL}_d(2)$ for some $d$, and if $d$ is even then groups such as $2^d : \Sp_d(2)$ have this property.)
+\end{itemize}
+
+\begin{definition}
+    Large base TODO
+\end{definition}
+
+\begin{definition}
+    Solvable group TODO
+\end{definition}
+
+\begin{definition}
+    Symplectic group (Sp) TODO
+\end{definition}
+
+\begin{definition}
+    Mathieu group TODO
+\end{definition}
+
+Narrative: using classification of finite simple groups
+
+\section{Small base primitive permutation groups}
+
+\begin{itemize}
+    \item Include process to find that there are no proper subgroups $G < \AGL_d(2)$ with $b(G) = d + 1 = \log n + 1$ ($n = 2^d$) for $d = 1,2,3,5,7,9$, and for $d = 4,6,8,10$ we have found $2^d : \Sp_d(2)$ as candidates (unproven)
+    \item Hypothesis: no proper subgroups for odd $d$, and only $2^d : \Sp_d(2)$ for even $d \geq 4$
+    \item Idea: recursively check maximal subgroups (why does this work?)
+    \item Can also search for imprimitive groups, etc.
+    \item Potential improvements: more efficient checking, different algorithms to find bases (brute force vs "probably true")
+\end{itemize}

@@ -1,0 +1,75 @@
+\chapter{Appendix --- theory of permutation groups}%\chaptermark{Appendix}
+
+The forms of the statements of Lagrange's theorem and the first isomorphism theorem that are used are:
+
+\begin{theorem}[Lagrange]\label{thm:lagrange}
+    If $G$ is a group and $H \leq G$, let $H\backslash G$ be the set of right cosets of $H$ in $G$. Assuming the axiom of choice, the map $H \times (H\backslash G) \to G$ given by $(h,Hg) \mapsto hg$ is a bijection. (This yields $|G| = |G:H| |H|$, where $|G : H| := |H\backslash G|$ is the \textbf{index} of $H$ in $G$.) \qedhere
+\end{theorem}
+
+This is a form that applies for infinite groups $G$ and $H$.
+
+\begin{theorem}[First isomorphism theorem]\label{thm:FIT}
+    If $G,H$ are groups and $\varphi : G \to H$ is a homomorphism, then $K := \Ker\varphi \trianglelefteq G$ and $G/K \cong \varphi[G]$ via the map $G/K \to \varphi[G]$ with $gK \mapsto \varphi(g)$. \qedhere
+\end{theorem}
+
+\subsection{Random elements and the constructive membership problem}
+
+\textit{Note that Adobe Acrobat allows you to copy the following code without line numbers.}
+
+Here is an implementation of \autoref{alg:transversal_random_element} in \texttt{GAP} as the function \texttt{RandomElt}:\label{app:transversal_random_element}
+
+\lstinputlisting{gap_code/random_elt.gap}
+
+Here is an implementation of \autoref{alg:transversal_membership_test} in \texttt{GAP} as the function \texttt{Membership}:\label{app:transversal_membership_test}
+
+\lstinputlisting{gap_code/membership.gap}
+
+\subsection{Wreath product and dihedral group}
+
+Here is \texttt{GAP} code relevant to \autoref{eg:S2_wr_S2_isom_D8}:
+
+\lstinputlisting{gap_code/d8_wreath_product.gap}
+
+The following is the output which is summarised in the table in the example:
+
+\lstinputlisting{txt_files/d8_wreath_product_gap_output.txt}
+
+\subsection{Stabiliser chain for automorphism group of graph}
+
+Here is some more output relevant to \autoref{eg:automorphism_group_graph_bsgs}:\label{app:automorphism_group_graph_bsgs}
+
+\lstinputlisting{txt_files/automorphism_group_graph_bsgs_gap_appendix.txt}
+
+Lines 28--41 describe all elements of $G = \Aut(\Gamma)$. Lines 62--67 describe all elements of $G_1 = \Stab_G(4)$.
+
+\chapter{Appendix --- computing bases of subgroups of affine groups}%\chaptermark{Appendix}
+
+\subsection{Greedy base algorithm}
+
+Below is \texttt{GAP} code for an implementation of the greedy base algorithm from \autoref{alg:blaha_greedy_base}:
+
+\lstinputlisting{gap_code/greedy_base.gap}
+
+\subsection{Program to find primitive subgroups with given minimum base size}
+
+Below is \texttt{GAP} code for the recursive program that was used to identify conjugacy classes of (primitive) proper subgroups $G$ of $\AGL_d(2)$ (for given $d$) which may satisfy $b(G) = d + 1$. It includes the greedy base algorithm as described above (so that the code is fully self-contained).
+
+Given $d \geq 1$, running \texttt{getSubgrpAGLBase( d )} gives a list of candidate primitive subgroups of $\AGL_d(2)$ with minimum base size $d + 1$, according to the greedy base algorithm (which seemed to perform better than the built-in \texttt{BaseOfGroup} function which presented false positives).
+
+The \texttt{getSubgrpAGLBase} function relies on the function \texttt{getSubgrpBase}; note that \texttt{getSubgrpBase( r, G )} returns information about proper (primitive) subgroups $H$ of a group $G$ such that the greedy base algorithm finds no base of size at most $r$ (thus are candidates for $b(H) > r$). Thus, the program can be easily adjusted to answer similar questions for different families of groups.
+
+\lstinputlisting{gap_code/subgrps_base_len.gap}
+
+Below is output for $d = 4$:
+
+\lstinputlisting{txt_files/agl_base_gap_output/4.txt}
+
+Below is output for $d = 5$:
+
+\lstinputlisting{txt_files/agl_base_gap_output/5.txt}
+
+Below is output for $d = 6$:
+
+\lstinputlisting{txt_files/agl_base_gap_output/6.txt}
+
+% \lstinputlisting{gap_code/agl_matrices.gap}

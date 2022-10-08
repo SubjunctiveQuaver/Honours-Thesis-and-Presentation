@@ -1,0 +1,17 @@
+gap> # Random elements and membership
+gap> g := Random( G ); # gets random element of G
+(1,7,3,6)(2,8)(4,5)
+gap> (4,5) in G; # checks membership in G
+false
+gap> (1,6,2,7,3,8)(4,5) in G; # checks membership in G
+true
+gap> H := Stabilizer( SymmetricGroup(8), [ 4, 5 ], OnTuples ) # H is the pointwise stabiliser of 4 and 5 in Sym(8)
+Sym( [ 1, 2, 3, 6, 7, 8 ] )
+gap> g := Random( H ); # gets random element of H
+(1,8,6)(2,7)
+gap> g in G; # checks membership in G
+false
+gap> g := Random( H ); # gets random element of H
+(2,3)(6,7)
+gap> g in G; # checks membership in G
+true

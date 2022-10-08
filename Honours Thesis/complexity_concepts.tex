@@ -1,0 +1,148 @@
+Much of this chapter is adapted from \cite{sipser_intro_theory_comp2013}.
+
+The fundamental problem at the heart of \textbf{complexity theory} is, ``what makes some problems computationally hard and others easy?'' To do so, we generally need to analyse the running time of an \textit{algorithm} that solves a problem. However, the exact running time is often complicated, so one form of estimation which considers large input sizes, called \textbf{asymptotic analysis}, considers only the dominating term in the expression. For example, the behaviour of the function $f : \Z^+ \to \R_{\geq 0}$ given by $n \mapsto \log(n) + 3n^4 + 5n + 1$ is largely dependent on the $3n^4$ term for large $n$, so $f$ is \textit{asymptotically at most} $n^4$ (if we ignore the coefficient). Formally, we say that $f = O(n^4)$:
+
+\begin{definition}[big-O notation]\label{def:big_O_notation}
+  Let $f,g : \N \to \R_{\geq 0}$ (or defined on a subset of $\N$). Then $f$ is \textbf{big-O} of $g$, written $f = O(g)$, if there are $c,N \in \N$ such that for $n \geq N$, $f(n) \leq cg(n)$. Then $g$ is an \textbf{asymptotic upper bound} for $f$. % If $f = O(g)$, we also say that $g = \Omega(f)$, i.e. $f$ is an \textbf{asymptotic lower bound} for $g$.
+\end{definition}
+
+Sometimes, we use big-O notation with multiple variables. Suppose $f,g$ are defined on some subset of $\N^k$. Then $f = O(g)$ if there are $c,N \in \N$ with $f(n_1,\dotsc,n_k) \leq cg(n_1,\dotsc,n_k)$ whenever $n_i \geq N$ for some $i$, i.e. when $\|(n_1,\dotsc,n_k)\|_\infty \geq N$ (this is the sup norm).
+
+It is perhaps more accurate to write $f \in O(g)$, since $O(g)$ is a class of functions that is dominated by $g$ for large $n$. For instance, if $f = O(g)$, then $O(f) \subseteq O(g)$. Similarly, if $f = O(g)$ and $g = O(f)$, then $O(f) = O(g)$. Some reasonable arithmetic properties also hold for the big-O notation:
+
+\begin{itemize}
+  \item If $f = O(g)$ and $f' = O(g')$, then $ff' = O(gg')$ (i.e. $f O(g) = O(fg)$).
+  \item If $f = O(g)$ and $f' = O(g')$, then $f + f' = O(\max\{g,g'\})$.
+  \item If $f = O(g)$ and $f' = O(g)$, then $f + f' = O(g)$.
+  \item If $f = O(g)$ and $\alpha > 0$, then $\alpha f = O(g)$ (i.e. $\alpha O(g) = \added{1}{O(\alpha g)} = O(g)$).
+\end{itemize}
+
+We often also write that $f = h + O(g)$ to denote that $f - h = O(g)$. Some common classes of functions encountered in analysing runtime of algorithms, sorted by increasing growth speed, include constant time $O(1)$, logarithmic time $O(\log n)$, linear time $O(n)$, $O(n\log n)$, quadratic time $O(n^2)$, polynomial time $O(n^k)$ for integer $k \geq 3$, exponential time $O(2^n)$, and factorial time $O(n!)$. A simple formula for the $g$ in $f = O(g)$ is often desired, so ``lower order terms'' are usually ignored. \added{3}{Note that throughout this \thesis{}, $\log$ denotes the base-2 logarithm.}
+
+\added{1}{\begin{definition}\label{def:asymptotic_notation}
+    Let $f,g : \N \to \R_{> 0}$. Then $f$ is \textbf{asymptotic} to $g$, written $f \sim g$, if $f(n)/g(n) \to 1$ as $n \to \infty$.
+  \end{definition}
+
+  Asymptoticity is an equivalence relation. Note that if $g \sim g'$, then clearly $fg \sim fg'$; moreover, if $f = O(g)$, then $f = O(g')$ (since if $f(n) \leq cg(n)$ for $n \geq N$, by taking $\epsilon = 1/2$ in ``$g'/g \to 1$'' we get $f(n) \leq (2c)g'(n)$ for large $n$).}
+
+A \textbf{greedy algorithm} is an algorithm that selects a locally optimal choice at each stage. On the other hand, a \textbf{brute force algorithm} is one that systematically enumerates all candidate solutions to find \added{1}{the best} solution to the problem. \added{1}{A greedy algorithm is often much more efficient than a brute force algorithm}, however, they do not always solve a given computational problem (optimally). The class of problems that greedy algorithms solve optimally is related to the combinatorial idea of a \textit{matroid}, of which a generalisation, the \textit{polymatroid}, is mentioned in \cite{blaha1992}.
+
+\begin{example}[membership test]\label{eg:alg:transversal_membership_test:complexity}
+  Recall the membership test (\autoref{alg:transversal_membership_test}) which, given a permutation group $G \leq \Sym(\Omega)$, tests if $g \in G$, given a base $[\beta_1,\dotsc,\beta_r]$ for $G$ and associated transversals $T_1,\dotsc,T_r$ of the stabiliser chain. The inner ``for'' loop runs at most $|T_i|$ times for each $i$, and within it, we just compute the image of $\beta_i$ under $h$ and $t_i$ and may perform a product; we consider these constant time operations. The outer ``for'' loop runs at most $r$ times. Thus the algorithm runs in $O(r\max_i |T_i|)$ time.
+\end{example}
+
+\begin{example}[orbit-stabiliser algorithm]\label{eg:alg:orbit_stabiliser:complexity}
+  Recall the orbit-stabiliser algorithm (\autoref{alg:orbit_stabiliser}) which computes, for finitely generated $G = \langle X \rangle$ acting on $\Omega$ and $\alpha \in \Omega$, the orbit $\alpha^G$, a generating set for the stabiliser $\added{2}{G_\alpha} = \langle S \rangle$, and a transversal $T$ of $\added{2}{G_\alpha}$ in $G$. It runs in $O(|\alpha^G|^2|X|)$ time, where we assume that appending to lists and calculations with the group action can be performed in constant $O(1)$ time. This is because the ``while'' loop (line \ref{alg:orbit_stabiliser:i_while_loop}) runs $|\alpha^G|$ times; within it, the ``for'' loop over $\mathcal{E}$ (line \ref{alg:orbit_stabiliser:x_for_loop}) runs $2|X|$ times; within this, in the worst case scenario we have $o^x \in \mathcal{O}$ (line \ref{alg:orbit_stabiliser:already_in_O}) and we iterate through $T$ ($O(|\alpha^G|)$ times by \autoref{cor:orbit_stabiliser_transversal}) to find $j$ such that $o^x = \alpha^{T[j]}$.
+\end{example}
+
+\section{Complexity classes}
+
+For the purposes of this \thesis, a \textbf{Turing machine} $M$ is a model of a general purpose computer, with unlimited and unrestricted memory. It computes on an infinite ``tape'' according to a deterministic rule (called a \textbf{transition function}) until it decides to produce an output, which is to either \textit{accept} or \textit{reject}; otherwise it will go on forever, never halting --- we say that $M$ \textit{loops}. Importantly, a Turing machine can do everything that a real computer can do; thus, if a Turing machine cannot solve a problem in a certain framework, neither can a real computer.
+
+A Turing machine $M$ takes inputs, which are strings. A \textbf{string} is a finite sequence of symbols from an \textbf{alphabet}, which is a nonempty finite set of elements called \textit{symbols}. A \textbf{language} $L$ is a set of strings; if $M$ accepts strings in $L$, then the language $L$ is \textbf{recognised} by $M$. Two machines are \textbf{equivalent} if they recognise the same language.
+
+A language $L$ is \textbf{decidable} if there is a Turing machine $M$ that recognises $L$ and halts on all inputs; \added{2}{$M$ is called a \textbf{decider} for $L$}. Note that some languages are not Turing-recognisable, because the set of all Turing machines (up to equivalence) turns out to be countable, yet there are uncountably many languages, and each Turing machine can recognise a single language. \added{3}{(This is Corollary 4.18 in \cite{sipser_intro_theory_comp2013}.)}
+
+A \textit{computational problem} is a problem that can be solved by an algorithm. A \textbf{decision problem} is a problem that can be posed as a \textit{yes-no} question for its input values, and every decision problem $A$ corresponds with the membership problem of a language $L$. This can be answered in the following way: given a Turing machine $M$ that recognises $L$, does $M$ accept the input? We use \textit{encodings} to translate between $A$ and $L$. (Note that multiple problems can correspond to the same language and vice versa.) A language is decidable if and only if corresponding decision problems are decidable. Thus for our purposes, we will ignore languages and work at the level of problems.
+
+A \textbf{nondeterministic Turing machine} is a Turing machine $M$ for which at any point in the computation, $M$ may proceed according to several possibilities; its computation can be modelled by an (infinite) tree. We can extend the above definitions in a straightforward way to nondeterministic Turing machines; the \textit{time} \added{2}{for a decider, i.e. one that halts on all inputs,} is defined \added{2}{in \cite{sipser_intro_theory_comp2013}} as the time used by the longest computational branch. Since every nondeterministic Turing machine has an equivalent (deterministic) Turing machine \added{3}{(Theorem 3.16 in \cite{sipser_intro_theory_comp2013})}, a problem is decidable if and only if some nondeterministic Turing machine halts on all valid inputs.
+
+\begin{definition}\label{def:time_complexity_class}
+  Let $t : \N^k \to \R_{\geq 0}$ be a function. The \textbf{(time) complexity class} $\operatorname{TIME}(t)$ is the collection of decision problems that are decidable by an $O(t)$-time (\textit{determinstic}) Turing machine (one that halts in $O(t)$-time \added{2}{given an input string of size $n$}). Similarly, $\operatorname{NTIME}(t)$ is the collection of decision problems that are decidable by an $O(t)$-time \textit{nondeterminstic} Turing machine.
+
+  \added{2}{Note that in practice, the inputs to algorithms are not strings; we first encode the inputs $X_1,\dotsc,X_k$ into a single string $\langle X_1,\dotsc,X_k \rangle$ of size $n = n(X_1,\dotsc,X_k)$. Then a problem in $\operatorname{TIME}(t)$ is decided by a Turing machine that halts in $O(t) = O(t(n)) = O(t(n(X_1,\dotsc,X_k)))$-time in the input size $n = n(X_1,\dotsc,X_k)$.}
+\end{definition}
+
+\added{2}{In \cite{sipser_intro_theory_comp2013}, Sipser notes that} every $O(t)$-time nondeterministic Turing machine has an equivalent $2^{O(t)}$-time (deterministic) Turing machine. This is an at most \textit{exponential} difference in time complexity of problems on deterministic and nondeterministic Turing machines; this is a large difference, as an exponential dominates any polynomial. But in some cases, alternative algorithms give rise to smaller differences in the complexity of problems.
+
+\subsection{The classes P and NP}
+
+\begin{definition}\label{def:class_P}
+  \textbf{P} is the class of decision problems that are decidable in polynomial time \added{2}{(in the input size)} on a (deterministic) Turing machine, i.e. $\mathrm{P} = \bigcup_p \operatorname{TIME}(p)$, where $p$ ranges over all (multivariate) polynomials.
+\end{definition}
+
+The class P is important because it roughly corresponds to the class of problems that are \added{2}{deemed} realistically solvable on a computer. Even though a running time of $O(n^k)$ for large $k$ is impractical for large inputs $n$, once a polynomial time algorithm has been found for a problem for the first time, that often indicates further reductions in complexity will follow. Moreover, it is invariant for all models of computation that are polynomially equivalent to the deterministic Turing machine, so it is not affected by particulars of the model being used; thus, a high-level description of an algorithm suffices.
+
+% \begin{lemma}\label{lem:max_is_polynomial_time}
+%     $O(\max\{n_1,\dotsc,n_k\}) = O(n_1 + \dotsb + n_k)$. Thus, a problem decidable in $O(\max\{n_1,\dotsc,n_k\})$-time is in $\mathrm{P}$.
+% \end{lemma}
+
+% \begin{proof}
+%     Consider the simple observation that $\max\{n_1,\dotsc,n_k\} = n_i$ for some $i \in \{1,\dotsc,k\}$, so $\max\{n_1,\dotsc,n_k\} \leq n_1 + \dotsb + n_k$, giving $\max\{n_1,\dotsc,n_k\} = O(n_1 + \dotsb + n_k)$. Conversely, $\max\{n_1,\dotsc,n_k\} \geq n_i$ for $i = 1,\dotsc,k$, so $k\max\{n_1,\dotsc,n_k\} \geq n_1 + \dotsb + n_k$, and $n_1 + \dotsb + n_k = O(\max\{n_1,\dotsc,n_k\})$. Thus $O(\max\{n_1,\dotsc,n_k\}) = O(n_1 + \dotsb + n_k)$.
+% \end{proof}
+
+\added{2}{\begin{lemma}\label{lem:max_is_polynomial_time}
+    $O(\max\{f,g\}) = O(f + g)$; by extension, $O(\max_{1 \leq i \leq k}\{f_i\}) = O(f_1 + \dotsb + f_k)$. Thus, if there exist polynomials $p_i$ such that $t_i = O(p_i)$ for $1 \leq i \leq k$, a problem decidable in $O(\max_{1 \leq i \leq k}\{t_i\})$-time is in $\mathrm{P}$.
+  \end{lemma}
+
+  \begin{proof}
+    For $n \in \N$, $\max\{f(n),g(n)\} \leq f(n) + g(n)$ since $f(n),g(n) \geq 0$, so $\max\{f,g\} = O(f + g)$. Conversely, $f(n) + g(n) \leq 2\max\{f(n),g(n)\}$, so $f + g = O(\max\{f,g\})$. Thus, $O(\max\{f,g\}) = O(f + g)$. The extended statement follows by induction on $k$.
+
+    Now if $t_i = O(p_i)$ for all $i$, then $O(\max_{1 \leq i \leq k}\{t_i\}) = O(t_1 + \dotsb + t_k) = O(p_1 + \dotsb + p_k)$; a problem decidable in this time is in $\operatorname{TIME}(p_1 + \dotsb + p_k)$, thus in $\mathrm{P}$ (as $p_1 + \dotsb + p_k$ is a polynomial).
+  \end{proof}}
+
+\begin{example}[membership test]\label{eg:alg:transversal_membership_test:complexity_class}
+  Recall the membership test algorithm (\autoref{alg:transversal_membership_test}) for $g \in G$ runs in $O(r\max_i |T_i|)$ time, where $G \leq \Sym(\Omega)$ has base $[\beta_1,\dotsc,\beta_r]$ and associated transversals $T_1,\dotsc,T_r$ of the stabiliser chain. By \autoref{lem:max_is_polynomial_time}, $O(r\max_i |T_i|) = O(r(|T_1| + \dotsb + |T_r|))$, and the problem of membership in $G$ is in the class P.
+\end{example}
+
+\begin{example}[orbit-stabiliser algorithm]\label{eg:alg:orbit_stabiliser:complexity_class}
+  Recall the orbit-stabiliser algorithm (\autoref{alg:orbit_stabiliser}) for $\alpha \in \Omega$ runs in $O(|\alpha^G|^2|X|)$ time, where a finitely generated group $G = \langle X \rangle$ acts on $\Omega$. Again, this is a polynomial time algorithm in the inputs, so the problem of computing the orbit and (a generating set for the) stabiliser of $\alpha$ and a transversal of $\added{2}{G_\alpha}$ is in the class P.
+\end{example}
+
+\added{1}{\begin{example}[Schreier-Sims algorithm]\label{eg:alg:schreier_sims:complexity_class}
+    Recall the \hyperref[alg:schreier_sims]{Schreier-Sims algorithm} which extends a sequence $B \subseteq \Omega$ and generating set $X$ (to $S$) to a BSGS $(B,S)$ for $G = \langle X \rangle \leq \Sym(\Omega)$; this is a na\"ive \added{2}{description} of the algorithm with inefficiencies. In \cite{knuth1991}, Knuth describes another version of the Schrier-Sims algorithm which improves the running time to $O(n^5 + rn^2)$ (which is certainly polynomial time) where $r$ is the length of the base $B$ and $n = |\Omega|$ is the degree of $G$.
+  \end{example}}
+
+Where P is the class of decision problems decidable in polynomial time on a deterministic Turing machine, NP is the analogous class for nondeterministic Turing machines.
+
+\begin{definition}\label{def:class_NP}
+  \textbf{NP} is the class of decision problems that are decidable in polynomial time on a \textit{nondeterministic} Turing machine, i.e. $\mathrm{NP} = \bigcup_p \operatorname{NTIME}(p)$ where $p$ ranges over all polynomials. We often say a problem in NP is a \textbf{nondeterministic polynomial time} problem, or simply a \textbf{NP-problem}.
+\end{definition}
+
+Clearly $\mathrm{P} \subseteq \mathrm{NP}$. An equivalent characterisation of NP, which is often more useful, is the class of decision problems with \textit{polynomial time verifiers}. A \textbf{verifier} is an algorithm that uses additional information (called a \textit{certificate}) to verify (but not necessarily find) a solution.
+
+\added{2}{\begin{example}\label{eg:verifying_base}
+    Suppose $G \leq \Sym(n)$ acts on a set $\Omega$. One way of seeing that the problem of finding a base for $G$ is in NP is to observe that it has a polynomial time verifier. A certificate for $G$ is a base $B = [\beta_1,\dotsc,\beta_r]$ for $G$: using the orbit-stabiliser algorithm (\autoref{alg:orbit_stabiliser}), we may check that $G_{\beta_1,\dotsc,\beta_r} = ((G_{\beta_1})_{\dotsb})_{\beta_r} = 1$ in polynomial time. (In fact, it is in P, by \autoref{eg:alg:schreier_sims:complexity_class}.)
+  \end{example}}
+
+The class NP is important as it contains many problems of practical interest \added{3}{(for instance, the well-known knapsack, travelling salesman, and Hamiltonian path problems)}. Moreover, showing that a problem is in the class P is often much more difficult than showing it is NP, as we need to find a polynomial time (deterministic) algorithm for solving it. However, it is also difficult to argue that a problem in the class NP is \textit{not} in the class P, as we must show that \textit{no} algorithm that solves the problem can run in polynomial time. In fact, this problem is so hard that it is the famous $\mathrm{P}$ versus $\mathrm{NP}$ conjecture, which carries a US\$1 million prize for a proof or disproof:
+
+\begin{conjecture}[P versus NP problem]\label{conj:P_equals_NP}
+  \added{2}{$\mathrm{P} \neq \mathrm{NP}$, that is, there are problems that can be verified in polynomial time but cannot be solved in polynomial time.}
+\end{conjecture}
+
+\subsection{Reducibility and NP-completeness}
+
+The primary method for showing that problems are computationally unsolvable is \textbf{reducibility}. A \textbf{reduction} is a method of converting one problem $A$ to another problem $B$ such that a solution to $B$ can be used to solve $A$. Reducibility says nothing about the solvability of $A$ or $B$ alone, but only the solvability of $A$ given a solution to $B$. \added{2}{(Recall that solutions to decision problems can be in the affirmative or negative.)}
+
+If $A$ is reducible to $B$, then solving $A$ cannot be harder than solving $B$, since a solution to $B$ gives a solution to $A$. So if $B$ is decidable, then so is $A$. Equivalently, if $A$ is undecidable and reducible to $B$, then $B$ is undecidable.
+
+\begin{definition}\label{def:Karp_reduction}
+  A problem $A$ is \textbf{polynomial time reducible} to a problem $B$ if there is a \textbf{Karp reduction} of $A$ to $B$, i.e. a function that is computable by a Turing machine in polynomial time such a solution/non-solution to $A$ corresponds precisely to a solution/non-solution to $B$.
+\end{definition}
+
+\begin{definition}\label{def:NP_complete}
+  A problem $B$ is \textbf{NP-complete} if $B \in \mathrm{NP}$ and every problem $A \in \mathrm{NP}$ is polynomial time reducible to $B$.
+\end{definition}
+
+The above discussion leads to the following result, which says that to answer the conjecture that $\mathrm{P} = \mathrm{NP}$ in the affirmative, it suffices to find a NP-complete problem that is in the class P.
+
+\begin{theorem}\label{thm:NP_complete_P_vs_NP}
+  If a problem $B$ is NP-complete and $B \in \mathrm{P}$, then $\mathrm{P} = \mathrm{NP}$. \qedhere
+\end{theorem}
+
+Clearly, the non-resolution of the P versus NP conjecture implies that we do not currently know of any NP-complete problems that are in P; however, it is suspected that $\mathrm{P} \neq \mathrm{NP}$, so it widely believed that such problems do not exist. Interestingly however, \added{2}{for reasons not well understood, \cite{sipser_intro_theory_comp2013} notes that} most problems in NP can be shown to either be in P or be NP-complete. Additionally, NP-complete problems arise in many fields. A similar property to NP-completeness is NP-hardness, where we drop the condition that the problem itself is in NP \added{1}{(i.e. that it can be verified in polynomial time), or that it is even decidable}:
+
+\begin{definition}\label{def:NP_hard}
+  A problem $B$ is \textbf{NP-hard} if every problem $A \in \mathrm{NP}$ is polynomial time reducible to $B$.
+\end{definition}
+
+Thus a NP-hard problem is informally ``at least as hard as any NP-problem''; they may not even be decidable. However, finding a polynomial time solution to a NP-hard problem would imply that $\mathrm{P} = \mathrm{NP}$.
+
+\added{1}{One NP-complete problem that is of particular interest is the problem of finding an exact cover by 3-sets (X3C), as this is used in \cite{blaha1992} to show that the problem of finding a small bases for a group $G$ is NP-hard:
+
+  \begin{example}[X3C]\label{eg:X3C}
+    Consider $(Y,M)$ where $Y$ is a finite set with $|Y| = 3q$ and $M$ is a collection of 3-element subsets of $Y$. The yes-no \textit{question}, as given in \cite{garey_johnson_comp_and_intract1990}, is, ``does $M$ contain an exact cover for $Y$, i.e. a subcollection $M' \subseteq M$ such that each element of $Y$ is in exactly one member of $M'$?'' This exact 3-cover problem is NP-complete, \added{1}{as by the \textit{Cook-Levin theorem} \added{2}{(see Theorem 7.37 in \cite{sipser_intro_theory_comp2013})}, every problem in $\mathrm{NP}$ is reducible to SAT (the Boolean satisfiability problem), which is shown to be reducible to X3C (more precisely, the related ``exact cover'' problem where we drop the restriction to 3-sets) in \cite{karp1972}.}
+
+    In \cite{garey_johnson_comp_and_intract1990}, Garey and Johnson note that the problem remains NP-complete if no element of $Y$ occurs in more than three members of $M$, but it is solvable in polynomial time if no element of $Y$ occurs in more than two members of $M$. (A related problem, the exact cover by 2-sets, is in the class $\mathrm{P}$ using graph matching techniques.)
+  \end{example}}

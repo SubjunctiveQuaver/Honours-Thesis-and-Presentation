@@ -1,0 +1,364 @@
+In this section, we assume that $G \leq \Sym(\Omega)$ is a (finite) permutation group, and that $G$ acts on $\Omega$ \added{1}{naturally (as in \autoref{eg:natural_action})}. Since stabilisers are subgroups, we can take successive stabilisers to get a subgroup series. In 1970, Sims introduced in \cite{sims1970} the notion of bases, stabiliser chains, \added{1}{and strong generating sets (generating sets which respect the base and stabiliser chain structure)}, which develops this idea. Some definitions are taken from \cite{blaha1992}.
+
+\begin{definition}\label{def:base_stabiliser_chain}
+    Consider the sequence $B = [\beta_1,\dotsc,\beta_r]$ of distinct elements of $\Omega$. Let $G^0 := G$ and
+    $$G^i := \added{2}{G^{i-1}_{\beta_i}} = \added{2}{G_{\beta_1,\dotsc,\beta_i}} = \{g \in G : \beta_1^g = \beta_1,\dotsc,\beta_i^g = \beta_i\}$$
+    for $1 \leq i \leq r$; each $G^i \geq G^{i+1}$. If $G^r = \added{2}{G_{(B)}} = 1$, i.e. $1$ is the only element that fixes all $\beta_1,\dotsc,\beta_r$, then $B$ is a \textbf{base} of $G$ of \textit{size} $r$, and the \textit{subgroup series} $G = G^0 \geq G^1 \geq \dotsb \geq G^r = 1$ is the associated \textbf{stabiliser chain}. A \textbf{strong generating set} for $G$ relative to the base $B$ is $S \subseteq G$ such that $G^i = \langle S \cap G^i \rangle$ for each $i$; we call the pair $(B,S)$ a \textbf{BSGS}.
+\end{definition}
+
+\added{1}{It is clear that every $G \leq \Sym(\Omega)$ has a base, $\Omega$ itself. Furthermore, if $[\beta_1,\dotsc,\beta_r]$ is a base for $G$, then $[\beta_i,\dotsc,\beta_r]$ is a base for $G^i = \added{2}{G_{\beta_1,\dotsc,\beta_{i - 1}}}$. A question that we address later is, can we find a small base?} The reason why we consider $G$ to be a permutation group is as follows. Let $G$ be an arbitrary finite group \added{1}{that acts on $\Omega$}; for a ``base'' to exist, the action must be faithful. Suppose instead that the kernel $K$ \added{1}{of the action} is nontrivial; then there is $k \in G$ that fixes every element of $\Omega$; if $B = [\beta_1,\dotsc,\beta_r] \subset \Omega$, then $k \in G^r \neq 1$, so $B$ is not a base for $G$. In the faithful case, we can embed $G$ as a subgroup of $\Sym(\Omega)$ \added{1}{via the action}, so $G$ is isomorphic to a (finite) permutation group, \added{1}{and a base for $G$ is a base for its image $G^\Omega$}.
+
+\added{1}{\begin{example}\label{eg:action_D8_bsgs}
+        \hyperref[eg:action_D8_on_square]{Recall} that the dihedral group $D_8 = \{1,r,r^2,r^3,s,\added{2}{sr,sr^2,sr^3}\}$ of order $8$ acts faithfully on $\Omega = [4]$ by $r \mapsto (1,2,3,4)$ and $s \mapsto (1,4)(2,3)$. By identifying $D_8$ with its image $G = D_8^\Omega \leq \Sym(4)$, observe that $B = [1,2]$ is a base for $D_8$ of size 2 since $(3,4) \not\in G$, however $[2,4]$ is not a base for $D_8$ since \added{2}{$sr^3 \mapsto (1,3) \in G$} which leaves 2 and 4 fixed. Consider the base $B = [1,2]$ and let $G^0 = G$:
+        \begin{itemize}
+            \item Let $G^1 = \added{2}{G^0_{1}} = \{(),(2,4)\}$.
+            \item Let $G^2 = \added{2}{G^1_{2}} = \added{2}{G_{1,2}} = 1$.
+        \end{itemize}
+        The stabiliser chain is $G = G^0 > G^1 > G^2 = 1$. A strong generating set $S$ for $G$ relative to $B$ of size 2 is $\{(1,2,3,4),(2,4)\}$; this can be seen easily.
+    \end{example}}
+
+\added{1}{In \cite{holt_handbook_cgt2005}, it is noted that the usefulness of the concept of a BSGS is supported by the observations that a BSGS appears to be the most appropriate way to represent a group in many important permutation group algorithms, effective algorithms (such as the \textit{Schreier-Sims algorithm}) exist for constructing BSGSs for groups, and algorithms used to construct subgroups and homomorphic images of permutation groups and BSGSs of these tend to inherit a BSGS from the original group. One elementary observation on BSGSs is the following:}
+
+\begin{lemma}\label{lem:base_uniquely_determines}
+    If $[\beta_1,\dotsc,\beta_r]$ is a base for $G$, then every $g \in G$ is uniquely determined by the base image $[\beta_1^g,\dotsc,\beta_r^g] \subset \Omega$.
+\end{lemma}
+
+\begin{proof}
+    Suppose $h \in G$ satisfies $\beta_1^h = \beta_1^g,\dotsc,\beta_r^h = \beta_r^g$. Then $\beta_i^{hg^{-1}} = \added{1}{\beta_i = \beta_i^1}$ for every $i$, so $hg^{-1} \in \added{2}{G_{\beta_1,\dotsc,\beta_r}} = G^r = 1$, since we have a base. Then $h = g$.
+\end{proof}
+
+\added{1}{One advantage of the approach of using base images to represent group elements is that for many interesting groups (as per \cite{holt_handbook_cgt2005}), the size of a base may be rather small compared to its degree.} \added{2}{For instance, the dihedral group example \hyperref[eg:action_D8_bsgs]{above} can be generalised to $D_{2n}$; then $[1,2]$ is still a base of size $2$, yet the degree is $n$ which may be arbitrarily large.}
+
+\begin{definition}\label{def:transversal}
+    Let $G$ be a group and $H \leq G$. Then $T \subseteq G$ is a \textbf{(right) transversal} of $H$ if every right coset of $H$ contains exactly one element of $T$. Moreover, we assume \added{2}{without loss of generality} for this \thesis{} that $1 \in T$ (it must contain some element of $H$).
+\end{definition}
+
+A transversal is a set of coset representatives for $H$ in $G$. From \hyperref[thm:lagrange]{Lagrange's theorem} (which says that $|G| = |G : H| |H|$), we see that $|T| = |G : H|$; moreover, $G = \bigsqcup_{t \in T} Ht$ is a disjoint union of cosets given by transversal elements. We give the following corollary of the \hyperref[thm:orbit_stabiliser]{OST}:
+
+\begin{corollary}\label{cor:orbit_stabiliser_transversal}
+    Let $T$ be a (right) transversal of $\added{2}{G_\alpha}$ in $G$. The map $T \to \alpha^G$ given by $t \mapsto \alpha^t$ is a bijection.
+\end{corollary}
+
+\begin{proof}
+    The map $T \to \added{2}{G_\alpha} \backslash G$ given by $t \mapsto \added{2}{G_\alpha}t$ is clearly a bijection, since a transversal gives a set of distinct coset representatives of $\added{2}{G_\alpha}$ in $G$. Simply compose it with the map $\added{2}{G_\alpha} \backslash G \to \alpha^G$ given by $\added{2}{G_\alpha}g \mapsto \alpha^g$, which is a bijection by the \hyperref[thm:orbit_stabiliser]{OST}.
+\end{proof}
+
+\added{1}{Thus, for $\alpha^G$, a choice of elements $t \in G$ with the $\alpha^t$ all distinct and $\{\alpha^t\}_{t \in T} = \alpha^G$ defines a transversal $T$ of $\added{2}{G_\alpha}$ in $G$. (For $\alpha \in \alpha^G$, choose $t = 1$.)} Recall that a base $[\beta_1,\dotsc,\beta_r]$ has the associated stabiliser chain $G = G^0 \geq G^1 \geq \dotsb \geq G^r = 1$. Throughout this \thesis{}, let $T_i$ denote a transversal of $G^i = \added{2}{G^{i-1}_{\beta_i}} = \added{2}{G_{\beta_1,\dotsc,\beta_i}}$ in $G^{i-1}$ for $i = 1,\dotsc,r$. \added{1}{Then by \autoref{cor:orbit_stabiliser_transversal}, the following is immediate with $G = G^{i-1}$ and $\alpha = \beta_i$:}
+
+\begin{lemma}\label{lem:base_unique_rep_transversal}
+    Let $G$ act on $\Omega$ and $[\beta_1,\dotsc,\beta_r]$ be a base \added{1}{for $G$. Then $T_1,\dotsc,T_r$ with each $T_i \subseteq G^{i-1}$ are corresponding transversals of the stabiliser chain if and only if for $1 \leq i \leq r$ and $\alpha \in \beta_i^{G^{i-1}}$, there is a unique $t \in T_i$ with $\alpha = \beta_i^t$.} \qedhere
+\end{lemma}
+
+\added{1}{\begin{example}\label{eg:action_D8_bsgs_2}
+        Recall from \autoref{eg:action_D8_bsgs} the base $B = [1,2]$ for $G = D_8$ (identified as a subgroup of $\Sym(4)$) and let $G^0 = G$. Using \autoref{lem:base_unique_rep_transversal} to find transversals of the stabiliser chain, we see:
+        \begin{itemize}
+            \item Let $G^1 = \added{2}{G^0_{1}} = \{(),(2,4)\}$; note that $1^{G^0} = [4]$ and we take $T_1 = \{(),(1,2,3,4),(1,3),(1,4,3,2)\}$.
+            \item Let $G^2 = \added{2}{G^1_{2}} = \added{2}{G_{1,2}} = 1$; note that $2^{G^1} = \{2,4\}$ and we take $T_2 = \{(),(2,4)\}$.
+        \end{itemize}
+    \end{example}}
+
+\subsection{Sizes of bases and the group}
+
+Is there a relationship between a BSGS and the size of the group? First consider a similar question in the case of generating sets. A group $G$ with a \textit{nonredundant generating set} $X = \{x_1,\dotsc,x_r\}$ is such that $G = \langle X \rangle$ but $G \neq \langle x_1,\dotsc,x_{i-1},x_{i+1},\dotsc,x_r\rangle$ for any $i$. In fact, considering the subgroup series $1 = U_0 < U_1 < \dotsb < U_r = G$ where $U_i := \langle x_1,\dotsc,x_i \rangle$ (each of the inclusions are proper), we see that $|U_{i+1}| \geq 2 |U_i|$ for each $i$, so that $|G| \geq 2^r$; the size of a generating set is at \added{1}{worst} logarithmic in the size of $G$. \added{1}{However, as opposed to using generating sets, using bases and stabiliser chains allows us to easily test membership in a group.
+
+    Clearly, if $B$ is a base of size $r$ for a permutation group $G$ of degree $n$, then $|G| \leq n^r$ by the unique representation of elements of $G$ by base images in \autoref{lem:base_uniquely_determines}, since there are (at most) $n$ options for the image of each element in $B$ and $r$ elements in $B$. However, we can identify a precise result on $|G|$ by using bases, stabiliser chains and transversals (recall that these are in bijective correspondence with particular orbits).}
+
+\begin{proposition}\label{prop:stabiliser_chain_indexes}
+    Let $[\beta_1,\dotsc,\beta_r]$ be a base for $G$, and $T_1,\dotsc,T_r$ the associated transversals of the stabiliser chain $G = G^0 \geq G^1 \geq \dotsb \geq G^r = 1$. Then by \hyperref[thm:lagrange]{Lagrange's theorem}, $|G| = |G^0 : G^1| \dotsb |G^{r-1} : G^r| = |T_1| \dotsb |T_r|$ (this is Fact 3 in \cite{blaha1992}). Also, $|\beta_i^{G^{i-1}}| = |G^{i-1}|/|\added{2}{G^{i-1}_{\beta_i}}| = |G^{i-1}|/|G^i| = |T_i|$ in \added{1}{the finite case} by the \hyperref[thm:orbit_stabiliser]{OST}. \qedhere
+\end{proposition}
+
+However, if $G^i = G^{i-1}$ for some $i$, then every element of $G^{i-1}$ fixes $\beta_i$ and $T_i = \{1\}$, and $\beta_i$ is in some sense ``redundant'' in the base. \added{1}{Moreover, as noted above, $\Omega$ itself is a base for $G$.} This leads us to the following notion, defined in \cite{blaha1992}:
+
+\begin{definition}\label{def:nonredundant_base}
+    A base $B = [\beta_1,\dotsc,\beta_r]$ for $G$ is \textbf{nonredundant} if the inclusions in the associated stabiliser chain are proper: $G = G^0 > G^1 > \dotsb > G^r = 1$. The size of a \added{1}{\textbf{minimum base} (a base with minimal size)} for $G$ is $\added{2}{b(G)}$; every minimum base is nonredundant.
+\end{definition}
+
+Since each element in $G$ is completely determined by its action on a base (\autoref{lem:base_uniquely_determines}), a small base is desirable, as it can lead to a reduction in the space required to store the group elements, \added{1}{as noted in} \cite{blaha1992}. It can be easily seen that if $B = [\beta_1,\dotsc,\beta_r]$ is a base for $G$, then any permutation $\tilde B = [\beta_{\sigma_1},\dotsc,\beta_{\sigma_r}]$ of this list is also a base for $G$, as only $1$ fixes every element in both lists (which contain precisely the same elements). However, the stabiliser chains associated to each base are different, which give rise to different transversals.
+
+\begin{example}[symmetric groups]\label{eg:symmetric_group_base}
+    Consider the symmetric group $\Sym(n)$, which acts naturally on $\Omega = [n]$. Clearly $B = [1,\dotsc,n]$ is a base for $\Sym(n)$, since $1$ is the only permutation that fixes every element of $B$. However, $\tilde B = [1,\dotsc,n - 1]$ is also a base for $\Sym(n)$; a permutation that fixes $\{1,\dotsc,n - 1\}$ must also fix $n$ (as it is a bijection), thus it is \added{1}{the identity,} $1$.
+
+    Now suppose we have an ordered list $\hat B$ of $n - 2$ or fewer elements. Then say $\alpha,\beta$ are not in $\hat B$; then the transposition $(\alpha,\beta)$ fixes every element of $\hat B$, so $\hat B$ is not a base for $\Sym(n)$. It follows that a smallest base for $\Sym(n)$ comprises any set of $n - 1$ elements: $\added{2}{b}(\Sym(n)) = n - 1$ \added{1}{(note that $|\Sym(n)| = n!$)}.
+\end{example}
+
+\added{1}{\begin{example}[cyclic subgroups of $\Sym(n)$]\label{eg:cyclic_group_base}
+        Let $\sigma = (1,\dotsc,n) \in \Sym(n)$; the group $G = \langle \sigma \rangle$ is a cyclic permutation subgroup of $\Sym(n)$ with $G \cong C_n$, the cyclic group of order $n$. Clearly \added{2}{the ordered list} $B = [1]$ (or any single element of $\Omega$) is a base for $G$, since
+        $$1^{\sigma^k} = \underbrace{((1^\sigma)^{\cdots})^\sigma}_{k\ \text{times}} = \added{2}{1 + (k \mathrel{\operatorname{mod}} n)} \neq 1$$
+        for $n \nmid k$ (in which case $\sigma^k \neq 1$). It follows that $\added{2}{b(G)} = 1$ (note that $|G| = n$).
+
+        However, if we choose a different $\tau \in \Sym(n)$, we get another cyclic permutation group $\tilde G = \langle \tau \rangle \leq \Sym(n)$ (isomorphic to $\Sym(k)$ where $k$ is the order of $\tau$) which may have a longer minimum base; see \autoref{rem:blaha_cyclic_greedy} for such a construction.
+
+        One such way to increase the length of a minimum base for $\tilde G = \langle \tau \rangle$ is to consider a partition of $n$ where the parts are coprime (say $\ell$ of them are not 1), and constructing $\tau$ with that cycle type; doing so ensures that any base has length at least $\ell$ as $|\tilde G| = |\tilde G^0 : \tilde G^1| \dotsb |\tilde G^{r-1} : \tilde G^r|$ (\autoref{prop:stabiliser_chain_indexes} with $\tilde B = [\tilde\beta_1,\dotsc,\tilde\beta_r]$ a base) is a product of the $\ell$ coprime cycle lengths; the length $|\tilde G^{i-1} : \tilde G^i| = |\tilde\beta_i^{\tilde G^{i-1}}|$ of the orbit $\tilde\beta_i^{\tilde G^{i-1}}$ is either 1 (if $\tilde\beta_i \in |\tilde\beta_j^{\tilde G}|$ for some $j < i$) or equal to $|\tilde\beta_i^{\tilde G}|$ (since cycle lengths are coprime and the cyclic stabiliser $\tilde G^i$ is generated by the $|\tilde\beta_i^{\tilde G^{i-1}}|$th power of the generator of $\tilde G^{i-1}$), thus the terms of the product necessarily contain the $\ell$ coprime cycle lengths. In fact, this argument shows that $\added{2}{b}(\tilde G) = \ell$ in this case, since choosing $\tilde\beta_1,\dotsc,\tilde\beta_\ell$ from different cycles (of length at least 2) yields a base for $\tilde G$. (For instance with $n = 10$, $\tau = (1,2)(3,4,5)(6,7,8,9,10) \in \Sym(10)$ with coprime cycle lengths $2,3,5$, and $\tilde G = \langle \tau \rangle \leq \Sym(10)$, a minimum base is $\tilde B = [1,3,6]$.)
+    \end{example}}
+
+\added{2}{One practical result that helps us to classify subgroups of $\Sym(\Omega)$ by minimum base size is the observation that conjugate subgroups have the same minimum base size. %; this is a corollary of the following result.
+
+    \begin{proposition}\label{prop:conjugate_subgroups_bases}
+        Let $G \leq \Sym(\Omega)$ and $\sigma \in \Sym(\Omega)$. If $B = [\beta_1,\dotsc,\beta_r]$ is a base for $G$, then $B^\sigma := [\beta_1^\sigma,\dotsc,\beta_r^\sigma]$ is a base of the conjugate subgroup $G^\sigma \leq \Sym(\Omega)$; these are all the bases of $G^\sigma$. \added{3}{Thus, $b(G) = b(G^\sigma)$.}
+    \end{proposition}
+
+    \begin{proof}
+        Let $k = \sigma^{-1}g\sigma \in g^\sigma$, with $g \in G$. Then for all $1 \leq i \leq r$,
+        $$(\beta_i^\sigma)^k = (\beta_i^\sigma)^{\sigma^{-1}g\sigma} = (\beta_i^g)^\sigma = \beta_i^\sigma$$
+        since $g \in G$ fixes $\beta_i$. So $B^\sigma := [\beta_1^\sigma,\dotsc,\beta_r^\sigma]$ is a base of $G^\sigma$.
+
+        Every base of $G^\sigma$ is of this form, since $G = (G^\sigma)^{\sigma^{-1}}$, so if $\tilde B$ is a base of $G^\sigma$, then the above implies $\tilde B^{\sigma^{-1}}$ is a base of $G$. The results follow from the observation that $(\tilde B^{\sigma^{-1}})^\sigma = \tilde B$.
+    \end{proof}
+
+    % \begin{corollary}\label{cor:conjugate_subgroups_min_base_size}
+    %   Let $G \leq \Sym(\Omega)$ and $\sigma \in \Sym(\Omega)$. Then $b(G) = b(G^\sigma)$. \qedhere
+    % \end{corollary}
+
+    Thus, to understand $b(G)$ for $G \leq \Sym(\Omega)$, it suffices to consider conjugacy classes of subgroups, which we do later in this \thesis{}. Another useful lemma is that bases behave well under permutation isomorphism.
+
+    \added{2}{\begin{lemma}\label{lem:perm_isom_base}
+            If $G \leq \Sym(\Omega)$ and $H \leq \Sym(\tilde\Omega)$ are permutation isomorphic via $\tau : \Omega \to \tilde\Omega$ and $\psi : G \to H$, then
+            \begin{enumerate}[(a)]
+                \item for $\alpha \in \Omega$, we have $H_{\tau(\alpha)} = \psi[G_\alpha]$ (equivalently, $G_\alpha$ and $H_{\tau(\alpha)}$ are permutation isomorphic via $\tau$ and $\psi|_{G_\alpha}$),
+                \item if $B = [\beta_1,\dotsc,\beta_r]$ is a base for $G$, then $\tilde B = [\tau(\beta_1),\dotsc,\tau(\beta_r)]$ is a base for $H$, and
+                \item $b(G) = b(H)$.
+            \end{enumerate}
+        \end{lemma}}
+
+    \begin{proof}
+        \begin{enumerate}[(a)]
+            \item Note that
+                  $$h = \psi(g) \in H_{\tau(\alpha)} \iff \tau(\alpha)^h = \tau(\alpha) \iff \tau(\alpha^g) = \tau(\alpha)^{\psi(g)} = \tau(\alpha) \iff \alpha^g = \alpha$$
+                  since $\tau$ is a bijection, if and only if $g \in G_\alpha$, if and only if $h = \psi(g) \in \psi[G_\alpha].$ Since $\psi$ is an isomorphism, it restricts to an isomorphism $\psi|_{G_\alpha}$, so $G_\alpha$ and $H_{\tau(\alpha)}$ are permutation isomorphic.
+            \item We show that $H_{\tau(\beta_1),\dotsc,\tau(\beta_r)} = \psi[G_{\beta_1,\dotsc,\beta_r}]$ by induction on $r$: the result follows from part (a) if $r = 1$. If $r > 1$, then $H_{\tau(\beta_1),\dotsc,\tau(\beta_r)} = (H_{\tau(\beta_1),\dotsc,\tau(\beta_{r-1})})_{\tau(\beta_r)}$ and $G_{\beta_1,\dotsc,\beta_r} = (G_{\beta_1,\dotsc,\beta_{r-1}})_{\beta_r}$, so by part (a),
+                  $$H_{\tau(\beta_1),\dotsc,\tau(\beta_r)} = (H_{\tau(\beta_1),\dotsc,\tau(\beta_{r-1})})_{\tau(\beta_r)} = \psi[(G_{\beta_1,\dotsc,\beta_{r-1}})_{\beta_r}] = \psi[G_{\beta_1,\dotsc,\beta_r}]$$
+                  since $G_{\beta_1,\dotsc,\beta_{r-1}}$ and $H_{\tau(\beta_1),\dotsc,\tau(\beta_{r-1})}$ are permutation isomorphic by the inductive hypothesis.
+
+                  Since $B = [\beta_1,\dotsc,\beta_r]$ is a base for $G$, it follows that $G_{\beta_1,\dotsc,\beta_r} = 1_G$, so $H_{\tau(\beta_1),\dotsc,\tau(\beta_r)} = \psi[1_G] = 1_H$, and thus $\tilde B = [\tau(\beta_1),\dotsc,\tau(\beta_r)]$ is a base for $H$.
+            \item Follows immediately from part (b).
+        \end{enumerate}
+    \end{proof}}
+
+Recall that a strong generating set $S$ for a base $B = [\beta_1,\dotsc,\beta_r]$ is a subset of $G$ such that each $G^i \leq G^{i-1}$ is generated by $S \cap G^i$. \added{1}{Note that for $i \neq j$, we have $T_i \cap T_j = \{1\}$: if $i < j$, then $G^i \geq G^{j-1} \geq G^j$, and suppose $t_i \in T_j \subseteq G^{j-1} \leq G^i$ for some $t_i \in T_i$. Then $t_i \in G^i$, but $T_i$ is a transversal of $G^i$ in $G^{i-1}$, so $t_i = 1$ (since $1 \in T_i$).} Then transversals \added{2}{(na\"ively)} give rise to a strong generating set:
+
+\begin{lemma}\label{lem:transversal_gives_bsgs}
+    Let $B = [\beta_1,\dotsc,\beta_r]$ be a base for $G$, and let the corresponding transversals of the stabiliser chain $G = G^0 \geq G^1 \geq \dotsb \geq G^r = 1$ be $T_1,\dotsc,T_r$. Then
+    \begin{enumerate}[(a)]
+        \item \added{1}{$S = \bigsqcup_i (T_i \setminus \{1\})$} generates $G$ and moreover is a strong generating set for $B$; and
+        \item \added{1}{for $g \in G^i$, we have a unique decomposition $g = t_r t_{r-1} \dotsb t_{i+1}$ where each $t_k \in T_k$.}
+    \end{enumerate}
+\end{lemma}
+
+\begin{proof}
+    \added{1}{For $G^r = 1$, $S \cap G^r = \emptyset$ and $G^r = \langle \emptyset \rangle = \langle S \cap G^r \rangle$. Now since $[\beta_{i+1},\dotsc,\beta_r]$ is a base for $G^i$ with stabiliser chain $G^i \geq G^{i+1} \geq \dotsb \geq G^r$ and transversals $T_i,\dotsc,T_r$ for $i \leq r$, we proceed by induction on $i$ and suppose that $G^i = \langle S \cap G^i \rangle$. Then for $g \in G^{i-1}$, we have $g \in G^it$ \added{2}{if and only if} $g = \tilde Gt_i$ for \textit{unique} $t_i \in T_i$, and with $\tilde G = t_r t_{r-1} \dotsb t_{i+1} \in G^i = \langle S \cap G^i \rangle$ uniquely with each $t_k \in T_k$ (by the inductive hypothesis). So $g = \tilde Gt_i = t_r t_{r-1} \dotsb t_i \in \langle (S \cap G^i) \cup (T_i \setminus \{1\}) \rangle = \langle S \cap G^{i-1} \rangle$ since $T_i \setminus \{1\} \subseteq G^{i-1}$ is disjoint from $G^i$. It follows that $G^{i-1} = \langle S \cap G^{i-1} \rangle$.
+
+        Taking $i = 0$, we recover that $G = \langle S \cap G \rangle = \langle S \rangle$, and that $(B,S)$ is a BSGS for $G$.}
+\end{proof}
+
+\added{1}{A consequence of part (b) is that for $g \in G$, we have a unique decomposition $g = t_r t_{r-1} \dotsb t_1$ with each $t_i \in T_i$. Since the $(T_i \setminus \{1\})_i$ are disjoint for every $1 \leq i \leq r$, it follows that $|S| = \sum_i |T_i| - r$. However, $S$ is not necessarily a \textit{minimal} strong generating set, as seen in \added{2}{the following example}.}
+
+\added{2}{\begin{example}\label{eg:action_D8_bsgs_3}
+        Recall the base, stabiliser chain and transversals for $G = D_8$ (identified as a subgroup of $\Sym(4)$) in \autoref{eg:action_D8_bsgs_2}. A strong generating set $S$ for $G$ relative to $B$ of size 4 is, by \autoref{lem:transversal_gives_bsgs},
+        $$\{(1,2,3,4),(1,3),(1,4,3,2),(2,4)\};$$
+        this is different to the example \hyperref[eg:action_D8_bsgs]{earlier} where $(1,4,3,2)$ and $(1,3)$ are removed. The problem of computing a better BSGS for $G$ is dealt with by the \hyperref[alg:schreier_sims]{Schreier-Sims algorithm}, discussed below.
+    \end{example}}
+
+\autoref{lem:transversal_gives_bsgs} allows us to easily show that a group $G$ can have \textit{nonredundant} bases and strong generating sets \added{2}{of different sizes}. Also, we see the utility of \autoref{prop:stabiliser_chain_indexes} in determining the size of a permutation group without needing to know its \added{1}{full} structure: \added{1}{below is an example with an automorphism group of a graph, but we can apply a similar process (perhaps using the \hyperref[alg:schreier_sims]{Schreier-Sims algorithm}, discussed below) to compute the order of the Rubik's group of symmetries of the Rubik's cube, which is a permutation group of degree 48.}
+
+\added{1}{\begin{example}\label{eg:automorphism_group_graph_bsgs}
+        Let $\Gamma$ be the following graph with vertex set $V = \{1,\dotsc,8\}$:
+
+        \begin{center}
+            \begin{tikzpicture}
+                \GraphInit
+                \Vertex[x=-1, y=1, Lpos=180]{1}
+                \Vertex[x=-1, y=0, Lpos=180]{2}
+                \Vertex[x=-1, y=-1, Lpos=180]{3}
+                \Vertex[x=0, y=0, Lpos=-90]{4}
+                \Vertex[x=1, y=0, Lpos=-90]{5}
+                \Vertex[x=2, y=1]{6}
+                \Vertex[x=2, y=0]{7}
+                \Vertex[x=2, y=-1]{8}
+                \Edges(1,4,5,6)
+                \Edges(2,4,3)
+                \Edges(7,5,8)
+            \end{tikzpicture}
+        \end{center}
+
+        The group $G = \Aut(\Gamma)$ of automorphisms of $\Gamma$ (relabellings of $\Gamma$ which preserve edges) acts naturally on $\Omega = V$, with the action of the automorphism $\sigma \in G$ on the vertex $v \in \Omega$ being $v^\sigma$. Then clearly $G \leq \Sym(8)$ is a permutation group of degree 8. Let $G^0 = \tilde G^0 = G = \Aut(\Gamma)$. We consider two stabiliser chains for $G$ (and find $|G|$):
+        \begin{itemize}
+            \item Let $G^1 = \added{2}{G^0_{4}}$. Then $4^{G^0} = \{4,5\}$, and take $T_1 = \{(),(1,6)(2,7)(3,8)(4,5)\}$. \\
+                  Let $G^2 = \added{2}{G^1_{1}} = \added{2}{G_{4,1}}$. Then $1^{G^1} = \{1,2,3\}$, and take $T_1 = \{(),(1,2),(1,3)\}$. \\
+                  Let $G^3 = \added{2}{G^2_{2}} = \added{2}{G_{4,1,2}}$. Then $2^{G^2} = \{2,3\}$, and take $T_2 = \{(),(2,3)\}$. \\
+                  Let $G^4 = \added{2}{G^3_{6}} = \added{2}{G_{4,1,2,6}}$. Then $6^{G^3} = \{6,7,8\}$, and take $T_3 = \{(),(6,7),(6,8)\}$. \\
+                  Let $G^5 = \added{2}{G^4_{7}} = \added{2}{G_{4,1,2,6,7}} = 1$. Then $7^{G^4} = \{7,8\}$, and take $T_4 = \{(),(7,8)\}$.
+
+                  But $G^5 = 1$, since the only automorphism that fixes 4, 1, 2, 6, and 7 is the identity. So we see that $B = [4,1,2,6,7]$ is a nonredundant base for $G$ with stabiliser chain $G = G^0 > G^1 > G^2 > G^3 > G^4 > G^5 = 1$ and associated transversals $T_1,\dotsc,T_5$. A strong generating set $S$ for $G$ is $\{(1,6)(2,7)(3,8)(4,5),(1,2),(1,3),(2,3),(6,7),(6,8),(7,8)\}$, with size 7. Moreover, from \autoref{prop:stabiliser_chain_indexes}, we see that $|G| = |T_1| \dotsb |T_5| = 2 \cdot 3 \cdot 2 \cdot 3 \cdot 2 = 72$, so there are 72 automorphisms (relabellings) of $\Gamma$. % From \autoref{lem:transversal_gives_bsgs}, the size of a strong generating set $S$ for $G$ relative to $B$ is $\sum_i |T_i| - 5 = 7$.
+            \item Let $\tilde G^1 = \added{2}{\tilde G^0_{1}}$. Then $|1^{\tilde G^0}| = 6 = |\tilde T_1|$, since an automorphism sends 1 to any leaf. \\
+                  Let $\tilde G^2 = \added{2}{\tilde G^1_{2}} = \added{2}{G_{1,2}}$. Then $|2^{\tilde G^1}| = 2 = |\tilde T_2|$, since when 1 is fixed, so are 4 and 5. \\
+                  Let $\tilde G^3 = \added{2}{\tilde G^2_{6}} = \added{2}{G_{1,2,6}}$. Then $|6^{\tilde G^2}| = 3 = |\tilde T_3|$, since when 1 and 2 are fixed, 6 can map to 6, 7 or 8. \\
+                  Let $\tilde G^4 = \added{2}{\tilde G^3_{7}} = \added{2}{G_{1,2,6,7}}$. Then $|7^{\tilde G^3}| = 2 = |\tilde T_4|$, since (similar to above) the image of 7 is 7 or 8.
+
+                  But $\tilde G^4 = 1$, since the only automorphism that fixes 1, 2, 6, and 7 is the identity. So we see that $\tilde B = [1,2,6,7]$ is a nonredundant base for $G$ with stabiliser chain $G = \tilde G^0 > \tilde G^1 > \tilde G^2 > \tilde G^3 > \tilde G^4 = 1$ and transversals $\tilde T_1,\dotsc,\tilde T_4$. As before, we see that $|G| = |\tilde T_1| \dotsb |\tilde T_4| = 6 \cdot 2 \cdot 3 \cdot 2 = 72$. % The size of a strong generating set $S'$ for $G$ relative to $\tilde B$ is $\sum_i |\tilde T_i| - 4 = 9$.
+        \end{itemize}
+        Note that any base $B$ for $G$ must contain at least two of $\{1,2,3\}$ and two of $\{6,7,8\}$, otherwise there is an automorphism $\sigma \neq 1_{\Sym(\Omega)}$ that fixes $B$ but swaps two elements of $\{1,2,3\}$ or $\{6,7,8\}$ that are not in $B$. So $\added{2}{b(G)} = 4$.
+
+        Also, note that while $\hat B = [1,2,6,7,4]$ is also a base for $G$ as a permutation of the (nonredundant) base $B = [4,1,2,6,7]$, we see that $\hat B$ is \textit{not} nonredundant since $\hat G^4 = \added{2}{G_{1,2,6,7}} = 1 = \added{2}{G_{1,2,6,7,4}} = \hat G^5$ from the second example.
+    \end{example}}
+
+\subsection{Random elements and the constructive membership problem}
+
+In the above proof of \autoref{lem:transversal_gives_bsgs}, we found a \textit{unique} decomposition of $g \in G$ as a product of transversal elements $t_rt_{r-1}\dotsb t_1$ with each $t_i \in T_i$. This gives us a simple way of generating random elements in $G$, \added{1}{or simply enumerating all elements of $G$,} assuming we have transversals of the stabiliser chain; these can be computed using the \hyperref[alg:orbit_stabiliser]{orbit-stabiliser algorithm}.
+
+\begin{algorithm}[random element]\label{alg:transversal_random_element}
+    Let $B = [\beta_1,\dotsc,\beta_r]$ be a base for $G \leq \Sym(\Omega)$ and $\mathcal{T} := [T_1,\dotsc,T_r]$ be the corresponding transversals of the stabiliser chain. \added{1}{For each transversal $T_i$, choose $t_i \in T_i$ \added{2}{independently and} uniformly at random, and return $g = t_rt_{r-1}\dotsb t_1 \in G$ which is a random element in $G$.}
+\end{algorithm}
+
+Note that this corresponds to a uniform distribution on $G$, since for fixed $\tilde g = \tilde t_r\tilde t_{r-1}\dotsb\tilde t_1 \in G$, \added{2}{independence and} uniqueness of the decomposition gives that the probability of randomly choosing $\tilde g$ is
+$$\PR(g = \tilde g) = \PR(t_1 = \tilde t_1,\dotsc,t_r = \tilde t_r) = \PR(t_1 = \tilde t_1) \dotsb \PR(t_r = \tilde t_r) = \frac{1}{|T_1|} \dotsb \frac{1}{|T_r|} = \frac{1}{|G|}.$$
+See the \hyperref[app:transversal_random_element]{appendix} for an implementation in \texttt{GAP} as the function \texttt{RandomElt}.
+
+\added{1}{\begin{example}\label{eg:automorphism_group_graph_random}
+        Recall from \autoref{eg:automorphism_group_graph_bsgs} the graph $\Gamma$ with vertex set $V = \{1,\dotsc,8\}$, the stabiliser chain $G = G^0 > G^1 > G^2 > G^3 > G^4 > G^5 = 1$ for $G = \Aut(\Gamma)$, and the strong generating set
+        $$S = \{(1,6)(2,7)(3,8)(4,5),(1,2),(1,3),(2,3),(6,7),(6,8),(7,8)\}$$
+        for $G$. Using \texttt{GAP}, we may define $G$ as the group generated by $S$:
+
+        \lstinputlisting{txt_files/automorphism_group_graph_bsgs_gap.txt}
+
+        The following \texttt{GAP} code assumes \texttt{G}, \texttt{B} and \texttt{SC} are defined as above. Let us run through \autoref{alg:transversal_random_element} to generate a random element of $G$. Below is \texttt{GAP} code with a modified \texttt{RandomElt} function that prints out the choices of $t_i \in T_i$ (and the intermediate calculations for constructing random $g \in G$).
+
+        \lstinputlisting{txt_files/automorphism_group_graph_bsgs_gap_2.txt}
+
+        So here, the algorithm chooses $t_1 = (1,6)(2,7)(3,8)(4,5) \in T_1$, $t_2 = (1,2) \in T_2$, $t_3 = (2,3) \in T_3$, $t_4 = () \in T_4$, $t_5 = (7,8) \in T_5$, and returns $g = t_5 t_4 t_3 t_2 t_1 = (1,7,3,6)(2,8)(4,5) \in G$. This is easily verified to be an automorphism of $\Gamma$.
+    \end{example}}
+
+Next we consider a na\"ive algorithm to test membership of $g \in \Sym(\Omega)$ in a permutation group $G \leq \Sym(\Omega)$ given a BSGS for $G$ arising from transversals for the stabiliser chain:
+
+\begin{algorithm}[membership test]\label{alg:transversal_membership_test}
+    Let $B = [\beta_1,\dotsc,\beta_r]$ be a base for $G \leq \Sym(\Omega)$ and $\mathcal{T} := [T_1,\dotsc,T_r]$ be the corresponding transversals of the stabiliser chain. For arbitrary $g \in \Sym(\Omega)$, to test if $g \in G$, we do the following:
+
+    \begin{algorithmic}[1]
+        \Procedure{Membership}{$G,\Omega,B,\mathcal{T},g$}\Comment{Whether $g \in G$}
+        \State $h \gets g$
+        \For{$i \gets 1$ \textbf{to} $r$}\Comment{We go through each stabiliser $G^{i-1}$}
+        \added{1}{\If{$\beta_i^h = \beta_i^{t_i}$ for some $t_i \in T_i$} $h \gets ht_i^{-1}$\Comment{$\beta_i^{ht_i^{-1}} = \beta_i$; here we set $h = gt_1^{-1} t_2^{-1} \dotsb t_i^{-1}$}
+        \Else\ \Return \texttt{False}\label{alg:transversal_membership_test:not_in_orbit}
+        \EndIf}
+        \EndFor
+        \added{1}{\If{$h = 1$} \Return \texttt{True}\label{alg:transversal_membership_test:1_ending}
+            \Else\ \Return \texttt{False}\label{alg:transversal_membership_test:not_1_ending}
+            \EndIf}
+        \EndProcedure
+    \end{algorithmic}
+\end{algorithm}
+
+\added{1}{\begin{proof}[Proof of correctness]
+        This algorithm simultaneously deals with the cases that $g \in G$ and $g \not\in G$. First, consider the case that $g \in G$. For each $i$, we find $t_i \in T_i$ with $h = gt_1^{-1} t_2^{-1} \dotsb t_r^{-1} \in G^r = 1$ in line \ref{alg:transversal_membership_test:1_ending}, so $g = t_r t_{r - 1} \dotsb t_1 \in G$, and we return \texttt{True}.
+
+        If $g \not\in G$, suppose for a contradiction that \added{3}{we return \texttt{True}. Then $h = 1$ with $h = gt_1^{-1}\dotsb t_r^{-1}$ and $t_1,\dotsc,t_r \in G$, so $g = t_r t_{r - 1} \dotsb t_1 \in G$, which is a contradiction.}
+    \end{proof}}
+
+See the \hyperref[app:transversal_membership_test]{appendix} for an implementation in \texttt{GAP} as the function \texttt{Membership}.
+
+\added{1}{\begin{example}\label{eg:automorphism_group_graph_membership}
+        Recall from \autoref{eg:automorphism_group_graph_bsgs} the graph $\Gamma$ with vertex set $V = \{1,\dotsc,8\}$, and the stabiliser chain $G = G^0 > G^1 > G^2 > G^3 > G^4 > G^5 = 1$ for $G = \Aut(\Gamma)$. The following \texttt{GAP} code assumes \texttt{G}, \texttt{B} and \texttt{SC} are defined as in \autoref{eg:automorphism_group_graph_bsgs}. Let us run through \autoref{alg:transversal_membership_test} to show that $(1,3,5,2)(7,8) \not\in G$. Below is \texttt{GAP} code with a modified \texttt{Membership} function that prints out the values of $h$ and $t_i$ throughout the algorithm.
+
+        \lstinputlisting{txt_files/automorphism_group_graph_bsgs_gap_3.txt}
+
+        Recall that the base for $G$ is $[4,1,2,6,7]$. Set $h = (1,3,5,2)(7,8)$ and suppose for contradiction that $h \in G$.
+        \begin{itemize}
+            \item For $i = 1$: $4^h = 4$ and we choose $t_1 = () \in T_1$. Then we redefine $h \gets ht_1^{-1} = (1,3,5,2)(7,8) \in G^1$.
+            \item For $i = 2$: $1^h = 2$ and we choose $t_2 = (1,3) \in T_2$. Then we redefine $h \gets ht_2^{-1} = (2,3,5)(7,8) \in G^2$.
+            \item For $i = 3$: $2^h = 3$ and we choose $t_3 = (2,3) \in T_3$. Then we redefine $h \gets ht_3^{-1} = (3,5)(7,8) \in G^3$.
+            \item For $i = 4$: $6^h = 6$ and we choose $t_4 = () \in T_4$. Then we redefine $h \gets ht_4^{-1} = (3,5)(7,8) \in G^4$.
+            \item For $i = 5$: $7^h = 8$ and we choose $t_5 = (7,8) \in T_5$. Then we redefine $h \gets ht_5^{-1} = (3,5)\in G^5 = 1$.
+        \end{itemize}
+        This is clearly a contradiction, as $(3,5) \neq ()$. So $h \not\in G$. (Note that if one of the base element images was not in the relevant orbit, we would stop the algorithm earlier and also conclude non-membership in $G$.)
+    \end{example}}
+
+\added{1}{We have not yet answered the question of how we \textit{find} a BSGS for a permutation group $G$. One such way is the \hyperref[alg:schreier_sims]{Schreier-Sims algorithm}. However, to discuss this, we first discuss an algorithm for computing orbits, stabilisers and transversals.}
+
+\subsection{The orbit-stabiliser and Schreier-Sims algorithms}
+
+\added{1}{To get the stabiliser chain for a base $B$, we must store information about the pointwise stabilisers of an elements in $B$. We can do this by finding a generating set for each stabiliser. Furthermore, it is useful to store transversals of the stabiliser chain for various purposes such as membership testing and random element generation; these \added{2}{can all be} found by the orbit-stabiliser algorithm.}
+
+\begin{algorithm}[orbit-stabiliser]\label{alg:orbit_stabiliser}
+    Suppose $G = \langle X \rangle$ is finitely generated by $X = [x_1,\dotsc,x_n]$ and acts on $\Omega$. Let $\alpha \in \Omega$. Suppose further that the orbit $\alpha^G$ is finite. The following algorithm computes $\alpha^G$, a generating set for $\added{2}{G_\alpha}$, and a right transversal $T$ of $\added{2}{G_\alpha}$:
+
+    (Denote the $i$th element of the ordered list $L$ by $L[i]$, and the concatenation of lists $L_1,L_2$ by $L_1 \cup L_2$.)
+
+    \begin{algorithmic}[1]
+        \Procedure{OrbitStabiliser}{$G = \langle X \rangle,\Omega,\alpha$}\Comment{Computes the $G$-orbit and \added{2}{generating set of} stabiliser (and its transversal) of $\alpha$}
+        \State $\mathcal{O} \gets [\alpha]$, $T \gets [1]$, $S \gets [\ ]$, $\mathcal{E} \gets X \cup X^{-1} = [x_1,\dotsc,x_n,x_1^{-1},\dotsc,x_n^{-1}]$, $i \gets 1$
+        \While{$i \leq |\mathcal{O}|$}\label{alg:orbit_stabiliser:i_while_loop}
+        \State $o \gets \mathcal{O}[i]$\Comment{$o = \mathcal{O}[i] = \alpha^{T[i]}$}
+        \For{$x \in \mathcal{E}$}\label{alg:orbit_stabiliser:x_for_loop}
+        \If{$o^x \not\in \mathcal{O}$} append $o^x$ to $\mathcal{O}$, $T[i]x$ to $T$\Comment{$\mathcal{O}[\ell + 1] := o^x = \alpha^{T[i]x} = \alpha^{T[\ell + 1]}$ where $\ell = |\mathcal{O}|$}\label{alg:orbit_stabiliser:append_to_O_T}
+        \added{1}{\ElsIf{$o^x = \mathcal{O}[j]$ for some $j$}} append $T[i]xT[j]^{-1}$ to $S$\Comment{$\alpha^{T[i]x} = o^x = \alpha^{T[j]}$ so $\alpha^{T[i]xT[j]^{-1}} = \alpha$}\label{alg:orbit_stabiliser:already_in_O}
+        \EndIf
+        \EndFor
+        \State $i \gets i + 1$
+        \EndWhile
+        \State \Return $\mathcal{O},T,S$\Comment{The orbit is $\mathcal{O}$, $S$ generates the stabiliser, $T$ is a transversal}
+        \EndProcedure
+    \end{algorithmic}
+
+    Then $\mathcal{O} = \alpha^G$, $\langle S \rangle = \added{2}{G_\alpha}$, and $T$ is a transversal of $\added{2}{G_\alpha}$ in $G$.
+\end{algorithm}
+
+% TODO: Cite something for the stabiliser?
+
+Next we show that the algorithm works (and terminates), but we omit the proof that $\langle S \rangle = \added{2}{G_\alpha}$ for brevity \added{3}{(see Section 4.1 of \cite{holt_handbook_cgt2005} for proof)}. The key to this algorithm is that $\mathcal{O}[i] = \alpha^{T[i]}$ for all $i$, from $\mathcal{O}[1] = \alpha = \alpha^1 = \alpha^{T[1]}$ and the comment in line \ref{alg:orbit_stabiliser:append_to_O_T}.
+
+\begin{proof}
+    Observe that $T \subseteq G$ since we only append elements of the form $T[i]x$ to $T$ whenever line \ref{alg:orbit_stabiliser:append_to_O_T} runs, where $T[i] \in T \subseteq G$ (since $T[1] = 1 \in G$ and then by induction on $i$) and $x \in \mathcal{E} \subseteq G$.
+
+    First we show that $\mathcal{O} = \alpha^G$. Clearly $\mathcal{O} \subseteq \alpha^G$: if $o \in \mathcal{O}$ then $o = \mathcal{O}[i]$ for some $i$, so $o = \mathcal{O}[i] = \alpha^{T[i]}$ where $T[i] \in T \subseteq G$. To see that $\alpha^G \subseteq \mathcal{O}$: take $\alpha^g \in \alpha^G$ where $g \in G$. Then $g = x_{i_1}^{\varepsilon_1}\dotsb x_{i_k}^{\varepsilon_k}$ with each $\varepsilon_{i_j} = \pm 1$ since $G = \langle X \rangle$ is finitely generated. We proceed by induction on $k$. If $k = 0$, then $g = 1$ and $\alpha^g = \alpha^1 = \alpha = \mathcal{O}[1] \in \mathcal{O}$. For the inductive step with $k \geq 1$, write
+    $$\alpha^g = \alpha^{x_{i_1}^{\varepsilon_1}\dotsb x_{i_k}^{\varepsilon_k}} = \left(\alpha^{x_{i_1}^{\varepsilon_1}\dotsb x_{i_{k - 1}}^{\varepsilon_{k - 1}}}\right)^{x_{i_k}^{\varepsilon_k}};$$
+    by the inductive hypothesis $\alpha^{x_{i_1}^{\varepsilon_1}\dotsb x_{i_{k - 1}}^{\varepsilon_{k - 1}}} \in \mathcal{O}$, say $\alpha^{x_{i_1}^{\varepsilon_1}\dotsb x_{i_{k - 1}}^{\varepsilon_{k - 1}}} = \mathcal{O}[\ell]$ for some $\ell$. Then when $i = \ell$ (in line \ref{alg:orbit_stabiliser:i_while_loop}) and $x = x_{i_k}^{\varepsilon_k} \in \mathcal{E}$ (in line \ref{alg:orbit_stabiliser:x_for_loop}), we append $\alpha^g = o^{x_{i_k}^{\varepsilon_k}}$ to $\mathcal{O}$. So indeed $\mathcal{O} = \alpha^G$. Since $\alpha^G$ is finite, the algorithm terminates (see line \ref{alg:orbit_stabiliser:i_while_loop}).
+
+    \added{1}{By line \ref{alg:orbit_stabiliser:append_to_O_T}, we see that at the end of the algorithm, $T$ comprises elements $t \in G$ with $\alpha^t$ all distinct and $\{\alpha^t\}_{t \in T} = \alpha^G$. Then \autoref{cor:orbit_stabiliser_transversal} implies $T$ is a transversal of $\added{2}{G_\alpha}$ in $G$.}
+\end{proof}
+
+Now a subgroup of a finitely generated group need not be finitely generated; it is known that the free group on 2 generators has a subgroup isomorphic to a free group on a countably infinitely set of generators. However, the \hyperref[alg:orbit_stabiliser]{orbit-stabiliser algorithm} proves that for any finitely generated group $G$ acting on a set $\Omega$, if an orbit $\alpha^G$ is finite, then the stabiliser $\added{2}{G_\alpha}$ is finitely generated:
+
+\begin{corollary}\label{cor:stabiliser_is_finitely_generated}
+    Let a finitely generated group $G = \langle X \rangle$ act on $\Omega$ and $\alpha \in G$. If $\alpha^G$ is finite, then $\added{2}{G_\alpha}$ is finitely generated (by the output $S$ of the \hyperref[alg:orbit_stabiliser]{orbit-stabiliser algorithm}, which is finite with $|S| \leq 2|\alpha^G||X|$). \qedhere
+\end{corollary}
+
+\added{1}{Now that we have established a way of computing orbits, stabilisers and transversals, we can look to a general form of computing a BSGS for a permutation group $G$. One such approach is the \textbf{Schreier-Sims algorithm}, if a partial base $B$ and generating set $S$ for $G$ are known.\label{alg:schreier_sims} \added{2}{(Often, we have the empty partial base $B = [\ ]$, which we ``extend'' to find a base for $G$.)}
+
+% Intuitively, for each point $\beta_i$ in $B$, we calculate \textit{Schreier generators} for $G^i = \added{2}{G^{i-1}_{\beta_i}} = \added{2}{G_{\beta_1,\dotsc,\beta_i}}$; the union of these Schreier generators for the $G^i$ forms a strong generating set $S$ for $G$. To calculate Schreier generators for $G^i$, which are of the form $t_ix\tilde t_i^{-1}$ where $t_i,\tilde t_i \in T_i$ (a right transversal of $G^i$ in $G^{i-1}$) and $x \in X$ (where $G = \langle X \rangle$), we use the \hyperref[alg:orbit_stabiliser]{orbit-stabiliser algorithm} to compute the orbit $\beta_i^{G^{i-1}}$ and transversal $T_i$. However, some of the Schreier generators are the identity in $G$, so we can ignore them.
+% we extend $B$ to a base for $G$ by che
+
+Intuitively, a na\"ive version of the algorithm extends $B$ to a base by considering generators $x \not\in \added{2}{G_{\beta_1,\dotsc,\beta_k}}$ in $S$ and appending points of $\Omega$ that are not fixed by $x$. We then use the \hyperref[alg:orbit_stabiliser]{orbit-stabiliser algorithm} to compute and append \textit{Schreier generators} for $G^i = \added{2}{G_{\beta_1,\dotsc,\beta_i}}$ to $S$, ignoring those that are equal to the identity $1 \in G$. The resulting $(B,S)$ is a BSGS for $G$, and is an improvement over \autoref{lem:transversal_gives_bsgs}.
+
+% TODO: GIVE INTUITON (extend $B$ to base, use OST to compute orbits/stabilisers/transversals for subsequent thingies in stab chain, but use Schreier generators to reduce the size of SGS). Below is an outline of the procedure:
+
+% \begin{algorithm}[Schreier-Sims]\label{alg:schreier_sims}
+%     Let $B = [\beta_1,\dotsc,\beta_k]$ be an initial sequence (possibly empty) of distinct elements of $\Omega$, and $G = \langle X \rangle \leq \Sym(\Omega)$ a permutation group. We extend $B$ to a base for $G$ and extend $X$ to a strong generating set $S$ for $G$:
+
+%     \begin{algorithmic}[1]
+%         \Procedure{SchreierSims}{$B,\Omega,X$}\Comment{Extends $B$ to a base for $G$, and extends $X$ to a strong generating set $S$}
+
+%         TODO: COMPLETE
+%         \State $S \gets X$
+%         \For{$x \in S$}
+%         \If{$x \in \added{2}{G_{\beta_1,\dotsc,\beta_k}}$} append $\gamma \in \Omega$ to $B$ where $\gamma^x \neq \gamma$
+%         \State $k \gets k + 1$
+%         \EndIf
+%         \EndFor
+%         \State $S_i = S \cap \added{2}{G_{\beta_1,\dotsc,\beta_i}}$
+%         % \State $\mathcal{O} \gets [\alpha]$, $T \gets [1]$, $S \gets [\ ]$, $\mathcal{E} \gets X \cup X^{-1} = [x_1,\dotsc,x_n,x_1^{-1},\dotsc,x_n^{-1}]$, $i \gets 1$
+%         % \While{$i \leq |\mathcal{O}|$}\label{alg:orbit_stabiliser:i_while_loop}
+%         % \State $o \gets \mathcal{O}[i]$\Comment{$o = \mathcal{O}[i] = \alpha^{T[i]}$}
+%         % \For{$x \in \mathcal{E}$}\label{alg:orbit_stabiliser:x_for_loop}
+%         % \If{$o^x \not\in \mathcal{O}$} append $o^x$ to $\mathcal{O}$, $T[i]x$ to $T$\Comment{$\mathcal{O}[\ell + 1] := o^x = \alpha^{T[i]x} = \alpha^{T[\ell + 1]}$ where $\ell = |\mathcal{O}|$}\label{alg:orbit_stabiliser:append_to_O_T}
+%         % \added{1}{\ElsIf{$o^x = \mathcal{O}[j]$ for some $j$}} append $T[i]xT[j]^{-1}$ to $S$\Comment{$\alpha^{T[i]x} = o^x = \alpha^{T[j]}$ so $\alpha^{T[i]xT[j]^{-1}} = \alpha$}\label{alg:orbit_stabiliser:already_in_O}
+%         % \EndIf
+%         % \EndFor
+%         % \State $i \gets i + 1$
+%         % \EndWhile
+%         % \State \Return $\mathcal{O},T,S$\Comment{The orbit is $\mathcal{O}$, $S$ generates the stabiliser, $T$ is a transversal}
+%         \EndProcedure
+%     \end{algorithmic}
+
+%     We return $(B,S)$ which is now a BSGS for $G$.
+% \end{algorithm}
+
+This algorithm was used by Sims to construct and prove existence of some of the theorised sporadic finite simple groups, such as Lyons' group (degree $n \approx 9 \cdot 10^6$) in 1973 \cite{sims1973}. It is implemented in many computational packages such as \texttt{GAP} to compute bases, and for large degree groups, a randomised variant is used to speed up computation since the number of Schreier generators to be processed becomes too large for the deterministic algorithm.}

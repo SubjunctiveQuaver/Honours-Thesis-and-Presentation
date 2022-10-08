@@ -1,0 +1,267 @@
+\subsection{Bases and stabiliser chains}
+
+\begin{slide}
+    \begin{definition}[Base, stabiliser chain]
+        \vspace{0pt}
+        If $G \leq \Sym(n)$, distinct elts $B = [\beta_1,\dotsc,\beta_r] \subseteq [n]$ is \textbf{base} for $G$ if $G_{\beta_1,\dotsc,\beta_r} = 1$. (\textit{Recall:} $G_{\beta_1,\dotsc,\beta_r} = \{g \in G : \beta_1^g = \beta_1,\dotsc,\beta_r^g = \beta_r\}$.) \pause
+
+        Corresponding \textbf{stabiliser chain} is
+        \[G = G^0 \geq G^1 \geq \dotsb \geq G^r = 1\]
+        where $G^i = G^{i-1}_{\beta_i} = G_{\beta_1,\dotsc,\beta_i}$.
+    \end{definition} \pause
+
+    Base $B$ contains elts of $[n]$ such that only $1 \in G$ fixes every $\beta_i \in B$. (Short base desirable: how to compute minimum base?) \pause
+
+    Stabiliser chain can be implemented computationally; useful in algorithms (membership testing, random element generation, factorisation into generators).
+\end{slide}
+
+\begin{slide}
+    \begin{example}[Rubik's group]
+        \vspace{0pt}
+        Using \texttt{GAP}:
+
+        \lstinputlisting{code/rubiks_group_base.gap} \pause
+
+        Base of $\mathcal{G}$ of size 18 is
+        $$B = [ 1, 3, 6, 8, 2, 4, 5, 7, 12, 13, 14, 15, 16, 21, 23, 24, 29, 31 ].$$ \pause
+        If move $\sigma \in \mathcal{G}$ fixes every $\beta_i \in B$ then $\sigma = 1$ is empty move.
+    \end{example}
+\end{slide}
+
+\subsection{How many valid states are there?}
+
+% UPDATE TOGETHER WITH BELOW
+\begin{slide}
+    \begin{overprint}
+        \vspace{0.5cm}
+        \begin{theorem}[size of perm group]
+            \vspace{0pt}
+            If $B = [\beta_1,\dotsc,\beta_r]$ is base for $G \leq \Sym(n)$ with stabiliser chain $G = G^0 \geq G^1 \geq \dotsb \geq G^r = 1$, then
+            $$|G| = |\beta_1^{G^0}||\beta_2^{G^1}| \dotsb |\beta_r^{G^{r-1}}|.$$
+        \end{theorem}
+
+        \onslide<2-6>
+        \begin{proof}
+            \vspace{0pt}
+            OST implies $|G^{i-1}| = |\beta_i^{G^{i-1}}||G^{i-1}_{\beta_i}| = |\beta_i^{G^{i-1}}||G^i|$ for each $i = 1,\dotsc,r$, \onslide<3-6>{i.e. $|G^{i-1}|/|G^i| = |\beta_i^{G^{i-1}}|$ and $|G^r| = 1$, so
+            \onslide<4-6>{\[|G| = |G^0| = \onslide<5-6>{\frac{|G^0|}{|G^1|}\frac{|G^1|}{|G^2|} \dotsb \frac{|G^{r-1}|}{|G^r|} = \onslide<6>{|\beta_1^{G^0}||\beta_2^{G^1}| \dotsb |\beta_r^{G^{r-1}}|. \qedhere}}\]}}
+        \end{proof}
+
+        \onslide<7-11|handout:0>
+        \begin{example}[rotation group of cube]
+            \vspace{0pt}
+            Compute order of rotation group $G \leq \Sym(8)$ for cube: \onslide<8-11>{base of adjacent vertices say $1,2$ (once fixed, can't rotate, so $G_{1,2} = 1$).
+
+            \onslide<9-11>{$|1^G| = 8$ (all vertices); \onslide<10-11>{in $G_1$, $|2^{G_1}| = 3$ (vertices adjacent to $1$); so
+            \onslide<11>{$$|G| = |1^G||2^{G_1}| = 8 \cdot 3 = 24.$$}}}}
+        \end{example}
+
+        \onslide<12-|handout:0>
+        Orbits and stabilisers can be easily computed (e.g. using \texttt{GAP}).
+
+        \onslide<13-|handout:0>{Implementing base and stabiliser chain for Rubik's group $\RC$ (using \texttt{BaseOfGroup} and \texttt{StabChain} cmds), \texttt{GAP} computes:}
+
+        \onslide<14-|handout:0>{
+            \begin{corollary}
+                \vspace{0pt}
+                $|\RC| = 43\,252\,003\,274\,489\,856\,000 \approx 4.3 \cdot 10^{19}$.
+            \end{corollary}
+
+        (\textit{Note:} $|\RC| = 2^{27} \cdot 3^{14} \cdot 5^3 \cdot 7^2 \cdot 11$. Thus no move of order 13.)}
+    \end{overprint}
+\end{slide}
+
+% UPDATE TOGETHER WITH ABOVE/BELOW
+\begin{slide}<beamer:0>
+    \begin{overprint}
+        \vspace{0.5cm}
+        \begin{theorem}[size of perm group]
+            \vspace{0pt}
+            If $B = [\beta_1,\dotsc,\beta_r]$ is base for $G \leq \Sym(n)$ with stabiliser chain $G = G^0 \geq G^1 \geq \dotsb \geq G^r = 1$, then
+            $$|G| = |\beta_1^{G^0}||\beta_2^{G^1}| \dotsb |\beta_r^{G^{r-1}}|.$$
+        \end{theorem}
+
+        \onslide<2-6|handout:0>
+        \begin{proof}
+            \vspace{0pt}
+            OST implies $|G^{i-1}| = |\beta_i^{G^{i-1}}||G^{i-1}_{\beta_i}| = |\beta_i^{G^{i-1}}||G^i|$ for each $i = 1,\dotsc,r$, \onslide<3-6>{i.e. $|G^{i-1}|/|G^i| = |\beta_i^{G^{i-1}}|$ and $|G^r| = 1$, so
+            \onslide<4-6>{\[|G| = |G^0| = \onslide<5-6>{\frac{|G^0|}{|G^1|}\frac{|G^1|}{|G^2|} \dotsb \frac{|G^{r-1}|}{|G^r|} = \onslide<6>{|\beta_1^{G^0}||\beta_2^{G^1}| \dotsb |\beta_r^{G^{r-1}}|. \qedhere}}\]}}
+        \end{proof}
+
+        \onslide<7-11>
+        \begin{example}[rotation group of cube]
+            \vspace{0pt}
+            Compute order of rotation group $G \leq \Sym(8)$ for cube: \onslide<8-11>{base of adjacent vertices say $1,2$ (once fixed, can't rotate, so $G_{1,2} = 1$).
+
+            \onslide<9-11>{$|1^G| = 8$ (all vertices); \onslide<10-11>{in $G_1$, $|2^{G_1}| = 3$ (vertices adjacent to $1$); so
+            \onslide<11>{$$|G| = |1^G||2^{G_1}| = 8 \cdot 3 = 24.$$}}}}
+        \end{example}
+
+        \onslide<12-|handout:0>
+        Orbits and stabilisers can be easily computed (e.g. using \texttt{GAP}).
+
+        \onslide<13-|handout:0>{Implementing base and stabiliser chain for Rubik's group $\RC$ (using \texttt{BaseOfGroup} and \texttt{StabChain} cmds), \texttt{GAP} computes:}
+
+        \onslide<14-|handout:0>{
+            \begin{corollary}
+                \vspace{0pt}
+                $|\RC| = 43\,252\,003\,274\,489\,856\,000 \approx 4.3 \cdot 10^{19}$.
+            \end{corollary}
+
+        (\textit{Note:} $|\RC| = 2^{27} \cdot 3^{14} \cdot 5^3 \cdot 7^2 \cdot 11$. Thus no move of order 13.)}
+    \end{overprint}
+\end{slide}
+
+% UPDATE TOGETHER WITH ABOVE
+\begin{slide}<beamer:0>
+    \begin{overprint}
+        \vspace{0.5cm}
+        \begin{theorem}[size of perm group]
+            \vspace{0pt}
+            If $B = [\beta_1,\dotsc,\beta_r]$ is base for $G \leq \Sym(n)$ with stabiliser chain $G = G^0 \geq G^1 \geq \dotsb \geq G^r = 1$, then
+            $$|G| = |\beta_1^{G^0}||\beta_2^{G^1}| \dotsb |\beta_r^{G^{r-1}}|.$$
+        \end{theorem}
+
+        \onslide<2-6|handout:0>
+        \begin{proof}
+            \vspace{0pt}
+            OST implies $|G^{i-1}| = |\beta_i^{G^{i-1}}||G^{i-1}_{\beta_i}| = |\beta_i^{G^{i-1}}||G^i|$ for each $i = 1,\dotsc,r$, \onslide<3-6>{i.e. $|G^{i-1}|/|G^i| = |\beta_i^{G^{i-1}}|$ and $|G^r| = 1$, so
+            \onslide<4-6>{\[|G| = |G^0| = \onslide<5-6>{\frac{|G^0|}{|G^1|}\frac{|G^1|}{|G^2|} \dotsb \frac{|G^{r-1}|}{|G^r|} = \onslide<6>{|\beta_1^{G^0}||\beta_2^{G^1}| \dotsb |\beta_r^{G^{r-1}}|. \qedhere}}\]}}
+        \end{proof}
+
+        \onslide<7-11|handout:0>
+        \begin{example}[rotation group of cube]
+            \vspace{0pt}
+            Compute order of rotation group $G \leq \Sym(8)$ for cube: \onslide<8-11>{base of adjacent vertices say $1,2$ (once fixed, can't rotate, so $G_{1,2} = 1$).
+
+            \onslide<9-11>{$|1^G| = 8$ (all vertices); \onslide<10-11>{in $G_1$, $|2^{G_1}| = 3$ (vertices adjacent to $1$); so
+            \onslide<11>{$$|G| = |1^G||2^{G_1}| = 8 \cdot 3 = 24.$$}}}}
+        \end{example}
+
+        \onslide<12->
+        Orbits and stabilisers can be easily computed (e.g. using \texttt{GAP}).
+
+        \onslide<13->{Implementing base and stabiliser chain for Rubik's group $\RC$ (using \texttt{BaseOfGroup} and \texttt{StabChain} cmds), \texttt{GAP} computes:}
+
+        \onslide<14->{
+            \begin{corollary}
+                \vspace{0pt}
+                $|\RC| = 43\,252\,003\,274\,489\,856\,000 \approx 4.3 \cdot 10^{19}$.
+            \end{corollary}
+
+        (\textit{Note:} $|\RC| = 2^{27} \cdot 3^{14} \cdot 5^3 \cdot 7^2 \cdot 11$. Thus no move of order 13.)}
+    \end{overprint}
+\end{slide}
+
+\subsection{Can this restickering be solved?}
+
+\begin{slide}
+    \begin{theorem}[Wes's conjecture]
+        \vspace{0pt}
+        ``I'm 99\% sure you can't swap two [adjacent] edge pieces without affecting another piece?!''
+    \end{theorem}
+
+    \begin{center}
+        \scalebox{0.6}{
+            \includegraphics<1-4,6,8,10|handout:0>{graphics/rubiks_cube_net.tikz}%
+            \includegraphics<5|handout:0>{graphics/rubiks_cube_net_swap_1.tikz}%
+            \includegraphics<7>{graphics/rubiks_cube_net_swap_2.tikz}%
+            \includegraphics<9|handout:0>{graphics/rubiks_cube_net_swap_3.tikz}%
+            \includegraphics<11|handout:0>{graphics/rubiks_cube_net_swap_4.tikz}%
+        }
+    \end{center}
+
+    \onslide<2->{WLOG consider solved state. \textit{Equivalent question:} does only restickering two adjacent edge pieces give solvable state?
+
+        \onslide<3->{By symmetry, just check one pair, say red/white (18/7) and red/blue (21/28). \onslide<4->{Four ways: given by where red pieces go (2 options each).}}}
+\end{slide}
+
+\begin{slide}
+    These restickerings should be invalid states. \pause In group theory language:
+
+    \begin{theorem}[Wes's conjecture]
+        \vspace{0pt}
+        $(18,21)(7,28) \not\in \RC$, $(18,28)(7,21) \not\in \RC$, $(18,21,7,28) \not\in \RC$, and $(18,28,7,21) \not\in \RC$.
+    \end{theorem} \pause
+
+    \begin{proof}
+        \vspace{0pt}
+        By \texttt{GAP}:
+
+        \lstinputlisting{code/rubiks_membership_2.gap}
+
+        (\texttt{GAP} uses stabiliser chains to verify membership!)
+    \end{proof} \pause
+
+    Can generalise to any two edge pieces (more cases)!
+\end{slide}
+
+\subsection{Solving a Rubik's cube...}
+
+\begin{slide}
+    We can use \texttt{GAP} to solve Rubik's cube state: \pause
+
+    {\scriptsize \lstinputlisting{code/rubiks_factorisation.gap}}
+
+    ($F = \langle u,\ell,f,r,b,d \rangle$ is free group on 6 generators. Then $f : F \to \RC$ is hom given by $u \mapsto U$, $l \mapsto L$, $f \mapsto F$, $r \mapsto R$, $b \mapsto B$, $d \mapsto D$.)
+\end{slide}
+
+\begin{slide}
+    To simulate scramble, use \texttt{GAP} to generate random state $x \in \RC$: \pause
+
+    {\scriptsize \lstinputlisting{code/rubiks_factorisation_2.gap}}
+    \vspace{-0.5cm}
+
+    {\footnotesize \begin{multline*}
+            x = (1,27,32,6,43,14,22)(2,28,13,37,18,15,47,42,31)\\
+            (3,38,17,24,46,41,9)(5,26)(7,44,39,23,45,34,21,20,12)\\
+            (11,30,40,16,35,33,48)(29,36).
+        \end{multline*}} \pause
+    Uniform distribution on $\RC$ (w.p. $1/|\RC| \approx 2.3 \cdot 10^{-20}$).
+
+    (\textit{Note:} \texttt{GAP} uses stabiliser chain, not sequence of generators.)
+\end{slide}
+
+\begin{slide}
+    {\footnotesize \begin{multline*}
+            x = (1,27,32,6,43,14,22)(2,28,13,37,18,15,47,42,31)\\
+            (3,38,17,24,46,41,9)(5,26)(7,44,39,23,45,34,21,20,12)\\
+            (11,30,40,16,35,33,48)(29,36)
+        \end{multline*}}
+    \vspace{-1cm}
+
+    \begin{center}
+        \includegraphics{graphics/rubiks_cube_net_random.tikz}%
+    \end{center}
+\end{slide}
+
+\begin{slide}
+    Factorisation into 78 generators and inverses: \pause
+    {\scriptsize \lstinputlisting{code/rubiks_factorisation_3.gap}}
+    \vspace{-0.5cm}
+
+    {\footnotesize \begin{multline*}
+            x = LF^{-1}L^{-1}FUFU^{-1}F^2LFL^{-1}U^{-1}L^{-1}ULU^{-1}LUFU^{-1}F^{-1}L^{-2}U \\
+            LF^{-1}LF(L^{-1}U)^2B^{-1}UBLUL^{-1}F^{-1}L^{-1}FL^2UL^{-1}ULB^{-1}U^{-1}BL \\
+            DF^2D^{-1}LF^{-1}UL^{-1}FU^{-1}LD^{-1}LBDU^{-2}B^{-1}R^{-1}BU^{-1}RF^{-1}UD^{-2}.
+        \end{multline*}} \pause
+
+    \vspace{-0.5cm}
+    (\texttt{GAP} uses stabiliser chains to factorise almost instantly!)
+\end{slide}
+
+\begin{slide}
+    Check this is correct:
+    {\scriptsize \lstinputlisting{code/rubiks_factorisation_4.gap}} \pause
+
+    To solve state $x$, apply move $x^{-1} \in \RC$ since \pause $x^{x^{-1}} = xx^{-1} = 1$:
+    {\scriptsize \begin{multline*}
+        x^{-1} = D^2U^{-1}FR^{-1}UB^{-1}RBU^2D^{-1}B^{-1}L^{-1}DL^{-1}UF^{-1}LU^{-1}FL^{-1}DF^{-2}D^{-1} \\
+        L^{-1}B^{-1}UBL^{-1}U^{-1}LU^{-1}L^{-2}F^{-1}LFLU^{-1}L^{-1}B^{-1}U^{-1}B(U^{-1}L)^2F^{-1}L^{-1}F \\
+        L^{-1}U^{-1}L^2FUF^{-1}U^{-1}L^{-1}UL^{-1}U^{-1}LULF^{-1}L^{-1}F^{-2}UF^{-1}U^{-1}F^{-1}LFL^{-1}.
+    \end{multline*}}
+
+    (Just invert each term in factorisation above and reverse, thus 78 steps.) \pause
+
+    Not very efficient, since it solves one piece in base $B$ at a time (proceeding up stabiliser chain)... but it works!
+\end{slide}

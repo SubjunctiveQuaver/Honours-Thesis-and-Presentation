@@ -1,0 +1,596 @@
+The definitions and results in this section are primarily found in \cite{rotman_intro_theory_groups1995} and \cite{dixon_mortimer_perm_groups1996}.
+
+\subsection{Elementary abelian groups}
+
+In chapter 4, we will need the notion of an elementary abelian $p$-group, which we then realise as a permutation group.
+
+\begin{definition}\label{def:p-group}
+    Let $p$ be a prime. A \textbf{$p$-group} is a group $G$ in which every element has order a power of $p$. An \textbf{elementary abelian ($p$-)group} $G$ is an abelian group in which every nontrivial element has order $p$.
+\end{definition}
+
+It can be shown that $G$ is a finite $p$-group if and only if the order of $G$ is a power of $p$. One such proof uses Sylow's theorems, the first of which is presented below without proof. Recall that a \textbf{maximal subgroup} $H$ of $G$ is a subgroup $H \leq G$ such that $H < K \leq G$ implies $K = G$.
+
+\begin{definition}\label{def:sylow_subgroup}
+    Let $G$ be a group. A \textbf{Sylow $p$-subgroup} of $G$ is a maximal $p$-subgroup of $G$, i.e. a maximal subgroup with order a power of $p$.
+\end{definition}
+
+\begin{theorem}[Sylow (1)]\label{thm:sylow}
+    Let $G$ be a finite group and $p$ a prime that divides $|G|$. If $p^k$ is the maximal power of $p$ that divides $|G|$, then there exists a Sylow $p$-subgroup of order $p^k$.
+\end{theorem}
+
+One may use the theory of group actions to prove Sylow's theorem; see Theorem 4.17 in \cite{rotman_intro_theory_groups1995} for Wielandt's proof in this direction.
+
+\begin{corollary}\label{cor:p-group_iff_prime_power_order}
+    A group $G$ is a finite $p$-group if and only if the order of $G$ is a power of $p$.
+\end{corollary}
+
+\begin{proof}
+    The case that $G = 1$ is trivial. Thus suppose $G \neq 1$ is a finite $p$-group and $q$ is a prime divisor of $|G|$. Let $q^k$ be the maximal power of $q$ that divides $|G|$. By Sylow's first theorem (\autoref{thm:sylow}), there is a Sylow $q$-subgroup $H \leq G$ with order $q^k$. Since $H \neq 1$, there is $h \in H$ with $\langle h \rangle \leq H$, so the order of $h$ divides $|H| = q^k$ by Lagrange's theorem. So $h$ has order a power of $q$, but $h \in G$ and $G$ is a $p$-group, so $q = p$, i.e. $|G|$ is a power of $p$. The converse result follows directly from Lagrange's theorem.
+\end{proof}
+
+Recall that for groups $G,H$, their \textbf{direct product} is the group $G \times H$ with underlying set the Cartesian product $G \times H$ and group operation $(g,h)(a,b) = (ga,hb)$ for $g,a \in G$ and $h,b \in H$. When $G$ and $H$ are \textit{abelian}, we may instead call it a \textbf{direct sum} and write $G \oplus H$; we often use additive notation $(g,h) + (a,b) = (g+a,h+b)$ with identity $0$, writing $ng$ instead of $g^n$.
+
+It turns out that the structure of a finite abelian group is quite simple. The following result is standard; see Theorem 6.9 in \cite{rotman_intro_theory_groups1995} for a proof.
+
+\begin{theorem}[Basis for finite abelian groups]\label{thm:basis_finite_abelian}
+    Every finite abelian group $G$ is a direct sum of cyclic groups.
+\end{theorem}
+
+Using this result, we may show that a finite elementary $p$-group must be a direct sum of copies of $\Z/p\Z$.
+
+\begin{corollary}\label{cor:elementary_abelian_group_form}
+    If $G$ is a finite elementary abelian $p$-group, then $G \cong (\Z/p\Z)^k$ for some $k$. (In the literature, such $G \cong (\Z/p\Z)^k$ is often denoted by $p^k$.)
+\end{corollary}
+
+\begin{proof}
+    By the basis theorem (\autoref{thm:basis_finite_abelian}), write $G \cong (\Z/n_1\Z) \oplus \dotsb \oplus (\Z/n_k\Z)$ with each $n_i > 1$. Let $e_i$ be the element in $(\Z/n_1\Z) \oplus \dotsb \oplus (\Z/n_k\Z)$ with a 1 in the $i$th entry and 0s elsewhere. Using the isomorphism, $e_i$ has order $p$ (since $G$ is elementary abelian), so $p1 = 0$ in $\Z/n_i\Z$, so $n_i = p$ (as $p$ is prime). Since $1 \leq i \leq k$ was arbitrary, the result follows.
+\end{proof}
+
+\subsection{Classification of finite simple groups}
+
+Prime numbers are the ``building blocks'' of natural numbers, in the sense that a natural number has a unique factorisation as a product of prime numbers, by the fundamental theorem of arithmetic. Thus, to study number theory, it is often useful to study primes. A similar question arises for groups, in particular finite groups -- is there a way to break down an arbitrary finite group into the simplest ``building blocks''? The analogous object to prime numbers for groups is the notion of a simple group, which all finite groups can be decomposed into. (The inverse problem of reconstructing groups from simple groups is more difficult than for integers, and is referred to as the group extension problem.)
+
+The classification of finite simple groups is one of the most famous problems in group theory, and its statement and proof was achieved by a collaboration of many group theorists across many decades and many volumes of work. In \cite{solomon2001}, Solomon notes that computational group theory has also been influential in the classification result: for instance, by 2001, computer algorithms were being created to identify permutation groups, linear groups and ``black box'' groups, and calculations of groups of order $2^{10}$ re-verified the fact that ``most'' finite groups are nilpotent groups of nilpotence class at most 2.
+
+Recall that a \textbf{maximal normal subgroup} of a nontrivial group $G$ is a normal subgroup $1 \neq N \lhd G$ such that $N \lhd M \unlhd G$ implies $M = G$.
+
+\begin{definition}\label{def:simple_group}
+    A group $G \neq 1$ is \textbf{simple} if it has no nontrivial normal subgroups.
+\end{definition}
+
+\added{3}{For example, the cyclic groups $C_p$ of prime order are simple by Lagrange's theorem; if $n = uv$ is not prime, then $C_n = \langle a \rangle$ is not simple since $1 \neq \langle a^u \rangle \lhd C_n$. Moreover, $\Alt(n)$ is simple for $n \geq 5$.} Now, by the correspondence theorem (see Theorem 2.28 in \cite{rotman_intro_theory_groups1995}), $N \unlhd G$ is a maximal normal subgroup of $G$ if and only if $G/N$ is simple. \added{3}{This is because a normal subgroup of $G/N$ is of the form $M/N$ with $N \unlhd M \unlhd G$, and $M = N$ (in which case $M/N \cong 1$) or $M = G$ (which implies simplicity of $G/N$) if and only if $N$ is maximal in $G$.}
+
+\begin{definition}\label{def:group_extension}
+    Let $N,Q$ be groups. A group $G$ is an \textbf{extension} of $N$ by $Q$ if there is a normal subgroup $N \cong N^* \unlhd G$ with $G/N^* \cong Q$; we write $G = N \mathrel{.} Q$. \added{3}{(This is equivalent to saying that $G$ factors over $N$ with quotient $Q$.)}
+\end{definition}
+
+Here, we think of $Q$ as the quotient after we factor out the ``normal subgroup'' $N$ of $G$. For example, the direct product $G \times H$ is an extension of $G$ by $H$ and an extension of $H$ by $G$; the subgroups $G \times 1$ and $1 \times H$ are normal in $G \times H$. \added{3}{Note that there may be nonisomorphic groups $G$ that satisfy $G = N \mathrel{.} Q$ for given groups $N,Q$. For example, set $N = Q = C_2$. The groups $G = C_4 = \langle a \rangle$ and $\tilde G = C_2 \times C_2$ (where $C_2 = \langle b \rangle$) are nonisomorphic, yet $G/\langle a^2 \rangle \cong Q$ and $\tilde G/\langle (b,1) \rangle \cong Q$ with $\langle a^2 \rangle \cong N \cong \langle (b,1) \rangle$. Thus, there is, in general, no unique way to reconstruct groups from their factors, and this is part of the difficulty of the group extension problem.}
+
+\added{3}{This notation $G = N \mathrel{.} Q$ is ATLAS notation, and is often used in finite group theory. Note that often a cyclic group $C_n$ is simply written as $n$ (e.g. $2 \mathrel{.} \Alt(5) = \Sym(5)$), an elementary abelian $p$-group $(\Z/p\Z)^d$ as $p^d$, and an unspecified group of order $n$ as $[n]$.}
+
+\added{3}{\begin{definition}\label{def:composition_series}
+    A \textbf{composition series} is a finite subgroup series $G = N_0 \rhd N_1 \rhd \dotsb \rhd N_r = 1$ where each $N_{i+1}$ is a \textit{maximal} normal subgroup of $N_i$. The quotient groups $N_i/N_{i+1}$ are the \textbf{composition factors}.
+
+    We say that two composition series $G = N_0 \rhd N_1 \rhd \dotsb \rhd N_r = 1$ and $G = \tilde N_0 \rhd \tilde N_1 \rhd \dotsb \rhd \tilde N_{\tilde r} = 1$ of a group $G$ are \textbf{equivalent} if there is a bijection between the composition factors such that corresponding composition factors are isomorphic.
+\end{definition}
+
+Clearly, if $G = N_0 \rhd N_1 \rhd \dotsb \rhd N_r = 1$ is a composition series, then the composition factors $N_i/N_{i+1}$ are simple, since the $N_{i+1}$ are maximal in $N_i$. Moreover, if $G$ is finite, then a composition series exists, since maximal subgroups exist (and the groups in the series decrease in size).
+
+\begin{example}\label{eg:composition_series}
+    Consider the cyclic group $C_{12} = \langle a \rangle$. Two composition series are $C_{12} \rhd \langle a^2 \rangle \rhd \langle a^4 \rangle \rhd 1$ and $C_{12} \rhd \langle a^2 \rangle \rhd \langle a^6 \rangle \rhd 1$. The composition factors of the first series are $C_{12}/\langle a^2 \rangle \cong C_2$, $\langle a^2 \rangle/\langle a^4 \rangle \cong C_2$ and $\langle a^4 \rangle/1 \cong C_3$, while the composition factors of the second series are $C_{12}/\langle a^2 \rangle \cong C_2$, $\langle a^2 \rangle/\langle a^6 \rangle \cong C_3$ and $\langle a^6 \rangle/1 \cong C_2$. Both composition series have the same length, 3, and the composition factors can be paired up, so the two series are equivalent.
+\end{example}
+
+The amazing fact is that for every group (possibly infinite) that has a composition series, every composition series is equivalent! This is the Jordan-H\"older theorem, which is proven as Theorem 5.12 in \cite{rotman_intro_theory_groups1995}:
+
+\begin{theorem}[Jordan-H\"older]\label{thm:jordan_holder}
+    Any two composition series of a group $G$ are equivalent.
+\end{theorem}
+
+A fun corollary of this result is the fundamental theorem of arithmetic:
+
+\begin{corollary}[Fundamental theorem of arithmetic]\label{cor:fundamental_thm_arithmetic}
+    An integer $n \geq 2$ has a unique factorisation as a product of primes.
+\end{corollary}
+
+\begin{proof}
+    We apply \autoref{thm:jordan_holder} to the group $C_n = \langle a \rangle$. First note that $C_n$ has a composition series $C_n = N_0 \rhd N_1 \rhd \dotsb \rhd N_r = 1$ with each $N_i/N_{i+1}$ simple. Since all subgroups of $C_n$ are cyclic, we have that each $N_i = \langle a^{n_i} \rangle$, and $N_i/N_{i+1} = \langle a^{n_i} \rangle/\langle a^{n_{i+1}} \rangle \cong C_{n_{i+1}/n_i}$ is simple, thus $n_{i+1}/n_i = p_{i+1}$ for some prime $p_{i+1}$. But then $1 = \langle a^n \rangle$ and $n_0 = 1$, so
+    $$n = n_r = (n_1/n_0)(n_2/n_1) \dotsb (n_r/n_{r-1}) = p_1 p_2 \dotsb p_r,$$
+    so $n$ has a factorisation into primes.
+
+    Now, any product of primes $p_i$ that equals $n$ gives rise to a composition series: if $n = p_1 \dotsb p_r$, then $G = \langle a \rangle \rhd \langle a^{p_1} \rangle \rhd \langle a^{p_1 p_2} \rangle \rhd \dotsb \rhd \langle a^{p_1 \dotsb p_r} \rangle = 1$ is a composition series (since the quotient groups have prime order $p_i$, thus simple). Then by Jordan-H\"older, any two composition series are equivalent, so the composition factors of the two series are isomorphic after permutation, and it follows that the primes in the resulting factorisations are the same up to rearrangement.
+\end{proof}
+
+Another consequence of the Jordan-H\"older theorem is that if $G$ is a group with composition series $G = N_0 \rhd N_1 \rhd \dotsb \rhd N_r = 1$ and composition factors $N_{i-1}/N_i = Q_i$, then $N_{i-1} = N_i \mathrel{.} Q_i$ and thus
+$$G = N_0 = N_1 \mathrel{.} Q_1 = \dotsb = ((\dotsb(N_r \mathrel{.} Q_r)\mathrel{.}\dotsb )\mathrel{.} Q_2)\mathrel{.} Q_1 = ((\dotsb(Q_r \mathrel{.} Q_{r-1})\mathrel{.} \dotsb)\mathrel{.} Q_2)\mathrel{.} Q_1 = Q_r \mathrel{.} \dotsb \mathrel{.} Q_1,$$
+with the composition factors $Q_i$ determined uniquely by $G$. Thus if we knew all finite simple groups, and we could solve the extension problem, then we could classify all finite groups.
+
+Now, the extension problem asks one to ``determine'' all groups $G$ such that $G/N \cong Q$ for given $N,Q$. One such approach is that we may construct a multiplication table for any such $G$; \cite{rotman_intro_theory_groups1995} notes that Schreier solved the problem in this sense. However, if we require that the isomorphism classes of $G$ can be characterised, \cite{rotman_intro_theory_groups1995} notes that no solution is known. On the other hand, the classification of finite simple groups is complete, and the following may be found in \cite{solomon2018}:
+
+\begin{theorem}[Classification of finite simple groups]\label{thm:cfsg}
+    Every finite simple group is isomorphic to one of the following:
+    \begin{enumerate}[(a)]
+        \item a cyclic group $C_p$ of prime order $p$,
+        \item an alternating group $\Alt(n)$ of degree $n \geq 5$,
+        \item a simple group of \textbf{Lie type}, or
+        \item one of 26 \textbf{sporadic simple groups}.
+    \end{enumerate}
+\end{theorem}}
+
+\subsection{Semidirect products and wreath products}
+
+Recall again that for groups $G,N$, their \textbf{direct product} is the group $G \times N$ with underlying set the Cartesian product $G \times N$ and group operation $(g,n)(h,m) = (gh,nm)$ for $g,h \in G$ and $n,m \in H$. Now, in some scenarios, the underlying set of a group is naturally the Cartesian product $G \times N$, but the group operation is not the direct product. For example, the underlying set of the dihedral group $D_{2n} = \{1,r,\dotsc,r^{n-1},s,sr,\dotsc,sr^{n-1}\}$ is naturally $C_2 \times C_n = \{1,s\} \times \{1,r,\dotsc,r^{n-1}\}$ via the map $(s^a,r^b) \mapsto s^ar^b \in D_{2n}$. If $G$ acts on $N$ while respecting the group structure on $N$, we can define a more general type of product on the set $G \times N$, called the \textit{semidirect product}, that turns it into a group.
+
+\begin{definition}\label{def:semidirect_product}
+    Let $G,N$ be groups and suppose $G$ acts on $N$ via a homomorphism $\varphi : G \to \Aut(N)$. The \textbf{semidirect product} of $G$ and $N$ (with respect to $\varphi$), denoted $G \ltimes_\varphi N$ (or simply $G \ltimes N$ if clear from context), is a group with underlying set the Cartesian product $G \times N$ and group operation $(g,n)(h,m) = (gh,n^hm)$ for $g,h \in G$ and $n,m \in N$.
+\end{definition}
+
+We omit the proof that $G \ltimes N$ is a group, but observe that $|G \ltimes N| = |G||N|$, and for $g \in G$ and $n,m \in N$, we have $(nm)^g = n^g m^g$ and $(n^{-1})^g = (n^g)^{-1}$ since $\varphi(g) \in \Aut(N)$. Moreover, the identity in $G \ltimes N$ is $(1,1)$, and inverses are given by $(g,n)^{-1} = (g^{-1},(n^{-1})^{g^{-1}}) = (g^{-1},(n^{g^{-1}})^{-1})$. Note that some sources (such as \cite{dixon_mortimer_perm_groups1996}) alternatively define the semidirect product as $N \rtimes G$ (with underlying set $N \times G$) with group operation $(n,g)(m,h) = (nm^{g^{-1}},gh)$.
+
+The semidirect product $G \ltimes N$ has \added{3}{a subgroup $G^* = \{(g,1) : g \in G\} \cong G$ and} a normal subgroup $N^* = \{(1,n) : n \in N\} \cong N$, since $(g,m)^{-1}(1,n)(g,m) = (g^{-1},(m^{-1})^{g^{-1}})(g,n^gm) = (1,m^{-1}n^gm) \in N^*$ for $g \in G$ and $n,m \in N$. Note that when $\varphi$ is the trivial map (i.e. $g \mapsto 1_{\Aut(N)}$ for all $g \in G$), we recover the direct product, since $n^h = n$ for all $n \in N$ and $h \in G$.
+
+\begin{example}\label{eg:D8_semidirect_product}
+    The dihedral group $D_8 = \{1,r,r^2,r^3,s,sr,sr^2,sr^3\}$ of symmetries of a square can be realised as a semidirect product $C_2 \ltimes C_4$, where $C_2 = \{1,s\}$ acts on $C_4 = \{1,r,r^2,r^3\}$ by $1 \mapsto ()$ and $s \mapsto (r,r^3)$ (inversion). The isomorphism $C_2 \ltimes C_4 \to D_8$ is then simply $(g,h) \mapsto gh \in D_8$ (for $g \in C_2$ and $h \in C_4$). An interpretation of this is: to compose two symmetries $s^ar^b$ and $s^ur^v$ in $D_8$, the reflection components compose directly (to yield $s^{a+u}$), but the rotation component may be affected (yielding the direct composition $(r^b)^{s^u} r^v = r^{b+v}$ if $s^u = 1$, or $r^{-b+v}$ otherwise).
+
+    We can verify that this is consistent with our permutation representation $r \sim (1,2,3,4)$ and $s \sim (1,4)(2,3)$ for $D_8$ in \autoref{eg:action_D8_on_square}. Note that in $C_2 \ltimes C_4$, $(s,1)(1,r) = (s1,1^1r) = (s,r)$ and $(1,r)(s,1) = (1s,r^s1) = (s,r^3)$. In the permutation representation, $sr = (2,4)$ and $(r,s) = (1,3) = sr^3$, which is compatible with the isomorphism $C_2 \ltimes C_4 \to D_8$ above.
+
+    This generalises to the dihedral group $D_{2n}$, which is isomorphic to the semidirect product $C_2 \ltimes C_n$ where $C_2 = \{1,s\}$ acts on $C_n = \{1,r,\dotsc,r^{n-1}\}$ by $1 \mapsto ()$ and $s \mapsto (r^a \mapsto r^{-a})$ (inversion). The isomorphism $C_2 \ltimes C_n \to D_{2n}$ is $(g,h) \mapsto gh \in D_{2n}$; \added{3}{$D_{2n}$ thus has a normal subgroup isomorphic to $C_n$ (which is the group of rotations).}
+\end{example}
+
+Semidirect products are related to the notion of a split extension.
+
+\begin{definition}\label{def:split_extension}
+    If $G$ is a group and $Q,N$ are subgroups with $N \unlhd G$, $G = QN$ and $Q \cap N = 1$, then $G$ is a \textbf{split extension} of $N$ by $Q$, and write $G = N : Q$. \added{3}{We say that $G$ \textbf{splits} over $N$.} (Recall that $QN = \{qn : q \in Q,n \in N\}$.)
+\end{definition}
+
+\begin{lemma}\label{lem:split_extensions_are_semidirect_products}
+    If $G = N : Q$ for $N,Q \leq G$, then $G \cong Q \ltimes_\varphi N$ where $\varphi : Q \to \Aut(N)$ is the conjugation action given by $n^g = g^{-1}ng$ for $n \in N$ and $g \in Q$.
+\end{lemma}
+
+Note that the order of the factors are reversed in $N : Q$ compared to $Q \ltimes N$. This follows from the fact that the semidirect product is alternatively defined as $N \rtimes Q$, as seen earlier. We now prove the above lemma:
+
+\begin{proof}
+    Consider the map $\psi : Q \ltimes_\varphi N \to N : Q$ with $(g,n) \mapsto gn$. Note that an element of $N : Q = QN$ can be uniquely expressed as $gn$ with $g \in Q$ and $n \in N$: suppose $gn = hm$ for $g,h \in Q$ and $n,m \in N$. Then $Q \ni h^{-1}g = mn^{-1} \in N$, so $h = g$ and $m = n$ since $Q \cap N = 1$. Thus $\psi$ is clearly a bijection.
+
+    Now for $(g,n),(h,m) \in Q \ltimes_\varphi N$,
+    $$\psi((g,n)(h,m)) = \psi((gh,n^hm)) = ghn^hm = gh(h^{-1}nh)m = (gn)(hm) = \psi((g,n))\psi((h,m)),$$
+    so $\psi$ is a homomorphism, thus an isomorphism.
+\end{proof}
+
+The proof of this lemma also allows us to see that the \textit{split extension} $N : Q$ is indeed an \textit{extension} of $N$ by $Q$ (see \autoref{def:group_extension}), since $N \unlhd G$ with $G/N \cong Q$ via the homomorphism $\varphi : G \to Q$ where $qn \mapsto q$. Well-definition follows from the unique decomposition of elements in $G = N : Q = QN$ in the proof above; indeed $\varphi((gn)(hm)) = \varphi(gh(h^{-1}nh)m) = gh = \varphi(gn)\varphi(hm)$ for $gn,hm \in QN$ since $h^{-1}nh \in N \unlhd G$; finally $\varphi$ is clearly surjective and its kernel is clearly $N$, so the result follows from the first isomorphism theorem.
+
+\added{3}{Now, \autoref{eg:D8_semidirect_product} shows that the semidirect product construction $G \ltimes_\varphi N$ may lead to nonisomorphic groups with different choice of $\varphi$, so as with general extensions, split extensions are not unique. Suppose $D_8 \cong C_2 \ltimes_\varphi C_4$, so that $D_8 = C_4 \mathrel{.} C_2$. However, the direct product $C_2 \times C_4$ is also a split extension (semidirect product) that is not isomorphic to $D_8$ (one is abelian, the other is not).}
+
+A special type of semidirect product, called the wreath product, plays an important role in the study of primitive \added{3}{and imprimitive} permutation groups.
+
+\added{3}{\begin{definition}\label{def:function_group}
+    Let $G$ be a group and $X$ a set. Then $G^X$ is the \textbf{group of functions $X \to G$}, which is a group under pointwise multiplication: for $\omega,\eta \in G^X$ and $x \in X$, $\omega\eta(x) = \omega(x)\eta(x) \in G$.
+\end{definition}
+
+The proof that $G^X$ forms a group is straightforward; the identity is $1$, defined by $x \mapsto 1 \in G$; the inverse is defined pointwise. Note that in this context, $G^X$ does not denote the image of $G$ under an action on $X$.
+
+\begin{definition}\label{def:wreath_product}
+    Given groups $G$ and $H$ and suppose $G$ acts on $\Omega \neq \emptyset$. Then the \textbf{wreath product} $H \wr_\Omega G$ of $H$ by $G$ is the semidirect product $G \ltimes H^\Omega$ where $G$ acts on $H^\Omega$, with $\omega^g \in H^\Omega$ given by $\alpha \mapsto \omega(\alpha^{g^{-1}})$ for $\omega \in H^\Omega$ and $g \in G$.
+
+    The \textbf{base group} of the wreath product $H \wr_\Omega G = G \ltimes H^\Omega$ is the subgroup $\{(1,\omega) : \omega \in H^\Omega\} \cong H^\Omega$.
+\end{definition}
+
+Note that for $\omega \in H^\Omega$, $\alpha \in \Omega$ and $g,h \in G$, $\omega^{gh}(\alpha) = \omega(\alpha^{h^{-1}g^{-1}}) = \omega^g(\alpha^{h^{-1}}) = (\omega^g)^h(\alpha)$, so $\omega^{gh} = (\omega^g)^h$. Moreover, $\omega^1(\alpha) = \omega(\alpha^1) = \omega(\alpha)$, so $\omega^1 = \omega$; together, these imply that this is indeed a $G$-action. If $\varphi$ is the $G$-action on $H^\Omega$ in this definition, then indeed $\varphi : G \to \Aut(H^\Omega)$, so that we have a semidirect product: for $\omega,\eta \in H^\Omega$, $\alpha \in \Omega$ and $g \in G$,
+$$\omega^g\eta^g(\alpha) = \omega^g(\alpha)\eta^g(\alpha) = \omega(\alpha^{g^{-1}})\eta(\alpha^{g^{-1}}) = \omega\eta(\alpha^{g^{-1}}) = (\omega\eta)^g(\alpha),$$
+so $(\omega\eta)^g = \omega^g\eta^g$, as required. Note that $|H \wr_\Omega G| = |H|^{|\Omega|} |G|$.
+
+In the case that $\Omega = [n]$, we may identify the base group of the wreath product $H \wr_\Omega G$ with the direct product $H^n$ (via the isomorphism $H^{\Omega} \to H^n$ where $(\omega : \Omega \to H) \mapsto (\omega(1),\dotsc,\omega(n))$), so that $H \wr_\Omega G = G \ltimes H^n$. The action of $G$ on $H^n$ corresponds to permuting components: $g \in G$ acts on $(\omega_1,\dotsc,\omega_n) \in H^n$ by permuting components according to $g$, with $(\omega_1,\dotsc,\omega_n)^g = (\omega_{1_g},\dotsc,\omega_{n_g})$ where $i_g = i^{g^{-1}}$. Then an element of $H \wr_\Omega G$ is $(g,\omega_1,\dotsc,\omega_n)$ with $g \in G$ and each $\omega_i \in H$, and the product in $H \wr_\Omega G$ is given by
+$$(g,\omega_1,\dotsc,\omega_n)(h,\eta_1,\dotsc,\eta_n) = (gh,\omega_{1_h}\eta_1,\dotsc,\omega_{n_h}\eta_n)$$
+where each $i_h = i^{h^{-1}}$. If we further have $G = \Sym(n)$ which acts naturally on $[n]$, then we write $H \wr \Sym(n)$ instead of $H \wr_\Omega \Sym(n)$.
+
+We discuss two important actions of the wreath product. The imprimitive action is natural and relates to imprimitive groups, while the product action is important in the classification of finite primitive groups.
+
+\begin{definition}\label{def:imprimitive_action}
+    Suppose $G$ acts on $\Omega$ and $H$ acts on $\Gamma$. Let $W = H \wr_\Omega G$; the \textbf{imprimitive action} of $W$ on $\Omega \times \Gamma$ is given by the following: for $(g,\omega) \in W = G \ltimes H^\Omega$ and $(\alpha,\gamma) \in \Omega \times \Gamma$ we define
+    $$(\alpha,\gamma)^{(g,\omega)} = (\alpha^g,\gamma^{\omega(\alpha^g)}).$$
+\end{definition}
+
+This is indeed an action: for $(\alpha,\gamma) \in \Omega \times \Gamma$ and $(g,\omega),(h,\eta) \in W$,
+$$((\alpha,\gamma)^{(g,\omega)})^{(h,\eta)} = (\alpha^g,\gamma^{\omega(\alpha^g)})^{(h,\eta)} = (\alpha^{gh},\gamma^{\omega(\alpha^g)\eta(\alpha^{gh})}) = (\alpha^{gh},\gamma^{\omega^h\eta(\alpha^{gh})}) = (\alpha,\gamma)^{(gh,\omega^h\eta)} = (\alpha,\gamma)^{(g,\omega)(h,\eta)}$$
+since $\omega^h\eta(\alpha^{gh}) = \omega^h(\alpha^{gh})\eta(\alpha^{gh}) = \omega(\alpha^g)\eta(\alpha^{gh})$. Also, $(\alpha,\gamma)^{(1,1)} = (\alpha^1,\gamma^{1(\alpha^1)}) = (\alpha,\gamma^{1_H}) = (\alpha,\gamma)$.
+
+In the case that $\Omega = [n]$, using the identification $H^\Omega \to H^n$ from above, the imprimitive action corresponds to $(i,\gamma)^{(g,\omega_1,\dotsc,\omega_n)} = (i^g,\gamma^{\omega_{i^g}})$ for $(i,\gamma) \in \Omega \times \Gamma$, $g \in G$ and $(\omega_1,\dotsc,\omega_n) \in H^n$.
+
+\begin{proposition}
+    Suppose $G$ acts on $\Omega$ via $\varphi_G$ and $H$ acts on $\Gamma$ via $\varphi_H$. Let $\hat\varphi$ be the imprimitive action of $W = H \wr_\Omega G$ on $\Omega \times \Gamma$. Then $\Ker\hat\varphi = \Ker\varphi_G \times \{\omega \in H^\Omega : \omega[\Omega] \subseteq \Ker\varphi_H\}$. Thus, the imprimitive action $\hat\varphi$ of $W = H \wr_\Omega G$ on $\Omega \times \Gamma$ is faithful if and only if the $G$-action $\varphi$ and $H$-action $\tilde\varphi$ are both faithful.
+\end{proposition}
+
+\begin{proof}
+    Note that
+    \begin{align*}
+        \Ker\hat\varphi & = \{(g,\omega) \in W : (\alpha^g,\gamma^{\omega(\alpha^g)}) = (\alpha,\gamma)^{(g,\omega)} = (\alpha,\gamma)\ \text{for all}\ (\alpha,\gamma) \in \Omega \times \Gamma\}      \\
+                        & = \{(g,\omega) \in W : g \in G_\alpha\ \text{for all}\ \alpha \in \Omega\ \text{and}\ \omega(\alpha) \in H_\gamma\ \text{for all}\ (\alpha,\gamma) \in \Omega \times \Gamma\} \\
+                        & = \{(g,\omega) \in W : g \in \Ker\varphi_G\ \text{and}\ \omega(\alpha) \in \Ker\varphi_H\ \text{for all}\ \alpha \in \Omega\}                                                 \\
+                        & = \Ker\varphi_G \times \{\omega \in H^\Omega : \omega[\Omega] \subseteq \Ker\varphi_H\}.
+    \end{align*}
+    Then if $\varphi_G,\varphi_H$ are faithful (i.e. $\Ker\varphi_G = 1_G$ and $\Ker\varphi_H = 1_H$), then $\omega[\Omega] \subseteq 1_H$ if and only if $\omega = 1 \in H^\Omega$, so $\Ker\hat\varphi = 1_G \times 1_{H^\Omega} = 1_W$, and the imprimitive action is faithful. Conversely, if the imprimitive action is faithful, then $\Ker\varphi_G = 1_G$ and $\{\omega \in H^\Omega : \omega[\Omega] \subseteq \Ker\varphi_H\} = 1_{H^\Omega}$, so $\Ker\varphi_H = 1_H$ (consider a constant map in $H^\Omega$) and the result follows.
+\end{proof}
+
+Now, the image $W^{\Omega \times \Gamma}$ of the imprimitive action is a subgroup of $\Sym(\Omega \times \Gamma)$. So, if $G \leq \Sym(\Omega)$ and $H \leq \Sym(\Gamma)$ have the natural action (which is faithful), then $W$ embeds as a subgroup of $\Sym(\Omega \times \Gamma)$.
+
+\begin{lemma}\label{lem:imprimitive_action_is_imprimitive}
+    Suppose $G$ acts transitively on $\Omega$ and $H$ acts primitively on $\Gamma$, with $|\Omega|,|\Gamma| > 1$. Then the imprimitive action of $W = H \wr_\Omega G$ on $\Omega \times \Gamma$ is imprimitive with $\Sigma = \{\{\alpha\} \times \Gamma : \alpha \in \Omega\}$ a system of imprimitivity.
+\end{lemma}
+
+\begin{proof}
+    The action is transitive: for $(\alpha,\gamma),(\tilde\alpha,\tilde\gamma) \in \Omega \times \Delta$, we have $\tilde\alpha = \alpha^g$ for some $g \in G$, and $\tilde\gamma = \gamma^h$ for some $h \in H$. Then let $\omega \in H^\Omega$ be the constant map $\beta \mapsto h$; then $(\alpha,\gamma)^{(g,\omega)} = (\alpha^g,\gamma^{\omega(\alpha^g)}) = (\tilde\alpha,\gamma^h) = (\tilde\alpha,\tilde\gamma)$.
+
+    Now each $\Delta = \{\alpha\} \times \Gamma$ is a block for $\alpha \in \Omega$ with $|\Delta| = |\Gamma|$; it is nontrivial as long as $|\Omega|,|\Gamma| > 1$ so that $|\Delta| > 1$ and $\Delta \neq \Omega \times \Gamma$. We verify that it is a block: for any $(g,\omega) \in W$,
+    $$\Delta^{(g,\omega)} = \{(\alpha,\gamma)^{(g,\omega)} : \gamma \in \Gamma\} = \{(\alpha^g,\gamma^{\omega(\alpha^g)}) : \gamma \in \Gamma\} = \{\alpha^g\} \times \Gamma^{\omega(\alpha^g)}$$
+    with $\Gamma^{\omega(\alpha^g)} = \Gamma$ or $\Gamma^{\omega(\alpha^g)} \cap \Gamma = \emptyset$ by primitivity of $H^\Gamma$. In the first case, and assuming $\alpha^g = \alpha$, then $\Delta^{(g,\omega)} = \{\alpha\} \times \Gamma = \Delta$; otherwise, $\Gamma^{\omega(\alpha^g)} \cap \Gamma = \emptyset$ or $\alpha^g \neq \alpha$, in which case $\Delta^{(g,\omega)} \cap \Delta = \emptyset$. So $W^{\Omega \times \Gamma}$ is imprimitive as long as $|\Omega|,|\Gamma| > 1$.
+\end{proof}}
+
+\added{3}{If $G \leq \Sym(n)$ and $H \leq \Sym(m)$, consider the wreath product $W = H \wr_{[n]} G = G \ltimes H^n$. Note that $H$ acts on the ordered list $[1,\dotsc,m]$; let the $i$th copy of $H$ act on $X_i = [(i-1)m+1,\dotsc,im]$ (in the natural way). Let $X = \bigcup_{1 \leq i \leq n} X_i = [1,\dotsc,mn]$. Since $G$ acts on $\{1,\dotsc,n\}$, we now let $G$ act on $\{X_1,\dotsc,X_n\}$ by permutation. This allows us to consider $W$ as a subgroup of $\Sym(X) = \Sym(mn)$ instead of $\Sym([n] \times [m])$ (using the map $[n] \times [m] \to [mn]$ where $(i,j) \mapsto (i-1)m + j$). In particular, the $X_i$ form blocks and we have a block system $\Sigma = [X_1,\dotsc,X_n]$; the imprimitive action of $(g,\omega_1,\dotsc,\omega_n) \in W$ corresponds to permuting within each block $X_i$ by $\omega_i \in H \leq \Sym(m)$, then permuting the blocks in $\Sigma$ by $g \in G \leq \Sym(n)$.}
+
+\added{3}{\begin{example}\label{eg:S2_wr_S2_isom_D8}
+        Let $G = H = \Sym(2)$ and consider the wreath product $W = H \wr G = \Sym(2) \wr \Sym(2)$. Since $H = \Sym(2)$ is primitive (\autoref{eg:natural_action_Sn_blocks}) and $G = \Sym(2)$ is transitive, \autoref{lem:imprimitive_action_is_imprimitive} shows that $W$ acts imprimitively on $\Omega = \{1,2\} \times \{1,2\}$ with nontrivial block system $\Sigma = \{\{1\} \times \{1,2\},\{2\} \times \{1,2\}\}$.
+
+        Now relabel $\Omega$ using $\tau : \Omega \to [4]$, where $(1,1) \mapsto 1$, $(1,2) \mapsto 3$, $(2,1) \mapsto 2$, and $(2,2) \mapsto 4$. Then $W$ acts imprimitively on $[4]$ in the following way: for $(g,\omega_1,\omega_2) \in W$ for $g,\omega_1,\omega_2 \in \Sym(2)$, if $\tau((m,n)) = i$ for $m,n \in [2]$, then we set
+        $$i^{(g,\omega_1,\omega_2)} = \tau((m,n)^{(g,\omega_1,\omega_2)}) = \tau((m^g,n^{\omega_{m^g}})).$$
+        For example, $1^{((1,2),(1,2),())} = \tau((1,1)^{((1,2),(1,2),())}) = \tau((1^{(1,2)},1^{()})) = \tau((2,1)) = 2$ but $1^{((1,2),(),(1,2))} = \tau((1^{(1,2)},1^{(1,2)})) = \tau((2,2)) = 4$. Since both actions are faithful, the imprimitive action is faithful and embeds into $\Sym(4)$. Calculation shows the following (see appendix for \texttt{GAP} code):
+        \[\begin{array}{c|c|c|c|c|c|c}
+                w \in W             & 1^w & 2^w & 3^w & 4^w & \psi(w) \in \Sym(4) & \tilde\psi(w) \in D_8 \\\hline
+                ((),(),())          & 1   & 2   & 3   & 4   & ()                  & 1                     \\
+                ((),(),(1,2))       & 1   & 4   & 3   & 2   & (2,4)               & sr                    \\
+                ((),(1,2),())       & 3   & 2   & 1   & 4   & (1,3)               & sr^3                  \\
+                ((),(1,2),(1,2))    & 3   & 4   & 1   & 2   & (1,3)(2,4)          & r^2                   \\
+                ((1,2),(),())       & 2   & 1   & 4   & 3   & (1,2)(3,4)          & sr^2                  \\
+                ((1,2),(),(1,2))    & 4   & 1   & 2   & 3   & (1,4,3,2)           & r^3                   \\
+                ((1,2),(1,2),())    & 2   & 3   & 4   & 1   & (1,2,3,4)           & r                     \\
+                ((1,2),(1,2),(1,2)) & 4   & 3   & 2   & 1   & (1,4)(2,3)          & s
+            \end{array}\]
+        The column with $\psi$ denotes an embedding $\psi : W \to \Sym(4)$, and the column with $\tilde\psi$ denotes an isomorphism $\tilde\psi : W \to D_8$, the dihedral group comprising symmetries of a square (see \autoref{eg:action_D8_on_square}; recall the embedding $D_8 = \langle r,s \rangle \to \Sym(4)$ via $r \mapsto (1,2,3,4)$ and $s \mapsto (1,4)(2,3)$).
+
+        The corresponding system of imprimitivity is $\Sigma = [[1,3],[2,4]]$ (where we impose an ordering); for $w = (g,\omega_1,\omega_2) \in W$, we permute the first block $[1,3]$ according to $\omega_1$ and the second block $[2,4]$ according to $\omega_2$, then permute the blocks according to $g$, and consider the resulting permutation. (For example, $((1,2),(1,2),()) \in W$ corresponds to starting with $\Sigma = [[1,3],[2,4]]$, then permuting $[1,3]$ according to $\omega_1 = (1,2)$ and $[2,4]$ according to $\omega_2 = ()$ to get $[3,1]$ and $[2,4]$ respectively, then permuting blocks according to $g = (1,2)$ to get $[[2,4],[3,1]]$; the resulting permutation is $(1,2,3,4)$.)
+
+        Using generators, we have that $W = \langle(1,2)\rangle \ltimes (\langle(1,2)\rangle \times \langle(1,2)\rangle)$. Note that $\langle(1,2)\rangle \times \langle(1,2)\rangle \cong \langle(1,3),(2,4)\rangle \leq \Sym(4)$; the group $\langle(1,2)\rangle$ acts on $\langle(1,2)\rangle \times \langle(1,2)\rangle$ by permuting components, so if we apply the relabelling $\tau$ we may see that $\langle(1,2)\rangle \ltimes (\langle(1,2)\rangle \times \langle(1,2)\rangle)$ is permutation isomorphic to $\langle(1,2)(3,4)\rangle \ltimes \langle(1,3),(2,4)\rangle$ where $\langle(1,2)(3,4)\rangle$ acts naturally on $\langle(1,3),(2,4)\rangle$. (Note that $(1,2)(3,4)$ acts naturally on the elements in $\Sigma = [[1,3],[2,4]]$ in the same way that $(1,2)$ permutes the blocks themselves.) So (omitting some details) we get an isomorphism
+        \begin{multline*}
+            \Sym(2) \wr \Sym(2) = \langle(1,2)\rangle \ltimes (\langle(1,2)\rangle \times \langle(1,2)\rangle) \cong \langle(1,2)(3,4)\rangle \ltimes \langle(1,3),(2,4)\rangle \\
+            \cong \langle(1,2)(3,4),(1,3),(2,4)\rangle \cong \langle sr^2,sr,sr^3 \rangle = D_8.
+        \end{multline*}
+    \end{example}}
+
+\added{3}{\begin{definition}\label{def:product_action}
+    Suppose $G$ acts on $\Omega$ and $H$ acts on $\Gamma$. Let $W = H \wr_\Omega G$; the \textbf{product action} of $W$ on $\Gamma^\Omega = \{\phi \mid \phi : \Omega \to \Gamma\}$ is given by the following: for $(g,\omega) \in W = G \ltimes H^\Omega$ and $\phi \in \Gamma^\Omega$ we define $\phi^{(g,\omega)} \in \Gamma^\Omega$ by
+    $$\alpha \mapsto \phi(\alpha^{g^{-1}})^{\omega(\alpha)}.$$
+\end{definition}
+
+The product action is indeed a $W$-action. First note that for $\phi \in \Gamma^\Omega$ and $\alpha \in \Omega$, $\phi^{(1,1)}(\alpha) = \phi(\alpha^1)^{1(\alpha)} = \phi(\alpha)$, so $\phi^{(1,1)} = \phi$. Then for $(g,\omega),(h,\eta) \in W$ and $\alpha \in \Omega$,
+$$(\phi^{(g,\omega)})^{(h,\eta)}(\alpha) = \phi^{(g,\omega)}(\alpha^{h^{-1}})^{\eta(\alpha)} = \phi(\alpha^{h^{-1}g^{-1}})^{\omega(\alpha^{h^{-1}})\eta(\alpha)} = \phi(\alpha^{h^{-1}g^{-1}})^{\omega^h\eta(\alpha)} = \phi^{(gh,\omega^h\eta)}(\alpha),$$
+so $(\phi^{(g,\omega)})^{(h,\eta)} = \phi^{(gh,\omega^h\eta)}$. The degree of the product action of $W$ is $|\Gamma|^{|\Omega|}$.
+
+In the case that $\Omega = [n]$, we may identify $\Gamma^\Omega$ with $\Gamma^n$ via $(\phi : \Omega \to \Gamma) \mapsto (\phi(1),\dotsc,\phi(n)) \in \Gamma^n$. Then the product action corresponds to $(\phi_1,\dotsc,\phi_n)^{(g,\omega_1,\dotsc,\omega_n)} = (\phi_{1_g}^{\omega_1},\dotsc,\phi_{n_g}^{\omega_n})$ for $(\phi_1,\dotsc,\phi_n) \in \Gamma^n$, $g \in G$ and $(\omega_1,\dotsc,\omega_n) \in H^n$, where each $i_g = i^{g^{-1}}$. Thus, we permute the components of $(\phi_1,\dotsc,\phi_n)$ according to $g$, then apply the permutations $\omega_i$ to each component.}
+
+\added{3}{\begin{example}\label{eg:product_action_Sm_subsets}
+        Let $k \leq m$ and define an action of $\Sym(m)$ on $\binom{[m]}{k}$, the $k$-element subsets of $[m]$, by the following: for $\sigma \in \Sym(m)$ and $\{i_1,\dotsc,i_k\} \subseteq [m]$, let
+        $$\{i_1,\dotsc,i_k\}^\sigma = \{i_1^\sigma,\dotsc,i_k^\sigma\}.$$
+        This is an action: for $\{i_1,\dotsc,i_k\} \subseteq [m]$ and $\sigma,\tau \in \Sym(m)$, $\{i_1,\dotsc,i_k\}^1 = \{i_1^1,\dotsc,i_k^1\} = \{i_1,\dotsc,i_k\}$ and
+        $$\{i_1,\dotsc,i_k\}^{\sigma\tau} = \{i_1^{\sigma\tau},\dotsc,i_k^{\sigma\tau}\} = \{i_1^\sigma,\dotsc,i_k^\sigma\}^\tau = (\{i_1,\dotsc,i_k\}^\sigma)^\tau.$$
+        The degree of the action is $\binom{m}{k}$.
+
+        Now consider the wreath product $\Sym(m) \wr \Sym(r)$ with the product action, where the action of $H = \Sym(m)$ is the above action on $k$-element subsets $\Gamma = \binom{[m]}{k}$ of $[m]$, and the action of $G = \Sym(r)$ is the natural action on $\Omega = [r]$. Here, the product action of the wreath product has degree $|\binom{[m]}{k}|^{|[r]|} = \binom{m}{k}^r$.
+
+        For example, if $m = 3$, $r = 4$ and $k = 2$, with $g = (1,2,4) \in G$ and $(\omega_1,\omega_2,\omega_3,\omega_4) = ((),(1,2),(1,2,3),(2,3)) \in H^4$, we have (using the identification for $\Omega = [r]$) that
+        \begin{multline*}
+            (\underbrace{\{1,2\}}_{\phi_1},\underbrace{\{2,3\}}_{\phi_2},\underbrace{\{1,2\}}_{\phi_3},\underbrace{\{1,3\}}_{\phi_4})^{((1,2,4),(),(1,2),(1,2,3),(2,3))} = ({\underbrace{\{1,3\}}_{\phi_4}}^{()},{\underbrace{\{1,2\}}_{\phi_1}}^{(1,2)},{\underbrace{\{1,2\}}_{\phi_3}}^{(1,2,3)},{\underbrace{\{2,3\}}_{\phi_2}}^{(2,3)}) \\
+            = (\{1^{()},3^{()}\},\{1^{(1,2)},2^{(1,2)}\},\{1^{(1,3,2)},2^{(1,3,2)}\},\{2^{(2,3)},3^{(2,3)}\}) = (\{1,3\},\{2,1\},\{3,1\},\{3,2\}) \in \Gamma^4.
+        \end{multline*}
+    \end{example}
+
+    % TODO: PRODUCT ACTION FAITHFUL IFF ACTIONS OF EACH GROUP FAITHFUL?
+
+    The following result gives a simple criterion for the product action of a wreath group to be primitive; see Lemma 2.7A in \cite{dixon_mortimer_perm_groups1996} for a proof.
+
+    \begin{proposition}
+        If nontrivial groups $G$ and $H$ act on $\Omega$ and $\Gamma$, then the wreath product $W = H \wr_\Omega G$ is primitive in the product action on $\Gamma^\Omega$ if and only if
+        \begin{enumerate}[(i)]
+            \item $H$ acts primitively but not regularly on $\Gamma$, and
+            \item $\Omega$ is finite and $G$ acts transitively on $\Omega$.
+        \end{enumerate}
+    \end{proposition}}
+
+\subsection{Matrix groups and affine groups}
+
+The notion of an affine group is important for the later discussion and results in this \thesis{}. The following results may be found primarily in \cite{dixon_mortimer_perm_groups1996}.
+
+\begin{definition}\label{def:gl_group}
+    Let $K$ be a field and $V$ be a vector space over $K$. Let $\GL(V)$ be the \textbf{general linear group} over $V$, comprising invertible linear maps $V \to V$; note that $\GL(V) \leq \Sym(V)$, so $\GL(V)$ acts naturally on $V$. When $V$ is finite dimensional, $V \cong K^d$ for some integer $d$, and thus it suffices to consider the general linear group $\GL(K^d)$.
+
+    Invertible linear maps $K^d \to K^d$ (or equivalently $V \to V$ given a choice of basis) may be represented by invertible $d \times d$ matrices in $M_d(K)$, which form the \textbf{general linear group $\GL_d(K)$ over $K$ of degree $d$} which is isomorphic to $\GL(K^d)$ (and thus $\GL(V)$). Alternatively, $\GL_d(K) = \{a \in M_d(K) : \det(a) \neq 0\}$. Note that $\GL_d(K)$ acts on $K^d$ by matrix multiplication: for $a \in \GL_d(K)$ and $u \in K^d$ a row vector, we have $u^a = ua$.
+
+    When $K = \F_q$ is a finite field, we often write $\GL_d(q) = \GL_d(\F_q)$.
+\end{definition}
+
+The following definition comes from representation theory; see \autoref{eg:representations} for the definition of a representation.
+
+\begin{definition}\label{def:irred_subgroup}
+    Let $G \leq \GL_d(K)$ for some field $K$. A \textbf{$G$-invariant subspace} of $K^d$ is a subspace $W \leq K^d$ such that $wa \in W$ for all $w \in W$ and $a \in G$. Note that $0$ and $K^d$ are always $G$-invariant; these are the \textit{trivial invariant subspaces}.
+
+    The subgroup $G \leq \GL_d(K)$ is \textbf{irreducible} if there are no nontrivial $G$-invariant subspaces (of $K^d$). (In other words, the \textit{setwise stabilisers} $G_W = \{a \in G : w^a = wa \in W\ \text{for all}\ w \in W\} \neq G$ for $0 < W < K^d$.)
+\end{definition}
+
+In the language of representation theory, we take $V = K^d$ in the above definition so that $\GL(V) \cong \GL_d(K)$, and the representation $\rho : G \to \GL(V)$ is simply the inclusion map; we identify $\rho$ with $G$, and irreducibility of $G$ corresponds with irreducibility of $\rho$.
+
+\begin{definition}\label{def:affine_transformation}
+    Let $K$ be a field and $d \geq 1$. For an invertible matrix $a \in \GL_d(K)$ and a row vector $v \in K^d$, the corresponding \textbf{affine transformation} $t_{a,v} : K^d \to K^d$ is given by $u \mapsto ua + v$ (where we think of $u \in K^d$ as a row vector).
+\end{definition}
+
+\begin{definition}\label{def:agl}
+    The set of invertible affine transformations of $K^d$ forms a group under composition, called the \textbf{affine general linear group} of dimension $d \geq 1$ over $K$, and denoted by $\AGL_d(K) = \{t_{a,v} : a \in \GL_d(K), v \in K^d\}$.
+
+    When $K = \F_q$ is a finite field, we often write $\AGL_d(q) = \AGL_d(\F_q)$. (Note that for a $d$-dimensional vector space $V$ over $K$, we may similarly define $\AGL(V) = \{t_{a,v} : a \in \GL(V), v \in V\}$ where $t_{a,v} : K \to K$ is given by $u \mapsto u^a + v$.)
+\end{definition}
+
+The following lemma proves that $\AGL_d(K)$ is indeed a group. In particular, it is a \added{3}{2-transitive} subgroup of $\Sym(K^d)$, the group of \textit{all} bijections $K^d \to K^d$. This shows $\AGL_d(K)$ is a \added{3}{primitive} permutation group that acts naturally on $K^d$ (\autoref{prop:2-transitivity_implies_primitivity}); if $K = \F_q$ is finite, $\AGL_d(q)$ has degree $q^d$. The group $\AGL_d(K)$ is of interest as it respects the affine structure on $K^d$.
+
+\begin{lemma}\label{lem:agl_is_subgroup}
+    Let $K$ be a field. The group $\AGL_d(K)$ is a 2-transitive subgroup of $\Sym(K^d)$. In particular, it has identity $1_{\AGL_d(K)} = t_{1,0}$, product $t_{a,v}t_{b,w} = t_{ab,vb+w}$, and inverses $t_{a,v}^{-1} = t_{a^{-1},-va^{-1}}$, for $t_{a,v},t_{b,w} \in \AGL_d(K)$.
+\end{lemma}
+
+\begin{proof}
+    First, we show that $\AGL_d(K) \leq \Sym(K^d)$. Indeed, each $t_{a,v} \in \AGL_d(K)$ is a bijection with inverse $t_{a,v}^{-1} = t_{a^{-1},-va^{-1}}$ with $a^{-1} \in \GL_d(K)$ and $-va^{-1} \in K^d$: for $u \in K^d$,
+    $$(u^{t_{a,v}})^{t_{a^{\scaleto{-1}{3pt}},-va^{\scaleto{-1}{3pt}}}} = (ua + v)^{t_{a^{\scaleto{-1}{3pt}},-va^{\scaleto{-1}{3pt}}}} = (ua + v)a^{-1} - va^{-1} = u$$
+    and similarly $(u^{t_{a^{\scaleto{-1}{3pt}},-va^{\scaleto{-1}{3pt}}}})^{t_{a,v}} = u$. So $\AGL_d(K) \subseteq \Sym(K^d)$ (and is clearly non-empty, since the identity matrix $1 \in \GL_d(K)$ and $0 \in K^d$). This also shows $\AGL_d(K)$ is closed under inversion, since $t_{a,v}^{-1} = t_{a^{-1},-va^{-1}} \in \AGL_d(K)$.
+
+    Now suppose $a,b \in \GL_d(K)$ and $v,w \in K^d$; then the composition
+    $$t_{a,v}t_{b,w} = t_{ab,vb+w} \in \AGL_d(K)$$
+    since $ab \in \GL_d(K)$, $vb + w \in K^d$, and for $u \in K^d$,
+    $$(u^{t_{a,v}})^{t_{b,w}} = (ua + v)b + w = uab + (vb + w) = u^{t_{ab,vb+w}}.$$
+    So indeed $\AGL_d(K) \leq \Sym(K^d)$; in particular, $\AGL_d(K)$ is a group under composition.
+
+    Next we show $\AGL_d(K)$ is 2-transitive. Here, $\Sym(K^d)$ acts naturally on $\Omega = K^d$; since $\AGL_d(K) \leq \Sym(K^d)$, we take the natural action on $K^d$. Clearly $|\Omega| \geq 2$ (since $K$ is a field and $d \geq 1$). Suppose $[\alpha_1,\alpha_2]$ and $[\beta_1,\beta_2]$ are lists of distinct points in $K^d$; then extend $a_1 = \alpha_1 - \alpha_2 \neq 0$ and $b_1 = \beta_1 - \beta_2 \neq 0$ to bases $\{a_1,\dotsc,a_d\}$ and $\{b_1,\dotsc,b_d\}$ of $K^d$. Let $b,c$ be matrices (in $\GL_d(K)$ by construction) with rows $a_1,\dotsc,a_d$ and $b_1,\dotsc,b_d$ respectively.
+
+    Let $c = a^{-1}b \in \GL_d(K) \iff b = ac \iff b_i = a_ic$ for all $1 \leq i \leq d$. Then $\beta_1 - \beta_2 = b_1 = a_1c = (\alpha_1 - \alpha_2)c \iff \beta_1 - \alpha_1 c = \beta_2 - \alpha_2 c$. Let $v = \beta_1 - \alpha_1c = \beta_2 - \alpha_2c \in K^d$, so that $[\beta_1,\beta_2] = [\alpha_1c + v,\alpha_2c + v] = [\alpha_1^{t_{c,v}},\alpha_2^{t_{c,v}}]$ with $t_{c,v} \in \AGL_d(K)$. So $\AGL_d(K)$ is 2-transitive.
+\end{proof}
+
+From this lemma, we see that affine groups arise as semidirect products of general linear groups over the underlying vector space. In particular, $|\AGL_d(K)| = |\GL_d(K)||K|^d$; if $K = \F_q$ is a finite field (with $|\F_q| = q$ a prime power), it can be shown that $|\AGL_d(q)| = q^d(q^d - 1)(q^d - q)\dotsb(q^d - q^{d-1})$ (here, the degree of the permutation group $\AGL_d(q)$ is $q^d$). The case that $q = 2$ is of particular interest, due to a question in \cite{moscatiello_roney-dougal2021} which we investigate.
+
+\begin{proposition}\label{prop:agl_is_semidirect_product}
+    The group $\AGL_d(K)$ is isomorphic to the semidirect product $\GL_d(K) \ltimes_\varphi K^d$ via the action $\varphi$ determined by $v^a = va \in K^d$ for $v \in K^d$ (viewed as a row vector) and $a \in \GL_d(K)$. (So $\AGL_d(K)$ has a subgroup isomorphic to $\GL_d(K)$ and a normal subgroup isomorphic to $K^d$.)
+\end{proposition}
+
+\begin{proof}
+    This follows directly from the isomorphism $t_{a,v} \mapsto (a,v) \in \GL_d(K) \ltimes_\varphi K^d$, since $t_{a,v} t_{b,w} = t_{ab,vb+w}$ in $\AGL_d(K)$ (from \autoref{lem:agl_is_subgroup}) while $(a,v)(b,w) = (ab,v^b+w) = (ab,vb + w)$ in $\GL_d(K) \ltimes_\varphi K^d$ (by \autoref{def:semidirect_product}).
+\end{proof}
+
+\begin{proposition}\label{prop:agl_as_subgrp_of_gl}
+    \begin{enumerate}[(a)]
+        \item The group $\AGL_d(K) \leq \Sym(K^d)$ is permutation isomorphic to the subgroup
+              $$G^* = \left\{
+                  \begin{pmatrix}
+                      a & 0   \\
+                      v & 1_K
+                  \end{pmatrix} : a \in \GL_d(K),v \in K^d\right\} \leq \GL_{d+1}(K) \leq \Sym(\Delta),$$
+              where $\Delta = K^d \times \added{3}{\{1\}} \subseteq K^{d+1}$ is a block under the right-multiplication action \added{3}{of $G^*$} on $K^{d+1}$, and
+        \item $b(\AGL_d(K)) = d + 1$, except that $b(\AGL_1(2)) = 1$ (where $d = 1$ and $K = \F_2$).
+    \end{enumerate}
+\end{proposition}
+
+\begin{proof}
+    \begin{enumerate}[(a)]
+        \item The isomorphism $\psi : \AGL_d(K) \to G^*$ is given by
+              $$t_{a,v} \mapsto \begin{pmatrix}
+                      a & 0 \\
+                      v & 1
+                  \end{pmatrix};$$
+              it is clearly bijective, and indeed $G^* \subseteq \GL_{d+1}(K)$: the rows $a_i \in K^d$ of $a \in \GL_d(K)$ form a basis for $K^d$, so the $\begin{pmatrix}
+                      a_i & 0
+                  \end{pmatrix} \in K^{d+1}$ (viewed as a row vector) are linearly independent for $i = 1,\dotsc,d$. In particular, adding $\begin{pmatrix}
+                      v & 1
+                  \end{pmatrix} \in K^{d+1}$ to this collection clearly preserves linear independence, and thus forms a basis for $K^{d+1}$.
+
+              Recall from \autoref{lem:agl_is_subgroup} that, \added{3}{for $t_{a,v},t_{b,w} \in \AGL_d(K)$, }
+              $$t_{a,v}t_{b,w} = t_{ab,vb+w}$$
+              in $\AGL_d(K)$. \added{3}{This translates to}
+              $$\begin{pmatrix}
+                      a & 0 \\
+                      v & 1
+                  \end{pmatrix}
+                  \begin{pmatrix}
+                      b & 0 \\
+                      w & 1
+                  \end{pmatrix} =
+                  \begin{pmatrix}
+                      ab     & 0 \\
+                      vb + w & 1
+                  \end{pmatrix},$$
+              in $G^*$. \added{3}{Thus} $\psi$ is a homomorphism (and the image $G^*$ is a subgroup of $\GL_{d+1}(K)$).
+
+              Note that $G^* \leq \GL_{d+1}(K)$ acts on $K^{d+1}$ by matrix right-multiplication. In particular, $\Delta$ is a block under this action: for $\begin{pmatrix}
+                      u & 1
+                  \end{pmatrix} \in \Delta$ (viewed as a row vector, with $u \in K^d$), $a \in \GL_d(K)$ and $v \in K^d$, we have $ua + v \in K^d$, so
+              $$\begin{pmatrix}
+                      u & 1
+                  \end{pmatrix}^{\left(
+                  \begin{smallmatrix}
+                          a & 0 \\
+                          v & 1
+                      \end{smallmatrix}\right)} =
+                  \begin{pmatrix}
+                      u & 1
+                  \end{pmatrix}
+                  \begin{pmatrix}
+                      a & 0 \\
+                      v & 1
+                  \end{pmatrix} =
+                  \begin{pmatrix}
+                      ua + v & 1
+                  \end{pmatrix} \in \Delta.$$
+              Then $G^* = G^*_\Delta$, and \autoref{lem:restrict_action_to_block}(b) implies $G^*$ acts on $\Delta$.
+
+              Define $\tau : K^d \to \Delta$ by $u \mapsto
+                  \begin{pmatrix}
+                      u & 1
+                  \end{pmatrix} \in K^{d+1}$ (clearly a bijection). Then for $u \in K^d$ and $t_{a,v} \in \AGL_d(K)$, we have
+              $$\tau(u^{t_{a,v}}) = \tau(ua + v) =
+                  \begin{pmatrix}
+                      ua + v & 1
+                  \end{pmatrix} =
+                  \begin{pmatrix}
+                      u & 1
+                  \end{pmatrix}
+                  \begin{pmatrix}
+                      a & 0 \\
+                      v & 1
+                  \end{pmatrix} = \tau(u)
+                  \begin{pmatrix}
+                      a & 0 \\
+                      v & 1
+                  \end{pmatrix} = \tau(u)^{\left(
+                      \begin{smallmatrix}
+                          a & 0 \\
+                          v & 1
+                      \end{smallmatrix}\right)} = \tau(u)^{\psi(t_{a,v})},$$
+              so $\AGL_d(K)$ and $G^*$ are permutation isomorphic via $\tau$ and $\psi$.
+        \item Note that $B = [e_1,\dotsc,e_{d+1}]$ is a base for $G^*$, where the $(e_i)$ are the standard basis for $K^{d+1}$. This follows from the fact that for $a \in \GL_d(K)$ and $v \in K^d$,
+              $$e_i^{\left(
+                  \begin{smallmatrix}
+                          a & 0 \\
+                          v & 1
+                      \end{smallmatrix}\right)} = e_i
+                  \begin{pmatrix}
+                      a & 0 \\
+                      v & 1
+                  \end{pmatrix} = e_i$$
+              for all $i$ if and only if the $i$th row of the matrix is $e_i$ for all $i$, so the matrix is the identity (and $a = 1,v = 0$). (In fact, any basis for $K^{d+1}$ forms a base for $G^*$.) So $b(\AGL_d(K)) = b(G^*) \leq d + 1$ (using \autoref{lem:perm_isom_base}(c)). If $d = 1$ and $K = \F_2$, note that $[0]$ is a base for $\AGL_1(2)$, since if $0^{t_{a,v}} = 0$ then $v = 0a + v = 0$ and $a = 1$ (since $K^* = 1$).
+
+              Now suppose $B = [u_1,\dotsc,u_d] \subseteq K^d$ are all distinct. Then for $k \leq d$ and with $G = \AGL_d(K)$, we have $G_{u_1,\dotsc,u_d} \leq G_{u_1,\dotsc,u_k}$, so if $G_{u_1,\dotsc,u_d} \neq 1$, then $[u_1,\dotsc,u_k]$ is certainly not a base for $G$. Now we claim that $B$ is not a base for $G$. If $d = 1$ and $K \neq \F_2$, then if $u_1 = 0$, then there is $1 \neq a \in K^*$ such that $0^{t_{a,0}} = 0a + 0 = 0$, so $B$ is not a base for $G$. If $u_1 \neq 0$, then set $u_1 \neq v \in K^*$ (such $v$ exists) and $a = u_1^{-1}(u_1 - v) \in K^*$, then $u_1^{t_{a,v}} = u_1a + v = u_1u_1^{-1}(u_1 - v) + v = u_1$, and $B$ is not a base for $G$.
+
+              Now suppose $d \geq 2$. If $\{u_1,\dotsc,u_d\}$ are linearly independent (and form a basis for $K^d$), let $b \in \GL_d(K)$ be the matrix with rows $u_i$, and let $c$ be the matrix with rows $u_i - v$, where $v = u_1 - u_2 \neq 0$. Since $\Span_K\{u_1 - v,u_2 - v\} = \Span_K\{u_2,2u_2 - u_1\} = \Span_K\{u_1,u_2\}$, it follows that
+              $$\Span_K\{u_1 - v,u_2 - v,\dotsc,u_d - v\} = \Span_K\{u_1,u_2,u_3 - v,\dotsc,u_d - v\} = \Span_K\{u_1,u_2,\dotsc,u_d\} = K^d,$$
+              so $\{u_1 - v,u_2 - v,\dotsc,u_d - v\}$ is linearly independent, and thus $c \in \GL_d(K)$. Now set $a = b^{-1}c \in \GL_d(K)$ (recall $v = u_1 - u_2 \neq 0$); then $t_{a,v} \neq \Id_{K^d}$ satisfies
+              $$u_i^{t_{a,v}} = u_ia + v = u_ib^{-1}c + v = e_ic + v = (u_i - v) + v = u_i$$
+              for $i = 1,\dotsc,d$ (where $e_i$ is the $i$th standard basis vector in $K^d$), and $B$ is not a base for $G$.
+
+              If $\{u_1,\dotsc,u_d\}$ are linearly dependent, let $U = \Span_K\{u_1,\dotsc,u_d\}$ and write $K^d = U \oplus W$ for some nontrivial subspace $W \leq K^d$. Set $v = 0$ and take $a \in \GL(K^d)$ such that $a|_U = \Id_U$ and $a|_W \neq \Id_W$. Then $u_i^{t_{a,v}} = u_ia + v = u_i$ for $i = 1,\dotsc,d$, so that $t_{a,v} \in G_{(B)}$, but $w^{t_{a,v}} = wa + v = wa \neq w$ for some $w \in W$, so $t_{a,v} \neq \Id_{K^d}$. Thus $B$ is not a base for $G$.
+
+              From these two cases, we get that $b(\AGL_d(K)) > d$. So $b(\AGL_d(K)) = d + 1$, as claimed.
+    \end{enumerate}
+\end{proof}
+
+\added{3}{Finally, we look at a few important subgroups of the affine group, which we consider again later. This next result expands upon \autoref{prop:agl_is_semidirect_product}.
+
+    \begin{proposition}\label{prop:subgroups_of_agl}
+        \begin{enumerate}[(a)]
+            \item The general linear group $\GL_d(K) \cong \GL(K^d) = \{t_{a,0} : a \in \GL_d(K)\} \leq \AGL_d(K)$ acts transitively on the nonzero vectors $K^d \setminus 0$.
+            \item The \textbf{translation subgroup} $T = \{t_{1,v} : v \in K^d\} \unlhd \AGL_d(K)$ is a minimal normal subgroup of $\AGL_d(K)$. Moreover, $T \cong K^d$ and $\AGL_d(K)/T \cong \GL_d(K)$. % (Recall that for $v \in K^d$, $t_{1,v} : K^d \to K^d$ is given by $u \mapsto u + v$.)
+            \item The group $\AGL_d(K)$ splits over the translation subgroup $T$, and $\AGL_d(K) = \GL(K^d)T$.
+        \end{enumerate}
+    \end{proposition}
+
+    \begin{proof}
+        \begin{enumerate}[(a)]
+            \item Clearly $\GL(K^d)$ is a subgroup of $\AGL_d(K)$ by the subgroup criterion, since $t_{a,0}t_{b,0} = t_{ab,0}$ and $t_{a,0}^{-1} = t_{a^{-1},0} \in \GL(K^d)$ for $a,b \in \GL_d(K)$. It acts on $K^d \setminus 0$, since for $a \in \GL_d(K)$, $ua = 0$ for $u \in K^d$ if and only if $u = 0$. For $v,w \in K^d \setminus 0$, extend $v$ and $w$ to two ordered bases of $K^d$; then setting $a \in \GL_d(K)$ to be the change-of-basis matrix from the basis containing $v$ to the basis containing $w$, we have $v^a = va = w$. So $\GL_d(K)$ acts transitively on $K^d \setminus 0$.
+            \item Firstly, the map $\psi : \AGL_d(K) \to \GL_d(K)$ given by $t_{a,v} \mapsto a$ is a surjective homomorphism: for $t_{a,v},t_{b,w} \in \AGL_d(K)$, $\psi(t_{a,v}t_{b,w}) = \psi(t_{ab,vb+w}) = ab = \psi(t_{a,v})\psi(t_{b,w})$. The kernel of $\psi$ is $T$, since $t_{a,v} \mapsto 1$ if and only if $a = 1$, if and only if $t_{a,v} = t_{1,v} \in T$. Thus $T$ is a normal subgroup of $\AGL_d(K)$ and $\AGL_d(K)/T \cong \GL_d(K)$ by the first isomorphism theorem. The claim that $T \cong K^d$ is obvious (consider the map $t_{1,v} \mapsto v$).
+
+                  We now show $T$ is minimal. Suppose $1 \neq N \unlhd \AGL_d(K)$ is a proper subgroup of $T \cong K^d$; we identify $N$ with the corresponding subgroup of $K^d$ (identify $t_{1,v} \sim (1,v) \sim v$). Then for $0 \neq v \in N$ there is $a \in \GL_d(K)$ such that $va \not\in N$ (by transitivity of $\GL_d(K)$ on $K^d \setminus 0$ from part (a)), contradicting normality of $N$. (This is because if $N$ were normal then $(a,w)^{-1}(1,v)(a,w) = (1,va) \sim va \in N$ for all $w \in K^d$.) So no such $N$ exists, and $T$ is minimal.
+            \item We know that $T \unlhd \AGL_d(K)$ (part (b)) and $\GL(K^d) \cap T = 1$; it remains to observe that for $t_{a,v} \in \AGL_d(K)$ we have $t_{a,v} = t_{a1,0 \cdot 1+v} = t_{a,0}t_{1,v}$ so indeed $\AGL_d(K) = \GL(K^d)T$.
+        \end{enumerate}
+    \end{proof}}
+
+% TODO: include statement on normal subgroups of GL? contains SL or subgroup of centre (scalar multiples of 1)
+
+\subsection{Primitive permutation groups and the O'Nan-Scott theorem}
+
+\added{3}{Cameron notes in \cite{cameron_permutation_groups1999} that intransitive groups are \textit{subcartesian products} of their transitive constituents. (A subcartesian product is a subgroup $H$ of a direct product $\prod_i G_i$ such that the $i$th projection $\pi_i : \prod_i G_i \to G_i$ satisfies $\pi_i[H] = G_i$.) A transitive but imprimitive group is contained in the iterated wreath product of its primitive components. Thus, many questions about permutation groups can be reduced to questions about primitive groups. The O'Nan-Scott theorem classifies primitive permutation groups. In particular, \cite{dixon_mortimer_perm_groups1996} notes that combined with the classification of finite simple groups (\autoref{thm:cfsg}), the O'Nan-Scott theorem is a powerful tool that has helped to answer long-standing problems about permutation groups.
+
+    Computationally, in \cite{hulpke2005}, Hulpke presents a recursive way to classify all transitive groups of degree $n$ (up to conjugacy) using the transitive groups of all degrees dividing $n$ and the primitive groups of degree $n$. Recall from earlier that given transitive groups acting on $\{\Omega_i\}$, we may also study intransitive groups by acting on the disjoint union of the $\Omega_i$. So in a number of senses, primitive groups are a building block for arbitrary permutation groups.}
+
+The following results may be found primarily in \cite{dixon_mortimer_perm_groups1996}. Recall that a \textbf{minimal normal subgroup} of a nontrivial group $G$ is a normal subgroup $1 \neq N \unlhd G$ such that \added{3}{$M \lhd N$ with $M \unlhd G$} implies $M = 1$. \added{3}{We define the \textit{socle} of a group, which is important because the O'Nan-Scott theorem characterises finite primitive groups by the structure of their socles.}
+
+\begin{definition}\label{def:socle}
+    Let $G$ be a group. The \textbf{socle} $\Soc(G)$ is the subgroup generated by the set of all minimal normal subgroups of $G$. If $G$ has no minimal normal subgroups, we use the convention of defining $\Soc(G) = 1$.
+\end{definition}
+
+Every nontrivial \textit{finite} group $G$ has at least one minimal normal subgroup. (Consider a maximal chain $G = N_0 \rhd N_1 \rhd N_2 \rhd \dotsb$ of normal subgroups \added{3}{of $G$}; then $|G| = |N_0| > |N_1| > |N_2| > \dotsb$ is a strictly decreasing sequence of positive integers, thus the chain must have finite length, say $G = N_0 \rhd N_1 \rhd N_2 \rhd \dotsb \rhd N_{k-1} \rhd N_k = 1$. Then $N_{k-1}$ is a minimal normal subgroup.) Thus, such $G$ has a nontrivial socle. \added{3}{However, this may not be the case for infinite groups: for example, $\Soc(\Z) = 0$, since any nontrivial normal subgroup of $\Z$ is of the form $n\Z$ for integer $n \geq 1$; then $0 \lhd 2n\Z \lhd n\Z$, and $n\Z$ is thus not minimal.}
+
+\begin{example}\label{eg:socle_Z_12}
+    Consider $G = \Z/12\Z$, which is abelian; thus every subgroup is normal. By the correspondence theorem (see Theorem 2.28 in \cite{rotman_intro_theory_groups1995}), subgroups of $\Z/12\Z$ are precisely of the form $S/12\Z$ where $12\Z \leq S \leq \Z$, so $S \in \{\Z,2\Z,3\Z,4\Z,6\Z,12\Z\}$. The group $12\Z/12\Z$ is trivial; the correspondence theorem also gives $\Z/12\Z > 2\Z/12\Z > 4\Z/12\Z$, $\Z/12\Z > 2\Z/12\Z > 6\Z/12\Z$ and $\Z/12\Z > 3\Z/12\Z > 6\Z/12\Z$, from which it follows that the minimal normal subgroups of $G$ are $4\Z/12\Z$ and $6\Z/12\Z$.
+
+    Thus the socle of $G$ is $\langle 4\Z/12\Z,6\Z/12\Z \rangle = \langle 4 + 12\Z,6 + 12\Z \rangle = \langle 2 + 12\Z \rangle = 2\Z/12\Z \cong \Z/2\Z \added{3}{\oplus} \Z/3\Z$.
+\end{example}
+
+\begin{lemma}\label{lem:socle_is_normal}
+    The socle $\Soc(G) \unlhd G$. (In particular, the socle is \textbf{characteristic}: $\psi[\Soc(G)] = \Soc(G)$ for all $\psi \in \Aut(G)$.)
+\end{lemma}
+
+\begin{proof}
+    We consider the case that $\Soc(G) \neq 1$. For a minimal normal subgroup $N \unlhd G$, $\psi[N]$ is minimal normal, since $\psi[N] \unlhd G$ (as $\psi \in \Aut(G)$) and if \added{3}{$M \unlhd G$ satisfies $M \lhd \psi[N]$}, then $\psi^{-1}[M] \lhd N$, so $\psi^{-1}[M] = 1$ by minimality, and thus $M = 1$. Moreover, for $N,M$ minimal normal subgroups, $\psi[N] = \psi[M] \implies N = M$, by applying $\psi^{-1}$. From this, it is clear that $\psi[\Soc(G)] = \Soc(G)$ for all $\psi \in \Aut(G)$, as elements of $\Soc(G)$ are products of elements of minimal normal subgroups (which are permuted amongst themselves by $\psi$).
+
+    Since $\Inn(G) \leq \Aut(G)$, it follows that $\Soc(G)^g = \Soc(G)$ for all $g \in G$, so $\Soc(G) \unlhd G$.
+\end{proof}
+
+\added{3}{If $G \leq \Sym(\Omega)$ is a finite nontrivial permutation group, then we reasoned above that $\Soc(G) \unlhd G$ is nontrivial. Then by \autoref{prop:normal_subgroup_transitive_action}(c), it follows that $\Soc(G)$ is a transitive group.
+
+    Next, we look at the structure of the socle of a group. First, we give some properties of products of (minimal) normal subgroups.
+
+    \begin{lemma}\label{lem:minimal_normal_subgroups}
+        Let $M,N \unlhd G$. Then:
+        \begin{enumerate}[(a)]
+            \item The product $MN = \langle M,N \rangle \unlhd G$
+            \item If $M \cap N = 1$, then $MN \cong M \times N$.
+            \item If $M$ is minimal, then $M \cap N = 1$ or $M \leq N$. In particular, if $M,N$ are distinct minimal normal subgroups, then $M \cap N = 1$ and $\langle M,N \rangle = MN$.
+        \end{enumerate}
+    \end{lemma}
+
+    \begin{proof}
+        For (a), note that $\langle M,N \rangle$ is the smallest subgroup of $G$ containing $M,N$ and $M,N \leq MN$, so certainly $\langle M,N \rangle \leq MN$. However, for $mn \in MN$, we have $m \in M \leq \langle M,N \rangle$ and $n \in N \leq \langle M,N \rangle$, so $mn \in \langle M,N \rangle$. (Showing $MN \unlhd G$ is routine.)
+
+        We skip (b) and prove part (c). If $M$ is minimal, then $M \cap N \unlhd M$. By minimality, $M \cap N = 1$ or $M \cap N = M$ (which implies $M \leq N$). If $N$ is also minimal (and $M \neq N$), then the case that $M \leq N$ is impossible, as this would contradict minimality or $M \neq N$, so $M \cap N = 1$.
+    \end{proof}
+
+    Since the product of normal subgroups of $G$ is a normal subgroup and $\langle M,N \rangle = MN$, it follows that in the case that $G$ is finite and nontrivial, the socle is the product of the minimal normal subgroups (providing an alternative proof that $\Soc(G) \unlhd G$ in the finite case). Then we may conclude the following:
+
+    \begin{proposition}\label{prop:socle_is_product_of_minimal_normal_subgroups}
+        There are minimal normal subgroups $N_1,\dotsc,N_m$ of finite $G \neq 1$ such that $\Soc(G) \cong N_1 \times \dotsb \times N_m$.
+    \end{proposition}
+
+    \begin{proof}
+        Since $G$ is finite, we may find a collection of $\{N_1,\dotsc,N_m\}$ of minimal normal subgroups of $G$ that is maximal with respect to the property $S = \langle N_1,\dotsc,N_m \rangle \cong N_1 \times \dotsb \times N_m$. Then $\Soc(G) = S$, since $S$ contains all minimal normal subgroups of $G$: suppose not, then there is a minimal normal subgroup $N$ that is not contained in $\langle N_1,\dotsc,N_m \rangle$. But then $\langle N_1,\dotsc,N_m \rangle \cap N = 1$ by \autoref{lem:minimal_normal_subgroups}(c), so $\langle N_1,\dotsc,N_m,N \rangle \cong N_1 \times \dotsb \times N_m \times N$, contradicting the choice of $\{N_1,\dotsc,N_m\}$.
+    \end{proof}
+
+    \begin{proposition}\label{prop:socle_agl}
+        The socle of $\AGL_d(K)$ is the translation subgroup $T \cong K^d$.
+    \end{proposition}
+
+    \begin{proof}
+        Let $S = \Soc(\AGL_d(K))$. From \autoref{prop:subgroups_of_agl}(b), we know that $T$ is a minimal normal subgroup of $\AGL_d(K)$, so $T \leq S$. Now suppose for a contradiction that $T < S$. Then there is $s \in S \setminus T$ that is in some other minimal normal subgroup $N$ of $\AGL_d(K)$; by \autoref{lem:minimal_normal_subgroups}(c), $T \cap N = 1$.
+
+        Now identifying $T$ with $K^d$ (via $t_{1,v} \sim v$; write $v^{-1} \sim t_{1,v}^{-1} = t_{1,-v}$ and $1 \sim t_{1,0}$), there is $v \in K^d$ with $w = v^{-1}v^s \neq 1$. (This is because $v^{-1}v^s = 1$ if and only if $v^s = s^{-1}vs = v$; with $s = (a,w)$, where $a \in \GL_d(K)$ and $w \in K^d$, this occurs if and only if $v = s^{-1}vs = (a,w)^{-1}(1,v)(a,w) = (1,va) = va$ for some $a \in \GL_d(K)$. However, $s = (a,w) \not\in T$, so $a \neq 1$ and therefore such $a$ with $va \neq v$ exists.) But then $w = v^{-1}v^s \in T \unlhd \AGL_d(K)$ and $w = v^{-1}s^{-1}vs = (s^{-1})^vs \in N \unlhd \AGL_d(K)$, so $w = 1$ (since $T \cap N = 1$), a contradiction. So $T = S$.
+    \end{proof}
+
+    Note that every minimal subgroup $N$ of finite $G \neq 1$ is (isomorphic to) a direct product $N = T_1 \times \dotsb \times T_k$ of simple normal subgroups of $K$ that are conjugate in $G$. (This is Theorem 4.3A in \cite{dixon_mortimer_perm_groups1996}.) Thus, every minimal normal subgroup of $G$ is elementary abelian, or its centre is trivial (as the centre of a nonabelian simple group is an abelian normal subgroup, thus trivial); moreover, $\Soc(G)$ is a direct product of simple groups.
+
+    Now, recall that \autoref{prop:normal_subgroup_transitive_action}(c) implies a nontrivial normal subgroup of a primitive group is transitive. This restricts the possibilities for minimal normal subgroups of a finite primitive group, and we get} the following characterisation of their socles (Corollary 4.3B in \cite{dixon_mortimer_perm_groups1996}).
+
+\begin{theorem}\label{thm:socle_is_direct_product}
+    If $G \leq \Sym(\Omega)$ is a finite primitive group, then $\Soc(G)$ is a direct product of isomorphic simple groups.
+\end{theorem}
+
+Note that this behaviour is seen in \autoref{prop:socle_agl} for finite $K = \F_{p^k}$ (with $p$ prime), since $\AGL_d(p^k)$ is primitive, and $(\F_{p^k},+) \cong (\F_p^k,+)$ with $(\F_p,+)$ simple. Moreover, \autoref{eg:socle_Z_12} does not violate this characterisation, since when $\Z/12\Z$ takes the (transitive) right regular action (addition), $\{\{0,2,4,6,8,10,12\},\{1,3,5,7,9,11\}\}$ is a nontrivial block system, and is thus an imprimitive action.
+
+\added{3}{Finally, we present the O'Nan-Scott theorem. Chapter 4 of Dixon and Mortimer (\cite{dixon_mortimer_perm_groups1996}) is dedicated to its proof and consequences.
+
+    \begin{theorem}[O'Nan-Scott]\label{thm:onan-scott}
+        Let $G$ be a finite primitive group of degree $n$, and let $H = \Soc(G)$. Then either
+        \begin{enumerate}[(a)]
+            \item $H$ is a \hyperref[def:regular_action]{regular} \hyperref[cor:elementary_abelian_group_form]{elementary abelian $p$-group} for some prime $p$, with $n = p^m = |H|$; $G$ is isomorphic to a subgroup of the \hyperref[def:agl]{affine group} $\AGL_m(p)$; or
+            \item $H$ is isomorphic to a direct product $T^m$ of a nonabelian \hyperref[def:simple_group]{simple group} $T$ and one of the following holds:
+                  \begin{enumerate}[(i)]
+                      \item $m = 1$ and $G$ is isomorphic to a subgroup of $\Aut(T)$;
+                      \item $m \geq 2$ and $G$ is a group of ``diagonal type'' with $n = |T|^{m-1}$;
+                      \item $m \geq 2$ and for some proper divisor $d \mid m$ and primitive group $U$ with $\Soc(U) \cong T^d$, we have that $G$ is isomorphic to a subgroup of the \hyperref[def:wreath_product]{wreath product} $U \wr \Sym(m/d)$ with the \hyperref[def:product_action]{product action}, and $n = \ell^{m/d}$ where $\ell$ is the degree of $U$; or
+                      \item $m \geq 6$, $H$ is \hyperref[def:regular_action]{regular}, and $n = |T|^m$.
+                  \end{enumerate}
+        \end{enumerate}
+    \end{theorem}
+
+    To conclude this chapter, we make a few comments on the O'Nan-Scott theorem. Suppose that $G \leq \Sym(\Omega)$ has degree $n$. Then the socle, as a subgroup of $G$, also acts on $\Omega$. In case (a) of the O'Nan-Scott theorem, if $H$ is isomorphic to an elementary abelian $p$-group and $|H| = p^m = n = |\Omega|$, then since $H \unlhd G$ is transitive, $H$ is automatically regular by \autoref{prop:transitive_order_equals_degree_implies_regular}.
+
+    Moreover, computer algebra systems such as \texttt{GAP} have functions that classify primitive permutation groups into their O'Nan-Scott types, as described in the O'Nan-Scott theorem. (In \texttt{GAP}, this is implemented as \texttt{ONanScottType}.)
+
+    Using the O'Nan-Scott theorem and \hyperref[thm:cfsg]{classification of finite simple groups}, the primitive permutation groups of degree less than 1000 were partially classified by Dixon and Mortimer in 1988 (see \cite{dixon1988}), with the affine case completed in 2003 by Roney-Dougal and Unger (see \cite{roney-dougal2003}). Those of degree less than 2500 were classified by Roney-Dougal in 2005 (see \cite{roney-dougal2005}), and those of degree less than 4096 were classifed by Coutts, Quick, and Roney-Dougal in 2011 (see \cite{coutts2011}), using the same techniques.}

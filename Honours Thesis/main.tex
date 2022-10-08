@@ -1,0 +1,102 @@
+% Preamble
+\documentclass[openany]{book}
+\usepackage[a4paper, portrait, margin=2cm]{geometry} % Page size
+\usepackage[table]{xcolor} % Colour settings
+\usepackage[australian]{babel} % Language settings
+% \usepackage{diagrams}
+% \usepackage{changes}
+\usepackage{essentials}
+% \usepackage{extras}
+\usepackage{tables}
+% \usepackage{preamble/bibliography} % BibLaTeX
+\usepackage{mathptmx}
+\usepackage{inconsolata}
+% \usepackage{libertinus}
+% \usepackage{newtx}
+\usepackage[noend]{algpseudocode}
+\usepackage{listings}
+\usepackage{tkz-graph}
+\usepackage{tikz-cd}
+\usepackage[nottoc,notlot,notlof]{tocbibind}
+% \usetikzlibrary{bbox}
+% \renewcommand{\VertexSmallMinSize}{8pt}
+\usepackage{scalerel}
+% \RequirePackage{fix-cm} % arbitrary font scaling
+\usepackage{accsupp}
+\newcommand{\emptyaccsupp}[1]{\BeginAccSupp{ActualText={}}#1\EndAccSupp{}}
+% \DeclareMathSizes{10}{10}{7}{4}
+
+\def\TITLE{Minimum bases for permutation groups}
+\def\AUTHOR{Lawrence Chen}
+\def\DATE{\today}
+% \def\VERSION{Version}
+
+% Settings and commands
+\input{commands.tex}
+% \input{commands_extras.tex}
+\input{commands_tables.tex}
+% \input{commands_diagrams.tex}
+\input{preamble/settings.tex}
+% \input{preamble/settings_extras.tex} % Settings for non-essential packages
+
+\newcommand{\thesis}{thesis}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{1}
+% \definechangesauthor[name={Week 7 review},color=orange]{W7}
+\newcommand{\added}[2]{\ifnum#1=3 {\color{red}#2}\else{#2}\fi}
+% \newcommand{\added}[2]{#2}
+% \newcommand{\added}[1]{\hl{#1}}
+
+\title{\textbf{\TITLE}}
+\author{\textbf{\AUTHOR}}
+\date{\textbf{\DATE}}
+
+\begin{document}
+
+\pagenumbering{alph}
+
+\input{titlepage.tex}
+
+\tableofcontents
+
+\chapter{Introduction}
+
+\pagenumbering{arabic}
+
+\input{introduction.tex}
+
+\chapter{Preliminary concepts from permutation groups}
+
+\input{group_concepts.tex}
+
+\chapter{Preliminary concepts from complexity theory}
+
+\input{complexity_concepts.tex}
+
+\chapter{Blaha: computing minimum bases is NP-hard}
+
+\input{blaha.tex}
+
+\chapter{Minimum bases for primitive permutation groups}
+
+\input{lit_review.tex}
+
+\chapter{Conclusion}
+
+\input{conclusion.tex}
+
+% References (include 1st 4)
+\nocite{*}
+\renewcommand{\bibname}{References}
+\bibliographystyle{plain} % BibTeX only
+\bibliography{references} % BibTeX only
+% \printbibliography % BibLaTeX only
+% \cleardoublepage
+% \phantomsection
+% \addcontentsline{toc}{chapter}{References}
+
+\appendix
+
+\input{appendix.tex}
+
+\end{document}

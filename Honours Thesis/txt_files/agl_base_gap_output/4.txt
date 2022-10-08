@@ -1,0 +1,22 @@
+gap> getSubgrpAGLBase(4);
+Considered grp of size 322560 with 3 gens:
+Found 7 maximal subgroups (up to conj)
+Considered 4 maximal subgrps (up to conj)
+Found 1 subgrps that may have base of length > 4
+GAP's base command finds bases of length:
+[ 5 ]
+Greedy base alg finds bases of length:
+[ 5 ]
+
+Considered grp of size 11520 with 3 gens:
+Found 8 maximal subgroups (up to conj)
+Considered 5 maximal subgrps (up to conj)
+Found 0 subgrps that may have base of length > 4
+GAP's base command finds bases of length:
+[  ]
+Greedy base alg finds bases of length:
+[  ]
+[ Group([ (2,13)(4,15)(5,7)(6,11)(8,9)(10,12), (2,8,9,4,14)(3,11,10,5,6)(7,16,12,15,13), (1,14)(2,13)(3,16)(4,15)
+      (5,10)(6,9)(7,12)(8,11) ]) ]
+      [  ]
+[ <permutation group of size 92897280 with 8 generators> ]

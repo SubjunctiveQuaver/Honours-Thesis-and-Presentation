@@ -1,0 +1,33 @@
+\begin{tikzpicture}[x=1cm,y=1cm,scale=0.6]
+    \tikzset{VertexStyle/.style={draw=none}}
+    \foreach \c in {-1,0,1,2} {
+    \foreach \d in {-1,0,1} {
+    \foreach \i in {0,1,2} {
+    \foreach \j in {0,1,2} {
+    \tkzDefPoints{{\i+3*\c}/{\j+3*\d}/A,{\i+3*\c+1}/{\j+3*\d}/B,{\i+3*\c+1}/{\j+3*\d+1}/C,{\i+3*\c}/{\j+3*\d+1}/D}
+    \ifthenelse{\c=0 \AND \d=-1}{
+        \pgfmathparse{mod(\i+\j,2)}
+        \ifthenelse{0=\pgfmathresult}{\tkzDrawPolygon[rounded corners=2pt,line width=0pt,fill=yellow,opacity=0.6](A,B,C,D)}{}
+        \tkzDrawPolygon[rounded corners=2pt,line width=2pt](A,B,C,D)}{}
+    \ifthenelse{\c=-1 \AND \d=0}{
+        \pgfmathparse{mod(\i+\j,2)}
+        \ifthenelse{0=\pgfmathresult}{\tkzDrawPolygon[rounded corners=2pt,line width=0pt,fill=green,opacity=0.6](A,B,C,D)}{}
+        \tkzDrawPolygon[rounded corners=2pt,line width=2pt](A,B,C,D)}{}
+    \ifthenelse{\c=0 \AND \d=0}{
+        \pgfmathparse{mod(\i+\j,2)}
+        \ifthenelse{0=\pgfmathresult}{\tkzDrawPolygon[rounded corners=2pt,line width=0pt,fill=red,opacity=0.6](A,B,C,D)}{}
+        \tkzDrawPolygon[rounded corners=2pt,line width=2pt](A,B,C,D)}{}
+    \ifthenelse{\c=1 \AND \d=0}{
+        \pgfmathparse{mod(\i+\j,2)}
+        \ifthenelse{0=\pgfmathresult}{\tkzDrawPolygon[rounded corners=2pt,line width=0pt,fill=blue,opacity=0.6](A,B,C,D)}{}
+        \tkzDrawPolygon[rounded corners=2pt,line width=2pt](A,B,C,D)}{}
+    \ifthenelse{\c=2 \AND \d=0}{
+        \pgfmathparse{mod(\i+\j,2)}
+        \ifthenelse{0=\pgfmathresult}{\tkzDrawPolygon[rounded corners=2pt,line width=0pt,fill=orange,opacity=0.6](A,B,C,D)}{}
+        \tkzDrawPolygon[rounded corners=2pt,line width=2pt](A,B,C,D)}{}
+    \ifthenelse{\c=0 \AND \d=1}{
+        \pgfmathparse{mod(\i+\j,2)}
+        \ifthenelse{0=\pgfmathresult}{\tkzDrawPolygon[rounded corners=2pt,line width=0pt,fill=white,opacity=0.6](A,B,C,D)}{}
+        \tkzDrawPolygon[rounded corners=2pt,line width=2pt](A,B,C,D)}{}
+    }}}}
+\end{tikzpicture}
