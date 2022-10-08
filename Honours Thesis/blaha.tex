@@ -92,7 +92,7 @@ The following technical construction from \cite{blaha1992} is repeatedly used in
     Suppose $X$ is a finite set with $|X| = n$.
     \begin{itemize}
         \item Let $\{\sigma_x\}_{x \in X}$ be a fixed set of generators for the elementary abelian 2-group $(\Z/2\Z)^n$ (this is necessarily a minimal generating set); each generator $\sigma_x$ has order 2.
-        \item For $Y \subseteq X$, define the subgroup $G(Y) = \langle \sigma_x \mid x \in Y \rangle$ (note that $(\Z/2\Z)^n = G(X)$).
+        \item For $Y \subseteq X$, define the subgroup $G(Y) = \langle \sigma_x \mid x \in Y \rangle$ (note that $(\Z/2\Z)^n \cong G(X)$).
         \item Extend the \hyperref[eg:right_regular_action]{right regular $G(Y)$-action} $\mathcal{R} : G(Y) \to \Sym(G(Y))$ to the $G(X)$-action $\mathcal{R}_Y : G(X) \to \Sym(G(Y))$, in which $\{\sigma_x\}_{x \in X \setminus Y}$ act trivially (i.e. generators $\sigma_x \mapsto 1_{\Sym(G(Y))}$ for $x \in X \setminus Y$, then extend homomorphically). (So $\mathcal{R}_Y$ projects onto the right regular action on $G(Y)$ and the trivial action on $G(X \setminus Y)$, where $G(X) \cong G(Y) \times G(X \setminus Y)$.)
         \item Now suppose $\mathcal{C}$ is a collection of subsets of $X$, and let $\Omega_\mathcal{C} = \bigsqcup_{Y \in \mathcal{C}} G(Y)$ be the \textit{disjoint} union of the \textit{sets} $G(Y)$.
         \item Consider the induced action $\mathcal{R}_\mathcal{C} : G(X) \to \Sym(\Omega_\mathcal{C})$ (from the $\mathcal{R}_Y$ for $Y \in \mathcal{C}$), where for $\alpha \in \Omega_\mathcal{C}$, we have $\alpha \in G(Y)$ for precisely one $Y \in \mathcal{C}$; then set $\alpha^{\mathcal{R}_\mathcal{C}(\sigma)} = \alpha^{\mathcal{R}_Y(\sigma)} \in G(Y)$. (That is, for $\sigma \in G(X)$, we glue together the permutations $\mathcal{R}_Y(\sigma) : G(Y) \to G(Y)$ for $Y \in \mathcal{C}$ to get a permutation $\mathcal{R}_\mathcal{C}(\sigma) : \Omega_\mathcal{C} \to \Omega_\mathcal{C}$.) Each disjoint copy of $G(Y) \subseteq \Omega_\mathcal{C}$ is a \textit{block} under $\mathcal{R}_\mathcal{C}$; its restriction to acting on $G(Y)$ is well-defined and precisely $\mathcal{R}_Y$.
@@ -106,11 +106,14 @@ Note that for $Y,Z \subseteq X$, an element $\sigma \in G(Y)$ has, up to permuta
 
 \added{3}{
     \begin{example}
-        As a small example of the above construction, set $n = 3$ and $X = [3]$. We use notation for $(\Z/2\Z)^3$.
+        In the above construction, set $n = 3$ and $X = [3]$. We use multiplicative notation for $(\Z/2\Z)^3$.
         \begin{itemize}
-            \item Let $\sigma_1 = (1,0,0)$, $\sigma_2 = (0,1,0)$, $\sigma_3 = (0,1,1)$ so that $\{\sigma_1,\dotsc,\sigma_r\}$ is a set of generators for $G(X) = (\Z/2\Z)^3$.
-            \item If $Y = \{\sigma_1,\sigma_3\}$, then $G(Y) = \langle \sigma_1,\sigma_3 \rangle = \langle (1,0,0),(0,1,1) \rangle = \{(0,0,0),(1,0,0),(0,1,1),(1,1,1)\} \leq G(X)$.
-            \item The action $\mathcal{R}_Y$ is defined as such: for $\alpha \in G(X)$ and $\sigma \in (1,0,1)$, we have $\sigma = (0,1,0) + (1,0,0) + (0,1,1) = \sigma_2\sigma_1\sigma_3$
+            \item Note that $G(X) = \langle\sigma_1,\sigma_2,\sigma_3\rangle = \{1,\sigma_1,\sigma_2,\sigma_3,\sigma_1\sigma_2,\sigma_1\sigma_3,\sigma_2\sigma_3,\sigma_1\sigma_2\sigma_3\}$. Note that each $\sigma_i^2 = 1$ and $\sigma_i\sigma_j = \sigma_j\sigma_i$.
+            \item If $Y = \{1,3\}$, then $G(Y) = \langle\sigma_1,\sigma_3\rangle = \{1,\sigma_1,\sigma_3,\sigma_1\sigma_3\} \leq G(X)$.
+            \item The action $\mathcal{R}_Y$ is defined as such: for $\alpha \in G(Y)$ and say $\sigma = \sigma_2\sigma_1\sigma_3$, we have
+                  $$\alpha^{\mathcal{R}_Y(\sigma)} = \alpha^{\mathcal{R}_Y(\sigma_2)\mathcal{R}_Y(\sigma_1\sigma_3)} = (\alpha^{\mathcal{R}_Y(\sigma_2)})^{\mathcal{R}_Y(\sigma_1\sigma_3)} = \alpha^{\mathcal{R}(\sigma_1\sigma_3)} = \alpha\sigma_1\sigma_3.$$
+                  It can be seen that $\mathcal{R}_Y$ acts regularly (like $\mathcal{R}$) for $G(Y)$, and trivially for $G(X \setminus Y) = \langle\sigma_2\rangle = \{1,\sigma_2\}$.
+            \item Let $\mathcal{C} = \{\{1,3\},\{2\},\{2,3\}\}$. Then $\Omega_{\mathcal{C}}$
         \end{itemize}
     \end{example}}
 

@@ -26,7 +26,7 @@
 \contentsline {subsection}{NP-hardness of the minimum base problem}{36}{section*.15}%
 \contentsline {subsection}{Greedy base analysis}{37}{section*.16}%
 \contentsline {section}{\numberline {4.2}The elementary abelian case}{37}{section.4.2}%
-\contentsline {subsection}{NP-hardness of the minimum base problem}{38}{section*.17}%
+\contentsline {subsection}{NP-hardness of the minimum base problem}{39}{section*.17}%
 \contentsline {section}{\numberline {4.3}Sharp bounds for sizes of bases}{39}{section.4.3}%
 \contentsline {subsection}{A sharp bound for nonredundant bases}{39}{section*.18}%
 \contentsline {subsection}{A sharp bound for greedy bases}{40}{section*.19}%
