@@ -1,0 +1,126 @@
+\begin{thebibliography}{10}
+
+\bibitem{blaha1992}
+Kenneth~D. Blaha.
+\newblock Minimum bases for permutation groups: The greedy approximation.
+\newblock {\em Journal of Algorithms}, 13(2):297--306, 1992.
+
+\bibitem{brown1989}
+Cynthia~A. Brown, Larry Finkelstein, and Paul~W. Purdom.
+\newblock Backtrack searching in the presence of symmetry.
+\newblock In {\em Applied Algebra, Algebraic Algorithms and Error-Correcting
+  Codes}, pages 99--110. Springer Berlin Heidelberg, 1989.
+
+\bibitem{cameron_permutation_groups1999}
+Peter~J. Cameron.
+\newblock {\em Permutation Groups}.
+\newblock Cambridge University Press, feb 1999.
+
+\bibitem{cannon_havas1992}
+John~J. Cannon and George Havas.
+\newblock Algorithms for groups.
+\newblock {\em Aust. Comput. J.}, 24(2):51--60, 1992.
+
+\bibitem{coutts2011}
+Hannah~J. Coutts, Martyn Quick, and Colva~M. Roney-Dougal.
+\newblock The primitive permutation groups of degree less than 4096.
+\newblock {\em Communications in Algebra}, 39(10):3526--3546, 2011.
+
+\bibitem{dixon1988}
+John~D. Dixon and B.~Mortimer.
+\newblock The primitive permutation groups of degree less than 1000.
+\newblock {\em Mathematical Proceedings of the Cambridge Philosophical
+  Society}, 103:213--238, 1988.
+
+\bibitem{dixon_mortimer_perm_groups1996}
+John~D. Dixon and Brian Mortimer.
+\newblock {\em Permutation Groups}.
+\newblock Springer New York, 1996.
+
+\bibitem{garey_johnson_comp_and_intract1990}
+Michael~R. Garey and David~S. Johnson.
+\newblock {\em Computers and Intractability; A Guide to the Theory of
+  NP-Completeness}.
+\newblock W. H. Freeman \& Co., USA, 1990.
+
+\bibitem{holt_handbook_cgt2005}
+Derek~F. Holt, Bettina Eick, and Eamonn~A. O'Brien.
+\newblock {\em Handbook of Computational Group Theory}.
+\newblock Chapman and Hall/CRC, New York, 2005.
+
+\bibitem{hulpke2005}
+Alexander Hulpke.
+\newblock Constructing transitive permutation groups.
+\newblock {\em Journal of Symbolic Computation}, 39(1):1--30, 2005.
+
+\bibitem{karp1972}
+R.~Karp.
+\newblock Reducibility among combinatorial problems.
+\newblock In R.~Miller and J.~Thatcher, editors, {\em Complexity of Computer
+  Computations}, pages 85--103. Plenum Press, 1972.
+
+\bibitem{knuth1991}
+Donald~E. Knuth.
+\newblock Efficient representation of perm groups.
+\newblock {\em Combinatorica}, 11(1):33--43, 1991.
+
+\bibitem{liebeck1984}
+Martin~W. Liebeck.
+\newblock On minimal degrees and base sizes of primitive permutation groups.
+\newblock {\em Archiv der Mathematik}, 43(1):11--15, 1984.
+
+\bibitem{lovasz1980}
+L{\'{a}}szl{\'{o}} Lov{\'{a}}sz.
+\newblock Matroid matching and some applications.
+\newblock {\em Journal of Combinatorial Theory, Series B}, 28(2):208--236,
+  1980.
+
+\bibitem{moscatiello_roney-dougal2021}
+Mariapia Moscatiello and Colva~M. Roney-Dougal.
+\newblock Base sizes of primitive permutation groups.
+\newblock {\em Monatshefte für Mathematik}, 198(2):411--443, 2021.
+
+\bibitem{roney-dougal2005}
+Colva~M. Roney-Dougal.
+\newblock The primitive permutation groups of degree less than 2500.
+\newblock {\em Journal of Algebra}, 292(1):154--183, 2005.
+
+\bibitem{roney-dougal2003}
+Colva~M. Roney-Dougal and William~R. Unger.
+\newblock The affine primitive permutation groups of degree less than 1000.
+\newblock {\em Journal of Symbolic Computation}, 35(4):421--439, 2003.
+
+\bibitem{rotman_intro_theory_groups1995}
+Joseph~J. Rotman.
+\newblock {\em An Introduction to the Theory of Groups}.
+\newblock Springer New York, 1995.
+
+\bibitem{sims1970}
+Charles~C. Sims.
+\newblock Computational methods in the study of permutation groups.
+\newblock In John Leech, editor, {\em Computational Problems in Abstract
+  Algebra}, pages 169--183. Pergamon, 1970.
+
+\bibitem{sims1973}
+Charles~C. Sims.
+\newblock The existence and uniqueness of {L}yons' group.
+\newblock In {\em Finite Groups {\textquotesingle}72, Proceedings of the the
+  Gainesville Conference on Finite Groups}, pages 138--141. Elsevier, 1973.
+
+\bibitem{sipser_intro_theory_comp2013}
+Michael Sipser.
+\newblock {\em Introduction to the Theory of Computation}.
+\newblock Course Technology, Boston, MA, 3rd edition, 2013.
+
+\bibitem{solomon2001}
+Ronald Solomon.
+\newblock A brief history of the classification of the finite simple groups.
+\newblock {\em Bulletin of the American Mathematical Society}, 38(3):315--352,
+  2001.
+
+\bibitem{solomon2018}
+Ronald Solomon.
+\newblock The classification of finite simple groups: A progress report.
+\newblock {\em Notices of the American Mathematical Society}, 65(06):1, 2018.
+
+\end{thebibliography}
