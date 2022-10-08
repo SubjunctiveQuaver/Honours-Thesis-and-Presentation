@@ -95,26 +95,37 @@ The following technical construction from \cite{blaha1992} is repeatedly used in
         \item For $Y \subseteq X$, define the subgroup $G(Y) = \langle \sigma_x \mid x \in Y \rangle$ (note that $(\Z/2\Z)^n \cong G(X)$).
         \item Extend the \hyperref[eg:right_regular_action]{right regular $G(Y)$-action} $\mathcal{R} : G(Y) \to \Sym(G(Y))$ to the $G(X)$-action $\mathcal{R}_Y : G(X) \to \Sym(G(Y))$, in which $\{\sigma_x\}_{x \in X \setminus Y}$ act trivially (i.e. generators $\sigma_x \mapsto 1_{\Sym(G(Y))}$ for $x \in X \setminus Y$, then extend homomorphically). (So $\mathcal{R}_Y$ projects onto the right regular action on $G(Y)$ and the trivial action on $G(X \setminus Y)$, where $G(X) \cong G(Y) \times G(X \setminus Y)$.)
         \item Now suppose $\mathcal{C}$ is a collection of subsets of $X$, and let $\Omega_\mathcal{C} = \bigsqcup_{Y \in \mathcal{C}} G(Y)$ be the \textit{disjoint} union of the \textit{sets} $G(Y)$.
-        \item Consider the induced action $\mathcal{R}_\mathcal{C} : G(X) \to \Sym(\Omega_\mathcal{C})$ (from the $\mathcal{R}_Y$ for $Y \in \mathcal{C}$), where for $\alpha \in \Omega_\mathcal{C}$, we have $\alpha \in G(Y)$ for precisely one $Y \in \mathcal{C}$; then set $\alpha^{\mathcal{R}_\mathcal{C}(\sigma)} = \alpha^{\mathcal{R}_Y(\sigma)} \in G(Y)$. (That is, for $\sigma \in G(X)$, we glue together the permutations $\mathcal{R}_Y(\sigma) : G(Y) \to G(Y)$ for $Y \in \mathcal{C}$ to get a permutation $\mathcal{R}_\mathcal{C}(\sigma) : \Omega_\mathcal{C} \to \Omega_\mathcal{C}$.) Each disjoint copy of $G(Y) \subseteq \Omega_\mathcal{C}$ is a \textit{block} under $\mathcal{R}_\mathcal{C}$; its restriction to acting on $G(Y)$ is well-defined and precisely $\mathcal{R}_Y$.
+        \item Consider the induced action $\mathcal{R}_\mathcal{C} : G(X) \to \Sym(\Omega_\mathcal{C})$ (from the $\mathcal{R}_Y$ for $Y \in \mathcal{C}$), where for $\alpha \in \Omega_\mathcal{C}$, we have $\alpha \in G(Y)$ for precisely one $Y \in \mathcal{C}$; then set $\alpha^{\mathcal{R}_\mathcal{C}(\sigma)} = \alpha^{\mathcal{R}_Y(\sigma)} \in G(Y)$. (That is, for $\sigma \in G(X)$, we glue together the permutations $\mathcal{R}_Y(\sigma) : G(Y) \to G(Y)$ for $Y \in \mathcal{C}$ to get a permutation $\mathcal{R}_\mathcal{C}(\sigma) : \Omega_\mathcal{C} \to \Omega_\mathcal{C}$.) Each disjoint copy of $G(Y) \subseteq \Omega_\mathcal{C}$ is \added{3}{an \textit{orbit} under $\mathcal{R}_\mathcal{C}$; thus $G(X)$ acts on each $G(Y)$ (\autoref{rem:group_acts_on_orbit}), precisely according to $\mathcal{R}_Y$.}
         \item For $Z \subseteq X$, let $G_\mathcal{C}(Z) = \mathcal{R}_\mathcal{C}[G(Z)] \leq \Sym(\Omega_\mathcal{C})$ be the image of the $G(Z)$-action $\mathcal{R}_\mathcal{C}$, a permutation group. Then $G_\mathcal{C}(Z)$ acts on $\Omega_\mathcal{C}$ naturally. Note that $G_\mathcal{C}(Z) = \langle \mathcal{R}_\mathcal{C}(\sigma_x) \mid x \in Z \rangle$.
     \end{itemize}
 \end{example}
 
-\added{2}{In this construction, we begin with a subgroup $G(Y)$ of $G(X)$ and extend its right regular action to $G(X)$ trivially to get $\mathcal{R}_Y$. Then for a collection $\mathcal{C}$ of subsets $Y$, this induces an action $\mathcal{R}_\mathcal{C}$ on the disjoint union $\Omega_\mathcal{C}$ of the $G(Y)$, with an element $\sigma \in G(X)$ acting on $\alpha \in G(Y) \subseteq \Omega_\mathcal{C}$ via $\mathcal{R}_Y$. The image of $G(Z)$ under this action is $G_\mathcal{C}(Z)$.}
+\added{2}{In this construction, we begin with a subgroup $G(Y)$ of $G(X)$ and extend its right regular action to $G(X)$ trivially to get $\mathcal{R}_Y$, \added{3}{which is transitive}. Then for a collection $\mathcal{C}$ of subsets $Y$, this induces an action $\mathcal{R}_\mathcal{C}$ on the disjoint union $\Omega_\mathcal{C}$ of the $G(Y)$, with an element $\sigma \in G(X)$ acting on $\alpha \in G(Y) \subseteq \Omega_\mathcal{C}$ via $\mathcal{R}_Y$. The image of $G(Z)$ under this action is $G_\mathcal{C}(Z)$.}
 
 Note that for $Y,Z \subseteq X$, an element $\sigma \in G(Y)$ has, up to permutation \added{3}{of factors (since $G(Y)$ is abelian)}, a \textit{unique} decomposition $\sigma = \sigma_{x_1} \dotsb \sigma_{x_k}$ with each $x_i \in Y$ (distinct). Moreover, $G(Y) \cap G(Z) = G(Y \cap Z)$. (The reverse inclusion is trivial; the forward inclusion relies on the unique decomposition.)
 
 \added{3}{
-    \begin{example}
+    \begin{example}\label{eg:blaha_elem_technical_construction_example}
         In the above construction, set $n = 3$ and $X = [3]$. We use multiplicative notation for $(\Z/2\Z)^3$.
         \begin{itemize}
             \item Note that $G(X) = \langle\sigma_1,\sigma_2,\sigma_3\rangle = \{1,\sigma_1,\sigma_2,\sigma_3,\sigma_1\sigma_2,\sigma_1\sigma_3,\sigma_2\sigma_3,\sigma_1\sigma_2\sigma_3\}$. Note that each $\sigma_i^2 = 1$ and $\sigma_i\sigma_j = \sigma_j\sigma_i$.
             \item If $Y = \{1,3\}$, then $G(Y) = \langle\sigma_1,\sigma_3\rangle = \{1,\sigma_1,\sigma_3,\sigma_1\sigma_3\} \leq G(X)$.
-            \item The action $\mathcal{R}_Y$ is defined as such: for $\alpha \in G(Y)$ and say $\sigma = \sigma_2\sigma_1\sigma_3$, we have
+            \item The action $\mathcal{R}_Y$ is defined as such: for $\alpha \in G(Y)$ and say $\sigma = \sigma_1\sigma_2\sigma_3 = \sigma_2\sigma_1\sigma_3 \in G(X)$, we have
                   $$\alpha^{\mathcal{R}_Y(\sigma)} = \alpha^{\mathcal{R}_Y(\sigma_2)\mathcal{R}_Y(\sigma_1\sigma_3)} = (\alpha^{\mathcal{R}_Y(\sigma_2)})^{\mathcal{R}_Y(\sigma_1\sigma_3)} = \alpha^{\mathcal{R}(\sigma_1\sigma_3)} = \alpha\sigma_1\sigma_3.$$
                   It can be seen that $\mathcal{R}_Y$ acts regularly (like $\mathcal{R}$) for $G(Y)$, and trivially for $G(X \setminus Y) = \langle\sigma_2\rangle = \{1,\sigma_2\}$.
-            \item Let $\mathcal{C} = \{\{1,3\},\{2\},\{2,3\}\}$. Then $\Omega_{\mathcal{C}}$
+            \item Let $\mathcal{C} = \{\{1,3\},\{2\},\{2,3\}\}$. Then
+                  $$\Omega_{\mathcal{C}} = \bigsqcup_{Y \in \mathcal{C}} G(Y) = G(\{1,3\}) \sqcup G(\{2\}) \sqcup G(\{2,3\}) = \{1,\sigma_1,\sigma_3,\sigma_1\sigma_3\} \sqcup \{1,\sigma_2\} \sqcup \{1,\sigma_2,\sigma_3,\sigma_2\sigma_3\}.$$
+            \item For $\mathcal{R}_\mathcal{C}$ and $\sigma = \sigma_1\sigma_2\sigma_3 \in G(X)$, if say $\alpha = \sigma_2 \in G(\{2\}) \subseteq \Omega_\mathcal{C}$, then $\alpha^{\mathcal{R}_\mathcal{C}(\sigma)} = \sigma_2^{\mathcal{R}_{\{2\}}(\sigma)} = \sigma_2^{\mathcal{R}(\sigma_2)} = \sigma_2\sigma_2 = 1$. But if $\alpha = \sigma_2 \in G(\{2,3\}) \subseteq \Omega_\mathcal{C}$, then $\alpha^{\mathcal{R}_\mathcal{C}(\sigma)} = \sigma_2^{\mathcal{R}_{\{2,3\}}(\sigma)} = \sigma_2^{\mathcal{R}(\sigma_2\sigma_3)} = \sigma_2\sigma_2\sigma_3 = \sigma_3$.
+            \item Now set $Z = \{1,2\}$, so $G(Z) = \langle\sigma_1,\sigma_2\rangle = \{1,\sigma_1,\sigma_2,\sigma_1\sigma_2\}$. Then $G_\mathcal{C}(Z) = \mathcal{R}_\mathcal{C}[G(Z)]$ contains the permutations $\mathcal{R}_\mathcal{C}(\sigma)$ of $\Omega_\mathcal{C}$ where $\sigma \in G(Z)$. For example, for $\sigma = \sigma_2$ we get the permutation
+                  $$\mathcal{R}_\mathcal{C}(\sigma_2) = \underbrace{(1,\sigma_2)}_{G(\{2\})}\underbrace{(1,\sigma_2)(\sigma_3,\sigma_2\sigma_3)}_{G(\{2,3\})} \in \Sym(\Omega_\mathcal{C});$$
+                  note that on $G(\{1,3\}) \subseteq \Omega_\mathcal{C}$, $\mathcal{R}_\mathcal{C}(\sigma_2)$ acts trivially. As a permutation group, $G_\mathcal{C}(Z)$ acts naturally on $\Omega_\mathcal{C}$ and indeed $G_\mathcal{C}(Z) := \{\mathcal{R}_\mathcal{C}(\sigma) : \sigma \in G(Z)\} = \langle\mathcal{R}_\mathcal{C}(\sigma_1),\mathcal{R}_\mathcal{C}(\sigma_2)\rangle$: for $\sigma_1\sigma_2 \in G(Z)$, we have $\mathcal{R}_\mathcal{C}(\sigma_1\sigma_2) = \mathcal{R}_\mathcal{C}(\sigma_1)\mathcal{R}_\mathcal{C}(\sigma_2)$ since $\mathcal{R}_\mathcal{C}$ is an action (thus a homomorphism).
         \end{itemize}
+
+        As an extension, let us consider $Y = \{1,3\} \in \mathcal{C}$ and $\alpha \in G(Y)$. Then with $Z = \{1,2\}$ let us consider the stabiliser
+        $$G_\mathcal{C}(Z)_\alpha = \{\mathcal{R}_\mathcal{C}(\sigma) : \alpha^{\mathcal{R}_\mathcal{C}(\sigma)} = \alpha\ \text{and}\ \sigma \in G(Z)\}.$$
+        For $\sigma \in G(Z) = \{1,\sigma_1,\sigma_2,\sigma_1\sigma_2\}$, if $\sigma \in G(Z \setminus Y) = G(\{2\})$, then $\mathcal{R}_\mathcal{C}(\sigma)$ acts trivially on $G(Y)$, so $\mathcal{R}_\mathcal{C}(\sigma) \in G_\mathcal{C}(Z)_\alpha$. Conversely, if $\sigma \not\in G(\{2\}) = \{1,\sigma_2\}$ then $\sigma = \sigma_1$ or $\sigma = \sigma_1\sigma_2$; in the first case, $\alpha^{\mathcal{R}_\mathcal{C}(\sigma_1)} = \alpha\sigma_1 \neq \alpha$, and in the second case, $\alpha^{\mathcal{R}_\mathcal{C}(\sigma_1\sigma_2)} = \alpha\sigma_1 \neq \alpha$. So $G_\mathcal{C}(Z)_\alpha = G_\mathcal{C}(\{2\}) = G_\mathcal{C}(Z \setminus Y)$.
+
+        If $W = Y \cap Z = \{1\}$, then $G(W) = \{1,\sigma_1\}$ and $G(Y)$ has TODO
     \end{example}}
 
 \begin{lemma}\label{lem:blaha_elem_cover_faithful}
@@ -127,7 +138,7 @@ Note that for $Y,Z \subseteq X$, an element $\sigma \in G(Y)$ has, up to permuta
     Now suppose $X = \bigcup_{Y \in \mathcal{C}} Y$ and that $\sigma \in G(X)$. If $\mathcal{R}_\mathcal{C}(\sigma) = 1_{\Sym(\Omega_\mathcal{C})}$, then $\mathcal{R}_Y(\sigma) = 1_{\Sym(G(Y))}$ for all $Y \in \mathcal{C}$. So $\sigma \in \bigcap_{Y \in \mathcal{C}} G(X \setminus Y) = \added{3}{G(\bigcap_{Y \in \mathcal{C}} X \setminus Y)} = G(X \setminus \bigcup_{Y \in \mathcal{C}} Y) = G(X \setminus X) = G(\emptyset) = 1$, i.e. $\sigma = 1 \in G(X)$. This shows $\mathcal{R}_\mathcal{C}$ is faithful.
 \end{proof}
 
-In the subsequent lemmas, we use the restricted action of the permutation group $G_\mathcal{C}(Z)$ on the block $G(Y) \subseteq \Omega_\mathcal{C}$ for $Z \subseteq X$ as described above.
+In the subsequent lemmas, we use the restricted action of the permutation group $G_\mathcal{C}(Z)$ on the block $G(Y) \subseteq \Omega_\mathcal{C}$ for $Z \subseteq X$ as described above. \added{3}{The following generalises the final observation in \autoref{eg:blaha_elem_technical_construction_example}.}
 
 \begin{lemma}[Lemma 2.2 in \cite{blaha1992}]\label{lem:blaha_elem_stabiliser}
     Fix $Z \subseteq X$, \added{3}{a set} $Y \in \mathcal{C}$, and $\alpha \in G(Y)$. Then $\added{2}{G_\mathcal{C}(Z)_\alpha} = G_\mathcal{C}(Z \setminus Y)$.

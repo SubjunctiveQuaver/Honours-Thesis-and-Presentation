@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.22)  8 OCT 2022 22:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.22)  9 OCT 2022 03:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1687,7 +1687,9 @@ Package hyperref Info: bookmark level for unknown proof defaults to 0 on input l
  [5]
 Package hyperref Info: bookmark level for unknown proposition defaults to 0 on input line 116.
 Package hyperref Info: bookmark level for unknown corollary defaults to 0 on input line 130.
- [6] [7] [8] [9]) (group_concepts/bases_stabiliser_chains.tex [10]
+ [6] [7] [8]
+Package hyperref Info: bookmark level for unknown remark defaults to 0 on input line 310.
+ [9]) (group_concepts/bases_stabiliser_chains.tex [10]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 18.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
@@ -1731,9 +1733,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [35
 
-]
-Package hyperref Info: bookmark level for unknown remark defaults to 0 on input line 75.
- [36] [37] [38] [39]) [40]
+] [36] [37] [38]
+Underfull \vbox (badness 1810) has occurred while \output is active []
+
+ [39]) [40]
 Chapter 5.
 (lit_review.tex
 Underfull \vbox (badness 1571) has occurred while \output is active []
@@ -1781,17 +1784,17 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 40745 strings out of 478582
- 778294 string characters out of 2842422
- 1581468 words of memory out of 3000000
- 56780 multiletter control sequences out of 15000+600000
+ 40749 strings out of 478582
+ 778400 string characters out of 2842422
+ 1581584 words of memory out of 3000000
+ 56782 multiletter control sequences out of 15000+600000
  532619 words of font info for 369 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  101i,18n,105p,1672b,1872s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-ts1.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-ot1-0.enc}<C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/rsfs/rsfs10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (57 pages, 661212 bytes).
+Output written on main.pdf (57 pages, 664987 bytes).
 PDF statistics:
- 1735 PDF objects out of 2073 (max. 8388607)
- 879 named destinations out of 1000 (max. 500000)
+ 1740 PDF objects out of 2073 (max. 8388607)
+ 881 named destinations out of 1000 (max. 500000)
  86877 words of extra memory for PDF output out of 89155 (max. 10000000)
 
