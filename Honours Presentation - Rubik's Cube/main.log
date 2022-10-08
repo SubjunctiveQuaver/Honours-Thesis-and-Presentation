@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.22)  8 OCT 2022 18:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.22)  8 OCT 2022 18:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1372,18 +1372,6 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 4.0pt on input line 59.
  [3
 
-] [4
-
-] [5
-
-] [6
-
-] [7
-
-] [8
-
-] [9
-
 ]
 LaTeX Font Info:    Trying to load font information for OT1+minntx on input line 61.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/newtx\ot1minntx.fd
@@ -1457,309 +1445,51 @@ LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
 (Font)              scaled to size 8.0pt on input line 61.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
 (Font)              scaled to size 6.1pt on input line 61.
- [10
+ [4
 
-] (c1_group_theory.tex [11
+] (c1_group_theory.tex [5
 
-] [12
+] [6
 
-] [13
+]
+Overfull \vbox (11.80908pt too high) detected at line 80
+ []
+
+[7
+
+] [8
+
+] [9
+
+]
+Overfull \vbox (0.78632pt too high) detected at line 161
+ []
+
+[10
+
+]
+Overfull \vbox (6.30261pt too high) detected at line 184
+ []
+
+[11
+
+]
+Overfull \vbox (19.43944pt too high) detected at line 212
+ []
+
+[12
+
+]
+Overfull \vbox (5.53125pt too high) detected at line 238
+ []
+
+[13
 
 ] [14
 
-] [15
+]) [15
 
-] [16
-
-] [17
-
-] [18
-
-] [19
-
-] [20
-
-] [21
-
-] [22
-
-] [23
-
-] [24
-
-] [25
-
-] [26
-
-] [27
-
-] [28
-
-] [29
-
-] [30
-
-] [31
-
-] [32
-
-]
-Overfull \vbox (11.80908pt too high) detected at line 80
- []
-
-[33
-
-]
-Overfull \vbox (11.80908pt too high) detected at line 80
- []
-
-[34
-
-]
-Overfull \vbox (11.80908pt too high) detected at line 80
- []
-
-[35
-
-]
-Overfull \vbox (11.80908pt too high) detected at line 80
- []
-
-[36
-
-]
-Overfull \vbox (11.80908pt too high) detected at line 80
- []
-
-[37
-
-]
-Overfull \vbox (11.80908pt too high) detected at line 80
- []
-
-[38
-
-]
-Overfull \vbox (11.80908pt too high) detected at line 80
- []
-
-[39
-
-]
-Overfull \vbox (11.80908pt too high) detected at line 80
- []
-
-[40
-
-]
-Overfull \vbox (11.80908pt too high) detected at line 80
- []
-
-[41
-
-] [42
-
-] [43
-
-] [44
-
-] [45
-
-] [46
-
-] [47
-
-] [48
-
-] [49
-
-] [50
-
-] [51
-
-]
-Overfull \vbox (0.78632pt too high) detected at line 161
- []
-
-[52
-
-]
-Overfull \vbox (0.78632pt too high) detected at line 161
- []
-
-[53
-
-]
-Overfull \vbox (0.78632pt too high) detected at line 161
- []
-
-[54
-
-]
-Overfull \vbox (0.78632pt too high) detected at line 161
- []
-
-[55
-
-]
-Overfull \vbox (0.78632pt too high) detected at line 161
- []
-
-[56
-
-]
-Overfull \vbox (0.78632pt too high) detected at line 161
- []
-
-[57
-
-]
-Overfull \vbox (6.30261pt too high) detected at line 184
- []
-
-[58
-
-]
-Overfull \vbox (6.30261pt too high) detected at line 184
- []
-
-[59
-
-]
-Overfull \vbox (6.30261pt too high) detected at line 184
- []
-
-[60
-
-]
-Overfull \vbox (6.30261pt too high) detected at line 184
- []
-
-[61
-
-]
-Overfull \vbox (6.30261pt too high) detected at line 184
- []
-
-[62
-
-]
-Overfull \vbox (6.30261pt too high) detected at line 184
- []
-
-[63
-
-]
-Overfull \vbox (6.30261pt too high) detected at line 184
- []
-
-[64
-
-]
-Overfull \vbox (19.43944pt too high) detected at line 212
- []
-
-[65
-
-]
-Overfull \vbox (19.43944pt too high) detected at line 212
- []
-
-[66
-
-]
-Overfull \vbox (19.43944pt too high) detected at line 212
- []
-
-[67
-
-]
-Overfull \vbox (19.43944pt too high) detected at line 212
- []
-
-[68
-
-]
-Overfull \vbox (19.43944pt too high) detected at line 212
- []
-
-[69
-
-]
-Overfull \vbox (5.53125pt too high) detected at line 238
- []
-
-[70
-
-]
-Overfull \vbox (5.53125pt too high) detected at line 238
- []
-
-[71
-
-]
-Overfull \vbox (5.53125pt too high) detected at line 238
- []
-
-[72
-
-]
-Overfull \vbox (5.53125pt too high) detected at line 238
- []
-
-[73
-
-]
-Overfull \vbox (5.53125pt too high) detected at line 238
- []
-
-[74
-
-]
-Overfull \vbox (5.53125pt too high) detected at line 238
- []
-
-[75
-
-]
-Overfull \vbox (5.53125pt too high) detected at line 238
- []
-
-[76
-
-]
-Overfull \vbox (5.53125pt too high) detected at line 238
- []
-
-[77
-
-] [78
-
-] [79
-
-] [80
-
-] [81
-
-] [82
-
-] [83
-
-] [84
-
-] [85
-
-] [86
-
-]) [87
-
-] (c2_rubiks_group.tex (graphics/rubiks_cube_net_empty.tikz)
-Overfull \vbox (20.4491pt too high) detected at line 14
- []
-
-[88
-
-] (graphics/rubiks_cube_net.tikz
+] (c2_rubiks_group.tex (graphics/rubiks_cube_net.tikz
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
 (Font)              scaled to size 10.0pt on input line 27.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
@@ -1812,15 +1542,9 @@ LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
 Overfull \vbox (20.4491pt too high) detected at line 14
  []
 
-[89
+[16
 
-] (graphics/rubiks_cube_net.tikz)
-Overfull \vbox (20.4491pt too high) detected at line 14
- []
-
-[90
-
-] (graphics/rubiks_cube_net.tikz)
+] (graphics/rubiks_cube_net_front.tikz)
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
 (Font)              scaled to size 6.2pt on input line 26.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
@@ -1841,103 +1565,27 @@ LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
 Overfull \vbox (34.30612pt too high) detected at line 26
  []
 
-[91
-
-] (graphics/rubiks_cube_net_front.tikz)
-Overfull \vbox (34.30612pt too high) detected at line 26
- []
-
-[92
-
-] (graphics/rubiks_cube_net_front.tikz)
-Overfull \vbox (34.30612pt too high) detected at line 26
- []
-
-[93
+[17
 
 ]
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
 (Font)              scaled to size 8.0pt on input line 46.
- [94
-
-] [95
-
-] [96
-
-] [97
-
-] [98
+ [18
 
 ]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 6.1pt on input line 62.
- [99
+ [19
 
-] [100
-
-] [101
-
-] [102
-
-] [103
-
-] [104
-
-] [105
-
-] [106
-
-] [107
-
-] (graphics/rubiks_cube_net.tikz) [108
-
-] (graphics/rubiks_cube_net_front.tikz) [109
+] (graphics/rubiks_cube_net_front.tikz) [20
 
 ]
 Overfull \vbox (0.77425pt too high) detected at line 90
  []
 
-[110
+[21
 
-]
-Overfull \vbox (0.77425pt too high) detected at line 90
- []
-
-[111
-
-]
-Overfull \vbox (0.77425pt too high) detected at line 90
- []
-
-[112
-
-]
-Overfull \vbox (0.77425pt too high) detected at line 90
- []
-
-[113
-
-]
-Overfull \vbox (0.77425pt too high) detected at line 90
- []
-
-[114
-
-] [115
-
-] [116
-
-] [117
-
-] [118
-
-] [119
-
-] [120
-
-] [121
-
-] [122
+] [22
 
 ]
 LaTeX Font Info:    Trying to load font information for OT1+ntxtt on input line 113.
@@ -1951,9 +1599,7 @@ LaTeX Font Info:    Font shape `OT1/ntxtt/m/n' will be
  (code/rubiks_def.gap
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/it' will be
 (Font)              scaled to size 9.0pt on input line 1.
-) [123
-
-] (code/rubiks_def.gap) [124
+) [23
 
 ] (graphics/rubiks_cube_net.tikz)
 LaTeX Font Info:    Font shape `OT1/ntxtt/m/n' will be
@@ -1982,299 +1628,79 @@ LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
 Overfull \vbox (11.70625pt too high) detected at line 136
  []
 
-[125
+[24
 
 ] (graphics/rubiks_cube_net.tikz) (code/rubiks_orbit_stab.gap) (code/rubiks_orbit_stab_2.gap)
-Overfull \vbox (11.70625pt too high) detected at line 136
+Overfull \vbox (11.70625pt too high) detected at line 157
  []
 
-[126
-
-] (graphics/rubiks_cube_net.tikz) (code/rubiks_orbit_stab.gap) (code/rubiks_orbit_stab_2.gap)
-Overfull \vbox (11.70625pt too high) detected at line 136
- []
-
-[127
-
-] (graphics/rubiks_cube_net.tikz) (code/rubiks_orbit_stab.gap) (code/rubiks_orbit_stab_2.gap) (code/rubik_product.gap)
-Overfull \vbox (4.3688pt too high) detected at line 174
- []
-
-[128
+[25
 
 ] (code/rubik_product.gap)
 Overfull \vbox (4.3688pt too high) detected at line 174
  []
 
-[129
+[26
 
-] (code/rubik_product.gap)
-Overfull \vbox (4.3688pt too high) detected at line 174
- []
+] [27
 
-[130
+] [28
 
-] (code/rubik_product.gap)
-Overfull \vbox (4.3688pt too high) detected at line 174
- []
+] [29
 
-[131
+]) [30
 
-] [132
+] (c3_analysis.tex [31
 
-] [133
-
-] [134
-
-] [135
-
-] [136
-
-] [137
-
-] [138
-
-] [139
-
-] [140
-
-] [141
-
-] [142
-
-] [143
-
-] [144
-
-] [145
-
-] [146
-
-] [147
-
-]) [148
-
-] (c3_analysis.tex [149
-
-] [150
-
-] [151
-
-] [152
-
-] (code/rubiks_group_base.gap) [153
-
-] (code/rubiks_group_base.gap) [154
-
-] (code/rubiks_group_base.gap) [155
+] (code/rubiks_group_base.gap) [32
 
 ]
 Overfull \vbox (25.09567pt too high) detected at line 72
  []
 
-[156
+[33
 
 ]
-Overfull \vbox (25.09567pt too high) detected at line 72
+Overfull \vbox (25.09567pt too high) detected at line 113
  []
 
-[157
+[34
 
 ]
-Overfull \vbox (25.09567pt too high) detected at line 72
+Overfull \vbox (25.09567pt too high) detected at line 154
  []
 
-[158
-
-]
-Overfull \vbox (25.09567pt too high) detected at line 72
- []
-
-[159
-
-]
-Overfull \vbox (25.09567pt too high) detected at line 72
- []
-
-[160
-
-]
-Overfull \vbox (25.09567pt too high) detected at line 72
- []
-
-[161
-
-]
-Overfull \vbox (25.09567pt too high) detected at line 72
- []
-
-[162
-
-]
-Overfull \vbox (25.09567pt too high) detected at line 72
- []
-
-[163
-
-]
-Overfull \vbox (25.09567pt too high) detected at line 72
- []
-
-[164
-
-]
-Overfull \vbox (25.09567pt too high) detected at line 72
- []
-
-[165
-
-]
-Overfull \vbox (25.09567pt too high) detected at line 72
- []
-
-[166
-
-]
-Overfull \vbox (25.09567pt too high) detected at line 72
- []
-
-[167
-
-]
-Overfull \vbox (25.09567pt too high) detected at line 72
- []
-
-[168
-
-]
-Overfull \vbox (25.09567pt too high) detected at line 72
- []
-
-[169
-
-] (graphics/rubiks_cube_net.tikz)
-Overfull \vbox (19.69702pt too high) detected at line 177
- []
-
-[170
-
-] (graphics/rubiks_cube_net.tikz)
-Overfull \vbox (19.69702pt too high) detected at line 177
- []
-
-[171
-
-] (graphics/rubiks_cube_net.tikz)
-Overfull \vbox (19.69702pt too high) detected at line 177
- []
-
-[172
-
-] (graphics/rubiks_cube_net.tikz)
-Overfull \vbox (19.69702pt too high) detected at line 177
- []
-
-[173
-
-] (graphics/rubiks_cube_net_swap_1.tikz)
-Overfull \vbox (19.69702pt too high) detected at line 177
- []
-
-[174
-
-] (graphics/rubiks_cube_net.tikz)
-Overfull \vbox (19.69702pt too high) detected at line 177
- []
-
-[175
+[35
 
 ] (graphics/rubiks_cube_net_swap_2.tikz)
 Overfull \vbox (19.69702pt too high) detected at line 177
  []
 
-[176
+[36
 
-] (graphics/rubiks_cube_net.tikz)
-Overfull \vbox (19.69702pt too high) detected at line 177
- []
+] (code/rubiks_membership_2.gap) [37
 
-[177
+] (code/rubiks_factorisation.gap) [38
 
-] (graphics/rubiks_cube_net_swap_3.tikz)
-Overfull \vbox (19.69702pt too high) detected at line 177
- []
-
-[178
-
-] (graphics/rubiks_cube_net.tikz)
-Overfull \vbox (19.69702pt too high) detected at line 177
- []
-
-[179
-
-] (graphics/rubiks_cube_net_swap_4.tikz)
-Overfull \vbox (19.69702pt too high) detected at line 177
- []
-
-[180
-
-] (code/rubiks_membership_2.gap) [181
-
-] (code/rubiks_membership_2.gap) [182
-
-] (code/rubiks_membership_2.gap) [183
-
-] (code/rubiks_membership_2.gap) [184
-
-] (code/rubiks_factorisation.gap) [185
-
-] (code/rubiks_factorisation.gap) [186
-
-] (code/rubiks_factorisation_2.gap) [187
-
-] (code/rubiks_factorisation_2.gap) [188
-
-] (code/rubiks_factorisation_2.gap) [189
+] (code/rubiks_factorisation_2.gap) [39
 
 ] (graphics/rubiks_cube_net_random.tikz)
 Overfull \vbox (12.73439pt too high) detected at line 236
  []
 
-[190
+[40
 
-] (code/rubiks_factorisation_3.gap) [191
-
-] (code/rubiks_factorisation_3.gap) [192
-
-] (code/rubiks_factorisation_3.gap) [193
+] (code/rubiks_factorisation_3.gap) [41
 
 ] (code/rubiks_factorisation_4.gap)
 Overfull \vbox (5.06319pt too high) detected at line 267
  []
 
-[194
+[42
 
-] (code/rubiks_factorisation_4.gap)
-Overfull \vbox (5.06319pt too high) detected at line 267
- []
+]) [43
 
-[195
-
-] (code/rubiks_factorisation_4.gap)
-Overfull \vbox (5.06319pt too high) detected at line 267
- []
-
-[196
-
-] (code/rubiks_factorisation_4.gap)
-Overfull \vbox (5.06319pt too high) detected at line 267
- []
-
-[197
-
-]) [198
-
-] [199
+] [44
 
 ]
 \tf@nav=\write5
@@ -2288,17 +1714,17 @@ Overfull \vbox (5.06319pt too high) detected at line 267
 
  (main.aux) ) 
 Here is how much of TeX's memory you used:
- 44159 strings out of 478582
- 928883 string characters out of 2842422
- 1602734 words of memory out of 3000000
- 60711 multiletter control sequences out of 15000+600000
+ 43760 strings out of 478582
+ 917351 string characters out of 2842422
+ 1604864 words of memory out of 3000000
+ 60702 multiletter control sequences out of 15000+600000
  538243 words of font info for 182 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,13n,122p,2009b,1689s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 128i,13n,122p,2009b,1685s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/tex-gyre/q-ts1.enc}<C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/NewTXMI.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/NewTXMI5.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/NewTXMI7.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/tex-gyre/qtmr.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txsya.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txsyb.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txsys.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txtt.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/ztmb.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/ztmr.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/ztmri.pfb>
-Output written on main.pdf (199 pages, 1011226 bytes).
+Output written on main.pdf (44 pages, 520451 bytes).
 PDF statistics:
- 1332 PDF objects out of 1440 (max. 8388607)
- 419 named destinations out of 1000 (max. 500000)
+ 466 PDF objects out of 1000 (max. 8388607)
+ 109 named destinations out of 1000 (max. 500000)
  304 words of extra memory for PDF output out of 10000 (max. 10000000)
 

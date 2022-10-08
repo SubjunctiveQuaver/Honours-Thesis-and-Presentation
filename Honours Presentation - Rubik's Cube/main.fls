@@ -2467,12 +2467,6 @@ INPUT .\c2_rubiks_group.tex
 INPUT c2_rubiks_group.tex
 INPUT .\c2_rubiks_group.tex
 INPUT c2_rubiks_group.tex
-INPUT .\graphics\rubiks_cube_net_empty.tikz
-INPUT graphics\rubiks_cube_net_empty.tikz
-INPUT .\graphics\rubiks_cube_net_empty.tikz
-INPUT graphics\rubiks_cube_net_empty.tikz
-INPUT .\graphics\rubiks_cube_net_empty.tikz
-INPUT graphics\rubiks_cube_net_empty.tikz
 INPUT .\graphics\rubiks_cube_net.tikz
 INPUT graphics\rubiks_cube_net.tikz
 INPUT .\graphics\rubiks_cube_net.tikz
@@ -2511,18 +2505,12 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\nt
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntxmi.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\NewTXMI.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\stxscr.tfm
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
+INPUT .\graphics\rubiks_cube_net_front.tikz
+INPUT graphics\rubiks_cube_net_front.tikz
+INPUT .\graphics\rubiks_cube_net_front.tikz
+INPUT graphics\rubiks_cube_net_front.tikz
+INPUT .\graphics\rubiks_cube_net_front.tikz
+INPUT graphics\rubiks_cube_net_front.tikz
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntx-Regular-tlf-ot1.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxmi5.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxsy5.tfm
@@ -2535,25 +2523,7 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\nt
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxexa.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntxmia.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txmiaSTbb.tfm
-INPUT .\graphics\rubiks_cube_net_front.tikz
-INPUT graphics\rubiks_cube_net_front.tikz
-INPUT .\graphics\rubiks_cube_net_front.tikz
-INPUT graphics\rubiks_cube_net_front.tikz
-INPUT .\graphics\rubiks_cube_net_front.tikz
-INPUT graphics\rubiks_cube_net_front.tikz
-INPUT .\graphics\rubiks_cube_net_front.tikz
-INPUT graphics\rubiks_cube_net_front.tikz
-INPUT .\graphics\rubiks_cube_net_front.tikz
-INPUT graphics\rubiks_cube_net_front.tikz
-INPUT .\graphics\rubiks_cube_net_front.tikz
-INPUT graphics\rubiks_cube_net_front.tikz
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\tex-gyre\ts1-qtmr.tfm
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
 INPUT .\graphics\rubiks_cube_net_front.tikz
 INPUT graphics\rubiks_cube_net_front.tikz
 INPUT .\graphics\rubiks_cube_net_front.tikz
@@ -2576,12 +2546,6 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\nt
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntx-Italic-tlf-ot1.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\NewTXMI.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntx-Italic-tlf-ot1r.tfm
-INPUT .\code\rubiks_def.gap
-INPUT code\rubiks_def.gap
-INPUT .\code\rubiks_def.gap
-INPUT code\rubiks_def.gap
-INPUT .\code\rubiks_def.gap
-INPUT code\rubiks_def.gap
 INPUT .\graphics\rubiks_cube_net.tikz
 INPUT graphics\rubiks_cube_net.tikz
 INPUT .\graphics\rubiks_cube_net.tikz
@@ -2637,42 +2601,6 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\tx
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txex-bar.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntxmia.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txmiaSTbb.tfm
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\code\rubiks_orbit_stab.gap
-INPUT code\rubiks_orbit_stab.gap
-INPUT .\code\rubiks_orbit_stab.gap
-INPUT code\rubiks_orbit_stab.gap
-INPUT .\code\rubiks_orbit_stab.gap
-INPUT code\rubiks_orbit_stab.gap
-INPUT .\code\rubiks_orbit_stab_2.gap
-INPUT code\rubiks_orbit_stab_2.gap
-INPUT .\code\rubiks_orbit_stab_2.gap
-INPUT code\rubiks_orbit_stab_2.gap
-INPUT .\code\rubiks_orbit_stab_2.gap
-INPUT code\rubiks_orbit_stab_2.gap
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\code\rubiks_orbit_stab.gap
-INPUT code\rubiks_orbit_stab.gap
-INPUT .\code\rubiks_orbit_stab.gap
-INPUT code\rubiks_orbit_stab.gap
-INPUT .\code\rubiks_orbit_stab.gap
-INPUT code\rubiks_orbit_stab.gap
-INPUT .\code\rubiks_orbit_stab_2.gap
-INPUT code\rubiks_orbit_stab_2.gap
-INPUT .\code\rubiks_orbit_stab_2.gap
-INPUT code\rubiks_orbit_stab_2.gap
-INPUT .\code\rubiks_orbit_stab_2.gap
-INPUT code\rubiks_orbit_stab_2.gap
 INPUT .\code\rubik_product.gap
 INPUT code\rubik_product.gap
 INPUT .\code\rubik_product.gap
@@ -2682,24 +2610,6 @@ INPUT code\rubik_product.gap
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntxmi5.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\NewTXMI5.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\stxscr.tfm
-INPUT .\code\rubik_product.gap
-INPUT code\rubik_product.gap
-INPUT .\code\rubik_product.gap
-INPUT code\rubik_product.gap
-INPUT .\code\rubik_product.gap
-INPUT code\rubik_product.gap
-INPUT .\code\rubik_product.gap
-INPUT code\rubik_product.gap
-INPUT .\code\rubik_product.gap
-INPUT code\rubik_product.gap
-INPUT .\code\rubik_product.gap
-INPUT code\rubik_product.gap
-INPUT .\code\rubik_product.gap
-INPUT code\rubik_product.gap
-INPUT .\code\rubik_product.gap
-INPUT code\rubik_product.gap
-INPUT .\code\rubik_product.gap
-INPUT code\rubik_product.gap
 INPUT .\c3_analysis.tex
 INPUT c3_analysis.tex
 INPUT .\c3_analysis.tex
@@ -2710,117 +2620,21 @@ INPUT .\code\rubiks_group_base.gap
 INPUT code\rubiks_group_base.gap
 INPUT .\code\rubiks_group_base.gap
 INPUT code\rubiks_group_base.gap
-INPUT .\code\rubiks_group_base.gap
-INPUT code\rubiks_group_base.gap
-INPUT .\code\rubiks_group_base.gap
-INPUT code\rubiks_group_base.gap
-INPUT .\code\rubiks_group_base.gap
-INPUT code\rubiks_group_base.gap
-INPUT .\code\rubiks_group_base.gap
-INPUT code\rubiks_group_base.gap
-INPUT .\code\rubiks_group_base.gap
-INPUT code\rubiks_group_base.gap
-INPUT .\code\rubiks_group_base.gap
-INPUT code\rubiks_group_base.gap
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net_swap_1.tikz
-INPUT graphics\rubiks_cube_net_swap_1.tikz
-INPUT .\graphics\rubiks_cube_net_swap_1.tikz
-INPUT graphics\rubiks_cube_net_swap_1.tikz
-INPUT .\graphics\rubiks_cube_net_swap_1.tikz
-INPUT graphics\rubiks_cube_net_swap_1.tikz
+INPUT .\graphics\rubiks_cube_net_swap_2.tikz
+INPUT graphics\rubiks_cube_net_swap_2.tikz
+INPUT .\graphics\rubiks_cube_net_swap_2.tikz
+INPUT graphics\rubiks_cube_net_swap_2.tikz
+INPUT .\graphics\rubiks_cube_net_swap_2.tikz
+INPUT graphics\rubiks_cube_net_swap_2.tikz
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntxsy.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txsys.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txex-bar.tfm
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net_swap_2.tikz
-INPUT graphics\rubiks_cube_net_swap_2.tikz
-INPUT .\graphics\rubiks_cube_net_swap_2.tikz
-INPUT graphics\rubiks_cube_net_swap_2.tikz
-INPUT .\graphics\rubiks_cube_net_swap_2.tikz
-INPUT graphics\rubiks_cube_net_swap_2.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net_swap_3.tikz
-INPUT graphics\rubiks_cube_net_swap_3.tikz
-INPUT .\graphics\rubiks_cube_net_swap_3.tikz
-INPUT graphics\rubiks_cube_net_swap_3.tikz
-INPUT .\graphics\rubiks_cube_net_swap_3.tikz
-INPUT graphics\rubiks_cube_net_swap_3.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net_swap_4.tikz
-INPUT graphics\rubiks_cube_net_swap_4.tikz
-INPUT .\graphics\rubiks_cube_net_swap_4.tikz
-INPUT graphics\rubiks_cube_net_swap_4.tikz
-INPUT .\graphics\rubiks_cube_net_swap_4.tikz
-INPUT graphics\rubiks_cube_net_swap_4.tikz
 INPUT .\code\rubiks_membership_2.gap
 INPUT code\rubiks_membership_2.gap
 INPUT .\code\rubiks_membership_2.gap
 INPUT code\rubiks_membership_2.gap
 INPUT .\code\rubiks_membership_2.gap
 INPUT code\rubiks_membership_2.gap
-INPUT .\code\rubiks_membership_2.gap
-INPUT code\rubiks_membership_2.gap
-INPUT .\code\rubiks_membership_2.gap
-INPUT code\rubiks_membership_2.gap
-INPUT .\code\rubiks_membership_2.gap
-INPUT code\rubiks_membership_2.gap
-INPUT .\code\rubiks_membership_2.gap
-INPUT code\rubiks_membership_2.gap
-INPUT .\code\rubiks_membership_2.gap
-INPUT code\rubiks_membership_2.gap
-INPUT .\code\rubiks_membership_2.gap
-INPUT code\rubiks_membership_2.gap
-INPUT .\code\rubiks_membership_2.gap
-INPUT code\rubiks_membership_2.gap
-INPUT .\code\rubiks_membership_2.gap
-INPUT code\rubiks_membership_2.gap
-INPUT .\code\rubiks_membership_2.gap
-INPUT code\rubiks_membership_2.gap
-INPUT .\code\rubiks_factorisation.gap
-INPUT code\rubiks_factorisation.gap
-INPUT .\code\rubiks_factorisation.gap
-INPUT code\rubiks_factorisation.gap
-INPUT .\code\rubiks_factorisation.gap
-INPUT code\rubiks_factorisation.gap
 INPUT .\code\rubiks_factorisation.gap
 INPUT code\rubiks_factorisation.gap
 INPUT .\code\rubiks_factorisation.gap
@@ -2835,18 +2649,6 @@ INPUT .\code\rubiks_factorisation_2.gap
 INPUT code\rubiks_factorisation_2.gap
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntxmi.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\stxscr.tfm
-INPUT .\code\rubiks_factorisation_2.gap
-INPUT code\rubiks_factorisation_2.gap
-INPUT .\code\rubiks_factorisation_2.gap
-INPUT code\rubiks_factorisation_2.gap
-INPUT .\code\rubiks_factorisation_2.gap
-INPUT code\rubiks_factorisation_2.gap
-INPUT .\code\rubiks_factorisation_2.gap
-INPUT code\rubiks_factorisation_2.gap
-INPUT .\code\rubiks_factorisation_2.gap
-INPUT code\rubiks_factorisation_2.gap
-INPUT .\code\rubiks_factorisation_2.gap
-INPUT code\rubiks_factorisation_2.gap
 INPUT .\graphics\rubiks_cube_net_random.tikz
 INPUT graphics\rubiks_cube_net_random.tikz
 INPUT .\graphics\rubiks_cube_net_random.tikz
@@ -2862,18 +2664,6 @@ INPUT code\rubiks_factorisation_3.gap
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntx-Regular-tlf-ot1.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txmiaX.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntx-Regular-tlf-ot1r.tfm
-INPUT .\code\rubiks_factorisation_3.gap
-INPUT code\rubiks_factorisation_3.gap
-INPUT .\code\rubiks_factorisation_3.gap
-INPUT code\rubiks_factorisation_3.gap
-INPUT .\code\rubiks_factorisation_3.gap
-INPUT code\rubiks_factorisation_3.gap
-INPUT .\code\rubiks_factorisation_3.gap
-INPUT code\rubiks_factorisation_3.gap
-INPUT .\code\rubiks_factorisation_3.gap
-INPUT code\rubiks_factorisation_3.gap
-INPUT .\code\rubiks_factorisation_3.gap
-INPUT code\rubiks_factorisation_3.gap
 INPUT .\code\rubiks_factorisation_4.gap
 INPUT code\rubiks_factorisation_4.gap
 INPUT .\code\rubiks_factorisation_4.gap
@@ -2886,24 +2676,6 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\tx
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntx-Regular-tlf-ot1.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txmiaX.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntx-Regular-tlf-ot1r.tfm
-INPUT .\code\rubiks_factorisation_4.gap
-INPUT code\rubiks_factorisation_4.gap
-INPUT .\code\rubiks_factorisation_4.gap
-INPUT code\rubiks_factorisation_4.gap
-INPUT .\code\rubiks_factorisation_4.gap
-INPUT code\rubiks_factorisation_4.gap
-INPUT .\code\rubiks_factorisation_4.gap
-INPUT code\rubiks_factorisation_4.gap
-INPUT .\code\rubiks_factorisation_4.gap
-INPUT code\rubiks_factorisation_4.gap
-INPUT .\code\rubiks_factorisation_4.gap
-INPUT code\rubiks_factorisation_4.gap
-INPUT .\code\rubiks_factorisation_4.gap
-INPUT code\rubiks_factorisation_4.gap
-INPUT .\code\rubiks_factorisation_4.gap
-INPUT code\rubiks_factorisation_4.gap
-INPUT .\code\rubiks_factorisation_4.gap
-INPUT code\rubiks_factorisation_4.gap
 OUTPUT main.nav
 OUTPUT main.toc
 OUTPUT main.snm
