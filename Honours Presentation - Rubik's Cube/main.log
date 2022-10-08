@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.22)  8 OCT 2022 17:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.22)  8 OCT 2022 18:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/lawre/OneDrive/Education/Monash University/2022/MTH4100 Research Project/Honours Presentation - Rubik's Cube/main.tex"
-(c:/Users/lawre/OneDrive/Education/Monash University/2022/MTH4100 Research Project/Honours Presentation - Rubik's Cube/main.tex
+**"c:/Users/lawre/OneDrive/Education/Monash University/2022/MTH4100 Research Project/Honours Thesis and Presentation/Honours Presentation - Rubik's Cube/main.tex"
+(c:/Users/lawre/OneDrive/Education/Monash University/2022/MTH4100 Research Project/Honours Thesis and Presentation/Honours Presentation - Rubik's Cube/main.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24> (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/beamer\beamer.cls
 Document Class: beamer 2022/02/08 v3.66 A class for typesetting presentations
@@ -1317,8 +1317,7 @@ Dictionary: translator-theorem-dictionary, Language: English
 \c@mv@tabular=\count417
 \c@mv@boldtabular=\count418
 \c@lstlisting=\count419
-
-No file main.nav.
+ (main.nav)
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 6.0pt on input line 22.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
@@ -1348,14 +1347,15 @@ Overfull \vbox (15.63992pt too high) detected at line 26
 
 [1
 
-{C:/Users/lawre/AppData/Local/MiKTeX/2.9/fonts/map/pdftex/pdftex.map} <./graphics/rubiks_cube_title.png>]
-No file main.toc.
-No file main.toc.
+{C:/Users/lawre/AppData/Local/MiKTeX/2.9/fonts/map/pdftex/pdftex.map} <./graphics/rubiks_cube_title.png>] (main.toc
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 9.0pt on input line 3.
+) (main.toc)
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 12.0pt on input line 38.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 12.0pt on input line 38.
-[2
+ [2
 
 ]
 LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input line 59.
@@ -1946,8 +1946,6 @@ File: ot1ntxtt.fd 2012/04/20 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/ntxtt/m/n' will be
 (Font)              scaled to size 10.95pt on input line 113.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.0pt on input line 113.
 LaTeX Font Info:    Font shape `OT1/ntxtt/m/n' will be
 (Font)              scaled to size 9.0pt on input line 113.
  (code/rubiks_def.gap
@@ -2179,3 +2177,128 @@ Overfull \vbox (19.69702pt too high) detected at line 177
 [173
 
 ] (graphics/rubiks_cube_net_swap_1.tikz)
+Overfull \vbox (19.69702pt too high) detected at line 177
+ []
+
+[174
+
+] (graphics/rubiks_cube_net.tikz)
+Overfull \vbox (19.69702pt too high) detected at line 177
+ []
+
+[175
+
+] (graphics/rubiks_cube_net_swap_2.tikz)
+Overfull \vbox (19.69702pt too high) detected at line 177
+ []
+
+[176
+
+] (graphics/rubiks_cube_net.tikz)
+Overfull \vbox (19.69702pt too high) detected at line 177
+ []
+
+[177
+
+] (graphics/rubiks_cube_net_swap_3.tikz)
+Overfull \vbox (19.69702pt too high) detected at line 177
+ []
+
+[178
+
+] (graphics/rubiks_cube_net.tikz)
+Overfull \vbox (19.69702pt too high) detected at line 177
+ []
+
+[179
+
+] (graphics/rubiks_cube_net_swap_4.tikz)
+Overfull \vbox (19.69702pt too high) detected at line 177
+ []
+
+[180
+
+] (code/rubiks_membership_2.gap) [181
+
+] (code/rubiks_membership_2.gap) [182
+
+] (code/rubiks_membership_2.gap) [183
+
+] (code/rubiks_membership_2.gap) [184
+
+] (code/rubiks_factorisation.gap) [185
+
+] (code/rubiks_factorisation.gap) [186
+
+] (code/rubiks_factorisation_2.gap) [187
+
+] (code/rubiks_factorisation_2.gap) [188
+
+] (code/rubiks_factorisation_2.gap) [189
+
+] (graphics/rubiks_cube_net_random.tikz)
+Overfull \vbox (12.73439pt too high) detected at line 236
+ []
+
+[190
+
+] (code/rubiks_factorisation_3.gap) [191
+
+] (code/rubiks_factorisation_3.gap) [192
+
+] (code/rubiks_factorisation_3.gap) [193
+
+] (code/rubiks_factorisation_4.gap)
+Overfull \vbox (5.06319pt too high) detected at line 267
+ []
+
+[194
+
+] (code/rubiks_factorisation_4.gap)
+Overfull \vbox (5.06319pt too high) detected at line 267
+ []
+
+[195
+
+] (code/rubiks_factorisation_4.gap)
+Overfull \vbox (5.06319pt too high) detected at line 267
+ []
+
+[196
+
+] (code/rubiks_factorisation_4.gap)
+Overfull \vbox (5.06319pt too high) detected at line 267
+ []
+
+[197
+
+]) [198
+
+] [199
+
+]
+\tf@nav=\write5
+\openout5 = `main.nav'.
+
+\tf@toc=\write6
+\openout6 = `main.toc'.
+
+\tf@snm=\write7
+\openout7 = `main.snm'.
+
+ (main.aux) ) 
+Here is how much of TeX's memory you used:
+ 44159 strings out of 478582
+ 928883 string characters out of 2842422
+ 1602734 words of memory out of 3000000
+ 60711 multiletter control sequences out of 15000+600000
+ 538243 words of font info for 182 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 128i,13n,122p,2009b,1689s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/tex-gyre/q-ts1.enc}<C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/NewTXMI.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/NewTXMI5.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/NewTXMI7.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/tex-gyre/qtmr.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txsya.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txsyb.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txsys.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txtt.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/ztmb.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/ztmr.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/ztmri.pfb>
+Output written on main.pdf (199 pages, 1011226 bytes).
+PDF statistics:
+ 1332 PDF objects out of 1440 (max. 8388607)
+ 419 named destinations out of 1000 (max. 500000)
+ 304 words of extra memory for PDF output out of 10000 (max. 10000000)
+
