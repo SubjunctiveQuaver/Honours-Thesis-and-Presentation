@@ -190,40 +190,40 @@
         \vspace{0pt}
         Let $r = (1,2,3,4),s = (1,4)(2,3) \in \Sym(4)$. \textbf{Dihedral group} is $D_8 := \langle r,s \rangle = \{1,r,r^2,r^3,s,sr,sr^2,sr^3\}$, \textit{``symmetries of square''}.
 
-        \onslide<2->{\textit{Note:} $sr = (2,4)$, $sr^2 = (1,2)(3,4)$. Natural action of $D_8$ on $[4]$:}
+        \onslide<2->{\textit{Note:} $sr = (2,4)$, $sr^2 = (1,2)(3,4)$. Visualise natural action of $D_8$ on vertices $[4]$ of square: $\sigma$ maps vertex $i$ to $i^\sigma$ (or relabels $i$ as $i^{\sigma^{-1}}$).}
 
         \begin{center}
             \begin{tikzpicture}[x=1cm,y=1cm]
                 \GraphInit[vstyle=Classic]
                 \tikzset{VertexStyle/.append style={minimum size=1pt}}
                 % TOP LEFT
+                \tkzDefPoint(0.5,0.25){l2}
+                \tkzDefPoint(0.5,-1.25){l3}
+                \tkzDefPoint(-0.25,0.25){l4}
+                \tkzDefPoint(1.25,-1.25){l5}
+                \tikzset{EdgeStyle/.style={dotted}}
+                \onslide<5->{\Edge(l2)(l3)} % s
+                \onslide<7->{\Edge[color=metrogreen](l4)(l5)} % sr
                 \tikzset{EdgeStyle/.style={-}}
                 \onslide<3->{\Vertex[Lpos=180]{1} \SO[Lpos=180](1){2} \EA(2){3} \NO(3){4}
                     \Edges(1,2,3,4,1)
                     \tikzset{EdgeStyle/.style={->}}
                     \tkzDefPoint(1.5,-0.5){a1}
                     \tkzDefPoint(3.5,-0.5){a2}
-                    \onslide<4->{\Edge[label=$r$,labelstyle={fill=metropolis}](a1)(a2)
-                        \tkzDefPoint(2.5,0){l1}\tkzLabelPoint[centered](l1){$\curvearrowright$}
-                        \tkzDefPoint(0.5,0.25){l2}
-                        \tkzDefPoint(0.5,-1.25){l3}
-                        \tkzDefPoint(-0.25,0.25){l4}
-                        \tkzDefPoint(1.25,-1.25){l5}
-                        \tikzset{EdgeStyle/.style={dotted}}
-                        \onslide<5->{\Edge(l2)(l3)} % s
-                        \onslide<7->{\Edge(l4)(l5)} % sr
+                    \onslide<4->{\Edge[label=$r$,labelcolor=metropolis](a1)(a2)
+                        \tkzDefPoint(2.5,0){l1}\tkzLabelPoint[centered](l1){$\curvearrowleft$}
                         % TOP RIGHT
+                        \tkzDefPoint(3.75,-0.5){l2}
+                        \tkzDefPoint(5.25,-0.5){l3}
+                        \tikzset{EdgeStyle/.style={dotted}}
+                        \onslide<8->{\Edge(l2)(l3)} % sr^2
                         \tikzset{EdgeStyle/.style={-}}
-                        \onslide<4->{\Vertex[x=4,y=0,Lpos=180]{2} \SO[Lpos=180](2){3} \EA(3){4} \NO(4){1}
+                        \onslide<4->{\Vertex[x=4,y=0,Lpos=180]{4} \SO[Lpos=180](4){1} \EA(1){2} \NO(2){3}
                             \Edges(1,2,3,4,1)}
                         \tikzset{EdgeStyle/.style={->}}
                         \tkzDefPoint(0.5,-1.5){a1}
                         \tkzDefPoint(0.5,-2.5){a2}
-                        \onslide<5->{\Edge[label=$s$,labelstyle={fill=metropolis}](a1)(a2)}
-                        \tkzDefPoint(4.5,0.25){l2}
-                        \tkzDefPoint(4.5,-1.25){l3}
-                        \tikzset{EdgeStyle/.style={dotted}}
-                        \onslide<8->{\Edge(l2)(l3)} % sr^2
+                        \onslide<5->{\Edge[label=$s$,labelcolor=metropolis](a1)(a2)}
                         % BOTTOM LEFT
                         \tikzset{EdgeStyle/.style={-}}
                         \onslide<5->{\Vertex[x=0,y=-3,Lpos=180]{4} \SO[Lpos=180](4){3} \EA(3){2} \NO(2){1}
@@ -231,7 +231,7 @@
                         \tikzset{EdgeStyle/.style={->}}
                         \tkzDefPoint(1.5,-3.5){a1}
                         \tkzDefPoint(3.5,-3.5){a2}
-                        \onslide<6->{\Edge[label=$r$,labelstyle={fill=metropolis}](a1)(a2)
+                        \onslide<6->{\Edge[label=$r$,labelcolor=metropolis](a1)(a2)
                             \tkzDefPoint(2.5,-3){l1}\tkzLabelPoint[centered](l1){$\curvearrowleft$}}
                         % BOTTOM RIGHT
                         \tikzset{EdgeStyle/.style={-}}
@@ -240,10 +240,10 @@
                         \tikzset{EdgeStyle/.style={->}}
                         \tkzDefPoint(4.5,-1.5){a1}
                         \tkzDefPoint(4.5,-2.5){a2}
-                        \onslide<8->{\Edge[label=$sr^2$,labelstyle={fill=metropolis}](a1)(a2)}
+                        \onslide<8->{\Edge[label=$sr^2$,labelcolor=metropolis](a1)(a2)}
                         \tkzDefPoint(1.5,-1.5){a1}
                         \tkzDefPoint(3.5,-2.5){a2}
-                        \onslide<7->{\Edge[label=$sr$,labelstyle={fill=metropolis}](a1)(a2)}}}
+                        \onslide<7->{\Edge[label=$sr$,labelcolor=metropolis,labeltext=metrogreen,color=metrogreen](a1)(a2)}}}
             \end{tikzpicture}
         \end{center}
     \end{example}

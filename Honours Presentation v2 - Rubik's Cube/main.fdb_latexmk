@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1665318860 "c:/Users/lawre/OneDrive/Education/Monash University/2022/MTH4100 Research Project/Honours Thesis and Presentation/Honours Presentation v2 - Rubik's Cube/main.tex" "main.pdf" "main" 1665318879
+["pdflatex"] 1665323267 "c:/Users/lawre/OneDrive/Education/Monash University/2022/MTH4100 Research Project/Honours Thesis and Presentation/Honours Presentation v2 - Rubik's Cube/main.tex" "main.pdf" "main" 1665323280
   "C:/Users/lawre/AppData/Local/MiKTeX/2.9/fonts/map/pdftex/pdftex.map" 1665128607 414848 f8bf8b93cb4ded28a23b8e1d5a484817 ""
   "C:/Users/lawre/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1647931139 10248883 8606a39bd149ad75b2a87bf0cfebaa61 ""
   "C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc" 1421694697 2083 60e36f8eac802fcaf19eabe2633b406e ""
@@ -392,14 +392,14 @@
   "C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/tex/latex/xkeyval/xkeyval.sty" 1623009290 4902 efb3d66683a2da2a232f71e3a571a899 ""
   "C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/tex/latex/xstring/xstring.sty" 1543858404 123 a302f2c651a95033260db60e51527ae8 ""
   "C:/Users/lawre/OneDrive/Documents/LaTeX/tex/latex/commands.tex" 1664209408 7114 9ab49bddc035384d14d897865ffea60b ""
-  "c1_group_theory.tex" 1665306391 15196 0106622bfc0723231db3872b6e616662 ""
+  "c1_group_theory.tex" 1665323264 15269 b9781d6805e75bf6ab33b212857875b0 ""
   "c:/Users/lawre/OneDrive/Education/Monash University/2022/MTH4100 Research Project/Honours Thesis and Presentation/Honours Presentation v2 - Rubik's Cube/main.tex" 1665318841 3293 59cf4ed5d724d78732ae26628423bd83 ""
   "graphics/rubiks_cube_title.png" 1664971565 211149 be985f38d9f7150218b3f444a07f75df ""
-  "main.aux" 1665318877 10324 bf222761ed13b57a633d07ea40b6f193 "pdflatex"
-  "main.nav" 1665318877 3647 a31c2cd9c51eb0154bb451adcd5fe0c2 "pdflatex"
+  "main.aux" 1665323279 10324 bf222761ed13b57a633d07ea40b6f193 "pdflatex"
+  "main.nav" 1665323279 3647 a31c2cd9c51eb0154bb451adcd5fe0c2 "pdflatex"
   "main.tex" 1665318841 3293 59cf4ed5d724d78732ae26628423bd83 ""
-  "main.toc" 1665318877 732 49a2257b23dbcfae0164049e5840eeff "pdflatex"
-  "preamble/preamble.tex" 1665301123 3223 4992f18c36addc865050f6a45e766b3e ""
+  "main.toc" 1665323279 732 49a2257b23dbcfae0164049e5840eeff "pdflatex"
+  "preamble/preamble.tex" 1665323266 3263 2a6e285b70cb2943e6af73af6c83c6ce ""
   (generated)
   "main.aux"
   "main.log"
