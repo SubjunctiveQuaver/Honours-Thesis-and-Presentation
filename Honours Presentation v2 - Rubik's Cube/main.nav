@@ -11,57 +11,31 @@
 \headcommand {\sectionentry {1}{Some basic group theory}{4}{Some basic group theory}{0}}
 \headcommand {\slideentry {1}{0}{1}{4/4}{}{0}}
 \headcommand {\beamer@framepages {4}{4}}
+\headcommand {\beamer@sectionpages {4}{4}}
 \headcommand {\beamer@subsectionpages {4}{4}}
-\headcommand {\beamer@subsectionentry {0}{1}{1}{5}{Permutations}}
-\headcommand {\slideentry {1}{1}{1}{5/5}{Permutations}{0}}
+\headcommand {\sectionentry {2}{The Rubik's group}{5}{The Rubik's group}{0}}
+\headcommand {\slideentry {2}{0}{1}{5/5}{}{0}}
 \headcommand {\beamer@framepages {5}{5}}
-\headcommand {\slideentry {1}{1}{2}{6/6}{Permutations}{0}}
+\headcommand {\beamer@subsectionpages {5}{5}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{6}{Representing the cube and its moves}}
+\headcommand {\slideentry {2}{1}{1}{6/6}{Representing the cube and its moves}{0}}
 \headcommand {\beamer@framepages {6}{6}}
-\headcommand {\slideentry {1}{1}{3}{7/7}{Permutations}{0}}
+\headcommand {\beamer@sectionpages {5}{6}}
+\headcommand {\beamer@subsectionpages {6}{6}}
+\headcommand {\sectionentry {3}{Analysing the Rubik's group}{7}{Analysing the Rubik's group}{0}}
+\headcommand {\slideentry {3}{0}{1}{7/7}{}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\beamer@subsectionpages {5}{7}}
-\headcommand {\beamer@subsectionentry {0}{1}{2}{8}{Permutation groups}}
-\headcommand {\slideentry {1}{2}{1}{8/8}{Permutation groups}{0}}
+\headcommand {\beamer@sectionpages {7}{7}}
+\headcommand {\beamer@subsectionpages {7}{7}}
+\headcommand {\sectionentry {4}{Concluding remarks}{8}{Concluding remarks}{0}}
+\headcommand {\slideentry {4}{0}{1}{8/8}{}{0}}
 \headcommand {\beamer@framepages {8}{8}}
 \headcommand {\beamer@subsectionpages {8}{8}}
-\headcommand {\beamer@subsectionentry {0}{1}{3}{9}{Order}}
-\headcommand {\slideentry {1}{3}{1}{9/9}{Order}{0}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{9}{References and resources}}
+\headcommand {\slideentry {4}{1}{1}{9/9}{References and resources}{0}}
 \headcommand {\beamer@framepages {9}{9}}
+\headcommand {\beamer@partpages {1}{9}}
 \headcommand {\beamer@subsectionpages {9}{9}}
-\headcommand {\beamer@subsectionentry {0}{1}{4}{10}{Generators}}
-\headcommand {\slideentry {1}{4}{1}{10/10}{Generators}{0}}
-\headcommand {\beamer@framepages {10}{10}}
-\headcommand {\beamer@subsectionpages {10}{10}}
-\headcommand {\beamer@subsectionentry {0}{1}{5}{11}{Group actions}}
-\headcommand {\slideentry {1}{5}{1}{11/11}{Group actions}{0}}
-\headcommand {\beamer@framepages {11}{11}}
-\headcommand {\slideentry {1}{5}{2}{12/12}{Group actions}{0}}
-\headcommand {\beamer@framepages {12}{12}}
-\headcommand {\slideentry {1}{5}{3}{13/13}{Group actions}{0}}
-\headcommand {\beamer@framepages {13}{13}}
-\headcommand {\slideentry {1}{5}{4}{14/14}{Group actions}{0}}
-\headcommand {\beamer@framepages {14}{14}}
-\headcommand {\beamer@sectionpages {4}{14}}
-\headcommand {\beamer@subsectionpages {11}{14}}
-\headcommand {\sectionentry {2}{The Rubik's group}{15}{The Rubik's group}{0}}
-\headcommand {\slideentry {2}{0}{1}{15/15}{}{0}}
-\headcommand {\beamer@framepages {15}{15}}
-\headcommand {\beamer@sectionpages {15}{15}}
-\headcommand {\beamer@subsectionpages {15}{15}}
-\headcommand {\sectionentry {3}{Analysing the Rubik's group}{16}{Analysing the Rubik's group}{0}}
-\headcommand {\slideentry {3}{0}{1}{16/16}{}{0}}
-\headcommand {\beamer@framepages {16}{16}}
-\headcommand {\beamer@sectionpages {16}{16}}
-\headcommand {\beamer@subsectionpages {16}{16}}
-\headcommand {\sectionentry {4}{Concluding remarks}{17}{Concluding remarks}{0}}
-\headcommand {\slideentry {4}{0}{1}{17/17}{}{0}}
-\headcommand {\beamer@framepages {17}{17}}
-\headcommand {\beamer@subsectionpages {17}{17}}
-\headcommand {\beamer@subsectionentry {0}{4}{1}{18}{References and resources}}
-\headcommand {\slideentry {4}{1}{1}{18/18}{References and resources}{0}}
-\headcommand {\beamer@framepages {18}{18}}
-\headcommand {\beamer@partpages {1}{18}}
-\headcommand {\beamer@subsectionpages {18}{18}}
-\headcommand {\beamer@sectionpages {17}{18}}
-\headcommand {\beamer@documentpages {18}}
-\headcommand {\gdef \inserttotalframenumber {12}}
+\headcommand {\beamer@sectionpages {8}{9}}
+\headcommand {\beamer@documentpages {9}}
+\headcommand {\gdef \inserttotalframenumber {3}}
