@@ -190,7 +190,7 @@
         \vspace{0pt}
         Let $r = (1,2,3,4),s = (1,4)(2,3) \in \Sym(4)$. \textbf{Dihedral group} is $D_8 := \langle r,s \rangle = \{1,r,r^2,r^3,s,sr,sr^2,sr^3\}$, \textit{``symmetries of square''}.
 
-        \onslide<2->{\textit{Note:} $sr = (2,4)$, $sr^2 = (1,2)(3,4)$. Visualise natural action of $D_8$ on vertices $[4]$ of square: $\sigma$ maps vertex $i$ to $i^\sigma$ (or relabels $i$ as $i^{\sigma^{-1}}$).}
+        \onslide<2->{\textit{Note:} $sr = (2,4)$, $sr^2 = (1,2)(3,4)$. Action of $D_8$ on vertices of square (positions labelled by $[4]$): $\sigma \in D_8$ sends vertex at $i$ to $i^\sigma$.}
 
         \begin{center}
             \begin{tikzpicture}[x=1cm,y=1cm]
@@ -205,7 +205,11 @@
                 \onslide<5->{\Edge(l2)(l3)} % s
                 \onslide<7->{\Edge[color=metrogreen](l4)(l5)} % sr
                 \tikzset{EdgeStyle/.style={-}}
-                \onslide<3->{\Vertex[Lpos=180]{1} \SO[Lpos=180](1){2} \EA(2){3} \NO(3){4}
+                \onslide<3->{{\Vertex[Lpos=180]{1} \SO[Lpos=180](1){2} \EA(2){3} \NO(3){4}
+                            \AddVertexColor{red}{1}
+                            \AddVertexColor{green}{2}
+                            \AddVertexColor{blue}{3}
+                            \AddVertexColor{yellow}{4}}
                     \Edges(1,2,3,4,1)
                     \tikzset{EdgeStyle/.style={->}}
                     \tkzDefPoint(1.5,-0.5){a1}
@@ -218,7 +222,11 @@
                         \tikzset{EdgeStyle/.style={dotted}}
                         \onslide<8->{\Edge(l2)(l3)} % sr^2
                         \tikzset{EdgeStyle/.style={-}}
-                        \onslide<4->{\Vertex[x=4,y=0,Lpos=180]{4} \SO[Lpos=180](4){1} \EA(1){2} \NO(2){3}
+                        \onslide<4->{\Vertex[x=4,y=0,Lpos=180]{1} \SO[Lpos=180](1){2} \EA(2){3} \NO(3){4}
+                        \AddVertexColor{yellow}{1}
+                        \AddVertexColor{red}{2}
+                        \AddVertexColor{green}{3}
+                        \AddVertexColor{blue}{4}
                             \Edges(1,2,3,4,1)}
                         \tikzset{EdgeStyle/.style={->}}
                         \tkzDefPoint(0.5,-1.5){a1}
@@ -226,7 +234,11 @@
                         \onslide<5->{\Edge[label=$s$,labelcolor=metropolis](a1)(a2)}
                         % BOTTOM LEFT
                         \tikzset{EdgeStyle/.style={-}}
-                        \onslide<5->{\Vertex[x=0,y=-3,Lpos=180]{4} \SO[Lpos=180](4){3} \EA(3){2} \NO(2){1}
+                        \onslide<5->{\Vertex[x=0,y=-3,Lpos=180]{1} \SO[Lpos=180](1){2} \EA(2){3} \NO(3){4}
+                        \AddVertexColor{yellow}{1}
+                        \AddVertexColor{blue}{2}
+                        \AddVertexColor{green}{3}
+                        \AddVertexColor{red}{4}
                             \Edges(1,2,3,4,1)}
                         \tikzset{EdgeStyle/.style={->}}
                         \tkzDefPoint(1.5,-3.5){a1}
@@ -235,7 +247,11 @@
                             \tkzDefPoint(2.5,-3){l1}\tkzLabelPoint[centered](l1){$\curvearrowleft$}}
                         % BOTTOM RIGHT
                         \tikzset{EdgeStyle/.style={-}}
-                        \onslide<6->{\Vertex[x=4,y=-3,Lpos=180]{1} \SO[Lpos=180](1){4} \EA(4){3} \NO(3){2}
+                        \onslide<6->{\Vertex[x=4,y=-3,Lpos=180]{1} \SO[Lpos=180](1){2} \EA(2){3} \NO(3){4}
+                        \AddVertexColor{red}{1}
+                        \AddVertexColor{yellow}{2}
+                        \AddVertexColor{blue}{3}
+                        \AddVertexColor{green}{4}
                             \Edges(1,2,3,4,1)}
                         \tikzset{EdgeStyle/.style={->}}
                         \tkzDefPoint(4.5,-1.5){a1}
@@ -249,7 +265,7 @@
     \end{example}
 \end{slide}
 
-\subsection{Planets and food additives?}
+\subsection{Orbits and stabilisers}
 
 \begin{slide}
     \begin{definition}[orbit]
