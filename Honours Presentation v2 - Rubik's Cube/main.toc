@@ -1,7 +1,12 @@
 \beamer@subsectionintoc {0}{1}{Questions about Rubik's cube}{3}{0}{0}
 \beamer@sectionintoc {1}{Some basic group theory}{4}{0}{1}
-\beamer@sectionintoc {2}{The Rubik's group}{5}{0}{2}
-\beamer@subsectionintoc {2}{1}{Representing the cube and its moves}{6}{0}{2}
-\beamer@sectionintoc {3}{Analysing the Rubik's group}{7}{0}{3}
-\beamer@sectionintoc {4}{Concluding remarks}{8}{0}{4}
-\beamer@subsectionintoc {4}{1}{References and resources}{9}{0}{4}
+\beamer@subsectionintoc {1}{1}{Permutations}{5}{0}{1}
+\beamer@subsectionintoc {1}{2}{Permutation groups}{7}{0}{1}
+\beamer@subsectionintoc {1}{3}{Order of permutations}{8}{0}{1}
+\beamer@subsectionintoc {1}{4}{Generating a group}{9}{0}{1}
+\beamer@subsectionintoc {1}{5}{Group actions}{10}{0}{1}
+\beamer@subsectionintoc {1}{6}{Planets and food additives?}{12}{0}{1}
+\beamer@sectionintoc {2}{The Rubik's group}{14}{0}{2}
+\beamer@sectionintoc {3}{Analysing the Rubik's group}{15}{0}{3}
+\beamer@sectionintoc {4}{Concluding remarks}{16}{0}{4}
+\beamer@subsectionintoc {4}{1}{References and resources}{17}{0}{4}
