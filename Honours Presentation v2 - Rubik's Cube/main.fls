@@ -1,6 +1,6 @@
-PWD c:\Users\lawre\OneDrive\Education\Monash University\2022\MTH4100 Research Project\Honours Thesis and Presentation\Honours Presentation - Rubik's Cube
+PWD c:\Users\lawre\OneDrive\Education\Monash University\2022\MTH4100 Research Project\Honours Thesis and Presentation\Honours Presentation v2 - Rubik's Cube
 INPUT C:\Users\lawre\AppData\Local\MiKTeX\2.9\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\lawre\OneDrive\Education\Monash University\2022\MTH4100 Research Project\Honours Thesis and Presentation\Honours Presentation - Rubik's Cube\main.tex
+INPUT c:\Users\lawre\OneDrive\Education\Monash University\2022\MTH4100 Research Project\Honours Thesis and Presentation\Honours Presentation v2 - Rubik's Cube\main.tex
 OUTPUT main.log
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamer.cls
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamer.cls
@@ -1582,6 +1582,7 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\bookmark\bkm-pd
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\bookmark\bkm-pdftex.def
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\bookmark\bkm-pdftex.def
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\bookmark\bkm-pdftex.def
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tkz-base\tkz-base.sty
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tkz-base\tkz-base.sty
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tkz-base\tkz-base.sty
@@ -2441,241 +2442,33 @@ INPUT .\c1_group_theory.tex
 INPUT c1_group_theory.tex
 INPUT .\c1_group_theory.tex
 INPUT c1_group_theory.tex
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntxsy.vf
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txsys.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txex-bar.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntxmi.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\stxscr.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntxmia.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txmiaSTbb.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntxsy.vf
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txsys.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txex-bar.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntxmi7.vf
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\NewTXMI7.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\stxscr.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntxsy7.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txsys.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txex-bar.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntxsym.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\txfonts\txsyb.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\txfonts\txsya.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntxmi7.vf
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\NewTXMI7.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\stxscr.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntx-Regular-tlf-ot1.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txmiaX.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntx-Regular-tlf-ot1r.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntxsy5.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txsys.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txex-bar.tfm
-INPUT .\c2_rubiks_group.tex
-INPUT c2_rubiks_group.tex
-INPUT .\c2_rubiks_group.tex
-INPUT c2_rubiks_group.tex
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntx-Regular-tlf-ot1.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntx-Regular-tlf-ot1.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxmi.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxmi7.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxmi5.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxsy.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxsy7.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxsy5.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxexx.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxexx.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxexx.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam7.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam5.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxmia.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxmia.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxmia.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxsym.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxsym.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxsym.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxsyc.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxsyc.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxsyc.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxexa.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxexa.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxexa.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntxmi.vf
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\NewTXMI.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\stxscr.tfm
-INPUT .\graphics\rubiks_cube_net_front.tikz
-INPUT graphics\rubiks_cube_net_front.tikz
-INPUT .\graphics\rubiks_cube_net_front.tikz
-INPUT graphics\rubiks_cube_net_front.tikz
-INPUT .\graphics\rubiks_cube_net_front.tikz
-INPUT graphics\rubiks_cube_net_front.tikz
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntx-Regular-tlf-ot1.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxmi5.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxsy5.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxexx.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam7.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxmia.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxsym.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxsyc.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxexa.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntxmia.vf
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txmiaSTbb.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\tex-gyre\ts1-qtmr.tfm
-INPUT .\graphics\rubiks_cube_net_front.tikz
-INPUT graphics\rubiks_cube_net_front.tikz
-INPUT .\graphics\rubiks_cube_net_front.tikz
-INPUT graphics\rubiks_cube_net_front.tikz
-INPUT .\graphics\rubiks_cube_net_front.tikz
-INPUT graphics\rubiks_cube_net_front.tikz
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\newtx\ot1ntxtt.fd
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\newtx\ot1ntxtt.fd
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\newtx\ot1ntxtt.fd
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\newtx\ot1ntxtt.fd
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\txfonts\txtt.tfm
-INPUT .\code\rubiks_def.gap
-INPUT code\rubiks_def.gap
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\txfonts\txtt.tfm
-INPUT .\code\rubiks_def.gap
-INPUT code\rubiks_def.gap
-INPUT .\code\rubiks_def.gap
-INPUT code\rubiks_def.gap
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntx-Italic-tlf-ot1.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntx-Italic-tlf-ot1.vf
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\NewTXMI.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntx-Italic-tlf-ot1r.tfm
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\code\rubiks_orbit_stab.gap
-INPUT code\rubiks_orbit_stab.gap
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\txfonts\txtt.tfm
-INPUT .\code\rubiks_orbit_stab.gap
-INPUT code\rubiks_orbit_stab.gap
-INPUT .\code\rubiks_orbit_stab.gap
-INPUT code\rubiks_orbit_stab.gap
-INPUT .\code\rubiks_orbit_stab_2.gap
-INPUT code\rubiks_orbit_stab_2.gap
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\txfonts\txtt.tfm
-INPUT .\code\rubiks_orbit_stab_2.gap
-INPUT code\rubiks_orbit_stab_2.gap
-INPUT .\code\rubiks_orbit_stab_2.gap
-INPUT code\rubiks_orbit_stab_2.gap
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxmi.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxsy.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxexx.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxmia.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxsym.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxsyc.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxexa.tfm
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\code\rubiks_orbit_stab.gap
-INPUT code\rubiks_orbit_stab.gap
-INPUT .\code\rubiks_orbit_stab.gap
-INPUT code\rubiks_orbit_stab.gap
-INPUT .\code\rubiks_orbit_stab.gap
-INPUT code\rubiks_orbit_stab.gap
-INPUT .\code\rubiks_orbit_stab_2.gap
-INPUT code\rubiks_orbit_stab_2.gap
-INPUT .\code\rubiks_orbit_stab_2.gap
-INPUT code\rubiks_orbit_stab_2.gap
-INPUT .\code\rubiks_orbit_stab_2.gap
-INPUT code\rubiks_orbit_stab_2.gap
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntxsy.vf
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txsys.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txex-bar.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntxsy7.vf
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txsys.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txex-bar.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntxmia.vf
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txmiaSTbb.tfm
-INPUT .\code\rubik_product.gap
-INPUT code\rubik_product.gap
-INPUT .\code\rubik_product.gap
-INPUT code\rubik_product.gap
-INPUT .\code\rubik_product.gap
-INPUT code\rubik_product.gap
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntxmi5.vf
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\NewTXMI5.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\stxscr.tfm
-INPUT .\c3_analysis.tex
-INPUT c3_analysis.tex
-INPUT .\c3_analysis.tex
-INPUT c3_analysis.tex
-INPUT .\code\rubiks_group_base.gap
-INPUT code\rubiks_group_base.gap
-INPUT .\code\rubiks_group_base.gap
-INPUT code\rubiks_group_base.gap
-INPUT .\code\rubiks_group_base.gap
-INPUT code\rubiks_group_base.gap
-INPUT .\graphics\rubiks_cube_net_swap_2.tikz
-INPUT graphics\rubiks_cube_net_swap_2.tikz
-INPUT .\graphics\rubiks_cube_net_swap_2.tikz
-INPUT graphics\rubiks_cube_net_swap_2.tikz
-INPUT .\graphics\rubiks_cube_net_swap_2.tikz
-INPUT graphics\rubiks_cube_net_swap_2.tikz
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntxsy.vf
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txsys.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txex-bar.tfm
-INPUT .\code\rubiks_membership_2.gap
-INPUT code\rubiks_membership_2.gap
-INPUT .\code\rubiks_membership_2.gap
-INPUT code\rubiks_membership_2.gap
-INPUT .\code\rubiks_membership_2.gap
-INPUT code\rubiks_membership_2.gap
-INPUT .\code\rubiks_factorisation.gap
-INPUT code\rubiks_factorisation.gap
-INPUT .\code\rubiks_factorisation.gap
-INPUT code\rubiks_factorisation.gap
-INPUT .\code\rubiks_factorisation.gap
-INPUT code\rubiks_factorisation.gap
-INPUT .\code\rubiks_factorisation_2.gap
-INPUT code\rubiks_factorisation_2.gap
-INPUT .\code\rubiks_factorisation_2.gap
-INPUT code\rubiks_factorisation_2.gap
-INPUT .\code\rubiks_factorisation_2.gap
-INPUT code\rubiks_factorisation_2.gap
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntxmi.vf
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\stxscr.tfm
-INPUT .\graphics\rubiks_cube_net_random.tikz
-INPUT graphics\rubiks_cube_net_random.tikz
-INPUT .\graphics\rubiks_cube_net_random.tikz
-INPUT graphics\rubiks_cube_net_random.tikz
-INPUT .\graphics\rubiks_cube_net_random.tikz
-INPUT graphics\rubiks_cube_net_random.tikz
-INPUT .\code\rubiks_factorisation_3.gap
-INPUT code\rubiks_factorisation_3.gap
-INPUT .\code\rubiks_factorisation_3.gap
-INPUT code\rubiks_factorisation_3.gap
-INPUT .\code\rubiks_factorisation_3.gap
-INPUT code\rubiks_factorisation_3.gap
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntx-Regular-tlf-ot1.vf
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txmiaX.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntx-Regular-tlf-ot1r.tfm
-INPUT .\code\rubiks_factorisation_4.gap
-INPUT code\rubiks_factorisation_4.gap
-INPUT .\code\rubiks_factorisation_4.gap
-INPUT code\rubiks_factorisation_4.gap
-INPUT .\code\rubiks_factorisation_4.gap
-INPUT code\rubiks_factorisation_4.gap
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntxsy5.vf
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txsys.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txex-bar.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntx-Regular-tlf-ot1.vf
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txmiaX.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntx-Regular-tlf-ot1r.tfm
 OUTPUT main.nav
 OUTPUT main.toc
 OUTPUT main.snm
@@ -2684,16 +2477,12 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\newtx\ntx
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\tex-gyre\q-ts1.enc
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\newtx\NewTXMI.pfb
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\newtx\NewTXMI.pfb
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\newtx\NewTXMI5.pfb
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\newtx\NewTXMI5.pfb
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\newtx\NewTXMI7.pfb
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\newtx\NewTXMI7.pfb
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\tex-gyre\qtmr.pfb
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\tex-gyre\qtmr.pfb
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\newtx\txmiaX.pfb
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\newtx\txmiaX.pfb
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\txfonts\txsya.pfb
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\txfonts\txsya.pfb
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\txfonts\txsyb.pfb
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\txfonts\txsyb.pfb
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\newtx\txsys.pfb

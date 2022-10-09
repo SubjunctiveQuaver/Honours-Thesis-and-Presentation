@@ -9,6 +9,7 @@
 \usepackage{tikz-cd} % Commutative diagrams
 \usepackage{newtx} % Nicer font
 \usepackage{bookmark} % Hyperlinks and bookmarks
+\usepackage{xcolor}
 \usepackage{tkz-base}
 \usepackage{tkz-graph}
 \usepackage{tkz-euclide}
@@ -24,9 +25,10 @@
 \AtBeginSubsection[]{\setcounter{insub}{0}}
 \AtBeginEnvironment{slide}{\addtocounter{insub}{1}}
 \newenvironment<>{slide}{\begin{frame}#1%
-        \frametitle{\subsecname{}\enskip\roman{insub}}
+        \frametitle{\subsecname{}\ifthenelse{\theinsub=1}{}{\enskip(\roman{insub})}}
         }{\end{frame}}
 % \setbeamertemplate{theorems}[numbered]
+\definecolor{metropolis}{HTML}{FAFAFA}
 
 % ---------------------------------------- %
 % SETTINGS
@@ -44,7 +46,8 @@
 %% tkz-graph
 % \GraphInit[vstyle=Hasse]
 % \GraphInit[vstyle=Welsh]
-\GraphInit[vstyle=Normal]
+% \GraphInit[vstyle=Normal]
+% \GraphInit[vstyle=Classic]
 \SetGraphUnit{1}
 \SetVertexMath
 \tikzset{VertexStyle/.append style={minimum size=8pt}}
