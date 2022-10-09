@@ -1,0 +1,259 @@
+\subsection{What is a group?}
+
+\begin{slide}
+    \begin{definition}[group]
+        \vspace{0pt}
+        A \textbf{group} is a set $G \neq \emptyset$ with operation $G \times G \to G,\ (g,h) \mapsto gh$, \pause
+
+        \begin{enumerate}[(i)]
+            \item \textbf{(identity)} there is $1 \in G$ with $1g = g1 = g$ for all $g \in G$; \pause
+            \item \textbf{(inverses)} for all $g \in G$, there is $g^{-1} \in G$ with $g^{-1}g = gg^{-1} = 1$; \pause
+            \item \textbf{(associative)} $(gh)k = g(hk)$ for all $g,h,k \in G$.
+        \end{enumerate}
+    \end{definition} \pause
+
+    \begin{example}[Integers under addition]
+        \vspace{0pt}
+        The integers $(\Z,+)$ form an \textbf{abelian} group: identity \pause $0$, inverses \pause $-k$ for $k \in \Z$, associative.
+    \end{example} \pause
+
+    \begin{example}[Cyclic group]
+        \vspace{0pt}
+        The set $C_n = \{a^0,a^1,a^2,\dotsc,a^{n-1}\}$ with rules $a^ka^\ell = a^{k+\ell}$, $a^n = a^0$ forms group: identity \pause $1 = a^0$, inverses \pause $a^{n-k}$ for $a^k \in C_n$, associative.
+    \end{example}
+\end{slide}
+
+\subsection{Order and generators}
+
+\begin{slide}
+    \begin{definition}[order]
+        \vspace{0pt}
+        \textbf{Order} of $g \in G$ is least $k \in \Z_+$ with $g^k = g \dotsb g = 1$ (otherwise $\infty$).
+    \end{definition} \pause
+
+    \begin{example}[Cyclic group]
+        \vspace{0pt}
+        Consider group $C_4 = \{1,a,a^2,a^3\}$: order of $1$ is \pause $1$, order of $a$ is \pause $4$, order of $a^2$ is \pause $2$, order of $a^3$ is \pause $4$.
+    \end{example} \pause
+
+    \begin{definition}[generator]
+        \vspace{0pt}
+        Set $X$ \textbf{generates} $G$ if every $g \in G$ is $g = x_1^{\pm 1} \dotsb x_r^{\pm 1}$ for some $r \in \N$, $x_i \in X$ \textbf{generators}; write $G = \langle X \rangle$. \pause (If $|X| = 1$, $G$ is \textbf{cyclic}.)
+    \end{definition} \pause
+
+    \begin{example}[Cyclic group]
+        \vspace{0pt}
+        Consider group $C_6 = \{1,a,a^2,a^3,a^4,a^5\}$: \pause $C_6 = \langle a \rangle$. \pause If $b = a^2$, $c = a^3$ then $C_6 = \langle b,c \rangle$ since \pause $a = cb^{-1}$ so $a^k = cb^{-1} \dotsb cb^{-1} = c^kb^{-k}$.
+    \end{example}
+\end{slide}
+
+\subsection{Permutations}
+
+\begin{slide}
+    \begin{definition}[permutation]
+        \vspace{0pt}
+        \textbf{Permutation} of $[n] := \{1,\dotsc,n\}$ is bijection $\sigma : [n] \to [n]$.
+    \end{definition}
+
+    \onslide<2->{Write $1 = ()$ for identity. Write $i^\sigma$ not $\sigma(i)$ for \textit{image}.
+
+        \onslide<3->{\textit{Cycle notation:} $\sigma = (1,4,5)(2,6) \in \Sym(6)$ is:
+
+            \begin{center}
+                \begin{tikzpicture}[x=1cm,y=2cm]
+                    \tikzset{VertexStyle/.style={draw=none}}
+                    \tikzset{EdgeStyle/.style={->}}
+                    \Vertex{1} \EA(1){2} \EA(2){3} \EA(3){4} \EA(4){5} \EA(5){6}
+                    \SO[L=1](1){1'} \SO[L=2](2){2'} \SO[L=3](3){3'} \SO[L=4](4){4'} \SO[L=5](5){5'} \SO[L=6](6){6'}
+                    \onslide<4->{\Edge(1.south)(4'.north)}
+                    \onslide<5->{\Edge(4.south)(5'.north)}
+                    \onslide<6->{\Edge(5.south)(1'.north)}
+                    \onslide<7->{\Edge(2.south)(6'.north)}
+                    \onslide<8->{\Edge(6.south)(2'.north)}
+                    \onslide<9->{\Edge(3.south)(3'.north)}
+                    \tkzDefPoint(-0.5,-0.5){lab}\tkzLabelPoint[left](lab){$\sigma$}
+                \end{tikzpicture}
+            \end{center}
+
+            It means
+            $$\onslide<4->{1^\sigma = 4,\ \onslide<5->{4^\sigma = 5,\ \onslide<6->{5^\sigma = 1,\ \onslide<7->{2^\sigma = 6,\ \onslide<8->{6^\sigma = 2,\ \onslide<9->{3^\sigma = 3.}}}}}}$$}}
+\end{slide}
+
+\begin{slide}
+    \textit{Inverses:} For $\sigma = (1,4,5)(2,6) \in \Sym(6)$:
+
+    \begin{center}
+        \begin{tikzpicture}[x=1cm,y=2cm]
+            \tikzset{VertexStyle/.style={draw=none}}
+            \tikzset{EdgeStyle/.style={->}}
+            \Vertex{1} \EA(1){2} \EA(2){3} \EA(3){4} \EA(4){5} \EA(5){6}
+            \SO[L=1](1){1'} \SO[L=2](2){2'} \SO[L=3](3){3'} \SO[L=4](4){4'} \SO[L=5](5){5'} \SO[L=6](6){6'}
+            \Edge(1.south)(4'.north) \Edge(4.south)(5'.north) \Edge(5.south)(1'.north) \Edge(2.south)(6'.north) \Edge(6.south)(2'.north) \Edge(3.south)(3'.north)
+            \tkzDefPoint(-0.5,-0.5){lab}\tkzLabelPoint[left](lab){$\sigma$}
+            \onslide<2->{
+                \SO[L=1](1'){1''} \SO[L=2](2'){2''} \SO[L=3](3'){3''} \SO[L=4](4'){4''} \SO[L=5](5'){5''} \SO[L=6](6'){6''}
+                \Edge(4'.south)(1''.north) \Edge(5'.south)(4''.north) \Edge(1'.south)(5''.north) \Edge(6'.south)(2''.north) \Edge(2'.south)(6''.north) \Edge(3'.south)(3''.north)
+                \tkzDefPoint(-0.5,-1.5){lab2}\tkzLabelPoint[left](lab2){$\sigma^{-1}$}
+            }
+        \end{tikzpicture}
+    \end{center}
+
+    \onslide<2->{Inverse is $\sigma^{-1} = (1,5,4)(2,6) \in \Sym(6)$.}
+\end{slide}
+
+\begin{slide}
+    \textit{Product/composition:} for $\sigma,\tau \in \Sym(n)$, $\sigma\tau$ means ``first $\sigma$, then $\tau$'', so $i^{\sigma\tau} = (i^\sigma)^\tau$. \onslide<2->{E.g. $\sigma = (1,2,3),\onslide<3->{\tau = (1,3)(2,4) \in \Sym(4)$,}
+
+    \begin{center}
+        \begin{tikzpicture}[x=1cm,y=1.5cm]
+            \tikzset{VertexStyle/.style={draw=none}}
+            \tikzset{EdgeStyle/.style={->}}
+            \Vertex{1} \EA(1){2} \EA(2){3} \EA(3){4}
+            \SO[L=1](1){1'} \SO[L=2](2){2'} \SO[L=3](3){3'} \SO[L=4](4){4'}
+            \Edge(1.south)(2'.north) \Edge(2.south)(3'.north) \Edge(3.south)(1'.north) \Edge(4.south)(4'.north)
+            \tkzDefPoint(-0.5,-0.5){lab}\tkzLabelPoint[left](lab){$\sigma$}
+            \onslide<3->{\SO[L=1](1'){1''} \SO[L=2](2'){2''} \SO[L=3](3'){3''} \SO[L=4](4'){4''}
+                \Edge(1'.south)(3''.north) \Edge(3'.south)(1''.north) \Edge(2'.south)(4''.north) \Edge(4'.south)(2''.north)
+                \tkzDefPoint(-0.5,-1.5){lab2}\tkzLabelPoint[left](lab2){$\tau$}
+            }
+            \onslide<4->{
+                \EA[unit=3,L=1](4){c1} \EA[L=2](c1){c2} \EA[L=3](c2){c3} \EA[L=4](c3){c4}
+                \EA[unit=3,L=1](4''){c1'} \EA[L=2](c1'){c2'} \EA[L=3](c2'){c3'} \EA[L=4](c3'){c4'}
+                \onslide<5->{\Edge(c1.south)(c4'.north)}
+                \onslide<6->{\Edge(c4.south)(c2'.north)}
+                \onslide<7->{\Edge(c2.south)(c1'.north)}
+                \onslide<8->{\Edge(c3.south)(c3'.north)}
+                \tkzDefPoint(5.5,-1){lab3}\tkzLabelPoint[left](lab3){$\sigma\tau$}
+            }
+        \end{tikzpicture}
+    \end{center}
+    \onslide<4->{$$\sigma\tau = (1,2,3)(1,3)(2,4) = (1,\onslide<5->{4,\onslide<6->{2\onslide<7->{)\onslide<8->{\in \Sym(4).}}}}$$}}
+\end{slide}
+
+\begin{slide}
+    \textit{Inverse of product:} Is $(\sigma\tau)^{-1} = \sigma^{-1}\tau^{-1}$?
+
+    \onslide<2->{$\sigma^{-1} = (1,3,2)$, \onslide<3->{$\tau^{-1} = (1,3)(2,4)$, \onslide<4->{$(\sigma\tau)^{-1} = (1,2,4)$.}}
+
+    \begin{center}
+        \begin{tikzpicture}[x=1cm,y=1.5cm]
+            \tikzset{VertexStyle/.style={draw=none}}
+            \tikzset{EdgeStyle/.style={<-}}
+            \Vertex{1} \EA(1){2} \EA(2){3} \EA(3){4}
+            \SO[L=1](1){1'} \SO[L=2](2){2'} \SO[L=3](3){3'} \SO[L=4](4){4'}
+            \Edge(1.south)(2'.north) \Edge(2.south)(3'.north) \Edge(3.south)(1'.north) \Edge(4.south)(4'.north)
+            \tkzDefPoint(-0.5,-0.5){lab}\tkzLabelPoint[left](lab){$\sigma^{-1}$}
+            \onslide<3->{
+                \SO[L=1](1'){1''} \SO[L=2](2'){2''} \SO[L=3](3'){3''} \SO[L=4](4'){4''}
+                \Edge(1'.south)(3''.north) \Edge(3'.south)(1''.north) \Edge(2'.south)(4''.north) \Edge(4'.south)(2''.north)
+                \tkzDefPoint(-0.5,-1.5){lab2}\tkzLabelPoint[left](lab2){$\tau^{-1}$}
+            }
+            \onslide<4->{
+                \EA[unit=3,L=1](4){c1} \EA[L=2](c1){c2} \EA[L=3](c2){c3} \EA[L=4](c3){c4}
+                \EA[unit=3,L=1](4''){c1'} \EA[L=2](c1'){c2'} \EA[L=3](c2'){c3'} \EA[L=4](c3'){c4'}
+                \Edge(c1.south)(c4'.north) \Edge(c4.south)(c2'.north) \Edge(c2.south)(c1'.north) \Edge(c3.south)(c3'.north)
+                \tkzDefPoint(5.5,-1){lab3}\tkzLabelPoint[left](lab3){$(\sigma\tau)^{-1}$}
+            }
+        \end{tikzpicture}
+    \end{center} \pause
+    \onslide<5->{$$\sigma^{-1}\tau^{-1} = (1,3,2)(1,3)(2,4) = (2,3,4) \neq (\sigma\tau)^{-1},$$
+        $$\onslide<6->{\tau^{-1}\sigma^{-1} = (1,3)(2,4)(1,3,2) = (1,2,4) = (\sigma\tau)^{-1}.}$$}}
+\end{slide}
+
+\begin{slide}
+    Set of permutations under \textit{product} is \textbf{symmetric group} $\Sym(n)$: identity $1 = ()$, inverses (since bijection), associative.
+
+    What is size of $\Sym(n)$? \pause \textit{Answer:} $n!$
+
+    \begin{example}[Order of permutation]
+        \vspace{0pt}
+        Consider $\sigma = (1,4,5)(2,6) \in \Sym(6)$. Then $1^{\sigma^3} = 4^{\sigma^2} = 5^\sigma = 1$, \pause $4^{\sigma^3} = 4$, $5^{\sigma^3} = 5$, $2^{\sigma^2} = 2$, $6^{\sigma^2} = 6$ so \pause $\sigma^6 = () = 1$; order of $\sigma$ is 6. \pause
+
+        \textit{Fact:} order of $\sigma \in \Sym(n)$ is lcm of cycle lengths.
+    \end{example} \pause
+
+    \begin{definition}[subgroup]
+        \vspace{0pt}
+        Subset $H$ of group $G$ is \textbf{subgroup} if it is group under same operation; write $H \leq G$. (Need to check: nonempty, closure, inverses.)
+    \end{definition} \pause
+
+    \begin{definition}[permutation group]
+        \vspace{0pt}
+        A \textbf{permutation group} of \textit{degree} $n$ is a subgroup of $\Sym(n)$.
+    \end{definition}
+\end{slide}
+
+\subsection{Group actions}
+
+\begin{slide}
+    \begin{definition}[group action]
+        \vspace{0pt}
+        If $G$ is group and $\Omega \neq \emptyset$ is set, a \textbf{$G$-action} is a map $\Omega \times G \to \Omega$, $(\alpha,g) \mapsto \alpha^g$ s.t. $\alpha^1 = \alpha$ and $\alpha^{gh} = (\alpha^g)^h$ for $\alpha \in \Omega$ and $g,h \in G$.
+    \end{definition}
+
+    \textit{Idea:} $\alpha \in \Omega$ is \textit{state}, apply \textit{move} $g \in G$ to get state $\alpha^g \in \Omega$, in way that respects group operation. \pause
+
+    \begin{example}[adding time]
+        \vspace{0pt}
+        $\Z$ acts on $\Omega = \{12{:}00,1{:}00,\dotsc,11{:}00\}$ by $(\alpha{:}00)^k = [\alpha + k]_{12}{:}00$ for $\alpha{:}00 \in \Omega$ and $k \in \Z$. \pause
+
+        E.g. $5{:}00$ plus $9$ hrs is $(5{:}00)^9 = [5+9]_{12}{:}00 = 2{:}00$.
+    \end{example} \pause
+
+    \begin{example}[natural action]
+        \vspace{0pt}
+        $G \leq \Sym(n)$ acts on $\Omega = [n]$ by $\alpha^g = \alpha^g$ (image) for $\alpha \in [n]$, $g \in G$.
+    \end{example} \pause
+
+    \begin{example}[right regular action]
+        \vspace{0pt}
+        Group $G$ acts on $\Omega = G$ (itself) via $\alpha^g = \alpha g$ for $\alpha,g \in G$.
+    \end{example}
+\end{slide}
+
+\begin{slide}
+    \begin{definition}[orbit]
+        \vspace{0pt}
+        If $G$ acts on $\Omega$, then \textbf{orbit} of $\alpha \in \Omega$ is $\alpha^G := \{\alpha^g : g \in G\}$.
+    \end{definition}
+
+    \textit{Idea:} states $\alpha^g \in \Omega$ reachable from fixed $\alpha \in \Omega$ by moves $g \in G$. \pause
+
+    \begin{definition}[stabiliser]
+        \vspace{0pt}
+        If $G$ acts on $\Omega$, then \textbf{stabiliser} of $\alpha \in \Omega$ is $G_\alpha := \{g \in G : \alpha^g = \alpha\}$.
+    \end{definition}
+
+    \textit{Idea:} moves $g \in G$ that fix given $\alpha \in \Omega$. \pause
+
+    \begin{example}[Adding time]
+        \vspace{0pt}
+        $\Z$-orbit of $11{:}00$ is \pause $\Omega = \{12{:}00,\dotsc,11{:}00\}$ (e.g. $(11{:}00)^{-2} = 9{:}00$). $\Z$-stabiliser of $11{:}00$ is \pause $12\Z = \{12k : k \in \Z\}$ (add multiples of 12 hrs).
+    \end{example} \pause
+
+    \begin{example}[right regular action]
+        \vspace{0pt}
+        $G$ acts on $\Omega = G$ via $\alpha^g = \alpha g$ for $\alpha,g \in G$. Orbit of $\alpha \in G$ is \pause $\Omega = G$ ($\alpha^{\alpha^{-1}\beta} = \beta \in G$); stabiliser of $\alpha$ is \pause $\{1\} = 1$ ($\alpha g = \alpha \implies g = 1$).
+    \end{example}
+\end{slide}
+
+\begin{slide}
+    \begin{definition}[orbit, stabiliser (again)]
+        \vspace{0pt}
+        If $G$ acts on $\Omega$, then \textbf{orbit} of $\alpha \in \Omega$ is $\alpha^G := \{\alpha^g : g \in G\}$ and \textbf{stabiliser} of $\alpha \in \Omega$ is $G_\alpha := \{g \in G : \alpha^g = \alpha\}$.
+    \end{definition}
+
+    \textit{Note:} stabiliser $G_\alpha$ is subgroup of $G$. (So $G_\alpha$ acts on $\Omega$.)
+
+    \begin{example}[Natural action]
+        \vspace{0pt}
+        $G = \{(),(1,2,4),(1,4,2)\} \leq \Sym(4)$ acts on $\Omega = [4]$ naturally. Orbit of $1$ is \pause $1^G = \{1,2,4\}$, stabiliser of $1$ is \pause $G_1 = \{()\} = 1$. Orbit of $3$ is \pause $3^G = \{3\}$, stabiliser of $3$ is \pause $G_3 = G$. \pause
+
+        Note: $|1^G||G_1| = 3 \cdot 1 = 3 \pause = |G|$, \pause $|3^G||G_3| = 1 \cdot 3 = 3 = |G|$.
+    \end{example} \pause
+
+    \begin{theorem}[orbit-stabiliser]
+        \vspace{0pt}
+        If $G$ acts on $\Omega$, then for $\alpha \in G$, $|\alpha^G||G_\alpha| = |G|$.
+    \end{theorem}
+\end{slide}
