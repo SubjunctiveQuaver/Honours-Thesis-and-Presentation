@@ -55,7 +55,7 @@
 
 \pagenumbering{alph}
 
-\input{titlepage.tex}
+\input{sections/titlepage.tex}
 
 \tableofcontents
 
@@ -63,27 +63,31 @@
 
 \pagenumbering{arabic}
 
-\input{introduction.tex}
+\input{sections/introduction.tex}
 
 \chapter{Preliminary concepts from permutation groups}
 
-\input{group_concepts.tex}
+\input{sections/group_concepts.tex}
 
 \chapter{Preliminary concepts from complexity theory}
 
-\input{complexity_concepts.tex}
+\input{sections/complexity_concepts.tex}
 
 \chapter{Blaha: computing minimum bases is NP-hard}
 
-\input{blaha.tex}
+\input{sections/blaha.tex}
+
+\chapter{More concepts from permutation groups}
+
+\input{sections/perm_group_theory.tex}
 
 \chapter{Minimum bases for primitive permutation groups}
 
-\input{lit_review.tex}
+\input{sections/lit_review.tex}
 
 \chapter{Conclusion}
 
-\input{conclusion.tex}
+\input{sections/conclusion.tex}
 
 % References (include 1st 4)
 \nocite{*}
@@ -97,6 +101,6 @@
 
 \appendix
 
-\input{appendix.tex}
+\input{sections/appendix.tex}
 
 \end{document}

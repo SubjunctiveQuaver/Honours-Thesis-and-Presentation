@@ -1,0 +1,23 @@
+In chapter 4, we will need the notion of an elementary abelian $p$-group, which we then realise as a permutation group.
+
+\begin{definition}\label{def:elem-abelian-group}
+    Let $p$ be a prime. A \textbf{(finite) elementary abelian ($p$-)group} $G$ is a finite abelian group such that the order of $G$ is a power of $p$.
+\end{definition}
+
+Recall that for groups $G,H$, their \textbf{direct product} is the group $G \times H$ with underlying set the Cartesian product $G \times H$ and group operation $(g,h)(a,b) = (ga,hb)$ for $g,a \in G$ and $h,b \in H$. When $G$ and $H$ are \textit{abelian}, we may instead call it a \textbf{direct sum} and write $G \oplus H$; we often use additive notation $(g,h) + (a,b) = (g+a,h+b)$ with identity $0$, writing $ng$ instead of $g^n$.
+
+It turns out that the structure of a finite abelian group is quite simple. The following result is standard, \added{4}{and is often called the \textit{fundamental theorem of finite abelian groups}}; see Theorem 6.9 in \cite{rotman_intro_theory_groups1995} for a proof.
+
+\begin{theorem}[Basis for finite abelian groups]\label{thm:basis_finite_abelian}
+    Every finite abelian group $G$ is a direct sum of cyclic groups.
+\end{theorem}
+
+Using this result, we may show that a finite elementary $p$-group must be a direct sum of copies of $\Z/p\Z$.
+
+\begin{corollary}\label{cor:elementary_abelian_group_form}
+    If $G$ is a finite elementary abelian $p$-group, then $G \cong (\Z/p\Z)^k$ for some $k$. (In the literature, such $G \cong (\Z/p\Z)^k$ is often denoted by $p^k$.)
+\end{corollary}
+
+\begin{proof}
+    By the basis theorem (\autoref{thm:basis_finite_abelian}), write $G \cong (\Z/n_1\Z) \oplus \dotsb \oplus (\Z/n_k\Z)$ with each $n_i > 1$. Let $e_i$ be the element in $(\Z/n_1\Z) \oplus \dotsb \oplus (\Z/n_k\Z)$ with a 1 in the $i$th entry and 0s elsewhere. Using the isomorphism, $e_i$ has order $p$ (since $G$ is elementary abelian), so $p1 = 0$ in $\Z/n_i\Z$, so $n_i = p$ (as $p$ is prime). Since $1 \leq i \leq k$ was arbitrary, the result follows.
+\end{proof}

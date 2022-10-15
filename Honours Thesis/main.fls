@@ -1744,10 +1744,10 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\upquote\upquote
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\upquote\upquote.sty
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\textcomp.sty
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\textcomp.sty
-INPUT .\titlepage.tex
-INPUT titlepage.tex
-INPUT .\titlepage.tex
-INPUT titlepage.tex
+INPUT .\sections\titlepage.tex
+INPUT sections\titlepage.tex
+INPUT .\sections\titlepage.tex
+INPUT sections\titlepage.tex
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr7t.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb7t.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr7t.tfm
@@ -1832,10 +1832,10 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmb
 OUTPUT main.toc
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr7t.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb7t.tfm
-INPUT .\introduction.tex
-INPUT introduction.tex
-INPUT .\introduction.tex
-INPUT introduction.tex
+INPUT .\sections\introduction.tex
+INPUT sections\introduction.tex
+INPUT .\sections\introduction.tex
+INPUT sections\introduction.tex
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb7t.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\inconsolata\ot1zi4.fd
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\inconsolata\ot1zi4.fd
@@ -1860,10 +1860,10 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\zptm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\psyro.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi10.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri8r.tfm
-INPUT .\group_concepts.tex
-INPUT group_concepts.tex
-INPUT .\group_concepts.tex
-INPUT group_concepts.tex
+INPUT .\sections\group_concepts.tex
+INPUT sections\group_concepts.tex
+INPUT .\sections\group_concepts.tex
+INPUT sections\group_concepts.tex
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmbi7t.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\zptmcm7t.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\symbol\psyr.tfm
@@ -1875,10 +1875,10 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi1
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmbi7t.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmbi8r.tfm
-INPUT .\group_concepts\group_actions.tex
-INPUT group_concepts\group_actions.tex
-INPUT .\group_concepts\group_actions.tex
-INPUT group_concepts\group_actions.tex
+INPUT .\sections\group_concepts\group_actions.tex
+INPUT sections\group_concepts\group_actions.tex
+INPUT .\sections\group_concepts\group_actions.tex
+INPUT sections\group_concepts\group_actions.tex
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\zptmcm7y.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
 INPUT C:\Users\lawre\AppData\Local\MiKTeX\2.9\fonts\tfm\public\rsfs\rsfs10.tfm
@@ -1894,10 +1894,10 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\zptmcm7v.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmex10.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\symbol\psyr.tfm
-INPUT .\group_concepts\bases_stabiliser_chains.tex
-INPUT group_concepts\bases_stabiliser_chains.tex
-INPUT .\group_concepts\bases_stabiliser_chains.tex
-INPUT group_concepts\bases_stabiliser_chains.tex
+INPUT .\sections\group_concepts\bases_stabiliser_chains.tex
+INPUT sections\group_concepts\bases_stabiliser_chains.tex
+INPUT .\sections\group_concepts\bases_stabiliser_chains.tex
+INPUT sections\group_concepts\bases_stabiliser_chains.tex
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ts1ptm.fd
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ts1ptm.fd
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ts1ptm.fd
@@ -1930,39 +1930,43 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmr
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmrc7t.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr8r.tfm
-INPUT .\group_concepts\classification_results.tex
-INPUT group_concepts\classification_results.tex
-INPUT .\group_concepts\classification_results.tex
-INPUT group_concepts\classification_results.tex
+INPUT .\sections\group_concepts\classification_results.tex
+INPUT sections\group_concepts\classification_results.tex
+INPUT .\sections\group_concepts\classification_results.tex
+INPUT sections\group_concepts\classification_results.tex
+INPUT .\sections\complexity_concepts.tex
+INPUT sections\complexity_concepts.tex
+INPUT .\sections\complexity_concepts.tex
+INPUT sections\complexity_concepts.tex
+INPUT .\sections\blaha.tex
+INPUT sections\blaha.tex
+INPUT .\sections\blaha.tex
+INPUT sections\blaha.tex
+INPUT .\sections\perm_group_theory.tex
+INPUT sections\perm_group_theory.tex
+INPUT .\sections\perm_group_theory.tex
+INPUT sections\perm_group_theory.tex
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\zptmcm7v.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmex10.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmex10.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\symbol\psyr.tfm
-INPUT .\complexity_concepts.tex
-INPUT complexity_concepts.tex
-INPUT .\complexity_concepts.tex
-INPUT complexity_concepts.tex
-INPUT .\blaha.tex
-INPUT blaha.tex
-INPUT .\blaha.tex
-INPUT blaha.tex
-INPUT .\lit_review.tex
-INPUT lit_review.tex
-INPUT .\lit_review.tex
-INPUT lit_review.tex
-INPUT .\conclusion.tex
-INPUT conclusion.tex
-INPUT .\conclusion.tex
-INPUT conclusion.tex
+INPUT .\sections\lit_review.tex
+INPUT sections\lit_review.tex
+INPUT .\sections\lit_review.tex
+INPUT sections\lit_review.tex
+INPUT .\sections\conclusion.tex
+INPUT sections\conclusion.tex
+INPUT .\sections\conclusion.tex
+INPUT sections\conclusion.tex
 INPUT .\main.bbl
 INPUT main.bbl
 INPUT .\main.bbl
 INPUT main.bbl
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri8c.tfm
-INPUT .\appendix.tex
-INPUT appendix.tex
-INPUT .\appendix.tex
-INPUT appendix.tex
+INPUT .\sections\appendix.tex
+INPUT sections\appendix.tex
+INPUT .\sections\appendix.tex
+INPUT sections\appendix.tex
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmri8c.vf
 INPUT .\gap_code\random_elt.gap
 INPUT gap_code\random_elt.gap
