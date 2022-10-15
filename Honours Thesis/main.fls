@@ -2031,6 +2031,24 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\inconsolata\ts1
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\inconsolata\ts1zi4.fd
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\inconsolata\ts1zi4.fd
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\inconsolata\ts1-zi4r.tfm
+INPUT .\txt_files\agl_base_gap_output\1.txt
+INPUT txt_files\agl_base_gap_output\1.txt
+INPUT .\txt_files\agl_base_gap_output\1.txt
+INPUT txt_files\agl_base_gap_output\1.txt
+INPUT .\txt_files\agl_base_gap_output\1.txt
+INPUT txt_files\agl_base_gap_output\1.txt
+INPUT .\txt_files\agl_base_gap_output\2.txt
+INPUT txt_files\agl_base_gap_output\2.txt
+INPUT .\txt_files\agl_base_gap_output\2.txt
+INPUT txt_files\agl_base_gap_output\2.txt
+INPUT .\txt_files\agl_base_gap_output\2.txt
+INPUT txt_files\agl_base_gap_output\2.txt
+INPUT .\txt_files\agl_base_gap_output\3.txt
+INPUT txt_files\agl_base_gap_output\3.txt
+INPUT .\txt_files\agl_base_gap_output\3.txt
+INPUT txt_files\agl_base_gap_output\3.txt
+INPUT .\txt_files\agl_base_gap_output\3.txt
+INPUT txt_files\agl_base_gap_output\3.txt
 INPUT .\txt_files\agl_base_gap_output\4.txt
 INPUT txt_files\agl_base_gap_output\4.txt
 INPUT .\txt_files\agl_base_gap_output\4.txt
@@ -2049,6 +2067,30 @@ INPUT .\txt_files\agl_base_gap_output\6.txt
 INPUT txt_files\agl_base_gap_output\6.txt
 INPUT .\txt_files\agl_base_gap_output\6.txt
 INPUT txt_files\agl_base_gap_output\6.txt
+INPUT .\txt_files\agl_base_gap_output\7.txt
+INPUT txt_files\agl_base_gap_output\7.txt
+INPUT .\txt_files\agl_base_gap_output\7.txt
+INPUT txt_files\agl_base_gap_output\7.txt
+INPUT .\txt_files\agl_base_gap_output\7.txt
+INPUT txt_files\agl_base_gap_output\7.txt
+INPUT .\txt_files\agl_base_gap_output\8.txt
+INPUT txt_files\agl_base_gap_output\8.txt
+INPUT .\txt_files\agl_base_gap_output\8.txt
+INPUT txt_files\agl_base_gap_output\8.txt
+INPUT .\txt_files\agl_base_gap_output\8.txt
+INPUT txt_files\agl_base_gap_output\8.txt
+INPUT .\txt_files\agl_base_gap_output\9.txt
+INPUT txt_files\agl_base_gap_output\9.txt
+INPUT .\txt_files\agl_base_gap_output\9.txt
+INPUT txt_files\agl_base_gap_output\9.txt
+INPUT .\txt_files\agl_base_gap_output\9.txt
+INPUT txt_files\agl_base_gap_output\9.txt
+INPUT .\txt_files\agl_base_gap_output\10.txt
+INPUT txt_files\agl_base_gap_output\10.txt
+INPUT .\txt_files\agl_base_gap_output\10.txt
+INPUT txt_files\agl_base_gap_output\10.txt
+INPUT .\txt_files\agl_base_gap_output\10.txt
+INPUT txt_files\agl_base_gap_output\10.txt
 OUTPUT main.thm
 INPUT main.aux
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\inconsolata\i4-ts1.enc
