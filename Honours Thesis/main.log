@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.22)  15 OCT 2022 22:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.22)  16 OCT 2022 01:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1706,26 +1706,27 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no l in font nullfont!
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 218.
 [16]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 233.
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 230.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 245.
  (txt_files/automorphism_group_graph_bsgs_gap.txt) (txt_files/automorphism_group_graph_bsgs_gap_2.txt)
 
 LaTeX Font Warning: Font shape `OT1/ptm/m/scit' undefined
-(Font)              using `OT1/ptm/m/sc' instead on input line 248.
+(Font)              using `OT1/ptm/m/sc' instead on input line 260.
 
+[17]
 
 LaTeX Font Warning: Font shape `OT1/zi4/m/it' undefined
-(Font)              using `OT1/zi4/m/n' instead on input line 253.
+(Font)              using `OT1/zi4/m/n' instead on input line 265.
 
 LaTeX Font Info:    Font shape `OT1/zi4/m/it' will be
-(Font)              scaled to size 10.0pt on input line 257.
-[17] (txt_files/automorphism_group_graph_bsgs_gap_3.txt)
+(Font)              scaled to size 10.0pt on input line 269.
+(txt_files/automorphism_group_graph_bsgs_gap_3.txt) [18]
 
 LaTeX Font Warning: Font shape `OT1/ptm/m/scit' undefined
-(Font)              using `OT1/ptm/m/sc' instead on input line 298.
+(Font)              using `OT1/ptm/m/sc' instead on input line 310.
 
-[18]) (sections/group_concepts/classification_results.tex [19])) [20]
+) (sections/group_concepts/classification_results.tex [19])) [20]
 Chapter 3.
 (sections/complexity_concepts.tex [21
 
@@ -1743,9 +1744,12 @@ Chapter 5.
 (sections/perm_group_theory.tex [32
 
 ] [33] [34] [35] [36]
-Underfull \vbox (badness 1308) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [37] [38] [39] [40] [41] [42] [43]) [44]
+ [37] [38]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39] [40] [41] [42] [43]) [44]
 Chapter 6.
 (sections/lit_review.tex [45
 
@@ -1790,17 +1794,17 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 40962 strings out of 478582
- 784306 string characters out of 2842422
- 1652046 words of memory out of 3000000
- 56811 multiletter control sequences out of 15000+600000
+ 40970 strings out of 478582
+ 784428 string characters out of 2842422
+ 1652173 words of memory out of 3000000
+ 56814 multiletter control sequences out of 15000+600000
  532204 words of font info for 364 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  101i,18n,105p,1790b,1872s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-ts1.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-ot1-0.enc}<C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/rsfs/rsfs10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (65 pages, 716846 bytes).
+Output written on main.pdf (65 pages, 721028 bytes).
 PDF statistics:
- 1995 PDF objects out of 2073 (max. 8388607)
- 1037 named destinations out of 1200 (max. 500000)
+ 2005 PDF objects out of 2073 (max. 8388607)
+ 1042 named destinations out of 1200 (max. 500000)
  86917 words of extra memory for PDF output out of 89155 (max. 10000000)
 

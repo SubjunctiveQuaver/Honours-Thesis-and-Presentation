@@ -70,6 +70,12 @@ Alexander Hulpke.
 \newblock Constructing transitive permutation groups.
 \newblock {\em Journal of Symbolic Computation}, 39(1):1--30, 2005.
 
+\bibitem{janko1965}
+Zvonimir Janko.
+\newblock A new finite simple group with abelian 2-sylow subgroups.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  53(3):657--658, 1965.
+
 \bibitem{karp1972}
 R.~Karp.
 \newblock Reducibility among combinatorial problems.
@@ -85,6 +91,11 @@ Donald~E. Knuth.
 Martin~W. Liebeck.
 \newblock On minimal degrees and base sizes of primitive permutation groups.
 \newblock {\em Archiv der Mathematik}, 43(1):11--15, 1984.
+
+\bibitem{livingstone1967}
+Donald Livingstone.
+\newblock On a permutation representation of the janko group.
+\newblock {\em Journal of Algebra}, 6(1):43--55, 1967.
 
 \bibitem{lovasz1980}
 L{\'{a}}szl{\'{o}} Lov{\'{a}}sz.

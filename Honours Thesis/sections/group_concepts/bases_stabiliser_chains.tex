@@ -75,10 +75,22 @@ However, if $G^i = G^{i-1}$ for some $i$, then every element of $G^{i-1}$ fixes 
 
 Since each element in $G$ is completely determined by its action on a base (\autoref{lem:base_uniquely_determines}), a small base is desirable, as it can lead to a reduction in the space required to store the group elements, \added{1}{as noted in} \cite{blaha1992}. It can be easily seen that if $B = [\beta_1,\dotsc,\beta_r]$ is a base for $G$, then any permutation $\tilde B = [\beta_{\sigma_1},\dotsc,\beta_{\sigma_r}]$ of this list is also a base for $G$, as only $1$ fixes every element in both lists (which contain precisely the same elements). However, the stabiliser chains associated to each base are different, which give rise to different transversals.
 
+\added{4}{\begin{lemma}\label{lem:base_of_subgroup}
+        If $G \leq \Sym(\Omega)$ and $H \leq G$, then if $B$ is a base for $G$, then it is a base for $H$. Thus, $b(H) \leq b(G)$.
+    \end{lemma}
+
+    \begin{proof}
+        Let $B = [\beta_1,\dotsc,\beta_r]$ be a base for $G$, so that $G_{(B)} = 1$. But $H_{(B)} = \{h \in H : \beta_1^h = \beta_1,\dotsc,\beta_r^h = \beta_r\} \subseteq G_{(B)}$, so $H_{(B)} = 1$ and $B$ is a base for $H$. Thus a minimum base for $G$ is a base for $H$, and $b(H) \leq b(G)$.
+    \end{proof}
+
+    If $G \leq \Sym(\Omega)$ has degree $n$, then clearly $b(G) \leq n$. In fact, as the following example shows, we must have $b(G) \leq n-1$ (applying the above lemma to $G \leq \Sym(\Omega)$ with $|\Omega| = n$), with equality if and only if $G = \Sym(\Omega)$.}
+
 \begin{example}[symmetric groups]\label{eg:symmetric_group_base}
     Consider the symmetric group $\Sym(n)$, which acts naturally on $\Omega = [n]$. Clearly $B = [1,\dotsc,n]$ is a base for $\Sym(n)$, since $1$ is the only permutation that fixes every element of $B$. However, $\tilde B = [1,\dotsc,n - 1]$ is also a base for $\Sym(n)$; a permutation that fixes $\{1,\dotsc,n - 1\}$ must also fix $n$ (as it is a bijection), thus it is \added{1}{the identity,} $1$.
 
     Now suppose we have an ordered list $\hat B$ of $n - 2$ or fewer elements. Then say $\alpha,\beta$ are not in $\hat B$; then the transposition $(\alpha,\beta)$ fixes every element of $\hat B$, so $\hat B$ is not a base for $\Sym(n)$. It follows that a smallest base for $\Sym(n)$ comprises any set of $n - 1$ elements: $\added{2}{b}(\Sym(n)) = n - 1$ \added{1}{(note that $|\Sym(n)| = n!$)}.
+
+    \added{4}{Note that if $G < \Sym(n)$, then $b(G) \leq n-2$. This follows from the following: suppose that every ordered list $B = [\beta_1,\dotsc,\beta_{n-2}]$ of distinct elements of $[n]$ is not a base. Then there is $g \in G$ with $\beta_i^g = \beta_i$ for all $i = 1,\dotsc,n-2$ but $g \neq 1$. Then suppose $\alpha_1,\alpha_2$ are the remaining elements of $[n]$; then $g = (\alpha_1,\alpha_2) \in G$. Since $B$ was arbitrary, it follows that $\langle\{(\alpha_1,\alpha_2) : 1 \leq \alpha_1 < \alpha_2 \leq n\}\rangle = \Sym(n) \leq G$, so $G = \Sym(n)$. (The general case follows since $\Sym(\Omega) \cong \Sym(n)$ where $|\Omega| = n$; this can be made formal using permutation isomorphism as below in \autoref{lem:perm_isom_base}.)}
 \end{example}
 
 \added{4}{\begin{example}[alternating groups]\label{eg:alternating_group_base}
