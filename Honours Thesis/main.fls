@@ -1763,6 +1763,13 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmr
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmri7t.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri8r.tfm
+INPUT .\sections\abstract.tex
+INPUT sections\abstract.tex
+INPUT .\sections\abstract.tex
+INPUT sections\abstract.tex
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri7t.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmr7t.vf
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT .\main.toc
 INPUT main.toc
 INPUT main.toc
@@ -1821,13 +1828,10 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb7t.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri7t.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri7t.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri7t.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmri7t.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmb7t.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb8r.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmr7t.vf
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmb7t.vf
 OUTPUT main.toc
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr7t.tfm

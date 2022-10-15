@@ -24,9 +24,9 @@ We also describe a greedy algorithm (suggested in \cite{brown1989}) for finding 
 
 Since $|G^i| = |G^{i-1}|/|\beta_i^{G^{i-1}}|$ by the \hyperref[thm:orbit_stabiliser]{orbit-stabiliser theorem}, this greedy algorithm chooses $\beta_i$ that minimises $|G^i|$ at every stage. So it is reasonable to assume that the length $r$ of the base $B$ will be ``small''. However, does it construct a \textit{minimum base}? Blaha shows in \cite{blaha1992} that this is not the case.
 
-\section{The cyclic case}
+\section{The general case}
 
-\subsection{NP-hardness of the minimum base problem}
+\subsection{NP-hardness of the minimum base problem for cyclic groups}
 
 First a preliminary lemma.
 
@@ -70,7 +70,7 @@ Now for $r \leq q$, let $B = [\beta_1,\dotsc,\beta_r] \subseteq \{1,\dotsc,n\}$ 
     Note that $s = |G| = p_1 \dotsb p_{3q}$ if and only if $\ell = 3q$, where $s = \lcm(s_{m_1},\dotsc,s_{m_r})$ decomposes as a product of (exactly) $\ell$ primes. But $\ell \leq 3r$ (since each $s_m$ is a product of three distinct primes) and so $\ell \leq 3r \leq 3q = \ell$ (since $r \leq q$) if and only if $s = |G|$; equivalently, $s = |G|$ if and only if $r = q$, from which it follows that the $s_{m_1},\dotsc,s_{m_r}$ are all relatively prime. But this occurs if and only if the $m_1,\dotsc,m_r \in M$ are all disjoint. In summary, $B = [\beta_1,\dotsc,\beta_r]$ is a base for $G$ with $r \leq q$ if and only if $r = q$ and the 3-sets $m_1,\dotsc,m_r \in M$ form an exact cover of $Y$ (answering the X3C problem). This is the desired Karp reduction from X3C to MB, and thus MB is NP-complete as X3C is known to be NP-complete \added{3}{(\autoref{eg:X3C})}.
 \end{proof}
 
-\subsection{Greedy base analysis}
+\subsection{Greedy base analysis for cyclic groups}
 
 \begin{remark}\label{rem:blaha_cyclic_greedy}
     Using the construction in \autoref{thm:blaha_cyclic_NP_complete}, we can build cyclic groups for which the \hyperref[alg:blaha_greedy_base]{greedy base algorithm} \textit{fails} to find a minimum base. In fact, a similar construction of a cyclic group $G = \langle \sigma \rangle$ using a reduction from X2C (the exact 2-cover, defined analogously to X3C) to MB already causes it to fail.
@@ -79,14 +79,14 @@ Now for $r \leq q$, let $B = [\beta_1,\dotsc,\beta_r] \subseteq \{1,\dotsc,n\}$ 
 
     Now we consider the greedy approach to finding a base. Set $G^0 = G$. The largest orbit of $G^0$ \added{3}{comprises elements of} the 21-cycle $C_{\{b,d\}}$; pick $\beta_1$ in this. Then $G^1 = \added{2}{G^0_{\beta_1}} = \langle \sigma^{21} \rangle$; $\sigma^{21}$ comprises \added{3}{twenty-one} 1-cycles (comprising elements of the 21-cycle $C_{\{b,d\}}$ in $\sigma$), \added{3}{three} 5-cycles (comprising elements of the 15-cycle $C_{\{b,c\}}$ in $\sigma$), and \added{3}{seven} 2-cycles (comprising elements of the 14-cycle $C_{\{a,d\}}$ in $\sigma$). A largest orbit of $G^1$ is one of the 5-cycles; pick $\beta_2$ in one of them. Then $G^2 = \added{2}{G^1_{\beta_2}} = \langle \sigma^{105} \rangle$; $\sigma^{105}$ comprises $(21 + 15)$ 1-cycles (comprising elements of the cycles $C_{\{b,d\}}$ and $C_{\{b,c\}}$ in $\sigma$) and 7 2-cycles (comprising elements of the cycle $C_{\{a,d\}}$ in $\sigma$). A largest orbit of $G^2$ is one of the 2-cycles; pick $\beta_3$ in one of them. Then $G^3 = \added{2}{G^2_{\beta_3}} = 1$, so $B = [\beta_1,\beta_2,\beta_3]$ is a base for $G$ of size 3, found via the greedy algorithm.
 
-    However, if we set $\tilde G^0 = G$, and choose $\tilde\beta_1$ from the 15-cycle $C_{\{b,c\}}$ in $\sigma$, then $\tilde G^1 = \added{2}{\tilde G^0_{\tilde\beta_1}} = \langle \sigma^{15} \rangle$; $\sigma^{15}$ has $(15 + 14)$ 1-cycles and \added{3}{three} 7-cycles (comprising elements of the 21-cycle $C_{\{b,d\}}$), so choosing $\tilde\beta_2$ from a 7-cycle results in $\tilde B = [\tilde\beta_1,\tilde\beta_2]$ being a base for $G$ of size 2. This is a minimum base for $G$, since $G$ does not act transitively on $\{1,\dotsc,n\}$ (and thus we don't have a base of size 1).
+    However, if we set $\tilde G^0 = G$, and choose $\tilde\beta_1$ from the 15-cycle $C_{\{b,c\}}$ in $\sigma$, then $\tilde G^1 = \added{2}{\tilde G^0_{\tilde\beta_1}} = \langle \sigma^{15} \rangle$; $\sigma^{15}$ has $(15 + 14)$ 1-cycles and \added{3}{three} 7-cycles (comprising elements of the 21-cycle $C_{\{b,d\}}$), so choosing $\tilde\beta_2$ from a 7-cycle results in $\tilde B = [\tilde\beta_1,\tilde\beta_2]$ being a base for $G$ of size 2. This is a minimum base for $G$, since $G$ does not act transitively on $\{1,\dotsc,n\}$ (and thus we do not have a base of size 1).
 \end{remark}
 
-In the above reduction of X3C to MB, as the problem size of X3C increases, the sizes of the orbits in the constructed group $G = \langle \sigma \rangle$ increase, since the primes involved are larger. The following theorem shows that even if the orbits are bounded, it is still not possible to solve the MB problem efficiently.
+In the above reduction of X3C to MB, as the problem size of X3C increases, the sizes of the orbits in the constructed group $G = \langle \sigma \rangle$ increase, since the primes involved are larger. The following section \added{4}{uses elementary abelian groups to show} that even if the orbits are bounded, it is still not possible to solve the MB problem efficiently.
 
-\section{The elementary abelian case}
+\section{The case of bounded orbits}
 
-The following technical construction from \cite{blaha1992} is repeatedly used in the following lemmas in this section. \added{3}{It closely resembles a construction given immediately after \autoref{lem:setwise_stab_normal_in_stab}.}
+The following technical construction from \cite{blaha1992} is repeatedly used in the following lemmas in this section. \added{3}{It closely resembles a construction given immediately after \autoref{rem:group_acts_on_orbit}.}
 
 \begin{example}\label{eg:blaha_elem_technical_construction}
     Suppose $X$ is a finite set with $|X| = n$.
@@ -104,31 +104,30 @@ The following technical construction from \cite{blaha1992} is repeatedly used in
 
 Note that for $Y,Z \subseteq X$, an element $\sigma \in G(Y)$ has, up to permutation \added{3}{of factors (since $G(Y)$ is abelian)}, a \textit{unique} decomposition $\sigma = \sigma_{x_1} \dotsb \sigma_{x_k}$ with each $x_i \in Y$ (distinct). Moreover, $G(Y) \cap G(Z) = G(Y \cap Z)$. (The reverse inclusion is trivial; the forward inclusion relies on the unique decomposition.)
 
-\added{3}{
-    \begin{example}\label{eg:blaha_elem_technical_construction_example}
-        In the above construction, set $n = 3$ and $X = [3]$. We use multiplicative notation for $(\Z/2\Z)^3$.
-        \begin{itemize}
-            \item Note that $G(X) = \langle\sigma_1,\sigma_2,\sigma_3\rangle = \{1,\sigma_1,\sigma_2,\sigma_3,\sigma_1\sigma_2,\sigma_1\sigma_3,\sigma_2\sigma_3,\sigma_1\sigma_2\sigma_3\}$. Note that each $\sigma_i^2 = 1$ and $\sigma_i\sigma_j = \sigma_j\sigma_i$.
-            \item If $Y = \{1,3\}$, then $G(Y) = \langle\sigma_1,\sigma_3\rangle = \{1,\sigma_1,\sigma_3,\sigma_1\sigma_3\} \leq G(X)$.
-            \item The action $\mathcal{R}_Y$ is defined as such: for $\alpha \in G(Y)$ and say $\sigma = \sigma_1\sigma_2\sigma_3 = \sigma_2\sigma_1\sigma_3 \in G(X)$, we have
-                  $$\alpha^{\mathcal{R}_Y(\sigma)} = \alpha^{\mathcal{R}_Y(\sigma_2)\mathcal{R}_Y(\sigma_1\sigma_3)} = (\alpha^{\mathcal{R}_Y(\sigma_2)})^{\mathcal{R}_Y(\sigma_1\sigma_3)} = \alpha^{\mathcal{R}(\sigma_1\sigma_3)} = \alpha\sigma_1\sigma_3.$$
-                  It can be seen that $\mathcal{R}_Y$ acts regularly (like $\mathcal{R}$) for $G(Y)$, and trivially for $G(X \setminus Y) = \langle\sigma_2\rangle = \{1,\sigma_2\}$. (Note that $G(X) \cong G(Y) \times G(X \setminus Y)$ via $\sigma_1 \mapsto (\sigma_1,1)$, $\sigma_2 \mapsto (1,\sigma_2)$, $\sigma_3 \mapsto (\sigma_3,1)$, then extending homomorphically.)
-            \item Let $\mathcal{C} = \{\{1,3\},\{2\},\{2,3\}\}$. Then
-                  $$\Omega_{\mathcal{C}} = \bigsqcup_{Y \in \mathcal{C}} G(Y) = G(\{1,3\}) \sqcup G(\{2\}) \sqcup G(\{2,3\}) = \{1,\sigma_1,\sigma_3,\sigma_1\sigma_3\} \sqcup \{1,\sigma_2\} \sqcup \{1,\sigma_2,\sigma_3,\sigma_2\sigma_3\}.$$
-            \item For $\mathcal{R}_\mathcal{C}$ and $\sigma = \sigma_1\sigma_2\sigma_3 \in G(X)$, if say $\alpha = \sigma_2 \in G(\{2\}) \subseteq \Omega_\mathcal{C}$, then $\alpha^{\mathcal{R}_\mathcal{C}(\sigma)} = \sigma_2^{\mathcal{R}_{\{2\}}(\sigma)} = \sigma_2^{\mathcal{R}(\sigma_2)} = \sigma_2\sigma_2 = 1$. But if $\alpha = \sigma_2 \in G(\{2,3\}) \subseteq \Omega_\mathcal{C}$, then $\alpha^{\mathcal{R}_\mathcal{C}(\sigma)} = \sigma_2^{\mathcal{R}_{\{2,3\}}(\sigma)} = \sigma_2^{\mathcal{R}(\sigma_2\sigma_3)} = \sigma_2\sigma_2\sigma_3 = \sigma_3$.
-            \item Now set $Z = \{1,2\}$, so $G(Z) = \langle\sigma_1,\sigma_2\rangle = \{1,\sigma_1,\sigma_2,\sigma_1\sigma_2\}$. Then $G_\mathcal{C}(Z) = \mathcal{R}_\mathcal{C}[G(Z)]$ contains the permutations $\mathcal{R}_\mathcal{C}(\sigma)$ of $\Omega_\mathcal{C}$ where $\sigma \in G(Z)$. For example, for $\sigma = \sigma_2$ we get the permutation
-                  $$\mathcal{R}_\mathcal{C}(\sigma_2) = \underbrace{(1,\sigma_2)}_{G(\{2\})}\underbrace{(1,\sigma_2)(\sigma_3,\sigma_2\sigma_3)}_{G(\{2,3\})} \in \Sym(\Omega_\mathcal{C});$$
-                  note that on $G(\{1,3\}) \subseteq \Omega_\mathcal{C}$, $\mathcal{R}_\mathcal{C}(\sigma_2)$ acts trivially. As a permutation group, $G_\mathcal{C}(Z)$ acts naturally on $\Omega_\mathcal{C}$ and indeed $G_\mathcal{C}(Z) := \{\mathcal{R}_\mathcal{C}(\sigma) : \sigma \in G(Z)\} = \langle\mathcal{R}_\mathcal{C}(\sigma_1),\mathcal{R}_\mathcal{C}(\sigma_2)\rangle$: for $\sigma_1\sigma_2 \in G(Z)$, we have $\mathcal{R}_\mathcal{C}(\sigma_1\sigma_2) = \mathcal{R}_\mathcal{C}(\sigma_1)\mathcal{R}_\mathcal{C}(\sigma_2)$ since $\mathcal{R}_\mathcal{C}$ is an action (thus a homomorphism).
-        \end{itemize}
-        \begin{enumerate}[(a)]
-            \item Let us consider $Y = \{1,3\} \in \mathcal{C}$ and $\alpha \in G(Y)$. Then with $Z = \{1,2\}$ let us consider the stabiliser
-                  $$G_\mathcal{C}(Z)_\alpha = \{\mathcal{R}_\mathcal{C}(\sigma) : \alpha^{\mathcal{R}_\mathcal{C}(\sigma)} = \alpha\ \text{and}\ \sigma \in G(Z)\}.$$
-                  For $\sigma \in G(Z) = \{1,\sigma_1,\sigma_2,\sigma_1\sigma_2\}$, if $\sigma \in G(Z \setminus Y) = G(\{2\})$, then $\mathcal{R}_\mathcal{C}(\sigma)$ acts trivially on $G(Y)$, so $\mathcal{R}_\mathcal{C}(\sigma) \in G_\mathcal{C}(Z)_\alpha$. Conversely, if $\sigma \not\in G(\{2\}) = \{1,\sigma_2\}$ then $\sigma = \sigma_1$ or $\sigma = \sigma_1\sigma_2$; in the first case, $\alpha^{\mathcal{R}_\mathcal{C}(\sigma_1)} = \alpha\sigma_1 \neq \alpha$, and in the second case, $\alpha^{\mathcal{R}_\mathcal{C}(\sigma_1\sigma_2)} = \alpha\sigma_1 \neq \alpha$. So $G_\mathcal{C}(Z)_\alpha = G_\mathcal{C}(\{2\}) = G_\mathcal{C}(Z \setminus Y)$.
-            \item If $W = Y \cap Z = \{1\}$, then $G(W) = \{1,\sigma_1\}$ and $|G(Y) : G(W)| = |G(Y)|/|G(W)| = 4/2 = 2$. Note that $G_\mathcal{C}(Z)$ acts on $G(Y) = \{1,\sigma_1,\sigma_3,\sigma_1\sigma_3\} \subseteq \Omega_\mathcal{C}$ since it is an orbit under $\mathcal{R}_\mathcal{C}$ (see \autoref{rem:group_acts_on_orbit}). The $G_\mathcal{C}(Z)$-orbits are
-                  $$1^{G_\mathcal{C}(Z)} = \{1^{\mathcal{R}_\mathcal{C}(1)},1^{\mathcal{R}_\mathcal{C}(\sigma_1)},1^{\mathcal{R}_\mathcal{C}(\sigma_2)},1^{\mathcal{R}_\mathcal{C}(\sigma_1\sigma_2)}\} = \{1,\sigma_1,1,\sigma_1\} = \{1,\sigma_1\} = \sigma_1^{G_\mathcal{C}(Z)}$$
-                  and $\sigma_3^{G_\mathcal{C}(Z)} = \{\sigma_3,\sigma_1\sigma_3\} = (\sigma_1\sigma_3)^{G_\mathcal{C}(Z)}$. Thus there are $2 = |G(W)|$ orbits each of size $2 = |G(Y) : G(W)|$.
-        \end{enumerate}
-    \end{example}}
+\begin{example}\label{eg:blaha_elem_technical_construction_example}
+    We illustrate the above construction by setting $n = 3$ and $X = [3]$. We use multiplicative notation for $(\Z/2\Z)^3$ \added{4}{(i.e. we actually treat it as $C_2^3$)}.
+    \begin{itemize}
+        \item Note that $G(X) = \langle\sigma_1,\sigma_2,\sigma_3\rangle = \{1,\sigma_1,\sigma_2,\sigma_3,\sigma_1\sigma_2,\sigma_1\sigma_3,\sigma_2\sigma_3,\sigma_1\sigma_2\sigma_3\}$. Note that each $\sigma_i^2 = 1$ and $\sigma_i\sigma_j = \sigma_j\sigma_i$.
+        \item If $Y = \{1,3\}$, then $G(Y) = \langle\sigma_1,\sigma_3\rangle = \{1,\sigma_1,\sigma_3,\sigma_1\sigma_3\} \leq G(X)$.
+        \item The action $\mathcal{R}_Y$ is defined as such: for $\alpha \in G(Y)$ and say $\sigma = \sigma_1\sigma_2\sigma_3 = \sigma_2\sigma_1\sigma_3 \in G(X)$, we have
+              $$\alpha^{\mathcal{R}_Y(\sigma)} = \alpha^{\mathcal{R}_Y(\sigma_2)\mathcal{R}_Y(\sigma_1\sigma_3)} = (\alpha^{\mathcal{R}_Y(\sigma_2)})^{\mathcal{R}_Y(\sigma_1\sigma_3)} = \alpha^{\mathcal{R}(\sigma_1\sigma_3)} = \alpha\sigma_1\sigma_3.$$
+              It can be seen that $\mathcal{R}_Y$ acts regularly (like $\mathcal{R}$) for $G(Y)$, and trivially for $G(X \setminus Y) = \langle\sigma_2\rangle = \{1,\sigma_2\}$. (Note that $G(X) \cong G(Y) \times G(X \setminus Y)$ via $\sigma_1 \mapsto (\sigma_1,1)$, $\sigma_2 \mapsto (1,\sigma_2)$, $\sigma_3 \mapsto (\sigma_3,1)$, then extending homomorphically.)
+        \item Let $\mathcal{C} = \{\{1,3\},\{2\},\{2,3\}\}$. Then
+              $$\Omega_{\mathcal{C}} = \bigsqcup_{Y \in \mathcal{C}} G(Y) = G(\{1,3\}) \sqcup G(\{2\}) \sqcup G(\{2,3\}) = \{1,\sigma_1,\sigma_3,\sigma_1\sigma_3\} \sqcup \{1,\sigma_2\} \sqcup \{1,\sigma_2,\sigma_3,\sigma_2\sigma_3\}.$$
+        \item For $\mathcal{R}_\mathcal{C}$ and $\sigma = \sigma_1\sigma_2\sigma_3 \in G(X)$, if say $\alpha = \sigma_2 \in G(\{2\}) \subseteq \Omega_\mathcal{C}$, then $\alpha^{\mathcal{R}_\mathcal{C}(\sigma)} = \sigma_2^{\mathcal{R}_{\{2\}}(\sigma)} = \sigma_2^{\mathcal{R}(\sigma_2)} = \sigma_2\sigma_2 = 1$. But if $\alpha = \sigma_2 \in G(\{2,3\}) \subseteq \Omega_\mathcal{C}$, then $\alpha^{\mathcal{R}_\mathcal{C}(\sigma)} = \sigma_2^{\mathcal{R}_{\{2,3\}}(\sigma)} = \sigma_2^{\mathcal{R}(\sigma_2\sigma_3)} = \sigma_2\sigma_2\sigma_3 = \sigma_3$.
+        \item Now set $Z = \{1,2\}$, so $G(Z) = \langle\sigma_1,\sigma_2\rangle = \{1,\sigma_1,\sigma_2,\sigma_1\sigma_2\}$. Then $G_\mathcal{C}(Z) = \mathcal{R}_\mathcal{C}[G(Z)]$ contains the permutations $\mathcal{R}_\mathcal{C}(\sigma)$ of $\Omega_\mathcal{C}$ where $\sigma \in G(Z)$. For example, for $\sigma = \sigma_2$ we get the permutation
+              $$\mathcal{R}_\mathcal{C}(\sigma_2) = \underbrace{(1,\sigma_2)}_{G(\{2\})}\underbrace{(1,\sigma_2)(\sigma_3,\sigma_2\sigma_3)}_{G(\{2,3\})} \in \Sym(\Omega_\mathcal{C});$$
+              note that on $G(\{1,3\}) \subseteq \Omega_\mathcal{C}$, $\mathcal{R}_\mathcal{C}(\sigma_2)$ acts trivially. As a permutation group, $G_\mathcal{C}(Z)$ acts naturally on $\Omega_\mathcal{C}$ and indeed $G_\mathcal{C}(Z) := \{\mathcal{R}_\mathcal{C}(\sigma) : \sigma \in G(Z)\} = \langle\mathcal{R}_\mathcal{C}(\sigma_1),\mathcal{R}_\mathcal{C}(\sigma_2)\rangle$: for $\sigma_1\sigma_2 \in G(Z)$, we have $\mathcal{R}_\mathcal{C}(\sigma_1\sigma_2) = \mathcal{R}_\mathcal{C}(\sigma_1)\mathcal{R}_\mathcal{C}(\sigma_2)$ since $\mathcal{R}_\mathcal{C}$ is an action (thus a homomorphism).
+    \end{itemize}
+    \begin{enumerate}[(a)]
+        \item Let us consider $Y = \{1,3\} \in \mathcal{C}$ and $\alpha \in G(Y)$. Then with $Z = \{1,2\}$ let us consider the stabiliser
+              $$G_\mathcal{C}(Z)_\alpha = \{\mathcal{R}_\mathcal{C}(\sigma) : \alpha^{\mathcal{R}_\mathcal{C}(\sigma)} = \alpha\ \text{and}\ \sigma \in G(Z)\}.$$
+              For $\sigma \in G(Z) = \{1,\sigma_1,\sigma_2,\sigma_1\sigma_2\}$, if $\sigma \in G(Z \setminus Y) = G(\{2\})$, then $\mathcal{R}_\mathcal{C}(\sigma)$ acts trivially on $G(Y)$, so $\mathcal{R}_\mathcal{C}(\sigma) \in G_\mathcal{C}(Z)_\alpha$. Conversely, if $\sigma \not\in G(\{2\}) = \{1,\sigma_2\}$ then $\sigma = \sigma_1$ or $\sigma = \sigma_1\sigma_2$; in the first case, $\alpha^{\mathcal{R}_\mathcal{C}(\sigma_1)} = \alpha\sigma_1 \neq \alpha$, and in the second case, $\alpha^{\mathcal{R}_\mathcal{C}(\sigma_1\sigma_2)} = \alpha\sigma_1 \neq \alpha$. So $G_\mathcal{C}(Z)_\alpha = G_\mathcal{C}(\{2\}) = G_\mathcal{C}(Z \setminus Y)$.
+        \item If $W = Y \cap Z = \{1\}$, then $G(W) = \{1,\sigma_1\}$ and $|G(Y) : G(W)| = |G(Y)|/|G(W)| = 4/2 = 2$. Note that $G_\mathcal{C}(Z)$ acts on $G(Y) = \{1,\sigma_1,\sigma_3,\sigma_1\sigma_3\} \subseteq \Omega_\mathcal{C}$ since it is an orbit under $\mathcal{R}_\mathcal{C}$ (see \autoref{rem:group_acts_on_orbit}). The $G_\mathcal{C}(Z)$-orbits are
+              $$1^{G_\mathcal{C}(Z)} = \{1^{\mathcal{R}_\mathcal{C}(1)},1^{\mathcal{R}_\mathcal{C}(\sigma_1)},1^{\mathcal{R}_\mathcal{C}(\sigma_2)},1^{\mathcal{R}_\mathcal{C}(\sigma_1\sigma_2)}\} = \{1,\sigma_1,1,\sigma_1\} = \{1,\sigma_1\} = \sigma_1^{G_\mathcal{C}(Z)}$$
+              and $\sigma_3^{G_\mathcal{C}(Z)} = \{\sigma_3,\sigma_1\sigma_3\} = (\sigma_1\sigma_3)^{G_\mathcal{C}(Z)}$. Thus there are $2 = |G(W)|$ orbits each of size $2 = |G(Y) : G(W)|$.
+    \end{enumerate}
+\end{example}
 
 \begin{lemma}\label{lem:blaha_elem_cover_faithful}
     If $X = \bigcup_{Y \in \mathcal{C}} Y$, then $\mathcal{R}_\mathcal{C}$ is faithful.
@@ -171,7 +170,7 @@ In the subsequent lemmas, we use the restricted action of the permutation group 
     since $G(Z \setminus Y)$ acts trivially  on $\alpha \in G(Y)$ under the action $\mathcal{R}_Y$. So the $G_\mathcal{C}(Z)$-orbits are the left cosets of $G(W)$ in $G(Y)$; there are $|G(Y) : G(W)|$-many.
 \end{proof}
 
-\subsection{NP-hardness of the minimum base problem}
+\subsection{NP-hardness of the minimum base problem for elementary abelian groups}
 
 \begin{theorem}[Theorem 3.2 in \cite{blaha1992}]\label{thm:blaha_elem_NP_complete}
     MB is NP-complete even for $G$ an elementary abelian 2-group with orbits of size 8.
@@ -217,9 +216,9 @@ The difference in size between any two nonredundant bases for $G$ is at most a f
     Fix $r \geq 1$; then for any $n \geq 8r^2$ there exists $G \leq \Sym(n)$ such that $\added{2}{b(G)} = r$, and $G$ has a nonredundant base of size at least $\frac{1}{3}\added{2}{b(G)}\log n$.
 \end{lemma}
 
-TODO: include outline of proof!
+% TODO: include outline of proof!
 
-So, the $O(\added{2}{b(G)}\log n)$ bound in \autoref{lem:blaha_nonredundant_size} is \textit{sharp} (i.e. cannot be improved upon), in the sense that there is a group $G \leq \Sym(n)$ for which the upper bound of $\added{2}{b(G)}\log n$ for a nonredundant base is attained, up to a constant factor.
+So, the $O(\added{2}{b(G)}\log n)$ bound in \autoref{lem:blaha_nonredundant_size} is \textit{sharp} (i.e. cannot be improved upon), in the sense that \added{4}{for every large enough $n$} there is a group $G \leq \Sym(n)$ for which the upper bound of $\added{2}{b(G)}\log n$ for a nonredundant base is attained, up to a constant factor.
 
 \subsection{A sharp bound for greedy bases}
 
@@ -237,7 +236,7 @@ When we consider greedy bases for $G$ (as found by the \hyperref[alg:blaha_greed
     If $G \leq \Sym(n)$, then a greedy base for $G$ has size at most $\lceil \added{2}{b(G)}\log\log n \rceil + \added{2}{b(G)} = O(\added{2}{b(G)}\log\log n)$.
 \end{theorem}
 
-TODO: include outline of proof!
+% TODO: include outline of proof!
 
 % The following technical lemma is used in the proof of \autoref{thm:blaha_greedy_sharp}.
 
@@ -249,6 +248,6 @@ TODO: include outline of proof!
     Fix $r \geq 2$; then for any $n \geq 2^{4r^2 + 7r + 7}$ there is $G \leq \Sym(n)$ such that $\added{2}{b(G)} = r$, and every greedy base for $G$ has size at least $\frac{1}{5}\added{2}{b(G)}\log\log n$.
 \end{theorem}
 
-TODO: include outline of proof!
+% TODO: include outline of proof!
 
 So, the $O(\added{2}{b(G)}\log\log n)$ bound in \autoref{lem:blaha_greedy_size} is also sharp. We conclude that greedy bases certainly offer a marked improvement over simply taking nonredundant bases for a permutation group.

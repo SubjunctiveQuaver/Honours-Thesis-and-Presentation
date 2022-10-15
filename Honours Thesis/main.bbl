@@ -1,9 +1,20 @@
 \begin{thebibliography}{10}
 
+\bibitem{babai1981}
+Laszlo Babai.
+\newblock On the order of uniprimitive permutation groups.
+\newblock {\em The Annals of Mathematics}, 113(3):553, 1981.
+
 \bibitem{blaha1992}
 Kenneth~D. Blaha.
 \newblock Minimum bases for permutation groups: The greedy approximation.
 \newblock {\em Journal of Algorithms}, 13(2):297--306, 1992.
+
+\bibitem{bochert1889}
+Alfred Bochert.
+\newblock Ueber die zahl der verschiedenen werthe, die eine function gegebener
+  buchstaben durch vertauschung derselben erlangen kann.
+\newblock {\em Mathematische Annalen}, 33(4):584--590, 1889.
 
 \bibitem{brown1989}
 Cynthia~A. Brown, Larry Finkelstein, and Paul~W. Purdom.
