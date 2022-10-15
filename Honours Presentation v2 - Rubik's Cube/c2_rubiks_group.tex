@@ -45,72 +45,75 @@
     \textbf{Solving} is applying valid move to get to solved state $1$.
 \end{slide}
 
-% \begin{slide}
-%     \textit{In cubing community:} moves called \textit{move sequences}. Generators called \textit{moves}. \textit{Inverse generators} written $U',L',F',R',B',D'$ (instead of $U^{-1}$ etc.); powers written $U2,R2$ etc. (instead of $U^2,R^2$). \pause
+\begin{slide}
+    \textit{In cubing community:} moves called \textit{move sequences}. Inverse generators (also \textit{``moves''} in CC) written $U',L',F',R',B',D'$ (instead of $U^{-1}$ etc.); powers written $U2,R2$ etc. (instead of $U^2,R^2$). \pause
 
-%     \textit{Recall:} $\sigma = \tau$ in $\Sym(n)$ iff $i^\sigma = i^\tau$ for all $i \in [n]$. \pause
+    \textit{Recall:} $\sigma = \tau$ in $\Sym(n)$ iff $i^\sigma = i^\tau$ for all $i \in [n]$. \pause
 
-%     Moves \textit{don't generally commute}: $RU \neq UR$ since
+    Moves \textit{don't generally commute}: $RU \neq UR$ since
 
-%         {\scriptsize
-%             \begin{itemize}
-%                 \item $R = (25,27,32,30)(26,29,31,28)( 3,38,43,19)( 5,36,45,21)( 8,33,48,24)$
-%                 \item $U = ( 1, 3, 8, 6)( 2, 5, 7, 4)( 9,33,25,17)(10,34,26,18)(11,35,27,19)$
-%             \end{itemize}}
+        {\scriptsize
+            \begin{itemize}
+                \item $R = (25,27,32,30)(26,29,31,28)( 3,38,43,19)( 5,36,45,21)( 8,33,48,24)$
+                \item $U = ( 1, 3, 8, 6)( 2, 5, 7, 4)( 9,33,25,17)(10,34,26,18)(11,35,27,19)$
+            \end{itemize}}
 
-%     $$19^{RU} = \pause (19^R)^U = \pause 3^U = \pause 8 \quad\text{but}\quad 19^{UR} = \pause (19^U)^R = \pause 11^R = \pause 11.$$
-% \end{slide}
+    \vspace{-1cm}
+    $$19^{RU} = \pause (19^R)^U = \pause 3^U = \pause 8 \quad\text{but}\quad 19^{UR} = \pause (19^U)^R = \pause 11^R = \pause 11.$$
+\end{slide}
 
-% \subsection{Moves vs states for Rubik's cube}
+\subsection{Moves vs states for Rubik's cube}
 
-% \begin{slide}
-%     \textbf{(Valid) state} is result of applying \textit{valid move} to \textit{solved state} $1$.
+\begin{slide}
+    \textbf{(Valid) state} is result of applying \textit{valid move} to \textit{solved state} $1$.
 
-%     \begin{center}
-%         \includegraphics<1|handout:0>{graphics/rubiks_cube_net.tikz}%
-%         \includegraphics<2->{graphics/rubiks_cube_net_front.tikz}%
-%     \end{center}
+    \begin{center}
+        \includegraphics<1|handout:0>{graphics/rubiks_cube_net.tikz}%
+        \includegraphics<2->{graphics/rubiks_cube_net_front.tikz}%
+    \end{center}
 
-%     \onslide<2->{This new state is valid, as result of applying $F$ to solved state.}
-% \end{slide}
+    \onslide<2->{This new state is valid, as result of applying $F$ to solved state.}
+\end{slide}
 
-% \begin{slide}
-%     \textit{Restickering} is valid state iff it can be \textit{solved}. How to check?
+\begin{slide}
+    \textit{Restickering} is valid state iff it can be \textit{solved}. How to check?
 
-%     Let $\RS$ be valid \textbf{states}; let state $x \in \RS$ be element of $\Sym(48)$ giving permutation of labels to solved state $1 \in \RS$. \\ (I.e. $i^x$ is label at $x$-position of $i$ in solved state $1$.) \pause
+    Let $\RS$ be valid \textbf{states}; let state $x \in \RS$ be element of $\Sym(48)$ giving permutation of labels to solved state $1 \in \RS$. \\ (I.e. $i^x$ is $1$-label of facelet at $x$-position of facelet $i$.) \pause
 
-%     Let $\RC$ be valid \textbf{moves}; let move $\sigma \in \RC$ be element of $\Sym(48)$ giving corresponding permutation of labels. \\ (I.e. $i^\sigma$ is label at position $\sigma$ maps $i$ into.) \pause
+    Let $\RC$ be valid \textbf{moves}; each generator/inverse applied corresponds to turn of that face (determined by centre facelet), holding cube fixed. \pause
 
-%     \begin{itemize}
-%         \item State $x \in \RS$ corresponds to move $x \in \RC$ required to get solved state $1$ into state $x$. \pause
-%         \item Move $\sigma \in \RC$ corresponds to state $\sigma \in \RS$ reached by applying move $\sigma$ to solved state $1$.
-%     \end{itemize} \pause
+    \begin{itemize}
+        \item State $x \in \RS$ corresponds to move $x \in \RC$ required to get solved state $1$ into state $x$. \pause
+        \item Move $\sigma \in \RC$ corresponds to state $\sigma \in \RS$ reached by applying move $\sigma$ to solved state $1$.
+    \end{itemize} \pause
 
-%     So moves $\leftrightarrow$ states; as sets, $\RS = \RC$. \textit{Solved state} is $1 = () \in \Sym(48)$.
-% \end{slide}
+    So moves $\leftrightarrow$ states; as sets, $\RS = \RC$. \textit{Solved state} is $1 = () \in \Sym(48)$.
+\end{slide}
 
-% \subsection{The Rubik's group of permutations}
+\subsection{The Rubik's group of permutations}
 
-% \begin{slide}
-%     Set of moves $\RC$ forms group: composition of valid moves \pause is valid move; identity move is \pause $1 = () \in \RC$, inverse moves \pause exist (undo generators/inverses); associative. \pause
+\begin{slide}
+    For set of moves $\RC$: product of valid moves is valid move; identity $1 = () \in \RC$, inverse moves exist (undo generators/inverses). \pause
 
-%     \begin{definition}[Rubik's group]
-%         \vspace{0pt}
-%         $\RC \leq \Sym(48)$ is permutation group of degree 48, called the \textbf{Rubik's group}; it acts naturally on $[48]$. \pause \textit{Note:} $G = \langle U,L,F,R,B,D \rangle$.
-%     \end{definition} \pause
+    \begin{definition}[Rubik's group]
+        \vspace{0pt}
+        $\RC \leq \Sym(48)$ is permutation group of degree 48, called \textbf{Rubik's group}. \textit{Note:} $G = \langle U,L,F,R,B,D \rangle$.
+    \end{definition} \pause
 
-%     For \textit{move} $\sigma \in \RC$ and \textit{state} $x \in \RS$, applying $\sigma$ to $x$ gives \textit{state} $x^\sigma = x\sigma \in \RS$. This is \textit{regular action} of $\RC$. (Consider states $x \in \RC$.) \pause
+    $\RC$ acts on non-centre facelets labelled by $[48]$: for $\sigma \in \RC$, $i^\sigma$ is $1$-label on facelet that $\sigma$ sends facelet $i$ to, from solved state $1$. (This corresponds to \textit{natural action} as perm group; c.f. $D_8$-action earlier.) \pause
 
-%     Clearly $\RC$ finite (states $\leftrightarrow$ moves; also $|\RC| \leq 48!$). But what is $|\RC|$?
-% \end{slide}
+    For \textit{move} $\sigma \in \RC$ and \textit{state} $x \in \RS$, applying $\sigma$ to $x$ gives \textit{state} $x^\sigma = x\sigma \in \RS$. This is \textit{regular action} of $\RC$. (Consider states $x \in \RC$.) \pause
 
-% \begin{slide}
-%     \texttt{GAP} code to define generators and $\RC = \langle U,L,F,R,B,D \rangle$ (as \texttt{G}):
+    Clearly $\RC$ finite (states $\leftrightarrow$ moves; also $|\RC| \leq 48!$). But what is $|\RC|$?
+\end{slide}
 
-%     {\footnotesize\lstinputlisting{code/rubiks_def.gap}} \pause
+\begin{slide}
+    \texttt{GAP} code to define generators and $\RC = \langle U,L,F,R,B,D \rangle$ (as \texttt{G}):
 
-%     \texttt{Order} cmd: $|\RC| = 43\,252\,003\,274\,489\,856\,000 \approx 4.3 \cdot 10^{19}$. \textit{How?}
-% \end{slide}
+    {\footnotesize\lstinputlisting{code/rubiks_def.gap}} \pause
+
+    \texttt{Order} cmd: $|\RC| = 43\,252\,003\,274\,489\,856\,000 \approx 4.3 \cdot 10^{19}$. \textit{How?}
+\end{slide}
 
 % \subsection{Orbits and stabilisers}
 

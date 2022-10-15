@@ -44,7 +44,7 @@
 \contentsline {remark}{{Remark}{2.{34}}{}}{9}{remark.2.34}%
 \contentsline {definition}{{Definition}{2.{35}}{}}{9}{definition.2.35}%
 \contentsline {proposition}{{Proposition}{2.{36}}{}}{9}{proposition.2.36}%
-\contentsline {proof}{{\proofname }{11}{}}{9}{proof.11}%
+\contentsline {proof}{{\proofname }{11}{}}{10}{proof.11}%
 \contentsline {example}{{Example}{2.{37}}{}}{10}{example.2.37}%
 \contentsline {example}{{Example}{2.{38}}{}}{10}{example.2.38}%
 \contentsline {proposition}{{Proposition}{2.{39}}{}}{10}{proposition.2.39}%
@@ -57,14 +57,14 @@
 \contentsline {lemma}{{Lemma}{2.{44}}{}}{11}{lemma.2.44}%
 \contentsline {proof}{{\proofname }{14}{}}{11}{proof.14}%
 \contentsline {definition}{{Definition}{2.{45}}{}}{11}{definition.2.45}%
-\contentsline {corollary}{{Corollary}{2.{46}}{}}{11}{corollary.2.46}%
-\contentsline {proof}{{\proofname }{15}{}}{11}{proof.15}%
+\contentsline {corollary}{{Corollary}{2.{46}}{}}{12}{corollary.2.46}%
+\contentsline {proof}{{\proofname }{15}{}}{12}{proof.15}%
 \contentsline {lemma}{{Lemma}{2.{47}}{}}{12}{lemma.2.47}%
 \contentsline {example}{{Example}{2.{48}}{}}{12}{example.2.48}%
 \contentsline {proposition}{{Proposition}{2.{49}}{}}{12}{proposition.2.49}%
 \contentsline {definition}{{Definition}{2.{50}}{}}{12}{definition.2.50}%
 \contentsline {example}{{Example}{2.{51}}{symmetric groups}}{12}{example.2.51}%
-\contentsline {example}{{Example}{2.{52}}{cyclic subgroups of $\Sym (n)$}}{12}{example.2.52}%
+\contentsline {example}{{Example}{2.{52}}{cyclic subgroups of $\Sym (n)$}}{13}{example.2.52}%
 \contentsline {proposition}{{Proposition}{2.{53}}{}}{13}{proposition.2.53}%
 \contentsline {proof}{{\proofname }{16}{}}{13}{proof.16}%
 \contentsline {lemma}{{Lemma}{2.{54}}{}}{13}{lemma.2.54}%
@@ -80,18 +80,18 @@
 \contentsline {example}{{Example}{2.{61}}{}}{16}{example.2.61}%
 \contentsline {algorithm}{{Algorithm}{2.{62}}{orbit-stabiliser}}{17}{algorithm.2.62}%
 \contentsline {proof}{{\proofname }{20}{}}{17}{proof.20}%
-\contentsline {corollary}{{Corollary}{2.{63}}{}}{17}{corollary.2.63}%
+\contentsline {corollary}{{Corollary}{2.{63}}{}}{18}{corollary.2.63}%
 \contentsline {definition}{{Definition}{2.{64}}{}}{18}{definition.2.64}%
 \contentsline {definition}{{Definition}{2.{65}}{}}{18}{definition.2.65}%
 \contentsline {theorem}{{Theorem}{2.{66}}{Sylow (1)}}{18}{theorem.2.66}%
 \contentsline {corollary}{{Corollary}{2.{67}}{}}{18}{corollary.2.67}%
 \contentsline {proof}{{\proofname }{21}{}}{18}{proof.21}%
-\contentsline {theorem}{{Theorem}{2.{68}}{Basis for finite abelian groups}}{18}{theorem.2.68}%
+\contentsline {theorem}{{Theorem}{2.{68}}{Basis for finite abelian groups}}{19}{theorem.2.68}%
 \contentsline {corollary}{{Corollary}{2.{69}}{}}{19}{corollary.2.69}%
 \contentsline {proof}{{\proofname }{22}{}}{19}{proof.22}%
 \contentsline {definition}{{Definition}{2.{70}}{}}{19}{definition.2.70}%
 \contentsline {definition}{{Definition}{2.{71}}{}}{19}{definition.2.71}%
-\contentsline {definition}{{Definition}{2.{72}}{}}{19}{definition.2.72}%
+\contentsline {definition}{{Definition}{2.{72}}{}}{20}{definition.2.72}%
 \contentsline {example}{{Example}{2.{73}}{}}{20}{example.2.73}%
 \contentsline {theorem}{{Theorem}{2.{74}}{Jordan-H\"older}}{20}{theorem.2.74}%
 \contentsline {corollary}{{Corollary}{2.{75}}{Fundamental theorem of arithmetic}}{20}{corollary.2.75}%
@@ -105,37 +105,37 @@
 \contentsline {definition}{{Definition}{2.{81}}{}}{22}{definition.2.81}%
 \contentsline {definition}{{Definition}{2.{82}}{}}{22}{definition.2.82}%
 \contentsline {definition}{{Definition}{2.{83}}{}}{22}{definition.2.83}%
-\contentsline {proposition}{{Proposition}{2.{84}}{}}{22}{proposition.2.84}%
-\contentsline {proof}{{\proofname }{25}{}}{22}{proof.25}%
+\contentsline {proposition}{{Proposition}{2.{84}}{}}{23}{proposition.2.84}%
+\contentsline {proof}{{\proofname }{25}{}}{23}{proof.25}%
 \contentsline {lemma}{{Lemma}{2.{85}}{}}{23}{lemma.2.85}%
 \contentsline {proof}{{\proofname }{26}{}}{23}{proof.26}%
 \contentsline {example}{{Example}{2.{86}}{}}{23}{example.2.86}%
 \contentsline {definition}{{Definition}{2.{87}}{}}{24}{definition.2.87}%
 \contentsline {example}{{Example}{2.{88}}{}}{24}{example.2.88}%
-\contentsline {proposition}{{Proposition}{2.{89}}{}}{24}{proposition.2.89}%
+\contentsline {proposition}{{Proposition}{2.{89}}{}}{25}{proposition.2.89}%
 \contentsline {definition}{{Definition}{2.{90}}{}}{25}{definition.2.90}%
 \contentsline {definition}{{Definition}{2.{91}}{}}{25}{definition.2.91}%
 \contentsline {definition}{{Definition}{2.{92}}{}}{25}{definition.2.92}%
 \contentsline {definition}{{Definition}{2.{93}}{}}{25}{definition.2.93}%
-\contentsline {lemma}{{Lemma}{2.{94}}{}}{25}{lemma.2.94}%
-\contentsline {proof}{{\proofname }{27}{}}{25}{proof.27}%
+\contentsline {lemma}{{Lemma}{2.{94}}{}}{26}{lemma.2.94}%
+\contentsline {proof}{{\proofname }{27}{}}{26}{proof.27}%
 \contentsline {proposition}{{Proposition}{2.{95}}{}}{26}{proposition.2.95}%
 \contentsline {proof}{{\proofname }{28}{}}{26}{proof.28}%
 \contentsline {proposition}{{Proposition}{2.{96}}{}}{26}{proposition.2.96}%
 \contentsline {proof}{{\proofname }{29}{}}{26}{proof.29}%
 \contentsline {proposition}{{Proposition}{2.{97}}{}}{27}{proposition.2.97}%
-\contentsline {proof}{{\proofname }{30}{}}{27}{proof.30}%
+\contentsline {proof}{{\proofname }{30}{}}{28}{proof.30}%
 \contentsline {definition}{{Definition}{2.{98}}{}}{28}{definition.2.98}%
 \contentsline {example}{{Example}{2.{99}}{}}{28}{example.2.99}%
-\contentsline {lemma}{{Lemma}{2.{100}}{}}{28}{lemma.2.100}%
-\contentsline {proof}{{\proofname }{31}{}}{28}{proof.31}%
+\contentsline {lemma}{{Lemma}{2.{100}}{}}{29}{lemma.2.100}%
+\contentsline {proof}{{\proofname }{31}{}}{29}{proof.31}%
 \contentsline {lemma}{{Lemma}{2.{101}}{}}{29}{lemma.2.101}%
 \contentsline {proof}{{\proofname }{32}{}}{29}{proof.32}%
 \contentsline {proposition}{{Proposition}{2.{102}}{}}{29}{proposition.2.102}%
 \contentsline {proof}{{\proofname }{33}{}}{29}{proof.33}%
 \contentsline {proposition}{{Proposition}{2.{103}}{}}{29}{proposition.2.103}%
 \contentsline {proof}{{\proofname }{34}{}}{29}{proof.34}%
-\contentsline {theorem}{{Theorem}{2.{104}}{}}{29}{theorem.2.104}%
+\contentsline {theorem}{{Theorem}{2.{104}}{}}{30}{theorem.2.104}%
 \contentsline {theorem}{{Theorem}{2.{105}}{O'Nan-Scott}}{30}{theorem.2.105}%
 \contentsline {definition}{{Definition}{3.{1}}{big-O notation}}{31}{definition.3.1}%
 \contentsline {definition}{{Definition}{3.{2}}{}}{31}{definition.3.2}%

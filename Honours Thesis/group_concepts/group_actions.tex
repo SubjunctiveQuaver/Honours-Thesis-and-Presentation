@@ -6,7 +6,7 @@ We often think of $D_{2n}$, the dihedral group of order $2n$, as the \added{2}{s
     Let $G$ be a group and $\Omega \neq \emptyset$ be a set. A \textbf{(group) action} of $G$ on $\Omega$ is a homomorphism $G \to \Sym(\Omega)$. \added{3}{The \textbf{degree} of the action is $|\Omega|$.}
 \end{definition}
 
-If we have an action, we say that $G$ \textit{acts} on $\Omega$. Immediately, we see that the image of an action is a permutation group; an action gives a way of describing how a group $G$ permutes a set $\Omega$ in a way that respects the structure of $G$. If $\varphi$ is an action as defined above, then $\varphi(g)$ is a permutation of $G$ for each $g \in G$. If $\varphi$ is fixed, we usually write $\alpha^g := \alpha^{\varphi(g)}$ for the action of $\varphi(g)$ on $\alpha \in \Omega$. (Implicit in this notation is that we think of $g \in G$ as acting on elements of $\Omega$ from the right.) The image $\varphi[G]$ of the action is denoted $G^\Omega$, which is a \textit{permutation group} on $\Omega$. \added{2}{By the \hyperref[thm:FIT]{first isomorphism theorem}, $\varphi[G] \cong G/\ker\varphi$ is isomorphic to a quotient of $G$.}
+If we have an action, we say that $G$ \textit{acts} on $\Omega$. Immediately, we see that the image of an action is a permutation group; an action gives a way of describing how a group $G$ permutes a set $\Omega$ in a way that respects the structure of $G$. If $\varphi$ is an action as defined above, then $\varphi(g)$ is a permutation of \added{4}{$\Omega$} for each $g \in G$. If $\varphi$ is fixed \added{4}{or implied}, we usually write $\alpha^g := \alpha^{\varphi(g)}$ for the action of $\varphi(g)$ on $\alpha \in \Omega$. (Implicit in this notation is that we think of $g \in G$ as acting on elements of $\Omega$ from the right.) \added{4}{When we omit the action $\varphi$, its image $\varphi[G]$} is denoted $G^\Omega$, which is a \textit{permutation group} on $\Omega$. \added{2}{By the \hyperref[thm:FIT]{first isomorphism theorem}, $\varphi[G] \cong G/\ker\varphi$ is isomorphic to a quotient of $G$.}
 
 Note that since $\varphi$ is a homomorphism, this translates to the property that
 $$\alpha^{gh} = \alpha^{\varphi(gh)} = \alpha^{\varphi(g)\varphi(h)} = (\alpha^{\varphi(g)})^{\varphi(h)} = (\alpha^g)^h$$
@@ -16,7 +16,7 @@ for $g,h \in G$ and $\alpha \in \Omega$. Also, since $\varphi(1) = 1_{\Sym(\Omeg
     The map $\varphi : G \to \Sym(\Omega)$ is an action of $G$ on $\Omega$ if and only if (1), $\alpha^1 = \alpha$ and (2), $\alpha^{gh} = (\alpha^g)^h$ for all $g,h \in G$ and $\alpha \in \Omega$. \added{2}{(Recall the convention $\alpha^g := \alpha^{\varphi(g)}$.)} \qedhere
 \end{lemma}
 
-Another useful property of actions is that if $\alpha^g = \beta$ for $g \in G$ and $\alpha,\beta \in \Omega$, then $\beta^{g^{-1}} = \alpha$; this follows from the fact that $\varphi(g^{-1}) = \varphi(g)^{-1}$. We now provide some examples of actions on groups.
+Another useful property of actions is that if $\alpha^g = \beta$ for $g \in G$ and $\alpha,\beta \in \Omega$, then $\beta^{g^{-1}} = \alpha$; this follows from the fact that $\varphi(g^{-1}) = \varphi(g)^{-1}$ \added{4}{for the group homomorphism $\varphi$}. We now provide some examples of actions on groups.
 
 \added{1}{\begin{example}[trivial action]\label{eg:trivial_action}
         An element $g \in G$ \textbf{acts trivially} (on $\Omega$) if $\alpha^g = \alpha$ for all $\alpha \in \Omega$, i.e. $g \mapsto 1 \in \Sym(\Omega)$. If every $g \in G$ acts trivially, then we have the \textbf{trivial action} on $G$, and we say that $G$ \textbf{acts trivially} on $\Omega$.
@@ -27,7 +27,7 @@ Another useful property of actions is that if $\alpha^g = \beta$ for $g \in G$ a
 \end{example}
 
 \added{1}{\begin{example}[representations]\label{eg:representations}
-        Let $G$ be a group and $\Omega = V$, a $K$-vector space. Let $\rho : G \to \Sym(V)$ be a homomorphism with $\rho[G] \leq \GL(V) = \Aut(V)$, the invertible linear maps $V \to V$. Then $\rho$ is an action \added{2}{of $G$ on $V$}, but we typically write $\rho : G \to \GL(V)$ and call it a \textbf{representation} of $G$; these are studied in a branch of mathematics called representation theory, which \added{2}{analyses $G$ using} linear actions on a vector space, whose properties are well-known.
+        Let $G$ be a group and $\Omega = V$, a $K$-vector space \added{4}{with $K$ a field}. Let $\rho : G \to \Sym(V)$ be a homomorphism with $\rho[G] \leq \GL(V) = \Aut(V)$, the invertible linear maps $V \to V$. Then $\rho$ is an action \added{2}{of $G$ on $V$}, but we typically write $\rho : G \to \GL(V)$ and call it a \textbf{representation} of $G$; these are studied in a branch of mathematics called representation theory, which \added{2}{analyses $G$ using} linear actions on a vector space, whose properties are well-known.
     \end{example}}
 
 There is a natural notion of equivalence of actions \added{2}{on a fixed group $G$}.
@@ -36,7 +36,7 @@ There is a natural notion of equivalence of actions \added{2}{on a fixed group $
     Two \textit{actions} $\varphi,\tilde\varphi$ of $G$ on $\Omega,\tilde\Omega$ are \textbf{equivalent} if there is a bijection $\tau : \Omega \to \tilde\Omega$ \added{2}{such that $\tau(\alpha^{\varphi(g)}) = \tau(\alpha)^{\tilde\varphi(g)}$ (or equivalently, $\tau(\alpha^g) = \tau(\alpha)^g$)} for all $g \in G$ and $\alpha \in \Omega$.
 \end{definition}
 
-\added{2}{This notion of equivalence says that applying $\varphi$ then relabelling $\Omega$ via $\tau$ is the same as relabelling $\Omega$ via $\tau$ then applying $\tilde\varphi$. In other words, the following diagram commutes:}
+\added{2}{This notion of equivalence says that applying $\varphi$ then relabelling $\Omega$ via $\tau$ is the same as relabelling $\Omega$ via $\tau$ then applying $\tilde\varphi$. In other words, the following diagram commutes \added{4}{for all $g \in G$}:}
 
 % https://q.uiver.app/?q=WzAsNCxbMCwwLCJcXE9tZWdhXzEiXSxbMCwyLCJcXE9tZWdhXzIiXSxbMiwwLCJcXE9tZWdhXzEiXSxbMiwyLCJcXE9tZWdhXzIiXSxbMCwxLCJcXHRhdSJdLFsyLDMsIlxcdGF1IiwyXSxbMSwzLCJcXHZhcnBoaV8yKGcpIl0sWzAsMiwiXFx2YXJwaGlfMShnKSIsMl1d
 \[\begin{tikzcd}
@@ -55,7 +55,7 @@ There is a natural notion of equivalence of actions \added{2}{on a fixed group $
         Two permutation groups $G \leq \Sym(\Omega)$ and $H \leq \Sym(\tilde\Omega)$ are \textbf{permutation isomorphic} if there is a bijection $\tau : \Omega \to \tilde\Omega$ and an isomorphism $\psi : G \to H$ such that $\tau(\alpha^g) = \tau(\alpha)^{\psi(g)}$ for all $g \in G$ and $\alpha \in \Omega$.
     \end{definition}
 
-    The condition on $\tau,\psi$ says that the following diagram commutes:}
+    The condition on $\tau,\psi$ says that the following diagram commutes \added{4}{for all $g \in G$}:}
 
 % https://q.uiver.app/?q=WzAsNCxbMCwwLCJcXE9tZWdhXzEiXSxbMCwyLCJcXE9tZWdhXzIiXSxbMiwwLCJcXE9tZWdhXzEiXSxbMiwyLCJcXE9tZWdhXzIiXSxbMCwxLCJcXHRhdSJdLFsyLDMsIlxcdGF1IiwyXSxbMSwzLCJcXHBzaShnKSBcXGluIEgiXSxbMCwyLCJnIFxcaW4gRyIsMl1d
 \[\begin{tikzcd}
@@ -68,7 +68,7 @@ There is a natural notion of equivalence of actions \added{2}{on a fixed group $
         \arrow["{g \in G}"', from=1-1, to=1-3]
     \end{tikzcd}\]
 
-\added{3}{In the special case that $G = H$ and $\psi = \Id_G$, then permutation isomorphism yields equivalence: for $g \in G$ and $\alpha \in \Omega$, since $G,H$ are permutation isomorphic, we have $\tau(\alpha^g) = \tau(\alpha)^{\Id_G(g)} = \tau(\alpha)^g$, so the actions are equivalent via $\tau$.}
+\added{3}{In the special case that $G = H$ and $\psi = \Id_G$, then permutation isomorphism yields equivalence: for $g \in G$ and $\alpha \in \Omega$, since $G,H$ are permutation isomorphic, we have $\tau(\alpha^g) = \tau(\alpha)^{\Id_G(g)} = \tau(\alpha)^g$ \added{4}{for all $g \in G$}, so the actions are equivalent via $\tau$.}
 
 Next, we define what it means for an action to be \textit{faithful}.
 
@@ -87,7 +87,7 @@ If $\varphi$ is faithful, then $1$ is the only element of $G$ that does not perm
 \end{proof}
 
 \begin{example}[natural action]\label{eg:natural_action}
-    Let $G \leq \Sym(\Omega)$ be a permutation group. The \textbf{natural action} $\varphi : G \to \Sym(\Omega)$ of $G$ on $\Omega$ is given by the inclusion map $g \mapsto g$ (so that for $\alpha \in \Omega$, $\alpha^g := \alpha^g$, the image of $\alpha$ under $g$); this is faithful.
+    Let $G \leq \Sym(\Omega)$ be a permutation group. The \textbf{natural action} $\varphi : G \to \Sym(\Omega)$ of $G$ on $\Omega$ is given by the inclusion map $g \mapsto g$ (so that for $\alpha \in \Omega$ \added{4}{and $g \in G$}, $\added{4}{\alpha^{\varphi(g)}} := \alpha^g$, the image of $\alpha$ under $g$); this is faithful.
 \end{example}
 
 \begin{example}\label{eg:action_D8_on_square}
@@ -107,7 +107,7 @@ We define orbits, stabilisers and fixed point sets for an action of $G$ on $\Ome
     \begin{enumerate}[(i)]
         \item The \textbf{orbit} of $\alpha \in \Omega$ is $\alpha^G = \{\alpha^g : g \in G\} \subseteq \Omega$.
         \item \added{3}{The \textbf{pointwise stabiliser} of $\Delta \subseteq \Omega$ is $G_{(\Delta)} = \{g \in G : \alpha^g = \alpha\ \text{for all}\ \alpha \in \Delta\} \subseteq G$.}
-        \item The \textbf{fixed point set} of $g \in G$ is $\added{3}{\Omega^g} = \{\alpha \in \Omega : \alpha^g = \alpha\} \subseteq \Omega$, dually to the stabiliser.
+        \item The \textbf{fixed point set} of $g \in G$ is $\Fix_\Omega(g) = \{\alpha \in \Omega : \alpha^g = \alpha\} \subseteq \Omega$, dually to the stabiliser.
     \end{enumerate}
 \end{definition}
 
@@ -142,7 +142,7 @@ The orbits of $G$ on $\Omega$ partition $\Omega$: indeed, if we define a relatio
 \begin{example}\label{eg:rra_orbits_stabilisers}
     \begin{enumerate}[(a)]
         \item Recall the right regular action $\mathcal{R}$ on $G$ from \autoref{eg:right_regular_action}, and let $\alpha \in G$. Then the orbit of $\alpha$ is $\alpha^G = \{\alpha^g = \alpha g : g \in G\} = G$. The stabiliser of $\alpha$ is $\added{2}{G_\alpha} = \{g \in G : \alpha g = \alpha^g = \alpha\} = 1$. The fixed point set of $g \in G$ is $\Fix_G(g) = \{\alpha \in G : \alpha g = \alpha^g = \alpha\}$; this is all of $G$ if $g = 1$, and empty otherwise. Note that if $G$ is finite, we see that $|\alpha^G| |\added{2}{G_\alpha}| = |G| |1| = |G|$.
-        \item \added{1}{When $G \leq K$, we can extend $\mathcal{R}$ to a $G$-action $\mathcal{R}^K : G \to \Sym(K)$ on $K$, by $\alpha^g = \alpha g$ for $\alpha \in K$ and $g \in G$. Then the orbits are the left cosets $\alpha G$ of $G$ in $K$, so by \hyperref[thm:lagrange]{Lagrange's theorem}, there are $|K : G|$ orbits, each with size $G$.}
+        \item \added{1}{When $G \leq K$, we can extend $\mathcal{R}$ to a $G$-action $\mathcal{R}^K : G \to \Sym(K)$ on $K$, by $\alpha^g = \alpha g$ for $\alpha \in K$ and $g \in G$. Then the orbits are the left cosets $\alpha G$ of $G$ in $K$, so by \hyperref[thm:lagrange]{Lagrange's theorem}, there are $|K : G|$ orbits, each with size \added{4}{$|G|$}.}
     \end{enumerate}
 \end{example}
 
@@ -153,7 +153,7 @@ The orbits of $G$ on $\Omega$ partition $\Omega$: indeed, if we define a relatio
 Since $\added{2}{G_\alpha}$ is a subgroup of $G$, we can consider its (right) cosets. Let $\added{2}{G_\alpha} \backslash G$ denote the set of its right cosets in $G$. From the previous examples, we see a pattern that for any $\alpha \in \Omega$, we have $|G| = |\alpha^G| |\added{2}{G_\alpha}|$, at least when $G$ is finite. This is made precise for any group $G$, possibly infinite, by the \textit{orbit-stabiliser theorem}, which gives a bijection of $\added{2}{G_\alpha} \backslash G$ with the orbit of $\alpha$, i.e. a bijective correspondence between (right) cosets of the stabiliser of $\alpha$ and elements in the orbit of $\alpha$:
 
 \begin{theorem}[orbit-stabiliser (OST); \added{1}{Fact 1 in \cite{blaha1992}}]\label{thm:orbit_stabiliser}
-    The map $\added{2}{G_\alpha} \backslash G \to \alpha^G$ given by $\added{2}{G_\alpha}g \mapsto \alpha^g$ is a bijection. \added{1}{So, the index of $\added{2}{G_\alpha}$ in $G$ is $|G : \added{2}{G_\alpha}| = |\alpha^G|$, and $|G| = |\alpha^G| |\added{2}{G_\alpha}|$ by \hyperref[thm:lagrange]{Lagrange's theorem}.}
+    \added{4}{Let $G$ act on $\Omega$ and let $\alpha \in \Omega$.} The map $\added{2}{G_\alpha} \backslash G \to \alpha^G$ given by $\added{2}{G_\alpha}g \mapsto \alpha^g$ is a bijection. \added{1}{So, the index of $\added{2}{G_\alpha}$ in $G$ is $|G : \added{2}{G_\alpha}| = |\alpha^G|$, and $|G| = |\alpha^G| |\added{2}{G_\alpha}|$ by \hyperref[thm:lagrange]{Lagrange's theorem}.}
 \end{theorem}
 
 \begin{proof}
@@ -195,10 +195,10 @@ The notion of permutation isomorphism relates to conjugacy of subgroups in a spe
     \[\tau(\alpha)^{\psi(g)} = \tau(\alpha^g) = \alpha^{g\tau} = \tau(\alpha)^{\tau^{-1}g\tau}.\]
 \end{proof}
 
-\added{2}{Recall that a \textbf{maximal subgroup} $H$ of $G$ is a subgroup $H \leq G$ such that $H < K \leq G$ implies $K = G$.
+\added{2}{Recall that a \textbf{maximal subgroup} $H$ of $G$ is a subgroup \added{4}{$H < G$} such that $H < K \leq G$ implies $K = G$.
 
     \begin{lemma}\label{lem:conjugate_of_maximal_subgroup_is_maximal}
-        If $H \leq G$ is maximal, then $H^g$ is maximal for all $g \in G$.
+        If $H < G$ is maximal, then $H^g$ is maximal for all $g \in G$.
     \end{lemma}
 
     \begin{proof}
@@ -271,43 +271,43 @@ Indeed, the right regular action is regular, as seen in \autoref{eg:rra_orbits_s
     If $G$ acts on $\Omega$, then a nonempty subset $\Delta \subseteq \Omega$ is a \textbf{block} under the action, if $\Delta^g = \Delta$ or $\Delta^g \cap \Delta = \emptyset$ \added{2}{for all $g \in G$}, where $\Delta^g := \{\alpha^g : \alpha \in \Delta\}$. The block is \textbf{nontrivial} if $|\Delta| > 1$ and $\Delta \neq \Omega$.
 \end{definition}
 
-Clearly every singleton in $\Omega$ is a (trivial) block. Also, $\Omega$ is a block. Orbits of any action are clearly blocks since for $\alpha \in \Omega$, $(\alpha^G)^g = \{\alpha^{hg} : h \in G\} = \alpha^G$. We usually consider blocks only for transitive actions, i.e. actions with one orbit.
+Clearly every singleton in $\Omega$ is a (trivial) block. Also, $\Omega$ is a block. Orbits of any action are clearly blocks since for $\alpha \in \Omega$, $(\alpha^G)^g = \{\alpha^{hg} : h \in G\} = \alpha^G$. We usually consider blocks only for transitive actions, i.e. actions with one orbit \added{4}{(as $G$ acts on each orbit, as seen below)}.
 
-\added{2}{If $\Delta \subseteq \Omega$ is a block, $G$ may not act on $\Delta$, as if $\Delta^g \cap \Delta = \emptyset$ for $g \in G$, then for $\alpha \in \Delta$, $\alpha^g \not\in \Delta$. But the following lemma shows that there is a subgroup of $G$ that acts on $\Delta$.
+If $\Delta \subseteq \Omega$ is a block, $G$ may not act on $\Delta$, as if $\Delta^g \cap \Delta = \emptyset$ for $g \in G$, then for $\alpha \in \Delta$, $\alpha^g \not\in \Delta$. But the following lemma shows that there is a subgroup of $G$ that acts on $\Delta$.
 
-    \begin{lemma}\label{lem:restrict_action_to_block}
-        If $G$ acts on $\Omega$ and $\Delta \subseteq \Omega$, then
-        \begin{enumerate}[(a)]
-            \item for $g,h \in G$, $\Delta^{gh} = (\Delta^g)^h$, and
-            \item the \textbf{setwise stabiliser} $G_\Delta := \{g \in G : \Delta^g = \Delta\} \leq G$ acts on $\Delta$.
-        \end{enumerate}
-        The action $\varphi : G \to \Sym(\Omega)$ relates to the action $\tilde\varphi : G_\Delta \to \Sym(\Delta)$ by $\alpha^{\varphi(g)} = \alpha^{\tilde\varphi(g)} \in \Delta$ for $\alpha \in \Delta$ and $g \in G_\Delta$.
+\begin{lemma}\label{lem:restrict_action_to_block}
+    If $G$ acts on $\Omega$ and $\Delta \subseteq \Omega$, then
+    \begin{enumerate}[(a)]
+        \item for $g,h \in G$, $\Delta^{gh} = (\Delta^g)^h$, and
+        \item the \textbf{setwise stabiliser} $G_\Delta := \{g \in G : \Delta^g = \Delta\} \leq G$ acts on $\Delta$.
+    \end{enumerate}
+    The action $\varphi : G \to \Sym(\Omega)$ relates to the action $\tilde\varphi : G_\Delta \to \Sym(\Delta)$ by $\alpha^{\varphi(g)} = \alpha^{\tilde\varphi(g)} \in \Delta$ for $\alpha \in \Delta$ and $g \in G_\Delta$.
+\end{lemma}
+
+\begin{proof}
+    \begin{enumerate}[(a)]
+        \item We have $\beta \in \Delta^{gh}$ if and only if $\beta = \alpha^{gh}$ \added{4}{for some} $\alpha \in \Delta$, if and only if $\beta = (\alpha^g)^h$ with $\alpha \in \Delta$ and $\alpha^g \in \Delta^g$, if and only if $\beta \in (\Delta^g)^h$.
+        \item For $g,h \in G_\Delta$, we have $\Delta^{gh} = (\Delta^g)^h = \Delta^h = \Delta$, so $gh \in G_\Delta$. Similarly, we have $\Delta^{g^{-1}} = (\Delta^g)^{g^{-1}} = \Delta^1 = \Delta$, so $g^{-1} \in G_\Delta$. So $G_\Delta \leq G$, by the subgroup criterion. Then $G_\Delta$ acts on $\Delta$ since the associated action $\tilde\varphi$ is well-defined.
+    \end{enumerate}
+\end{proof}
+
+It is easy to see that $G_{(\Delta)} \leq G_\Delta$; \added{3}{in fact, it is a normal subgroup:
+
+    \begin{lemma}\label{lem:setwise_stab_normal_in_stab}
+        If $G$ acts on $\Omega$ and $\Delta \subseteq \Omega$, then $G_{(\Delta)} \unlhd G_\Delta$.
     \end{lemma}
 
     \begin{proof}
-        \begin{enumerate}[(a)]
-            \item We have $\beta \in \Delta^{gh}$ if and only if $\beta = \alpha^{gh}$ with $\alpha \in \Delta$, if and only if $\beta = (\alpha^g)^h$ with $\alpha \in \Delta$ and $\alpha^g \in \Delta^g$, if and only if $\beta \in (\Delta^g)^h$.
-            \item For $g,h \in G_\Delta$, we have $\Delta^{gh} = (\Delta^g)^h = \Delta^h = \Delta$, so $gh \in G_\Delta$. Similarly, we have $\Delta^{g^{-1}} = (\Delta^g)^{g^{-1}} = \Delta^1 = \Delta$, so $g^{-1} \in G_\Delta$. So $G_\Delta \leq G$, by the subgroup criterion. Then $G_\Delta$ acts on $\Delta$ since the associated action $\tilde\varphi$ is well-defined.
-        \end{enumerate}
+        Let $h \in G_{(\Delta)}$ and $g \in G_\Delta$. Then for $\alpha \in \Delta$,
+        $$\alpha^{g^{-1}hg} = \big(\alpha^{g^{-1}}\big)^{hg} = \big(\alpha^{g^{-1}}\big)^g = \alpha \implies g^{-1}hg \in G_{(\Delta)},$$
+        where the second equality follows from $\alpha^{g^{-1}} \in \Delta$ (which is fixed by $h$).
     \end{proof}
 
-    It is easy to see that $G_{(\Delta)} \leq G_\Delta$; \added{3}{in fact, it is a normal subgroup:
+    \begin{remark}\label{rem:group_acts_on_orbit}
+        For $G$-actions (on $\Omega$) and fixed $\alpha \in \Omega$, setting $\Delta = \alpha^G$ gives $G_\Delta = G$ (since $\Delta^g = (\alpha^G)^g = \alpha^G = \Delta$ for all $g \in G$), so $G$ acts on $\alpha^G$ by \autoref{lem:restrict_action_to_block}(b). If the action is intransitive, then $\alpha^G \neq \Omega$, and $G$ acts on a strict subset of $\Omega$.
+    \end{remark}}
 
-        \begin{lemma}\label{lem:setwise_stab_normal_in_stab}
-            If $G$ acts on $\Omega$ and $\Delta \subseteq \Omega$, then $G_{(\Delta)} \unlhd G_\Delta$.
-        \end{lemma}
-
-        \begin{proof}
-            Let $h \in G_{(\Delta)}$ and $g \in G_\Delta$. Then for $\alpha \in \Delta$,
-            $$\alpha^{g^{-1}hg} = \big(\alpha^{g^{-1}}\big)^{hg} = \big(\alpha^{g^{-1}}\big)^g = \alpha \implies g^{-1}hg \in G_{(\Delta)},$$
-            where the second equality follows from $\alpha^{g^{-1}} \in \Delta$ (which is fixed by $h$).
-        \end{proof}
-
-        \begin{remark}\label{rem:group_acts_on_orbit}
-            For $G$-actions (on $\Omega$) and fixed $\alpha \in \Omega$, setting $\Delta = \alpha^G$ gives $G_\Delta = G$ (since $\Delta^g = (\alpha^G)^g = \alpha^G = \Delta$ for all $g \in G$), so $G$ acts on $\alpha^G$ by \autoref{lem:restrict_action_to_block}(b). If the action is intransitive, then $\alpha^G \neq \Omega$, and $G$ acts on a strict subset of $\Omega$.
-        \end{remark}}
-
-    Thus, when classifying permutation groups, it suffices to consider transitive groups. Suppose $G$ acts on $\Omega$ via $\varphi$. Partition $\Omega = \bigsqcup_{i \in I} \Omega_i$, where each $\Omega_i$ is a $G$-orbit. Then for each $i \in I$, $G$ acts transitively on $\Omega_i$ via $\varphi_i : G \to \Sym(\Omega_i)$, as in \autoref{rem:group_acts_on_orbit}. Conversely, suppose $G$ acts transitively on $\Omega_i$ via $\varphi_i$ for $i \in I$. Then, setting $\Omega = \bigsqcup_{i \in I} \Omega_i$ as the disjoint union, we may construct a $G$-action $\varphi : G \to \Sym(\Omega)$ by the following: for $\alpha \in \Omega$ and $g \in G$, we have $\alpha \in \Omega_i$ for unique $i \in I$, and then we set $\alpha^{\varphi(g)} = \alpha^{\varphi_i(g)} \in \Omega_i$. This constructs every intransitive $G$-action on $\Omega$, and thus every intransitive group $G \leq \Sym(\Omega)$ where we take the natural action. We use this construction in \autoref{eg:blaha_elem_technical_construction}.}
+Thus, when classifying permutation groups, it suffices to consider transitive groups. Suppose $G$ acts on $\Omega$ via $\varphi$. Partition $\Omega = \bigsqcup_{i \in I} \Omega_i$, where each $\Omega_i$ is a $G$-orbit. Then for each $i \in I$, $G$ acts transitively on $\Omega_i$ via $\varphi_i : G \to \Sym(\Omega_i)$, as in \autoref{rem:group_acts_on_orbit}. Conversely, suppose $G$ acts transitively on $\Omega_i$ via $\varphi_i$ for $i \in I$. Then, setting $\Omega = \bigsqcup_{i \in I} \Omega_i$ as the disjoint union, we may construct a $G$-action $\varphi : G \to \Sym(\Omega)$ by the following: for $\alpha \in \Omega$ and $g \in G$, we have $\alpha \in \Omega_i$ for unique $i \in I$, and then we set $\alpha^{\varphi(g)} = \alpha^{\varphi_i(g)} \in \Omega_i$. This constructs every intransitive $G$-action on $\Omega$, and thus every intransitive group $G \leq \Sym(\Omega)$ where we take the natural action. We use this construction in \autoref{eg:blaha_elem_technical_construction}.
 
 \begin{definition}\label{def:primitive_action}
     A transitive action of $G$ on $\Omega$ is \textbf{primitive} if there are no nontrivial blocks under the action; otherwise it is \textbf{imprimitive}.

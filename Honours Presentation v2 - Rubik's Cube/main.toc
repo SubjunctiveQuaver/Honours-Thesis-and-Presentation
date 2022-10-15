@@ -7,6 +7,9 @@
 \beamer@subsectionintoc {1}{5}{Group actions}{10}{0}{1}
 \beamer@subsectionintoc {1}{6}{Orbits and stabilisers}{12}{0}{1}
 \beamer@sectionintoc {2}{The Rubik's group}{14}{0}{2}
-\beamer@sectionintoc {3}{Analysing the Rubik's group}{15}{0}{3}
-\beamer@sectionintoc {4}{Concluding remarks}{16}{0}{4}
-\beamer@subsectionintoc {4}{1}{References and resources}{17}{0}{4}
+\beamer@subsectionintoc {2}{1}{Representing the cube and its moves}{15}{0}{2}
+\beamer@subsectionintoc {2}{2}{Moves vs states for Rubik's cube}{19}{0}{2}
+\beamer@subsectionintoc {2}{3}{The Rubik's group of permutations}{21}{0}{2}
+\beamer@sectionintoc {3}{Analysing the Rubik's group}{23}{0}{3}
+\beamer@sectionintoc {4}{Concluding remarks}{24}{0}{4}
+\beamer@subsectionintoc {4}{1}{References and resources}{25}{0}{4}
