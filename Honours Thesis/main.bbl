@@ -21,6 +21,12 @@ John~J. Cannon and George Havas.
 \newblock Algorithms for groups.
 \newblock {\em Aust. Comput. J.}, 24(2):51--60, 1992.
 
+\bibitem{celler1995}
+Frank Celler, Charles~R. Leedham-Green, Scott~H. Murray, Alice~C. Niemeyer, and
+  Eamonn~A. O'Brien.
+\newblock Generating random elements of a finite group.
+\newblock {\em Communications in Algebra}, 23(13):4931--4948, 1995.
+
 \bibitem{coutts2011}
 Hannah~J. Coutts, Martyn Quick, and Colva~M. Roney-Dougal.
 \newblock The primitive permutation groups of degree less than 4096.

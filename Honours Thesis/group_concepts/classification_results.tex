@@ -4,33 +4,13 @@ The definitions and results in this section are primarily found in \cite{rotman_
 
 In chapter 4, we will need the notion of an elementary abelian $p$-group, which we then realise as a permutation group.
 
-\begin{definition}\label{def:p-group}
-    Let $p$ be a prime. A \textbf{$p$-group} is a group $G$ in which every element has order a power of $p$. An \textbf{elementary abelian ($p$-)group} $G$ is an abelian group in which every nontrivial element has order $p$.
+\begin{definition}\label{def:elem-abelian-group}
+    Let $p$ be a prime. A \textbf{(finite) elementary abelian ($p$-)group} $G$ is a finite abelian group such that the order of $G$ is a power of $p$.
 \end{definition}
-
-It can be shown that $G$ is a finite $p$-group if and only if the order of $G$ is a power of $p$. One such proof uses Sylow's theorems, the first of which is presented below without proof. Recall that a \textbf{maximal subgroup} $H$ of $G$ is a subgroup $H \leq G$ such that $H < K \leq G$ implies $K = G$.
-
-\begin{definition}\label{def:sylow_subgroup}
-    Let $G$ be a group. A \textbf{Sylow $p$-subgroup} of $G$ is a maximal $p$-subgroup of $G$, i.e. a maximal subgroup with order a power of $p$.
-\end{definition}
-
-\begin{theorem}[Sylow (1)]\label{thm:sylow}
-    Let $G$ be a finite group and $p$ a prime that divides $|G|$. If $p^k$ is the maximal power of $p$ that divides $|G|$, then there exists a Sylow $p$-subgroup of order $p^k$.
-\end{theorem}
-
-One may use the theory of group actions to prove Sylow's theorem; see Theorem 4.17 in \cite{rotman_intro_theory_groups1995} for Wielandt's proof in this direction.
-
-\begin{corollary}\label{cor:p-group_iff_prime_power_order}
-    A group $G$ is a finite $p$-group if and only if the order of $G$ is a power of $p$.
-\end{corollary}
-
-\begin{proof}
-    The case that $G = 1$ is trivial. Thus suppose $G \neq 1$ is a finite $p$-group and $q$ is a prime divisor of $|G|$. Let $q^k$ be the maximal power of $q$ that divides $|G|$. By Sylow's first theorem (\autoref{thm:sylow}), there is a Sylow $q$-subgroup $H \leq G$ with order $q^k$. Since $H \neq 1$, there is $h \in H$ with $\langle h \rangle \leq H$, so the order of $h$ divides $|H| = q^k$ by Lagrange's theorem. So $h$ has order a power of $q$, but $h \in G$ and $G$ is a $p$-group, so $q = p$, i.e. $|G|$ is a power of $p$. The converse result follows directly from Lagrange's theorem.
-\end{proof}
 
 Recall that for groups $G,H$, their \textbf{direct product} is the group $G \times H$ with underlying set the Cartesian product $G \times H$ and group operation $(g,h)(a,b) = (ga,hb)$ for $g,a \in G$ and $h,b \in H$. When $G$ and $H$ are \textit{abelian}, we may instead call it a \textbf{direct sum} and write $G \oplus H$; we often use additive notation $(g,h) + (a,b) = (g+a,h+b)$ with identity $0$, writing $ng$ instead of $g^n$.
 
-It turns out that the structure of a finite abelian group is quite simple. The following result is standard; see Theorem 6.9 in \cite{rotman_intro_theory_groups1995} for a proof.
+It turns out that the structure of a finite abelian group is quite simple. The following result is standard, \added{4}{and is often called the \textit{fundamental theorem of finite abelian groups}}; see Theorem 6.9 in \cite{rotman_intro_theory_groups1995} for a proof.
 
 \begin{theorem}[Basis for finite abelian groups]\label{thm:basis_finite_abelian}
     Every finite abelian group $G$ is a direct sum of cyclic groups.
@@ -68,10 +48,10 @@ Here, we think of $Q$ as the quotient after we factor out the ``normal subgroup'
 
 \added{3}{This notation $G = N \mathrel{.} Q$ is ATLAS notation, and is often used in finite group theory. Note that often a cyclic group $C_n$ is simply written as $n$ (e.g. $2 \mathrel{.} \Alt(5) = \Sym(5)$), an elementary abelian $p$-group $(\Z/p\Z)^d$ as $p^d$, and an unspecified group of order $n$ as $[n]$.}
 
-\added{3}{\begin{definition}\label{def:composition_series}
+\begin{definition}\label{def:composition_series}
     A \textbf{composition series} is a finite subgroup series $G = N_0 \rhd N_1 \rhd \dotsb \rhd N_r = 1$ where each $N_{i+1}$ is a \textit{maximal} normal subgroup of $N_i$. The quotient groups $N_i/N_{i+1}$ are the \textbf{composition factors}.
 
-    We say that two composition series $G = N_0 \rhd N_1 \rhd \dotsb \rhd N_r = 1$ and $G = \tilde N_0 \rhd \tilde N_1 \rhd \dotsb \rhd \tilde N_{\tilde r} = 1$ of a group $G$ are \textbf{equivalent} if there is a bijection between the composition factors such that corresponding composition factors are isomorphic.
+    We say that two composition series $G = N_0 \rhd N_1 \rhd \dotsb \rhd N_r = 1$ and $G = \tilde N_0 \rhd \tilde N_1 \rhd \dotsb \rhd \tilde N_{\tilde r} = 1$ of a group $G$ are \textbf{equivalent} if there is a bijection between the \added{4}{multisets of} composition factors such that corresponding composition factors are isomorphic.
 \end{definition}
 
 Clearly, if $G = N_0 \rhd N_1 \rhd \dotsb \rhd N_r = 1$ is a composition series, then the composition factors $N_i/N_{i+1}$ are simple, since the $N_{i+1}$ are maximal in $N_i$. Moreover, if $G$ is finite, then a composition series exists, since maximal subgroups exist (and the groups in the series decrease in size).
@@ -111,10 +91,12 @@ Now, the extension problem asks one to ``determine'' all groups $G$ such that $G
     \begin{enumerate}[(a)]
         \item a cyclic group $C_p$ of prime order $p$,
         \item an alternating group $\Alt(n)$ of degree $n \geq 5$,
-        \item a simple group of \textbf{Lie type}, or
+        \item a simple group of \textbf{Lie type} (including variants of infinite families of ``classical'' matrix groups, such as $\operatorname{PSL}$), or
         \item one of 26 \textbf{sporadic simple groups}.
     \end{enumerate}
-\end{theorem}}
+\end{theorem}
+
+\added{4}{The projective special linear groups $\operatorname{PSL}$ are defined as follows. Given a finite field $\F_q$ (where $q$ is a prime power), recall that the \textbf{special linear group} $\operatorname{SL}(n,q)$ is the set of $n \times n$ matrices over $\F_q$ with determinant 1. Recall that the centre $Z(G) \unlhd G$ of a group $G$ is the set of elements that commute with every element of $G$; the centre of $\operatorname{SL}(n,q)$ turns out to be scalar multiples of the identity matrix. Then the \textbf{projective special linear group} $\operatorname{PSL}(n,q)$ is the quotient $\operatorname{SL}(n,q)/Z(\operatorname{SL}(n,q))$ and is simple unless $n = 2$ and $q \in \{2,3\}$, falling into category (c) of the above classification.}
 
 \subsection{Semidirect products and wreath products}
 
@@ -162,7 +144,7 @@ The proof of this lemma also allows us to see that the \textit{split extension} 
 
 A special type of semidirect product, called the wreath product, plays an important role in the study of primitive \added{3}{and imprimitive} permutation groups.
 
-\added{3}{\begin{definition}\label{def:function_group}
+\begin{definition}\label{def:function_group}
     Let $G$ be a group and $X$ a set. Then $G^X$ is the \textbf{group of functions $X \to G$}, which is a group under pointwise multiplication: for $\omega,\eta \in G^X$ and $x \in X$, $\omega\eta(x) = \omega(x)\eta(x) \in G$.
 \end{definition}
 
@@ -182,7 +164,7 @@ In the case that $\Omega = [n]$, we may identify the base group of the wreath pr
 $$(g,\omega_1,\dotsc,\omega_n)(h,\eta_1,\dotsc,\eta_n) = (gh,\omega_{1_h}\eta_1,\dotsc,\omega_{n_h}\eta_n)$$
 where each $i_h = i^{h^{-1}}$. If we further have $G = \Sym(n)$ which acts naturally on $[n]$, then we write $H \wr \Sym(n)$ instead of $H \wr_\Omega \Sym(n)$.
 
-We discuss two important actions of the wreath product. The imprimitive action is natural and relates to imprimitive groups, while the product action is important in the classification of finite primitive groups.
+We discuss two important actions of the wreath product. The imprimitive action is natural and relates to imprimitive groups, while the product action is important in the classification of finite primitive groups. \added{4}{The imprimitive action helps us to understand the wreath product, e.g. that $\Sym(2) \wr \Sym(2) \cong D_8$, which we discuss in \autoref{eg:S2_wr_S2_isom_D8} below.}
 
 \begin{definition}\label{def:imprimitive_action}
     Suppose $G$ acts on $\Omega$ and $H$ acts on $\Gamma$. Let $W = H \wr_\Omega G$; the \textbf{imprimitive action} of $W$ on $\Omega \times \Gamma$ is given by the following: for $(g,\omega) \in W = G \ltimes H^\Omega$ and $(\alpha,\gamma) \in \Omega \times \Gamma$ we define
@@ -222,7 +204,7 @@ Now, the image $W^{\Omega \times \Gamma}$ of the imprimitive action is a subgrou
     Now each $\Delta = \{\alpha\} \times \Gamma$ is a block for $\alpha \in \Omega$ with $|\Delta| = |\Gamma|$; it is nontrivial as long as $|\Omega|,|\Gamma| > 1$ so that $|\Delta| > 1$ and $\Delta \neq \Omega \times \Gamma$. We verify that it is a block: for any $(g,\omega) \in W$,
     $$\Delta^{(g,\omega)} = \{(\alpha,\gamma)^{(g,\omega)} : \gamma \in \Gamma\} = \{(\alpha^g,\gamma^{\omega(\alpha^g)}) : \gamma \in \Gamma\} = \{\alpha^g\} \times \Gamma^{\omega(\alpha^g)}$$
     with $\Gamma^{\omega(\alpha^g)} = \Gamma$ or $\Gamma^{\omega(\alpha^g)} \cap \Gamma = \emptyset$ by primitivity of $H^\Gamma$. In the first case, and assuming $\alpha^g = \alpha$, then $\Delta^{(g,\omega)} = \{\alpha\} \times \Gamma = \Delta$; otherwise, $\Gamma^{\omega(\alpha^g)} \cap \Gamma = \emptyset$ or $\alpha^g \neq \alpha$, in which case $\Delta^{(g,\omega)} \cap \Delta = \emptyset$. So $W^{\Omega \times \Gamma}$ is imprimitive as long as $|\Omega|,|\Gamma| > 1$.
-\end{proof}}
+\end{proof}
 
 \added{3}{If $G \leq \Sym(n)$ and $H \leq \Sym(m)$, consider the wreath product $W = H \wr_{[n]} G = G \ltimes H^n$. Note that $H$ acts on the ordered list $[1,\dotsc,m]$; let the $i$th copy of $H$ act on $X_i = [(i-1)m+1,\dotsc,im]$ (in the natural way). Let $X = \bigcup_{1 \leq i \leq n} X_i = [1,\dotsc,mn]$. Since $G$ acts on $\{1,\dotsc,n\}$, we now let $G$ act on $\{X_1,\dotsc,X_n\}$ by permutation. This allows us to consider $W$ as a subgroup of $\Sym(X) = \Sym(mn)$ instead of $\Sym([n] \times [m])$ (using the map $[n] \times [m] \to [mn]$ where $(i,j) \mapsto (i-1)m + j$). In particular, the $X_i$ form blocks and we have a block system $\Sigma = [X_1,\dotsc,X_n]$; the imprimitive action of $(g,\omega_1,\dotsc,\omega_n) \in W$ corresponds to permuting within each block $X_i$ by $\omega_i \in H \leq \Sym(m)$, then permuting the blocks in $\Sigma$ by $g \in G \leq \Sym(n)$.}
 
@@ -344,7 +326,7 @@ The following lemma proves that $\AGL_d(K)$ is indeed a group. In particular, it
 
     Next we show $\AGL_d(K)$ is 2-transitive. Here, $\Sym(K^d)$ acts naturally on $\Omega = K^d$; since $\AGL_d(K) \leq \Sym(K^d)$, we take the natural action on $K^d$. Clearly $|\Omega| \geq 2$ (since $K$ is a field and $d \geq 1$). Suppose $[\alpha_1,\alpha_2]$ and $[\beta_1,\beta_2]$ are lists of distinct points in $K^d$; then extend $a_1 = \alpha_1 - \alpha_2 \neq 0$ and $b_1 = \beta_1 - \beta_2 \neq 0$ to bases $\{a_1,\dotsc,a_d\}$ and $\{b_1,\dotsc,b_d\}$ of $K^d$. Let $b,c$ be matrices (in $\GL_d(K)$ by construction) with rows $a_1,\dotsc,a_d$ and $b_1,\dotsc,b_d$ respectively.
 
-    Let $c = a^{-1}b \in \GL_d(K) \iff b = ac \iff b_i = a_ic$ for all $1 \leq i \leq d$. Then $\beta_1 - \beta_2 = b_1 = a_1c = (\alpha_1 - \alpha_2)c \iff \beta_1 - \alpha_1 c = \beta_2 - \alpha_2 c$. Let $v = \beta_1 - \alpha_1c = \beta_2 - \alpha_2c \in K^d$, so that $[\beta_1,\beta_2] = [\alpha_1c + v,\alpha_2c + v] = [\alpha_1^{t_{c,v}},\alpha_2^{t_{c,v}}]$ with $t_{c,v} \in \AGL_d(K)$. So $\AGL_d(K)$ is 2-transitive.
+    \added{4}{Note that} $c = a^{-1}b \in \GL_d(K)$ \added{4}{if and only if} $b = ac$, \added{4}{if and only if} $b_i = a_ic$ for all $1 \leq i \leq d$. Then $\beta_1 - \beta_2 = b_1 = a_1c = (\alpha_1 - \alpha_2)c$, \added{4}{which holds if and only if} $\beta_1 - \alpha_1 c = \beta_2 - \alpha_2 c$. Let $v = \beta_1 - \alpha_1c = \beta_2 - \alpha_2c \in K^d$, so that $[\beta_1,\beta_2] = [\alpha_1c + v,\alpha_2c + v] = [\alpha_1^{t_{c,v}},\alpha_2^{t_{c,v}}]$ with $t_{c,v} \in \AGL_d(K)$. So $\AGL_d(K)$ is 2-transitive.
 \end{proof}
 
 From this lemma, we see that affine groups arise as semidirect products of general linear groups over the underlying vector space. In particular, $|\AGL_d(K)| = |\GL_d(K)||K|^d$; if $K = \F_q$ is a finite field (with $|\F_q| = q$ a prime power), it can be shown that $|\AGL_d(q)| = q^d(q^d - 1)(q^d - q)\dotsb(q^d - q^{d-1})$ (here, the degree of the permutation group $\AGL_d(q)$ is $q^d$). The case that $q = 2$ is of particular interest, due to a question in \cite{moscatiello_roney-dougal2021} which we investigate.
@@ -446,7 +428,7 @@ From this lemma, we see that affine groups arise as semidirect products of gener
                           v & 1
                       \end{smallmatrix}\right)} = \tau(u)^{\psi(t_{a,v})},$$
               so $\AGL_d(K)$ and $G^*$ are permutation isomorphic via $\tau$ and $\psi$.
-        \item Note that $B = [e_1,\dotsc,e_{d+1}]$ is a base for $G^*$, where the $(e_i)$ are the standard basis for $K^{d+1}$. This follows from the fact that for $a \in \GL_d(K)$ and $v \in K^d$,
+        \item Note that $B = [e_1,\dotsc,e_{d+1}]$ is a base for $G^*$, where \added{4}{$e_1,\dotsc,e_{d+1}$ are the standard basis vectors} for $K^{d+1}$. This follows from the fact that for $a \in \GL_d(K)$ and $v \in K^d$,
               $$e_i^{\left(
                   \begin{smallmatrix}
                           a & 0 \\
@@ -472,31 +454,31 @@ From this lemma, we see that affine groups arise as semidirect products of gener
     \end{enumerate}
 \end{proof}
 
-\added{3}{Finally, we look at a few important subgroups of the affine group, which we consider again later. This next result expands upon \autoref{prop:agl_is_semidirect_product}.
+Finally, we look at a few important subgroups of the affine group, which we consider again later. This next result expands upon \autoref{prop:agl_is_semidirect_product}.
 
-    \begin{proposition}\label{prop:subgroups_of_agl}
-        \begin{enumerate}[(a)]
-            \item The general linear group $\GL_d(K) \cong \GL(K^d) = \{t_{a,0} : a \in \GL_d(K)\} \leq \AGL_d(K)$ acts transitively on the nonzero vectors $K^d \setminus 0$.
-            \item The \textbf{translation subgroup} $T = \{t_{1,v} : v \in K^d\} \unlhd \AGL_d(K)$ is a minimal normal subgroup of $\AGL_d(K)$. Moreover, $T \cong K^d$ and $\AGL_d(K)/T \cong \GL_d(K)$. % (Recall that for $v \in K^d$, $t_{1,v} : K^d \to K^d$ is given by $u \mapsto u + v$.)
-            \item The group $\AGL_d(K)$ splits over the translation subgroup $T$, and $\AGL_d(K) = \GL(K^d)T$.
-        \end{enumerate}
-    \end{proposition}
+\begin{proposition}\label{prop:subgroups_of_agl}
+    \begin{enumerate}[(a)]
+        \item The general linear group $\GL_d(K) \cong \GL(K^d) = \{t_{a,0} : a \in \GL_d(K)\} \leq \AGL_d(K)$ acts transitively on the nonzero vectors in $K^d \setminus \{0\}$.
+        \item The \textbf{translation subgroup} $T = \{t_{1,v} : v \in K^d\} \unlhd \AGL_d(K)$ is a minimal normal subgroup of $\AGL_d(K)$. Moreover, $T \cong K^d$ and $\AGL_d(K)/T \cong \GL_d(K)$. % (Recall that for $v \in K^d$, $t_{1,v} : K^d \to K^d$ is given by $u \mapsto u + v$.)
+        \item The group $\AGL_d(K)$ splits over the translation subgroup $T$, and $\AGL_d(K) = \GL(K^d)T$ \added{4}{is the product of subgroups}.
+    \end{enumerate}
+\end{proposition}
 
-    \begin{proof}
-        \begin{enumerate}[(a)]
-            \item Clearly $\GL(K^d)$ is a subgroup of $\AGL_d(K)$ by the subgroup criterion, since $t_{a,0}t_{b,0} = t_{ab,0}$ and $t_{a,0}^{-1} = t_{a^{-1},0} \in \GL(K^d)$ for $a,b \in \GL_d(K)$. It acts on $K^d \setminus 0$, since for $a \in \GL_d(K)$, $ua = 0$ for $u \in K^d$ if and only if $u = 0$. For $v,w \in K^d \setminus 0$, extend $v$ and $w$ to two ordered bases of $K^d$; then setting $a \in \GL_d(K)$ to be the change-of-basis matrix from the basis containing $v$ to the basis containing $w$, we have $v^a = va = w$. So $\GL_d(K)$ acts transitively on $K^d \setminus 0$.
-            \item Firstly, the map $\psi : \AGL_d(K) \to \GL_d(K)$ given by $t_{a,v} \mapsto a$ is a surjective homomorphism: for $t_{a,v},t_{b,w} \in \AGL_d(K)$, $\psi(t_{a,v}t_{b,w}) = \psi(t_{ab,vb+w}) = ab = \psi(t_{a,v})\psi(t_{b,w})$. The kernel of $\psi$ is $T$, since $t_{a,v} \mapsto 1$ if and only if $a = 1$, if and only if $t_{a,v} = t_{1,v} \in T$. Thus $T$ is a normal subgroup of $\AGL_d(K)$ and $\AGL_d(K)/T \cong \GL_d(K)$ by the first isomorphism theorem. The claim that $T \cong K^d$ is obvious (consider the map $t_{1,v} \mapsto v$).
+\begin{proof}
+    \begin{enumerate}[(a)]
+        \item Clearly $\GL(K^d)$ is a subgroup of $\AGL_d(K)$ by the subgroup criterion, since $t_{a,0}t_{b,0} = t_{ab,0}$ and $t_{a,0}^{-1} = t_{a^{-1},0} \in \GL(K^d)$ for $a,b \in \GL_d(K)$. It acts on $K^d \setminus \{0\}$, since for $a \in \GL_d(K)$, $ua = 0$ for $u \in K^d$ if and only if $u = 0$. For $v,w \in K^d \setminus \{0\}$, extend $v$ and $w$ to two ordered bases of $K^d$; then setting $a \in \GL_d(K)$ to be the change-of-basis matrix from the basis containing $v$ to the basis containing $w$, we have $v^a = va = w$. So $\GL_d(K)$ acts transitively on $K^d \setminus \{0\}$.
+        \item Firstly, the map $\psi : \AGL_d(K) \to \GL_d(K)$ given by $t_{a,v} \mapsto a$ is a surjective homomorphism: for $t_{a,v},t_{b,w} \in \AGL_d(K)$, $\psi(t_{a,v}t_{b,w}) = \psi(t_{ab,vb+w}) = ab = \psi(t_{a,v})\psi(t_{b,w})$. The kernel of $\psi$ is $T$, since $t_{a,v} \mapsto 1$ if and only if $a = 1$, if and only if $t_{a,v} = t_{1,v} \in T$. Thus $T$ is a normal subgroup of $\AGL_d(K)$ and $\AGL_d(K)/T \cong \GL_d(K)$ by the first isomorphism theorem. The claim that $T \cong K^d$ is obvious (consider the map $t_{1,v} \mapsto v$).
 
-                  We now show $T$ is minimal. Suppose $1 \neq N \unlhd \AGL_d(K)$ is a proper subgroup of $T \cong K^d$; we identify $N$ with the corresponding subgroup of $K^d$ (identify $t_{1,v} \sim (1,v) \sim v$). Then for $0 \neq v \in N$ there is $a \in \GL_d(K)$ such that $va \not\in N$ (by transitivity of $\GL_d(K)$ on $K^d \setminus 0$ from part (a)), contradicting normality of $N$. (This is because if $N$ were normal then $(a,w)^{-1}(1,v)(a,w) = (1,va) \sim va \in N$ for all $w \in K^d$.) So no such $N$ exists, and $T$ is minimal.
-            \item We know that $T \unlhd \AGL_d(K)$ (part (b)) and $\GL(K^d) \cap T = 1$; it remains to observe that for $t_{a,v} \in \AGL_d(K)$ we have $t_{a,v} = t_{a1,0 \cdot 1+v} = t_{a,0}t_{1,v}$ so indeed $\AGL_d(K) = \GL(K^d)T$.
-        \end{enumerate}
-    \end{proof}}
+              We now show $T$ is minimal. Suppose $1 \neq N \unlhd \AGL_d(K)$ is a proper subgroup of $T \cong K^d$; we identify $N$ with the corresponding subgroup of $K^d$ (identify $t_{1,v} \sim (1,v) \sim v$). Then for $0 \neq v \in N$ there is $a \in \GL_d(K)$ such that $va \not\in N$ (by transitivity of $\GL_d(K)$ on $K^d \setminus \{0\}$ from part (a)), contradicting normality of $N$. (This is because if $N$ were normal then $(a,w)^{-1}(1,v)(a,w) = (1,va) \sim va \in N$ for all $w \in K^d$.) So no such $N$ exists, and $T$ is minimal.
+        \item We know that $T \unlhd \AGL_d(K)$ (part (b)) and $\GL(K^d) \cap T = 1$; it remains to observe that for $t_{a,v} \in \AGL_d(K)$ we have $t_{a,v} = t_{a1,0 \cdot 1+v} = t_{a,0}t_{1,v}$ so indeed $\AGL_d(K) = \GL(K^d)T$.
+    \end{enumerate}
+\end{proof}
 
 % TODO: include statement on normal subgroups of GL? contains SL or subgroup of centre (scalar multiples of 1)
 
 \subsection{Primitive permutation groups and the O'Nan-Scott theorem}
 
-\added{3}{Cameron notes in \cite{cameron_permutation_groups1999} that intransitive groups are \textit{subcartesian products} of their transitive constituents. (A subcartesian product is a subgroup $H$ of a direct product $\prod_i G_i$ such that the $i$th projection $\pi_i : \prod_i G_i \to G_i$ satisfies $\pi_i[H] = G_i$.) A transitive but imprimitive group is contained in the iterated wreath product of its primitive components. Thus, many questions about permutation groups can be reduced to questions about primitive groups. The O'Nan-Scott theorem classifies primitive permutation groups. In particular, \cite{dixon_mortimer_perm_groups1996} notes that combined with the classification of finite simple groups (\autoref{thm:cfsg}), the O'Nan-Scott theorem is a powerful tool that has helped to answer long-standing problems about permutation groups.
+\added{3}{Cameron notes in \cite{cameron_permutation_groups1999} that intransitive groups are \textit{\added{4}{subdirect} products} of their transitive constituents. (A \added{4}{subdirect} product is a subgroup $H$ of a direct product $\prod_i G_i$ such that the $i$th projection $\pi_i : \prod_i G_i \to G_i$ satisfies $\pi_i[H] = G_i$.) A transitive but imprimitive group is contained in the iterated wreath product of its primitive components. Thus, many questions about permutation groups can be reduced to questions about primitive groups. The O'Nan-Scott theorem classifies primitive permutation groups. In particular, \cite{dixon_mortimer_perm_groups1996} notes that combined with the classification of finite simple groups (\autoref{thm:cfsg}), the O'Nan-Scott theorem is a powerful tool that has helped to answer long-standing problems about permutation groups.
 
     Computationally, in \cite{hulpke2005}, Hulpke presents a recursive way to classify all transitive groups of degree $n$ (up to conjugacy) using the transitive groups of all degrees dividing $n$ and the primitive groups of degree $n$. Recall from earlier that given transitive groups acting on $\{\Omega_i\}$, we may also study intransitive groups by acting on the disjoint union of the $\Omega_i$. So in a number of senses, primitive groups are a building block for arbitrary permutation groups.}
 
@@ -515,7 +497,7 @@ Every nontrivial \textit{finite} group $G$ has at least one minimal normal subgr
 \end{example}
 
 \begin{lemma}\label{lem:socle_is_normal}
-    The socle $\Soc(G) \unlhd G$. (In particular, the socle is \textbf{characteristic}: $\psi[\Soc(G)] = \Soc(G)$ for all $\psi \in \Aut(G)$.)
+    The socle $\Soc(G)$ \added{4}{is normal in} $G$. (In particular, the socle is \textbf{characteristic}: $\psi[\Soc(G)] = \Soc(G)$ for all $\psi \in \Aut(G)$.)
 \end{lemma}
 
 \begin{proof}
@@ -524,48 +506,50 @@ Every nontrivial \textit{finite} group $G$ has at least one minimal normal subgr
     Since $\Inn(G) \leq \Aut(G)$, it follows that $\Soc(G)^g = \Soc(G)$ for all $g \in G$, so $\Soc(G) \unlhd G$.
 \end{proof}
 
-\added{3}{If $G \leq \Sym(\Omega)$ is a finite nontrivial permutation group, then we reasoned above that $\Soc(G) \unlhd G$ is nontrivial. Then by \autoref{prop:normal_subgroup_transitive_action}(c), it follows that $\Soc(G)$ is a transitive group.
+If $G \leq \Sym(\Omega)$ is a finite nontrivial permutation group, then we reasoned above that $\Soc(G) \unlhd G$ is nontrivial. Then by \autoref{prop:normal_subgroup_transitive_action}(c), \added{4}{if $G$ is transitive,} it follows that $\Soc(G)$ is a transitive group.
 
-    Next, we look at the structure of the socle of a group. First, we give some properties of products of (minimal) normal subgroups.
+Next, we look at the structure of the socle of a group. First, we give some properties of products of (minimal) normal subgroups.
 
-    \begin{lemma}\label{lem:minimal_normal_subgroups}
-        Let $M,N \unlhd G$. Then:
-        \begin{enumerate}[(a)]
-            \item The product $MN = \langle M,N \rangle \unlhd G$
-            \item If $M \cap N = 1$, then $MN \cong M \times N$.
-            \item If $M$ is minimal, then $M \cap N = 1$ or $M \leq N$. In particular, if $M,N$ are distinct minimal normal subgroups, then $M \cap N = 1$ and $\langle M,N \rangle = MN$.
-        \end{enumerate}
-    \end{lemma}
+\begin{lemma}\label{lem:minimal_normal_subgroups}
+    Let $M,N \unlhd G$. Then:
+    \begin{enumerate}[(a)]
+        \item The product $MN = \langle M,N \rangle \unlhd G$
+        \item If $M \cap N = 1$, then $MN \cong M \times N$.
+        \item If $M$ is minimal, then $M \cap N = 1$ or $M \leq N$. In particular, if $M,N$ are distinct minimal normal subgroups, then $M \cap N = 1$ and $\langle M,N \rangle = MN$.
+    \end{enumerate}
+\end{lemma}
 
-    \begin{proof}
-        For (a), note that $\langle M,N \rangle$ is the smallest subgroup of $G$ containing $M,N$ and $M,N \leq MN$, so certainly $\langle M,N \rangle \leq MN$. However, for $mn \in MN$, we have $m \in M \leq \langle M,N \rangle$ and $n \in N \leq \langle M,N \rangle$, so $mn \in \langle M,N \rangle$. (Showing $MN \unlhd G$ is routine.)
+\begin{proof}
+    \begin{enumerate}[(a)]
+        \item Note that $\langle M,N \rangle$ is the smallest subgroup of $G$ containing $M,N$ and $M,N \leq MN$, so certainly $\langle M,N \rangle \leq MN$. However, for $mn \in MN$, we have $m \in M \leq \langle M,N \rangle$ and $n \in N \leq \langle M,N \rangle$, so $mn \in \langle M,N \rangle$. (Showing $MN \unlhd G$ is routine.)
+        \item \added{4}{Note that there is a natural isomorphism $MN \to M \times N$ given by $mn \mapsto (m,n)$, which is well-defined since $M \cap N = 1$ (so every element of $MN$ is uniquely $mn$ for $m \in M$ and $n \in N$).}
+        \item If $M$ is minimal, then $M \cap N \unlhd M$. By minimality, $M \cap N = 1$ or $M \cap N = M$ (which implies $M \leq N$). If $N$ is also minimal (and $M \neq N$), then the case that $M \leq N$ is impossible, as this would contradict minimality or $M \neq N$, so $M \cap N = 1$.
+    \end{enumerate}
+\end{proof}
 
-        We skip (b) and prove part (c). If $M$ is minimal, then $M \cap N \unlhd M$. By minimality, $M \cap N = 1$ or $M \cap N = M$ (which implies $M \leq N$). If $N$ is also minimal (and $M \neq N$), then the case that $M \leq N$ is impossible, as this would contradict minimality or $M \neq N$, so $M \cap N = 1$.
-    \end{proof}
+Since the product of normal subgroups of $G$ is a normal subgroup and $\langle M,N \rangle = MN$, it follows that in the case that $G$ is finite and nontrivial, the socle is the product of the minimal normal subgroups (providing an alternative proof that $\Soc(G) \unlhd G$ in the finite case). Then we may conclude the following:
 
-    Since the product of normal subgroups of $G$ is a normal subgroup and $\langle M,N \rangle = MN$, it follows that in the case that $G$ is finite and nontrivial, the socle is the product of the minimal normal subgroups (providing an alternative proof that $\Soc(G) \unlhd G$ in the finite case). Then we may conclude the following:
+\begin{proposition}\label{prop:socle_is_product_of_minimal_normal_subgroups}
+    \added{4}{If $G \neq 1$ is finite, then $\Soc(G) \cong N_1 \times \dotsb \times N_m$ for some minimal normal subgroups $N_1,\dotsc,N_m$ of $G$.}
+\end{proposition}
 
-    \begin{proposition}\label{prop:socle_is_product_of_minimal_normal_subgroups}
-        There are minimal normal subgroups $N_1,\dotsc,N_m$ of finite $G \neq 1$ such that $\Soc(G) \cong N_1 \times \dotsb \times N_m$.
-    \end{proposition}
+\begin{proof}
+    Since $G$ is finite, we may find a collection of $\{N_1,\dotsc,N_m\}$ of minimal normal subgroups of $G$ that is maximal with respect to the property $S = \langle N_1,\dotsc,N_m \rangle \cong N_1 \times \dotsb \times N_m$. Then $\Soc(G) = S$, since $S$ contains all minimal normal subgroups of $G$: suppose not, then there is a minimal normal subgroup $N$ that is not contained in $\langle N_1,\dotsc,N_m \rangle$. But then $\langle N_1,\dotsc,N_m \rangle \cap N = 1$ by \autoref{lem:minimal_normal_subgroups}(c), so $\langle N_1,\dotsc,N_m,N \rangle \cong N_1 \times \dotsb \times N_m \times N$, contradicting the choice of $\{N_1,\dotsc,N_m\}$.
+\end{proof}
 
-    \begin{proof}
-        Since $G$ is finite, we may find a collection of $\{N_1,\dotsc,N_m\}$ of minimal normal subgroups of $G$ that is maximal with respect to the property $S = \langle N_1,\dotsc,N_m \rangle \cong N_1 \times \dotsb \times N_m$. Then $\Soc(G) = S$, since $S$ contains all minimal normal subgroups of $G$: suppose not, then there is a minimal normal subgroup $N$ that is not contained in $\langle N_1,\dotsc,N_m \rangle$. But then $\langle N_1,\dotsc,N_m \rangle \cap N = 1$ by \autoref{lem:minimal_normal_subgroups}(c), so $\langle N_1,\dotsc,N_m,N \rangle \cong N_1 \times \dotsb \times N_m \times N$, contradicting the choice of $\{N_1,\dotsc,N_m\}$.
-    \end{proof}
+\begin{proposition}\label{prop:socle_agl}
+    The socle of $\AGL_d(K)$ is the translation subgroup $T \cong K^d$.
+\end{proposition}
 
-    \begin{proposition}\label{prop:socle_agl}
-        The socle of $\AGL_d(K)$ is the translation subgroup $T \cong K^d$.
-    \end{proposition}
+\begin{proof}
+    Let $S = \Soc(\AGL_d(K))$. From \autoref{prop:subgroups_of_agl}(b), we know that $T$ is a minimal normal subgroup of $\AGL_d(K)$, so $T \leq S$. Now suppose for a contradiction that $T < S$. Then there is $s \in S \setminus T$ that is in some other minimal normal subgroup $N$ of $\AGL_d(K)$; by \autoref{lem:minimal_normal_subgroups}(c), $T \cap N = 1$.
 
-    \begin{proof}
-        Let $S = \Soc(\AGL_d(K))$. From \autoref{prop:subgroups_of_agl}(b), we know that $T$ is a minimal normal subgroup of $\AGL_d(K)$, so $T \leq S$. Now suppose for a contradiction that $T < S$. Then there is $s \in S \setminus T$ that is in some other minimal normal subgroup $N$ of $\AGL_d(K)$; by \autoref{lem:minimal_normal_subgroups}(c), $T \cap N = 1$.
+    Now identifying $T$ with $K^d$ (via $t_{1,v} \sim v$; write $v^{-1} \sim t_{1,v}^{-1} = t_{1,-v}$ and $1 \sim t_{1,0}$), there is $v \in K^d$ with $w = v^{-1}v^s \neq 1$. (This is because $v^{-1}v^s = 1$ if and only if $v^s = s^{-1}vs = v$; with $s = (a,w)$, where $a \in \GL_d(K)$ and $w \in K^d$, this occurs if and only if $v = s^{-1}vs = (a,w)^{-1}(1,v)(a,w) = (1,va) = va$ for some $a \in \GL_d(K)$. However, $s = (a,w) \not\in T$, so $a \neq 1$ and therefore such $a$ with $va \neq v$ exists.) But then $w = v^{-1}v^s \in T \unlhd \AGL_d(K)$ and $w = v^{-1}s^{-1}vs = (s^{-1})^vs \in N \unlhd \AGL_d(K)$, so $w = 1$ (since $T \cap N = 1$), a contradiction. So $T = S$.
+\end{proof}
 
-        Now identifying $T$ with $K^d$ (via $t_{1,v} \sim v$; write $v^{-1} \sim t_{1,v}^{-1} = t_{1,-v}$ and $1 \sim t_{1,0}$), there is $v \in K^d$ with $w = v^{-1}v^s \neq 1$. (This is because $v^{-1}v^s = 1$ if and only if $v^s = s^{-1}vs = v$; with $s = (a,w)$, where $a \in \GL_d(K)$ and $w \in K^d$, this occurs if and only if $v = s^{-1}vs = (a,w)^{-1}(1,v)(a,w) = (1,va) = va$ for some $a \in \GL_d(K)$. However, $s = (a,w) \not\in T$, so $a \neq 1$ and therefore such $a$ with $va \neq v$ exists.) But then $w = v^{-1}v^s \in T \unlhd \AGL_d(K)$ and $w = v^{-1}s^{-1}vs = (s^{-1})^vs \in N \unlhd \AGL_d(K)$, so $w = 1$ (since $T \cap N = 1$), a contradiction. So $T = S$.
-    \end{proof}
+\added{4}{By Theorem 4.3A in \cite{dixon_mortimer_perm_groups1996},} every minimal subgroup $N$ of finite $G \neq 1$ is (isomorphic to) a direct product $N = T_1 \times \dotsb \times T_k$ of simple normal subgroups of $K$ that are conjugate in $G$. Thus, every minimal normal subgroup of $G$ is elementary abelian, or its centre is trivial (as the centre of a nonabelian simple group is an abelian normal subgroup, thus trivial); moreover, $\Soc(G)$ is a direct product of simple groups.
 
-    Note that every minimal subgroup $N$ of finite $G \neq 1$ is (isomorphic to) a direct product $N = T_1 \times \dotsb \times T_k$ of simple normal subgroups of $K$ that are conjugate in $G$. (This is Theorem 4.3A in \cite{dixon_mortimer_perm_groups1996}.) Thus, every minimal normal subgroup of $G$ is elementary abelian, or its centre is trivial (as the centre of a nonabelian simple group is an abelian normal subgroup, thus trivial); moreover, $\Soc(G)$ is a direct product of simple groups.
-
-    Now, recall that \autoref{prop:normal_subgroup_transitive_action}(c) implies a nontrivial normal subgroup of a primitive group is transitive. This restricts the possibilities for minimal normal subgroups of a finite primitive group, and we get} the following characterisation of their socles (Corollary 4.3B in \cite{dixon_mortimer_perm_groups1996}).
+Now, recall that \autoref{prop:normal_subgroup_transitive_action}(c) implies a nontrivial normal subgroup of a primitive group is transitive. This restricts the possibilities for minimal normal subgroups of a finite primitive group, and we get the following characterisation of their socles (Corollary 4.3B in \cite{dixon_mortimer_perm_groups1996}).
 
 \begin{theorem}\label{thm:socle_is_direct_product}
     If $G \leq \Sym(\Omega)$ is a finite primitive group, then $\Soc(G)$ is a direct product of isomorphic simple groups.
@@ -589,7 +573,7 @@ Note that this behaviour is seen in \autoref{prop:socle_agl} for finite $K = \F_
         \end{enumerate}
     \end{theorem}
 
-    To conclude this chapter, we make a few comments on the O'Nan-Scott theorem. Suppose that $G \leq \Sym(\Omega)$ has degree $n$. Then the socle, as a subgroup of $G$, also acts on $\Omega$. In case (a) of the O'Nan-Scott theorem, if $H$ is isomorphic to an elementary abelian $p$-group and $|H| = p^m = n = |\Omega|$, then since $H \unlhd G$ is transitive, $H$ is automatically regular by \autoref{prop:transitive_order_equals_degree_implies_regular}.
+    To conclude this chapter, we make a few comments on the O'Nan-Scott theorem. Suppose that $G \leq \Sym(\Omega)$ has degree $n$. Then the socle, as a subgroup of $G$, also acts on $\Omega$. In case (a) of the O'Nan-Scott theorem, if \added{4}{$H = \Soc(G)$} is isomorphic to an elementary abelian $p$-group and $|H| = p^m = n = |\Omega|$, then since $H \unlhd G$ is transitive, $H$ is automatically regular by \autoref{prop:transitive_order_equals_degree_implies_regular}.
 
     Moreover, computer algebra systems such as \texttt{GAP} have functions that classify primitive permutation groups into their O'Nan-Scott types, as described in the O'Nan-Scott theorem. (In \texttt{GAP}, this is implemented as \texttt{ONanScottType}.)
 

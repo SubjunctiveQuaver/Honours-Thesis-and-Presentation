@@ -1,17 +1,5 @@
 \chapter{Appendix --- theory of permutation groups}%\chaptermark{Appendix}
 
-The forms of the statements of Lagrange's theorem and the first isomorphism theorem that are used are:
-
-\begin{theorem}[Lagrange]\label{thm:lagrange}
-    If $G$ is a group and $H \leq G$, let $H\backslash G$ be the set of right cosets of $H$ in $G$. Assuming the axiom of choice, the map $H \times (H\backslash G) \to G$ given by $(h,Hg) \mapsto hg$ is a bijection. (This yields $|G| = |G:H| |H|$, where $|G : H| := |H\backslash G|$ is the \textbf{index} of $H$ in $G$.) \qedhere
-\end{theorem}
-
-This is a form that applies for infinite groups $G$ and $H$.
-
-\begin{theorem}[First isomorphism theorem]\label{thm:FIT}
-    If $G,H$ are groups and $\varphi : G \to H$ is a homomorphism, then $K := \Ker\varphi \trianglelefteq G$ and $G/K \cong \varphi[G]$ via the map $G/K \to \varphi[G]$ with $gK \mapsto \varphi(g)$. \qedhere
-\end{theorem}
-
 \subsection{Random elements and the constructive membership problem}
 
 \textit{Note that Adobe Acrobat allows you to copy the following code without line numbers.}
@@ -20,9 +8,17 @@ Here is an implementation of \autoref{alg:transversal_random_element} in \texttt
 
 \lstinputlisting{gap_code/random_elt.gap}
 
-Here is an implementation of \autoref{alg:transversal_membership_test} in \texttt{GAP} as the function \texttt{Membership}:\label{app:transversal_membership_test}
+Here is an implementation of \autoref{alg:transversal_membership_test} in \texttt{GAP} as the function \texttt{Membership} (using two subfunctions):\label{app:transversal_membership_test}
 
 \lstinputlisting{gap_code/membership.gap}
+
+Here is the modified version of \texttt{RandomElt} which prints out intermediate choices of $t_i \in T_i$ and calculations $g \in G$, as used in \autoref{eg:automorphism_group_graph_random}:
+
+\lstinputlisting{gap_code/random_elt_print.gap}
+
+Here is the modified version of \texttt{Membership} which prints out values of $t_i \in T_i$ and $h$, as used in \autoref{eg:automorphism_group_graph_membership}:
+
+\lstinputlisting{gap_code/membership_print.gap}
 
 \subsection{Wreath product and dihedral group}
 

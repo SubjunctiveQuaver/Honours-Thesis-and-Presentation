@@ -279,7 +279,7 @@ If $\Delta \subseteq \Omega$ is a block, $G$ may not act on $\Delta$, as if $\De
     If $G$ acts on $\Omega$ and $\Delta \subseteq \Omega$, then
     \begin{enumerate}[(a)]
         \item for $g,h \in G$, $\Delta^{gh} = (\Delta^g)^h$, and
-        \item the \textbf{setwise stabiliser} $G_\Delta := \{g \in G : \Delta^g = \Delta\} \leq G$ acts on $\Delta$.
+        \item the \textbf{setwise stabiliser} $G_\Delta := \{g \in G : \Delta^g = \Delta\} \leq G$ acts on $\Delta$ \added{4}{with kernel $G_{(\Delta)} \unlhd G_\Delta$}.
     \end{enumerate}
     The action $\varphi : G \to \Sym(\Omega)$ relates to the action $\tilde\varphi : G_\Delta \to \Sym(\Delta)$ by $\alpha^{\varphi(g)} = \alpha^{\tilde\varphi(g)} \in \Delta$ for $\alpha \in \Delta$ and $g \in G_\Delta$.
 \end{lemma}
@@ -288,24 +288,14 @@ If $\Delta \subseteq \Omega$ is a block, $G$ may not act on $\Delta$, as if $\De
     \begin{enumerate}[(a)]
         \item We have $\beta \in \Delta^{gh}$ if and only if $\beta = \alpha^{gh}$ \added{4}{for some} $\alpha \in \Delta$, if and only if $\beta = (\alpha^g)^h$ with $\alpha \in \Delta$ and $\alpha^g \in \Delta^g$, if and only if $\beta \in (\Delta^g)^h$.
         \item For $g,h \in G_\Delta$, we have $\Delta^{gh} = (\Delta^g)^h = \Delta^h = \Delta$, so $gh \in G_\Delta$. Similarly, we have $\Delta^{g^{-1}} = (\Delta^g)^{g^{-1}} = \Delta^1 = \Delta$, so $g^{-1} \in G_\Delta$. So $G_\Delta \leq G$, by the subgroup criterion. Then $G_\Delta$ acts on $\Delta$ since the associated action $\tilde\varphi$ is well-defined.
+
+              \added{4}{Note that that $G_{(\Delta)} \subseteq G_{\Delta}$ since if $\alpha^g = \alpha$ for all $\alpha \in \Delta$, then $\Delta^g = \Delta$. Then the kernel of the $G_\Delta$-action on $\Delta$ is $\{g \in G_\Delta : \alpha^g = \alpha\ \text{for all}\ \alpha \in \Delta\} = G_{(\Delta)}$, so $G_\Delta \unlhd G_\Delta$.}
     \end{enumerate}
 \end{proof}
 
-It is easy to see that $G_{(\Delta)} \leq G_\Delta$; \added{3}{in fact, it is a normal subgroup:
-
-    \begin{lemma}\label{lem:setwise_stab_normal_in_stab}
-        If $G$ acts on $\Omega$ and $\Delta \subseteq \Omega$, then $G_{(\Delta)} \unlhd G_\Delta$.
-    \end{lemma}
-
-    \begin{proof}
-        Let $h \in G_{(\Delta)}$ and $g \in G_\Delta$. Then for $\alpha \in \Delta$,
-        $$\alpha^{g^{-1}hg} = \big(\alpha^{g^{-1}}\big)^{hg} = \big(\alpha^{g^{-1}}\big)^g = \alpha \implies g^{-1}hg \in G_{(\Delta)},$$
-        where the second equality follows from $\alpha^{g^{-1}} \in \Delta$ (which is fixed by $h$).
-    \end{proof}
-
-    \begin{remark}\label{rem:group_acts_on_orbit}
-        For $G$-actions (on $\Omega$) and fixed $\alpha \in \Omega$, setting $\Delta = \alpha^G$ gives $G_\Delta = G$ (since $\Delta^g = (\alpha^G)^g = \alpha^G = \Delta$ for all $g \in G$), so $G$ acts on $\alpha^G$ by \autoref{lem:restrict_action_to_block}(b). If the action is intransitive, then $\alpha^G \neq \Omega$, and $G$ acts on a strict subset of $\Omega$.
-    \end{remark}}
+\begin{remark}\label{rem:group_acts_on_orbit}
+    For $G$-actions (on $\Omega$) and fixed $\alpha \in \Omega$, setting $\Delta = \alpha^G$ gives $G_\Delta = G$ (since $\Delta^g = (\alpha^G)^g = \alpha^G = \Delta$ for all $g \in G$), so $G$ acts on $\alpha^G$ by \autoref{lem:restrict_action_to_block}(b). If the action is intransitive, then $\alpha^G \neq \Omega$, and $G$ acts on a strict subset of $\Omega$.
+\end{remark}
 
 Thus, when classifying permutation groups, it suffices to consider transitive groups. Suppose $G$ acts on $\Omega$ via $\varphi$. Partition $\Omega = \bigsqcup_{i \in I} \Omega_i$, where each $\Omega_i$ is a $G$-orbit. Then for each $i \in I$, $G$ acts transitively on $\Omega_i$ via $\varphi_i : G \to \Sym(\Omega_i)$, as in \autoref{rem:group_acts_on_orbit}. Conversely, suppose $G$ acts transitively on $\Omega_i$ via $\varphi_i$ for $i \in I$. Then, setting $\Omega = \bigsqcup_{i \in I} \Omega_i$ as the disjoint union, we may construct a $G$-action $\varphi : G \to \Sym(\Omega)$ by the following: for $\alpha \in \Omega$ and $g \in G$, we have $\alpha \in \Omega_i$ for unique $i \in I$, and then we set $\alpha^{\varphi(g)} = \alpha^{\varphi_i(g)} \in \Omega_i$. This constructs every intransitive $G$-action on $\Omega$, and thus every intransitive group $G \leq \Sym(\Omega)$ where we take the natural action. We use this construction in \autoref{eg:blaha_elem_technical_construction}.
 
@@ -353,13 +343,13 @@ By saying $G^\Omega$ is transitive, regular or primitive, we mean that the actio
 
     Another corollary of this result is that a regular permutation group $G \leq \Sym(\Omega)$ is primitive if and only if $|G|$ is prime (for $\alpha \in \Omega$, $G_\alpha = 1$ is a maximal subgroup of $G$ if and only if $G$ is cyclic of prime order, if and only if $|G|$ is prime).}
 
-\added{3}{We present one more result on transitivity and primitivity concerning the induced action of a normal subgroup:
+We present one more result on transitivity and primitivity concerning the induced action of a normal subgroup:
 
     \begin{proposition}[Theorem 1.6A in \cite{dixon_mortimer_perm_groups1996}]\label{prop:normal_subgroup_transitive_action}
         Let $G$ act transitively on $\Omega$ via $\varphi$ and $N \unlhd G$. Then:
         \begin{enumerate}[(a)]
-            \item if $\Delta$ is an $N$-orbit, then $\Delta^g$ is an $N$-orbit for $g \in G$; moreover, these are all the $N$-orbits;
-            \item the $N$-orbits form a block system; and
+            \item if $\Delta$ is an $N$-orbit \added{4}{and $g \in G$}, then $\Delta^g$ is an $N$-orbit; moreover, these are all the $N$-orbits \added{4}{(for any given $\Delta$)};
+            \item the $N$-orbits form a block system \added{4}{for $G$}; and
             \item if $G$ acts primitively on $\Omega$, then $N$ acts transitively on $\Omega$, or $N$ acts trivially on $\Omega$ (and $N \leq \Ker\varphi$).
         \end{enumerate}
     \end{proposition}
@@ -369,9 +359,9 @@ By saying $G^\Omega$ is transitive, regular or primitive, we mean that the actio
             \item Write $\Delta = \alpha^N$ for some $\alpha \in \Omega$. Then for $g \in G$, $\Delta^g = \{\beta^g : \beta \in \Delta\} = \{\alpha^{ng} : n \in N\} = \{\alpha^{gg^{-1}ng} : n \in N\} = \{(\alpha^g)^k : k \in N\} = (\alpha^g)^N$ since $N \unlhd G$.
 
                   Now suppose $\tilde\Delta$ is an $N$-orbit, so $\tilde\Delta = \tilde\alpha^N$ for some $\tilde\alpha \in \Omega$. Then since $G^\Omega$ is transitive, $\tilde\alpha = \alpha^g$ for some $g \in G$, so $\tilde\Delta = (\alpha^g)^N = \Delta^g$ from before.
-            \item Let $\Delta$ be an $N$-orbit, thus a block, and set $\Sigma = \{\Delta^g : g \in G\}$ which is a block system. Since $N$ is normal, $\Delta^g$ is an $N$-orbit by part (a), and by transitivity of $G^\Omega$, $\Sigma$ covers all of $\Omega$ and is precisely all $N$-orbits.
+            \item Let $\Delta$ be an $N$-orbit, thus a block \added{4}{for $G$}, and set $\Sigma = \{\Delta^g : g \in G\}$ which is a block system. Since $N$ is normal, $\Delta^g$ is an $N$-orbit by part (a), and by transitivity of $G^\Omega$, $\Sigma$ covers all of $\Omega$ and is precisely all $N$-orbits.
             \item Since $G^\Omega$ is primitive, every block is trivial, so using part (b), if $\Delta$ is an $N$-orbit, then $\Delta = \Omega$ (in which case $N^\Omega$ is transitive) or $|\Delta| = 1$ (from which every $N$-orbit has size 1, thus $N$ acts trivially on $\Omega$).
         \end{enumerate}
     \end{proof}
 
-    If $G \leq \Sym(\Omega)$ is a primitive permutation group (which acts on $\Sym(\Omega)$ by inclusion), then for $N \unlhd G$, if $N$ acts trivially on $\Sym(\Omega)$ then the inclusion map must be trivial, thus $N = 1$. Thus if $N$ is a nontrivial normal subgroup of a primitive group $G$, then $N$ is transitive.}
+    If $G \leq \Sym(\Omega)$ is a primitive permutation group (which acts on $\Sym(\Omega)$ by inclusion), then for $N \unlhd G$, if $N$ acts trivially on $\Sym(\Omega)$ then the inclusion map must be trivial, thus $N = 1$. Thus if $N$ is a nontrivial normal subgroup of a primitive group $G$, then $N$ is transitive.

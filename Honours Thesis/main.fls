@@ -1864,10 +1864,7 @@ INPUT .\group_concepts.tex
 INPUT group_concepts.tex
 INPUT .\group_concepts.tex
 INPUT group_concepts.tex
-INPUT .\group_concepts\group_actions.tex
-INPUT group_concepts\group_actions.tex
-INPUT .\group_concepts\group_actions.tex
-INPUT group_concepts\group_actions.tex
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmbi7t.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\zptmcm7t.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\symbol\psyr.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr8r.tfm
@@ -1876,6 +1873,12 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\zptm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\psyro.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi10.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri8r.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmbi7t.vf
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmbi8r.tfm
+INPUT .\group_concepts\group_actions.tex
+INPUT group_concepts\group_actions.tex
+INPUT .\group_concepts\group_actions.tex
+INPUT group_concepts\group_actions.tex
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\zptmcm7y.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
 INPUT C:\Users\lawre\AppData\Local\MiKTeX\2.9\fonts\tfm\public\rsfs\rsfs10.tfm
@@ -1891,9 +1894,6 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\zptmcm7v.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmex10.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\symbol\psyr.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmbi7t.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmbi7t.vf
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmbi8r.tfm
 INPUT .\group_concepts\bases_stabiliser_chains.tex
 INPUT group_concepts\bases_stabiliser_chains.tex
 INPUT .\group_concepts\bases_stabiliser_chains.tex
@@ -1915,8 +1915,6 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri7t.tfm
 INPUT .\txt_files\automorphism_group_graph_bsgs_gap_2.txt
 INPUT txt_files\automorphism_group_graph_bsgs_gap_2.txt
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmri7t.vf
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT .\txt_files\automorphism_group_graph_bsgs_gap_2.txt
 INPUT txt_files\automorphism_group_graph_bsgs_gap_2.txt
 INPUT .\txt_files\automorphism_group_graph_bsgs_gap_2.txt
@@ -1928,6 +1926,8 @@ INPUT .\txt_files\automorphism_group_graph_bsgs_gap_3.txt
 INPUT txt_files\automorphism_group_graph_bsgs_gap_3.txt
 INPUT .\txt_files\automorphism_group_graph_bsgs_gap_3.txt
 INPUT txt_files\automorphism_group_graph_bsgs_gap_3.txt
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmri7t.vf
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmrc7t.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT .\group_concepts\classification_results.tex
@@ -1976,6 +1976,18 @@ INPUT .\gap_code\membership.gap
 INPUT gap_code\membership.gap
 INPUT .\gap_code\membership.gap
 INPUT gap_code\membership.gap
+INPUT .\gap_code\random_elt_print.gap
+INPUT gap_code\random_elt_print.gap
+INPUT .\gap_code\random_elt_print.gap
+INPUT gap_code\random_elt_print.gap
+INPUT .\gap_code\random_elt_print.gap
+INPUT gap_code\random_elt_print.gap
+INPUT .\gap_code\membership_print.gap
+INPUT gap_code\membership_print.gap
+INPUT .\gap_code\membership_print.gap
+INPUT gap_code\membership_print.gap
+INPUT .\gap_code\membership_print.gap
+INPUT gap_code\membership_print.gap
 INPUT .\gap_code\d8_wreath_product.gap
 INPUT gap_code\d8_wreath_product.gap
 INPUT .\gap_code\d8_wreath_product.gap
