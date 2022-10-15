@@ -1,4 +1,4 @@
-gap> getSubgrpAGLBase(1);
+gap> res1 := getSubgrpAGLBase(1);
 Considered grp of size 2 with 3 gens:
 Found 1 maximal subgroups (up to conj)
 Considered 1 maximal subgrps (up to conj)

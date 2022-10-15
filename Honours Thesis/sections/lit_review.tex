@@ -1,4 +1,33 @@
-Hello
+Suppose we have a primitive permutation group $G$ of degree $n$. What can we say about $|G|$? Of course, $|G| \leq n!$, and in the case that $G = \Sym(n)$ which is primitive, we have equality. In the case that $G = \Alt(n)$ which is also primitive, we have $|G| = n!/2 = O(n!)$, which suggests that even in nontrivial cases, the bound cannot be significantly improved on. Moscatiello and Roney-Dougal note in \cite{moscatiello_roney-dougal2021} that this problem attracted a lot of attention in the 19th century.
+
+From \autoref{lem:blaha_nonredundant_size}, we have that $|G| \leq n^{b(G)}$. Thus, we may find upper bounds on $|G|$ by finding upper bounds on $b(G)$. One of the first results in this direction came in 1889, when Bochert proved in \cite{bochert1889} that for a primitive group $G$ of degree $n$ not containing the alternating group $\Alt(n)$, then $b(G) \leq n/2$.
+
+\begin{definition}
+    Large base TODO
+
+    Includes natural actions of $\Alt(n)$ and $\Sym(n)$
+\end{definition}
+
+\begin{definition}
+    Solvable group TODO
+\end{definition}
+
+\begin{definition}
+    Symplectic group (Sp) TODO
+\end{definition}
+
+\begin{definition}
+    Mathieu group TODO
+\end{definition}
+
+In 1984, Liebeck proved in \cite{liebeck1984} that if $G$ is a primitive group of degree $n$ that is not ``large base'' (in the sense of containg a power of an alternating group as a subgroup), then $b(G) \leq 9\log n$. The result was proven in context improving lower bounds on $\mu(G)$, the minimal degree of $G$, which is the smallest number of points moved by any non-identity element in $G$. This proof utilised the O'Nan-Scott theorem, which classifies primitive groups according to the structures of their \textit{socles}, and also the classification of finite simple groups (which was recently completed at the time), and was able to achieve a much tighter lower bound of $\mu(G) > n/(9 \log n)$ than the best result that was previously available, which was $\mu(G) > (1/2)(\sqrt{n} - 1)$ and due to Babai in \cite{babai1981}.
+
+In 2021, building on more recent results, Moscatiello and Roney-Dougal proved in \cite{moscatiello_roney-dougal2021} that if $G$ is a primitive group of degree $n$ that is not large base, then either $G$ is the Mathieu group $M_{24}$, or $b(G) \leq \lceil\log n\rceil + 1$; moreover, there are infinitely many groups for which $b(G) > \log n + 1$. The Mathieu group $M_{24}$ is a member of the first family of sporadic simple groups discovered as part of the classification of finite simple groups, which are 26 finite simple groups that do not fit into the three infinite families (cyclic, alternating, Lie type).
+
+The authors of \cite{moscatiello_roney-dougal2021} then present a question, which asks to identify primitive groups $G$ of degree $n$ that satisfy $b(G) = \log n + 1$. They note that $G$ must be a subgroup of the affine group $\AGL_d(2)$ of affine transformations of $\F_2^d$ for some $d$, and that if $d$ is even then groups such as the split extension $2^d : \Sp(d,2)$ have this property. Upon investigation using a recursive approach for $d \leq 10$, we found that apart from the affine group $\AGL_d(2)$, there were no other primitive groups for odd $d$, and for even $d$, the only other example found was $2^d : \Sp(d,2)$. Consequently, we conjecture in this \thesis{} that these are the only groups satisfying this property. Limitations of this approach include memory and computational time, since the group found for $d = 10$ has order $25\,410\,822\,678\,459\,187\,200 \approx 2.5 \cdot 10^{19}$ and thus has many subgroups.
+
+Narrative: using classification of finite simple groups
+
 
 \begin{itemize}
     \item Liebeck, 1984: Let $G$ be a primitive group of degree $n$ (i.e. $G$ is a permutation group on $\Omega$ with $|\Omega| = n$). Then one of the following holds:
@@ -21,33 +50,14 @@ Hello
     \item QUESTION from Moscatiello and Roney-Dougal, 2021: Which primitive groups $G \leq \Sym(n)$ satisfy $b(G) = \log n + 1$? (Note: $G \leq \mathrm{AGL}_d(2)$ for some $d$, and if $d$ is even then groups such as $2^d : \Sp_d(2)$ have this property.)
 \end{itemize}
 
-\begin{definition}
-    Large base TODO
-
-    Includes natural actions of $\Alt(n)$ and $\Sym(n)$
-\end{definition}
-
-\begin{definition}
-    Solvable group TODO
-\end{definition}
-
-\begin{definition}
-    Symplectic group (Sp) TODO
-\end{definition}
-
-\begin{definition}
-    Mathieu group TODO
-\end{definition}
-
-Narrative: using classification of finite simple groups
-
 \section{Small base primitive permutation groups}
 
 \begin{itemize}
     \item Include process to find that there are no proper subgroups $G < \AGL_d(2)$ with $b(G) = d + 1 = \log n + 1$ ($n = 2^d$) for $d = 1,2,3,5,7,9$, and for $d = 4,6,8,10$ we have found $2^d : \Sp_d(2)$ as candidates (unproven)
     \item Hypothesis: no proper subgroups for odd $d$, and only $2^d : \Sp_d(2)$ for even $d \geq 4$
-    \item Idea: recursively check maximal subgroups (why does this work?)
+    \item Idea: recursively check maximal subgroups (why does this work?) -- check ones that are primitive (if imprimitive then all subgroups imprimitive)
     \item Use greedy base algorithm: seems to perform better than default GAP algorithm (give example?)
     \item Can also search for imprimitive groups, etc.
-    \item Potential improvements: more efficient checking, different algorithms to find bases (brute force vs "probably true")
+    \item Potential improvements: more efficient checking, different algorithms to find bases (brute force vs "probably true") ($d = 9$ case took 5 mins, $d = 10$ case took 100 mins)
+    \item Also it considers only a few maximal subgroups: if we can get a list, then can check through systematically?
 \end{itemize}

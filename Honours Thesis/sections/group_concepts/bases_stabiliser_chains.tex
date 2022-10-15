@@ -81,6 +81,12 @@ Since each element in $G$ is completely determined by its action on a base (\aut
     Now suppose we have an ordered list $\hat B$ of $n - 2$ or fewer elements. Then say $\alpha,\beta$ are not in $\hat B$; then the transposition $(\alpha,\beta)$ fixes every element of $\hat B$, so $\hat B$ is not a base for $\Sym(n)$. It follows that a smallest base for $\Sym(n)$ comprises any set of $n - 1$ elements: $\added{2}{b}(\Sym(n)) = n - 1$ \added{1}{(note that $|\Sym(n)| = n!$)}.
 \end{example}
 
+\added{4}{\begin{example}[alternating groups]\label{eg:alternating_group_base}
+        Consider the alternating group $\Alt(n)$ for $n \geq 3$, which acts naturally on $\Omega = [n]$. Let $B = [\beta_1,\dotsc,\beta_r]$ be distinct elements of $\Omega$. If $r = n-2$ then $B$ is a base for $\Alt(n)$: suppose $g \in \Alt(n)$ satisfies $\beta_i^g = \beta_i$ for all $i = 1,\dotsc,n-2$. Let $\alpha_1,\alpha_2$ be the remaining elements of $[n]$; then since the transposition $(\alpha_1,\alpha_2) \not\in \Alt(n)$, we must have $g = 1$, and $B$ is a base.
+
+        Now if $r = n-3$ then let $\alpha_1,\alpha_2,\alpha_3$ be the remaining elements of $[n]$. Then $(\alpha_1,\alpha_2,\alpha_3) = (\alpha_1,\alpha_3)(\alpha_2,\alpha_3) \in \Alt(n)$ fixes $B$ pointwise, so $B$ is not a base for $\Alt(n)$. Thus $b(\Alt(n)) = n-2$ (compare this with $|\Alt(n)| = n!/2$).
+    \end{example}}
+
 \begin{example}[cyclic subgroups of $\Sym(n)$]\label{eg:cyclic_group_base}
     Let $\sigma = (1,\dotsc,n) \in \Sym(n)$; the group $G = \langle \sigma \rangle$ is a cyclic permutation subgroup of $\Sym(n)$ with $G \cong C_n$, the cyclic group of order $n$. Clearly \added{2}{the ordered list} $B = [1]$ (or any single element of $\Omega$) is a base for $G$, since
     $$1^{\sigma^k} = \underbrace{((1^\sigma)^{\cdots})^\sigma}_{k\ \text{times}} = \added{2}{1 + (k \mathrel{\operatorname{mod}} n)} \neq 1$$

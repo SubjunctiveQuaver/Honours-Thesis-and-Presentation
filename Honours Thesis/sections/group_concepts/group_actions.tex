@@ -237,6 +237,10 @@ Recall the condition for equality of right cosets: for $H \leq G$, $Hg = Hk$ if 
         Consider the \hyperref[eg:natural_action]{natural action} of $\Sym(n)$ on the set $\Omega = [n]$. It is clearly transitive; for distinct $\alpha,\beta \in \Omega$, just consider $(\alpha,\beta) \in \Sym(n)$. In fact, it is $n$-transitive: for any ordered lists $[\alpha_1,\dotsc,\alpha_n],[\beta_1,\dotsc,\beta_n]$ of distinct (thus all) elements of $\Omega$, simply consider the permutation $g \in \Sym(n)$ such that $\alpha_i^g := \beta_i$.
     \end{example}}
 
+\added{4}{\begin{example}\label{eg:natural_action_An_transitive}
+        Consider the \hyperref[eg:natural_action]{natural action} of $\Alt(n)$ on the set $\Omega = [n]$. It is $(n-2)$-transitive: for any ordered lists $[\alpha_1,\dotsc,\alpha_{n-2}],[\beta_1,\dotsc,\beta_{n-2}]$ of distinct elements of $\Omega$ with $\alpha_{n-1},\alpha_n$ and $\beta_{n-1},\beta_n$ the remaining elements of $[n]$, define the permutation $g \in \Sym(n)$ with $\alpha_i^g := \beta_i$ for $i = 1,\dotsc,n$. If $g \in \Alt(n)$, we are done; else, $g$ is an odd permutation, and consider the product $\tilde g = g(\beta_{n-1},\beta_n) \in \Alt(n)$ with the transposition $(\beta_{n-1},\beta_n)$. Then $\tilde g \in \Alt(n)$ satisfies $\alpha_i^{\tilde g} := \beta_i$ for $i = 1,\dotsc,n-2$.
+    \end{example}}
+
 %% TODO: Result on conjugacy? Prop 2.23 in book
 
 \begin{definition}\label{def:regular_action}
@@ -303,7 +307,7 @@ Thus, when classifying permutation groups, it suffices to consider transitive gr
     A transitive action of $G$ on $\Omega$ is \textbf{primitive} if there are no nontrivial blocks under the action; otherwise it is \textbf{imprimitive}.
 \end{definition}
 
-\added{2}{For a \textit{transitive} action,} the distinct \textit{translates} $\Delta^g$ of a block $\Delta$ \textit{partition} $\Omega$ (either $\Delta^g = \Delta$ or $\Delta^g \cap \Delta = \emptyset$); the set \added{3}{$\Sigma = \{\Delta^g : g \in G\}$} of these translates \added{3}{(which are blocks themselves)} is a \textbf{block system}. So the condition of primitivity for a transitive action is equivalent to \textit{not} preserving a nontrivial partition of $\Omega$ (otherwise we would have a nontrivial block). Clearly $|\Delta| = |\Delta^g|$, so all blocks in a \added{2}{block system} have the same size; \added{2}{if $|\Omega|$ is finite, then $|\Delta|$ divides $|\Omega|$.} So if the action of $G$ on $\Omega$ is transitive and $|\Omega|$ is prime, then every block has size $1$ or size $|\Omega|$ and is thus trivial, so the action is primitive. \added{3}{If a block system comprises nontrivial blocks, then it is also called a \textbf{system of imprimitivity}; the corresponding action is imprimitive.}
+\added{2}{For a \textit{transitive} action,} the distinct \textit{translates} $\Delta^g$ of a block $\Delta$ \textit{partition} $\Omega$ (either $\Delta^g = \Delta$ or $\Delta^g \cap \Delta = \emptyset$); the set \added{3}{$\Sigma = \{\Delta^g : g \in G\}$} of these translates \added{3}{(which are blocks themselves)} is a \textbf{block system} \added{4}{for $G$}. So the condition of primitivity for a transitive action is equivalent to \textit{not} preserving a nontrivial partition of $\Omega$ (otherwise we would have a nontrivial block). Clearly $|\Delta| = |\Delta^g|$, so all blocks in a \added{2}{block system} have the same size; \added{2}{if $|\Omega|$ is finite, then $|\Delta|$ divides $|\Omega|$.} So if the action of $G$ on $\Omega$ is transitive and $|\Omega|$ is prime, then every block has size $1$ or size $|\Omega|$ and is thus trivial, so the action is primitive. \added{3}{If a block system comprises nontrivial blocks, then it is also called a \textbf{system of imprimitivity}; the corresponding action is imprimitive.}
 
 By saying $G^\Omega$ is transitive, regular or primitive, we mean that the action of $G$ on $\Omega$ is transitive, regular or primitive. When $G \leq \Sym(\Omega)$ \added{3}{is a permutation group}, if we consider the natural action of $G$ on $\Omega$ as defined in \autoref{eg:natural_action}, we simply say that $G$ is \textbf{transitive}, \textbf{regular} or \textbf{primitive} (when the action is).
 
@@ -325,43 +329,43 @@ By saying $G^\Omega$ is transitive, regular or primitive, we mean that the actio
     Consider again the example of $D_8$ acting \added{2}{transitively} on the vertices $V = \{v_1,v_2,v_3,v_4\}$ of a square, labelled anticlockwise (see \autoref{eg:action_D8_on_square}). It preserves one nontrivial block system: $\{\{v_1,v_3\},\{v_2,v_4\}\}$, since any \added{2}{symmetry} of the square leaves opposite vertices opposite. \added{2}{Hence, this action is imprimitive.}
 \end{example}
 
-\added{2}{\begin{proposition}\label{prop:2-transitivity_implies_primitivity}
-        A 2-transitive action of $G$ on $\Omega$ is primitive.
-    \end{proposition}
+\begin{proposition}\label{prop:2-transitivity_implies_primitivity}
+    A 2-transitive action of $G$ on $\Omega$ is primitive.
+\end{proposition}
 
-    \begin{proof}
-        Let $\Delta \subseteq \Omega$ be such that $|\Delta| > 1$ and $\Delta \neq \Omega$. Then take $[\alpha_1,\alpha_2]$ distinct points in $\Delta$ and $[\beta_1,\beta_2]$ with $\beta_1 = \alpha_1$ and $\beta_2 \in \Omega \setminus \Delta$. Since $G^\Omega$ is 2-transitive, there is $g \in G$ such that $[\beta_1,\beta_2] = [\alpha_1^g,\alpha_2^g]$. But $\beta_1,\beta_2 \in \Delta^g$, so $\Delta^g \neq \Delta$ and $\Delta^g \cap \Delta \neq \emptyset$, thus $\Delta$ is not a nontrivial block. So there are no nontrivial blocks under the action, and it is primitive.
-    \end{proof}
+\begin{proof}
+    Let $\Delta \subseteq \Omega$ be such that $|\Delta| > 1$ and $\Delta \neq \Omega$. Then take $[\alpha_1,\alpha_2]$ distinct points in $\Delta$ and $[\beta_1,\beta_2]$ with $\beta_1 = \alpha_1$ and $\beta_2 \in \Omega \setminus \Delta$. Since $G^\Omega$ is 2-transitive, there is $g \in G$ such that $[\beta_1,\beta_2] = [\alpha_1^g,\alpha_2^g]$. But $\beta_1,\beta_2 \in \Delta^g$, so $\Delta^g \neq \Delta$ and $\Delta^g \cap \Delta \neq \emptyset$, thus $\Delta$ is not a nontrivial block. So there are no nontrivial blocks under the action, and it is primitive.
+\end{proof}
 
-    This gives an alternative proof that $\Sym(n)$ is primitive for $n \geq 2$, since it is $n$-transitive (thus 2-transitive). The following result, which we state without proof, relates primitivity to stabilisers; it is Corollary 1.5A in \cite{dixon_mortimer_perm_groups1996}.
+This gives an alternative proof that $\Sym(n)$ is primitive for $n \geq 2$, since it is $n$-transitive (thus 2-transitive). \added{4}{Moreover, it shows that $\Alt(n)$ is primitive for $n \geq 4$, since it is $(n-2)$-transitive (thus 2-transitive).} The following result, which we state without proof, relates primitivity to stabilisers; it is Corollary 1.5A in \cite{dixon_mortimer_perm_groups1996}.
 
-    \begin{proposition}\label{prop:primitive_iff_stabilisers_maximal}
-        Let $G \leq \Sym(\Omega)$ be transitive with $|\Omega| \geq 2$. Then $G$ is primitive if and only if $G_\alpha$ is a maximal subgroup of $G$ for all $\alpha \in \Omega$.
-    \end{proposition}
+\begin{proposition}\label{prop:primitive_iff_stabilisers_maximal}
+    Let $G \leq \Sym(\Omega)$ be transitive with $|\Omega| \geq 2$. Then $G$ is primitive if and only if $G_\alpha$ is a maximal subgroup of $G$ for all $\alpha \in \Omega$.
+\end{proposition}
 
-    Since stabilisers of a transitive group $G \leq \Sym(\Omega)$ are all conjugate by \autoref{prop:stabilisers_are_conjugate} (as there is only one orbit), $G_\alpha$ is a maximal subgroup of $G$ for some $\alpha \in \Omega$ if and only if $G_\beta$ is maximal for all $\beta \in \Omega$. (This follows from the conjugate of a maximal subgroup being maximal, \autoref{lem:conjugate_of_maximal_subgroup_is_maximal}.) Thus, one way to verify primitivity for $G$ is to check transitivity (by computing an orbit), and then checking if some stabiliser $G_\alpha$ is a maximal subgroup.
+Since stabilisers of a transitive group $G \leq \Sym(\Omega)$ are all conjugate by \autoref{prop:stabilisers_are_conjugate} (as there is only one orbit), $G_\alpha$ is a maximal subgroup of $G$ for some $\alpha \in \Omega$ if and only if $G_\beta$ is maximal for all $\beta \in \Omega$. (This follows from the conjugate of a maximal subgroup being maximal, \autoref{lem:conjugate_of_maximal_subgroup_is_maximal}.) Thus, one way to verify primitivity for $G$ is to check transitivity (by computing an orbit), and then checking if some stabiliser $G_\alpha$ is a maximal subgroup.
 
-    Another corollary of this result is that a regular permutation group $G \leq \Sym(\Omega)$ is primitive if and only if $|G|$ is prime (for $\alpha \in \Omega$, $G_\alpha = 1$ is a maximal subgroup of $G$ if and only if $G$ is cyclic of prime order, if and only if $|G|$ is prime).}
+Another corollary of this result is that a regular permutation group $G \leq \Sym(\Omega)$ is primitive if and only if $|G|$ is prime (for $\alpha \in \Omega$, $G_\alpha = 1$ is a maximal subgroup of $G$ if and only if $G$ is cyclic of prime order, if and only if $|G|$ is prime). \added{4}{Thus, $\Alt(3)$ is primitive, as it is transitive (consider $(1,2,3) \in \Alt(3)$) and regular by \autoref{prop:transitive_order_equals_degree_implies_regular} since $|\Alt(3)| = 3!/2 = 3$. Trivially, $\Alt(1) = 1$ and $\Alt(2) = 1$ are also primitive, so we see that $\Alt(n)$ is primitive for all $n$.}
 
 We present one more result on transitivity and primitivity concerning the induced action of a normal subgroup:
 
-    \begin{proposition}[Theorem 1.6A in \cite{dixon_mortimer_perm_groups1996}]\label{prop:normal_subgroup_transitive_action}
-        Let $G$ act transitively on $\Omega$ via $\varphi$ and $N \unlhd G$. Then:
-        \begin{enumerate}[(a)]
-            \item if $\Delta$ is an $N$-orbit \added{4}{and $g \in G$}, then $\Delta^g$ is an $N$-orbit; moreover, these are all the $N$-orbits \added{4}{(for any given $\Delta$)};
-            \item the $N$-orbits form a block system \added{4}{for $G$}; and
-            \item if $G$ acts primitively on $\Omega$, then $N$ acts transitively on $\Omega$, or $N$ acts trivially on $\Omega$ (and $N \leq \Ker\varphi$).
-        \end{enumerate}
-    \end{proposition}
+\begin{proposition}[Theorem 1.6A in \cite{dixon_mortimer_perm_groups1996}]\label{prop:normal_subgroup_transitive_action}
+    Let $G$ act transitively on $\Omega$ via $\varphi$ and $N \unlhd G$. Then:
+    \begin{enumerate}[(a)]
+        \item if $\Delta$ is an $N$-orbit \added{4}{and $g \in G$}, then $\Delta^g$ is an $N$-orbit; moreover, these are all the $N$-orbits \added{4}{(for any given $\Delta$)};
+        \item the $N$-orbits form a block system \added{4}{for $G$}; and
+        \item if $G$ acts primitively on $\Omega$, then $N$ acts transitively on $\Omega$, or $N$ acts trivially on $\Omega$ (and $N \leq \Ker\varphi$).
+    \end{enumerate}
+\end{proposition}
 
-    \begin{proof}
-        \begin{enumerate}[(a)]
-            \item Write $\Delta = \alpha^N$ for some $\alpha \in \Omega$. Then for $g \in G$, $\Delta^g = \{\beta^g : \beta \in \Delta\} = \{\alpha^{ng} : n \in N\} = \{\alpha^{gg^{-1}ng} : n \in N\} = \{(\alpha^g)^k : k \in N\} = (\alpha^g)^N$ since $N \unlhd G$.
+\begin{proof}
+    \begin{enumerate}[(a)]
+        \item Write $\Delta = \alpha^N$ for some $\alpha \in \Omega$. Then for $g \in G$, $\Delta^g = \{\beta^g : \beta \in \Delta\} = \{\alpha^{ng} : n \in N\} = \{\alpha^{gg^{-1}ng} : n \in N\} = \{(\alpha^g)^k : k \in N\} = (\alpha^g)^N$ since $N \unlhd G$.
 
-                  Now suppose $\tilde\Delta$ is an $N$-orbit, so $\tilde\Delta = \tilde\alpha^N$ for some $\tilde\alpha \in \Omega$. Then since $G^\Omega$ is transitive, $\tilde\alpha = \alpha^g$ for some $g \in G$, so $\tilde\Delta = (\alpha^g)^N = \Delta^g$ from before.
-            \item Let $\Delta$ be an $N$-orbit, thus a block \added{4}{for $G$}, and set $\Sigma = \{\Delta^g : g \in G\}$ which is a block system. Since $N$ is normal, $\Delta^g$ is an $N$-orbit by part (a), and by transitivity of $G^\Omega$, $\Sigma$ covers all of $\Omega$ and is precisely all $N$-orbits.
-            \item Since $G^\Omega$ is primitive, every block is trivial, so using part (b), if $\Delta$ is an $N$-orbit, then $\Delta = \Omega$ (in which case $N^\Omega$ is transitive) or $|\Delta| = 1$ (from which every $N$-orbit has size 1, thus $N$ acts trivially on $\Omega$).
-        \end{enumerate}
-    \end{proof}
+              Now suppose $\tilde\Delta$ is an $N$-orbit, so $\tilde\Delta = \tilde\alpha^N$ for some $\tilde\alpha \in \Omega$. Then since $G^\Omega$ is transitive, $\tilde\alpha = \alpha^g$ for some $g \in G$, so $\tilde\Delta = (\alpha^g)^N = \Delta^g$ from before.
+        \item Let $\Delta$ be an $N$-orbit, thus a block \added{4}{for $G$}, and set $\Sigma = \{\Delta^g : g \in G\}$ which is a block system. Since $N$ is normal, $\Delta^g$ is an $N$-orbit by part (a), and by transitivity of $G^\Omega$, $\Sigma$ covers all of $\Omega$ and is precisely all $N$-orbits.
+        \item Since $G^\Omega$ is primitive, every block is trivial, so using part (b), if $\Delta$ is an $N$-orbit, then $\Delta = \Omega$ (in which case $N^\Omega$ is transitive) or $|\Delta| = 1$ (from which every $N$-orbit has size 1, thus $N$ acts trivially on $\Omega$).
+    \end{enumerate}
+\end{proof}
 
-    If $G \leq \Sym(\Omega)$ is a primitive permutation group (which acts on $\Sym(\Omega)$ by inclusion), then for $N \unlhd G$, if $N$ acts trivially on $\Sym(\Omega)$ then the inclusion map must be trivial, thus $N = 1$. Thus if $N$ is a nontrivial normal subgroup of a primitive group $G$, then $N$ is transitive.
+If $G \leq \Sym(\Omega)$ is a primitive permutation group (which acts on $\Sym(\Omega)$ by inclusion), then for $N \unlhd G$, if $N$ acts trivially on $\Sym(\Omega)$ then the inclusion map must be trivial, thus $N = 1$. Thus if $N$ is a nontrivial normal subgroup of a primitive group $G$, then $N$ is transitive.

@@ -1877,12 +1877,12 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\zptm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\psyro.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi10.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri8r.tfm
+INPUT .\sections\group_concepts\group_actions.tex
+INPUT sections\group_concepts\group_actions.tex
+INPUT .\sections\group_concepts\group_actions.tex
+INPUT sections\group_concepts\group_actions.tex
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmbi7t.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmbi8r.tfm
-INPUT .\sections\group_concepts\group_actions.tex
-INPUT sections\group_concepts\group_actions.tex
-INPUT .\sections\group_concepts\group_actions.tex
-INPUT sections\group_concepts\group_actions.tex
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\zptmcm7y.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
 INPUT C:\Users\lawre\AppData\Local\MiKTeX\2.9\fonts\tfm\public\rsfs\rsfs10.tfm
@@ -1924,16 +1924,16 @@ INPUT txt_files\automorphism_group_graph_bsgs_gap_2.txt
 INPUT .\txt_files\automorphism_group_graph_bsgs_gap_2.txt
 INPUT txt_files\automorphism_group_graph_bsgs_gap_2.txt
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmrc7t.tfm
-INPUT .\txt_files\automorphism_group_graph_bsgs_gap_3.txt
-INPUT txt_files\automorphism_group_graph_bsgs_gap_3.txt
-INPUT .\txt_files\automorphism_group_graph_bsgs_gap_3.txt
-INPUT txt_files\automorphism_group_graph_bsgs_gap_3.txt
-INPUT .\txt_files\automorphism_group_graph_bsgs_gap_3.txt
-INPUT txt_files\automorphism_group_graph_bsgs_gap_3.txt
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmri7t.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmrc7t.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr8r.tfm
+INPUT .\txt_files\automorphism_group_graph_bsgs_gap_3.txt
+INPUT txt_files\automorphism_group_graph_bsgs_gap_3.txt
+INPUT .\txt_files\automorphism_group_graph_bsgs_gap_3.txt
+INPUT txt_files\automorphism_group_graph_bsgs_gap_3.txt
+INPUT .\txt_files\automorphism_group_graph_bsgs_gap_3.txt
+INPUT txt_files\automorphism_group_graph_bsgs_gap_3.txt
 INPUT .\sections\group_concepts\classification_results.tex
 INPUT sections\group_concepts\classification_results.tex
 INPUT .\sections\group_concepts\classification_results.tex
