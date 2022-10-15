@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.22)  16 OCT 2022 02:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.22)  16 OCT 2022 03:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1794,15 +1794,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 40970 strings out of 478582
- 784428 string characters out of 2842422
- 1652173 words of memory out of 3000000
- 56814 multiletter control sequences out of 15000+600000
+ 40974 strings out of 478582
+ 784505 string characters out of 2842422
+ 1652489 words of memory out of 3000000
+ 56818 multiletter control sequences out of 15000+600000
  532204 words of font info for 364 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  101i,18n,105p,1790b,1872s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-ts1.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-ot1-0.enc}<C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/rsfs/rsfs10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (65 pages, 721029 bytes).
+Output written on main.pdf (65 pages, 721458 bytes).
 PDF statistics:
  2005 PDF objects out of 2073 (max. 8388607)
  1042 named destinations out of 1200 (max. 500000)
