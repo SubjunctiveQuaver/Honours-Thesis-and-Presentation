@@ -8,13 +8,13 @@ Database file #1: references.bib
 You've used 26 entries,
             2118 wiz_defined-function locations,
             668 strings with 7638 characters,
-and the built_in function-call counts, 8200 in all, are:
+and the built_in function-call counts, 8198 in all, are:
 = -- 836
 > -- 284
 < -- 4
 + -- 121
 - -- 87
-* -- 546
+* -- 544
 := -- 1354
 add.period$ -- 82
 call.type$ -- 26

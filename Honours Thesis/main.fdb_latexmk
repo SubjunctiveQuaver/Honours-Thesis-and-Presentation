@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex main"] 1665823276 "main.aux" "main.bbl" "main" 1665823298
+["bibtex main"] 1665823615 "main.aux" "main.bbl" "main" 1665823624
   "C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/bibtex/bst/bibtex/plain.bst" 1291864736 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "main.aux" 1665823297 93800 75265871d31995efc2086b9628fd8df6 "pdflatex"
-  "references.bib" 1665821146 11143 5c74e24c9404ae2b53809e691a759a5a ""
+  "main.aux" 1665823622 93800 75265871d31995efc2086b9628fd8df6 "pdflatex"
+  "references.bib" 1665823614 11126 16f14431ed285b446c000eb981e927e9 ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1665823290 "c:/Users/lawre/OneDrive/Education/Monash University/2022/MTH4100 Research Project/Honours Thesis and Presentation/Honours Thesis/main.tex" "main.pdf" "main" 1665823298
+["pdflatex"] 1665823616 "c:/Users/lawre/OneDrive/Education/Monash University/2022/MTH4100 Research Project/Honours Thesis and Presentation/Honours Thesis/main.tex" "main.pdf" "main" 1665823624
   "C:/Users/lawre/AppData/Local/MiKTeX/2.9/fonts/map/pdftex/pdftex.map" 1665630731 466148 bf77eda5a46d60a6983271fbe0c424d3 ""
   "C:/Users/lawre/AppData/Local/MiKTeX/2.9/fonts/tfm/public/esvect/vect10.tfm" 1590418453 372 07da2e555f4c8dac959d0bb59cacb4dc ""
   "C:/Users/lawre/AppData/Local/MiKTeX/2.9/fonts/tfm/public/esvect/vect6.tfm" 1590418454 372 e6493454680b692175addf943602cee1 ""
@@ -310,10 +310,10 @@
   "gap_code/random_elt.gap" 1665796644 412 35c8a36ded4d3330cadfde191acc6e33 ""
   "gap_code/random_elt_print.gap" 1665797260 506 f9eb165d786fb7a2d488f4acd5089657 ""
   "gap_code/subgrps_base_len.gap" 1663254234 2910 d494d41daf1140cc3da2f8610dec389a ""
-  "main.aux" 1665823297 93800 75265871d31995efc2086b9628fd8df6 "pdflatex"
-  "main.bbl" 1665823276 5244 fbbb9688344a3c2e6d4c643b3620b499 "bibtex main"
+  "main.aux" 1665823622 93800 75265871d31995efc2086b9628fd8df6 "pdflatex"
+  "main.bbl" 1665823615 5240 696cdfe9222ac19e981677bdd3f3bcbe "bibtex main"
   "main.tex" 1665823268 2649 98d44244354e19214c83279d7f800485 ""
-  "main.toc" 1665823297 4060 268f5fbf86ffe8dfd5a9e65104c81789 "pdflatex"
+  "main.toc" 1665823622 4060 268f5fbf86ffe8dfd5a9e65104c81789 "pdflatex"
   "preamble/settings.tex" 1662525718 3134 317937ca7a31d7f70babc97f13ce0e7a ""
   "sections/abstract.tex" 1665823288 13 997b02f9e9c5581dde7c6ecad0c45e2e ""
   "sections/appendix.tex" 1665802784 3622 f0f467dc0508e0900633a1a3807dd446 ""
