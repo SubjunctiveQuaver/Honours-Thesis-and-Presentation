@@ -58,9 +58,9 @@ Now for $r \leq q$, let $B = [\beta_1,\dotsc,\beta_r] \subseteq \{1,\dotsc,n\}$ 
     ($\Longleftarrow$) Since $G = \langle \sigma \rangle$, it follows that $|G| = \lcm\{s_m\}_{m \in M}$ is the order of $\sigma$. Suppose $\tau = \sigma^\ell$ fixes $B$ pointwise; then $\beta_i^{\sigma^\ell} = \beta_i$ if and only if $s_{m_i} \mid \ell$ for all $i$ (since $\beta_i$ is in a $s_{m_i}$-cycle), so $s = \lcm(s_{m_1},\dotsc,s_{m_r}) \mid \ell$. But $s = |G|$ so $|G|$ divides $\ell$, from which it follows that $\tau = \sigma^\ell = 1_{\Sym(n)}$, so that $B$ is a base for $G$.
 \end{proof}
 
-\added{3}{Now, we are ready to prove the main result of this subsection.}
+Now, we are ready to prove the main result of this subsection, \added{4}{which is Theorem 3.1 in \cite{blaha1992}}.
 
-\begin{theorem}[Theorem 3.1 in \cite{blaha1992}]\label{thm:blaha_cyclic_NP_complete}
+\begin{theorem}[Blaha, 1992]\label{thm:blaha_cyclic_NP_complete}
     MB is NP-complete even for $G$ a cyclic group.
 \end{theorem}
 
@@ -172,7 +172,9 @@ In the subsequent lemmas, we use the restricted action of the permutation group 
 
 \subsection{NP-hardness of the minimum base problem for elementary abelian groups}
 
-\begin{theorem}[Theorem 3.2 in \cite{blaha1992}]\label{thm:blaha_elem_NP_complete}
+\added{4}{The following is Theorem 3.2 in \cite{blaha1992}.}
+
+\begin{theorem}[Blaha, 1992]\label{thm:blaha_elem_NP_complete}
     MB is NP-complete even for $G$ an elementary abelian 2-group with orbits of size 8.
 \end{theorem}
 
@@ -232,7 +234,9 @@ When we consider greedy bases for $G$ (as found by the \hyperref[alg:blaha_greed
     Let $B = [\beta_1,\dotsc,\beta_r]$ be a base for $G$ with stabiliser chain $G = G^0 \geq G^1 \geq \dotsb \geq G^r = 1$. Then \autoref{prop:stabiliser_chain_indexes} gives $|G| = |\beta_1^{G^0}| \dotsb |\beta_r^{G^{r-1}}|$, so $|\beta_i^{G^{i-1}}| \geq |G|^{1/r}$ for some $i$. But $G^{i-1} \leq G$, so certainly $\beta_i^{G^{i-1}} \subseteq \beta_i^G$, giving that the size of the $G$-orbit of $\beta_i$ is $|\beta_i^G| \geq |\beta_i^{G^{i-1}}| \geq |G|^{1/r}$.
 \end{proof}
 
-\begin{theorem}[Theorem 4.4 in \cite{blaha1992}]\label{lem:blaha_greedy_size}
+\added{4}{The following are Theorems 4.4 and 4.6 in \cite{blaha1992}, respectively.}
+
+\begin{theorem}[Blaha, 1992]\label{lem:blaha_greedy_size}
     If $G \leq \Sym(n)$, then a greedy base for $G$ has size at most $\lceil \added{2}{b(G)}\log\log n \rceil + \added{2}{b(G)} = O(\added{2}{b(G)}\log\log n)$.
 \end{theorem}
 
@@ -244,7 +248,7 @@ When we consider greedy bases for $G$ (as found by the \hyperref[alg:blaha_greed
 %     Let $k \geq r \geq 2$ be positive integers. Set $k_0 = k$ and $k_{i+1} = k_i - \lfloor k_i/r \rfloor - 1$ for $i \geq 0$. If $\gamma = \lfloor (r/2)(\log(k + r) - \log(r + 1))\rfloor$, then $k_\gamma \geq 1$.
 % \end{lemma}
 
-\begin{theorem}[Theorem 4.6 in \cite{blaha1992}]\label{thm:blaha_greedy_sharp}
+\begin{theorem}[Blaha, 1992]\label{thm:blaha_greedy_sharp}
     Fix $r \geq 2$; then for any $n \geq 2^{4r^2 + 7r + 7}$ there is $G \leq \Sym(n)$ such that $\added{2}{b(G)} = r$, and every greedy base for $G$ has size at least $\frac{1}{5}\added{2}{b(G)}\log\log n$.
 \end{theorem}
 
