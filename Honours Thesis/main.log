@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.22)  17 OCT 2022 04:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.22)  17 OCT 2022 05:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1768,9 +1768,9 @@ Underfull \vbox (badness 1215) has occurred while \output is active []
 
  [47
 
-]
+] [48]
 Package hyperref Info: bookmark level for unknown question defaults to 0 on input line 63.
- [48]) (main.bbl [49]
+) (main.bbl [49]
 LaTeX Font Info:    Font shape `OT1/zi4/m/n' will be
 (Font)              scaled to size 7.4pt on input line 30.
 LaTeX Font Info:    Font shape `OT1/zi4/m/n' will be
@@ -1812,17 +1812,17 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 41203 strings out of 478582
- 788713 string characters out of 2842422
- 1646412 words of memory out of 3000000
- 56985 multiletter control sequences out of 15000+600000
- 532683 words of font info for 371 fonts, out of 8000000 for 9000
+ 41211 strings out of 478582
+ 788842 string characters out of 2842422
+ 1646499 words of memory out of 3000000
+ 56986 multiletter control sequences out of 15000+600000
+ 533000 words of font info for 375 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  101i,18n,105p,1790b,2025s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-ts1.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-ot1-0.enc}<C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/rsfs/rsfs10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (68 pages, 762725 bytes).
+Output written on main.pdf (68 pages, 765305 bytes).
 PDF statistics:
- 2135 PDF objects out of 2487 (max. 8388607)
- 1083 named destinations out of 1200 (max. 500000)
+ 2139 PDF objects out of 2487 (max. 8388607)
+ 1084 named destinations out of 1200 (max. 500000)
  85909 words of extra memory for PDF output out of 89155 (max. 10000000)
 

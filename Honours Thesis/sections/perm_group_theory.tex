@@ -459,7 +459,7 @@ Finally, we look at a few important subgroups of the affine group, which we cons
 \end{proof}
 % TODO: include statement on normal subgroups of GL? contains SL or subgroup of centre (scalar multiples of 1)
 
-\subsection{Symplectic groups}
+\subsection{Symplectic and orthogonal groups}
 
 \added{4}{Another important matrix group that we briefly discuss is the symplectic group. The following may be found in section 7.7 of \cite{dixon_mortimer_perm_groups1996}. Let $K$ be a field and consider $K^d$, where $d = 2m$ is even. Let
     $$e = \begin{pmatrix}
@@ -473,25 +473,29 @@ Finally, we look at a few important subgroups of the affine group, which we cons
     be $d \times d$ block matrices, where $0$ and $1$ denote the $m \times m$ zero and identity matrices.
 
     \begin{definition}\label{def:symplectic_group}
-        For $d \geq 2$ even, the \textbf{symplectic group} is $\Sp_d(K) = \{a \in \GL_d(K) : afa^\top = f\} \leq \GL_d(K)$, which acts on $K^d$ by matrix multiplication: $u^a := ua$ for $a \in \Sp_d(K)$ and $u \in K^d$ (which we treat as row vectors).
+        For $d \geq 2$ even, the \textbf{symplectic group} of dimension $d$ over $K$ is $\Sp_d(K) = \{a \in \GL_d(K) : afa^\top = f\} \leq \GL_d(K)$, with the induced action on $K^d$.
     \end{definition}
 
     It can be shown that if $K = \F_q$ is a finite field, then writing $\Sp_d(q)$ instead of $\Sp_d(\F_q)$, we have
     $$|\Sp_d(q)| = q^{m^2}(q^2 - 1)(q^4 - 1)\dotsb(q^d - 1),$$
     where $d = 2m$ (there is a typo on page 245 on \cite{dixon_mortimer_perm_groups1996}). Moreover, the quotient of $\Sp_d(q)$ by its centre gives a finite simple group of Lie type, as described in the classification theorem (\autoref{thm:cfsg}). We are primarily interested in the case that $K = \F_2$ for the next chapter, where $f = e + e^\top$.
 
+    Let $\theta$ be the quadratic form $u \mapsto ueu^\top$. Let TODO
+
+    Recall that an orthogonal matrix satisfies $a^\top a = 1$. The set of such matrices (over any field $K$) forms a group.
+
     \begin{definition}\label{def:orthogonal_group}
-        For any $d \geq 1$, the \textbf{(general) orthogonal group} is $\GO_d(K) = \{a \in \GL_d(K) : a^\top a = 1\} \leq \GL_d(K)$.
+        For any $d \geq 1$, the \textbf{(general) orthogonal group} of dimension $d$ over $K$ is $\GO_d(K) = \{a \in \GL_d(K) : a^\top a = 1\} \leq \GL_d(K)$, with the induced action on $K^d$.
     \end{definition}
 
-    For $K = \F_q$, again write $\GO_d(q)$ instead of $\GO_d(\F_q)$. In the case that $d = 2m$ is even and $q = 2$, it can be shown that
-    $$|\GO_{d+1}(2)| = 2^{m^2}(2^2 - 1)(2^4 - 1)\dotsb(2^d - 1).$$
-    Note that this is equal to $|\Sp_d(2)|$. This is no coincidence; in the special case of $q = 2$, symplectic groups are related to orthogonal groups. A proof of the next theorem can be found in \cite{} TODO.
+    For $K = \F_q$, again write $\GO_d(q)$ instead of $\GO_d(\F_q)$. In the case that $d = 2m$ is even and $q = 2^k$, it can be shown that
+    $$|\GO_{d+1}(2^k)| = 2^{km^2}(2^{2k} - 1)(2^{4k} - 1)\dotsb(2^{dk} - 1).$$
+    Note that this is equal to $|\Sp_d(2^k)|$. This is no coincidence; in the special case of $q = 2^k$, symplectic groups are related to orthogonal groups. A proof of this next theorem can be found as Theorem 11.9 in Taylor \cite{taylor_geometry_classical_grps1992}.
 
     \begin{theorem}
-        For even $d$, the symplectic group $\Sp_d(2)$ is isomorphic to the orthogonal group $\GO_{d+1}(2)$.
+        For even $d$, the symplectic group $\Sp_d(2^k)$ is isomorphic to the orthogonal group $\GO_{d+1}(2^k)$.
     \end{theorem}
-    
+
     Finally, we describe $\GO^+_d(2)$ and $\GO^-_d(2)$. TODO and $\Sp_d(2)$ acts on cosets of these?}
 
 \section{Primitive permutation groups and the O'Nan-Scott theorem}

@@ -33,7 +33,7 @@
 \contentsline {section}{\numberline {5.3}Matrix groups and affine groups}{40}{section.5.3}%
 \contentsline {subsection}{Affine transformations and the affine general linear group}{40}{section*.19}%
 \contentsline {subsection}{Affine group structure}{42}{section*.20}%
-\contentsline {subsection}{Symplectic groups}{43}{section*.21}%
+\contentsline {subsection}{Symplectic and orthogonal groups}{43}{section*.21}%
 \contentsline {section}{\numberline {5.4}Primitive permutation groups and the O'Nan-Scott theorem}{44}{section.5.4}%
 \contentsline {subsection}{The socle}{44}{section*.22}%
 \contentsline {subsection}{The O'Nan-Scott theorem}{46}{section*.23}%
