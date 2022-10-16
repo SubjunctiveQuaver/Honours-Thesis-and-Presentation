@@ -2,13 +2,15 @@ In chapter 4, we will need the notion of an elementary abelian $p$-group, which 
 
 \begin{definition}\label{def:elem-abelian-group}
     Let $p$ be a prime. A \textbf{(finite) elementary abelian ($p$-)group} $G$ is a finite abelian group such that the order of $G$ is a power of $p$.
+
+    \added{4}{An equivalent definition is that $G$ is a finite abelian group such that every nontrivial element has order $p$.}
 \end{definition}
 
-Recall that for groups $G,H$, their \textbf{direct product} is the group $G \times H$ with underlying set the Cartesian product $G \times H$ and group operation $(g,h)(a,b) = (ga,hb)$ for $g,a \in G$ and $h,b \in H$. When $G$ and $H$ are \textit{abelian}, we may instead call it a \textbf{direct sum} and write $G \oplus H$; we often use additive notation $(g,h) + (a,b) = (g+a,h+b)$ with identity $0$, writing $ng$ instead of $g^n$.
+Recall that for groups $G,H$, their \textbf{direct product} is the group $G \times H$ with underlying set the Cartesian product $G \times H$ and group operation $(g,h)(a,b) = (ga,hb)$ for $g,a \in G$ and $h,b \in H$. When $G$ and $H$ are \textit{abelian}, we may instead call it a \textbf{direct sum} and write $G \oplus H$; we sometimes use additive notation $(g,h) + (a,b) = (g+a,h+b)$ with identity $0$, writing $ng$ instead of $g^n$.
 
 It turns out that the structure of a finite abelian group is quite simple. The following result is standard, \added{4}{and is often called the \textit{fundamental theorem of finite abelian groups}}; see Theorem 6.9 in \cite{rotman_intro_theory_groups1995} for a proof.
 
-\begin{theorem}[Basis for finite abelian groups]\label{thm:basis_finite_abelian}
+\begin{theorem}[basis for finite abelian groups]\label{thm:basis_finite_abelian}
     Every finite abelian group $G$ is a direct sum of cyclic groups.
 \end{theorem}
 
@@ -21,3 +23,23 @@ Using this result, we may show that a finite elementary $p$-group must be a dire
 \begin{proof}
     By the basis theorem (\autoref{thm:basis_finite_abelian}), write $G \cong (\Z/n_1\Z) \oplus \dotsb \oplus (\Z/n_k\Z)$ with each $n_i > 1$. Let $e_i$ be the element in $(\Z/n_1\Z) \oplus \dotsb \oplus (\Z/n_k\Z)$ with a 1 in the $i$th entry and 0s elsewhere. Using the isomorphism, $e_i$ has order $p$ (since $G$ is elementary abelian), so $p1 = 0$ in $\Z/n_i\Z$, so $n_i = p$ (as $p$ is prime). Since $1 \leq i \leq k$ was arbitrary, the result follows.
 \end{proof}
+
+\added{4}{\begin{example}\label{eg:elem_abelian_perm_group}
+        Let $p$ be prime and $n,m$ be such that $mp \leq n$. Define the cycle $c_i = ((i-1)p+1,\dotsc,ip) \in \Sym(n)$ for $i=1,\dotsc,k$. Then we may construct a permutation group $G \leq \Sym(n)$ by
+        $$G = \langle c_1,\dotsc,c_k \rangle = \langle(1,\dotsc,p),(p+1,\dotsc,2p),\dotsc,((k-1)p+1,\dotsc,kp)\rangle;$$
+        note that each cycle $c_i$ has order $p$, and moreover, the cycles commute: $c_i c_j = c_j c_i$ for all $i \neq j$, since they are disjoint. So, for arbitrary $1 \neq g = c_{i_1}^{\pm 1} \dotsb c_{i_m}^{\pm 1} \in G$ (where $m \geq 1$), we have $g^\ell = c_{i_1}^{\pm \ell} \dotsb c_{i_m}^{\pm \ell}$ for $\ell \in \Z$; in particular, $g^p = c_{i_1}^{\pm p} \dotsb c_{i_m}^{\pm p} = 1$ and $g^\ell \neq 1$ for $1 \leq \ell \leq p-1$. So $g$ has order $p$, and for $h = c_{j_1}^{\pm 1} \dotsb c_{j_s}^{\pm 1} \in G$ for some $s \in \N$,
+        $$gh = c_{i_1}^{\pm 1} \dotsb c_{i_m}^{\pm 1} c_{j_1}^{\pm 1} \dotsb c_{j_s}^{\pm 1} = c_{j_1}^{\pm 1} \dotsb c_{j_s}^{\pm 1} c_{i_1}^{\pm 1} \dotsb c_{i_m}^{\pm 1} = hg$$
+        since the cycles commute. Thus $G$ is abelian, and $G$ is an elementary abelian $p$-group that is isomorphic to $(\Z/p\Z)^k$.
+
+        A natural isomorphism $G \to (\Z/p\Z)^k$ is given by $c_i \mapsto e_i$, where $e_i$ is the element of $(\Z/p\Z)^k$ with a 1 in the $i$th entry and 0s elsewhere. Note that here, we use multiplicative notation for $G$, as a permutation group.
+
+        Note that $G$ is intransitive, as the orbits under the natural action are the elements of the cycles $c_1,\dotsc,c_k$ and the singleton sets $\{kp + 1\},\dotsc,\{n\}$.
+    \end{example}
+
+    \begin{example}\label{eg:elem_abelian_perm_group_klein_4}
+        A transitive elementary abelian permutation group is
+    $$H = \{(),(1,2)(3,4),(1,3)(2,4),(1,4)(2,3)\},$$
+    which is a permutation representation of the Klein 4-group $2^2$. However, it is not primitive: $\Sigma = \{\{1,2\},\{3,4\}\}$ is a block system, as shown by the below \texttt{GAP} code:
+
+    \lstinputlisting{txt_files/klein_4_blocks.gap}
+    \end{example}}

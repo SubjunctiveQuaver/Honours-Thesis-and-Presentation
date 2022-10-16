@@ -2,19 +2,31 @@
 
 Suppose we have a finite primitive permutation group $G$ of degree $n$. What can we say about $|G|$? (This problem attracted a lot of attention in the 19th century, as noted in \cite{moscatiello_roney-dougal2021}.) Of course, $|G| \leq n!$, and in the case that $G = \Sym(n)$ which is primitive, we have equality. In the case that $G = \Alt(n)$ which is also primitive, we have $|G| = n!/2 = O(n!)$, which suggests that even in nontrivial cases, the bound cannot be significantly improved on.
 
-From \autoref{lem:blaha_nonredundant_size}, we have that $|G| \leq n^{b(G)}$. Thus, we may find upper bounds on $|G|$ by finding upper bounds on $b(G)$. One of the first results in this direction came in 1889, when Bochert proved in \cite{bochert1889} that for a primitive group $G$ of degree $n$ not containing the alternating group $\Alt(n)$, then $b(G) \leq n/2$. Compare this to \autoref{eg:alternating_group_base}, where we showed that $b(\Alt(n)) = n-2$, so the condition of not containing the alternating group immediately leads the upper bound on $b(G)$ improving by a factor of 2. Of course, since $\Alt(n)$ has index 2 in $\Sym(n)$, it is maximal, and thus every primitive group $G$ of degree $n$, apart from $\Alt(n)$ and $\Sym(n)$, has $b(G) \leq n/2$.
+From \autoref{lem:blaha_nonredundant_size}, we have that $|G| \leq n^{b(G)}$. Thus, we may find upper bounds on $|G|$ by finding upper bounds on $b(G)$. One of the first results in this direction came in 1889, when Bochert proved in \cite{bochert1889} that for a primitive group $G$ of degree $n$ not containing the alternating group $\Alt(n)$, then $b(G) \leq n/2$. Compare this to \autoref{eg:symmetric_group_base} and \autoref{eg:alternating_group_base}, where we showed that $b(\Sym(n)) = n-1$ and $b(\Alt(n)) = n-2$, so the condition of not containing the alternating group immediately leads the upper bound on $b(G)$ improving by a factor of 2. Of course, since $\Alt(n)$ has index 2 in $\Sym(n)$, it is maximal, and thus every primitive group $G$ of degree $n$, apart from $\Alt(n)$ and $\Sym(n)$, has $b(G) \leq n/2$.
 
-Improvements to these bounds have been made for primitive groups with certain additional properties. In 1984, Liebeck used the \hyperref[thm:cfsg]{classification of finite simple groups} to improve the bound on $b(G)$ for \textit{non-large base} permutation groups.
+Improvements to these bounds have been made for primitive groups with certain additional properties. In 1984, Liebeck used the \hyperref[thm:cfsg]{classification of finite simple groups} and the \hyperref[thm:onan-scott]{O'Nan-Scott theorem} to improve the bound on $b(G)$ for \textit{non-large base} permutation groups.
 
 \begin{definition}\label{def:large_base}
     A permutation group $G$ of degree $n$ is \textbf{large base} if there are integers $m$ and $r \geq 1$ with
     $$\Alt(m)^r \unlhd G \leq \Sym(m) \wr \Sym(r),$$
     where $\Sym(m)$ \hyperref[eg:product_action_Sm_subsets]{acts on $k$-element subsets} of $\{1,\dotsc,m\}$ for some $k$, and the \hyperref[def:wreath_product]{wreath product} has the \hyperref[def:product_action]{product action} of degree $n = \binom{m}{k}^r$ if $r > 1$.
 
-    Includes natural actions of $\Alt(n)$ and $\Sym(n)$
+    (Note that here we mean that $G$ contains a subgroup that is isomorphic to $\Alt(m)^r$, and $G$ is isomorphic to a subgroup of the wreath product $\Sym(m) \wr \Sym(r)$. Such convention is common in the literature, where inclusion is up to isomorphism.)
 \end{definition}
 
-In 1984, Liebeck proved in \cite{liebeck1984} that if $G$ is a primitive group of degree $n$ that is not ``large base'' (in the sense of containg a power of an alternating group as a subgroup), then $b(G) \leq 9\log n$. The result was proven in context improving lower bounds on $\mu(G)$, the minimal degree of $G$, which is the smallest number of points moved by any non-identity element in $G$. This proof utilised the O'Nan-Scott theorem, which classifies primitive groups according to the structures of their \textit{socles}, and also the classification of finite simple groups (which was recently completed at the time), and was able to achieve a much tighter lower bound of $\mu(G) > n/(9 \log n)$ than the best result that was previously available, which was $\mu(G) > (1/2)(\sqrt{n} - 1)$ and due to Babai in \cite{babai1981}.
+By this definition, $\Alt(n)$ and $\Sym(n)$ with their natural actions are large base, where we choose $m = n$ and $r = 1$; recall that $\Sym(n) \wr \Sym(1) \cong \Sym(n)$, and $\Alt(n) \unlhd \Sym(n)$. Thus, the non-large base primitive groups exclude $\Alt(n)$ and $\Sym(n)$, and there is no conflict with Bochert's result in \cite{bochert1889}. The following result by Liebeck is found in \cite{liebeck1984}.
+
+\begin{theorem}[Liebeck, 1984]
+    Let $G$ be a primitive group of degree $n$. Then one of the following holds:
+    \begin{enumerate}[(i)]
+        \item $G$ is \textit{large base}; or
+        \item $b(G) < 9\log n$.
+    \end{enumerate}
+\end{theorem}
+
+The result was proven in context improving lower bounds on $\mu(G)$, the \textbf{minimal degree} of $G \leq \Sym(\Omega)$, which is the smallest number of points moved by any non-identity element in $G$, i.e.
+$$\mu(G) = \min_{g \in G \setminus \{1\}}|\{\alpha \in \Omega : \alpha^g \neq \alpha\}|.$$
+For example, $\mu(\Alt(n)) = 3$ for $n \geq 3$, since $\Alt(n)$ contains 3-cycles (which move 3 points) but no transpositions (which move 2 points). From the relation that $b(G)\mu(G) \geq n$ for any transitive group $G$ of degree $n$, Liebeck concludes that either $G$ is large base, or that $\mu(G) > n/(9 \log n)$. The best result that was previously available, due to Babai in \cite{babai1981}, was that $\mu(G) > (1/2)(\sqrt{n} - 1)$ as long as $\Alt(n) \not\leq G$; the result in Liebeck represented a major improvement in this bound.
 
 \begin{definition}\label{def:solvable_group}
     Solvable group TODO
