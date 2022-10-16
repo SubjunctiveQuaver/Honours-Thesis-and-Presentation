@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex main"] 1665925263 "main.aux" "main.bbl" "main" 1665925393
+["bibtex main"] 1665927499 "main.aux" "main.bbl" "main" 1665931412
   "C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/bibtex/bst/bibtex/plain.bst" 1291864736 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "main.aux" 1665925392 99088 8296a0ebcf4a2a2bfa8a7da2be2c83c3 "pdflatex"
+  "main.aux" 1665931411 99224 98f83066d384760062648886e4c8f44a "pdflatex"
   "references.bib" 1665843106 11890 591aba46603422cc3a5db0be8681e56e ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1665925377 "c:/Users/lawre/OneDrive/Education/Monash University/2022/MTH4100 Research Project/Honours Thesis and Presentation/Honours Thesis/main.tex" "main.pdf" "main" 1665925393
+["pdflatex"] 1665931399 "c:/Users/lawre/OneDrive/Education/Monash University/2022/MTH4100 Research Project/Honours Thesis and Presentation/Honours Thesis/main.tex" "main.pdf" "main" 1665931412
   "C:/Users/lawre/AppData/Local/MiKTeX/2.9/fonts/map/pdftex/pdftex.map" 1665925104 466148 bf77eda5a46d60a6983271fbe0c424d3 ""
   "C:/Users/lawre/AppData/Local/MiKTeX/2.9/fonts/tfm/public/esvect/vect10.tfm" 1590418453 372 07da2e555f4c8dac959d0bb59cacb4dc ""
   "C:/Users/lawre/AppData/Local/MiKTeX/2.9/fonts/tfm/public/esvect/vect6.tfm" 1590418454 372 e6493454680b692175addf943602cee1 ""
@@ -303,7 +303,7 @@
   "C:/Users/lawre/OneDrive/Documents/LaTeX/tex/latex/commands_tables.tex" 1602157155 1033 d5599c19dea1bd85daffb8aab5c43304 ""
   "C:/Users/lawre/OneDrive/Documents/LaTeX/tex/latex/essentials.sty" 1651291122 1478 4c660b7bcb6b3e5802c0f2769066911f ""
   "C:/Users/lawre/OneDrive/Documents/LaTeX/tex/latex/tables.sty" 1585739648 347 e39cbe90bd8a5025c89929eba7e3f4df ""
-  "c:/Users/lawre/OneDrive/Education/Monash University/2022/MTH4100 Research Project/Honours Thesis and Presentation/Honours Thesis/main.tex" 1665925374 2667 e57e42fc3d6b6714e41a83c3fcb1dfdd ""
+  "c:/Users/lawre/OneDrive/Education/Monash University/2022/MTH4100 Research Project/Honours Thesis and Presentation/Honours Thesis/main.tex" 1665927486 2746 d909b51903bfe9a7b54ab83bd424a88b ""
   "gap_code/d8_wreath_product.gap" 1664958256 1160 047746d826b9f268b4d8baf93ea9a966 ""
   "gap_code/greedy_base.gap" 1664942471 724 4f47b215945cf484c169b0a26a8b9db4 ""
   "gap_code/membership.gap" 1665797974 858 93cb32fcd9b1c9f29095ccc77dd32eff ""
@@ -311,12 +311,13 @@
   "gap_code/random_elt.gap" 1665796644 412 35c8a36ded4d3330cadfde191acc6e33 ""
   "gap_code/random_elt_print.gap" 1665797260 506 f9eb165d786fb7a2d488f4acd5089657 ""
   "gap_code/subgrps_base_len.gap" 1663254234 2910 d494d41daf1140cc3da2f8610dec389a ""
-  "main.aux" 1665925392 99088 8296a0ebcf4a2a2bfa8a7da2be2c83c3 "pdflatex"
-  "main.bbl" 1665925263 5609 6a31394c0f581c57b59af6ec31c17d7c "bibtex main"
-  "main.tex" 1665925374 2667 e57e42fc3d6b6714e41a83c3fcb1dfdd ""
-  "main.toc" 1665925392 4104 7961c87fab139248ffdb8da8bad84599 "pdflatex"
-  "preamble/settings.tex" 1662525718 3134 317937ca7a31d7f70babc97f13ce0e7a ""
+  "main.aux" 1665931411 99224 98f83066d384760062648886e4c8f44a "pdflatex"
+  "main.bbl" 1665927499 5609 6a31394c0f581c57b59af6ec31c17d7c "bibtex main"
+  "main.tex" 1665927486 2746 d909b51903bfe9a7b54ab83bd424a88b ""
+  "main.toc" 1665931411 4116 d2945e187a95a8ab470bc5dfda0bed30 "pdflatex"
+  "preamble/settings.tex" 1665930064 3284 ead17996584f25d95dd5e2ed6da9d511 ""
   "sections/abstract.tex" 1665823288 13 997b02f9e9c5581dde7c6ecad0c45e2e ""
+  "sections/acknowledgements.tex" 1665931394 1996 1815b0769cdd7ec591b7a91c223259dc ""
   "sections/appendix.tex" 1665915250 4317 3d6357800223f8ed7dbc25e3248036bf ""
   "sections/blaha.tex" 1665908260 35237 d1982d54aa2e72d27b7ce2b33900194c ""
   "sections/complexity_concepts.tex" 1665922723 21744 510b23a4026bb234d430ef4e17984a1a ""
@@ -324,7 +325,7 @@
   "sections/group_concepts/bases_stabiliser_chains.tex" 1665915255 47996 548ff6b161368e9f2601af0995c3aa79 ""
   "sections/group_concepts/classification_results.tex" 1665919828 4355 8459a740617c95bf2c33d78cd5301090 ""
   "sections/group_concepts/group_actions.tex" 1665924810 43859 a9d15fdecd48454ce990d731953b9fea ""
-  "sections/introduction.tex" 1665910782 10947 e617cb9da74fd8f48f704b3c60b96ffd ""
+  "sections/introduction.tex" 1665927489 10947 e617cb9da74fd8f48f704b3c60b96ffd ""
   "sections/lit_review.tex" 1665924909 9486 bc05945c8c5ece8de4b9f9399ddc4ab2 ""
   "sections/perm_group_theory.tex" 1665910377 68086 a852c2285320dfc7e5b6e11f555e04f0 ""
   "sections/titlepage.tex" 1664960755 524 80b1bb891f6d6a9d535918a62f7b61a0 ""

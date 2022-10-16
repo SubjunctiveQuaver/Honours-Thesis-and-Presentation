@@ -4,45 +4,45 @@
 \contentsline {section}{\numberline {1.2}Motivation}{1}{section.1.2}%
 \contentsline {chapter}{\numberline {2}Preliminary concepts from permutation groups}{4}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Group actions}{5}{section.2.1}%
-\contentsline {subsection}{Orbits and stabilisers}{7}{section*.3}%
-\contentsline {subsection}{Conjugacy, centralisers and normalisers}{8}{section*.4}%
-\contentsline {subsection}{Transitivity and primitivity}{9}{section*.5}%
+\contentsline {subsection}{Orbits and stabilisers}{7}{section*.4}%
+\contentsline {subsection}{Conjugacy, centralisers and normalisers}{8}{section*.5}%
+\contentsline {subsection}{Transitivity and primitivity}{9}{section*.6}%
 \contentsline {section}{\numberline {2.2}Bases and stabiliser chains}{12}{section.2.2}%
-\contentsline {subsection}{Sizes of bases and the group}{14}{section*.6}%
-\contentsline {subsection}{Random elements and the constructive membership problem}{17}{section*.7}%
-\contentsline {subsection}{The orbit-stabiliser and Schreier-Sims algorithms}{19}{section*.8}%
+\contentsline {subsection}{Sizes of bases and the group}{14}{section*.7}%
+\contentsline {subsection}{Random elements and the constructive membership problem}{17}{section*.8}%
+\contentsline {subsection}{The orbit-stabiliser and Schreier-Sims algorithms}{19}{section*.9}%
 \contentsline {section}{\numberline {2.3}Elementary abelian groups}{20}{section.2.3}%
 \contentsline {chapter}{\numberline {3}Preliminary concepts from complexity theory}{22}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Complexity classes}{23}{section.3.1}%
-\contentsline {subsection}{The classes P and NP}{24}{section*.9}%
-\contentsline {subsection}{Reducibility and NP-completeness}{25}{section*.10}%
+\contentsline {subsection}{The classes P and NP}{24}{section*.10}%
+\contentsline {subsection}{Reducibility and NP-completeness}{25}{section*.11}%
 \contentsline {chapter}{\numberline {4}Blaha: computing minimum bases is NP-hard}{27}{chapter.4}%
 \contentsline {section}{\numberline {4.1}The general case}{28}{section.4.1}%
-\contentsline {subsection}{NP-hardness of the minimum base problem for cyclic groups}{28}{section*.11}%
-\contentsline {subsection}{Greedy base analysis for cyclic groups}{29}{section*.12}%
+\contentsline {subsection}{NP-hardness of the minimum base problem for cyclic groups}{28}{section*.12}%
+\contentsline {subsection}{Greedy base analysis for cyclic groups}{29}{section*.13}%
 \contentsline {section}{\numberline {4.2}The case of bounded orbits}{29}{section.4.2}%
-\contentsline {subsection}{NP-hardness of the minimum base problem for elementary abelian groups}{31}{section*.13}%
+\contentsline {subsection}{NP-hardness of the minimum base problem for elementary abelian groups}{31}{section*.14}%
 \contentsline {section}{\numberline {4.3}Sharp bounds for sizes of bases}{32}{section.4.3}%
-\contentsline {subsection}{A sharp bound for nonredundant bases}{32}{section*.14}%
-\contentsline {subsection}{A sharp bound for greedy bases}{32}{section*.15}%
+\contentsline {subsection}{A sharp bound for nonredundant bases}{32}{section*.15}%
+\contentsline {subsection}{A sharp bound for greedy bases}{32}{section*.16}%
 \contentsline {chapter}{\numberline {5}Classification results for permutation groups}{34}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Classification of finite simple groups}{34}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Semidirect products and wreath products}{36}{section.5.2}%
-\contentsline {subsection}{Semidirect products}{36}{section*.16}%
-\contentsline {subsection}{Wreath products}{37}{section*.17}%
+\contentsline {subsection}{Semidirect products}{36}{section*.17}%
+\contentsline {subsection}{Wreath products}{37}{section*.18}%
 \contentsline {section}{\numberline {5.3}Matrix groups and affine groups}{40}{section.5.3}%
-\contentsline {subsection}{Affine group structure}{42}{section*.18}%
+\contentsline {subsection}{Affine group structure}{42}{section*.19}%
 \contentsline {section}{\numberline {5.4}Primitive permutation groups and the O'Nan-Scott theorem}{43}{section.5.4}%
-\contentsline {subsection}{The socle}{44}{section*.19}%
-\contentsline {subsection}{The O'Nan-Scott theorem}{45}{section*.20}%
-\contentsline {chapter}{\numberline {6}Minimum bases for primitive groups}{47}{chapter.6}%
+\contentsline {subsection}{The socle}{44}{section*.20}%
+\contentsline {subsection}{The O'Nan-Scott theorem}{45}{section*.21}%
+\contentsline {chapter}{\numberline {6}Results on minimum bases for primitive groups}{47}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Results for non-large base primitive permutation groups}{47}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Analysing primitive subgroups of affine groups}{49}{section.6.2}%
-\contentsline {chapter}{References}{50}{chapter*.21}%
+\contentsline {chapter}{References}{50}{chapter*.22}%
 \contentsline {chapter}{\numberline {A}Appendix --- theory of permutation groups}{52}{appendix.A}%
-\contentsline {subsection}{Random elements and the constructive membership problem}{52}{section*.22}%
-\contentsline {subsection}{Wreath product and dihedral group}{54}{section*.23}%
-\contentsline {subsection}{Stabiliser chain for automorphism group of graph}{55}{section*.24}%
+\contentsline {subsection}{Random elements and the constructive membership problem}{52}{section*.23}%
+\contentsline {subsection}{Wreath product and dihedral group}{54}{section*.24}%
+\contentsline {subsection}{Stabiliser chain for automorphism group of graph}{55}{section*.25}%
 \contentsline {chapter}{\numberline {B}Appendix --- computing bases of subgroups of affine groups}{58}{appendix.B}%
-\contentsline {subsection}{Greedy base algorithm}{58}{section*.25}%
-\contentsline {subsection}{Program to find primitive subgroups with given minimum base size}{58}{section*.26}%
+\contentsline {subsection}{Greedy base algorithm}{58}{section*.26}%
+\contentsline {subsection}{Program to find primitive subgroups with given minimum base size}{58}{section*.27}%

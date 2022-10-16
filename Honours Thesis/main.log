@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.22)  17 OCT 2022 00:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.22)  17 OCT 2022 01:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1484,7 +1484,7 @@ File: accsupp-pdftex.def 2019/12/05 v0.6 accsupp driver for pdfTeX (HO)
 \c@endconjecturectr=\count415
 \c@currexamplectr=\count416
 \c@endexamplectr=\count417
-Package hyperref Info: Option `colorlinks' set `true' on input line 59.
+Package hyperref Info: Option `colorlinks' set `true' on input line 68.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tcolorbox\tcbbreakable.code.tex
 Library (tcolorbox): 'tcbbreakable.code.tex' version '5.0.2'
 (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\pdfcol.sty
@@ -1627,6 +1627,8 @@ Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbat
 
 {C:/Users/lawre/AppData/Local/MiKTeX/2.9/fonts/map/pdftex/pdftex.map}]) (sections/abstract.tex) [2
 
+] (sections/acknowledgements.tex) [3
+
 ] (main.toc
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 3.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ot1ztmcm.fd
@@ -1662,13 +1664,13 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
- [3
+ [4
 
 ])
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [4]
+ [5]
 Chapter 1.
 (sections/introduction.tex
 LaTeX Font Info:    Trying to load font information for OT1+zi4 on input line 9.
@@ -1761,7 +1763,7 @@ Underfull \vbox (badness 3503) has occurred while \output is active []
  [41] [42] [43] [44] [45]) [46]
 Chapter 6.
 (sections/lit_review.tex
-Underfull \vbox (badness 4726) has occurred while \output is active []
+Underfull \vbox (badness 1215) has occurred while \output is active []
 
  [47
 
@@ -1802,17 +1804,17 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 41105 strings out of 478582
- 786675 string characters out of 2842422
- 1645279 words of memory out of 3000000
- 56908 multiletter control sequences out of 15000+600000
+ 41112 strings out of 478582
+ 786965 string characters out of 2842422
+ 1645287 words of memory out of 3000000
+ 56910 multiletter control sequences out of 15000+600000
  532074 words of font info for 367 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  101i,18n,105p,1790b,2025s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-ts1.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-ot1-0.enc}<C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/rsfs/rsfs10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (67 pages, 740662 bytes).
+Output written on main.pdf (68 pages, 744019 bytes).
 PDF statistics:
- 2063 PDF objects out of 2073 (max. 8388607)
- 1072 named destinations out of 1200 (max. 500000)
+ 2068 PDF objects out of 2073 (max. 8388607)
+ 1074 named destinations out of 1200 (max. 500000)
  84869 words of extra memory for PDF output out of 89155 (max. 10000000)
 

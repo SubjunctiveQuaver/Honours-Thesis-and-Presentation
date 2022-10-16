@@ -16,6 +16,15 @@
 \setlength{\parskip}{0.5em}
 % \setlength{\parindent}{0pt} % No paragraph indent
 
+\renewenvironment{quote}{%
+  \list{}{%
+    \leftmargin3cm   % this is the adjusting screw
+    \rightmargin\leftmargin
+  }
+  \item\relax
+}
+{\endlist}
+
 % Header and footer
 \pagestyle{fancy}
 \lhead{}
