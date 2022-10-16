@@ -28,23 +28,23 @@ Since $|G^i| = |G^{i-1}|/|\beta_i^{G^{i-1}}|$ by the \hyperref[thm:orbit_stabili
 
 \subsection{NP-hardness of the minimum base problem for cyclic groups}
 
-First a preliminary lemma.
+First a preliminary lemma \added{4}{about a cyclic group}.
 
 \begin{lemma}[Lemma 2.1 in \cite{blaha1992}]\label{lem:blaha_cyclic_stabiliser}
     Given $G = \langle \sigma \rangle \leq \Sym(n)$ and a base $B = [\beta_1,\dotsc,\beta_r]$, let $m_k = |\beta_k^G|$. Then for $1 \leq i \leq r$, we have $G^i = \langle \sigma^m \rangle$, where $m = \lcm(m_1,\dotsc,m_i)$.
 \end{lemma}
 
 \begin{proof}
-    Note that since $G = \langle \sigma \rangle$, \added{2}{the set} $\beta_k^G = \{\beta_k^{\sigma^j} : j \in \Z\}$ \added{2}{comprises} elements of the cycle in $\sigma$ containing $\beta_k$. So $|\beta_k^G| = m_k \mid j$ if and only if $\sigma^j$ fixes $\beta_k$. Since $m_1,\dotsc,m_i \mid m$, \added{2}{we have that} $\sigma^m$ fixes $\beta_1,\dotsc,\beta_i$, so $\sigma^m \in G^i$, from which it follows that $\langle \sigma^m \rangle \subseteq G^i$.
+    Note that since $G = \langle \sigma \rangle$, \added{2}{the set} $\beta_k^G = \{\beta_k^{\sigma^j} : j \in \Z\}$ \added{2}{comprises} elements of the cycle in $\sigma$ containing $\beta_k$. So $|\beta_k^G| = m_k$ divides $j$ if and only if $\sigma^j$ fixes $\beta_k$. Since $m_1,\dotsc,m_i \mid m$, \added{2}{we have that} $\sigma^m$ fixes $\beta_1,\dotsc,\beta_i$, so $\sigma^m \in G^i$, from which it follows that $\langle \sigma^m \rangle \subseteq G^i$.
 
     Now suppose $\sigma^j \in G^i$, i.e. $\sigma^j$ fixes $\beta_1,\dotsc,\beta_i$. Then $m_1,\dotsc,m_i \mid j$ from above, so $m = \lcm(m_1,\dotsc,m_i) \mid j$, say $j = km$ with $k \in \Z$. Then $\sigma^j = \sigma^{km} = (\sigma^m)^k \in \langle \sigma^m \rangle$, so $G^i \subseteq \langle \sigma^m \rangle$.
 \end{proof}
 
-Recall that the \textit{prime number theorem} gives that $p_n \sim n\log n$ for large $n$, where $p_n$ is the $n$th prime number; we use this in the following. \added{3}{We aim to show that MB is NP-complete even for $G$ a cyclic group.}
+Recall that the \textit{prime number theorem} gives that $p_n \sim n\log n$ for large $n$, where $p_n$ is the $n$th prime number; we use this in the following. We aim to show that MB is NP-complete even for $G$ a cyclic group, \added{4}{by providing a construction from \cite{blaha1992} in the following. Then, we discuss the condition for the construction to yield a base for $G$, and by relating it to an NP-complete problem, conclude that the MB problem is NP-complete in this framework, following the proof in \cite{blaha1992}.}
 
 Let $(Y,M)$ be an instance of X3C as described in \autoref{eg:X3C}, with $|Y| = 3q$ and $|M| = k$; suppose without loss of generality that the 3-sets in $M$ cover $Y$ (or else we clearly get a ``no'' for X3C). Let $P = \{p_1,p_2,\dotsc,p_{3q}\}$ denote the first $3q$ primes, and let $f : Y \to P$ be a bijection. Then for each 3-set $m = \{x,y,z\} \in M$, define $s_m = f(x)f(y)f(z) \in \N$; the $\{s_m\}_{m \in M}$ are all distinct.
 
-Now set $n = \sum_{m \in M} s_m \in \N$, and construct $\sigma \in \Sym(n)$ whose cycle decomposition comprises an $s_m$-cycle $C_m$ for each $m \in M$ ($k$ disjoint cycles in total, all different lengths). Consider an instance of MB with $G = \langle \sigma \rangle \leq \Sym(n)$ and $N = q$. (Note that indeed $N \leq n$: the \added{3}{$m \in M$} cover $Y$, so there is $x \in m = \{x,y,z\} \in M$ with $f(x) = p_{3q} \geq 3q$. Then $s_m = f(x)f(y)f(z) \geq 3q$, so $n = \sum_{m \in M} s_m \geq 3q \geq q$.) This is a Karp reduction, since by the prime number theorem, $p_{3q} \sim 3q\log 3q \sim 3q\log q$, and so $s_m = O(p_{3q}^3) = O((q\log q)^3)$ for $m \in M$ and thus $n = O(k(q\log q)^3)$ (as $|M| = k$); this is certainly polynomial time in $q,k$ \added{3}{(since $q\log q = O(q^2)$)}.
+Now set $n = \sum_{m \in M} s_m \in \N$, and construct $\sigma \in \Sym(n)$ whose cycle decomposition comprises an $s_m$-cycle $C_m$ for each $m \in M$ ($k$ disjoint cycles in total, all different lengths). Consider an instance of MB with $G = \langle \sigma \rangle \leq \Sym(n)$ and $N = q$. (Note that indeed $N \leq n$: the \added{4}{elements of $M$} cover $Y$, so there is $x \in m = \{x,y,z\} \in M$ with $f(x) = p_{3q} \geq 3q$. Then $s_m = f(x)f(y)f(z) \geq 3q$, so $n = \sum_{m \in M} s_m \geq 3q \geq q$.) This is a Karp reduction, since by the prime number theorem, $p_{3q} \sim 3q\log 3q \sim 3q\log q$, and so $s_m = O(p_{3q}^3) = O((q\log q)^3)$ for $m \in M$ and thus $n = O(k(q\log q)^3)$ (as $|M| = k$); this is certainly polynomial time in $q,k$ \added{3}{(since $q\log q = O(q^2)$)}.
 
 Now for $r \leq q$, let $B = [\beta_1,\dotsc,\beta_r] \subseteq \{1,\dotsc,n\}$ be such that each $\beta_i$ is a point in the $s_{m_i}$-cycle $C_{m_i}$ of $\sigma$, and define the stabiliser chain $G = G^0 \geq G^1 \geq \dotsb \geq G^r$ as usual (if $B$ is not a base for $G$, then $G^r \neq 1$). Recall that the order of $\sigma$ is $\lcm\{s_m\}_{m \in M} = p_1 p_2 \dotsb p_{3q} = |G|$ since the $\{s_m\}_{m \in M}$ contain all primes in $P$ (as $M$ covers $Y$) and $G = \langle \sigma \rangle$ is cyclic. First note that $B$ is a base for $G$ if and only if $G^r = 1$. Let $s = \lcm(s_{m_1},\dotsc,s_{m_r})$, where we note that $s_{m_i} = |\beta_i^G|$ are the orbit sizes as $G = \langle \sigma \rangle$ is cyclic. \added{3}{We need a lemma:}
 

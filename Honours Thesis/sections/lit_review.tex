@@ -1,16 +1,20 @@
 \section{Non-large base primitive permutation groups}
 
-Suppose we have a primitive permutation group $G$ of degree $n$. What can we say about $|G|$? (This problem attracted a lot of attention in the 19th century, as noted in \cite{moscatiello_roney-dougal2021}.) Of course, $|G| \leq n!$, and in the case that $G = \Sym(n)$ which is primitive, we have equality. In the case that $G = \Alt(n)$ which is also primitive, we have $|G| = n!/2 = O(n!)$, which suggests that even in nontrivial cases, the bound cannot be significantly improved on.
+Suppose we have a finite primitive permutation group $G$ of degree $n$. What can we say about $|G|$? (This problem attracted a lot of attention in the 19th century, as noted in \cite{moscatiello_roney-dougal2021}.) Of course, $|G| \leq n!$, and in the case that $G = \Sym(n)$ which is primitive, we have equality. In the case that $G = \Alt(n)$ which is also primitive, we have $|G| = n!/2 = O(n!)$, which suggests that even in nontrivial cases, the bound cannot be significantly improved on.
 
-From \autoref{lem:blaha_nonredundant_size}, we have that $|G| \leq n^{b(G)}$. Thus, we may find upper bounds on $|G|$ by finding upper bounds on $b(G)$. One of the first results in this direction came in 1889, when Bochert proved in \cite{bochert1889} that for a primitive group $G$ of degree $n$ not containing the alternating group $\Alt(n)$, then $b(G) \leq n/2$. Compare this to \autoref{eg:alternating_group_base}, where we showed that $b(\Alt(n)) = n-2$, so the condition of not containing the alternating group immediately leads the upper bound on $b(G)$ improving by a factor of 2. Of course, since $\Alt(n)$ has index 2 in $\Sym(n)$, it is maximal, and thus every finite primitive group $G$ of degree $n$, apart from $\Alt(n)$ and $\Sym(n)$, has $b(G) \leq n/2$.
+From \autoref{lem:blaha_nonredundant_size}, we have that $|G| \leq n^{b(G)}$. Thus, we may find upper bounds on $|G|$ by finding upper bounds on $b(G)$. One of the first results in this direction came in 1889, when Bochert proved in \cite{bochert1889} that for a primitive group $G$ of degree $n$ not containing the alternating group $\Alt(n)$, then $b(G) \leq n/2$. Compare this to \autoref{eg:alternating_group_base}, where we showed that $b(\Alt(n)) = n-2$, so the condition of not containing the alternating group immediately leads the upper bound on $b(G)$ improving by a factor of 2. Of course, since $\Alt(n)$ has index 2 in $\Sym(n)$, it is maximal, and thus every primitive group $G$ of degree $n$, apart from $\Alt(n)$ and $\Sym(n)$, has $b(G) \leq n/2$.
+
+Improvements to these bounds have been made for primitive groups with certain additional properties. In 1984, Liebeck used the \hyperref[thm:cfsg]{classification of finite simple groups} to improve the bound on $b(G)$ for \textit{non-large base} permutation groups.
 
 \begin{definition}\label{def:large_base}
-    $G$ is \textbf{large base}, i.e. there are integers $m$ and $r \geq 1$ with $\Alt(m)^r \unlhd G \leq \Sym(m) \wr \Sym(r)$, where $\Sym(m)$ acts on $k$-element subsets of $\{1,\dotsc,m\}$ and the wreath product has the product action of degree $n = \binom{m}{k}^r$
-
-    Large base TODO
+    A permutation group $G$ of degree $n$ is \textbf{large base} if there are integers $m$ and $r \geq 1$ with
+    $$\Alt(m)^r \unlhd G \leq \Sym(m) \wr \Sym(r),$$
+    where $\Sym(m)$ \hyperref[eg:product_action_Sm_subsets]{acts on $k$-element subsets} of $\{1,\dotsc,m\}$ for some $k$, and the \hyperref[def:wreath_product]{wreath product} has the \hyperref[def:product_action]{product action} of degree $n = \binom{m}{k}^r$ if $r > 1$.
 
     Includes natural actions of $\Alt(n)$ and $\Sym(n)$
 \end{definition}
+
+In 1984, Liebeck proved in \cite{liebeck1984} that if $G$ is a primitive group of degree $n$ that is not ``large base'' (in the sense of containg a power of an alternating group as a subgroup), then $b(G) \leq 9\log n$. The result was proven in context improving lower bounds on $\mu(G)$, the minimal degree of $G$, which is the smallest number of points moved by any non-identity element in $G$. This proof utilised the O'Nan-Scott theorem, which classifies primitive groups according to the structures of their \textit{socles}, and also the classification of finite simple groups (which was recently completed at the time), and was able to achieve a much tighter lower bound of $\mu(G) > n/(9 \log n)$ than the best result that was previously available, which was $\mu(G) > (1/2)(\sqrt{n} - 1)$ and due to Babai in \cite{babai1981}.
 
 \begin{definition}\label{def:solvable_group}
     Solvable group TODO
@@ -23,8 +27,6 @@ From \autoref{lem:blaha_nonredundant_size}, we have that $|G| \leq n^{b(G)}$. Th
 \begin{definition}\label{def:mathieu_group}
     Mathieu group TODO
 \end{definition}
-
-In 1984, Liebeck proved in \cite{liebeck1984} that if $G$ is a primitive group of degree $n$ that is not ``large base'' (in the sense of containg a power of an alternating group as a subgroup), then $b(G) \leq 9\log n$. The result was proven in context improving lower bounds on $\mu(G)$, the minimal degree of $G$, which is the smallest number of points moved by any non-identity element in $G$. This proof utilised the O'Nan-Scott theorem, which classifies primitive groups according to the structures of their \textit{socles}, and also the classification of finite simple groups (which was recently completed at the time), and was able to achieve a much tighter lower bound of $\mu(G) > n/(9 \log n)$ than the best result that was previously available, which was $\mu(G) > (1/2)(\sqrt{n} - 1)$ and due to Babai in \cite{babai1981}.
 
 In 2021, building on more recent results, Moscatiello and Roney-Dougal proved in \cite{moscatiello_roney-dougal2021} that if $G$ is a primitive group of degree $n$ that is not large base, then either $G$ is the Mathieu group $M_{24}$, or $b(G) \leq \lceil\log n\rceil + 1$; moreover, there are infinitely many groups for which $b(G) > \log n + 1$. The Mathieu group $M_{24}$ is a member of the first family of sporadic simple groups discovered as part of the classification of finite simple groups, which are 26 finite simple groups that do not fit into the three infinite families (cyclic, alternating, Lie type).
 
