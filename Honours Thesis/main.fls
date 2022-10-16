@@ -65,6 +65,17 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geomet
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.cfg
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.cfg
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fncychap\fncychap.sty
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fncychap\fncychap.sty
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fncychap\fncychap.sty
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fncychap\fncychap.sty
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fncychap\fncychap.sty
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fncychap\fncychap.sty
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fncychap\fncychap.sty
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fncychap\fncychap.sty
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fncychap\fncychap.sty
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fncychap\fncychap.sty
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fncychap\fncychap.sty
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty
@@ -1835,7 +1846,6 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmb7t.vf
 OUTPUT main.toc
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr7t.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb7t.tfm
 INPUT .\sections\introduction.tex
 INPUT sections\introduction.tex
 INPUT .\sections\introduction.tex
@@ -1846,8 +1856,8 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\inconsolata\ot1
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\inconsolata\ot1zi4.fd
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\inconsolata\ot1zi4.fd
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\inconsolata\ot1-zi4r-0.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmb7t.vf
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb8r.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmr7t.vf
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmb7t.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\zptmcm7t.vf

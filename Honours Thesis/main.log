@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.22)  16 OCT 2022 21:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.22)  17 OCT 2022 00:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -45,7 +45,16 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@layouthoffset=\dimen145
 \Gm@layoutvoffset=\dimen146
 \Gm@dimlist=\toks17
- (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.cfg)) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xcolor\xcolor.sty
+ (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.cfg)) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fncychap\fncychap.sty
+Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
+\RW=\skip49
+\mylen=\skip50
+\myhi=\skip51
+\px=\skip52
+\py=\skip53
+\pyy=\skip54
+\pxx=\skip55
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
@@ -61,12 +70,12 @@ Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
 \ar@mcellbox=\box50
 \extrarowheight=\dimen148
 \NC@list=\toks18
-\extratabsurround=\skip49
-\backup@length=\skip50
+\extratabsurround=\skip56
+\backup@length=\skip57
 \ar@cellbox=\box51
 )
 \everycr=\toks19
-\minrowclearance=\skip51
+\minrowclearance=\skip58
 )
 \rownum=\count197
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
@@ -118,7 +127,7 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/contour\contour.sty
 Package: contour 2004/11/18 v2.14 Print contoured text (HH, MH)
-\con@length=\skip52
+\con@length=\skip59
 
 Loading configuration file `contour.cfg'.
 (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/contour\contour.cfg
@@ -147,34 +156,34 @@ LaTeX Info: Redefining \textmicrotypecontext on input line 1781.
 File: microtype-pdftex.def 2022/03/14 v3.0d Definitions specific to pdftex (RS)
 LaTeX Info: Redefining \lsstyle on input line 900.
 LaTeX Info: Redefining \lslig on input line 900.
-\MT@outer@space=\skip53
+\MT@outer@space=\skip60
 )
 Package microtype Info: Loading configuration file microtype.cfg.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\microtype.cfg
 File: microtype.cfg 2022/03/14 v3.0d microtype main configuration file (RS)
 )) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ragged2e\ragged2e.sty
 Package: ragged2e 2021/12/15 v3.1 ragged2e Package
-\CenteringLeftskip=\skip54
-\RaggedLeftLeftskip=\skip55
-\RaggedRightLeftskip=\skip56
-\CenteringRightskip=\skip57
-\RaggedLeftRightskip=\skip58
-\RaggedRightRightskip=\skip59
-\CenteringParfillskip=\skip60
-\RaggedLeftParfillskip=\skip61
-\RaggedRightParfillskip=\skip62
-\JustifyingParfillskip=\skip63
-\CenteringParindent=\skip64
-\RaggedLeftParindent=\skip65
-\RaggedRightParindent=\skip66
-\JustifyingParindent=\skip67
+\CenteringLeftskip=\skip61
+\RaggedLeftLeftskip=\skip62
+\RaggedRightLeftskip=\skip63
+\CenteringRightskip=\skip64
+\RaggedLeftRightskip=\skip65
+\RaggedRightRightskip=\skip66
+\CenteringParfillskip=\skip67
+\RaggedLeftParfillskip=\skip68
+\RaggedRightParfillskip=\skip69
+\JustifyingParfillskip=\skip70
+\CenteringParindent=\skip71
+\RaggedLeftParindent=\skip72
+\RaggedRightParindent=\skip73
+\JustifyingParindent=\skip74
 ) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/setspace\setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 ) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/seqsplit\seqsplit.sty
 Package: seqsplit 2006/08/07 v0.1 Splitting long sequences (DNA, RNA, proteins, etc.) 
 ) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip68
+\labelindent=\skip75
 \enit@outerparindent=\dimen151
 \enit@toks=\toks21
 \enit@inbox=\box53
@@ -186,15 +195,15 @@ Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@posthook=\toks23
 ) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and footers
-\f@nch@headwidth=\skip69
-\f@nch@O@elh=\skip70
-\f@nch@O@erh=\skip71
-\f@nch@O@olh=\skip72
-\f@nch@O@orh=\skip73
-\f@nch@O@elf=\skip74
-\f@nch@O@erf=\skip75
-\f@nch@O@olf=\skip76
-\f@nch@O@orf=\skip77
+\f@nch@headwidth=\skip76
+\f@nch@O@elh=\skip77
+\f@nch@O@erh=\skip78
+\f@nch@O@olh=\skip79
+\f@nch@O@orh=\skip80
+\f@nch@O@elf=\skip81
+\f@nch@O@erf=\skip82
+\f@nch@O@olf=\skip83
+\f@nch@O@orf=\skip84
 ) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\centernot.sty
 Package: centernot 2016/05/16 v1.4 Centers the not symbol horizontally (HO)
 ) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tcolorbox\tcolorbox.sty
@@ -379,8 +388,8 @@ Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
 \page@free=\dimen195
 \premulticols=\dimen196
 \postmulticols=\dimen197
-\multicolsep=\skip78
-\multicolbaselineskip=\skip79
+\multicolsep=\skip85
+\multicolbaselineskip=\skip86
 \partial@page=\box70
 \last@line=\box71
 \maxbalancingoverflow=\dimen198
@@ -440,7 +449,7 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@cmds=\toks39
 \SOUL@buffer=\toks40
 \SOUL@token=\toks41
-\SOUL@spaceskip=\skip80
+\SOUL@spaceskip=\skip87
 \SOUL@ttwidth=\dimen258
 \SOUL@uldp=\dimen259
 \SOUL@ulht=\dimen260
@@ -462,17 +471,17 @@ Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Bcount=\count297
 \calc@Adimen=\dimen261
 \calc@Bdimen=\dimen262
-\calc@Askip=\skip81
-\calc@Bskip=\skip82
+\calc@Askip=\skip88
+\calc@Bskip=\skip89
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count298
-\calc@Cskip=\skip83
+\calc@Cskip=\skip90
 ) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/mathtools\mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 ) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2021/10/15 v2.17l AMS math features
-\@mathmargin=\skip84
+\@mathmargin=\skip91
 
 For additional information on amsmath, use the `?' option.
 (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.sty
@@ -519,15 +528,15 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \totwidth@=\dimen270
 \lineht@=\dimen271
 \@envbody=\toks46
-\multlinegap=\skip85
-\multlinetaggap=\skip86
+\multlinegap=\skip92
+\multlinetaggap=\skip93
 \mathdisplay@stack=\toks47
 LaTeX Info: Redefining \[ on input line 2938.
 LaTeX Info: Redefining \] on input line 2939.
 )
 \g_MT_multlinerow_int=\count311
 \l_MT_multwidth_dim=\dimen272
-\origjot=\skip87
+\origjot=\skip94
 \l_MT_shortvdotswithinadjustabove_dim=\dimen273
 \l_MT_shortvdotswithinadjustbelow_dim=\dimen274
 \l_MT_above_intertext_sep=\dimen275
@@ -546,12 +555,12 @@ Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
 \theorem@@style=\toks49
 \theorembodyfont=\toks50
 \theoremnumbering=\toks51
-\theorempreskipamount=\skip88
-\theorempostskipamount=\skip89
-\theoremframepreskipamount=\skip90
-\theoremframepostskipamount=\skip91
-\theoreminframepreskipamount=\skip92
-\theoreminframepostskipamount=\skip93
+\theorempreskipamount=\skip95
+\theorempostskipamount=\skip96
+\theoremframepreskipamount=\skip97
+\theoremframepostskipamount=\skip98
+\theoreminframepreskipamount=\skip99
+\theoreminframepostskipamount=\skip100
 \theorem@preskip=\toks52
 \theorem@postskip=\toks53
 \theorem@framepreskip=\toks54
@@ -570,12 +579,12 @@ Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
 \qedsymbol=\toks63
 \theoremkeyword=\toks64
 \qedsymbol=\toks65
-\thm@topsep=\skip94
-\thm@topsepadd=\skip95
+\thm@topsep=\skip101
+\thm@topsepadd=\skip102
 Package ntheorem Info: Option `thmmarks' loaded on input line 1175.
 \c@endNonectr=\count312
 \c@currNonectr=\count313
-\mysavskip=\skip96
+\mysavskip=\skip103
 Package ntheorem Info: option `amsmath' handling for `thmmarks' loaded on input line 1175.
 \thm@amstmpdepth=\dimen284
 \tagwidth=\dimen285
@@ -646,7 +655,7 @@ Package: xtemplate 2022-01-12 L3 Experimental prototype document functions
 \l__xtemplate_tmp_dim=\dimen296
 \l__xtemplate_tmp_int=\count323
 \l__xtemplate_tmp_muskip=\muskip17
-\l__xtemplate_tmp_skip=\skip97
+\l__xtemplate_tmp_skip=\skip104
 )
 Package: xfrac 2022-01-12 L3 Experimental split-level fractions
 \l__xfrac_slash_box=\box120
@@ -1178,7 +1187,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
 )
-\Hy@SectionHShift=\skip98
+\Hy@SectionHShift=\skip105
 ) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/bookmark\bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
 \BKM@id=\count345
@@ -1222,10 +1231,10 @@ File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
 \diagbox@outsepr=\dimen326
 ) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\longtable.sty
 Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
-\LTleft=\skip99
-\LTright=\skip100
-\LTpre=\skip101
-\LTpost=\skip102
+\LTleft=\skip106
+\LTright=\skip107
+\LTpre=\skip108
+\LTpost=\skip109
 \LTchunksize=\count347
 \LTcapwidth=\dimen327
 \LT@head=\box126
@@ -1268,12 +1277,12 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \tabu@arstrutbox=\box133
 \tabu@hleads=\box134
 \tabu@vleads=\box135
-\tabu@cellskip=\skip103
+\tabu@cellskip=\skip110
 )) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/multirow\multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
-\multirow@colwidth=\skip104
+\multirow@colwidth=\skip111
 \multirow@cntb=\count359
-\multirow@dima=\skip105
+\multirow@dima=\skip112
 \bigstrutjot=\dimen339
 ) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\mathptmx.sty
 Package: mathptmx 2020/03/25 PSNFSS-v9.3 Times w/ Math, improved (SPQR, WaS) 
@@ -1331,13 +1340,13 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \c@ALG@line=\count362
 \c@ALG@rem=\count363
 \c@ALG@nested=\count364
-\ALG@tlm=\skip106
-\ALG@thistlm=\skip107
+\ALG@tlm=\skip113
+\ALG@thistlm=\skip114
 \c@ALG@Lnr=\count365
 \c@ALG@blocknr=\count366
 \c@ALG@storecount=\count367
 \c@ALG@tmpcounter=\count368
-\ALG@tmplength=\skip108
+\ALG@tmplength=\skip115
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
 ) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.sty
@@ -1441,13 +1450,13 @@ Package tocbibind Note: Using chapter style headings, unless overridden.
 
 ) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/scalerel\scalerel.sty
 Package: scalerel 2016/12/29 v1.8 Routines for constrained scaling and stretching of objects, relative to a reference object or in absolute terms
-\thesrwidth=\skip109
-\thesrheight=\skip110
-\srblobheight=\skip111
-\srblobdepth=\skip112
-\mnxsrwidth=\skip113
-\LMex=\skip114
-\LMpt=\skip115
+\thesrwidth=\skip116
+\thesrheight=\skip117
+\srblobheight=\skip118
+\srblobdepth=\skip119
+\mnxsrwidth=\skip120
+\LMex=\skip121
+\LMpt=\skip122
 ) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/accsupp\accsupp.sty
 Package: accsupp 2019/12/05 v0.6 Accessibility support by marked content (HO)
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/accsupp\accsupp-pdftex.def
@@ -1490,36 +1499,36 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'australian'.
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 54.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 57.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 54.
-LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 54.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 57.
+LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 57.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cbfonts-fd\lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1574,29 +1583,29 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \microtypecontext on input line 54.
-Package microtype Info: Applying patch `item' on input line 54.
-Package microtype Info: Applying patch `toc' on input line 54.
+LaTeX Info: Redefining \microtypecontext on input line 57.
+Package microtype Info: Applying patch `item' on input line 57.
+Package microtype Info: Applying patch `toc' on input line 57.
 Package microtype Info: The `eqnum' patch may not be effective because you are
 (microtype)             using the mathtools package. Make sure to insert
 (microtype)             `\leftprotrusion' and `\rightprotrusion' as
 (microtype)             appropriate in mathtools's `\newtagform' command.
-Package microtype Info: Applying patch `eqnum' on input line 54.
-Package microtype Info: Applying patch `footnote' on input line 54.
+Package microtype Info: Applying patch `eqnum' on input line 57.
+Package microtype Info: Applying patch `footnote' on input line 57.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 54.
+LaTeX Info: Redefining \showhyphens on input line 57.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
-Package hyperref Info: Link coloring ON on input line 54.
+Package hyperref Info: Link coloring ON on input line 57.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/refcount\refcount.sty
@@ -1606,9 +1615,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count424
 )
-LaTeX Info: Redefining \ref on input line 54.
-LaTeX Info: Redefining \pageref on input line 54.
-LaTeX Info: Redefining \nameref on input line 54.
+LaTeX Info: Redefining \ref on input line 57.
+LaTeX Info: Redefining \pageref on input line 57.
+LaTeX Info: Redefining \nameref on input line 57.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/upquote\upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
 )
@@ -1731,45 +1740,48 @@ Chapter 3.
 (sections/complexity_concepts.tex [22
 
 ] [23] [24]
-Package hyperref Info: bookmark level for unknown conjecture defaults to 0 on input line 110.
-) [25]
+Package hyperref Info: bookmark level for unknown conjecture defaults to 0 on input line 111.
+ [25]) [26]
 Chapter 4.
 (sections/blaha.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [26
+ [27
 
-] [27] [28] [29] [30] [31]) [32]
+] [28] [29] [30] [31] [32]) [33]
 Chapter 5.
-(sections/perm_group_theory.tex [33
+(sections/perm_group_theory.tex [34
 
-] [34] [35] [36] [37]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+] [35] [36] [37] [38]
+Underfull \vbox (badness 1975) has occurred while \output is active []
 
- [38] [39]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ [39] [40]
+Underfull \vbox (badness 3503) has occurred while \output is active []
 
- [40] [41] [42] [43] [44]) [45]
+ [41] [42] [43] [44] [45]) [46]
 Chapter 6.
-(sections/lit_review.tex [46
+(sections/lit_review.tex
+Underfull \vbox (badness 4726) has occurred while \output is active []
 
-] [47]) (main.bbl [48] [49
+ [47
 
-]) (sections/appendix.tex [50]
+] [48]) (main.bbl [49] [50
+
+]) (sections/appendix.tex [51]
 Appendix A.
-(gap_code/random_elt.gap) (gap_code/membership.gap [51
+(gap_code/random_elt.gap) (gap_code/membership.gap [52
 
-]) (gap_code/random_elt_print.gap) (gap_code/membership_print.gap [52]) (gap_code/d8_wreath_product.gap [53]) (txt_files/d8_wreath_product_gap_output.gap) (txt_files/automorphism_group_graph_bsgs_gap_appendix.gap [54]
+]) (gap_code/random_elt_print.gap) (gap_code/membership_print.gap [53]) (gap_code/d8_wreath_product.gap [54]) (txt_files/d8_wreath_product_gap_output.gap) (txt_files/automorphism_group_graph_bsgs_gap_appendix.gap [55]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [55]) [56]
+ [56]) [57]
 Appendix B.
-(gap_code/greedy_base.gap) [57
+(gap_code/greedy_base.gap) [58
 
 ] (gap_code/subgrps_base_len.gap
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1242) has occurred while \output is active []
 
- [58]
+ [59]
 LaTeX Font Info:    Trying to load font information for TS1+zi4 on input line 58.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/inconsolata\ts1zi4.fd
 File: ts1zi4.fd 2018/01/14 TS1/zi4 (Inconsolata)
@@ -1780,27 +1792,27 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `zi4' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-) (txt_files/agl_base_gap_output/1.gap [59]) (txt_files/agl_base_gap_output/2.gap) (txt_files/agl_base_gap_output/3.gap) (txt_files/agl_base_gap_output/4.gap) (txt_files/agl_base_gap_output/5.gap [60]) (txt_files/agl_base_gap_output/6.gap) (txt_files/agl_base_gap_output/7.gap) (txt_files/agl_base_gap_output/8.gap [61]) (txt_files/agl_base_gap_output/9.gap) (txt_files/agl_base_gap_output/10.gap))
+) (txt_files/agl_base_gap_output/1.gap [60]) (txt_files/agl_base_gap_output/2.gap) (txt_files/agl_base_gap_output/3.gap) (txt_files/agl_base_gap_output/4.gap) [61] (txt_files/agl_base_gap_output/5.gap) (txt_files/agl_base_gap_output/6.gap) (txt_files/agl_base_gap_output/7.gap) (txt_files/agl_base_gap_output/8.gap [62]) (txt_files/agl_base_gap_output/9.gap) (txt_files/agl_base_gap_output/10.gap))
 \tf@thm=\write5
 \openout5 = `main.thm'.
 
- [62] (main.aux)
+ [63] (main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 41023 strings out of 478582
- 785506 string characters out of 2842422
- 1652595 words of memory out of 3000000
- 56824 multiletter control sequences out of 15000+600000
- 532637 words of font info for 370 fonts, out of 8000000 for 9000
+ 41105 strings out of 478582
+ 786675 string characters out of 2842422
+ 1645279 words of memory out of 3000000
+ 56908 multiletter control sequences out of 15000+600000
+ 532074 words of font info for 367 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  101i,18n,105p,1790b,2025s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-ts1.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-ot1-0.enc}<C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/rsfs/rsfs10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (66 pages, 736992 bytes).
+Output written on main.pdf (67 pages, 740662 bytes).
 PDF statistics:
- 2054 PDF objects out of 2073 (max. 8388607)
- 1073 named destinations out of 1200 (max. 500000)
- 86917 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 2063 PDF objects out of 2073 (max. 8388607)
+ 1072 named destinations out of 1200 (max. 500000)
+ 84869 words of extra memory for PDF output out of 89155 (max. 10000000)
 

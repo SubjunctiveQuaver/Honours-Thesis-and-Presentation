@@ -1,4 +1,4 @@
-\added{3}{The following section is largely adapted from \cite{holt_handbook_cgt2005}.}
+\added{3}{The following section is largely adapted from \cite{holt_handbook_cgt2005}, \added{4}{with original examples and illustrations}.}
 
 We often think of $D_{2n}$, the dihedral group of order $2n$, as the \added{2}{symmetry} group of a regular $n$-gon. But abstractly, \mbox{$D_{2n} = \langle r,s \mid r^n,s^2,srsr \rangle$} is defined by a presentation, a set of generators and relations. The precise way in which elements of $D_{2n}$ ``are'' symmetries is given by an \textit{action} of $D_{2n}$ on say the \added{1}{vertex set} $\Omega$ of a regular $n$-gon; each element of $D_{2n}$ permutes $\Omega$, and the product in $D_{2n}$ mirrors compositions of corresponding permutations. The following definition formalises this idea and extends it to other groups.
 
@@ -247,9 +247,9 @@ Recall the condition for equality of right cosets: for $H \leq G$, $Hg = Hk$ if 
 
     \lstinputlisting{txt_files/klein_4_transitivity.gap}
 
-    However, if we impose that $G \leq \Sym(\Omega)$ and $H \leq \Sym(\tilde\Omega)$ are permutation isomorphic via $\tau : \Omega \to \tilde\Omega$ and $\psi : G \to H$, then transitivity is preserved. This is because if $G$ is transitive, then for arbitrary $\tilde\alpha,\tilde\beta \in \tilde\Omega$ with $\tilde\alpha = \tau(\alpha)$ and $\tilde\beta = \tau(\beta)$ for some $\alpha,\beta \in \Omega$, there is $g \in G$ such that
+    However, if we impose that $G \leq \Sym(\Omega)$ and $H \leq \Sym(\tilde\Omega)$ are \textit{permutation isomorphic} via $\tau : \Omega \to \tilde\Omega$ and $\psi : G \to H$, then transitivity is preserved. This is because if $G$ is transitive, then for arbitrary $\tilde\alpha,\tilde\beta \in \tilde\Omega$ with $\tilde\alpha = \tau(\alpha)$ and $\tilde\beta = \tau(\beta)$ for some $\alpha,\beta \in \Omega$, there is $g \in G$ such that
     $$\tilde\beta = \tau(\beta) = \tau(\alpha^g) = \tau(\alpha)^{\psi(g)} = \tilde\alpha^{\psi(g)},$$
-    so $H$ is transitive. The converse direction follows since $\tau^{-1}$ and $\psi^{-1}$ give a permutation isomorphism from $H$ to $G$. From this, we conclude that the isomorphic groups $G,H \leq \Sym(4)$ as defined above are \textit{not} permutation isomorphic.}
+    so $H$ is transitive. The converse direction follows since $\tau^{-1}$ and $\psi^{-1}$ give a permutation isomorphism from $H$ to $G$. From this, we conclude that the isomorphic groups $G,H \leq \Sym(4)$ as defined above are \textit{not} permutation isomorphic; moreover, it suggests that for permutation groups, the stronger form of permutation isomorphism is needed to ensure that various properties are preserved.}
 
 %% TODO: Result on conjugacy? Prop 2.23 in book
 

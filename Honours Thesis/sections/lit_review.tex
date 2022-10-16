@@ -1,4 +1,4 @@
-\section{Non-large base primitive permutation groups}
+\section{Results for non-large base primitive permutation groups}
 
 Suppose we have a finite primitive permutation group $G$ of degree $n$. What can we say about $|G|$? (This problem attracted a lot of attention in the 19th century, as noted in \cite{moscatiello_roney-dougal2021}.) Of course, $|G| \leq n!$, and in the case that $G = \Sym(n)$ which is primitive, we have equality. In the case that $G = \Alt(n)$ which is also primitive, we have $|G| = n!/2 = O(n!)$, which suggests that even in nontrivial cases, the bound cannot be significantly improved on.
 
@@ -16,17 +16,21 @@ Improvements to these bounds have been made for primitive groups with certain ad
 
 By this definition, $\Alt(n)$ and $\Sym(n)$ with their natural actions are large base, where we choose $m = n$ and $r = 1$; recall that $\Sym(n) \wr \Sym(1) \cong \Sym(n)$, and $\Alt(n) \unlhd \Sym(n)$. Thus, the non-large base primitive groups exclude $\Alt(n)$ and $\Sym(n)$, and there is no conflict with Bochert's result in \cite{bochert1889}. The following result by Liebeck is found in \cite{liebeck1984}.
 
-\begin{theorem}[Liebeck, 1984]
+\begin{theorem}[Liebeck, 1984]\label{thm:liebeck_1984}
     Let $G$ be a primitive group of degree $n$. Then one of the following holds:
     \begin{enumerate}[(i)]
-        \item $G$ is \textit{large base}; or
+        \item $G$ is \hyperref[def:large_base]{large base}; or
         \item $b(G) < 9\log n$.
     \end{enumerate}
 \end{theorem}
 
 The result was proven in context improving lower bounds on $\mu(G)$, the \textbf{minimal degree} of $G \leq \Sym(\Omega)$, which is the smallest number of points moved by any non-identity element in $G$, i.e.
 $$\mu(G) = \min_{g \in G \setminus \{1\}}|\{\alpha \in \Omega : \alpha^g \neq \alpha\}|.$$
-For example, $\mu(\Alt(n)) = 3$ for $n \geq 3$, since $\Alt(n)$ contains 3-cycles (which move 3 points) but no transpositions (which move 2 points). From the relation that $b(G)\mu(G) \geq n$ for any transitive group $G$ of degree $n$, Liebeck concludes that either $G$ is large base, or that $\mu(G) > n/(9 \log n)$. The best result that was previously available, due to Babai in \cite{babai1981}, was that $\mu(G) > (1/2)(\sqrt{n} - 1)$ as long as $\Alt(n) \not\leq G$; the result in Liebeck represented a major improvement in this bound.
+For example, $\mu(\Alt(n)) = 3$ for $n \geq 3$, since $\Alt(n)$ contains 3-cycles (which move 3 points) but no transpositions (which move 2 points). From the relation that $b(G)\mu(G) \geq n$ for any transitive group $G$ of degree $n$, Liebeck concludes that either $G$ is large base, or that $\mu(G) > n/(9 \log n)$. The best result that was previously available, due to Babai in \cite{babai1981}, was that $\mu(G) > (1/2)(\sqrt{n} - 1)$ as long as $\Alt(n) \not\leq G$ (which would give, by properties of \hyperref[def:big_O_notation]{big-O},
+$$b(G) < 2\sqrt{n}\left(1 - \frac{1}{\sqrt{n}}\right)^{-1} = 2\sqrt{n}\left(1 + O\left(\frac{1}{\sqrt{n}}\right)\right) = 2\sqrt{n} + O(1) = O(\sqrt{n}),$$
+i.e. a square-root bound on $b(G)$); the logarithmic bound on $b(G)$ in Liebeck represented a major improvement, and has been seen as a remarkable result \cite{moscatiello_roney-dougal2021}.
+
+Liebeck's proof of \autoref{thm:liebeck_1984} in \cite{liebeck1984} is approached in four steps. Firstly, a reduction to simple socle is performed: supposing the theorem is true for primitive groups $G$ with a nonabelian simple socle $\Soc(G) = T$, and considering cases in the O'Nan-Scott theorem to show that it suffices to assume $T$ is simple. The second step uses the classification of finite simple groups to analyse the structure of the simple socle $T$. The third step shows that non-large base groups satisfy (ii) in \autoref{thm:liebeck_1984}, and step four uses the previous steps to complete the proof.
 
 \begin{definition}\label{def:solvable_group}
     Solvable group TODO
@@ -48,11 +52,6 @@ Narrative: using classification of finite simple groups
 
 
 \begin{itemize}
-    \item Liebeck, 1984: Let $G$ be a primitive group of degree $n$ (i.e. $G$ is a permutation group on $\Omega$ with $|\Omega| = n$). Then one of the following holds:
-          \begin{enumerate}[(i)]
-              \item $G$ is \textbf{large base}, i.e. there are integers $m$ and $r \geq 1$ with $\Alt(m)^r \unlhd G \leq \Sym(m) \wr \Sym(r)$, where $\Sym(m)$ acts on $k$-element subsets of $\{1,\dotsc,m\}$ and the wreath product has the product action of degree $n = \binom{m}{k}^r$,
-              \item $b(G) < 9\log n$.
-          \end{enumerate}
     \item Moscatiello and Roney-Dougal, 2021 (Thm 1): Let $G$ be primitive permutation group of degree $n$. If $G$ is not large base, then either:
           \begin{enumerate}[(i)]
               \item $G$ is the Mathieu group $\mathrm{M}_{24}$ in its 5-transitive action of degree 24,
@@ -76,6 +75,6 @@ Narrative: using classification of finite simple groups
     \item Idea: recursively check maximal subgroups (why does this work?) -- check ones that are primitive (if imprimitive then all subgroups imprimitive)
     \item Use greedy base algorithm: seems to perform better than default GAP algorithm (give example?)
     \item Can also search for imprimitive groups, etc.
-    \item Potential improvements: more efficient checking, different algorithms to find bases (brute force vs "probably true") ($d = 9$ case took 5 mins, $d = 10$ case took 100 mins)
+    \item Potential improvements: more efficient checking, different algorithms to find bases (brute force vs "probably true") ($d = 9$ case took 5 mins, $d = 10$ case took 100 mins, $d = 11$ case took over 24 hours without returning result)
     \item Also it considers only a few maximal subgroups: if we can get a list, then can check through systematically?
 \end{itemize}
