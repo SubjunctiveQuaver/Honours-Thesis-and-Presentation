@@ -6,10 +6,10 @@
 
 % Settings to run at start of document 
 \AtBeginDocument{
-    \setlength{\doublerulesep}{0.5pt}
-    \setlength{\textfloatsep}{-1cm}
-    \setlength{\abovedisplayskip}{5pt}
-    \setlength{\belowdisplayskip}{5pt}}
+  \setlength{\doublerulesep}{0.5pt}
+  \setlength{\textfloatsep}{-1cm}
+  \setlength{\abovedisplayskip}{5pt}
+  \setlength{\belowdisplayskip}{5pt}}
 
 % Paragraph spacing settings
 \linespread{1.2}
@@ -54,6 +54,7 @@
 \declaretheorem[name=Algorithm, refname=Algorithm, sibling=definition]{algorithm}
 \declaretheorem[name=Conjecture, refname=Conjecture, sibling=definition]{conjecture}
 \declaretheorem[name=Example, refname=Example, sibling=definition, style=definition]{example}
+\declaretheorem[name=Question, refname=Question, sibling=definition]{question}
 
 
 % Package settings
@@ -85,23 +86,23 @@
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
 \lstdefinestyle{default}{
-    basewidth={.5em,0.5em},
-    basicstyle=\ttfamily,
-    breakatwhitespace=false,
-    breaklines=true,
-    captionpos=b,
-    xleftmargin=15pt,
-    framexleftmargin=2pt,
-    framexrightmargin=2pt,
-    keepspaces=true,
-    numbers=left,
-    numbersep=5pt,
-    tabsize=4,
-    columns=fullflexible,
-    backgroundcolor=\color{backcolour},
-    commentstyle=\itshape\color{codegreen},
-    keywordstyle=\color{magenta},
-    numberstyle=\footnotesize\itshape\color{black}\emptyaccsupp,
-    stringstyle=\color{codepurple}
+  basewidth={.5em,0.5em},
+  basicstyle=\ttfamily,
+  breakatwhitespace=false,
+  breaklines=true,
+  captionpos=b,
+  xleftmargin=15pt,
+  framexleftmargin=2pt,
+  framexrightmargin=2pt,
+  keepspaces=true,
+  numbers=left,
+  numbersep=5pt,
+  tabsize=4,
+  columns=fullflexible,
+  backgroundcolor=\color{backcolour},
+  commentstyle=\itshape\color{codegreen},
+  keywordstyle=\color{magenta},
+  numberstyle=\footnotesize\itshape\color{black}\emptyaccsupp,
+  stringstyle=\color{codepurple}
 }
 \lstset{style=default}

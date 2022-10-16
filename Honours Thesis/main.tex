@@ -22,6 +22,7 @@
 % \usetikzlibrary{bbox}
 % \renewcommand{\VertexSmallMinSize}{8pt}
 \usepackage{scalerel}
+\usepackage{doi}
 % \RequirePackage{fix-cm} % arbitrary font scaling
 \usepackage{accsupp}
 \newcommand{\emptyaccsupp}[1]{\BeginAccSupp{ActualText={}}#1\EndAccSupp{}}
@@ -97,9 +98,9 @@
 \input{sections/lit_review.tex}
 
 % References (include 1st 4)
-\nocite{*}
+% \nocite{*}
 \renewcommand{\bibname}{References}
-\bibliographystyle{plain} % BibTeX only
+\bibliographystyle{plainurl} % BibTeX only
 \bibliography{references} % BibTeX only
 % \printbibliography % BibLaTeX only
 % \cleardoublepage

@@ -1,6 +1,6 @@
 \section{Results for non-large base primitive permutation groups}
 
-Suppose we have a finite primitive permutation group $G$ of degree $n$. What can we say about $|G|$? (This problem attracted a lot of attention in the 19th century, as noted in \cite{moscatiello_roney-dougal2021}.) Of course, $|G| \leq n!$, and in the case that $G = \Sym(n)$ which is primitive, we have equality. In the case that $G = \Alt(n)$ which is also primitive, we have $|G| = n!/2 = O(n!)$, which suggests that even in nontrivial cases, the bound cannot be significantly improved on.
+Suppose we have a finite primitive permutation group $G$ of degree $n$. What can we say about $|G|$? (This problem attracted a lot of attention in the 19th century, as noted in \cite{moscatiello_roney-dougal2021}.) Of course, $|G| \leq n!$, and in the case that $G = \Sym(n)$ which is primitive, we have equality. In the case that $G = \Alt(n)$ which is also primitive, we have $|G| = n!/2 = O(n!)$, which suggests that even in nontrivial cases, the bound cannot be significantly improved on without further restrictions.
 
 From \autoref{lem:blaha_nonredundant_size}, we have that $|G| \leq n^{b(G)}$. Thus, we may find upper bounds on $|G|$ by finding upper bounds on $b(G)$. One of the first results in this direction came in 1889, when Bochert proved in \cite{bochert1889} that for a primitive group $G$ of degree $n$ not containing the alternating group $\Alt(n)$, then $b(G) \leq n/2$. Compare this to \autoref{eg:symmetric_group_base} and \autoref{eg:alternating_group_base}, where we showed that $b(\Sym(n)) = n-1$ and $b(\Alt(n)) = n-2$, so the condition of not containing the alternating group immediately leads the upper bound on $b(G)$ improving by a factor of 2. Of course, since $\Alt(n)$ has index 2 in $\Sym(n)$, it is maximal, and thus every primitive group $G$ of degree $n$, apart from $\Alt(n)$ and $\Sym(n)$, has $b(G) \leq n/2$.
 
@@ -16,7 +16,7 @@ Improvements to these bounds have been made for primitive groups with certain ad
 
 By this definition, $\Alt(n)$ and $\Sym(n)$ with their natural actions are large base, where we choose $m = n$ and $r = 1$; recall that $\Sym(n) \wr \Sym(1) \cong \Sym(n)$, and $\Alt(n) \unlhd \Sym(n)$. Thus, the non-large base primitive groups exclude $\Alt(n)$ and $\Sym(n)$, and there is no conflict with Bochert's result in \cite{bochert1889}. The following result by Liebeck is found in \cite{liebeck1984}.
 
-\begin{theorem}[Liebeck, 1984]\label{thm:liebeck_1984}
+\begin{theorem}[Liebeck, 1984]\label{thm:liebeck1984}
     Let $G$ be a primitive group of degree $n$. Then one of the following holds:
     \begin{enumerate}[(i)]
         \item $G$ is \hyperref[def:large_base]{large base}; or
@@ -30,50 +30,52 @@ For example, $\mu(\Alt(n)) = 3$ for $n \geq 3$, since $\Alt(n)$ contains 3-cycle
 $$b(G) < 2\sqrt{n}\left(1 - \frac{1}{\sqrt{n}}\right)^{-1} = 2\sqrt{n}\left(1 + O\left(\frac{1}{\sqrt{n}}\right)\right) = 2\sqrt{n} + O(1) = O(\sqrt{n}),$$
 i.e. a square-root bound on $b(G)$); the logarithmic bound on $b(G)$ in Liebeck represented a major improvement, and has been seen as a remarkable result \cite{moscatiello_roney-dougal2021}.
 
-Liebeck's proof of \autoref{thm:liebeck_1984} in \cite{liebeck1984} is approached in four steps. Firstly, a reduction to simple socle is performed: supposing the theorem is true for primitive groups $G$ with a nonabelian simple socle $\Soc(G) = T$, and considering cases in the O'Nan-Scott theorem to show that it suffices to assume $T$ is simple. The second step uses the classification of finite simple groups to analyse the structure of the simple socle $T$. The third step shows that non-large base groups satisfy (ii) in \autoref{thm:liebeck_1984}, and step four uses the previous steps to complete the proof.
+Liebeck's proof of \autoref{thm:liebeck1984} in \cite{liebeck1984} is approached in four steps. Firstly, a reduction to simple socle is performed: supposing the theorem is true for primitive groups with a nonabelian simple socle, then considering arbitrary primitive $G$ to prove part (i) of the theorem. Then, by considering cases in the O'Nan-Scott theorem, Liebeck shows that it suffices to assume $\Soc(G) = T$ is simple. The second step uses the \hyperref[thm:cfsg]{classification of finite simple groups} to analyse the structure of the nonabelian simple socle $T$, leading to the conclusion that $T$ is an alternating group, a group of Lie type, or a sporadic group, or that $|G| < n^9$. The third step shows that these non-large base groups from step two satisfy (ii) in \autoref{thm:liebeck1984}, and step four uses the previous steps to complete the proof.
 
-\begin{definition}\label{def:solvable_group}
-    Solvable group TODO
-\end{definition}
+In 2019, Halasi, Liebeck and Mar\'oti show in Theorem 1.1 of \cite{halasi2019} that the minimal base size of an arbitrary primitive group of degree $n$ satisfies $b(G) \leq 2(\log|G|/\log n) + 24$, with the multiplcative constant 2 being best possible, answering the well-known \textit{Pyber's conjecture} of the existence of a universal constant $c$ with $b(G) < c(\log|G|/\log n)$ for all primitive groups $G$, which was open until initially proven in 2018. In particular, \cite{halasi2019} shows that for most non-large base primitive groups $G$, the minimum base size satisfies $b(G) \leq 2\lfloor\log n\rfloor + 26$; in 2020, ``most'' was improved to \textit{``all''} \cite{moscatiello_roney-dougal2021}.
 
-\begin{definition}\label{def:symplectic_group}
-    Symplectic group (Sp) TODO
-\end{definition}
+In 2021, building on the previously mentioned results of Liebeck in \cite{liebeck1984} and Halasi, Liebeck and Mar\'oti in \cite{halasi2019}, Moscatiello and Roney-Dougal improve the bound on $b(G)$ to $\lceil\log n\rceil + 1$ for non-large base primitive groups, with one exception. The following is Theorem 1 in this paper \cite{moscatiello_roney-dougal2021}; it is the main result.
 
-\begin{definition}\label{def:mathieu_group}
-    Mathieu group TODO
-\end{definition}
+\begin{theorem}[Moscatiello and Roney-Dougal, 2021]\label{thm:moscatiello_roney-dougal2021_1}
+    Let $G$ be primitive group of degree $n$. If $G$ is non-\hyperref[def:large_base]{large base}, then either:
+    \begin{enumerate}[(i)]
+        \item $G$ is the Mathieu group $M_{24}$ in its 5-transitive action of degree 24; or
+        \item $b(G) \leq \lceil\log n\rceil + 1$.
+    \end{enumerate}
+    Moreover, there are infinitely many such groups for which $b(G) > \log n + 1$.
+\end{theorem}
 
-In 2021, building on more recent results, Moscatiello and Roney-Dougal proved in \cite{moscatiello_roney-dougal2021} that if $G$ is a primitive group of degree $n$ that is not large base, then either $G$ is the Mathieu group $M_{24}$, or $b(G) \leq \lceil\log n\rceil + 1$; moreover, there are infinitely many groups for which $b(G) > \log n + 1$. The Mathieu group $M_{24}$ is a member of the first family of sporadic simple groups discovered as part of the classification of finite simple groups, which are 26 finite simple groups that do not fit into the three infinite families (cyclic, alternating, Lie type).
+The \textbf{Mathieu groups} are five sporadic simple permutation groups $M_{11}$, $M_{12}$, $M_{22}$, $M_{23}$ and $M_{24}$ of degree 11, 12, 22, 23 and 24 respectively, with multiply transitive actions. They were introduced by Mathieu between 1861 and 1873, and were the first sporadic simple groups to be discovered.
+
+Next, we present Theorem 5 in \cite{moscatiello_roney-dougal2021}, which is a more detailed version of \autoref{thm:moscatiello_roney-dougal2021_1}.
+
+\begin{theorem}[Moscatiello and Roney-Dougal, 2021]\label{thm:moscatiello_roney-dougal2021_5}
+    Let $G$ be primitive subgroup of $\Sym(\Omega)$ with $|\Omega| = n$. Then $b(G) \geq \log n + 1$ if and only if $G$ is one of following:
+    \begin{enumerate}[(i)]
+        \item A subgroup of $\AGL_d(2)$ with $b(G) = d + 1 = \log n + 1$.
+        \item The \hyperref[def:symplectic_group]{symplectic group} $\Sp_d(2)$ (acting on cosets of $\GO^-_d(2)$) with $d \geq 4$; then $\log n + 1 < b(G) = \lceil\log n\rceil + 1$.
+        \item A Mathieu group $M_n$ in its natural permutation representation with $n \in \{12,23,24\}$. If $n = 12$ or $23$ then $b(G) = \lceil\log n\rceil + 1$, while if $n = 24$ then $b = 7 > \lceil\log n\rceil + 1$.
+    \end{enumerate}
+\end{theorem}
+
+The authors then conclude \cite{moscatiello_roney-dougal2021} with a question:
+
+\begin{question}[Moscatiello and Roney-Dougal, 2021]
+    Which primitive groups $G \leq \Sym(n)$ satisfy $b(G) = \log n + 1$?
+\end{question}
+
+They observe that we must have $G \leq \AGL_d(2)$ for some $d$, and if $d$ is even then groups such as the split extension $2^d : \Sp_d(2)$ have this property. Investigating this question forms the remainder of this \thesis{}.
+
+\section{Primitive subgroups of affine groups with given minimal base size}
 
 The authors of \cite{moscatiello_roney-dougal2021} then present a question, which asks to identify primitive groups $G$ of degree $n$ that satisfy $b(G) = \log n + 1$. They note that $G$ must be a subgroup of the affine group $\AGL_d(2)$ of affine transformations of $\F_2^d$ for some $d$, and that if $d$ is even then groups such as the split extension $2^d : \Sp(d,2)$ have this property. Upon investigation using a recursive approach for $d \leq 10$, we found that apart from the affine group $\AGL_d(2)$, there were no other primitive groups for odd $d$, and for even $d$, the only other example found was $2^d : \Sp(d,2)$. Consequently, we conjecture in this \thesis{} that these are the only groups satisfying this property. Limitations of this approach include memory and computational time, since the group found for $d = 10$ has order $25\,410\,822\,678\,459\,187\,200 \approx 2.5 \cdot 10^{19}$ and thus has many subgroups.
-
-Narrative: using classification of finite simple groups
-
-
-\begin{itemize}
-    \item Moscatiello and Roney-Dougal, 2021 (Thm 1): Let $G$ be primitive permutation group of degree $n$. If $G$ is not large base, then either:
-          \begin{enumerate}[(i)]
-              \item $G$ is the Mathieu group $\mathrm{M}_{24}$ in its 5-transitive action of degree 24,
-              \item $b(G) \leq \lceil\log n\rceil + 1$.
-          \end{enumerate}
-          Furthermore, there are infinitely many such groups for which $b(G) > \log n + 1$.
-    \item Moscatiello and Roney-Dougal, 2021 (Thm 5): Let $G$ be primitive subgroup of $\Sym(\Omega)$ with $|\Omega| = n$. Then $b(G) \geq \log n + 1$ iff $G$ is one of following:
-          \begin{enumerate}[(i)]
-              \item A subgroup of $\mathrm{AGL}_d(2)$ with $b(G) = d + 1 = \log n + 1$.
-              \item The group $\Sp_d(2)$ acting on cosets of $\mathrm{GO}^-_d(2)$ with $d \geq 4$ (then $\log n + 1 < b(G) = \lceil\log n\rceil + 1$).
-              \item A Mathieu group $\mathrm{M}_n$ in its natural permutation representation with $n \in \{12,23,24\}$. If $n = 12$ or $23$ then $b(G) = \lceil\log n\rceil + 1$, while if $n = 24$ then $b = 7 > \lceil\log n\rceil + 1$
-          \end{enumerate}
-    \item QUESTION from Moscatiello and Roney-Dougal, 2021: Which primitive groups $G \leq \Sym(n)$ satisfy $b(G) = \log n + 1$? (Note: $G \leq \mathrm{AGL}_d(2)$ for some $d$, and if $d$ is even then groups such as $2^d : \Sp_d(2)$ have this property.)
-\end{itemize}
-
-\section{Analysing primitive subgroups of affine groups}
 
 \begin{itemize}
     \item Include process to find that there are no proper subgroups $G < \AGL_d(2)$ with $b(G) = d + 1 = \log n + 1$ ($n = 2^d$) for $d = 1,2,3,5,7,9$, and for $d = 4,6,8,10$ we have found $2^d : \Sp_d(2)$ as candidates (unproven)
     \item Hypothesis: no proper subgroups for odd $d$, and only $2^d : \Sp_d(2)$ for even $d \geq 4$
     \item Idea: recursively check maximal subgroups (why does this work?) -- check ones that are primitive (if imprimitive then all subgroups imprimitive)
     \item Use greedy base algorithm: seems to perform better than default GAP algorithm (give example?)
+    \item Need to check for base size SMALLER than what we want, since it's upper bounded by the thing in question (refer to lemma on base sizes of subgroups)
     \item Can also search for imprimitive groups, etc.
     \item Potential improvements: more efficient checking, different algorithms to find bases (brute force vs "probably true") ($d = 9$ case took 5 mins, $d = 10$ case took 100 mins, $d = 11$ case took over 24 hours without returning result)
     \item Also it considers only a few maximal subgroups: if we can get a list, then can check through systematically?

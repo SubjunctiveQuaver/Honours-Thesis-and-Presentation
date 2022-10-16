@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.22)  17 OCT 2022 01:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.22)  17 OCT 2022 04:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1457,6 +1457,8 @@ Package: scalerel 2016/12/29 v1.8 Routines for constrained scaling and stretchin
 \mnxsrwidth=\skip120
 \LMex=\skip121
 \LMpt=\skip122
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/doi\doi.sty
+Package: doi 2018/09/09 handle doi numbers
 ) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/accsupp\accsupp.sty
 Package: accsupp 2019/12/05 v0.6 Accessibility support by marked content (HO)
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/accsupp\accsupp-pdftex.def
@@ -1484,7 +1486,9 @@ File: accsupp-pdftex.def 2019/12/05 v0.6 accsupp driver for pdfTeX (HO)
 \c@endconjecturectr=\count415
 \c@currexamplectr=\count416
 \c@endexamplectr=\count417
-Package hyperref Info: Option `colorlinks' set `true' on input line 68.
+\c@currquestionctr=\count418
+\c@endquestionctr=\count419
+Package hyperref Info: Option `colorlinks' set `true' on input line 69.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tcolorbox\tcbbreakable.code.tex
 Library (tcolorbox): 'tcbbreakable.code.tex' version '5.0.2'
 (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\pdfcol.sty
@@ -1499,36 +1503,36 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'australian'.
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 57.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 58.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 57.
-LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 57.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 58.
+LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 58.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cbfonts-fd\lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1566,16 +1570,16 @@ LaTeX Font Info:    ... okay on input line 57.
 
 (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count418
+\scratchcounter=\count420
 \scratchdimen=\dimen360
 \scratchbox=\box145
-\nofMPsegments=\count419
-\nofMParguments=\count420
+\nofMPsegments=\count421
+\nofMParguments=\count422
 \everyMPshowfont=\toks81
-\MPscratchCnt=\count421
+\MPscratchCnt=\count423
 \MPscratchDim=\dimen361
-\MPnumerator=\count422
-\makeMPintoPDFobject=\count423
+\MPnumerator=\count424
+\makeMPintoPDFobject=\count425
 \everyMPtoPDFconversion=\toks82
 ) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1583,29 +1587,29 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \microtypecontext on input line 57.
-Package microtype Info: Applying patch `item' on input line 57.
-Package microtype Info: Applying patch `toc' on input line 57.
+LaTeX Info: Redefining \microtypecontext on input line 58.
+Package microtype Info: Applying patch `item' on input line 58.
+Package microtype Info: Applying patch `toc' on input line 58.
 Package microtype Info: The `eqnum' patch may not be effective because you are
 (microtype)             using the mathtools package. Make sure to insert
 (microtype)             `\leftprotrusion' and `\rightprotrusion' as
 (microtype)             appropriate in mathtools's `\newtagform' command.
-Package microtype Info: Applying patch `eqnum' on input line 57.
-Package microtype Info: Applying patch `footnote' on input line 57.
+Package microtype Info: Applying patch `eqnum' on input line 58.
+Package microtype Info: Applying patch `footnote' on input line 58.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 57.
+LaTeX Info: Redefining \showhyphens on input line 58.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
-Package hyperref Info: Link coloring ON on input line 57.
+Package hyperref Info: Link coloring ON on input line 58.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/refcount\refcount.sty
@@ -1613,15 +1617,15 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count424
+\c@section@level=\count426
 )
-LaTeX Info: Redefining \ref on input line 57.
-LaTeX Info: Redefining \pageref on input line 57.
-LaTeX Info: Redefining \nameref on input line 57.
+LaTeX Info: Redefining \ref on input line 58.
+LaTeX Info: Redefining \pageref on input line 58.
+LaTeX Info: Redefining \nameref on input line 58.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/upquote\upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
 )
-\c@lstlisting=\count425
+\c@lstlisting=\count427
  (sections/titlepage.tex [1
 
 
@@ -1757,17 +1761,21 @@ Chapter 5.
 ] [35] [36] [37] [38]
 Underfull \vbox (badness 1975) has occurred while \output is active []
 
- [39] [40]
-Underfull \vbox (badness 3503) has occurred while \output is active []
-
- [41] [42] [43] [44] [45]) [46]
+ [39] [40] [41] [42] [43] [44] [45]) [46]
 Chapter 6.
 (sections/lit_review.tex
 Underfull \vbox (badness 1215) has occurred while \output is active []
 
  [47
 
-] [48]) (main.bbl [49] [50
+]
+Package hyperref Info: bookmark level for unknown question defaults to 0 on input line 63.
+ [48]) (main.bbl [49]
+LaTeX Font Info:    Font shape `OT1/zi4/m/n' will be
+(Font)              scaled to size 7.4pt on input line 30.
+LaTeX Font Info:    Font shape `OT1/zi4/m/n' will be
+(Font)              scaled to size 6.0pt on input line 30.
+ [50
 
 ]) (sections/appendix.tex [51]
 Appendix A.
@@ -1804,17 +1812,17 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 41112 strings out of 478582
- 786965 string characters out of 2842422
- 1645287 words of memory out of 3000000
- 56910 multiletter control sequences out of 15000+600000
- 532074 words of font info for 367 fonts, out of 8000000 for 9000
+ 41203 strings out of 478582
+ 788713 string characters out of 2842422
+ 1646412 words of memory out of 3000000
+ 56985 multiletter control sequences out of 15000+600000
+ 532683 words of font info for 371 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  101i,18n,105p,1790b,2025s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-ts1.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-ot1-0.enc}<C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/rsfs/rsfs10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (68 pages, 744019 bytes).
+Output written on main.pdf (68 pages, 762725 bytes).
 PDF statistics:
- 2068 PDF objects out of 2073 (max. 8388607)
- 1074 named destinations out of 1200 (max. 500000)
- 84869 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 2135 PDF objects out of 2487 (max. 8388607)
+ 1083 named destinations out of 1200 (max. 500000)
+ 85909 words of extra memory for PDF output out of 89155 (max. 10000000)
 

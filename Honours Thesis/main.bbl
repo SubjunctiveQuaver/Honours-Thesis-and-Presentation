@@ -4,55 +4,74 @@
 Laszlo Babai.
 \newblock On the order of uniprimitive permutation groups.
 \newblock {\em The Annals of Mathematics}, 113(3):553, 1981.
+\newblock \href {https://doi.org/10.2307/2006997} {\path{doi:10.2307/2006997}}.
 
 \bibitem{blaha1992}
 Kenneth~D. Blaha.
 \newblock Minimum bases for permutation groups: The greedy approximation.
 \newblock {\em Journal of Algorithms}, 13(2):297--306, 1992.
+\newblock \href {https://doi.org/10.1016/0196-6774(92)90020-D}
+  {\path{doi:10.1016/0196-6774(92)90020-D}}.
 
 \bibitem{bochert1889}
 Alfred Bochert.
 \newblock Ueber die zahl der verschiedenen werthe, die eine function gegebener
   buchstaben durch vertauschung derselben erlangen kann.
 \newblock {\em Mathematische Annalen}, 33(4):584--590, 1889.
+\newblock \href {https://doi.org/10.1007/bf01444035}
+  {\path{doi:10.1007/bf01444035}}.
 
 \bibitem{brown1989}
 Cynthia~A. Brown, Larry Finkelstein, and Paul~W. Purdom.
 \newblock Backtrack searching in the presence of symmetry.
 \newblock In {\em Applied Algebra, Algebraic Algorithms and Error-Correcting
   Codes}, pages 99--110. Springer Berlin Heidelberg, 1989.
+\newblock \href {https://doi.org/10.1007/3-540-51083-4_51}
+  {\path{doi:10.1007/3-540-51083-4_51}}.
 
 \bibitem{cameron_permutation_groups1999}
 Peter~J. Cameron.
 \newblock {\em Permutation Groups}.
 \newblock Cambridge University Press, 1999.
+\newblock \href {https://doi.org/10.1017/cbo9780511623677}
+  {\path{doi:10.1017/cbo9780511623677}}.
 
 \bibitem{cannon_havas1992}
 John~J. Cannon and George Havas.
 \newblock Algorithms for groups.
-\newblock {\em Aust. Comput. J.}, 24(2):51--60, 1992.
+\newblock {\em Australian Computer Journal}, 24(2):51--60, 1992.
+\newblock \href {https://doi.org/10.48550/arXiv.math/9406203}
+  {\path{doi:10.48550/arXiv.math/9406203}}.
 
 \bibitem{celler1995}
 Frank Celler, Charles~R. Leedham-Green, Scott~H. Murray, Alice~C. Niemeyer, and
   Eamonn~A. O'Brien.
 \newblock Generating random elements of a finite group.
 \newblock {\em Communications in Algebra}, 23(13):4931--4948, 1995.
+\newblock \href {https://doi.org/10.1080/00927879508825509}
+  {\path{doi:10.1080/00927879508825509}}.
 
 \bibitem{coutts2011}
 Hannah~J. Coutts, Martyn Quick, and Colva~M. Roney-Dougal.
 \newblock The primitive permutation groups of degree less than 4096.
 \newblock {\em Communications in Algebra}, 39(10):3526--3546, 2011.
+\newblock \href {https://doi.org/10.1080/00927872.2010.515521}
+  {\path{doi:10.1080/00927872.2010.515521}}.
 
 \bibitem{dixon1988}
 John~D. Dixon and B.~Mortimer.
 \newblock The primitive permutation groups of degree less than 1000.
 \newblock {\em Mathematical Proceedings of the Cambridge Philosophical
   Society}, 103:213--238, 1988.
+\newblock \href {https://doi.org/10.1017/S0305004100064793}
+  {\path{doi:10.1017/S0305004100064793}}.
 
 \bibitem{dixon_mortimer_perm_groups1996}
 John~D. Dixon and Brian Mortimer.
 \newblock {\em Permutation Groups}.
 \newblock Springer New York, 1996.
+\newblock \href {https://doi.org/10.1007/978-1-4612-0731-3}
+  {\path{doi:10.1007/978-1-4612-0731-3}}.
 
 \bibitem{garey_johnson_comp_and_intract1990}
 Michael~R. Garey and David~S. Johnson.
@@ -60,80 +79,116 @@ Michael~R. Garey and David~S. Johnson.
   NP-Completeness}.
 \newblock W. H. Freeman \& Co., USA, 1990.
 
+\bibitem{halasi2019}
+Zolt{\'{a}}n Halasi, Martin~W. Liebeck, and Attila Mar{\'{o}}ti.
+\newblock Base sizes of primitive groups: Bounds with explicit constants.
+\newblock {\em Journal of Algebra}, 521:16--43, 2019.
+\newblock \href {https://doi.org/10.1016/j.jalgebra.2018.10.043}
+  {\path{doi:10.1016/j.jalgebra.2018.10.043}}.
+
 \bibitem{holt_handbook_cgt2005}
 Derek~F. Holt, Bettina Eick, and Eamonn~A. O'Brien.
 \newblock {\em Handbook of Computational Group Theory}.
 \newblock Chapman and Hall/CRC, New York, 2005.
+\newblock \href {https://doi.org/10.1201/9781420035216}
+  {\path{doi:10.1201/9781420035216}}.
 
 \bibitem{hulpke2005}
 Alexander Hulpke.
 \newblock Constructing transitive permutation groups.
 \newblock {\em Journal of Symbolic Computation}, 39(1):1--30, 2005.
+\newblock \href {https://doi.org/10.1016/j.jsc.2004.08.002}
+  {\path{doi:10.1016/j.jsc.2004.08.002}}.
 
 \bibitem{janko1965}
 Zvonimir Janko.
-\newblock A new finite simple group with abelian 2-sylow subgroups.
+\newblock A new finite simple group with abelian 2-{S}ylow subgroups.
 \newblock {\em Proceedings of the National Academy of Sciences},
   53(3):657--658, 1965.
+\newblock \href {https://doi.org/10.1073/pnas.53.3.657}
+  {\path{doi:10.1073/pnas.53.3.657}}.
 
 \bibitem{karp1972}
 R.~Karp.
 \newblock Reducibility among combinatorial problems.
 \newblock In R.~Miller and J.~Thatcher, editors, {\em Complexity of Computer
   Computations}, pages 85--103. Plenum Press, 1972.
+\newblock \href {https://doi.org/10.1007/978-1-4684-2001-2_9}
+  {\path{doi:10.1007/978-1-4684-2001-2_9}}.
 
 \bibitem{knuth1991}
 Donald~E. Knuth.
 \newblock Efficient representation of perm groups.
 \newblock {\em Combinatorica}, 11(1):33--43, 1991.
+\newblock \href {https://doi.org/10.1007/bf01375471}
+  {\path{doi:10.1007/bf01375471}}.
 
 \bibitem{liebeck1984}
 Martin~W. Liebeck.
 \newblock On minimal degrees and base sizes of primitive permutation groups.
 \newblock {\em Archiv der Mathematik}, 43(1):11--15, 1984.
+\newblock \href {https://doi.org/10.1007/bf01193603}
+  {\path{doi:10.1007/bf01193603}}.
 
 \bibitem{livingstone1967}
 Donald Livingstone.
-\newblock On a permutation representation of the janko group.
+\newblock On a permutation representation of the {J}anko group.
 \newblock {\em Journal of Algebra}, 6(1):43--55, 1967.
+\newblock \href {https://doi.org/10.1016/0021-8693(67)90012-9}
+  {\path{doi:10.1016/0021-8693(67)90012-9}}.
 
 \bibitem{lovasz1980}
 L{\'{a}}szl{\'{o}} Lov{\'{a}}sz.
 \newblock Matroid matching and some applications.
 \newblock {\em Journal of Combinatorial Theory, Series B}, 28(2):208--236,
   1980.
+\newblock \href {https://doi.org/10.1016/0095-8956(80)90066-0}
+  {\path{doi:10.1016/0095-8956(80)90066-0}}.
 
 \bibitem{moscatiello_roney-dougal2021}
 Mariapia Moscatiello and Colva~M. Roney-Dougal.
 \newblock Base sizes of primitive permutation groups.
 \newblock {\em Monatshefte für Mathematik}, 198(2):411--443, 2021.
+\newblock \href {https://doi.org/10.1007/s00605-021-01599-5}
+  {\path{doi:10.1007/s00605-021-01599-5}}.
 
 \bibitem{roney-dougal2005}
 Colva~M. Roney-Dougal.
 \newblock The primitive permutation groups of degree less than 2500.
 \newblock {\em Journal of Algebra}, 292(1):154--183, 2005.
+\newblock \href {https://doi.org/10.1016/j.jalgebra.2005.04.017}
+  {\path{doi:10.1016/j.jalgebra.2005.04.017}}.
 
 \bibitem{roney-dougal2003}
 Colva~M. Roney-Dougal and William~R. Unger.
 \newblock The affine primitive permutation groups of degree less than 1000.
 \newblock {\em Journal of Symbolic Computation}, 35(4):421--439, 2003.
+\newblock \href {https://doi.org/10.1016/s0747-7171(03)00031-2}
+  {\path{doi:10.1016/s0747-7171(03)00031-2}}.
 
 \bibitem{rotman_intro_theory_groups1995}
 Joseph~J. Rotman.
 \newblock {\em An Introduction to the Theory of Groups}.
 \newblock Springer New York, 1995.
+\newblock \href {https://doi.org/10.1007/978-1-4612-4176-8}
+  {\path{doi:10.1007/978-1-4612-4176-8}}.
 
 \bibitem{sims1970}
 Charles~C. Sims.
 \newblock Computational methods in the study of permutation groups.
 \newblock In John Leech, editor, {\em Computational Problems in Abstract
   Algebra}, pages 169--183. Pergamon, 1970.
+\newblock \href
+  {https://doi.org/https://doi.org/10.1016/B978-0-08-012975-4.50020-5}
+  {\path{doi:https://doi.org/10.1016/B978-0-08-012975-4.50020-5}}.
 
 \bibitem{sims1973}
 Charles~C. Sims.
 \newblock The existence and uniqueness of {L}yons' group.
 \newblock In {\em Finite Groups {\textquotesingle}72, Proceedings of the the
   Gainesville Conference on Finite Groups}, pages 138--141. Elsevier, 1973.
+\newblock \href {https://doi.org/10.1016/s0304-0208(08)71841-3}
+  {\path{doi:10.1016/s0304-0208(08)71841-3}}.
 
 \bibitem{sipser_intro_theory_comp2013}
 Michael Sipser.
@@ -145,10 +200,14 @@ Ronald Solomon.
 \newblock A brief history of the classification of the finite simple groups.
 \newblock {\em Bulletin of the American Mathematical Society}, 38(3):315--352,
   2001.
+\newblock \href {https://doi.org/10.1090/s0273-0979-01-00909-0}
+  {\path{doi:10.1090/s0273-0979-01-00909-0}}.
 
 \bibitem{solomon2018}
 Ronald Solomon.
 \newblock The classification of finite simple groups: A progress report.
 \newblock {\em Notices of the American Mathematical Society}, 65(06):1, 2018.
+\newblock \href {https://doi.org/10.1090/noti1689}
+  {\path{doi:10.1090/noti1689}}.
 
 \end{thebibliography}

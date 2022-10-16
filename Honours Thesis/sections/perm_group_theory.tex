@@ -257,6 +257,8 @@ In the case that $\Omega = [n]$, we may identify $\Gamma^\Omega$ with $\Gamma^n$
 
 \section{Matrix groups and affine groups}
 
+\subsection{Affine transformations and the affine general linear group}
+
 The notion of an affine group is important for the later discussion and results in this \thesis{}. The following results may be found primarily in \cite{dixon_mortimer_perm_groups1996}.
 
 \begin{definition}\label{def:gl_group}
@@ -455,8 +457,42 @@ Finally, we look at a few important subgroups of the affine group, which we cons
         \item We know that $T \unlhd \AGL_d(K)$ (part (b)) and $\GL(K^d) \cap T = 1$; it remains to observe that for $t_{a,v} \in \AGL_d(K)$ we have $t_{a,v} = t_{a1,0 \cdot 1+v} = t_{a,0}t_{1,v}$ so indeed $\AGL_d(K) = \GL(K^d)T$.
     \end{enumerate}
 \end{proof}
-
 % TODO: include statement on normal subgroups of GL? contains SL or subgroup of centre (scalar multiples of 1)
+
+\subsection{Symplectic groups}
+
+\added{4}{Another important matrix group that we briefly discuss is the symplectic group. The following may be found in section 7.7 of \cite{dixon_mortimer_perm_groups1996}. Let $K$ be a field and consider $K^d$, where $d = 2m$ is even. Let
+    $$e = \begin{pmatrix}
+            0 & 1 \\
+            0 & 0
+        \end{pmatrix} \quad\text{and}\quad
+        f = \begin{pmatrix}
+            0  & 1 \\
+            -1 & 0
+        \end{pmatrix} = e - e^\top,$$
+    be $d \times d$ block matrices, where $0$ and $1$ denote the $m \times m$ zero and identity matrices.
+
+    \begin{definition}\label{def:symplectic_group}
+        For $d \geq 2$ even, the \textbf{symplectic group} is $\Sp_d(K) = \{a \in \GL_d(K) : afa^\top = f\} \leq \GL_d(K)$, which acts on $K^d$ by matrix multiplication: $u^a := ua$ for $a \in \Sp_d(K)$ and $u \in K^d$ (which we treat as row vectors).
+    \end{definition}
+
+    It can be shown that if $K = \F_q$ is a finite field, then writing $\Sp_d(q)$ instead of $\Sp_d(\F_q)$, we have
+    $$|\Sp_d(q)| = q^{m^2}(q^2 - 1)(q^4 - 1)\dotsb(q^d - 1),$$
+    where $d = 2m$ (there is a typo on page 245 on \cite{dixon_mortimer_perm_groups1996}). Moreover, the quotient of $\Sp_d(q)$ by its centre gives a finite simple group of Lie type, as described in the classification theorem (\autoref{thm:cfsg}). We are primarily interested in the case that $K = \F_2$ for the next chapter, where $f = e + e^\top$.
+
+    \begin{definition}\label{def:orthogonal_group}
+        For any $d \geq 1$, the \textbf{(general) orthogonal group} is $\GO_d(K) = \{a \in \GL_d(K) : a^\top a = 1\} \leq \GL_d(K)$.
+    \end{definition}
+
+    For $K = \F_q$, again write $\GO_d(q)$ instead of $\GO_d(\F_q)$. In the case that $d = 2m$ is even and $q = 2$, it can be shown that
+    $$|\GO_{d+1}(2)| = 2^{m^2}(2^2 - 1)(2^4 - 1)\dotsb(2^d - 1).$$
+    Note that this is equal to $|\Sp_d(2)|$. This is no coincidence; in the special case of $q = 2$, symplectic groups are related to orthogonal groups. A proof of the next theorem can be found in \cite{} TODO.
+
+    \begin{theorem}
+        For even $d$, the symplectic group $\Sp_d(2)$ is isomorphic to the orthogonal group $\GO_{d+1}(2)$.
+    \end{theorem}
+    
+    Finally, we describe $\GO^+_d(2)$ and $\GO^-_d(2)$. TODO and $\Sp_d(2)$ acts on cosets of these?}
 
 \section{Primitive permutation groups and the O'Nan-Scott theorem}
 
