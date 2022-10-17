@@ -60,13 +60,34 @@ Next, we present Theorem 5 from \cite{moscatiello_roney-dougal2021}, which is a 
 
 The infinite number of primitive groups $G$ of degree $n$ with $b(G) > \log n + 1$, as mentioned in \autoref{thm:moscatiello_roney-dougal2021_1}, is demonstrated by case (ii) in the more detailed theorem above; in case (i), it is conditional on the existence of such subgroups $G \leq \AGL_d(2)$ with $b(G) = d + 1$. Thus, the authors conclude the paper \cite{moscatiello_roney-dougal2021} with a question:
 
-\begin{question}[Moscatiello and Roney-Dougal, 2021]
+\begin{question}[Moscatiello and Roney-Dougal, 2021]\label{qn:moscatiello_roney-dougal2021}
     Which primitive groups $G \leq \Sym(n)$ satisfy $b(G) = \log n + 1$?
 \end{question}
 
 Of course, we require that $\log n$ is an integer, so that $n$ is a power of 2. They observe that we must have $G \leq \AGL_d(2)$ for some $d$ (indeed, $\AGL_d(2)$ acts on $2^d$ points), and if $d$ is even then groups such as the split extension $2^d : \Sp_d(2)$ have this property. Are there any more? What about for odd $d$? Investigating this question forms the remainder of this \thesis{}.
 
 \section{Primitive subgroups of affine groups with given minimal base size}
+
+The main result of this section is as follows.
+
+\begin{theorem}\label{thm:new_result}
+    \begin{enumerate}[(i)]
+        \item For odd $d \leq 9$ and $d = 2$, the only primitive group $G \leq \Sym(n)$ satisfying $b(G) = \log n + 1$ is (permutation isomorphic to) the affine group $\AGL_d(2)$.
+        \item For even $4 \leq d \leq 10$, the only primitive groups $G \leq \Sym(n)$ satisfying $b(G) = \log n + 1$ are $\AGL_d(2)$ and $2^d : \Sp_d(2)$.
+    \end{enumerate}
+\end{theorem}
+
+Based on this behaviour, we make the following conjecture in the direction of \autoref{qn:moscatiello_roney-dougal2021}:
+
+\begin{conjecture}\label{conj:new_result}
+    A primitive group $G \leq \Sym(n)$ satisfies $b(G) = \log n + 1$ if and only if $G$ is one of the following:
+    \begin{enumerate}[(i)]
+        \item $n = 2^d$ and $G$ is the affine group $\AGL_d(2)$; or
+        \item $n = 2^d$ with $d \geq 4$ even, and $G$ is the split extension $2^d : \Sp_d(2)$.
+    \end{enumerate}
+\end{conjecture}
+
+The remainder of this section is dedicated to our approach to proving \autoref{thm:new_result}.
 
 The authors of \cite{moscatiello_roney-dougal2021} then present a question, which asks to identify primitive groups $G$ of degree $n$ that satisfy $b(G) = \log n + 1$. They note that $G$ must be a subgroup of the affine group $\AGL_d(2)$ of affine transformations of $\F_2^d$ for some $d$, and that if $d$ is even then groups such as the split extension $2^d : \Sp(d,2)$ have this property. Upon investigation using a recursive approach for $d \leq 10$, we found that apart from the affine group $\AGL_d(2)$, there were no other primitive groups for odd $d$, and for even $d$, the only other example found was $2^d : \Sp(d,2)$. Consequently, we conjecture in this \thesis{} that these are the only groups satisfying this property. Limitations of this approach include memory and computational time, since the group found for $d = 10$ has order $25\,410\,822\,678\,459\,187\,200 \approx 2.5 \cdot 10^{19}$ and thus has many subgroups.
 

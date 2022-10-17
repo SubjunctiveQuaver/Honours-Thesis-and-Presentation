@@ -36,10 +36,12 @@ Using this result, we may show that a finite elementary $p$-group must be a dire
         Note that $G$ is intransitive, as the orbits under the natural action are the elements of the cycles $c_1,\dotsc,c_k$ and the singleton sets $\{kp + 1\},\dotsc,\{n\}$.
     \end{example}
 
+    However, elementary abelian permutation groups can be transitive, as shown in the following example.
+
     \begin{example}\label{eg:elem_abelian_perm_group_klein_4}
         A transitive elementary abelian permutation group is
     $$H = \{(),(1,2)(3,4),(1,3)(2,4),(1,4)(2,3)\},$$
-    which is a permutation representation of the Klein 4-group $(\Z/2\Z)^2$. However, it is not primitive: $\Sigma = \{\{1,2\},\{3,4\}\}$ is a block system, as shown by the below \texttt{GAP} code:
+    which is a permutation representation of the Klein 4-group $(\Z/2\Z)^2$ (as every nontrivial element has order 2). However, it is not primitive: $\Sigma = \{\{1,2\},\{3,4\}\}$ is a block system, as shown by the below \texttt{GAP} code:
 
     \lstinputlisting{txt_files/klein_4_blocks.gap}
     \end{example}}
