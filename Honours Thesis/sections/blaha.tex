@@ -4,7 +4,7 @@ Throughout this chapter, unless otherwise stated, every result is found in \cite
 
 \added{3}{First, we define} the \textbf{minimum base (MB) problem}: let $G \leq \Sym(n)$ given by generators and a positive integer $N \leq n$. The \textit{question} \added{3}{is}: ``does there exist a base for $G$ of size no more than $N$?''
 
-Blaha proves in \cite{blaha1992} that the minimum base problem is \hyperref[def:NP_hard]{NP-hard} since it is \hyperref[def:NP_complete]{NP-complete}, i.e. \added{3}{it} is in NP, and that every problem in NP is polynomial time reducible to it. The first claim is straighforward to verify:
+Blaha proves in \cite{blaha1992} that the minimum base problem is \hyperref[def:NP_hard]{NP-hard} since it is \hyperref[def:NP_complete]{NP-complete}, i.e. \added{3}{it} is in NP, and that every problem in NP is polynomial time reducible to it. The first claim is straightforward to verify:
 
 \begin{lemma}
     The MB problem is in NP, i.e. verifiable in polynomial time.
@@ -23,6 +23,8 @@ We also describe a greedy algorithm (suggested in \cite{brown1989}) for finding 
 \end{algorithm}
 
 Since $|G^i| = |G^{i-1}|/|\beta_i^{G^{i-1}}|$ by the \hyperref[thm:orbit_stabiliser]{orbit-stabiliser theorem}, this greedy algorithm chooses $\beta_i$ that minimises $|G^i|$ at every stage. So it is reasonable to assume that the length $r$ of the base $B$ will be ``small''. However, does it construct a \textit{minimum base}? Blaha shows in \cite{blaha1992} that this is not the case.
+
+\added{4}{Note that the greedy base algorithm is in the class P.}
 
 \section{The general case}
 

@@ -83,7 +83,7 @@ The class P is important because it roughly corresponds to the class of problems
     \end{proof}}
 
 \begin{example}[membership test]\label{eg:alg:transversal_membership_test:complexity_class}
-    Recall the membership test algorithm (\autoref{alg:transversal_membership_test}) for $g \in G$ runs in $O(r\max_i |T_i|)$ time, where $G \leq \Sym(\Omega)$ has base $[\beta_1,\dotsc,\beta_r]$ and associated transversals $T_1,\dotsc,T_r$ of the stabiliser chain. By \autoref{lem:max_is_polynomial_time}, $O(r\max_i |T_i|) = O(r(|T_1| + \dotsb + |T_r|))$, and the problem of membership in $G$ is in the class P.
+    Recall the membership test algorithm (\autoref{alg:transversal_membership_test}) for $g \in G$ runs in $O(r\max_i |T_i|)$ time, where $G \leq \Sym(\Omega)$ has base $[\beta_1,\dotsc,\beta_r]$ and associated transversals $T_1,\dotsc,T_r$ of the stabiliser chain. By \autoref{lem:max_is_polynomial_time}, $O(r\max_i |T_i|) = O(r(|T_1| + \dotsb + |T_r|))$. \added{4}{Thus, the problem of membership in $G$ is in the class P, since we consider the inputs of the problem to comprise $r,|T_1|,\dotsc,|T_r|$ (among other things), which describe the structure or attributes of $G$.}
 \end{example}
 
 \begin{example}[orbit-stabiliser algorithm]\label{eg:alg:orbit_stabiliser:complexity_class}
@@ -91,7 +91,7 @@ The class P is important because it roughly corresponds to the class of problems
 \end{example}
 
 \added{1}{\begin{example}[Schreier-Sims algorithm]\label{eg:alg:schreier_sims:complexity_class}
-        Recall the \hyperref[alg:schreier_sims]{Schreier-Sims algorithm} which extends a sequence $B \subseteq \Omega$ and generating set $X$ (to $S$) to a BSGS $(B,S)$ for $G = \langle X \rangle \leq \Sym(\Omega)$; this is a na\"ive \added{2}{description} of the algorithm with inefficiencies. In \cite{knuth1991}, Knuth describes another version of the Schrier-Sims algorithm which improves the running time to $O(n^5 + rn^2)$ (which is certainly polynomial time) where $r$ is the length of the base $B$ and $n = |\Omega|$ is the degree of $G$.
+        The \hyperref[alg:schreier_sims]{Schreier-Sims algorithm} extends a sequence $\tilde B \subseteq \Omega$ and generating set $X$ to a BSGS $(B,S)$ for $G = \langle X \rangle \leq \Sym(\Omega)$ \added{4}{(i.e. $\tilde B$ is extended to $B$ and $X$ is extended to $S$)}; this is a na\"ive \added{2}{description} of the algorithm with inefficiencies. In \cite{knuth1991}, Knuth describes another version of the Schrier-Sims algorithm which improves the running time to $O(n^5 + rn^2)$ (which is certainly polynomial time) where $r$ is the length of the base $B$ and $n = |\Omega|$ is the degree of $G$.
     \end{example}}
 
 Where P is the class of decision problems decidable in polynomial time on a deterministic Turing machine, NP is the analogous class for nondeterministic Turing machines.
@@ -103,8 +103,10 @@ Where P is the class of decision problems decidable in polynomial time on a dete
 Clearly $\mathrm{P} \subseteq \mathrm{NP}$. An equivalent characterisation of NP, which is often more useful, is the class of decision problems with \textit{polynomial time verifiers}. A \textbf{verifier} is an algorithm that uses additional information (called a \textit{certificate}) to verify (but not necessarily find) a solution.
 
 \added{2}{\begin{example}\label{eg:verifying_base}
-        Suppose $G \leq \Sym(n)$ acts on a set $\Omega$. One way of seeing that the problem of finding a base for $G$ is in NP is to observe that it has a polynomial time verifier. A certificate for $G$ is a base $B = [\beta_1,\dotsc,\beta_r]$ for $G$: using the orbit-stabiliser algorithm (\autoref{alg:orbit_stabiliser}), we may check that $G_{\beta_1,\dotsc,\beta_r} = ((G_{\beta_1})_{\dotsb})_{\beta_r} = 1$ in polynomial time. (In fact, it is in P, by \autoref{eg:alg:schreier_sims:complexity_class}.)
+        Suppose $G \leq \Sym(n)$ acts on a set $\Omega$. One way of seeing that the problem of finding a base for $G$ is in NP is to observe that it has a polynomial time verifier. A certificate for $G$ is a base $B = [\beta_1,\dotsc,\beta_r]$ for $G$: \added{4}{a na\"ive approach is to use} the orbit-stabiliser algorithm (\autoref{alg:orbit_stabiliser}) to check that $G_{\beta_1,\dotsc,\beta_r} = ((G_{\beta_1})_{\dotsb})_{\beta_r} = 1$ in polynomial time. (In fact, it is in P, by \autoref{eg:alg:schreier_sims:complexity_class}.)
     \end{example}}
+
+    % \added{4}{Alternatively, we may check that each generator $x \in X$ (where $G = \langle X \rangle$) satisfies $\beta_i^x = \beta_i$ for all $i$, by the \hyperref[lem:base_uniquely_determines]{lemma on base images}.}
 
 The class NP is important as it contains many problems of practical interest \added{3}{(for instance, the well-known knapsack, travelling salesman, and Hamiltonian path problems)}. Moreover, showing that a problem is in the class P is often much more difficult than showing it is NP, as we need to find a polynomial time (deterministic) algorithm for solving it. However, it is also difficult to argue that a problem in the class NP is \textit{not} in the class P, as we must show that \textit{no} algorithm that solves the problem can run in polynomial time. In fact, this problem is so hard that it is the famous $\mathrm{P}$ versus $\mathrm{NP}$ conjecture, which carries a US\$1 million prize for a proof or disproof:
 
@@ -119,7 +121,7 @@ The primary method for showing that problems are computationally unsolvable is \
 If $A$ is reducible to $B$, then solving $A$ cannot be harder than solving $B$, since a solution to $B$ gives a solution to $A$. So if $B$ is decidable, then so is $A$. Equivalently, if $A$ is undecidable and reducible to $B$, then $B$ is undecidable.
 
 \begin{definition}\label{def:Karp_reduction}
-    A problem $A$ is \textbf{polynomial time reducible} to a problem $B$ if there is a \textbf{Karp reduction} of $A$ to $B$, i.e. a function that is computable by a Turing machine in polynomial time such a solution/non-solution to $A$ corresponds precisely to a solution/non-solution to $B$.
+    A problem $A$ is \textbf{polynomial time reducible} to a problem $B$ if there is a \textbf{Karp reduction} of $A$ to $B$, i.e. a function that is computable by a Turing machine in polynomial time such that a solution/non-solution to $B$ \added{4}{yields} a solution/non-solution to $A$.
 \end{definition}
 
 \begin{definition}\label{def:NP_complete}
@@ -140,7 +142,7 @@ Clearly, the non-resolution of the P versus NP conjecture implies that we do not
 
 Thus a NP-hard problem is informally ``at least as hard as any NP-problem''; they may not even be decidable. However, finding a polynomial time solution to a NP-hard problem would imply that $\mathrm{P} = \mathrm{NP}$.
 
-\added{1}{One NP-complete problem that is of particular interest is the problem of finding an exact cover by 3-sets (X3C), as this is used in \cite{blaha1992} to show that the problem of finding a small bases for a group $G$ is NP-hard:
+\added{1}{One NP-complete problem that is \added{4}{relevant to this \thesis{}} is the problem of finding an exact cover by 3-sets (X3C), as this is used in \cite{blaha1992} to show that the problem of finding a small bases for a group $G$ is NP-hard:
 
     \begin{example}[X3C]\label{eg:X3C}
         Consider $(Y,M)$ where $Y$ is a finite set with $|Y| = 3q$ and $M$ is a collection of 3-element subsets of $Y$. The yes-no \textit{question}, as given in \cite{garey_johnson_comp_and_intract1990}, is, ``does $M$ contain an exact cover for $Y$, i.e. a subcollection $M' \subseteq M$ such that each element of $Y$ is in exactly one member of $M'$?'' This exact 3-cover problem is NP-complete, \added{1}{as by the \textit{Cook-Levin theorem} \added{2}{(see Theorem 7.37 in \cite{sipser_intro_theory_comp2013})}, every problem in $\mathrm{NP}$ is reducible to SAT (the Boolean satisfiability problem), which is shown to be reducible to X3C (more precisely, the related ``exact cover'' problem where we drop the restriction to 3-sets) in \cite{karp1972}.}

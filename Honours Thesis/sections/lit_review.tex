@@ -71,13 +71,23 @@ Of course, we require that $\log n$ is an integer, so that $n$ is a power of 2. 
 The main result of this section is as follows, which is a new result.
 
 \begin{theorem}\label{thm:new_result}
-    Let $G$ be a primitive subgroup of $\AGL_d(2)$ for some $d$, with degree $n = 2^d$.
+    Let $G$ be a primitive subgroup of $\AGL_d(2)$ for some $d$, with the induced action of degree $n = 2^d$.
     \begin{enumerate}[(i)]
         \item For $d = 1$, there is no such $G$ with $b(G) = d + 1 = \log n + 1$.
         \item For odd $3 \leq d \leq 9$ and $d = 2$, if $b(G) = d + 1 = \log n + 1$, then $G$ is the affine group $\AGL_d(2)$.
         \item For even $4 \leq d \leq 10$, if $b(G) = d + 1 = \log n + 1$, then $G$ is either $\AGL_d(2)$ or $2^d : \Sp_d(2)$.
     \end{enumerate}
 \end{theorem}
+
+Our approach to this result is to use \texttt{GAP} to iterate over potential primitive groups $G \leq \AGL_d(2)$ for some $d$ and compute a bound on $b(G)$ to eliminate those groups for which a base of size less than $d + 1$ is found. Using the \texttt{FinInG} (finite incidence geometry) package, we use a permutation representation of $\AGL_d(2)$ (a subgroup of $\Sym(2^d)$). Note that if a base of size $r$ is found for $G$, then $b(G) \leq r$, so if $r < d + 1$, we may eliminate such $G$.
+
+To compute a base for $G$, \texttt{GAP} has the built-in command \texttt{BaseOfGroup}. However, in various test cases, we found that when compared to our implementation of the greedy base algorithm (\autoref{alg:blaha_greedy_base}) analysed in Blaha \cite{blaha1992}, the greedy algorithm sometimes found a smaller base than
+
+Thus, in the procedure to prove the main theorem, we use our implementation of \texttt{GreedyBase} instead of \texttt{BaseOfGroup} to compute a base for $G$. Both algorithms are fast; since
+
+E.g.
+
+
 
 The remainder of this section is dedicated to our approach to proving \autoref{thm:new_result}. Note that all subgroups take the induced subgroup action.
 
@@ -95,7 +105,9 @@ The remainder of this section is dedicated to our approach to proving \autoref{t
         \item \textit{At each stage, it suffices to check maximal subgroups up to conjugacy.} This is because \autoref{prop:conjugate_subgroups_bases} implies that $b(G^\sigma) = b(G)$ for all $\sigma \in \Sym(\Omega)$, where $G$ acts on $\Omega$, so that we may consider a representative from each conjugacy class of subgroups. Moreover, if $G$ is maximal, then $G^\sigma$ is also maximal by \autoref{lem:conjugate_of_maximal_subgroup_is_maximal}, which implies that checking only maximal subgroups up to conjugacy will not overlook any conjugacy classes of subgroups. This observation also leads to a significant improvement over the na\"ive approach, since the size of a conjugacy class of subgroups may be large. However, it means that the subgroups found by the process are unique only up to conjugacy.
     \end{enumerate}
 
-    Note that these observations can be adapted for any group $G$, to find (primitive) subgroups $H$ of $G$ with $b(H) \geq r$ for any given $r$, by simply replacing ``$d + 1$'' with ``$r$''. If we wish to ignore the condition of primitivity, we may simply ignore observation 2 above.
+    (Note that these observations can be adapted for any group, to find (primitive) subgroups $H$ with $b(H) \geq r$ for any given $r$, by simply replacing ``$d + 1$'' with ``$r$''. If we wish to ignore the condition of primitivity, we may simply ignore observation 2 above.)
+
+    Now, computing a base for $G$ is straightforward.
 
     TODO
 \end{proof}
