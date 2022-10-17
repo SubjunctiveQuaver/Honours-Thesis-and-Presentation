@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.22)  17 OCT 2022 18:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.22)  17 OCT 2022 20:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1629,12 +1629,8 @@ Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbat
  (sections/titlepage.tex [1
 
 
-{C:/Users/lawre/AppData/Local/MiKTeX/2.9/fonts/map/pdftex/pdftex.map}]) (sections/abstract.tex) [2
-
-] (sections/acknowledgements.tex) [3
-
-] (main.toc
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 3.
+{C:/Users/lawre/AppData/Local/MiKTeX/2.9/fonts/map/pdftex/pdftex.map}]) (sections/abstract.tex
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 1.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
@@ -1642,15 +1638,15 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `ztmcm' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 3.
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 1.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 3.
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 1.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 3.
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 1.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 ) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\mt-msa.cfg
@@ -1658,17 +1654,31 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 ) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+esvect on input line 3.
+LaTeX Font Info:    Trying to load font information for U+esvect on input line 1.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/esvect\uesvect.fd
 File: uesvect.fd 
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
- [4
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+LaTeX Font Info:    Trying to load font information for OT1+zi4 on input line 1.
+ (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/inconsolata\ot1zi4.fd
+File: ot1zi4.fd 2018/01/14 OT1/zi4 (Inconsolata)
+)
+LaTeX Font Info:    Font shape `OT1/zi4/m/n' will be
+(Font)              scaled to size 10.0pt on input line 1.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `zi4' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+) [2
+
+] (sections/acknowledgements.tex) [3
+
+] (main.toc [4
 
 ])
 \tf@toc=\write4
@@ -1676,18 +1686,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 
  [5]
 Chapter 1.
-(sections/introduction.tex
-LaTeX Font Info:    Trying to load font information for OT1+zi4 on input line 9.
- (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/inconsolata\ot1zi4.fd
-File: ot1zi4.fd 2018/01/14 OT1/zi4 (Inconsolata)
-)
-LaTeX Font Info:    Font shape `OT1/zi4/m/n' will be
-(Font)              scaled to size 10.0pt on input line 9.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `zi4' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
- [1
+(sections/introduction.tex [1
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1770,28 +1769,28 @@ Underfull \vbox (badness 1215) has occurred while \output is active []
 
 ] [49]
 Package hyperref Info: bookmark level for unknown question defaults to 0 on input line 63.
- [50]) (main.bbl [51]
+ [50] [51]) (main.bbl [52]
 LaTeX Font Info:    Font shape `OT1/zi4/m/n' will be
 (Font)              scaled to size 7.4pt on input line 30.
 LaTeX Font Info:    Font shape `OT1/zi4/m/n' will be
 (Font)              scaled to size 6.0pt on input line 30.
- [52
+ [53
 
-]) (sections/appendix.tex [53]
+]) (sections/appendix.tex [54]
 Appendix A.
-(gap_code/random_elt.gap) (gap_code/membership.gap [54
+(gap_code/random_elt.gap) (gap_code/membership.gap [55
 
-]) (gap_code/random_elt_print.gap) (gap_code/membership_print.gap [55]) (gap_code/d8_wreath_product.gap [56]) (txt_files/d8_wreath_product_gap_output.gap) (txt_files/automorphism_group_graph_bsgs_gap_appendix.gap [57]
+]) (gap_code/random_elt_print.gap) (gap_code/membership_print.gap [56]) (gap_code/d8_wreath_product.gap [57]) (txt_files/d8_wreath_product_gap_output.gap) (txt_files/automorphism_group_graph_bsgs_gap_appendix.gap [58]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [58]) [59]
+ [59]) [60]
 Appendix B.
-(gap_code/greedy_base.gap) [60
+(gap_code/greedy_base.gap) (txt_files/greedy_better_than_default.gap [61
 
-] (gap_code/subgrps_base_len.gap
-Underfull \vbox (badness 1242) has occurred while \output is active []
+]) (gap_code/subgrps_base_len.gap [62]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [61]
+ [63]
 LaTeX Font Info:    Trying to load font information for TS1+zi4 on input line 58.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/inconsolata\ts1zi4.fd
 File: ts1zi4.fd 2018/01/14 TS1/zi4 (Inconsolata)
@@ -1802,27 +1801,27 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `zi4' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-) (txt_files/agl_base_gap_output/1.gap [62]) (txt_files/agl_base_gap_output/2.gap) (txt_files/agl_base_gap_output/3.gap) (txt_files/agl_base_gap_output/4.gap) [63] (txt_files/agl_base_gap_output/5.gap) (txt_files/agl_base_gap_output/6.gap) (txt_files/agl_base_gap_output/7.gap) (txt_files/agl_base_gap_output/8.gap [64]) (txt_files/agl_base_gap_output/9.gap) (txt_files/agl_base_gap_output/10.gap))
+) (txt_files/agl_base_gap_output/2.gap) (txt_files/agl_base_gap_output/3.gap [64]) (txt_files/agl_base_gap_output/4.gap) (txt_files/agl_base_gap_output/5.gap) (txt_files/agl_base_gap_output/6.gap [65]) (txt_files/agl_base_gap_output/7.gap) (txt_files/agl_base_gap_output/8.gap) (txt_files/agl_base_gap_output/9.gap [66]) (txt_files/agl_base_gap_output/10.gap))
 \tf@thm=\write5
 \openout5 = `main.thm'.
 
- [65] (main.aux)
+ [67] (main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 41230 strings out of 478582
- 788933 string characters out of 2842422
- 1646753 words of memory out of 3000000
- 56988 multiletter control sequences out of 15000+600000
- 533000 words of font info for 375 fonts, out of 8000000 for 9000
+ 41261 strings out of 478582
+ 789466 string characters out of 2842422
+ 1648006 words of memory out of 3000000
+ 56996 multiletter control sequences out of 15000+600000
+ 532682 words of font info for 376 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 101i,18n,105p,1790b,2044s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 101i,18n,105p,2428b,2044s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-ts1.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-ot1-0.enc}<C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/rsfs/rsfs10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (70 pages, 780955 bytes).
+Output written on main.pdf (72 pages, 795308 bytes).
 PDF statistics:
- 2185 PDF objects out of 2487 (max. 8388607)
- 1101 named destinations out of 1200 (max. 500000)
- 85917 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 2225 PDF objects out of 2487 (max. 8388607)
+ 1121 named destinations out of 1200 (max. 500000)
+ 83869 words of extra memory for PDF output out of 89155 (max. 10000000)
 

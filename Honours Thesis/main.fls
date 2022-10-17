@@ -1791,16 +1791,6 @@ INPUT sections\abstract.tex
 INPUT .\sections\abstract.tex
 INPUT sections\abstract.tex
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri7t.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmr7t.vf
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr8r.tfm
-INPUT .\sections\acknowledgements.tex
-INPUT sections\acknowledgements.tex
-INPUT .\sections\acknowledgements.tex
-INPUT sections\acknowledgements.tex
-INPUT .\main.toc
-INPUT main.toc
-INPUT main.toc
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb7t.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ztmcm.fd
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ztmcm.fd
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ztmcm.fd
@@ -1855,18 +1845,6 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb7t.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri7t.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri7t.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmri7t.vf
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri8r.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmb7t.vf
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb8r.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmb7t.vf
-OUTPUT main.toc
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr7t.tfm
-INPUT .\sections\introduction.tex
-INPUT sections\introduction.tex
-INPUT .\sections\introduction.tex
-INPUT sections\introduction.tex
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb7t.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\inconsolata\ot1zi4.fd
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\inconsolata\ot1zi4.fd
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\inconsolata\ot1zi4.fd
@@ -1874,14 +1852,12 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\inconsolata\ot1
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\inconsolata\ot1-zi4r-0.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmr7t.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr8r.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmb7t.vf
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb8r.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\zptmcm7t.vf
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\symbol\psyr.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\zptmcm7y.vf
-INPUT C:\Users\lawre\AppData\Local\MiKTeX\2.9\fonts\tfm\public\rsfs\rsfs10.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmri7t.vf
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\zptmcm7m.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\psyro.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\zptmcm7t.vf
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\symbol\psyr.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\zptmcm7t.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\symbol\psyr.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr8r.tfm
@@ -1890,6 +1866,35 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\zptm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\psyro.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi10.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri8r.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\zptmcm7y.vf
+INPUT C:\Users\lawre\AppData\Local\MiKTeX\2.9\fonts\tfm\public\rsfs\rsfs10.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\zptmcm7y.vf
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Users\lawre\AppData\Local\MiKTeX\2.9\fonts\tfm\public\rsfs\rsfs10.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\zptmcm7m.vf
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\psyro.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi10.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri8r.tfm
+INPUT .\sections\acknowledgements.tex
+INPUT sections\acknowledgements.tex
+INPUT .\sections\acknowledgements.tex
+INPUT sections\acknowledgements.tex
+INPUT .\main.toc
+INPUT main.toc
+INPUT main.toc
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmb7t.vf
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb8r.tfm
+OUTPUT main.toc
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr7t.tfm
+INPUT .\sections\introduction.tex
+INPUT sections\introduction.tex
+INPUT .\sections\introduction.tex
+INPUT sections\introduction.tex
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb7t.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmr7t.vf
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr8r.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmb7t.vf
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT .\sections\group_concepts.tex
 INPUT sections\group_concepts.tex
 INPUT .\sections\group_concepts.tex
@@ -1899,19 +1904,12 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\zptm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\symbol\psyr.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr10.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\zptmcm7m.vf
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\psyro.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi10.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT .\sections\group_concepts\group_actions.tex
 INPUT sections\group_concepts\group_actions.tex
 INPUT .\sections\group_concepts\group_actions.tex
 INPUT sections\group_concepts\group_actions.tex
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmbi7t.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmbi8r.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\zptmcm7y.vf
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
-INPUT C:\Users\lawre\AppData\Local\MiKTeX\2.9\fonts\tfm\public\rsfs\rsfs10.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\zptmcm7y.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
 INPUT C:\Users\lawre\AppData\Local\MiKTeX\2.9\fonts\tfm\public\rsfs\rsfs10.tfm
@@ -1996,6 +1994,7 @@ INPUT .\sections\lit_review.tex
 INPUT sections\lit_review.tex
 INPUT .\sections\lit_review.tex
 INPUT sections\lit_review.tex
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmr7t.vf
 INPUT .\main.bbl
 INPUT main.bbl
 INPUT .\main.bbl
@@ -2056,6 +2055,12 @@ INPUT .\gap_code\greedy_base.gap
 INPUT gap_code\greedy_base.gap
 INPUT .\gap_code\greedy_base.gap
 INPUT gap_code\greedy_base.gap
+INPUT .\txt_files\greedy_better_than_default.gap
+INPUT txt_files\greedy_better_than_default.gap
+INPUT .\txt_files\greedy_better_than_default.gap
+INPUT txt_files\greedy_better_than_default.gap
+INPUT .\txt_files\greedy_better_than_default.gap
+INPUT txt_files\greedy_better_than_default.gap
 INPUT .\gap_code\subgrps_base_len.gap
 INPUT gap_code\subgrps_base_len.gap
 INPUT .\gap_code\subgrps_base_len.gap
@@ -2067,12 +2072,6 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\inconsolata\ts1
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\inconsolata\ts1zi4.fd
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\inconsolata\ts1zi4.fd
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\inconsolata\ts1-zi4r.tfm
-INPUT .\txt_files\agl_base_gap_output\1.gap
-INPUT txt_files\agl_base_gap_output\1.gap
-INPUT .\txt_files\agl_base_gap_output\1.gap
-INPUT txt_files\agl_base_gap_output\1.gap
-INPUT .\txt_files\agl_base_gap_output\1.gap
-INPUT txt_files\agl_base_gap_output\1.gap
 INPUT .\txt_files\agl_base_gap_output\2.gap
 INPUT txt_files\agl_base_gap_output\2.gap
 INPUT .\txt_files\agl_base_gap_output\2.gap

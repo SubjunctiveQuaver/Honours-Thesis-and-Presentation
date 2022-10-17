@@ -53,7 +53,7 @@ Next, we present Theorem 5 from \cite{moscatiello_roney-dougal2021}, which is a 
     Let $G$ be primitive subgroup of $\Sym(\Omega)$ with $|\Omega| = n$. Then $b(G) \geq \log n + 1$ if and only if $G$ is one of following:
     \begin{enumerate}[(i)]
         \item A subgroup of $\AGL_d(2)$ with $b(G) = d + 1 = \log n + 1$.
-        \item The \hyperref[def:symplectic_group]{symplectic group} $\Sp_d(2)$ (acting on cosets of $\GO^-_d(2)$) with $d \geq 4$; then $\log n + 1 < b(G) = \lceil\log n\rceil + 1$.
+        \item The \hyperref[def:symplectic_group]{symplectic group} $\Sp_d(2)$ with $d \geq 4$; then $\log n + 1 < b(G) = \lceil\log n\rceil + 1$. % (acting on cosets of $\GO^-_d(2)$)
         \item A Mathieu group $M_n$ in its natural permutation representation with $n \in \{12,23,24\}$. If $n = 12$ or $23$ then $b(G) = \lceil\log n\rceil + 1$, while if $n = 24$ then $b(G) = 7 > \lceil\log n\rceil + 1$.
     \end{enumerate}
 \end{theorem}
@@ -64,7 +64,7 @@ The infinite number of primitive groups $G$ of degree $n$ with $b(G) > \log n + 
     Which primitive groups $G \leq \Sym(n)$ satisfy $b(G) = \log n + 1$?
 \end{question}
 
-Of course, we require that $\log n$ is an integer, so that $n$ is a power of 2. By \autoref{thm:moscatiello_roney-dougal2021_5}, we must have $G \leq \AGL_d(2)$ for some $d$ (indeed, $\AGL_d(2)$ acts on $n = 2^d$ points; all other cases in the theorem have $b(G) > \log n + 1$), and if $d$ is even then it is noted in \cite{moscatiello_roney-dougal2021} that groups such as the split extension $2^d : \Sp_d(2)$ have this property. Are there any more such groups? What about for odd $d$? Investigating this question forms the remainder of this \thesis{}.
+Of course, we require that $\log n$ is an integer, so that $n$ is a power of 2. By \autoref{thm:moscatiello_roney-dougal2021_5}, we must have $G \leq \AGL_d(2)$ for some $d$ (indeed, $\AGL_d(2)$ acts on $n = 2^d$ points; all other cases in the theorem have $b(G) > \log n + 1$), and if $d$ is even then it is noted in \cite{moscatiello_roney-dougal2021} that groups such as the split extension $2^d : \Sp_d(2)$ have this property (we will assume this in the rest of this \thesis{}). Are there any more such groups? What about for odd $d$? Investigating this question forms the remainder of this \thesis{}.
 
 \section{Primitive subgroups of affine groups with given minimal base size}
 
@@ -81,9 +81,7 @@ The main result of this section is as follows, which is a new result.
 
 Our approach to this result is to use \texttt{GAP} to iterate over potential primitive groups $G \leq \AGL_d(2)$ for some $d$ and compute a bound on $b(G)$ to eliminate those groups for which a base of size less than $d + 1$ is found. Using the \texttt{FinInG} (finite incidence geometry) package, we use a permutation representation of $\AGL_d(2)$ (a subgroup of $\Sym(2^d)$). Note that if a base of size $r$ is found for $G$, then $b(G) \leq r$, so if $r < d + 1$, we may eliminate such $G$.
 
-To compute a base for $G$, \texttt{GAP} has the built-in command \texttt{BaseOfGroup}. However, in various test cases, we found that when compared to our implementation of the greedy base algorithm (\autoref{alg:blaha_greedy_base}) analysed in Blaha \cite{blaha1992}, the greedy algorithm sometimes found a smaller base than the the built-in command.
-
-E.g. TODO show example where greedy beats built in
+To compute a base for $G$, \texttt{GAP} has the built-in command \texttt{BaseOfGroup}. However, in various test cases, we found that when compared to our implementation of the greedy base algorithm (\autoref{alg:blaha_greedy_base}) analysed in Blaha \cite{blaha1992}, the greedy algorithm sometimes found a smaller base than the built-in command. For instance, when running a modified version of the program that proves \autoref{thm:new_result} with $d = 6$, a permutation group $G$ of degree 64 and order $3\,612\,672$ (in fact, a primitive subgroup of $\AGL_6(2)$) was found, for which \texttt{BaseOfGroup} found a base of size $7 = d + 1$, while \texttt{GreedyBase} found a base of size $5 < d + 1$; this led to a number of false positives in an initial analysis. (See the \hyperref[app:greedy_better_than_default]{appendix} for \texttt{GAP} code verifying this.)
 
 Thus, in the procedure to prove the main theorem, we use our implementation of \texttt{GreedyBase} instead of \texttt{BaseOfGroup} to compute a base for $G$ (see appendix for implementation). Both algorithms are fast; as discussed earlier, the greedy base algorithm is a polynomial-time algorithm. Of course, neither algorithm necessarily finds a minimum base for $G$, but in conjunction with \autoref{thm:blaha_greedy_size}, we see that a greedy base for $G$ has size at most $\lceil b(G)\log\log n \rceil + b(G) = O(\added{2}{b(G)}\log\log n)$, which is fine for our purposes.
 
@@ -92,7 +90,7 @@ The remainder of this section is dedicated to our approach to proving \autoref{t
 \begin{proof}[Proof of main theorem]
     First, we consider $d = 1$ in case (i). First note that $|\AGL_1(2)| = 2^1(2^1 - 1) = 2$, so if $G$ is a primitive subgroup then $G = \AGL_1(2)$ (the trivial subgroup is not transitive, thus not primitive). By \autoref{prop:agl_as_subgrp_of_gl}, $b(\AGL_1(2)) = 1 < d + 1$. This proves the result for case (i).
 
-    Fix $d \geq 2$; first, note that if $G$ is the affine group $\AGL_d(2)$, then by \autoref{prop:agl_as_subgrp_of_gl} $b(G) = d + 1$. It remains to check proper primitive subgroups $G$ of $\AGL_d(2)$ to identify those with $b(G) = d + 1$. To do so, we adopt a ``brute force approach'' with a number of optimisations. It uses the following observations to avoid checking \textit{all} primitive subgroups of $\AGL_d(2)$, especially at any given stage in the process:
+    Fix $2 \leq d \leq 10$; first, note that if $G$ is the affine group $\AGL_d(2)$, then by \autoref{prop:agl_as_subgrp_of_gl} $b(G) = d + 1$. It remains to check proper primitive subgroups $G$ of $\AGL_d(2)$ to identify those with $b(G) = d + 1$. To do so, we adopt a ``brute force approach'' with a number of optimisations. It uses the following observations to avoid checking \textit{all} primitive subgroups of $\AGL_d(2)$, especially at any given stage in the process:
 
     \begin{enumerate}
         \item \textit{Once we find a subgroup $G$ with $b(G) < d + 1$, we do not need to consider any of its (proper) subgroups.} This is due to \autoref{lem:base_of_subgroup}, which says that if $H \leq G$, then $b(H) \leq b(G) < d + 1$.
@@ -103,14 +101,52 @@ The remainder of this section is dedicated to our approach to proving \autoref{t
         \item \textit{At each stage, it suffices to check maximal subgroups up to conjugacy.} This is because \autoref{prop:conjugate_subgroups_bases} implies that $b(G^\sigma) = b(G)$ for all $\sigma \in \Sym(\Omega)$, where $G$ acts on $\Omega$, so that we may consider a representative from each conjugacy class of subgroups. Moreover, if $G$ is maximal, then $G^\sigma$ is also maximal by \autoref{lem:conjugate_of_maximal_subgroup_is_maximal}, which implies that checking only maximal subgroups up to conjugacy will not overlook any conjugacy classes of subgroups. This observation also leads to a significant improvement over the na\"ive approach, since the size of a conjugacy class of subgroups may be large. However, it means that the subgroups found by the process are unique only up to conjugacy.
     \end{enumerate}
 
-    (Note that these observations can be adapted for any group, to find (primitive) subgroups $H$ with $b(H) \geq r$ for any given $r$, by simply replacing ``$d + 1$'' with ``$r$''. If we wish to ignore the condition of primitivity, we may simply ignore observation 2 above.)
+    These observations can be adapted for any group, to find (primitive) subgroups $H$ with $b(H) > r$ for any given $r$, by simply replacing ``$d$'' with ``$r$''. If we wish to ignore the condition of primitivity, we may simply ignore observation 2 above.
 
-    Now, computing a base for $G$ is straightforward.
+    Below, we present the generalised recursive algorithm for an arbitrary permutation group $G$, based on the above observations, that allows us to find all (primitive) proper subgroups $H \leq G$ with $b(H) > r$. In particular, if $b(H) > r$, then the algorithm identifies $H$ up to conjugacy; however, it could also incorrectly identify $H$ with $b(H) \leq r$ in the process. Any (conjugacy classes of) subgroups $H$ omitted certainly have $b(H) \leq r$. (An alternative is to use a brute force approach to compute $b(H)$ exactly, but this is much more inefficient, and comes with few, if any, advantages.)
 
-    TODO
+    \begin{algorithmic}[1]
+        \Procedure{GetSubgrpBase}{$G,r,L$}\Comment{Finds all primitive $H \leq G$ with $b(H) > r$, storing in list $L$}
+        \State $\tilde L \gets [\ ]$\Comment{Initialise new list for newly found candidates}
+        \For{representatives $M < G$ of conjugacy classes of maximal subgroups of $G$}\Comment{Observation 4 above}
+        \If{$M$ is primitive} $\ell \gets$ \textsc{Length}(\textsc{GreedyBase}($M$))\Comment{Can drop condition of primitivity here}
+        \If{$\ell > r$} add $M$ to $L$ and $\tilde L$\Comment{Primitive candidate for $b(M) > r$}
+        \EndIf
+        \EndIf
+        \EndFor
+        \For{$H$ in $\tilde L$}
+        \State $L \gets$ \textsc{GetSubgrpBase}$(H,r,L)$\Comment{Recursively run on candidates $H$ in $\tilde L$}
+        \EndFor
+        \State \Return $L$\Comment{$L$ now contains all $H < G$ with $b(H) > r$ up to conjugacy}
+        \EndProcedure
+    \end{algorithmic}
+
+    Note that the algorithm does not check the initial group $G$ itself, so this must be performed separately. See the \hyperref[app:subgrps_base_len]{appendix} for an implementation in \texttt{GAP} using the functions \texttt{GetSubgrpBase} and \texttt{GetSubgrpAGLBase} (for the special case of $\AGL_d(2)$ and testing for $G \leq \AGL_d(2)$ with $b(G) > d$, i.e. $b(G) = d + 1$); these also print out various information about the subgroups identified in the process.
+
+    Let us now return to the notation of \autoref{thm:new_result}, where $G$ is a primitive proper subgroup of $\AGL_d(2)$ for given $2 \leq d \leq 10$. Running \texttt{GetSubgrpAGLBase( d )} yields the following:
+
+    \begin{itemize}
+        \item If $d = 2$, no groups $G$ are found. (2 maximal primitive subgroups $M$ are considered, but each has $b(M) < d + 1$.)
+        \item If $d = 3$, no groups $G$ are found. (3 maximal primitive subgroups $M$ are considered, but each has $b(M) < d + 1$.)
+        \item If $d = 4$, one group $G$ is found, which must be $2^4 : \Sp_4(2)$.
+        \item If $d = 5$, no groups $G$ are found. (2 maximal primitive subgroups $M$ are considered, but each has $b(M) < d + 1$.)
+        \item If $d = 6$, one group $G$ is found, which must be $2^6 : \Sp_6(2)$.
+        \item If $d = 7$, no groups $G$ are found. (2 maximal primitive subgroups $M$ are considered, but each has $b(M) < d + 1$.)
+        \item If $d = 8$, one group $G$ is found, which must be $2^8 : \Sp_8(2)$.
+        \item If $d = 9$, no groups $G$ are found. (5 maximal primitive subgroups $M$ are considered, but each has $b(M) < d + 1$.)
+        \item If $d = 10$, one group $G$ is found, which must be $2^{10} : \Sp_{10}(2)$.
+    \end{itemize}
+
+    (Note that in each case for which a group $G$ is found for some $d$, it has the correct order to be $2^d : \Sp_d(2)$; to verify this, observe that its order is $2^d |\Sp_d(2)| = 2^d |\GO_{d+1}(2)|$ by \autoref{thm:symplectic_orthogonal_isom}, which we verify in \texttt{GAP}.)
+
+    In the case that $d = 2$ or $3 \leq d \leq 9$ is odd, we see that there are no proper subgroups $G \leq \AGL_d(2)$ with $b(G) = d + 1$, which completes case (ii) of the theorem. In the remaining case that $4 \leq d \leq 10$ is even, we see that if $G \leq \AGL_d(2)$ satisfies $b(G) = d + 1$, then $G$ must be $2^d : \Sp_d(2)$; combining this with the observation by Moscatiello and Roney-Dougal in \cite{moscatiello_roney-dougal2021} that $b(2^d : \Sp_d(2)) = d + 1$ completes case (iii) and the entire proof.
 \end{proof}
 
-Based on the behaviour in \autoref{thm:new_result}, we make the following conjecture in the direction of \autoref{qn:moscatiello_roney-dougal2021}:
+This result seems to suggest that the groups identified by Moscatiello and Roney-Dougal in \cite{moscatiello_roney-dougal2021} are possibly the only primitive groups with the given property; it would be surprising if large counterexamples could be found. A limitation of our proof approach is that it only works practically for $d \leq 10$, due to memory and computational time constraints. In particular, the group identified for $d = 10$ has order $25\,410\,822\,678\,459\,187\,200 \approx 2.5 \cdot 10^{19}$ and thus has many subgroups. Without a more systematic way of describing its maximal primitive subgroups, this approach cannot be used for larger values of $d$: the case that $d = 9$ took 5 mins, the case that $d = 10$ took 100 mins, and the case that $d = 11$ took over 48 hours without returning a result.
+
+A more efficient identification of maximal primitive subgroups in $\AGL_d(2)$, such as if a classification result exists, could lead to a vast improvement in the running time of the \texttt{GetSubgrpAGLBase} algorithm, and potentially lead to this approach being useful to verify results for larger values of $d$. This is because at each stage, the procedure often identified only 2--5 primitive subgroups; the majority of the time spent is \texttt{GAP} attempting to find maximal subgroups up to conjugacy. Additionally, other algorithms to find bases and minimal base size could be employed, but the greedy algorithm is already quite fast and performs well.
+
+Based on this discussion and the behaviour in \autoref{thm:new_result}, we summarise and conclude with the following conjecture in the direction of \autoref{qn:moscatiello_roney-dougal2021}.
 
 \begin{conjecture}\label{conj:new_result}
     A primitive group $G \leq \Sym(n)$ satisfies $b(G) = \log n + 1$ if and only if $G$ is one of the following:
@@ -120,17 +156,4 @@ Based on the behaviour in \autoref{thm:new_result}, we make the following conjec
     \end{enumerate}
 \end{conjecture}
 
-TODO: LIMITATIONS (TIME TAKEN) THUS MAYBE SURPRISING IF LARGE COUNTEREXAMPLES FOUND, WOULD NEED NEW APPROACH
-
-Upon investigation using a recursive approach for $d \leq 10$, we found that apart from the affine group $\AGL_d(2)$, there were no other primitive groups for odd $d$, and for even $d$, the only other example found was $2^d : \Sp(d,2)$. Consequently, we conjecture in this \thesis{} that these are the only groups satisfying this property. Limitations of this approach include memory and computational time, since the group found for $d = 10$ has order $25\,410\,822\,678\,459\,187\,200 \approx 2.5 \cdot 10^{19}$ and thus has many subgroups.
-
-\begin{itemize}
-    \item Include process to find that there are no proper subgroups $G < \AGL_d(2)$ with $b(G) = d + 1 = \log n + 1$ ($n = 2^d$) for $d = 1,2,3,5,7,9$, and for $d = 4,6,8,10$ we have found $2^d : \Sp_d(2)$ as candidates (unproven)
-    \item Hypothesis: no proper subgroups for odd $d$, and only $2^d : \Sp_d(2)$ for even $d \geq 4$
-    \item Idea: recursively check maximal subgroups (why does this work?) -- check ones that are primitive (if imprimitive then all subgroups imprimitive)
-    \item Use greedy base algorithm: seems to perform better than default GAP algorithm (give example?)
-    \item Need to check for base size SMALLER than what we want, since it's upper bounded by the thing in question (refer to lemma on base sizes of subgroups)
-    \item Can also search for imprimitive groups, etc.
-    \item Potential improvements: more efficient checking, different algorithms to find bases (brute force vs "probably true") ($d = 9$ case took 5 mins, $d = 10$ case took 100 mins, $d = 11$ case took over 24 hours without returning result)
-    \item Also it considers only a few maximal subgroups: if we can get a list, then can check through systematically?
-\end{itemize}
+Any counterexamples must be permutation groups of degree $2^d$ with $d \geq 11$ that are a subgroup of $\AGL_d(2)$.

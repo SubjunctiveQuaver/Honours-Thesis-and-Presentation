@@ -21,7 +21,7 @@ GreedyBase := function( G, opt... ) # G is perm group (natural action), opt[1] i
   return B;
 end;
 
-getSubgrpBase := function( r, G, opt... )
+GetSubgrpBase := function( r, G, opt... )
   # gets proper subgrps H of G which are the only candidates (up to conjugacy) for b(H) > r (using greedy base alg)
   # opt[1] = if only considering primitive subgrps, opt[2] = list of candidate subgrps found (for recursion)
   local onlyPrim, M, res, newRes, num, max, greedyBase;
@@ -61,12 +61,12 @@ getSubgrpBase := function( r, G, opt... )
   Display( List( newRes, M -> Length( GreedyBase( M ) ) ) );
   for M in newRes do
     Print( "\n" );
-    res := getSubgrpBase( r, M, onlyPrim, res );
+    res := GetSubgrpBase( r, M, onlyPrim, res );
   od;
   return res;
 end;
 
-getSubgrpAGLBase := function( d, opt... )
+GetSubgrpAGLBase := function( d, opt... )
   # gets subgroups H of AGL(d,2) with b(H) = d+1 (only guess, using algorithm)
   # opt[1] = if only considering primitive subgrps
   local AffS, G, n, onlyPrim;
@@ -79,5 +79,5 @@ getSubgrpAGLBase := function( d, opt... )
   G := Action( AffineGroup( AffS ), Points( AffS ) ); # sets G = AGL(d,2) as perm group
   n := NrMovedPoints( G );
   if not n = 2^d then Error( "ops" ); fi;
-  return getSubgrpBase( d, G, onlyPrim );
+  return GetSubgrpBase( d, G, onlyPrim );
 end;

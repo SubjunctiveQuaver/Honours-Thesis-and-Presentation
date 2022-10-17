@@ -16,7 +16,7 @@ Blaha proves in \cite{blaha1992} that the minimum base problem is \hyperref[def:
 
 It remains to show that any problem in NP is polynomial time reducible to MB. Blaha describes a Karp reduction from \hyperref[eg:X3C]{exact cover by three-sets (X3C)} to MB. \added{3}{In particular, showing that MB is NP-hard for $G$ a cyclic group or elementary abelian group implies the NP-hardness of MB for arbitrary $G$; we analyse these cases in the subsequent sections.}
 
-We also describe a greedy algorithm (suggested in \cite{brown1989}) for finding a base for a permutation group $G$. \added{3}{(See the appendix for an implementation in \texttt{GAP}, which we use later on in this \thesis{}.)}
+We also describe a greedy algorithm (suggested in \cite{brown1989}) for finding a base for a permutation group $G$. \added{3}{(See the \hyperref[app:greedy_base]{appendix} for an implementation in \texttt{GAP}, which we use later on in this \thesis{}.)}
 
 \begin{algorithm}[Greedy base algorithm]\label{alg:blaha_greedy_base}
     Let $G \leq \Sym(\Omega)$ be a permutation group that acts naturally on $\Omega$. Construct a base $B = [\beta_1,\dotsc,\beta_r]$ for $G$ by repeatedly choosing $\beta_i \in \Omega$ from a largest orbit of $G^{i-1}$ (where $G^0 = G$), then constructing $G^i = \added{2}{G^{i-1}_{\beta_i}}$ until we reach $G^r = 1$. (Then $G = G^0 \geq G^1 \geq \dotsb \geq G^r = 1$ is the associated stabiliser chain.)

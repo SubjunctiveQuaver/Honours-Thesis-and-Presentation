@@ -1,33 +1,10 @@
 LoadPackage("FinInG");
 
-GreedyBase := function( G, opt... ) # G is perm group (natural action), opt[1] is partial base
-  local B, S, OLen, LargestOrbitList, LargestOrbitPos, b;
-  if Length( opt ) = 0 then
-    B := [ ]; # if not given then start with empty base
-  else
-    B := opt[1];
-  fi;
-  S := Stabilizer( G, B, OnTuples );
-  while IsTrivial( S ) = false do
-    # evaluate orbits in S and get element from a largest orbit
-    OLen := OrbitLengthsDomain( S );
-    LargestOrbitList := PositionsProperty( OLen, n -> ( n = Maximum( OLen ) ) );
-    LargestOrbitPos := Random( LargestOrbitList );
-    b := OrbitsDomain( S )[LargestOrbitPos][1];
-    # add to base
-    Add(B, b);
-    S := Stabilizer( S, b );
-  od;
-  return B;
-end;
-
-GetSubgrpBase := function( r, G, opt... )
+GetSubgrpBaseBoG := function( r, G, opt... )
   # gets proper subgrps H of G which are the only candidates (up to conjugacy) for b(H) > r (using greedy base alg)
   # opt[1] = if only considering primitive subgrps, opt[2] = list of candidate subgrps found (for recursion)
-  local onlyPrim, M, res, newRes, num, max, greedyBase, gapBase, greedyBaseLen, gapBaseLen;
+  local onlyPrim, M, res, newRes, num, max, greedyBase;
   newRes := [ ];
-  greedyBaseLen := [ ];
-  gapBaseLen := [ ];
   if Length( opt ) = 0 then
     onlyPrim := false;
     res := [ ];
@@ -47,10 +24,7 @@ GetSubgrpBase := function( r, G, opt... )
   for M in max do 
     if IsPrimitive( M ) or not onlyPrim then
       num := num + 1;
-      greedyBase := GreedyBase( M );
-      # gapBase := BaseOfGroup( M );
-      # Add( greedyBaseLen, Length( greedyBase ) );
-      # Add( gapBaseLen, Length( gapBase ) );
+      greedyBase := BaseOfGroup( M );
       if Length( greedyBase ) > r then
         Add( res, M );
         Add( newRes, M );
@@ -59,10 +33,6 @@ GetSubgrpBase := function( r, G, opt... )
   od;
 
   Print( "Considered ",  num, " maximal subgrps (up to conj)\n" );
-  # Print( "GAP's base command finds bases of length:\n" );
-  # Display( gapBaseLen );
-  # Print( "Greedy base alg finds bases of length:\n");
-  # Display( greedyBaseLen );
   Print( "Found ", Size( newRes ), " subgrps that may have base of length > ", r, "\n" );
   Print( "GAP's base command finds bases of length:\n" );
   Display( List( newRes, M -> Size( BaseOfGroup( M ) ) ) );
@@ -70,12 +40,12 @@ GetSubgrpBase := function( r, G, opt... )
   Display( List( newRes, M -> Length( GreedyBase( M ) ) ) );
   for M in newRes do
     Print( "\n" );
-    res := GetSubgrpBase( r, M, onlyPrim, res );
+    res := GetSubgrpBaseBoG( r, M, onlyPrim, res );
   od;
   return res;
 end;
 
-GetSubgrpAGLBase := function( d, opt... )
+GetSubgrpAGLBaseBoG := function( d, opt... )
   # gets subgroups H of AGL(d,2) with b(H) = d+1 (only guess, using algorithm)
   # opt[1] = if only considering primitive subgrps
   local AffS, G, n, onlyPrim;
@@ -88,5 +58,5 @@ GetSubgrpAGLBase := function( d, opt... )
   G := Action( AffineGroup( AffS ), Points( AffS ) ); # sets G = AGL(d,2) as perm group
   n := NrMovedPoints( G );
   if not n = 2^d then Error( "ops" ); fi;
-  return GetSubgrpBase( d, G, onlyPrim );
+  return GetSubgrpBaseBoG( d, G, onlyPrim );
 end;

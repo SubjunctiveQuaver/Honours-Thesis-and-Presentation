@@ -42,23 +42,27 @@ Lines 28--41 describe all elements of $G = \Aut(\Gamma)$. Lines 62--67 describe 
 
 \subsection{Greedy base algorithm}
 
-Below is \texttt{GAP} code for an implementation of the greedy base algorithm from \autoref{alg:blaha_greedy_base}:
+Below is \texttt{GAP} code for an implementation of the greedy base algorithm from \autoref{alg:blaha_greedy_base} as \texttt{GreedyBase}:\label{app:greedy_base}
 
 \lstinputlisting{gap_code/greedy_base.gap}
+
+The following shows that \texttt{GreedyBase} sometimes finds a smaller base than the built-in command \texttt{BaseOfGroup}:\label{app:greedy_better_than_default}
+
+\lstinputlisting{txt_files/greedy_better_than_default.gap}
 
 \subsection{Program to find primitive subgroups with given minimum base size}
 
 Below is \texttt{GAP} code for the recursive program that was used to identify conjugacy classes of (primitive) proper subgroups $G$ of $\AGL_d(2)$ (for given $d$) which may satisfy $b(G) = d + 1$. It includes the greedy base algorithm as described above (so that the code is fully self-contained).
 
-Given $d \geq 1$, running \texttt{getSubgrpAGLBase( d )} gives a list of candidate primitive subgroups of $\AGL_d(2)$ with minimum base size $d + 1$, according to the greedy base algorithm (which seemed to perform better than the built-in \texttt{BaseOfGroup} function which presented false positives).
+Given $d \geq 1$, running \texttt{GetSubgrpAGLBase( d )} gives a list of candidate primitive subgroups of $\AGL_d(2)$ with minimum base size $d + 1$, according to the greedy base algorithm (which seemed to perform better than the built-in \texttt{BaseOfGroup} function which presented false positives).
 
-The \texttt{getSubgrpAGLBase} function relies on the function \texttt{getSubgrpBase}; note that \texttt{getSubgrpBase( r, G )} returns information about proper (primitive) subgroups $H$ of a group $G$ such that the greedy base algorithm finds no base of size at most $r$ (thus are candidates for $b(H) > r$). Thus, the program can be easily adjusted to answer similar questions for different families of groups.
+The \texttt{GetSubgrpAGLBase} function relies on the function \texttt{GetSubgrpBase}; note that \texttt{GetSubgrpBase( r, G )} returns information about proper (primitive) subgroups $H$ of a group $G$ such that the greedy base algorithm finds no base of size at most $r$ (thus are candidates for $b(H) > r$). Thus, the program can be easily adjusted to answer similar questions for different families of groups.\label{app:subgrps_base_len}
 
 \lstinputlisting{gap_code/subgrps_base_len.gap}
 
-Below is output for $d = 1$:
+% Below is output for $d = 1$:
 
-\lstinputlisting{txt_files/agl_base_gap_output/1.gap}
+% \lstinputlisting{txt_files/agl_base_gap_output/1.gap}
 
 Below is output for $d = 2$:
 
@@ -96,6 +100,6 @@ Below is output for $d = 10$:
 
 \lstinputlisting{txt_files/agl_base_gap_output/10.gap}
 
-TODO: For even $d$, check that size is right for $2^d : \Sp(d,2)$.
+For even $d$, we may check that order is right for $2^d : \Sp_d(2)$, by verifying that the groups identified have order equal to \texttt{2\^{}d * GeneralOrthogonalGroup( d + 1, 2 )} using the isomorphism $\Sp_d(2) \cong \GO_{d+1}(2)$; this is the case in every scenario.
 
 % \lstinputlisting{gap_code/agl_matrices.gap}
