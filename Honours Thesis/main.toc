@@ -40,11 +40,11 @@
 \contentsline {chapter}{\numberline {6}Results on minimum bases for primitive groups}{47}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Results for non-large base primitive permutation groups}{47}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Primitive subgroups of affine groups with given minimal base size}{49}{section.6.2}%
-\contentsline {chapter}{References}{50}{chapter*.24}%
-\contentsline {chapter}{\numberline {A}Appendix --- theory of permutation groups}{52}{appendix.A}%
-\contentsline {subsection}{Random elements and the constructive membership problem}{52}{section*.25}%
-\contentsline {subsection}{Wreath product and dihedral group}{54}{section*.26}%
-\contentsline {subsection}{Stabiliser chain for automorphism group of graph}{55}{section*.27}%
-\contentsline {chapter}{\numberline {B}Appendix --- computing bases of subgroups of affine groups}{58}{appendix.B}%
-\contentsline {subsection}{Greedy base algorithm}{58}{section*.28}%
-\contentsline {subsection}{Program to find primitive subgroups with given minimum base size}{58}{section*.29}%
+\contentsline {chapter}{References}{51}{chapter*.24}%
+\contentsline {chapter}{\numberline {A}Appendix --- theory of permutation groups}{53}{appendix.A}%
+\contentsline {subsection}{Random elements and the constructive membership problem}{53}{section*.25}%
+\contentsline {subsection}{Wreath product and dihedral group}{55}{section*.26}%
+\contentsline {subsection}{Stabiliser chain for automorphism group of graph}{56}{section*.27}%
+\contentsline {chapter}{\numberline {B}Appendix --- computing bases of subgroups of affine groups}{59}{appendix.B}%
+\contentsline {subsection}{Greedy base algorithm}{59}{section*.28}%
+\contentsline {subsection}{Program to find primitive subgroups with given minimum base size}{59}{section*.29}%

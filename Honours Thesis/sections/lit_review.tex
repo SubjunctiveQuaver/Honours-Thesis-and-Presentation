@@ -64,32 +64,55 @@ The infinite number of primitive groups $G$ of degree $n$ with $b(G) > \log n + 
     Which primitive groups $G \leq \Sym(n)$ satisfy $b(G) = \log n + 1$?
 \end{question}
 
-Of course, we require that $\log n$ is an integer, so that $n$ is a power of 2. They observe that we must have $G \leq \AGL_d(2)$ for some $d$ (indeed, $\AGL_d(2)$ acts on $2^d$ points), and if $d$ is even then groups such as the split extension $2^d : \Sp_d(2)$ have this property. Are there any more? What about for odd $d$? Investigating this question forms the remainder of this \thesis{}.
+Of course, we require that $\log n$ is an integer, so that $n$ is a power of 2. By \autoref{thm:moscatiello_roney-dougal2021_5}, we must have $G \leq \AGL_d(2)$ for some $d$ (indeed, $\AGL_d(2)$ acts on $n = 2^d$ points; all other cases in the theorem have $b(G) > \log n + 1$), and if $d$ is even then it is noted in \cite{moscatiello_roney-dougal2021} that groups such as the split extension $2^d : \Sp_d(2)$ have this property. Are there any more such groups? What about for odd $d$? Investigating this question forms the remainder of this \thesis{}.
 
 \section{Primitive subgroups of affine groups with given minimal base size}
 
-The main result of this section is as follows.
+The main result of this section is as follows, which is a new result.
 
 \begin{theorem}\label{thm:new_result}
+    Let $G$ be a primitive subgroup of $\AGL_d(2)$ for some $d$, with degree $n = 2^d$.
     \begin{enumerate}[(i)]
-        \item For odd $d \leq 9$ and $d = 2$, the only primitive group $G \leq \Sym(n)$ satisfying $b(G) = \log n + 1$ is (permutation isomorphic to) the affine group $\AGL_d(2)$.
-        \item For even $4 \leq d \leq 10$, the only primitive groups $G \leq \Sym(n)$ satisfying $b(G) = \log n + 1$ are $\AGL_d(2)$ and $2^d : \Sp_d(2)$.
+        \item For $d = 1$, there is no such $G$ with $b(G) = d + 1 = \log n + 1$.
+        \item For odd $3 \leq d \leq 9$ and $d = 2$, if $b(G) = d + 1 = \log n + 1$, then $G$ is the affine group $\AGL_d(2)$.
+        \item For even $4 \leq d \leq 10$, if $b(G) = d + 1 = \log n + 1$, then $G$ is either $\AGL_d(2)$ or $2^d : \Sp_d(2)$.
     \end{enumerate}
 \end{theorem}
 
-Based on this behaviour, we make the following conjecture in the direction of \autoref{qn:moscatiello_roney-dougal2021}:
+The remainder of this section is dedicated to our approach to proving \autoref{thm:new_result}. Note that all subgroups take the induced subgroup action.
+
+\begin{proof}[Proof of main theorem]
+    First, we consider $d = 1$ in case (i). First note that $|\AGL_1(2)| = 2^1(2^1 - 1) = 2$, so if $G$ is a primitive subgroup then $G = \AGL_1(2)$ (the trivial subgroup is not transitive, thus not primitive). By \autoref{prop:agl_as_subgrp_of_gl}, $b(\AGL_1(2)) = 1 < d + 1$. This proves the result for case (i).
+
+    Fix $d \geq 2$; first, note that if $G$ is the affine group $\AGL_d(2)$, then by \autoref{prop:agl_as_subgrp_of_gl} $b(G) = d + 1$. It remains to check proper primitive subgroups $G$ of $\AGL_d(2)$ to identify those with $b(G) = d + 1$. To do so, we adopt a ``brute force approach'' with a number of optimisations. It uses the following observations to avoid checking \textit{all} primitive subgroups of $\AGL_d(2)$, especially at any given stage in the process:
+
+    \begin{enumerate}
+        \item \textit{Once we find a subgroup $G$ with $b(G) < d + 1$, we do not need to consider any of its (proper) subgroups.} This is due to \autoref{lem:base_of_subgroup}, which says that if $H \leq G$, then $b(H) \leq b(G) < d + 1$.
+        \item \textit{If we find a non-primitive (imprimitive or intransitive) subgroup $G$, we do not need to consider any of its subgroups.} This is because subgroups of non-primitive groups (that act on $\Omega$) are non-primitive: suppose $\Sigma = \{\Delta^g : g \in G\}$ is a system of imprimitivity for $G$ transitive, where $\Delta$ is a block. Then for transitive $H \leq G$, $\Delta$ is clearly a block for the induced $H$-action, and $\Sigma = \{\Delta^h : h \in H\}$ is a system of imprimitivity for $H$. If $G$ is intransitive, then there is $\alpha \in \Omega$ with $\alpha^G \neq \Omega$; then $\alpha^H \subseteq \alpha^G$ for $H \leq G$, so $H$ is intransitive.
+        \item \textit{If we have $G$ with $b(G) = d + 1$, we may recursively check maximal subgroups.} This is because $\AGL_d(2)$ is finite, so for arbitrary $H \leq G$, we have a \textit{finite} subgroup series
+              $$H = H_0 < H_1 < \dotsb < H_k = G$$
+              where each $H_i$ is maximal in $H_{i + 1}$ (else insert intermediate groups in the series). Thus, if $b(H) = d + 1$, then we must have $b(H_i) = d + 1$ for all $i$, by observation 1 above; recursively checking maximal subgroups will guarantee that we eventually find $H$.
+        \item \textit{At each stage, it suffices to check maximal subgroups up to conjugacy.} This is because \autoref{prop:conjugate_subgroups_bases} implies that $b(G^\sigma) = b(G)$ for all $\sigma \in \Sym(\Omega)$, where $G$ acts on $\Omega$, so that we may consider a representative from each conjugacy class of subgroups. Moreover, if $G$ is maximal, then $G^\sigma$ is also maximal by \autoref{lem:conjugate_of_maximal_subgroup_is_maximal}, which implies that checking only maximal subgroups up to conjugacy will not overlook any conjugacy classes of subgroups. This observation also leads to a significant improvement over the na\"ive approach, since the size of a conjugacy class of subgroups may be large. However, it means that the subgroups found by the process are unique only up to conjugacy.
+    \end{enumerate}
+
+    Note that these observations can be adapted for any group $G$, to find (primitive) subgroups $H$ of $G$ with $b(H) \geq r$ for any given $r$, by simply replacing ``$d + 1$'' with ``$r$''. If we wish to ignore the condition of primitivity, we may simply ignore observation 2 above.
+
+    TODO
+\end{proof}
+
+Based on the behaviour in \autoref{thm:new_result}, we make the following conjecture in the direction of \autoref{qn:moscatiello_roney-dougal2021}:
 
 \begin{conjecture}\label{conj:new_result}
     A primitive group $G \leq \Sym(n)$ satisfies $b(G) = \log n + 1$ if and only if $G$ is one of the following:
     \begin{enumerate}[(i)]
-        \item $n = 2^d$ and $G$ is the affine group $\AGL_d(2)$; or
+        \item $n = 2^d$ with $d \geq 2$, and $G$ is the affine group $\AGL_d(2)$; or
         \item $n = 2^d$ with $d \geq 4$ even, and $G$ is the split extension $2^d : \Sp_d(2)$.
     \end{enumerate}
 \end{conjecture}
 
-The remainder of this section is dedicated to our approach to proving \autoref{thm:new_result}.
+TODO: LIMITATIONS (TIME TAKEN) THUS MAYBE SURPRISING IF LARGE COUNTEREXAMPLES FOUND, WOULD NEED NEW APPROACH
 
-The authors of \cite{moscatiello_roney-dougal2021} then present a question, which asks to identify primitive groups $G$ of degree $n$ that satisfy $b(G) = \log n + 1$. They note that $G$ must be a subgroup of the affine group $\AGL_d(2)$ of affine transformations of $\F_2^d$ for some $d$, and that if $d$ is even then groups such as the split extension $2^d : \Sp(d,2)$ have this property. Upon investigation using a recursive approach for $d \leq 10$, we found that apart from the affine group $\AGL_d(2)$, there were no other primitive groups for odd $d$, and for even $d$, the only other example found was $2^d : \Sp(d,2)$. Consequently, we conjecture in this \thesis{} that these are the only groups satisfying this property. Limitations of this approach include memory and computational time, since the group found for $d = 10$ has order $25\,410\,822\,678\,459\,187\,200 \approx 2.5 \cdot 10^{19}$ and thus has many subgroups.
+Upon investigation using a recursive approach for $d \leq 10$, we found that apart from the affine group $\AGL_d(2)$, there were no other primitive groups for odd $d$, and for even $d$, the only other example found was $2^d : \Sp(d,2)$. Consequently, we conjecture in this \thesis{} that these are the only groups satisfying this property. Limitations of this approach include memory and computational time, since the group found for $d = 10$ has order $25\,410\,822\,678\,459\,187\,200 \approx 2.5 \cdot 10^{19}$ and thus has many subgroups.
 
 \begin{itemize}
     \item Include process to find that there are no proper subgroups $G < \AGL_d(2)$ with $b(G) = d + 1 = \log n + 1$ ($n = 2^d$) for $d = 1,2,3,5,7,9$, and for $d = 4,6,8,10$ we have found $2^d : \Sp_d(2)$ as candidates (unproven)
