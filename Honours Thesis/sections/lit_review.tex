@@ -81,13 +81,11 @@ The main result of this section is as follows, which is a new result.
 
 Our approach to this result is to use \texttt{GAP} to iterate over potential primitive groups $G \leq \AGL_d(2)$ for some $d$ and compute a bound on $b(G)$ to eliminate those groups for which a base of size less than $d + 1$ is found. Using the \texttt{FinInG} (finite incidence geometry) package, we use a permutation representation of $\AGL_d(2)$ (a subgroup of $\Sym(2^d)$). Note that if a base of size $r$ is found for $G$, then $b(G) \leq r$, so if $r < d + 1$, we may eliminate such $G$.
 
-To compute a base for $G$, \texttt{GAP} has the built-in command \texttt{BaseOfGroup}. However, in various test cases, we found that when compared to our implementation of the greedy base algorithm (\autoref{alg:blaha_greedy_base}) analysed in Blaha \cite{blaha1992}, the greedy algorithm sometimes found a smaller base than
+To compute a base for $G$, \texttt{GAP} has the built-in command \texttt{BaseOfGroup}. However, in various test cases, we found that when compared to our implementation of the greedy base algorithm (\autoref{alg:blaha_greedy_base}) analysed in Blaha \cite{blaha1992}, the greedy algorithm sometimes found a smaller base than the the built-in command.
 
-Thus, in the procedure to prove the main theorem, we use our implementation of \texttt{GreedyBase} instead of \texttt{BaseOfGroup} to compute a base for $G$. Both algorithms are fast; since
+E.g. TODO show example where greedy beats built in
 
-E.g.
-
-
+Thus, in the procedure to prove the main theorem, we use our implementation of \texttt{GreedyBase} instead of \texttt{BaseOfGroup} to compute a base for $G$ (see appendix for implementation). Both algorithms are fast; as discussed earlier, the greedy base algorithm is a polynomial-time algorithm. Of course, neither algorithm necessarily finds a minimum base for $G$, but in conjunction with \autoref{thm:blaha_greedy_size}, we see that a greedy base for $G$ has size at most $\lceil b(G)\log\log n \rceil + b(G) = O(\added{2}{b(G)}\log\log n)$, which is fine for our purposes.
 
 The remainder of this section is dedicated to our approach to proving \autoref{thm:new_result}. Note that all subgroups take the induced subgroup action.
 
