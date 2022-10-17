@@ -1958,14 +1958,14 @@ INPUT txt_files\automorphism_group_graph_bsgs_gap_2.gap
 INPUT .\txt_files\automorphism_group_graph_bsgs_gap_2.gap
 INPUT txt_files\automorphism_group_graph_bsgs_gap_2.gap
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmrc7t.tfm
-INPUT .\txt_files\automorphism_group_graph_bsgs_gap_3.gap
-INPUT txt_files\automorphism_group_graph_bsgs_gap_3.gap
-INPUT .\txt_files\automorphism_group_graph_bsgs_gap_3.gap
-INPUT txt_files\automorphism_group_graph_bsgs_gap_3.gap
-INPUT .\txt_files\automorphism_group_graph_bsgs_gap_3.gap
-INPUT txt_files\automorphism_group_graph_bsgs_gap_3.gap
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmrc7t.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr8r.tfm
+INPUT .\txt_files\automorphism_group_graph_bsgs_gap_3.gap
+INPUT txt_files\automorphism_group_graph_bsgs_gap_3.gap
+INPUT .\txt_files\automorphism_group_graph_bsgs_gap_3.gap
+INPUT txt_files\automorphism_group_graph_bsgs_gap_3.gap
+INPUT .\txt_files\automorphism_group_graph_bsgs_gap_3.gap
+INPUT txt_files\automorphism_group_graph_bsgs_gap_3.gap
 INPUT .\sections\group_concepts\classification_results.tex
 INPUT sections\group_concepts\classification_results.tex
 INPUT .\sections\group_concepts\classification_results.tex
