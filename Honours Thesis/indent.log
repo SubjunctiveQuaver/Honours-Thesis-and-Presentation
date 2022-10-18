@@ -1,7 +1,7 @@
 INFO:  latexindent.pl version 3.16, 2022-03-13, a script to indent .tex files
        latexindent.pl lives here: C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/scripts/latexindent/
-       Tue Oct 18 12:59:06 2022
-       Filename: c:/Users/lawre/OneDrive/Education/Monash University/2022/MTH4100 Research Project/Honours Thesis and Presentation/Honours Thesis/preamble/__latexindent_temp.tex
+       Tue Oct 18 13:01:07 2022
+       Filename: c:/Users/lawre/OneDrive/Education/Monash University/2022/MTH4100 Research Project/Honours Thesis and Presentation/Honours Thesis/sections/__latexindent_temp.tex
 INFO:  Processing switches:
        -y|--yaml: YAML settings specified via command line
        -c|--cruft: cruft directory
@@ -23,9 +23,9 @@ INFO:  YAML settings read: indentconfig.yaml or .indentconfig.yaml
        To specify user settings you would put indentconfig.yaml here: C:\Users\lawre/indentconfig.yaml
        Alternatively, you can use the hidden file .indentconfig.yaml as: C:\Users\lawre/.indentconfig.yaml
 INFO:  YAML settings read: -y switch
-       YAML setting: defaultIndent:'  '
-       single-quoted string found in -y switch: '  ', substitute to   
-       Updating mainSettings with defaultIndent:   
+       YAML setting: defaultIndent:'    '
+       single-quoted string found in -y switch: '    ', substitute to     
+       Updating mainSettings with defaultIndent:     
 INFO:  Phase 1: searching for objects
 INFO:  Phase 2: finding surrounding indentation
 INFO:  Phase 3: indenting objects
