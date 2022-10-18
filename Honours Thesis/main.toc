@@ -34,18 +34,19 @@
 \contentsline {section}{\numberline {5.3}Matrix groups and affine groups}{41}{section.5.3}%
 \contentsline {subsection}{Affine transformations and the affine general linear group}{41}{section*.20}%
 \contentsline {subsection}{Affine group structure}{43}{section*.21}%
-\contentsline {subsection}{Symplectic and orthogonal groups}{44}{section*.22}%
+\contentsline {subsection}{Symplectic and orthogonal groups}{45}{section*.22}%
 \contentsline {section}{\numberline {5.4}Primitive permutation groups and the O'Nan-Scott theorem}{45}{section.5.4}%
 \contentsline {subsection}{The socle}{45}{section*.23}%
 \contentsline {subsection}{The O'Nan-Scott theorem}{47}{section*.24}%
-\contentsline {chapter}{\numberline {6}Results on minimum bases for primitive groups}{48}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Results for non-large base primitive permutation groups}{48}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Primitive subgroups of affine groups with given minimal base size}{50}{section.6.2}%
-\contentsline {chapter}{References}{53}{chapter*.25}%
-\contentsline {chapter}{\numberline {A}Appendix --- theory of permutation groups}{55}{appendix.A}%
-\contentsline {subsection}{Random elements and the constructive membership problem}{55}{section*.26}%
-\contentsline {subsection}{Wreath product and dihedral group}{57}{section*.27}%
-\contentsline {subsection}{Stabiliser chain for automorphism group of graph}{58}{section*.28}%
-\contentsline {chapter}{\numberline {B}Appendix --- computing bases of subgroups of affine groups}{61}{appendix.B}%
-\contentsline {subsection}{Greedy base algorithm}{61}{section*.29}%
-\contentsline {subsection}{Program to find primitive subgroups with given minimum base size}{62}{section*.30}%
+\contentsline {chapter}{\numberline {6}Results on minimum bases for primitive groups}{49}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Results for non-large base primitive permutation groups}{49}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Primitive subgroups of affine groups with given minimal base size}{51}{section.6.2}%
+\contentsline {chapter}{References}{54}{chapter*.25}%
+\contentsline {chapter}{\numberline {A}Appendix --- theory of permutation groups}{56}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Random elements and the constructive membership problem}{56}{section.A.1}%
+\contentsline {subsection}{Stabiliser chain for automorphism group of graph}{58}{section*.26}%
+\contentsline {section}{\numberline {A.2}Wreath product and dihedral group}{60}{section.A.2}%
+\contentsline {chapter}{\numberline {B}Appendix --- computing bases of subgroups of affine groups}{62}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Greedy base algorithm}{62}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Program to find primitive subgroups with given minimal base size}{63}{section.B.2}%
+\contentsline {subsection}{Program output for small affine groups}{65}{section*.27}%

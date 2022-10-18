@@ -49,7 +49,7 @@
 \contentsline {example}{{Example}{2.{39}}{}}{11}{example.2.39}%
 \contentsline {example}{{Example}{2.{40}}{}}{11}{example.2.40}%
 \contentsline {proposition}{{Proposition}{2.{41}}{}}{11}{proposition.2.41}%
-\contentsline {proof}{{\proofname }{11}{}}{11}{proof.11}%
+\contentsline {proof}{{\proofname }{11}{}}{12}{proof.11}%
 \contentsline {proposition}{{Proposition}{2.{42}}{}}{12}{proposition.2.42}%
 \contentsline {proposition}{{Proposition}{2.{43}}{Theorem 1.6A in \cite {dixon_mortimer_perm_groups1996}}}{12}{proposition.2.43}%
 \contentsline {proof}{{\proofname }{12}{}}{12}{proof.12}%
@@ -111,7 +111,7 @@
 \contentsline {definition}{{Definition}{3.{15}}{}}{26}{definition.3.15}%
 \contentsline {theorem}{{Theorem}{3.{16}}{}}{26}{theorem.3.16}%
 \contentsline {definition}{{Definition}{3.{17}}{}}{26}{definition.3.17}%
-\contentsline {example}{{Example}{3.{18}}{X3C}}{26}{example.3.18}%
+\contentsline {example}{{Example}{3.{18}}{X3C}}{27}{example.3.18}%
 \contentsline {lemma}{{Lemma}{4.{1}}{}}{28}{lemma.4.1}%
 \contentsline {proof}{{\proofname }{24}{}}{28}{proof.24}%
 \contentsline {algorithm}{{Algorithm}{4.{2}}{Greedy base algorithm}}{28}{algorithm.4.2}%
@@ -119,13 +119,13 @@
 \contentsline {proof}{{\proofname }{25}{}}{29}{proof.25}%
 \contentsline {lemma}{{Lemma}{4.{4}}{}}{29}{lemma.4.4}%
 \contentsline {proof}{{\proofname }{26}{}}{29}{proof.26}%
-\contentsline {theorem}{{Theorem}{4.{5}}{Blaha, 1992}}{29}{theorem.4.5}%
-\contentsline {proof}{{\proofname }{27}{}}{29}{proof.27}%
+\contentsline {theorem}{{Theorem}{4.{5}}{Blaha, 1992}}{30}{theorem.4.5}%
+\contentsline {proof}{{\proofname }{27}{}}{30}{proof.27}%
 \contentsline {remark}{{Remark}{4.{6}}{}}{30}{remark.4.6}%
 \contentsline {example}{{Example}{4.{7}}{}}{30}{example.4.7}%
 \contentsline {example}{{Example}{4.{8}}{}}{31}{example.4.8}%
 \contentsline {lemma}{{Lemma}{4.{9}}{}}{31}{lemma.4.9}%
-\contentsline {proof}{{\proofname }{28}{}}{31}{proof.28}%
+\contentsline {proof}{{\proofname }{28}{}}{32}{proof.28}%
 \contentsline {lemma}{{Lemma}{4.{10}}{Lemma 2.2 in \cite {blaha1992}}}{32}{lemma.4.10}%
 \contentsline {proof}{{\proofname }{29}{}}{32}{proof.29}%
 \contentsline {lemma}{{Lemma}{4.{11}}{Lemma 2.3 in \cite {blaha1992}}}{32}{lemma.4.11}%
@@ -145,7 +145,7 @@
 \contentsline {theorem}{{Theorem}{5.{5}}{Jordan-H\"older}}{36}{theorem.5.5}%
 \contentsline {corollary}{{Corollary}{5.{6}}{Fundamental theorem of arithmetic}}{36}{corollary.5.6}%
 \contentsline {proof}{{\proofname }{33}{}}{36}{proof.33}%
-\contentsline {theorem}{{Theorem}{5.{7}}{Classification of finite simple groups}}{36}{theorem.5.7}%
+\contentsline {theorem}{{Theorem}{5.{7}}{Classification of finite simple groups}}{37}{theorem.5.7}%
 \contentsline {definition}{{Definition}{5.{8}}{}}{37}{definition.5.8}%
 \contentsline {example}{{Example}{5.{9}}{}}{37}{example.5.9}%
 \contentsline {definition}{{Definition}{5.{10}}{}}{38}{definition.5.10}%
@@ -174,26 +174,26 @@
 \contentsline {proof}{{\proofname }{39}{}}{43}{proof.39}%
 \contentsline {proposition}{{Proposition}{5.{28}}{}}{44}{proposition.5.28}%
 \contentsline {proof}{{\proofname }{40}{}}{44}{proof.40}%
-\contentsline {definition}{{Definition}{5.{29}}{}}{44}{definition.5.29}%
+\contentsline {definition}{{Definition}{5.{29}}{}}{45}{definition.5.29}%
 \contentsline {definition}{{Definition}{5.{30}}{}}{45}{definition.5.30}%
 \contentsline {theorem}{{Theorem}{5.{31}}{}}{45}{theorem.5.31}%
 \contentsline {definition}{{Definition}{5.{32}}{}}{45}{definition.5.32}%
-\contentsline {example}{{Example}{5.{33}}{}}{45}{example.5.33}%
+\contentsline {example}{{Example}{5.{33}}{}}{46}{example.5.33}%
 \contentsline {lemma}{{Lemma}{5.{34}}{}}{46}{lemma.5.34}%
 \contentsline {proof}{{\proofname }{41}{}}{46}{proof.41}%
 \contentsline {lemma}{{Lemma}{5.{35}}{}}{46}{lemma.5.35}%
 \contentsline {proof}{{\proofname }{42}{}}{46}{proof.42}%
 \contentsline {proposition}{{Proposition}{5.{36}}{}}{46}{proposition.5.36}%
 \contentsline {proof}{{\proofname }{43}{}}{46}{proof.43}%
-\contentsline {proposition}{{Proposition}{5.{37}}{}}{46}{proposition.5.37}%
-\contentsline {proof}{{\proofname }{44}{}}{46}{proof.44}%
+\contentsline {proposition}{{Proposition}{5.{37}}{}}{47}{proposition.5.37}%
+\contentsline {proof}{{\proofname }{44}{}}{47}{proof.44}%
 \contentsline {theorem}{{Theorem}{5.{38}}{}}{47}{theorem.5.38}%
 \contentsline {theorem}{{Theorem}{5.{39}}{O'Nan-Scott}}{47}{theorem.5.39}%
-\contentsline {definition}{{Definition}{6.{1}}{}}{48}{definition.6.1}%
-\contentsline {theorem}{{Theorem}{6.{2}}{Liebeck, 1984}}{48}{theorem.6.2}%
-\contentsline {theorem}{{Theorem}{6.{3}}{Moscatiello and Roney-Dougal, 2021}}{49}{theorem.6.3}%
-\contentsline {theorem}{{Theorem}{6.{4}}{Moscatiello and Roney-Dougal, 2021}}{49}{theorem.6.4}%
-\contentsline {question}{{Question}{6.{5}}{Moscatiello and Roney-Dougal, 2021}}{50}{question.6.5}%
-\contentsline {theorem}{{Theorem}{6.{6}}{}}{50}{theorem.6.6}%
-\contentsline {proof}{{Proof of main theorem}{45}{}}{50}{proof.45}%
-\contentsline {conjecture}{{Conjecture}{6.{7}}{}}{52}{conjecture.6.7}%
+\contentsline {definition}{{Definition}{6.{1}}{}}{49}{definition.6.1}%
+\contentsline {theorem}{{Theorem}{6.{2}}{Liebeck, 1984}}{49}{theorem.6.2}%
+\contentsline {theorem}{{Theorem}{6.{3}}{Moscatiello and Roney-Dougal, 2021}}{50}{theorem.6.3}%
+\contentsline {theorem}{{Theorem}{6.{4}}{Moscatiello and Roney-Dougal, 2021}}{50}{theorem.6.4}%
+\contentsline {question}{{Question}{6.{5}}{Moscatiello and Roney-Dougal, 2021}}{51}{question.6.5}%
+\contentsline {theorem}{{Theorem}{6.{6}}{}}{51}{theorem.6.6}%
+\contentsline {proof}{{Proof of main theorem}{45}{}}{51}{proof.45}%
+\contentsline {conjecture}{{Conjecture}{6.{7}}{}}{53}{conjecture.6.7}%

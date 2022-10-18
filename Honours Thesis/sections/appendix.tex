@@ -1,6 +1,6 @@
 \chapter{Appendix --- theory of permutation groups}%\chaptermark{Appendix}
 
-\subsection{Random elements and the constructive membership problem}
+\section{Random elements and the constructive membership problem}
 
 \textit{Note that Adobe Acrobat allows you to copy the following code without line numbers.}
 
@@ -20,7 +20,15 @@ Here is the modified version of \texttt{Membership} which prints out values of $
 
 \lstinputlisting{gap_code/membership_print.gap}
 
-\subsection{Wreath product and dihedral group}
+\subsection{Stabiliser chain for automorphism group of graph}
+
+Here is some more output relevant to \autoref{eg:automorphism_group_graph_bsgs}:\label{app:automorphism_group_graph_bsgs}
+
+\lstinputlisting{txt_files/automorphism_group_graph_bsgs_gap_appendix.gap}
+
+Lines 28--41 describe all elements of $G = \Aut(\Gamma)$. Lines 62--67 describe all elements of $G_1 = \Stab_G(4)$.
+
+\section{Wreath product and dihedral group}
 
 Here is \texttt{GAP} code relevant to \autoref{eg:S2_wr_S2_isom_D8}:
 
@@ -30,17 +38,9 @@ The following is the output which is summarised in the table in the example:
 
 \lstinputlisting{txt_files/d8_wreath_product_gap_output.gap}
 
-\subsection{Stabiliser chain for automorphism group of graph}
-
-Here is some more output relevant to \autoref{eg:automorphism_group_graph_bsgs}:\label{app:automorphism_group_graph_bsgs}
-
-\lstinputlisting{txt_files/automorphism_group_graph_bsgs_gap_appendix.gap}
-
-Lines 28--41 describe all elements of $G = \Aut(\Gamma)$. Lines 62--67 describe all elements of $G_1 = \Stab_G(4)$.
-
 \chapter{Appendix --- computing bases of subgroups of affine groups}%\chaptermark{Appendix}
 
-\subsection{Greedy base algorithm}
+\section{Greedy base algorithm}
 
 Below is \texttt{GAP} code for an implementation of the greedy base algorithm from \autoref{alg:blaha_greedy_base} as \texttt{GreedyBase}:\label{app:greedy_base}
 
@@ -50,11 +50,11 @@ The following shows that \texttt{GreedyBase} sometimes finds a smaller base than
 
 \lstinputlisting{txt_files/greedy_better_than_default.gap}
 
-\subsection{Program to find primitive subgroups with given minimum base size}
+\section{Program to find primitive subgroups with given minimal base size}
 
 Below is \texttt{GAP} code for the recursive program that was used to identify conjugacy classes of (primitive) proper subgroups $G$ of $\AGL_d(2)$ (for given $d$) which may satisfy $b(G) = d + 1$. It includes the greedy base algorithm as described above (so that the code is fully self-contained).
 
-Given $d \geq 1$, running \texttt{GetSubgrpAGLBase( d )} gives a list of candidate primitive subgroups of $\AGL_d(2)$ with minimum base size $d + 1$, according to the greedy base algorithm (which seemed to perform better than the built-in \texttt{BaseOfGroup} function which presented false positives).
+Given $d \geq 1$, running \texttt{GetSubgrpAGLBase( d )} gives a list of candidate primitive subgroups of $\AGL_d(2)$ with minimal base size $d + 1$, according to the greedy base algorithm (which seemed to perform better than the built-in \texttt{BaseOfGroup} function which presented false positives).
 
 The \texttt{GetSubgrpAGLBase} function relies on the function \texttt{GetSubgrpBase}; note that \texttt{GetSubgrpBase( r, G )} returns information about proper (primitive) subgroups $H$ of a group $G$ such that the greedy base algorithm finds no base of size at most $r$ (thus are candidates for $b(H) > r$). Thus, the program can be easily adjusted to answer similar questions for different families of groups.\label{app:subgrps_base_len}
 
@@ -63,6 +63,8 @@ The \texttt{GetSubgrpAGLBase} function relies on the function \texttt{GetSubgrpB
 % Below is output for $d = 1$:
 
 % \lstinputlisting{txt_files/agl_base_gap_output/1.gap}
+
+\subsection{Program output for small affine groups}\label{app:agl_output}
 
 Below is output for $d = 2$:
 
@@ -100,6 +102,6 @@ Below is output for $d = 10$:
 
 \lstinputlisting{txt_files/agl_base_gap_output/10.gap}
 
-For even $d$, we may check that order is correct for $2^d : \Sp_d(2)$, by verifying that the groups identified have order equal to \texttt{2\^{}d * Order(GeneralOrthogonalGroup( d + 1, 2 ))} using the isomorphism $\Sp_d(2) \cong \GO_{d+1}(2)$; this is the case in every scenario.
+For even $d$, we may check that order is correct for $2^d : \Sp_d(2)$, by verifying that the groups identified have order equal to \texttt{2\^{}d * Order( GeneralOrthogonalGroup( d + 1, 2 ) )} using the isomorphism $\Sp_d(2) \cong \GO_{d+1}(2)$; this is the case in every scenario.
 
 % \lstinputlisting{gap_code/agl_matrices.gap}

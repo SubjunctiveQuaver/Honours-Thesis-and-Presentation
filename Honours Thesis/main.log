@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.22)  18 OCT 2022 12:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.22)  18 OCT 2022 12:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1284,44 +1284,13 @@ Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@cntb=\count359
 \multirow@dima=\skip112
 \bigstrutjot=\dimen339
-) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\mathptmx.sty
-Package: mathptmx 2020/03/25 PSNFSS-v9.3 Times w/ Math, improved (SPQR, WaS) 
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/ztmcm/m/n on input line 28.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/ztmcm/m/n on input line 28.
-LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
-(Font)                  OML/cmm/m/it --> OML/ztmcm/m/it on input line 29.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  OML/cmm/b/it --> OML/ztmcm/m/it on input line 29.
-LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> OMS/ztmcm/m/n on input line 30.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> OMS/ztmcm/m/n on input line 30.
-LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
-\symbold=\mathgroup7
-\symitalic=\mathgroup8
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 35.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
-LaTeX Info: Redefining \hbar on input line 50.
-) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/inconsolata\inconsolata.sty
-Package: inconsolata 2019/05/17 v1.12
- `inconsolata-zi4' v1.12, 2019/05/17 Text macros for Inconsolata (msharpe) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xkeyval\xkeyval.sty
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/libertine\libertine.sty
+Package: libertine 2022/09/12 (Bob Tennent) Supports Libertine and Biolinum fonts for all LaTeX engines.
+ (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xkeyval\xkeyval.sty
 Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\xkeyval.tex (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\xkvutils.tex
 \XKV@toks=\toks76
@@ -1329,43 +1298,169 @@ Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
 )
 \XKV@depth=\count360
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-))
-\zifour@ocount=\count361
+)) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fontaxes\fontaxes.sty
+Package: fontaxes 2020/07/21 v1.0e Font selection axes
+LaTeX Info: Redefining \upshape on input line 29.
+LaTeX Info: Redefining \itshape on input line 31.
+LaTeX Info: Redefining \slshape on input line 33.
+LaTeX Info: Redefining \swshape on input line 35.
+LaTeX Info: Redefining \scshape on input line 37.
+LaTeX Info: Redefining \sscshape on input line 39.
+LaTeX Info: Redefining \ulcshape on input line 41.
+LaTeX Info: Redefining \textsw on input line 47.
+LaTeX Info: Redefining \textssc on input line 48.
+LaTeX Info: Redefining \textulc on input line 49.
+)
+LaTeX Info: Redefining \oldstylenums on input line 483.
+ (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/libertine\LinLibertine_I.tex)) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/newtx\newtxmath.sty
+Package: newtxmath 2022/01/16 v1.71
+ `newtxmath' v1.71, 2022/01/16 Math macros based originally on txfonts (msharpe)
+\tx@cntz=\count361
+ (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/binhex\binhex.tex)
+\tx@Isdigit=\count362
+\tx@IsAlNum=\count363
+\tx@tA=\toks78
+\tx@tB=\toks79
+\tx@su=\read5
+
+amsthm NOT loaded
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 376.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/LinuxLibertineT-TLF/m/n on input line 376.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/LinuxLibertineT-TLF/m/n on input line 376.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/LinuxLibertineT-TLF/m/n --> OT1/LinuxLibertineT-TLF/sb/n on input line 377.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 383.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/LinuxBiolinumT-TLF/m/n on input line 383.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/LinuxBiolinumT-TLF/m/n on input line 383.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 384.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/LinuxLibertineT-TLF/m/it on input line 384.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/LinuxLibertineT-TLF/m/it on input line 384.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 385.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/LinuxLibertineMonoT-TLF/m/n on input line 385.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/LinuxLibertineMonoT-TLF/m/n on input line 385.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 387.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/LinuxLibertineT-TLF/sb/n on input line 387.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/LinuxLibertineT-TLF/sb/n on input line 387.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/LinuxLibertineT-TLF/m/it --> OT1/LinuxLibertineT-TLF/sb/it on input line 388.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/LinuxBiolinumT-TLF/m/n --> OT1/LinuxBiolinumT-TLF/b/n on input line 389.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/LinuxLibertineMonoT-TLF/m/n --> OT1/LinuxLibertineMonoT-TLF/b/n on input line 390.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 407.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/nxlmi/m/it on input line 407.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/nxlmi/m/it on input line 407.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/nxlmi/m/it --> OML/nxlmi/b/it on input line 408.
+\symlettersA=\mathgroup7
+LaTeX Font Info:    Overwriting symbol font `lettersA' in version `bold'
+(Font)                  U/ntxmia/m/it --> U/ntxmia/b/it on input line 547.
+LaTeX Font Info:    Redeclaring math alphabet \mathfrak on input line 549.
+Now handling font encoding LMS ...
+... no UTF-8 mapping file for font encoding LMS
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 568.
+LaTeX Font Info:    Encoding `OMS' has changed to `LMS' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 568.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> LMS/ntxsy/m/n on input line 568.
+LaTeX Font Info:    Encoding `OMS' has changed to `LMS' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 568.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> LMS/ntxsy/m/n on input line 568.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  LMS/ntxsy/m/n --> LMS/ntxsy/b/n on input line 569.
+\symAMSm=\mathgroup8
+LaTeX Font Info:    Overwriting symbol font `AMSm' in version `bold'
+(Font)                  U/ntxsym/m/n --> U/ntxsym/b/n on input line 594.
+\symsymbolsC=\mathgroup9
+LaTeX Font Info:    Overwriting symbol font `symbolsC' in version `bold'
+(Font)                  U/ntxsyc/m/n --> U/ntxsyc/b/n on input line 615.
+Now handling font encoding LMX ...
+... no UTF-8 mapping file for font encoding LMX
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 628.
+LaTeX Font Info:    Encoding `OMX' has changed to `LMX' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 628.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> LMX/ntxexx/m/n on input line 628.
+LaTeX Font Info:    Encoding `OMX' has changed to `LMX' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 628.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> LMX/ntxexx/m/n on input line 628.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  LMX/ntxexx/m/n --> LMX/ntxexx/b/n on input line 629.
+\symlargesymbolsTXA=\mathgroup10
+LaTeX Font Info:    Overwriting symbol font `largesymbolsTXA' in version `bold'
+(Font)                  U/ntxexa/m/n --> U/ntxexa/b/n on input line 643.
+\tx@sbptoks=\toks80
+LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 866.
+LaTeX Font Info:    Redeclaring math delimiter \rfloor on input line 867.
+LaTeX Font Info:    Redeclaring math delimiter \lceil on input line 868.
+LaTeX Font Info:    Redeclaring math delimiter \rceil on input line 869.
+LaTeX Font Info:    Redeclaring math delimiter \lbrace on input line 870.
+LaTeX Font Info:    Redeclaring math delimiter \rbrace on input line 871.
+LaTeX Font Info:    Redeclaring math delimiter \langle on input line 872.
+LaTeX Font Info:    Redeclaring math delimiter \rangle on input line 874.
+LaTeX Font Info:    Redeclaring math delimiter \arrowvert on input line 878.
+LaTeX Font Info:    Redeclaring math delimiter \vert on input line 879.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 950.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 951.
+LaTeX Font Info:    Redeclaring math accent \vec on input line 2020.
+LaTeX Info: Redefining \Bbbk on input line 2810.
+LaTeX Info: Redefining \not on input line 2959.
+LaTeX Info: Redefining \openbox on input line 2991.
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/inconsolata\inconsolata.sty
+Package: inconsolata 2019/05/17 v1.12
+ `inconsolata-zi4' v1.12, 2019/05/17 Text macros for Inconsolata (msharpe)
+\zifour@ocount=\count364
 ) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/algorithmicx\algpseudocode.sty
 Package: algpseudocode 
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/algorithmicx\algorithmicx.sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count362
-\c@ALG@rem=\count363
-\c@ALG@nested=\count364
+\c@ALG@line=\count365
+\c@ALG@rem=\count366
+\c@ALG@nested=\count367
 \ALG@tlm=\skip113
 \ALG@thistlm=\skip114
-\c@ALG@Lnr=\count365
-\c@ALG@blocknr=\count366
-\c@ALG@storecount=\count367
-\c@ALG@tmpcounter=\count368
+\c@ALG@Lnr=\count368
+\c@ALG@blocknr=\count369
+\c@ALG@storecount=\count370
+\c@ALG@tmpcounter=\count371
 \ALG@tmplength=\skip115
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
 ) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.sty
-\lst@mode=\count369
+\lst@mode=\count372
 \lst@gtempboxa=\box136
-\lst@token=\toks78
-\lst@length=\count370
+\lst@token=\toks81
+\lst@length=\count373
 \lst@currlwidth=\dimen340
-\lst@column=\count371
-\lst@pos=\count372
+\lst@column=\count374
+\lst@pos=\count375
 \lst@lostspace=\dimen341
 \lst@width=\dimen342
-\lst@newlines=\count373
-\lst@lineno=\count374
+\lst@newlines=\count376
+\lst@lineno=\count377
 \lst@maxwidth=\dimen343
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count375
-\lst@skipnumbers=\count376
+\c@lstnumber=\count378
+\lst@skipnumbers=\count379
 \lst@framebox=\box137
 ) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
@@ -1379,13 +1474,13 @@ Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmath.code.tex)
 \pgffor@iter=\dimen344
 \pgffor@skip=\dimen345
-\pgffor@stack=\toks79
-\pgffor@toks=\toks80
+\pgffor@stack=\toks82
+\pgffor@toks=\toks83
 )) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
 Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@plot@mark@count=\count377
+\pgf@plot@mark@count=\count380
 \pgfplotmarksize=\dimen346
 )
 \tikz@lastx=\dimen347
@@ -1400,17 +1495,17 @@ File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \tikz@figbox@bg=\box139
 \tikz@tempbox=\box140
 \tikz@tempbox@bg=\box141
-\tikztreelevel=\count378
-\tikznumberofchildren=\count379
-\tikznumberofcurrentchild=\count380
-\tikz@fig@count=\count381
+\tikztreelevel=\count381
+\tikznumberofchildren=\count382
+\tikznumberofcurrentchild=\count383
+\tikz@fig@count=\count384
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modules\pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfmatrixcurrentrow=\count382
-\pgfmatrixcurrentcolumn=\count383
-\pgf@matrix@numberofcolumns=\count384
+\pgfmatrixcurrentrow=\count385
+\pgfmatrixcurrentcolumn=\count386
+\pgf@matrix@numberofcolumns=\count387
 )
-\tikz@expandcount=\count385
+\tikz@expandcount=\count388
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryarrows.code.tex
@@ -1419,16 +1514,16 @@ File: tikzlibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \arrowsize=\dimen355
 ))
-\c@tkz@gr@a=\count386
-\c@tkz@gr@b=\count387
-\c@tkz@gr@c=\count388
-\c@tkz@gr@e=\count389
-\c@tkz@gr@d=\count390
-\c@tkz@gr@p=\count391
-\c@tkz@gr@i=\count392
-\c@tkz@gr@n=\count393
-\c@tkz@gr@ta=\count394
-\c@tkz@gr@tb=\count395
+\c@tkz@gr@a=\count389
+\c@tkz@gr@b=\count390
+\c@tkz@gr@c=\count391
+\c@tkz@gr@e=\count392
+\c@tkz@gr@d=\count393
+\c@tkz@gr@p=\count394
+\c@tkz@gr@i=\count395
+\c@tkz@gr@n=\count396
+\c@tkz@gr@ta=\count397
+\c@tkz@gr@tb=\count398
 ) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tikz-cd\tikz-cd.sty
 Package: tikz-cd 2021/05/04 v1.0 Commutative diagrams with TikZ
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tikz-cd\tikzlibrarycd.code.tex (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarymatrix.code.tex
@@ -1464,30 +1559,30 @@ Package: accsupp 2019/12/05 v0.6 Accessibility support by marked content (HO)
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/accsupp\accsupp-pdftex.def
 File: accsupp-pdftex.def 2019/12/05 v0.6 accsupp driver for pdfTeX (HO)
 )) (C:/Users/lawre/OneDrive/Documents/LaTeX\tex/latex\commands.tex) (C:/Users/lawre/OneDrive/Documents/LaTeX\tex/latex\commands_tables.tex) (preamble/settings.tex
-\c@currdefinitionctr=\count396
-\c@enddefinitionctr=\count397
-\c@definition=\count398
-\c@curraxiomctr=\count399
-\c@endaxiomctr=\count400
-\c@axiom=\count401
-\c@currpropositionctr=\count402
-\c@endpropositionctr=\count403
-\c@currtheoremctr=\count404
-\c@endtheoremctr=\count405
-\c@currcorollaryctr=\count406
-\c@endcorollaryctr=\count407
-\c@currlemmactr=\count408
-\c@endlemmactr=\count409
-\c@currremarkctr=\count410
-\c@endremarkctr=\count411
-\c@curralgorithmctr=\count412
-\c@endalgorithmctr=\count413
-\c@currconjecturectr=\count414
-\c@endconjecturectr=\count415
-\c@currexamplectr=\count416
-\c@endexamplectr=\count417
-\c@currquestionctr=\count418
-\c@endquestionctr=\count419
+\c@currdefinitionctr=\count399
+\c@enddefinitionctr=\count400
+\c@definition=\count401
+\c@curraxiomctr=\count402
+\c@endaxiomctr=\count403
+\c@axiom=\count404
+\c@currpropositionctr=\count405
+\c@endpropositionctr=\count406
+\c@currtheoremctr=\count407
+\c@endtheoremctr=\count408
+\c@currcorollaryctr=\count409
+\c@endcorollaryctr=\count410
+\c@currlemmactr=\count411
+\c@endlemmactr=\count412
+\c@currremarkctr=\count413
+\c@endremarkctr=\count414
+\c@curralgorithmctr=\count415
+\c@endalgorithmctr=\count416
+\c@currconjecturectr=\count417
+\c@endconjecturectr=\count418
+\c@currexamplectr=\count419
+\c@endexamplectr=\count420
+\c@currquestionctr=\count421
+\c@endquestionctr=\count422
 Package hyperref Info: Option `colorlinks' set `true' on input line 69.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tcolorbox\tcbbreakable.code.tex
 Library (tcolorbox): 'tcbbreakable.code.tex' version '5.0.2'
@@ -1503,36 +1598,59 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'australian'.
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 58.
- (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ot1ptm.fd
-File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-) (main.aux)
+LaTeX Font Info:    Trying to load font information for OT1+LinuxLibertineT-TLF on input line 61.
+ (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/libertine\ot1linuxlibertinet-tlf.fd
+File: OT1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for OT1/LinuxLibertineT-TLF.
+)
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 61.
+ (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 58.
-LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 58.
+LaTeX Font Info:    Checking defaults for OML/nxlmi/m/it on input line 61.
+LaTeX Font Info:    Trying to load font information for OML+nxlmi on input line 61.
+ (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/newtx\omlnxlmi.fd
+File: omlnxlmi.fd 2013/11/19 Fontinst v1.933 font definitions for OML/nxlmi.
+)
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 61.
+LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 61.
+ (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/newtx\untxexa.fd
+File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
+)
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 61.
+LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 61.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cbfonts-fd\lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 61.
+LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 61.
+ (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/newtx\lmsntxsy.fd
+File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
+)
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 61.
+LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 61.
+ (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/newtx\lmxntxexx.fd
+File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
+)
+LaTeX Font Info:    ... okay on input line 61.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1570,46 +1688,47 @@ LaTeX Font Info:    ... okay on input line 58.
 
 (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count420
+\scratchcounter=\count423
 \scratchdimen=\dimen360
 \scratchbox=\box145
-\nofMPsegments=\count421
-\nofMParguments=\count422
-\everyMPshowfont=\toks81
-\MPscratchCnt=\count423
+\nofMPsegments=\count424
+\nofMParguments=\count425
+\everyMPshowfont=\toks84
+\MPscratchCnt=\count426
 \MPscratchDim=\dimen361
-\MPnumerator=\count424
-\makeMPintoPDFobject=\count425
-\everyMPtoPDFconversion=\toks82
+\MPnumerator=\count427
+\makeMPintoPDFobject=\count428
+\everyMPtoPDFconversion=\toks85
 ) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \microtypecontext on input line 58.
-Package microtype Info: Applying patch `item' on input line 58.
-Package microtype Info: Applying patch `toc' on input line 58.
+LaTeX Info: Redefining \microtypecontext on input line 61.
+Package microtype Info: Applying patch `item' on input line 61.
+Package microtype Info: Applying patch `toc' on input line 61.
 Package microtype Info: The `eqnum' patch may not be effective because you are
 (microtype)             using the mathtools package. Make sure to insert
 (microtype)             `\leftprotrusion' and `\rightprotrusion' as
 (microtype)             appropriate in mathtools's `\newtagform' command.
-Package microtype Info: Applying patch `eqnum' on input line 58.
-Package microtype Info: Applying patch `footnote' on input line 58.
+Package microtype Info: Applying patch `eqnum' on input line 61.
+Package microtype Info: Applying patch `footnote' on input line 61.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 58.
+LaTeX Info: Redefining \showhyphens on input line 61.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
- (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\mt-ptm.cfg
-File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
-)
-Package hyperref Info: Link coloring ON on input line 58.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `LinuxLibertineT-TLF' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package hyperref Info: Link coloring ON on input line 61.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/refcount\refcount.sty
@@ -1617,40 +1736,54 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count426
+\c@section@level=\count429
 )
-LaTeX Info: Redefining \ref on input line 58.
-LaTeX Info: Redefining \pageref on input line 58.
-LaTeX Info: Redefining \nameref on input line 58.
+LaTeX Info: Redefining \ref on input line 61.
+LaTeX Info: Redefining \pageref on input line 61.
+LaTeX Info: Redefining \nameref on input line 61.
+\c@mv@tabular=\count430
+\c@mv@boldtabular=\count431
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/upquote\upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
 )
-\c@lstlisting=\count427
- (sections/titlepage.tex [1
+\c@lstlisting=\count432
+ (sections/titlepage.tex
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 24.88pt on input line 5.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 24.88pt on input line 6.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 17.28pt on input line 10.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 17.28pt on input line 11.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 14.4pt on input line 13.
+<monash_university_logo.png, id=6, 756.57657pt x 221.32687pt>
+File: monash_university_logo.png Graphic file (type png)
+<use monash_university_logo.png>
+Package pdftex.def Info: monash_university_logo.png  used on input line 23.
+(pdftex.def)             Requested size: 302.62526pt x 88.52916pt.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 14.4pt on input line 27.
+ [1
 
 
-{C:/Users/lawre/AppData/Local/MiKTeX/2.9/fonts/map/pdftex/pdftex.map}]) (sections/abstract.tex
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 1.
- (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ot1ztmcm.fd
-File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `ztmcm' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 1.
- (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\omlztmcm.fd
-File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 1.
- (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\omsztmcm.fd
-File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 1.
- (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\omxztmcm.fd
-File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+{C:/Users/lawre/AppData/Local/MiKTeX/2.9/fonts/map/pdftex/pdftex.map} <./monash_university_logo.png>]) (sections/abstract.tex
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 10.0pt on input line 1.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 7.3pt on input line 1.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 5.5pt on input line 1.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 1.
+ (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 1.
+ (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
@@ -1658,12 +1791,22 @@ LaTeX Font Info:    Trying to load font information for U+esvect on input line 1
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/esvect\uesvect.fd
 File: uesvect.fd 
 )
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+
+LaTeX Font Warning: Font shape `U/esvect/m/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 1.
+
+LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 1.
+(C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/newtx\untxmia.fd
+File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
+)
+LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 1.
+ (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/newtx\untxsym.fd
+File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
+)
+LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 1.
+ (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/newtx\untxsyc.fd
+File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
+)
 LaTeX Font Info:    Trying to load font information for OT1+zi4 on input line 1.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/inconsolata\ot1zi4.fd
 File: ot1zi4.fd 2018/01/14 OT1/zi4 (Inconsolata)
@@ -1678,7 +1821,10 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 ] (sections/acknowledgements.tex) [3
 
-] (main.toc [4
+] (main.toc
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 10.0pt on input line 2.
+ [4
 
 ])
 \tf@toc=\write4
@@ -1686,7 +1832,15 @@ Package microtype Info: Loading generic protrusion settings for font family
 
  [5]
 Chapter 1.
-(sections/introduction.tex [1
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 77.
+(C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\mt-ptm.cfg
+File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
+) (sections/introduction.tex
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 14.4pt on input line 1.
+ [1
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1696,6 +1850,8 @@ Chapter 2.
 (sections/group_concepts.tex
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on input line 10.
 Package hyperref Info: bookmark level for unknown theorem defaults to 0 on input line 29.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/it' will be
+(Font)              scaled to size 10.0pt on input line 29.
  [4
 
 ] (sections/group_concepts/group_actions.tex
@@ -1704,20 +1860,33 @@ Package hyperref Info: bookmark level for unknown example defaults to 0 on input
  [5]
 Package hyperref Info: bookmark level for unknown proof defaults to 0 on input line 86.
  [6]
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 101.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 12.0pt on input line 101.
 Package hyperref Info: bookmark level for unknown proposition defaults to 0 on input line 116.
 Package hyperref Info: bookmark level for unknown corollary defaults to 0 on input line 130.
  [7] [8]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 252.
- (txt_files/klein_4_transitivity.gap [9]) [10]
+ (txt_files/klein_4_transitivity.gap
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 1.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 8.0pt on input line 1.
+ [9]) [10]
 Package hyperref Info: bookmark level for unknown remark defaults to 0 on input line 310.
  [11]) (sections/group_concepts/bases_stabiliser_chains.tex [12]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 18.
- (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [13] [14]
-Underfull \vbox (badness 2753) has occurred while \output is active []
-
- [15] [16]
+LaTeX Font Info:    Trying to load font information for TS1+LinuxLibertineT-TLF on input line 18.
+ (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/libertine\ts1linuxlibertinet-tlf.fd
+File: TS1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for TS1/LinuxLibertineT-TLF.
+)
+LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 18.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `LinuxLibertineT-TLF' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [13] [14] [15] [16]
 Missing character: There is no 7 in font nullfont!
 Missing character: There is no N in font nullfont!
 Missing character: There is no o in font nullfont!
@@ -1728,9 +1897,8 @@ Missing character: There is no l in font nullfont!
 [17]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 244.
  (txt_files/automorphism_group_graph_bsgs_gap.gap) (txt_files/automorphism_group_graph_bsgs_gap_2.gap)
-
-LaTeX Font Warning: Font shape `OT1/ptm/m/scit' undefined
-(Font)              using `OT1/ptm/m/sc' instead on input line 274.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/scit' will be
+(Font)              scaled to size 10.0pt on input line 274.
 
 
 LaTeX Font Warning: Font shape `OT1/zi4/m/it' undefined
@@ -1738,19 +1906,19 @@ LaTeX Font Warning: Font shape `OT1/zi4/m/it' undefined
 
 LaTeX Font Info:    Font shape `OT1/zi4/m/it' will be
 (Font)              scaled to size 10.0pt on input line 283.
-[18] (txt_files/automorphism_group_graph_bsgs_gap_3.gap)
-
-LaTeX Font Warning: Font shape `OT1/ptm/m/scit' undefined
-(Font)              using `OT1/ptm/m/sc' instead on input line 324.
-
-[19]) (sections/group_concepts/classification_results.tex
+[18] (txt_files/automorphism_group_graph_bsgs_gap_3.gap) [19]) (sections/group_concepts/classification_results.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [20] (txt_files/klein_4_blocks.gap [21]))) [22]
 Chapter 3.
 (sections/complexity_concepts.tex [23
 
-] [24] [25]
+] [24]
+Overfull \hbox (1.89429pt too wide) in paragraph at lines 86--87
+[]\OT1/LinuxLibertineT-TLF/m/n/10 (-20) Recall the mem-ber-ship test al-gorithm ([][]Al-gorithm 2.65[][][]) for $\OML/nxlmi/m/it/10 g \LMS/ntxsy/m/n/10 2 \OML/nxlmi/m/it/10 G$ \OT1/LinuxLibertineT-TLF/m/n/10 (-20) runs in $\OML/nxlmi/m/it/10 O\LMS/ntxsy/m/n/10 ¹\OML/nxlmi/m/it/10 r [][] \LMS/ntxsy/m/n/10 j\OML/nxlmi/m/it/10 T[]\LMS/ntxsy/m/n/10 jº$
+ []
+
+[25]
 Package hyperref Info: bookmark level for unknown conjecture defaults to 0 on input line 113.
  [26]) [27]
 Chapter 4.
@@ -1761,39 +1929,53 @@ Chapter 5.
 (sections/perm_group_theory.tex [35
 
 ] [36] [37] [38] [39]
-Underfull \vbox (badness 1975) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [40] [41] [42] [43] [44] [45] [46]) [47]
+ [40] [41] [42] [43] [44] [45] [46] [47]) [48]
 Chapter 6.
 (sections/lit_review.tex
-Underfull \vbox (badness 1215) has occurred while \output is active []
+Underfull \vbox (badness 1383) has occurred while \output is active []
 
- [48
+ [49
 
-] [49]
+] [50]
 Package hyperref Info: bookmark level for unknown question defaults to 0 on input line 63.
- [50] [51]) (main.bbl [52]
+ [51]
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/sc' will be
+(Font)              scaled to size 10.0pt on input line 109.
+Package microtype Info: Character `013' is missing
+(microtype)             in font `OT1/LinuxLibertineT-TLF/m/sc/10'.
+(microtype)             Ignoring protrusion settings for this character.
+ [52]) (main.bbl [53]
 LaTeX Font Info:    Font shape `OT1/zi4/m/n' will be
-(Font)              scaled to size 7.4pt on input line 30.
+(Font)              scaled to size 7.3pt on input line 30.
 LaTeX Font Info:    Font shape `OT1/zi4/m/n' will be
-(Font)              scaled to size 6.0pt on input line 30.
- [53
+(Font)              scaled to size 5.5pt on input line 30.
 
-]) (sections/appendix.tex [54]
+Underfull \hbox (badness 1221) in paragraph at lines 77--82
+[]\OT1/LinuxLibertineT-TLF/m/n/10 (+20) John D. Dixon and Brian Mor-timer.  \OT1/LinuxLibertineT-TLF/m/it/10 (+20) Per-muta-tion Groups\OT1/LinuxLibertineT-TLF/m/n/10 (+20) .  Springer New York, 1996.  [][]$\OT1/zi4/m/it/10 doi : 10 . 1007 /
+ []
+
+[54
+
+]
+LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 10.0pt on input line 195.
+) (sections/appendix.tex [55]
 Appendix A.
-(gap_code/random_elt.gap) (gap_code/membership.gap [55
+(gap_code/random_elt.gap) (gap_code/membership.gap [56
 
-]) (gap_code/random_elt_print.gap) (gap_code/membership_print.gap [56]) (gap_code/d8_wreath_product.gap [57]) (txt_files/d8_wreath_product_gap_output.gap) (txt_files/automorphism_group_graph_bsgs_gap_appendix.gap [58]
+]) (gap_code/random_elt_print.gap) (gap_code/membership_print.gap [57]) (txt_files/automorphism_group_graph_bsgs_gap_appendix.gap [58])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [59]) [60]
+ [59] (gap_code/d8_wreath_product.gap) (txt_files/d8_wreath_product_gap_output.gap [60]) [61]
 Appendix B.
-(gap_code/greedy_base.gap) (txt_files/greedy_better_than_default.gap [61
+(gap_code/greedy_base.gap) (txt_files/greedy_better_than_default.gap [62
 
-]) (gap_code/subgrps_base_len.gap [62]
+]) (gap_code/subgrps_base_len.gap [63]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [63]
+ [64]
 LaTeX Font Info:    Trying to load font information for TS1+zi4 on input line 58.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/inconsolata\ts1zi4.fd
 File: ts1zi4.fd 2018/01/14 TS1/zi4 (Inconsolata)
@@ -1804,27 +1986,31 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `zi4' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-) (txt_files/agl_base_gap_output/2.gap) (txt_files/agl_base_gap_output/3.gap [64]) (txt_files/agl_base_gap_output/4.gap) (txt_files/agl_base_gap_output/5.gap) (txt_files/agl_base_gap_output/6.gap [65]) (txt_files/agl_base_gap_output/7.gap) (txt_files/agl_base_gap_output/8.gap) (txt_files/agl_base_gap_output/9.gap [66]) (txt_files/agl_base_gap_output/10.gap))
+) (txt_files/agl_base_gap_output/2.gap) (txt_files/agl_base_gap_output/3.gap [65]) (txt_files/agl_base_gap_output/4.gap) (txt_files/agl_base_gap_output/5.gap) (txt_files/agl_base_gap_output/6.gap [66]) (txt_files/agl_base_gap_output/7.gap) (txt_files/agl_base_gap_output/8.gap) (txt_files/agl_base_gap_output/9.gap [67]) (txt_files/agl_base_gap_output/10.gap))
 \tf@thm=\write5
 \openout5 = `main.thm'.
 
- [67] (main.aux)
+ [68] (main.aux)
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.5pt have occurred.
+
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 41263 strings out of 478582
- 789495 string characters out of 2842422
- 1648040 words of memory out of 3000000
- 56997 multiletter control sequences out of 15000+600000
- 532682 words of font info for 376 fonts, out of 8000000 for 9000
+ 44260 strings out of 478582
+ 843177 string characters out of 2842422
+ 1502200 words of memory out of 3000000
+ 59889 multiletter control sequences out of 15000+600000
+ 564817 words of font info for 409 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 101i,18n,105p,2668b,2031s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-ts1.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-ot1-0.enc}<C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/rsfs/rsfs10.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (72 pages, 795843 bytes).
+ 101i,18n,105p,2668b,2055s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-ts1.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_u7qtuy.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_n3gv2c.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_hmhe76.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_ks2ukx.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-ot1-0.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_kijugd.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_lyu3x3.enc}<C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathMI.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathMI5.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathMI7.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathRM.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineTBI.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/NewTXMI.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/NewTXMI7.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txexas.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txexs.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txsya.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txsyb.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txsyc.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txsys.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
+Output written on main.pdf (73 pages, 1133967 bytes).
 PDF statistics:
- 2228 PDF objects out of 2487 (max. 8388607)
- 1122 named destinations out of 1200 (max. 500000)
- 83869 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 2289 PDF objects out of 2487 (max. 8388607)
+ 1124 named destinations out of 1200 (max. 500000)
+ 82858 words of extra memory for PDF output out of 89155 (max. 10000000)
 
