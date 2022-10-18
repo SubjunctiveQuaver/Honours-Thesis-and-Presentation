@@ -4,7 +4,7 @@ The definitions and results in this section are primarily found in \cite{rotman_
 
 Prime numbers are the ``building blocks'' of natural numbers, in the sense that a natural number has a unique factorisation as a product of prime numbers, by the fundamental theorem of arithmetic. Thus, to study number theory, it is often useful to study primes. A similar question arises for groups, in particular finite groups -- is there a way to break down an arbitrary finite group into the simplest ``building blocks''? The analogous object to prime numbers for groups is the notion of a simple group, which all finite groups can be decomposed into. (The inverse problem of reconstructing groups from simple groups is more difficult than for integers, and is referred to as the group extension problem.)
 
-The classification of finite simple groups is one of the most famous problems in group theory, and its statement and proof was achieved by a collaboration of many group theorists across many decades and many volumes of work. In \cite{solomon2001}, Solomon notes that computational group theory has also been influential in the classification result: for instance, by 2001, computer algorithms were being created to identify permutation groups, linear groups and ``black box'' groups, and calculations of groups of order $2^{10}$ re-verified the fact that ``most'' finite groups are nilpotent groups of nilpotence class at most 2.
+The classification of finite simple groups is one of the most famous problems in group theory, and its statement and proof was achieved by a collaboration of many group theorists across many decades and many volumes of work. In \cite{solomon2001}, Solomon notes that computational group theory has also been influential in the classification result: for instance, by 2001, computer algorithms were being created to identify permutation groups, linear groups and ``black box'' groups, and calculations of groups of order $2^{10}$ re-verified the fact that ``most'' finite groups are \textit{nilpotent} groups of nilpotence class at most 2.
 
 Recall that a \textbf{maximal normal subgroup} of a nontrivial group $G$ is a normal subgroup $1 \neq N \lhd G$ such that $N \lhd M \unlhd G$ implies $M = G$.
 
@@ -496,7 +496,7 @@ Finally, we look at a few important subgroups of the affine group, which we cons
         For even $d$, the symplectic group $\Sp_d(2^k)$ is isomorphic to the orthogonal group $\GO_{d+1}(2^k)$.
     \end{theorem}}
 
-    % Finally, we describe $\GO^+_d(2)$ and $\GO^-_d(2)$. TODO and $\Sp_d(2)$ acts on cosets of these?
+% Finally, we describe $\GO^+_d(2)$ and $\GO^-_d(2)$. TODO and $\Sp_d(2)$ acts on cosets of these?
 
 \section{Primitive permutation groups and the O'Nan-Scott theorem}
 
@@ -603,4 +603,4 @@ Note that this behaviour is seen in \autoref{prop:socle_agl} for finite $K = \F_
 
     Moreover, computer algebra systems such as \texttt{GAP} have functions that classify primitive permutation groups into their O'Nan-Scott types, as described in the O'Nan-Scott theorem. (In \texttt{GAP}, this is implemented as \texttt{ONanScottType}.)
 
-    Using the O'Nan-Scott theorem and \hyperref[thm:cfsg]{classification of finite simple groups}, the primitive permutation groups of degree less than 1000 were partially classified by Dixon and Mortimer in 1988 (see \cite{dixon1988}), with the affine case completed in 2003 by Roney-Dougal and Unger (see \cite{roney-dougal2003}). Those of degree less than 2500 were classified by Roney-Dougal in 2005 (see \cite{roney-dougal2005}), and those of degree less than 4096 were classifed by Coutts, Quick, and Roney-Dougal in 2011 (see \cite{coutts2011}), using the same techniques.}
+    Using the O'Nan-Scott theorem and \hyperref[thm:cfsg]{classification of finite simple groups}, the primitive permutation groups of degree less than 1000 were partially classified by Dixon and Mortimer in 1988 (see \cite{dixon1988}), with the affine case completed in 2003 by Roney-Dougal and Unger (see \cite{roney-dougal2003}). Those of degree less than 2500 were classified by Roney-Dougal in 2005 (see \cite{roney-dougal2005}), and those of degree less than 4096 were classified by Coutts, Quick, and Roney-Dougal in 2011 (see \cite{coutts2011}), using the same techniques.}

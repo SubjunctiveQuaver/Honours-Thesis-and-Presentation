@@ -216,7 +216,7 @@ Recall that a strong generating set $S$ for a base $B = [\beta_1,\dotsc,\beta_r]
             \end{tikzpicture}
         \end{center}
 
-        The group $G = \Aut(\Gamma)$ of automorphisms of $\Gamma$ (relabellings of $\Gamma$ which preserve edges) acts naturally on $\Omega = V$, with the action of the automorphism $\sigma \in G$ on the vertex $v \in \Omega$ being $v^\sigma$. Then clearly $G \leq \Sym(8)$ is a permutation group of degree 8. Let $G^0 = \tilde G^0 = G = \Aut(\Gamma)$. We consider two stabiliser chains for $G$ (and find $|G|$):
+        The group $G = \Aut(\Gamma)$ of automorphisms of $\Gamma$ (relabellings of $\Gamma$ which preserve edges) acts naturally on $\Omega = V$, with the action of the automorphism $\sigma \in G$ on the vertex $v \in \Omega$ being $v^\sigma$. Then clearly $G \leq \Sym(8)$ is a permutation group of degree 8. Let $G^0 = \tilde G^0 = G = \Aut(\Gamma)$. We manually compute and consider two stabiliser chains for $G$ (and find $|G|$):
         \begin{itemize}
             \item Let $G^1 = \added{2}{G^0_{4}}$. Then $4^{G^0} = \{4,5\}$, and take $T_1 = \{(),(1,6)(2,7)(3,8)(4,5)\}$. \\
                   Let $G^2 = \added{2}{G^1_{1}} = \added{2}{G_{4,1}}$. Then $1^{G^1} = \{1,2,3\}$, and take $T_1 = \{(),(1,2),(1,3)\}$. \\
@@ -366,7 +366,7 @@ Now a subgroup of a finitely generated group need not be finitely generated; it 
 
 Intuitively, a na\"ive version of the algorithm extends $B$ to a base by considering generators $x \not\in \added{2}{G_{\beta_1,\dotsc,\beta_k}}$ in $S$ and appending points of $\Omega$ that are not fixed by $x$. We then use the \hyperref[alg:orbit_stabiliser]{orbit-stabiliser algorithm} to compute and append \textit{Schreier generators} for $G^i = \added{2}{G_{\beta_1,\dotsc,\beta_i}}$ to $S$, ignoring those that are equal to the identity $1 \in G$. The resulting $(B,S)$ is a BSGS for $G$, and is an improvement over \autoref{lem:transversal_gives_bsgs}.
 
-% TODO: GIVE INTUITON (extend $B$ to base, use OST to compute orbits/stabilisers/transversals for subsequent thingies in stab chain, but use Schreier generators to reduce the size of SGS). Below is an outline of the procedure:
+% TODO: GIVE INTUITION (extend $B$ to base, use OST to compute orbits/stabilisers/transversals for subsequent thingies in stab chain, but use Schreier generators to reduce the size of SGS). Below is an outline of the procedure:
 
 % \begin{algorithm}[Schreier-Sims]\label{alg:schreier_sims}
 %     Let $B = [\beta_1,\dotsc,\beta_k]$ be an initial sequence (possibly empty) of distinct elements of $\Omega$, and $G = \langle X \rangle \leq \Sym(\Omega)$ a permutation group. We extend $B$ to a base for $G$ and extend $X$ to a strong generating set $S$ for $G$:
