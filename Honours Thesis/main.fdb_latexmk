@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex main"] 1665999775 "main.aux" "main.bbl" "main" 1666053026
+["bibtex main"] 1666055166 "main.aux" "main.bbl" "main" 1666055178
   "C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/bibtex/bst/urlbst/plainurl.bst" 1562009950 33034 6f80d55ce824a32ed5562a5220ff287a ""
-  "main.aux" 1666053024 104292 6cc544fa4c8b7d44c8c7788ed0e79757 "pdflatex"
-  "references.bib" 1665942229 11239 9d256bf62caf95fd19b90bf51cdf86ab ""
+  "main.aux" 1666055176 104341 7f9429ede185f20ad7e0cfe7292ca693 "pdflatex"
+  "references.bib" 1666055141 11605 d6b66ee1e930e874298798b88ffe43e1 ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1666053013 "c:/Users/lawre/OneDrive/Education/Monash University/2022/MTH4100 Research Project/Honours Thesis and Presentation/Honours Thesis/main.tex" "main.pdf" "main" 1666053026
+["pdflatex"] 1666055167 "c:/Users/lawre/OneDrive/Education/Monash University/2022/MTH4100 Research Project/Honours Thesis and Presentation/Honours Thesis/main.tex" "main.pdf" "main" 1666055178
   "C:/Users/lawre/AppData/Local/MiKTeX/2.9/fonts/map/pdftex/pdftex.map" 1665934433 466148 bf77eda5a46d60a6983271fbe0c424d3 ""
   "C:/Users/lawre/AppData/Local/MiKTeX/2.9/fonts/tfm/public/esvect/vect10.tfm" 1590418453 372 07da2e555f4c8dac959d0bb59cacb4dc ""
   "C:/Users/lawre/AppData/Local/MiKTeX/2.9/fonts/tfm/public/esvect/vect6.tfm" 1590418454 372 e6493454680b692175addf943602cee1 ""
@@ -312,10 +312,10 @@
   "gap_code/random_elt.gap" 1665796644 412 35c8a36ded4d3330cadfde191acc6e33 ""
   "gap_code/random_elt_print.gap" 1665797260 506 f9eb165d786fb7a2d488f4acd5089657 ""
   "gap_code/subgrps_base_len.gap" 1665995172 2910 e63a1cd7338a056ad70d45cb7c67a30d ""
-  "main.aux" 1666053024 104292 6cc544fa4c8b7d44c8c7788ed0e79757 "pdflatex"
-  "main.bbl" 1665999776 8869 456ae6d8516c6aa55cb36a72d7dff104 "bibtex main"
+  "main.aux" 1666055176 104341 7f9429ede185f20ad7e0cfe7292ca693 "pdflatex"
+  "main.bbl" 1666055167 9164 b6548c9b6de2c87b3720d986668e7121 "bibtex main"
   "main.tex" 1666050196 2768 fca9baa45a44f16bdd58c209ec0e37b8 ""
-  "main.toc" 1666053024 4388 6722fd70cda34b65e568d62b46a309dd "pdflatex"
+  "main.toc" 1666055176 4388 6722fd70cda34b65e568d62b46a309dd "pdflatex"
   "preamble/settings.tex" 1665932321 3319 e3b4165a88e23516f818fcca8289c173 ""
   "sections/abstract.tex" 1666050232 2404 a3cbdbdf7b325cceb3f0079f41d87389 ""
   "sections/acknowledgements.tex" 1666049107 2066 104a8d16927dc899c0fb370a7d726af9 ""
@@ -327,7 +327,7 @@
   "sections/group_concepts/classification_results.tex" 1665972960 4505 5dfba464bb7e940e5f41a1526dbbd07a ""
   "sections/group_concepts/group_actions.tex" 1665924810 43859 a9d15fdecd48454ce990d731953b9fea ""
   "sections/introduction.tex" 1666051563 10948 d8b596bc39498e53e26ff700e9b15293 ""
-  "sections/lit_review.tex" 1666053009 22369 af482a5e2371d7250a5915e29a2acd59 ""
+  "sections/lit_review.tex" 1666055140 22727 b8439ad96ce031b76ded204858acad09 ""
   "sections/perm_group_theory.tex" 1666052962 70846 155b086d7b0cc0e550be431323cfb11b ""
   "sections/titlepage.tex" 1664960755 524 80b1bb891f6d6a9d535918a62f7b61a0 ""
   "txt_files/agl_base_gap_output/10.gap" 1665995172 704 3b7b5aac85e1bb3fbe6d6fdf6ef9a19a ""

@@ -36,6 +36,13 @@ Peter~J. Cameron.
 \newblock \href {https://doi.org/10.1017/cbo9780511623677}
   {\path{doi:10.1017/cbo9780511623677}}.
 
+\bibitem{cameron1984}
+Peter~J. Cameron, Peter~M. Neumann, and Jan Saxl.
+\newblock On groups with no regular orbits on the set of subsets.
+\newblock {\em Archiv der Mathematik}, 43(4):295--296, 1984.
+\newblock \href {https://doi.org/10.1007/bf01196649}
+  {\path{doi:10.1007/bf01196649}}.
+
 \bibitem{cannon_havas1992}
 John~J. Cannon and George Havas.
 \newblock Algorithms for groups.
