@@ -82,9 +82,7 @@ Since each element in $G$ is completely determined by its action on a base (\aut
 \begin{proof}
     Let $B = [\beta_1,\dotsc,\beta_r]$ be a nonredundant base for $G$ with stabiliser chain $G = G^0 > G^1 > \dotsb > G^r = 1$. Then we have $|G^i : G^{i+1}| \geq 2$ for all $i$ (all inclusions proper); combining with \autoref{prop:stabiliser_chain_indexes} we get $2^r \leq |G^0 : G^1| \dotsb |G^{r-1} : G^r| = |G|$.
 
-    Now suppose $\tilde B = [\tilde\beta_1,\dotsc,\tilde\beta_{\added{2}{b(G)}}]$ is a \textit{minimum base} for $G$ with stabiliser chain $G = \tilde G^0 \geq \tilde G^1 \geq \dotsb \geq \tilde G^r = 1$; then
-    $$|G| = |\tilde G^0 : \tilde G^1| \dotsb |\tilde G^{r-1} : \tilde G^r| = \underbrace{|(\tilde\beta_1)^{\tilde G^0}|}_{\leq n} \dotsb \underbrace{|(\tilde\beta_{\added{2}{b(G)}})^{\tilde G^{r-1}}|}_{\leq n} \leq n^{\added{2}{b(G)}}$$
-    where the second equality follows from \autoref{prop:stabiliser_chain_indexes}, and each orbit has size at most $n$ since each $\tilde G^i \leq \Sym(n)$. So $2^r \leq |G| \leq n^{\added{2}{b(G)}}$, yielding $r \leq \added{2}{b(G)}\log n$.
+    From the above observation, since $G$ has a base of size $b(G)$, we have $|G| \leq n^{b(G)}$. So $2^r \leq |G| \leq n^{\added{2}{b(G)}}$, yielding $r \leq \added{2}{b(G)}\log n$.
 \end{proof}}
 
 \added{4}{\begin{lemma}\label{lem:base_of_subgroup}

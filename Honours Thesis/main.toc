@@ -12,7 +12,7 @@
 \contentsline {subsection}{Strong generating sets}{16}{section*.8}%
 \contentsline {subsection}{Random elements and the constructive membership problem}{17}{section*.9}%
 \contentsline {subsection}{The orbit-stabiliser and Schreier-Sims algorithms}{19}{section*.10}%
-\contentsline {section}{\numberline {2.3}Elementary abelian groups}{21}{section.2.3}%
+\contentsline {section}{\numberline {2.3}Elementary abelian groups}{20}{section.2.3}%
 \contentsline {chapter}{\numberline {3}Preliminary concepts from complexity theory}{23}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Complexity classes}{24}{section.3.1}%
 \contentsline {subsection}{The classes P and NP}{25}{section*.11}%

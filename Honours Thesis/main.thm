@@ -67,7 +67,7 @@
 \contentsline {lemma}{{Lemma}{2.{53}}{Lemma 4.1 in \cite {blaha1992}}}{14}{lemma.2.53}%
 \contentsline {proof}{{\proofname }{15}{}}{14}{proof.15}%
 \contentsline {lemma}{{Lemma}{2.{54}}{}}{14}{lemma.2.54}%
-\contentsline {proof}{{\proofname }{16}{}}{15}{proof.16}%
+\contentsline {proof}{{\proofname }{16}{}}{14}{proof.16}%
 \contentsline {example}{{Example}{2.{55}}{symmetric groups}}{15}{example.2.55}%
 \contentsline {example}{{Example}{2.{56}}{alternating groups}}{15}{example.2.56}%
 \contentsline {example}{{Example}{2.{57}}{cyclic subgroups of $\Sym (n)$}}{15}{example.2.57}%
@@ -77,12 +77,12 @@
 \contentsline {proof}{{\proofname }{18}{}}{16}{proof.18}%
 \contentsline {lemma}{{Lemma}{2.{60}}{}}{16}{lemma.2.60}%
 \contentsline {proof}{{\proofname }{19}{}}{16}{proof.19}%
-\contentsline {example}{{Example}{2.{61}}{}}{17}{example.2.61}%
+\contentsline {example}{{Example}{2.{61}}{}}{16}{example.2.61}%
 \contentsline {example}{{Example}{2.{62}}{}}{17}{example.2.62}%
-\contentsline {algorithm}{{Algorithm}{2.{63}}{random element}}{18}{algorithm.2.63}%
+\contentsline {algorithm}{{Algorithm}{2.{63}}{random element}}{17}{algorithm.2.63}%
 \contentsline {example}{{Example}{2.{64}}{}}{18}{example.2.64}%
 \contentsline {algorithm}{{Algorithm}{2.{65}}{membership test}}{18}{algorithm.2.65}%
-\contentsline {proof}{{Proof of correctness}{20}{}}{19}{proof.20}%
+\contentsline {proof}{{Proof of correctness}{20}{}}{18}{proof.20}%
 \contentsline {example}{{Example}{2.{66}}{}}{19}{example.2.66}%
 \contentsline {algorithm}{{Algorithm}{2.{67}}{orbit-stabiliser}}{19}{algorithm.2.67}%
 \contentsline {proof}{{\proofname }{21}{}}{20}{proof.21}%

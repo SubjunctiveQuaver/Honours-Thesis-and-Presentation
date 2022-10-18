@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex main"] 1666059608 "main.aux" "main.bbl" "main" 1666060901
+["bibtex main"] 1666062001 "main.aux" "main.bbl" "main" 1666062013
   "C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/bibtex/bst/urlbst/plainurl.bst" 1562009950 33034 6f80d55ce824a32ed5562a5220ff287a ""
-  "main.aux" 1666060900 105282 d8147d44b4ce468be8f9369475c62dd7 "pdflatex"
+  "main.aux" 1666062012 105282 9c244806091e781e5e35cc583e5a3c83 "pdflatex"
   "references.bib" 1666055141 11605 d6b66ee1e930e874298798b88ffe43e1 ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1666060892 "c:/Users/lawre/OneDrive/Education/Monash University/2022/MTH4100 Research Project/Honours Thesis and Presentation/Honours Thesis/main.tex" "main.pdf" "main" 1666060901
+["pdflatex"] 1666062003 "c:/Users/lawre/OneDrive/Education/Monash University/2022/MTH4100 Research Project/Honours Thesis and Presentation/Honours Thesis/main.tex" "main.pdf" "main" 1666062013
   "C:/Users/lawre/AppData/Local/MiKTeX/2.9/fonts/map/pdftex/pdftex.map" 1666057522 466148 bf77eda5a46d60a6983271fbe0c424d3 ""
   "C:/Users/lawre/AppData/Local/MiKTeX/2.9/fonts/tfm/public/esvect/vect10.tfm" 1590418453 372 07da2e555f4c8dac959d0bb59cacb4dc ""
   "C:/Users/lawre/AppData/Local/MiKTeX/2.9/fonts/tfm/public/esvect/vect5.tfm" 1590418455 372 28e18d88a38be26cb20dc1302f0fdc04 ""
@@ -377,10 +377,10 @@
   "gap_code/random_elt.gap" 1665796644 412 35c8a36ded4d3330cadfde191acc6e33 ""
   "gap_code/random_elt_print.gap" 1665797260 506 f9eb165d786fb7a2d488f4acd5089657 ""
   "gap_code/subgrps_base_len.gap" 1665995172 2910 e63a1cd7338a056ad70d45cb7c67a30d ""
-  "main.aux" 1666060900 105282 d8147d44b4ce468be8f9369475c62dd7 "pdflatex"
-  "main.bbl" 1666059609 9164 b6548c9b6de2c87b3720d986668e7121 "bibtex main"
+  "main.aux" 1666062012 105282 9c244806091e781e5e35cc583e5a3c83 "pdflatex"
+  "main.bbl" 1666062002 9164 b6548c9b6de2c87b3720d986668e7121 "bibtex main"
   "main.tex" 1666057726 2846 c6029670167e5be214e2458153e169f7 ""
-  "main.toc" 1666060900 4539 3de14d5b72a7a6b7f4a517e87f668394 "pdflatex"
+  "main.toc" 1666062012 4539 4decb64684564f93405d7f11e67120b5 "pdflatex"
   "monash_university_logo.png" 1666057707 45155 6c14bdee666c9e5bba73d410002dbfbe ""
   "preamble/settings.tex" 1666058345 3321 3218aeef9a86b1f1ab9c6a9f64013fb5 ""
   "sections/abstract.tex" 1666060793 2105 21353c9e0f2fc2ba1d89fed08d74e7c0 ""
@@ -389,7 +389,7 @@
   "sections/blaha.tex" 1666052752 35094 98d241e4dda0ee4ae91a6a20ff7889fb ""
   "sections/complexity_concepts.tex" 1666052694 22235 bbfef24a037c202c8dc9157b9f5fe45c ""
   "sections/group_concepts.tex" 1665833981 5631 551385ff5486c46206f16ac525047d90 ""
-  "sections/group_concepts/bases_stabiliser_chains.tex" 1666052057 49448 3e76558ff9dc658745d0e72e8d2f390f ""
+  "sections/group_concepts/bases_stabiliser_chains.tex" 1666061984 48939 97907c2eeaf5b1ea08656810bf2ab46d ""
   "sections/group_concepts/classification_results.tex" 1665972960 4505 5dfba464bb7e940e5f41a1526dbbd07a ""
   "sections/group_concepts/group_actions.tex" 1665924810 43859 a9d15fdecd48454ce990d731953b9fea ""
   "sections/introduction.tex" 1666060889 10936 bff0aa38c141dd0971e2f9550b3ae92e ""
