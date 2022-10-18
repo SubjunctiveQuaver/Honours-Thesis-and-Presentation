@@ -49,4 +49,4 @@
 \contentsline {chapter}{\numberline {B}Appendix --- computing bases of subgroups of affine groups}{62}{appendix.B}%
 \contentsline {section}{\numberline {B.1}Greedy base algorithm}{62}{section.B.1}%
 \contentsline {section}{\numberline {B.2}Program to find primitive subgroups with given minimal base size}{63}{section.B.2}%
-\contentsline {subsection}{Program output for small affine groups}{65}{section*.27}%
+\contentsline {subsection}{Program output for low dimensional affine groups}{65}{section*.27}%
