@@ -1,4 +1,4 @@
-\added{3}{The following section is largely adapted from \cite{holt_handbook_cgt2005}, \added{4}{with original examples and illustrations}.}
+\added{3}{The following section is largely adapted from Holt \cite{holt_handbook_cgt2005}, \added{4}{with original examples and illustrations}.}
 
 We often think of $D_{2n}$, the dihedral group of order $2n$, as the \added{2}{symmetry} group of a regular $n$-gon. But abstractly, \mbox{$D_{2n} = \langle r,s \mid r^n,s^2,srsr \rangle$} is defined by a presentation, a set of generators and relations. The precise way in which elements of $D_{2n}$ ``are'' symmetries is given by an \textit{action} of $D_{2n}$ on say the \added{1}{vertex set} $\Omega$ of a regular $n$-gon; each element of $D_{2n}$ permutes $\Omega$, and the product in $D_{2n}$ mirrors compositions of corresponding permutations. The following definition formalises this idea and extends it to other groups.
 
@@ -179,7 +179,7 @@ We may also define conjugacy and associated notions for subgroups $H$ of $G$; th
 \begin{example}\label{eg:conjugation_subgroups}
     For a \textit{subgroup} $H \leq G$, \textbf{conjugation} of $H$ by $g \in G$ gives the subgroup $H^g = g^{-1}Hg = \{g^{-1}hg : h \in H\} \leq G$. This defines an action of $G$ on the subgroups $\Omega = \{H : H \leq G\}$ of $G$.
 
-    Subgroups in the same orbit are said to be \textbf{conjugate (subgroups)} and are isomorphic: the inner automorphism described in \autoref{eg:conjugation} restricts to an isomorphism $H \to H^g$. However isomorphic subgroups need not be conjugate; if $G$ is abelian, $H^G = \{H\}$ only, and in $G = \Z$ we know that $\Z \cong 2\Z \leq \Z$, for instance.
+    Subgroups in the same orbit are said to be \textbf{conjugate (subgroups)} and are isomorphic: the inner automorphism described in \autoref{eg:conjugation} restricts to an isomorphism $H \to H^g$. However isomorphic subgroups need not be conjugate; if $G$ is abelian, $H^G = \{H\}$ only, and in $G = \Z$ we know that $\Z \cong 2\Z \leq \Z$, for instance. In this context, the orbits are called \textbf{conjugacy classes (of subgroups)}.
 
     The stabiliser of $H \leq G$ is the \textbf{normaliser} of $H$: suppose $g \in G$ is such that $H^g = g^{-1}H g = H$. Then $Hg = gH$, so $\added{2}{G_H} = \{g \in G : Hg = gH\} =: N_G(H)$; clearly $H \trianglelefteq N_G(H)$, and $N_G(H)$ is the largest subgroup of $G$ with this property. The \hyperref[thm:orbit_stabiliser]{OST} then implies $|G : N_G(H)|$ is the number of subgroups of $G$ conjugate to $H$. The \textbf{centraliser} of $H$ is $C_G(H) = \{g \in G : hg = gh\ \text{for all}\ h \in H\} \subseteq N_G(H)$; we see that $C_G(G) = Z(G)$.
 \end{example}
