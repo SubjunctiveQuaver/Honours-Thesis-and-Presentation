@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.22)  18 OCT 2022 13:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.22)  18 OCT 2022 13:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2000,15 +2000,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 44260 strings out of 478582
- 843177 string characters out of 2842422
+ 44263 strings out of 478582
+ 843255 string characters out of 2842422
  1502210 words of memory out of 3000000
  59889 multiletter control sequences out of 15000+600000
- 564817 words of font info for 409 fonts, out of 8000000 for 9000
+ 565194 words of font info for 411 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 101i,18n,105p,2668b,2055s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 101i,18n,105p,2369b,2055s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-ts1.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_u7qtuy.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_n3gv2c.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_hmhe76.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_ks2ukx.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-ot1-0.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_kijugd.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_lyu3x3.enc}<C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathMI.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathMI5.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathMI7.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathRM.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineTBI.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/NewTXMI.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/NewTXMI7.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txexas.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txexs.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txsya.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txsyb.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txsyc.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txsys.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (73 pages, 1134435 bytes).
+Output written on main.pdf (73 pages, 1134097 bytes).
 PDF statistics:
  2290 PDF objects out of 2487 (max. 8388607)
  1124 named destinations out of 1200 (max. 500000)
