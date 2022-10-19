@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex main"] 1666185824 "main.aux" "main.bbl" "main" 1666186009
+["bibtex main"] 1666187276 "main.aux" "main.bbl" "main" 1666187362
   "C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/bibtex/bst/urlbst/plainurl.bst" 1562009950 33034 6f80d55ce824a32ed5562a5220ff287a ""
-  "main.aux" 1666186007 107646 18117337b4dbd24f011df537be3624cd "pdflatex"
+  "main.aux" 1666187361 108201 3d3b7cdc64e15cc1cd5ec3483660929f "pdflatex"
   "references.bib" 1666144849 11743 5424e2ab6fb684ec77c55edcf7f4850f ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1666185991 "c:/Users/lawre/OneDrive/Education/Monash University/2022/MTH4100 Research Project/Honours Thesis and Presentation/Honours Thesis/main.tex" "main.pdf" "main" 1666186009
+["pdflatex"] 1666187348 "c:/Users/lawre/OneDrive/Education/Monash University/2022/MTH4100 Research Project/Honours Thesis and Presentation/Honours Thesis/main.tex" "main.pdf" "main" 1666187362
   "C:/Users/lawre/AppData/Local/MiKTeX/2.9/fonts/map/pdftex/pdftex.map" 1666057522 466148 bf77eda5a46d60a6983271fbe0c424d3 ""
   "C:/Users/lawre/AppData/Local/MiKTeX/2.9/fonts/tfm/public/esvect/vect10.tfm" 1590418453 372 07da2e555f4c8dac959d0bb59cacb4dc ""
   "C:/Users/lawre/AppData/Local/MiKTeX/2.9/fonts/tfm/public/esvect/vect5.tfm" 1590418455 372 28e18d88a38be26cb20dc1302f0fdc04 ""
@@ -466,22 +466,23 @@
   "gap_code/random_elt_print.gap" 1665797260 506 f9eb165d786fb7a2d488f4acd5089657 ""
   "gap_code/rubiks_def.gap" 1665317450 475 736e067fa62e125bfddac153d29b7b21 ""
   "gap_code/subgrps_base_len.gap" 1665995172 2910 e63a1cd7338a056ad70d45cb7c67a30d ""
-  "main.aux" 1666186007 107646 18117337b4dbd24f011df537be3624cd "pdflatex"
-  "main.bbl" 1666185825 9304 325ad5f92a7db6b45470e60e4ce6183d "bibtex main"
+  "main.aux" 1666187361 108201 3d3b7cdc64e15cc1cd5ec3483660929f "pdflatex"
+  "main.bbl" 1666187277 9304 325ad5f92a7db6b45470e60e4ce6183d "bibtex main"
   "main.tex" 1666177880 2939 ec01dc7cfa5299c28cf0520cd15228e9 ""
-  "main.toc" 1666186007 4646 56b4134314c07f8d12e89bbf9067a4b8 "pdflatex"
+  "main.toc" 1666187361 4646 dd4b599305af88914c9b0ac038323bd5 "pdflatex"
   "monash_university_logo.png" 1666057707 45155 6c14bdee666c9e5bba73d410002dbfbe ""
   "preamble/settings.tex" 1666178583 3362 d121ef5102e8215ffa068fee6251c065 ""
   "sections/abstract.tex" 1666144243 2107 677e91a309f356e5ad014ccdc8fcab6a ""
   "sections/acknowledgements.tex" 1666135738 2129 11c97650e626925f871dfb6142413ec0 ""
-  "sections/appendix.tex" 1666184314 5537 cfc2bda2066e0478f4fd24bad94a5726 ""
+  "sections/appendix.tex" 1666187161 5667 0abd0c147f0eda465fd626019f83b6af ""
   "sections/blaha.tex" 1666062363 35025 04a8d1532e371be364bad26670e1c5d2 ""
   "sections/complexity_concepts.tex" 1666052694 22235 bbfef24a037c202c8dc9157b9f5fe45c ""
   "sections/group_concepts.tex" 1665833981 5631 551385ff5486c46206f16ac525047d90 ""
-  "sections/group_concepts/bases_stabiliser_chains.tex" 1666178364 49049 879b4e0afecb20b2554594e69e82c573 ""
+  "sections/group_concepts/bases_stabiliser_chains.tex" 1666187346 50577 31b79c18640ba6e59152c1762c443292 ""
   "sections/group_concepts/classification_results.tex" 1665972960 4505 5dfba464bb7e940e5f41a1526dbbd07a ""
   "sections/group_concepts/group_actions.tex" 1666185255 52634 3a9c07086ea52f95a18d4ba99e929190 ""
   "sections/group_concepts/rubiks_cube_net.tikz" 1666178631 2075 9cf1e3db638e1f5e60b088643aa60035 ""
+  "sections/group_concepts/rubiks_cube_net_random.tikz" 1666186486 8214 a0f98b2caee9e3e83d3fc367a030280e ""
   "sections/introduction.tex" 1666060889 10936 bff0aa38c141dd0971e2f9550b3ae92e ""
   "sections/lit_review.tex" 1666178492 22923 25098156b9f952576b08f8f24ea9c324 ""
   "sections/perm_group_theory.tex" 1666185988 72150 fb7e93d3dc5ab02ac430a399a489b076 ""
@@ -504,6 +505,7 @@
   "txt_files/klein_4_blocks.gap" 1665916971 276 b7860f7a54487201bc0c0683ff83984e ""
   "txt_files/klein_4_transitivity.gap" 1665916491 316 c4da99d2290700d9674866c8e43f05ee ""
   "txt_files/rubiks_group.gap" 1666183962 1747 ffabc352a02a9ca7d848f94995ae75e4 ""
+  "txt_files/rubiks_group_membership.gap" 1666187053 1516 c923f36a13ef0a9cca0da1efae034abc ""
   (generated)
   "main.aux"
   "main.log"
