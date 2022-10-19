@@ -331,7 +331,7 @@ Another important property of group actions is \textit{primitivity}.
 
 \added{2}{For a \textit{transitive} action,} the distinct \textit{translates} $\Delta^g$ of a block $\Delta$ \textit{partition} $\Omega$ (either $\Delta^g = \Delta$ or $\Delta^g \cap \Delta = \emptyset$); the set \added{3}{$\Sigma = \{\Delta^g : g \in G\}$} of these translates \added{3}{(which are blocks themselves)} is a \textbf{block system} \added{4}{for $G$}. So the condition of primitivity for a transitive action is equivalent to \textit{not} preserving a nontrivial partition of $\Omega$ (otherwise we would have a nontrivial block). Clearly $|\Delta| = |\Delta^g|$, so all blocks in a \added{2}{block system} have the same size; \added{2}{if $|\Omega|$ is finite, then $|\Delta|$ divides $|\Omega|$.} So if the action of $G$ on $\Omega$ is transitive and $|\Omega|$ is prime, then every block has size $1$ or size $|\Omega|$ and is thus trivial, so the action is primitive. \added{3}{If a block system comprises nontrivial blocks, then it is also called a \textbf{system of imprimitivity}; the corresponding action is imprimitive.}
 
-If a transitive $G$-action on $\Omega$ has a block system $\Sigma = \{\Delta^g :  g \in G\}$ for some block $\Delta \subseteq \Omega$, then $G$ acts transitively on $\Sigma$ in the expected way. This follows from the fact that $\Delta^1 = \Delta$ and $\Delta^{gh} = (\Delta^g)^h$ (which is \autoref{lem:restrict_action_to_block}(a)). In particular, this applies if $\Sigma$ is a system of imprimitivity; if $\Sigma$ is \textit{maximal} (in the sense that $\Delta$ is maximal with respect to inclusion: if $\tilde\Delta$ is a block such that $\Delta \subsetneq \tilde\Delta \subseteq \Omega$ then $\tilde\Delta = \Omega$), then $G$ acts primitively on $\Sigma$.
+If a transitive $G$-action on $\Omega$ has a block system $\Sigma = \{\Delta_0^g :  g \in G\}$ for some block $\Delta_0 \subseteq \Omega$, then $G$ acts transitively on $\Sigma$ via $\hat\varphi$ in the expected way: for $\Delta \in \Sigma$, $\Delta^{\hat\varphi(g)} := \Delta^g$. This follows from the fact that $\Delta^1 = \Delta$ and $\Delta^{gh} = (\Delta^g)^h$ (which is \autoref{lem:restrict_action_to_block}(a)). In particular, this applies if $\Sigma$ is a system of imprimitivity; if $\Sigma$ is \textit{maximal} (in the sense that $\Delta_0$ is maximal with respect to inclusion: if $\tilde\Delta$ is a block such that $\Delta_0 \subsetneq \tilde\Delta \subseteq \Omega$ then $\tilde\Delta = \Omega$), then $G$ acts primitively on $\Sigma$.
 
 \begin{lemma}\label{lem:action_on_blocks_primitive_if_maximal}
     Let $G$ act transitively on $\Omega$ and let $\Delta$ be a nontrivial block under the action. If the system of imprimitivity $\Sigma = \{\Delta^g :  g \in G\}$ is \textit{maximal}, then $G$ acts primitively on $\Sigma$ (under the induced action on blocks).
@@ -352,7 +352,7 @@ Analysing the kernel of this action on blocks tells us the elements of $G$ that 
         \includegraphics{sections/group_concepts/rubiks_cube_net.tikz}
     \end{center}
 
-    To mimic moves on the cube, we define $G = \langle U,L,F,R,B,D \rangle$ where
+    To mimic moves on the cube, we define $G = \langle U,L,F,R,B,D \rangle \leq \Sym(48)$ where
     \begin{itemize}
         \item $U = ( 1, 3, 8, 6)( 2, 5, 7, 4)( 9,33,25,17)(10,34,26,18)(11,35,27,19)$,
         \item $L = ( 9,11,16,14)(10,13,15,12)( 1,17,41,40)( 4,20,44,37)( 6,22,46,35)$,
@@ -362,13 +362,25 @@ Analysing the kernel of this action on blocks tells us the elements of $G$ that 
         \item $D = (41,43,48,46)(42,45,47,44)(14,22,30,38)(15,23,31,39)(16,24,32,40)$.
     \end{itemize}
 
-    See appendix for \texttt{GAP} code related to implementation. Analysis on $G$ is done in \texttt{GAP} in \cite{schonert_GAP}. Now, the Rubik's group has two orbits under its natural action:
-    \[1^G = \{ 1, 19, 9, 7, 27, 17, 11, 15, 31, 37, 5, 41, 13, 25, 23, 35, 45, 39, 29, 3, 47, 33, 21, 43 \}\]
+    See \hyperref[app:rubiks_group]{appendix} for \texttt{GAP} code related to implementation. The following analysis on $G$ is adapted from \cite{schonert_GAP}. Firstly, \texttt{GAP} computes that $|G| = 43\,252\,003\,274\,489\,856\,000 \approx 4.3 \cdot 10^{19}$ Now, the Rubik's group has two orbits under its natural action:
+    \[1^G = \{ 1, 6, 40, 27, 8, 35, 16, 41, 32, 25, 48, 3, 11, 24, 46, 33, 43, 17, 30, 14, 19, 9, 22, 38 \}\]
     and
-    \[2^G = \{ 2, 40, 4, 34, 32, 22, 6, 36, 24, 10, 26, 30, 14, 8, 38, 18, 16, 12, 28, 44, 48, 46, 20, 42 \},\]
-    representing corner and edge stickers respectively. So $G$ acts transitively on the 24 corner stickers.
+    \[2^G = \{ 2, 5, 12, 7, 36, 10, 47, 4, 28, 45, 34, 13, 29, 44, 20, 42, 26, 21, 37, 15, 31, 18, 23, 39 \},\]
+    representing corner and edge stickers respectively. So $G$ acts transitively on the 24 corner stickers, and we get a homomorphism $G \to \Sym(1^G)$ with image of size $88\,179\,840$; for instance, under this homomorphism,
+    \begin{multline*}
+        F = (17,19,24,22)(18,21,23,20)( 6,25,43,16)( 7,28,42,13)( 8,30,41,11) \\
+        \mapsto (17,19,24,22)( 6,25,43,16)( 8,30,41,11) \in \Sym(1^G).
+    \end{multline*}
+    (Note that \texttt{GAP} relabels the elements of $1^G$ to $[24]$, when using \texttt{ActionHomomorphism} to get the action on the orbit.)
 
-    Then the 3 stickers in each corner form a maximal block, so $G$ acts primitively on the 8 corners themselves under the action on blocks; it can be shown that the image of this action is the symmetric group $\Sym(8)$ of degree 8, and the kernel is isomorphic to $(\Z/3\Z)^7$ \cite{schonert_GAP}.
+    Then we may use \texttt{GAP} to check that the 3 stickers in each corner form a maximal block, and
+    $$\Sigma = \{\{1,35,9\},\{6,11,17\},\{40,46,14\},\{27,3,33\},\{8,25,19\},\{16,41,22\},\{32,48,38\},\{24,43,30\}\}$$
+    is a maximal system of imprimitivity that partitions $1^G$. So by \autoref{lem:action_on_blocks_primitive_if_maximal}, $G$ acts primitively on $\Sigma$ (the 8 corners themselves) under the action on blocks, giving a homomorphism $G \to \Sym(\Sigma)$. For instance,
+    \begin{multline*}
+        F = (17,19,24,22)(18,21,23,20)( 6,25,43,16)( 7,28,42,13)( 8,30,41,11) \\
+        \mapsto (\{6,11,17\},\{8,25,19\},\{24,43,30\},\{16,41,22\}) \in \Sym(\Sigma),
+    \end{multline*}
+    which matches our intuition on the diagram above. It can be shown that the image of this action is $\Sym(\Sigma) \cong \Sym(8)$ (i.e. the action is surjective), since it has order $40\,320 = 8!$; thus, we can permute the corners (ignoring \textit{orientation}) in any way we want on a Rubik's cube. (We discuss this more in \autoref{eg:rubiks_cube_wreath}.)
 \end{example}
 
 By saying $G^\Omega$ is transitive, regular or primitive, we mean that the action of $G$ on $\Omega$ is transitive, regular or primitive. When $G \leq \Sym(\Omega)$ \added{3}{is a permutation group}, if we consider the natural action of $G$ on $\Omega$ as defined in \autoref{eg:natural_action}, we simply say that $G$ is \textbf{transitive}, \textbf{regular} or \textbf{primitive} (when the action is). Thus, by \autoref{lem:action_on_blocks_primitive_if_maximal}, if $G$ acts transitively on $\Omega$ and $\Sigma$ is a maximal system of imprimitivity, then the image of the action is a primitive (permutation) group.

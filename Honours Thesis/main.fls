@@ -2579,6 +2579,18 @@ INPUT .\sections\appendix.tex
 INPUT sections\appendix.tex
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\libertine\LinLibertineTI-tlf-ts1.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinLibertineTI-tlf-ts1--base.tfm
+INPUT .\gap_code\rubiks_def.gap
+INPUT gap_code\rubiks_def.gap
+INPUT .\gap_code\rubiks_def.gap
+INPUT gap_code\rubiks_def.gap
+INPUT .\gap_code\rubiks_def.gap
+INPUT gap_code\rubiks_def.gap
+INPUT .\txt_files\rubiks_group.gap
+INPUT txt_files\rubiks_group.gap
+INPUT .\txt_files\rubiks_group.gap
+INPUT txt_files\rubiks_group.gap
+INPUT .\txt_files\rubiks_group.gap
+INPUT txt_files\rubiks_group.gap
 INPUT .\gap_code\random_elt.gap
 INPUT gap_code\random_elt.gap
 INPUT .\gap_code\random_elt.gap

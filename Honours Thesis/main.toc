@@ -10,7 +10,7 @@
 \contentsline {subsection}{Transitivity and primitivity}{9}{section*.6}%
 \contentsline {section}{\numberline {2.2}Bases and stabiliser chains}{14}{section.2.2}%
 \contentsline {subsection}{Sizes of bases and the group}{15}{section*.7}%
-\contentsline {subsection}{Strong generating sets}{17}{section*.8}%
+\contentsline {subsection}{Strong generating sets}{18}{section*.8}%
 \contentsline {subsection}{Random elements and the constructive membership problem}{19}{section*.9}%
 \contentsline {subsection}{The orbit-stabiliser and Schreier-Sims algorithms}{21}{section*.10}%
 \contentsline {section}{\numberline {2.3}Elementary abelian groups}{22}{section.2.3}%
@@ -32,22 +32,23 @@
 \contentsline {section}{\numberline {5.2}Semidirect products and wreath products}{38}{section.5.2}%
 \contentsline {subsection}{Semidirect products}{38}{section*.18}%
 \contentsline {subsection}{Wreath products}{39}{section*.19}%
-\contentsline {section}{\numberline {5.3}Matrix groups and affine groups}{42}{section.5.3}%
-\contentsline {subsection}{Affine transformations and the affine general linear group}{42}{section*.20}%
+\contentsline {section}{\numberline {5.3}Matrix groups and affine groups}{43}{section.5.3}%
+\contentsline {subsection}{Affine transformations and the affine general linear group}{43}{section*.20}%
 \contentsline {subsection}{Affine group structure}{44}{section*.21}%
 \contentsline {subsection}{Symplectic and orthogonal groups}{46}{section*.22}%
 \contentsline {section}{\numberline {5.4}Primitive permutation groups and the O'Nan-Scott theorem}{46}{section.5.4}%
-\contentsline {subsection}{The socle}{46}{section*.23}%
+\contentsline {subsection}{The socle}{47}{section*.23}%
 \contentsline {subsection}{The O'Nan-Scott theorem}{48}{section*.24}%
 \contentsline {chapter}{\numberline {6}Results on minimum bases for primitive groups}{50}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Results for non-large base primitive permutation groups}{50}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Primitive subgroups of affine groups with given minimal base size}{52}{section.6.2}%
 \contentsline {chapter}{References}{55}{chapter*.25}%
 \contentsline {chapter}{\numberline {A}Appendix --- theory of permutation groups}{57}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Random elements and the constructive membership problem}{57}{section.A.1}%
-\contentsline {subsection}{Stabiliser chain for automorphism group of graph}{59}{section*.26}%
-\contentsline {section}{\numberline {A.2}Wreath product and dihedral group}{61}{section.A.2}%
-\contentsline {chapter}{\numberline {B}Appendix --- computing bases of subgroups of affine groups}{63}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Greedy base algorithm}{63}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Program to find primitive subgroups with given minimal base size}{64}{section.B.2}%
-\contentsline {subsection}{Program output for low dimensional affine groups}{66}{section*.27}%
+\contentsline {section}{\numberline {A.1}Rubik's group}{57}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Random elements and the constructive membership problem}{58}{section.A.2}%
+\contentsline {subsection}{Stabiliser chain for automorphism group of graph}{60}{section*.26}%
+\contentsline {section}{\numberline {A.3}Wreath product and dihedral group}{62}{section.A.3}%
+\contentsline {chapter}{\numberline {B}Appendix --- computing bases of subgroups of affine groups}{64}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Greedy base algorithm}{64}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Program to find primitive subgroups with given minimal base size}{65}{section.B.2}%
+\contentsline {subsection}{Program output for low dimensional affine groups}{67}{section*.27}%

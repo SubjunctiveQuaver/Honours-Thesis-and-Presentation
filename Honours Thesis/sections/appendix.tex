@@ -1,8 +1,18 @@
 \chapter{Appendix --- theory of permutation groups}%\chaptermark{Appendix}
 
-\section{Random elements and the constructive membership problem}
-
 \textit{Note that Adobe Acrobat allows you to copy the following code without line numbers.} All code in this \thesis{} is implemented and tested in \texttt{GAP} version 4.12.0.
+
+\section{Rubik's group}
+
+Here is \texttt{GAP} code relevant to \autoref{eg:rubiks_group}. First we define the Rubik's group $G \leq \Sym(48)$.\label{app:rubiks_group}
+
+\lstinputlisting{gap_code/rubiks_def.gap}
+
+Then, we compute orbits, restrict the action to \texttt{GC} (which acts on corners), look at maximal blocks under this action (which are the corners), then analyse the primitive action on corners (which is \texttt{GCBhom}).
+
+\lstinputlisting{txt_files/rubiks_group.gap}
+
+\section{Random elements and the constructive membership problem}
 
 Here is an implementation of \autoref{alg:transversal_random_element} in \texttt{GAP} as the function \texttt{RandomElt}:\label{app:transversal_random_element}
 
@@ -46,7 +56,7 @@ Below is \texttt{GAP} code for an implementation of the greedy base algorithm fr
 
 \lstinputlisting{gap_code/greedy_base.gap}
 
-The following shows that \texttt{GreedyBase} sometimes finds a smaller base than the built-in command \texttt{BaseOfGroup}:\label{app:greedy_better_than_default}
+The following example of a permutation group $G$ of degree 64 shows that \texttt{GreedyBase} sometimes finds a smaller base than the built-in command \texttt{BaseOfGroup}:\label{app:greedy_better_than_default}
 
 \lstinputlisting{txt_files/greedy_better_than_default.gap}
 

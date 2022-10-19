@@ -255,6 +255,14 @@ In the case that $\Omega = [n]$, we may identify $\Gamma^\Omega$ with $\Gamma^n$
         \end{enumerate}
     \end{proposition}}
 
+We conclude with an application of wreath products to the Rubik's group $G \leq \Sym(48)$ from \autoref{eg:rubiks_group}.
+
+\begin{example}\label{eg:rubiks_cube_wreath}
+    Recall that from \autoref{eg:rubiks_group}, the Rubik's group $G$ acts transitively on the corner stickers $1^G$ via $\varphi$, and primitively on the corners $\Sigma$ of the Rubik's cube under the action on blocks. Let $\tilde G$ denote the image of the transitive $G$-action on $1^G$; it is a permutation group of degree $24$ with order $|\tilde G| = 88\,179\,840 = 8! \cdot 3^7$, and represents possible Rubik's cube moves if we ignore edge stickers. Then we have a surjective homomorphism $G/\ker\varphi \cong \tilde G \to \Sym(\Sigma)$, which is a faithful, primitive action (compare this with the quotient action from \autoref{eg:quotient_action}).
+    
+    In \cite{schonert_GAP}, it is noted that the kernel of this action is isomorphic to the elementary abelian group $3^7$. In fact, $\tilde G \cong \Sym(8) \ltimes 3^7$, and moreover, $\tilde G$ is a subgroup of $C_3 \wr \Sym(8) \cong \Sym(8) \ltimes 3^8$ of index 3; this shows we do not have complete freedom in turning the 8 corners --- if we turn one corner clockwise, we must turn another anticlockwise \cite{schonert_GAP}.
+\end{example}
+
 \section{Matrix groups and affine groups}
 
 \subsection{Affine transformations and the affine general linear group}

@@ -24,5 +24,5 @@ gap> GreedyBase( G );
 [ 1, 10, 19, 37, 11 ]
 gap> Size( last );
 5
-gap> Stabilizer( G, last2, OnTuples );
+gap> Stabilizer( G, last2, OnTuples ); # check that we indeed have a base
 Group(())
