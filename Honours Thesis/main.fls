@@ -2533,6 +2533,12 @@ INPUT .\txt_files\automorphism_group_graph_bsgs_gap_3.gap
 INPUT txt_files\automorphism_group_graph_bsgs_gap_3.gap
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\libertine\LinLibertineTI-tlf-sc-ot1.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinLibertineTI-tlf-sc-ot1--base.tfm
+INPUT .\sections\group_concepts\rubiks_cube_net.tikz
+INPUT sections\group_concepts\rubiks_cube_net.tikz
+INPUT .\sections\group_concepts\rubiks_cube_net.tikz
+INPUT sections\group_concepts\rubiks_cube_net.tikz
+INPUT .\sections\group_concepts\rubiks_cube_net.tikz
+INPUT sections\group_concepts\rubiks_cube_net.tikz
 INPUT .\sections\group_concepts\rubiks_cube_net_random.tikz
 INPUT sections\group_concepts\rubiks_cube_net_random.tikz
 INPUT .\sections\group_concepts\rubiks_cube_net_random.tikz
