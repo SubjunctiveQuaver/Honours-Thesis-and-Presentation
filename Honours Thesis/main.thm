@@ -46,10 +46,10 @@
 \contentsline {remark}{{Remark}{2.{37}}{}}{11}{remark.2.37}%
 \contentsline {definition}{{Definition}{2.{38}}{}}{11}{definition.2.38}%
 \contentsline {lemma}{{Lemma}{2.{39}}{}}{11}{lemma.2.39}%
-\contentsline {proof}{{\proofname }{10}{}}{11}{proof.10}%
+\contentsline {proof}{{\proofname }{10}{}}{12}{proof.10}%
 \contentsline {example}{{Example}{2.{40}}{Rubik's group}}{12}{example.2.40}%
-\contentsline {proposition}{{Proposition}{2.{41}}{}}{12}{proposition.2.41}%
-\contentsline {proof}{{\proofname }{11}{}}{12}{proof.11}%
+\contentsline {proposition}{{Proposition}{2.{41}}{}}{13}{proposition.2.41}%
+\contentsline {proof}{{\proofname }{11}{}}{13}{proof.11}%
 \contentsline {example}{{Example}{2.{42}}{}}{13}{example.2.42}%
 \contentsline {example}{{Example}{2.{43}}{}}{13}{example.2.43}%
 \contentsline {proposition}{{Proposition}{2.{44}}{}}{13}{proposition.2.44}%
@@ -68,8 +68,8 @@
 \contentsline {example}{{Example}{2.{53}}{}}{15}{example.2.53}%
 \contentsline {proposition}{{Proposition}{2.{54}}{}}{15}{proposition.2.54}%
 \contentsline {definition}{{Definition}{2.{55}}{}}{15}{definition.2.55}%
-\contentsline {lemma}{{Lemma}{2.{56}}{Lemma 4.1 in \cite {blaha1992}}}{15}{lemma.2.56}%
-\contentsline {proof}{{\proofname }{16}{}}{15}{proof.16}%
+\contentsline {lemma}{{Lemma}{2.{56}}{Lemma 4.1 in \cite {blaha1992}}}{16}{lemma.2.56}%
+\contentsline {proof}{{\proofname }{16}{}}{16}{proof.16}%
 \contentsline {lemma}{{Lemma}{2.{57}}{}}{16}{lemma.2.57}%
 \contentsline {proof}{{\proofname }{17}{}}{16}{proof.17}%
 \contentsline {example}{{Example}{2.{58}}{symmetric groups}}{16}{example.2.58}%
@@ -80,7 +80,7 @@
 \contentsline {lemma}{{Lemma}{2.{62}}{}}{17}{lemma.2.62}%
 \contentsline {proof}{{\proofname }{19}{}}{17}{proof.19}%
 \contentsline {lemma}{{Lemma}{2.{63}}{}}{17}{lemma.2.63}%
-\contentsline {proof}{{\proofname }{20}{}}{17}{proof.20}%
+\contentsline {proof}{{\proofname }{20}{}}{18}{proof.20}%
 \contentsline {example}{{Example}{2.{64}}{}}{18}{example.2.64}%
 \contentsline {example}{{Example}{2.{65}}{}}{18}{example.2.65}%
 \contentsline {algorithm}{{Algorithm}{2.{66}}{random element}}{19}{algorithm.2.66}%
@@ -96,7 +96,7 @@
 \contentsline {corollary}{{Corollary}{2.{74}}{}}{22}{corollary.2.74}%
 \contentsline {proof}{{\proofname }{23}{}}{22}{proof.23}%
 \contentsline {example}{{Example}{2.{75}}{}}{22}{example.2.75}%
-\contentsline {example}{{Example}{2.{76}}{}}{22}{example.2.76}%
+\contentsline {example}{{Example}{2.{76}}{}}{23}{example.2.76}%
 \contentsline {definition}{{Definition}{3.{1}}{big-O notation}}{24}{definition.3.1}%
 \contentsline {definition}{{Definition}{3.{2}}{}}{24}{definition.3.2}%
 \contentsline {example}{{Example}{3.{3}}{membership test}}{25}{example.3.3}%

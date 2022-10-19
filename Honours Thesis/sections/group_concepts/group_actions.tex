@@ -305,7 +305,7 @@ If $\Delta \subseteq \Omega$ is a block, $G$ may not act on $\Delta$, as if $\De
         \item for $g,h \in G$, $\Delta^{gh} = (\Delta^g)^h$, and
         \item the \textbf{setwise stabiliser} $G_\Delta := \{g \in G : \Delta^g = \Delta\} \leq G$ acts on $\Delta$ \added{4}{with kernel $G_{(\Delta)} \unlhd G_\Delta$}.
     \end{enumerate}
-    The action $\varphi : G \to \Sym(\Omega)$ relates to the action $\tilde\varphi : G_\Delta \to \Sym(\Delta)$ by $\alpha^{\varphi(g)} = \alpha^{\tilde\varphi(g)} \in \Delta$ for $\alpha \in \Delta$ and $g \in G_\Delta$.
+    The action $\varphi : G \to \Sym(\Omega)$ relates to the action $\tilde\varphi : G_\Delta \to \Sym(\Delta)$ by $\alpha^{\varphi(g)} = \alpha^{\tilde\varphi(g)} \in \Delta$ for $\alpha \in \Delta$ and $g \in G_\Delta$. (Since $\Delta \subseteq \Omega$, $\Sym(\Delta)$ embeds naturally into $\Sym(\Omega)$ via $g \mapsto \tilde g \in \Sym(\Omega)$, where $\alpha^{\tilde g} = \alpha^g$ for $\alpha \in \Delta$, else $\alpha^{\tilde g} = \alpha$.)
 \end{lemma}
 
 \begin{proof}
@@ -313,12 +313,12 @@ If $\Delta \subseteq \Omega$ is a block, $G$ may not act on $\Delta$, as if $\De
         \item We have $\beta \in \Delta^{gh}$ if and only if $\beta = \alpha^{gh}$ \added{4}{for some} $\alpha \in \Delta$, if and only if $\beta = (\alpha^g)^h$ with $\alpha \in \Delta$ and $\alpha^g \in \Delta^g$, if and only if $\beta \in (\Delta^g)^h$.
         \item For $g,h \in G_\Delta$, we have $\Delta^{gh} = (\Delta^g)^h = \Delta^h = \Delta$, so $gh \in G_\Delta$. Similarly, we have $\Delta^{g^{-1}} = (\Delta^g)^{g^{-1}} = \Delta^1 = \Delta$, so $g^{-1} \in G_\Delta$. So $G_\Delta \leq G$, by the subgroup criterion. Then $G_\Delta$ acts on $\Delta$ since the associated action $\tilde\varphi$ is well-defined.
 
-              \added{4}{Note that that $G_{(\Delta)} \subseteq G_{\Delta}$ since if $\alpha^g = \alpha$ for all $\alpha \in \Delta$, then $\Delta^g = \Delta$. Then the kernel of the $G_\Delta$-action on $\Delta$ is $\{g \in G_\Delta : \alpha^g = \alpha\ \text{for all}\ \alpha \in \Delta\} = G_{(\Delta)}$, so $G_\Delta \unlhd G_\Delta$.}
+              \added{4}{Note that that $G_{(\Delta)} \subseteq G_{\Delta}$ since if $\alpha^g = \alpha$ for all $\alpha \in \Delta$, then $\Delta^g = \Delta$. Then the kernel of the $G_\Delta$-action on $\Delta$ is $\{g \in G_\Delta : \alpha^g = \alpha\ \text{for all}\ \alpha \in \Delta\} = G_{(\Delta)}$, so $G_{(\Delta)} \unlhd G_\Delta$.}
     \end{enumerate}
 \end{proof}
 
 \begin{remark}\label{rem:group_acts_on_orbit}
-    For $G$-actions (on $\Omega$) and fixed $\alpha \in \Omega$, setting $\Delta = \alpha^G$ gives $G_\Delta = G$ (since $\Delta^g = (\alpha^G)^g = \alpha^G = \Delta$ for all $g \in G$), so $G$ acts on $\alpha^G$ by \autoref{lem:restrict_action_to_block}(b). If the action is intransitive, then $\alpha^G \neq \Omega$, and $G$ acts on a strict subset of $\Omega$.
+    For $G$-actions (on $\Omega$) and fixed $\alpha \in \Omega$, setting $\Delta = \alpha^G$ gives $G_\Delta = G$ (since $\Delta^g = (\alpha^G)^g = \alpha^G = \Delta$ for all $g \in G$), so $G$ acts on $\alpha^G$ by \autoref{lem:restrict_action_to_block}(b). If the action is intransitive, then $\alpha^G \neq \Omega$, and $G$ acts on a strict subset of $\Omega$; the image of the restricted $G$-action embeds into the image of the original $G$-action.
 \end{remark}
 
 Thus, when classifying permutation groups, it suffices to consider transitive groups. Suppose $G$ acts on $\Omega$ via $\varphi$. Partition $\Omega = \bigsqcup_{i \in I} \Omega_i$, where each $\Omega_i$ is a $G$-orbit. Then for each $i \in I$, $G$ acts transitively on $\Omega_i$ via $\varphi_i : G \to \Sym(\Omega_i)$, as in \autoref{rem:group_acts_on_orbit}. Conversely, suppose $G$ acts transitively on $\Omega_i$ via $\varphi_i$ for $i \in I$. Then, setting $\Omega = \bigsqcup_{i \in I} \Omega_i$ as the disjoint union, we may construct a $G$-action $\varphi : G \to \Sym(\Omega)$ by the following: for $\alpha \in \Omega$ and $g \in G$, we have $\alpha \in \Omega_i$ for unique $i \in I$, and then we set $\alpha^{\varphi(g)} = \alpha^{\varphi_i(g)} \in \Omega_i$. This constructs every intransitive $G$-action on $\Omega$, and thus every intransitive group $G \leq \Sym(\Omega)$ where we take the natural action. We use this construction in \autoref{eg:blaha_elem_technical_construction}.
@@ -362,7 +362,13 @@ Analysing the kernel of this action on blocks tells us the elements of $G$ that 
         \item $D = (41,43,48,46)(42,45,47,44)(14,22,30,38)(15,23,31,39)(16,24,32,40)$.
     \end{itemize}
 
-    Analysis on $G$ is done in \texttt{GAP} in \cite{schonert_GAP}. Now, the Rubik's group has two orbits (representing edge and corner stickers) under its natural action, so $G$ acts transitively on the 24 corner stickers. Then the 3 stickers in each corner form a maximal block, so $G$ acts primitively on the 8 corners themselves under the action on blocks; it can be shown that the image of this action is the symmetric group $\Sym(8)$ of degree 8, and the kernel is isomorphic to $(\Z/3\Z)^7$ \cite{schonert_GAP}.
+    See appendix for \texttt{GAP} code related to implementation. Analysis on $G$ is done in \texttt{GAP} in \cite{schonert_GAP}. Now, the Rubik's group has two orbits under its natural action:
+    \[1^G = \{ 1, 19, 9, 7, 27, 17, 11, 15, 31, 37, 5, 41, 13, 25, 23, 35, 45, 39, 29, 3, 47, 33, 21, 43 \}\]
+    and
+    \[2^G = \{ 2, 40, 4, 34, 32, 22, 6, 36, 24, 10, 26, 30, 14, 8, 38, 18, 16, 12, 28, 44, 48, 46, 20, 42 \},\]
+    representing corner and edge stickers respectively. So $G$ acts transitively on the 24 corner stickers.
+
+    Then the 3 stickers in each corner form a maximal block, so $G$ acts primitively on the 8 corners themselves under the action on blocks; it can be shown that the image of this action is the symmetric group $\Sym(8)$ of degree 8, and the kernel is isomorphic to $(\Z/3\Z)^7$ \cite{schonert_GAP}.
 \end{example}
 
 By saying $G^\Omega$ is transitive, regular or primitive, we mean that the action of $G$ on $\Omega$ is transitive, regular or primitive. When $G \leq \Sym(\Omega)$ \added{3}{is a permutation group}, if we consider the natural action of $G$ on $\Omega$ as defined in \autoref{eg:natural_action}, we simply say that $G$ is \textbf{transitive}, \textbf{regular} or \textbf{primitive} (when the action is). Thus, by \autoref{lem:action_on_blocks_primitive_if_maximal}, if $G$ acts transitively on $\Omega$ and $\Sigma$ is a maximal system of imprimitivity, then the image of the action is a primitive (permutation) group.
