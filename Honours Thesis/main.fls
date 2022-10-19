@@ -2533,18 +2533,24 @@ INPUT .\txt_files\automorphism_group_graph_bsgs_gap_3.gap
 INPUT txt_files\automorphism_group_graph_bsgs_gap_3.gap
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\libertine\LinLibertineTI-tlf-sc-ot1.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinLibertineTI-tlf-sc-ot1--base.tfm
-INPUT .\sections\group_concepts\rubiks_cube_net.tikz
-INPUT sections\group_concepts\rubiks_cube_net.tikz
-INPUT .\sections\group_concepts\rubiks_cube_net.tikz
-INPUT sections\group_concepts\rubiks_cube_net.tikz
-INPUT .\sections\group_concepts\rubiks_cube_net.tikz
-INPUT sections\group_concepts\rubiks_cube_net.tikz
+INPUT .\sections\group_concepts\rubiks_cube_net_base.tikz
+INPUT sections\group_concepts\rubiks_cube_net_base.tikz
+INPUT .\sections\group_concepts\rubiks_cube_net_base.tikz
+INPUT sections\group_concepts\rubiks_cube_net_base.tikz
+INPUT .\sections\group_concepts\rubiks_cube_net_base.tikz
+INPUT sections\group_concepts\rubiks_cube_net_base.tikz
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinLibertineTZ-tlf-ot1.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinLibertineTZ-tlf-ot1.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinLibertineTZ-tlf-ot1.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinLibertineTZ-tlf-ot1.tfm
 INPUT .\sections\group_concepts\rubiks_cube_net_random.tikz
 INPUT sections\group_concepts\rubiks_cube_net_random.tikz
 INPUT .\sections\group_concepts\rubiks_cube_net_random.tikz
 INPUT sections\group_concepts\rubiks_cube_net_random.tikz
 INPUT .\sections\group_concepts\rubiks_cube_net_random.tikz
 INPUT sections\group_concepts\rubiks_cube_net_random.tikz
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\libertine\LinLibertineTZ-tlf-ot1.vf
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinLibertineTZ-tlf-ot1--base.tfm
 INPUT .\sections\group_concepts\classification_results.tex
 INPUT sections\group_concepts\classification_results.tex
 INPUT .\sections\group_concepts\classification_results.tex
@@ -2733,6 +2739,7 @@ INPUT main.aux
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\inconsolata\i4-ts1.enc
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\libertine\lbtn_u7qtuy.enc
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\libertine\lbtn_n3gv2c.enc
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\libertine\lbtn_fygcup.enc
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\libertine\lbtn_hmhe76.enc
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\libertine\lbtn_naooyc.enc
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\libertine\lbtn_ks2ukx.enc
@@ -2759,6 +2766,8 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\libert
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\libertine\LinLibertineTBI.pfb
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\libertine\LinLibertineTI.pfb
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\libertine\LinLibertineTI.pfb
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\libertine\LinLibertineTZ.pfb
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\libertine\LinLibertineTZ.pfb
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\newtx\NewTXMI.pfb
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\newtx\NewTXMI.pfb
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\newtx\NewTXMI7.pfb
