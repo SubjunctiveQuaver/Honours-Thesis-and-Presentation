@@ -46,9 +46,9 @@
 \contentsline {chapter}{\numberline {A}Appendix --- theory of permutation groups}{58}{appendix.A}%
 \contentsline {section}{\numberline {A.1}Rubik's group}{58}{section.A.1}%
 \contentsline {section}{\numberline {A.2}Random elements and the constructive membership problem}{60}{section.A.2}%
-\contentsline {subsection}{Stabiliser chain for automorphism group of graph}{61}{section*.26}%
+\contentsline {subsection}{Stabiliser chain for automorphism group of graph}{62}{section*.26}%
 \contentsline {section}{\numberline {A.3}Wreath product and dihedral group}{63}{section.A.3}%
-\contentsline {chapter}{\numberline {B}Appendix --- computing bases of subgroups of affine groups}{65}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Greedy base algorithm}{65}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Program to find primitive subgroups with given minimal base size}{66}{section.B.2}%
-\contentsline {subsection}{Program output for low dimensional affine groups}{68}{section*.27}%
+\contentsline {chapter}{\numberline {B}Appendix --- computing bases of subgroups of affine groups}{66}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Greedy base algorithm}{66}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Program to find primitive subgroups with given minimal base size}{67}{section.B.2}%
+\contentsline {subsection}{Program output for low dimensional affine groups}{69}{section*.27}%

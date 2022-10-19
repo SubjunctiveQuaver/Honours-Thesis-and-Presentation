@@ -331,7 +331,7 @@ See the \hyperref[app:transversal_membership_test]{appendix} for an implementati
         x = LF^{-1}L^{-1}FUFU^{-1}F^2LFL^{-1}U^{-1}L^{-1}ULU^{-1}LUFU^{-1}F^{-1}L^{-2}ULF^{-1}LF(L^{-1}U)^2B^{-1}UBLUL^{-1} \\
         F^{-1}L^{-1}FL^2UL^{-1}ULB^{-1}U^{-1}BLDF^2D^{-1}LF^{-1}UL^{-1}FU^{-1}LD^{-1}LBDU^{-2}B^{-1}R^{-1}BU^{-1}RF^{-1}UD^{-2},
     \end{multline*}
-    that is, apply this move sequence to the solved state to get the state $x$ in the above diagram. See the \hyperref[app:rubiks_group]{appendix} for relevant \texttt{GAP} code (that also allows us to check if arbitrary restickerings are valid, and for those that are, find a sequence of moves to solve it, all using group theory).
+    that is, apply this move sequence to the solved state to get the state $x$ in the above diagram, or equivalently, apply $x^{-1}$ to a cube in this state to solve it (simply apply the inverses of each move in reverse). See the \hyperref[app:rubiks_group]{appendix} for relevant \texttt{GAP} code (that also allows us to find a sequence of moves to solve a valid restickering, which is done implemented using permutation group theory and stabiliser chains).
 \end{example}
 
 \added{1}{We have not yet answered the question of how we \textit{find} a BSGS for a permutation group $G$. One such way is the \hyperref[alg:schreier_sims]{Schreier-Sims algorithm}. However, to discuss this, we first discuss an algorithm for computing orbits, stabilisers and transversals.}

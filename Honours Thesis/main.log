@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.22)  20 OCT 2022 00:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.22)  20 OCT 2022 01:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2109,19 +2109,25 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinuxLibertineT-TLF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [12] [13]) (sections/group_concepts/bases_stabiliser_chains.tex [14] [15] [16] [17] [18]
+ [12] [13]) (sections/group_concepts/bases_stabiliser_chains.tex [14] [15] [16] [17]
+Underfull \vbox (badness 1009) has occurred while \output is active []
+
+ [18]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 243.
- (txt_files/automorphism_group_graph_bsgs_gap.gap
+ [19] (txt_files/automorphism_group_graph_bsgs_gap.gap
 
 LaTeX Font Warning: Font shape `OT1/zi4/m/it' undefined
 (Font)              using `OT1/zi4/m/n' instead on input line 1.
 
 LaTeX Font Info:    Font shape `OT1/zi4/m/it' will be
 (Font)              scaled to size 10.0pt on input line 1.
-[19]) (txt_files/automorphism_group_graph_bsgs_gap_2.gap)
+) (txt_files/automorphism_group_graph_bsgs_gap_2.gap)
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/scit' will be
 (Font)              scaled to size 10.0pt on input line 273.
- (txt_files/automorphism_group_graph_bsgs_gap_3.gap) [20] (sections/group_concepts/rubiks_cube_net.tikz) (sections/group_concepts/rubiks_cube_net_random.tikz) [21] [22]) (sections/group_concepts/classification_results.tex [23] (txt_files/klein_4_blocks.gap))) [24]
+ (txt_files/automorphism_group_graph_bsgs_gap_3.gap [20]) (sections/group_concepts/rubiks_cube_net.tikz) (sections/group_concepts/rubiks_cube_net_random.tikz)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21] [22]) (sections/group_concepts/classification_results.tex [23] (txt_files/klein_4_blocks.gap))) [24]
 Chapter 3.
 (sections/complexity_concepts.tex [25
 
@@ -2196,21 +2202,18 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `zi4' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-) [59] (gap_code/random_elt.gap) (gap_code/membership.gap) (gap_code/random_elt_print.gap [60]) (gap_code/membership_print.gap) (txt_files/automorphism_group_graph_bsgs_gap_appendix.gap [61]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [62]) (gap_code/d8_wreath_product.gap [63]) (txt_files/d8_wreath_product_gap_output.gap) [64]
+[59]) (gap_code/random_elt.gap) (gap_code/membership.gap [60]) (gap_code/random_elt_print.gap) (gap_code/membership_print.gap [61]) (txt_files/automorphism_group_graph_bsgs_gap_appendix.gap [62]) (gap_code/d8_wreath_product.gap [63]) (txt_files/d8_wreath_product_gap_output.gap [64]) [65]
 Appendix B.
-(gap_code/greedy_base.gap) (txt_files/greedy_better_than_default.gap [65
+(gap_code/greedy_base.gap) (txt_files/greedy_better_than_default.gap [66
 
-]) (gap_code/subgrps_base_len.gap [66]
+]) (gap_code/subgrps_base_len.gap [67]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [67]) (txt_files/agl_base_gap_output/2.gap) [68] (txt_files/agl_base_gap_output/3.gap) (txt_files/agl_base_gap_output/4.gap) (txt_files/agl_base_gap_output/5.gap) (txt_files/agl_base_gap_output/6.gap [69]) (txt_files/agl_base_gap_output/7.gap) (txt_files/agl_base_gap_output/8.gap) [70] (txt_files/agl_base_gap_output/9.gap) (txt_files/agl_base_gap_output/10.gap))
+ [68]) (txt_files/agl_base_gap_output/2.gap) [69] (txt_files/agl_base_gap_output/3.gap) (txt_files/agl_base_gap_output/4.gap) (txt_files/agl_base_gap_output/5.gap) (txt_files/agl_base_gap_output/6.gap [70]) (txt_files/agl_base_gap_output/7.gap) (txt_files/agl_base_gap_output/8.gap) [71] (txt_files/agl_base_gap_output/9.gap) (txt_files/agl_base_gap_output/10.gap))
 \tf@thm=\write5
 \openout5 = `main.thm'.
 
- [71] (main.aux)
+ [72] (main.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
@@ -2220,17 +2223,17 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 51191 strings out of 478582
- 1008885 string characters out of 2842422
- 1917153 words of memory out of 3000000
+ 51200 strings out of 478582
+ 1009012 string characters out of 2842422
+ 1908153 words of memory out of 3000000
  66439 multiletter control sequences out of 15000+600000
  571783 words of font info for 428 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 101i,18n,105p,2371b,2066s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 101i,18n,105p,2371b,2068s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-ts1.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_u7qtuy.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_n3gv2c.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_hmhe76.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_ks2ukx.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-ot1-0.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_kijugd.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_lyu3x3.enc}<C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathMI.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathMI5.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathMI7.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathRM.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineTBI.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/NewTXMI.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/NewTXMI7.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txexas.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txexs.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txsya.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txsyb.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txsyc.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txsys.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (76 pages, 1198009 bytes).
+Output written on main.pdf (77 pages, 1201167 bytes).
 PDF statistics:
- 2440 PDF objects out of 2487 (max. 8388607)
- 1205 named destinations out of 1440 (max. 500000)
+ 2454 PDF objects out of 2487 (max. 8388607)
+ 1214 named destinations out of 1440 (max. 500000)
  87058 words of extra memory for PDF output out of 89155 (max. 10000000)
 

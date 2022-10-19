@@ -55,7 +55,7 @@
 \contentsline {proposition}{{Proposition}{2.{44}}{}}{13}{proposition.2.44}%
 \contentsline {proof}{{\proofname }{12}{}}{13}{proof.12}%
 \contentsline {proposition}{{Proposition}{2.{45}}{}}{13}{proposition.2.45}%
-\contentsline {proposition}{{Proposition}{2.{46}}{Theorem 1.6A in \cite {dixon_mortimer_perm_groups1996}}}{13}{proposition.2.46}%
+\contentsline {proposition}{{Proposition}{2.{46}}{Theorem 1.6A in \cite {dixon_mortimer_perm_groups1996}}}{14}{proposition.2.46}%
 \contentsline {proof}{{\proofname }{13}{}}{14}{proof.13}%
 \contentsline {definition}{{Definition}{2.{47}}{}}{14}{definition.2.47}%
 \contentsline {example}{{Example}{2.{48}}{}}{14}{example.2.48}%
@@ -73,7 +73,7 @@
 \contentsline {lemma}{{Lemma}{2.{57}}{}}{16}{lemma.2.57}%
 \contentsline {proof}{{\proofname }{17}{}}{16}{proof.17}%
 \contentsline {example}{{Example}{2.{58}}{symmetric groups}}{16}{example.2.58}%
-\contentsline {example}{{Example}{2.{59}}{alternating groups}}{16}{example.2.59}%
+\contentsline {example}{{Example}{2.{59}}{alternating groups}}{17}{example.2.59}%
 \contentsline {example}{{Example}{2.{60}}{cyclic subgroups of $\Sym (n)$}}{17}{example.2.60}%
 \contentsline {proposition}{{Proposition}{2.{61}}{}}{17}{proposition.2.61}%
 \contentsline {proof}{{\proofname }{18}{}}{17}{proof.18}%
@@ -84,19 +84,19 @@
 \contentsline {example}{{Example}{2.{64}}{}}{18}{example.2.64}%
 \contentsline {example}{{Example}{2.{65}}{}}{18}{example.2.65}%
 \contentsline {algorithm}{{Algorithm}{2.{66}}{random element}}{19}{algorithm.2.66}%
-\contentsline {example}{{Example}{2.{67}}{}}{19}{example.2.67}%
+\contentsline {example}{{Example}{2.{67}}{}}{20}{example.2.67}%
 \contentsline {algorithm}{{Algorithm}{2.{68}}{membership test}}{20}{algorithm.2.68}%
 \contentsline {proof}{{Proof of correctness}{21}{}}{20}{proof.21}%
 \contentsline {example}{{Example}{2.{69}}{}}{20}{example.2.69}%
 \contentsline {example}{{Example}{2.{70}}{}}{21}{example.2.70}%
 \contentsline {algorithm}{{Algorithm}{2.{71}}{orbit-stabiliser}}{22}{algorithm.2.71}%
-\contentsline {proof}{{\proofname }{22}{}}{22}{proof.22}%
+\contentsline {proof}{{\proofname }{22}{}}{23}{proof.22}%
 \contentsline {corollary}{{Corollary}{2.{72}}{}}{23}{corollary.2.72}%
 \contentsline {definition}{{Definition}{2.{73}}{}}{23}{definition.2.73}%
-\contentsline {theorem}{{Theorem}{2.{74}}{basis for finite abelian groups}}{23}{theorem.2.74}%
-\contentsline {corollary}{{Corollary}{2.{75}}{}}{23}{corollary.2.75}%
-\contentsline {proof}{{\proofname }{23}{}}{23}{proof.23}%
-\contentsline {example}{{Example}{2.{76}}{}}{23}{example.2.76}%
+\contentsline {theorem}{{Theorem}{2.{74}}{basis for finite abelian groups}}{24}{theorem.2.74}%
+\contentsline {corollary}{{Corollary}{2.{75}}{}}{24}{corollary.2.75}%
+\contentsline {proof}{{\proofname }{23}{}}{24}{proof.23}%
+\contentsline {example}{{Example}{2.{76}}{}}{24}{example.2.76}%
 \contentsline {example}{{Example}{2.{77}}{}}{24}{example.2.77}%
 \contentsline {definition}{{Definition}{3.{1}}{big-O notation}}{25}{definition.3.1}%
 \contentsline {definition}{{Definition}{3.{2}}{}}{25}{definition.3.2}%
