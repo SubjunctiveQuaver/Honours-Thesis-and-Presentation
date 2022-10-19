@@ -10,44 +10,46 @@ Reallocating 'global_strs' (item size: 1) to 4000000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: references.bib
-You've used 31 entries,
+Warning--to sort, need author or key in schonert_GAP
+You've used 32 entries,
             2882 wiz_defined-function locations,
-            849 strings with 10047 characters,
-and the built_in function-call counts, 14110 in all, are:
-= -- 1543
-> -- 392
+            853 strings with 10158 characters,
+and the built_in function-call counts, 14372 in all, are:
+= -- 1567
+> -- 394
 < -- 4
-+ -- 146
++ -- 147
 - -- 105
-* -- 852
-:= -- 1968
-add.period$ -- 126
-call.type$ -- 31
-change.case$ -- 138
+* -- 861
+:= -- 1990
+add.period$ -- 128
+call.type$ -- 32
+change.case$ -- 141
 chr.to.int$ -- 0
-cite$ -- 31
-duplicate$ -- 396
-empty$ -- 1390
+cite$ -- 33
+duplicate$ -- 405
+empty$ -- 1430
 format.name$ -- 105
-if$ -- 3679
+if$ -- 3761
 int.to.chr$ -- 0
-int.to.str$ -- 31
+int.to.str$ -- 32
 missing$ -- 38
-newline$ -- 186
+newline$ -- 190
 num.names$ -- 66
-pop$ -- 265
+pop$ -- 278
 preamble$ -- 1
-purify$ -- 113
+purify$ -- 115
 quote$ -- 0
-skip$ -- 1005
+skip$ -- 1031
 stack$ -- 0
-substring$ -- 718
-swap$ -- 119
+substring$ -- 723
+swap$ -- 120
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 110
-warning$ -- 0
+type$ -- 114
+warning$ -- 1
 while$ -- 114
-width$ -- 33
-write$ -- 401
+width$ -- 34
+write$ -- 408
+(There was 1 warning)

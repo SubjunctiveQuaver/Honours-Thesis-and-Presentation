@@ -1,5 +1,9 @@
 \begin{thebibliography}{10}
 
+\bibitem{schonert_GAP}
+Analyzing {R}ubik's {C}ube with {GAP}.
+\newblock URL: \url{https://www.gap-system.org/Doc/Examples/rubik.html}.
+
 \bibitem{babai1981}
 Laszlo Babai.
 \newblock On the order of uniprimitive permutation groups.

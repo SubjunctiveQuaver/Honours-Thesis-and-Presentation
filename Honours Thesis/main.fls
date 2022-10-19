@@ -2058,6 +2058,10 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertin
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinLibertineTI-tlf-ot1.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\libertine\LinLibertineTI-tlf-ot1.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinLibertineTI-tlf-ot1--base.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\nxlmia.vf
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\LibertineMathRM.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txmiaSTbb.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txmiaX.tfm
 INPUT .\sections\group_concepts\bases_stabiliser_chains.tex
 INPUT sections\group_concepts\bases_stabiliser_chains.tex
 INPUT .\sections\group_concepts\bases_stabiliser_chains.tex
@@ -2084,14 +2088,14 @@ INPUT txt_files\automorphism_group_graph_bsgs_gap_2.gap
 INPUT .\txt_files\automorphism_group_graph_bsgs_gap_2.gap
 INPUT txt_files\automorphism_group_graph_bsgs_gap_2.gap
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinLibertineTI-tlf-sc-ot1.tfm
+INPUT .\txt_files\automorphism_group_graph_bsgs_gap_3.gap
+INPUT txt_files\automorphism_group_graph_bsgs_gap_3.gap
+INPUT .\txt_files\automorphism_group_graph_bsgs_gap_3.gap
+INPUT txt_files\automorphism_group_graph_bsgs_gap_3.gap
+INPUT .\txt_files\automorphism_group_graph_bsgs_gap_3.gap
+INPUT txt_files\automorphism_group_graph_bsgs_gap_3.gap
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\libertine\LinLibertineTI-tlf-sc-ot1.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinLibertineTI-tlf-sc-ot1--base.tfm
-INPUT .\txt_files\automorphism_group_graph_bsgs_gap_3.gap
-INPUT txt_files\automorphism_group_graph_bsgs_gap_3.gap
-INPUT .\txt_files\automorphism_group_graph_bsgs_gap_3.gap
-INPUT txt_files\automorphism_group_graph_bsgs_gap_3.gap
-INPUT .\txt_files\automorphism_group_graph_bsgs_gap_3.gap
-INPUT txt_files\automorphism_group_graph_bsgs_gap_3.gap
 INPUT .\sections\group_concepts\classification_results.tex
 INPUT sections\group_concepts\classification_results.tex
 INPUT .\sections\group_concepts\classification_results.tex
@@ -2114,10 +2118,6 @@ INPUT .\sections\perm_group_theory.tex
 INPUT sections\perm_group_theory.tex
 INPUT .\sections\perm_group_theory.tex
 INPUT sections\perm_group_theory.tex
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\nxlmia.vf
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\LibertineMathRM.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txmiaSTbb.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txmiaX.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntxexx.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txexs.tfm
 INPUT .\sections\lit_review.tex
