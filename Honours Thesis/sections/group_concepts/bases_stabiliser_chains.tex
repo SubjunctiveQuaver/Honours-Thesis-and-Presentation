@@ -76,14 +76,14 @@ However, if $G^i = G^{i-1}$ for some $i$, then every element of $G^{i-1}$ fixes 
 Since each element in $G$ is completely determined by its action on a base (\autoref{lem:base_uniquely_determines}), a small base is desirable, as it can lead to a reduction in the space required to store the group elements, \added{1}{as noted in} \cite{blaha1992}. It can be easily seen that if $B = [\beta_1,\dotsc,\beta_r]$ is a base for $G$, then any permutation $\tilde B = [\beta_{\sigma_1},\dotsc,\beta_{\sigma_r}]$ of this list is also a base for $G$, as only $1$ fixes every element in both lists (which contain precisely the same elements). However, the stabiliser chains associated to each base are different, which give rise to different transversals.
 
 \added{4}{\begin{lemma}[Lemma 4.1 in \cite{blaha1992}]\label{lem:blaha_nonredundant_size}
-    Let $G \leq \Sym(\Omega)$ have degree $n$, and let $r$ be the size of a nonredundant base for $G$. Then $r \leq \log|G|$; moreover, $r \leq \added{2}{b(G)}\log n$. (All logarithms are base-2.)
-\end{lemma}
+        Let $G \leq \Sym(\Omega)$ have degree $n$, and let $r$ be the size of a nonredundant base for $G$. Then $r \leq \log|G|$; moreover, $r \leq \added{2}{b(G)}\log n$. (All logarithms are base-2.)
+    \end{lemma}
 
-\begin{proof}
-    Let $B = [\beta_1,\dotsc,\beta_r]$ be a nonredundant base for $G$ with stabiliser chain $G = G^0 > G^1 > \dotsb > G^r = 1$. Then we have $|G^i : G^{i+1}| \geq 2$ for all $i$ (all inclusions proper); combining with \autoref{prop:stabiliser_chain_indexes} we get $2^r \leq |G^0 : G^1| \dotsb |G^{r-1} : G^r| = |G|$.
+    \begin{proof}
+        Let $B = [\beta_1,\dotsc,\beta_r]$ be a nonredundant base for $G$ with stabiliser chain $G = G^0 > G^1 > \dotsb > G^r = 1$. Then we have $|G^i : G^{i+1}| \geq 2$ for all $i$ (all inclusions proper); combining with \autoref{prop:stabiliser_chain_indexes} we get $2^r \leq |G^0 : G^1| \dotsb |G^{r-1} : G^r| = |G|$.
 
-    From the above observation, since $G$ has a base of size $b(G)$, we have $|G| \leq n^{b(G)}$. So $2^r \leq |G| \leq n^{\added{2}{b(G)}}$, yielding $r \leq \added{2}{b(G)}\log n$.
-\end{proof}}
+        From the above observation, since $G$ has a base of size $b(G)$, we have $|G| \leq n^{b(G)}$. So $2^r \leq |G| \leq n^{\added{2}{b(G)}}$, yielding $r \leq \added{2}{b(G)}\log n$.
+    \end{proof}}
 
 \added{4}{\begin{lemma}\label{lem:base_of_subgroup}
         If $G \leq \Sym(\Omega)$ and $H \leq G$, then if $B$ is a base for $G$, then it is a base for $H$. Thus, $b(H) \leq b(G)$.
@@ -199,7 +199,8 @@ Recall that a strong generating set $S$ for a base $B = [\beta_1,\dotsc,\beta_r]
 
         \begin{center}
             \begin{tikzpicture}
-                \GraphInit
+                \GraphInit[vstyle=Welsh]
+                \tikzset{VertexStyle/.append style={minimum size=8pt}}
                 \Vertex[x=-1, y=1, Lpos=180]{1}
                 \Vertex[x=-1, y=0, Lpos=180]{2}
                 \Vertex[x=-1, y=-1, Lpos=180]{3}

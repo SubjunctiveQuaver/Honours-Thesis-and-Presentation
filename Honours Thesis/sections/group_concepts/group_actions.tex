@@ -87,7 +87,7 @@ If $\varphi$ is faithful, then $1$ is the only element of $G$ that does not perm
 \end{proof}
 
 \begin{example}[natural action]\label{eg:natural_action}
-    Let $G \leq \Sym(\Omega)$ be a permutation group. The \textbf{natural action} $\varphi : G \to \Sym(\Omega)$ of $G$ on $\Omega$ is given by the inclusion map $g \mapsto g$ (so that for $\alpha \in \Omega$ \added{4}{and $g \in G$}, $\added{4}{\alpha^{\varphi(g)}} := \alpha^g$, the image of $\alpha$ under $g$); this is faithful. (Note that the image $G^\Omega \leq \Sym(\Omega)$ of an arbitrary $G$-action on $\Omega$ takes the natural action.)
+    Let $G \leq \Sym(\Omega)$ be a permutation group. The \textbf{natural action} $\varphi : G \to \Sym(\Omega)$ of $G$ on $\Omega$ is given by the inclusion map $g \mapsto g$ (so that for $\alpha \in \Omega$ \added{4}{and $g \in G$}, $\added{4}{\alpha^{\varphi(g)}} := \alpha^g$, the image of $\alpha$ under $g$); this is faithful. (Note that the image $G^\Omega \leq \Sym(\Omega)$ of an arbitrary $G$-action on $\Omega$ takes the natural action; it yields a homomorphism $G \to G^\Omega$, and $G^\Omega$ is a \textit{homomorphic image} of $G$ that acts faithfully on $\Omega$.)
 \end{example}
 
 \begin{example}[quotient action]\label{eg:quotient_action}
@@ -347,12 +347,12 @@ Analysing the kernel of this action on blocks tells us the elements of $G$ that 
 
 \begin{example}[Rubik's group]\label{eg:rubiks_group}
     This action on blocks is useful in analysing permutation groups such as the Rubik's group $G$ of degree 48 and its action on the Rubik's cube, where we label each small cube (except the centres) by a number from 1 to 48, as below.
-    
+
     \begin{center}
         \includegraphics{sections/group_concepts/rubiks_cube_net.tikz}
     \end{center}
 
-    We define $G = \langle U,L,F,R,B,D \rangle$ where
+    To mimic moves on the cube, we define $G = \langle U,L,F,R,B,D \rangle$ where
     \begin{itemize}
         \item $U = ( 1, 3, 8, 6)( 2, 5, 7, 4)( 9,33,25,17)(10,34,26,18)(11,35,27,19)$,
         \item $L = ( 9,11,16,14)(10,13,15,12)( 1,17,41,40)( 4,20,44,37)( 6,22,46,35)$,
@@ -361,7 +361,7 @@ Analysing the kernel of this action on blocks tells us the elements of $G$ that 
         \item $B = (33,35,40,38)(34,37,39,36)( 3, 9,46,32)( 2,12,47,29)( 1,14,48,27)$, and
         \item $D = (41,43,48,46)(42,45,47,44)(14,22,30,38)(15,23,31,39)(16,24,32,40)$.
     \end{itemize}
-    
+
     Analysis on $G$ is done in \texttt{GAP} in \cite{schonert_GAP}. Now, the Rubik's group has two orbits (representing edge and corner stickers) under its natural action, so $G$ acts transitively on the 24 corner stickers. Then the 3 stickers in each corner form a maximal block, so $G$ acts primitively on the 8 corners themselves under the action on blocks; it can be shown that the image of this action is the symmetric group $\Sym(8)$ of degree 8, and the kernel is isomorphic to $(\Z/3\Z)^7$ \cite{schonert_GAP}.
 \end{example}
 
