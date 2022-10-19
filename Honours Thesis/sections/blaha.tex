@@ -26,6 +26,34 @@ Since $|G^i| = |G^{i-1}|/|\beta_i^{G^{i-1}}|$ by the \hyperref[thm:orbit_stabili
 
 \added{4}{Note that the greedy base algorithm is in the class P. This follows from the fact that we may repeatedly use the \hyperref[alg:orbit_stabiliser]{orbit-stabiliser algorithm} to compute orbits and stabilisers for each subsequent $\beta_i$ found. The process yields a nonredundant base by \autoref{thm:orbit_stabiliser}, since we choose a largest orbit at each stage; if every $G^{i-1}$-orbit has size 1, then every stabiliser $G^{i-1}_\alpha = G^{i-1}$, and the intersection $\bigcap_{\alpha \in \Omega} G^{i-1}_\alpha = G^{i-1}$ is the kernel of the $G^{i-1}$-action (\autoref{prop:kernel_action_stabiliser}), thus $G^{i-1} = 1$ since the action is faithful. This also implies that the process necessarily terminates; in particular, $r \leq \log|G|$ by \autoref{lem:blaha_nonredundant_size}.}
 
+Before we continue with Blaha \cite{blaha1992}, we first apply the greedy base algorithm to the Rubik's group.
+
+\begin{example}\label{eg:rubiks_group_greedy}
+    Using the previous definition of the Rubik's group $G$ from \autoref{eg:rubiks_group} and our implementation in \texttt{GAP} of the (randomised) greedy base algorithm as \texttt{GreedyBase}, we compute that
+    $$B = [ 1, 2, 4, 3, 5, 7, 6, 12, 8, 13, 14, 15, 21, 16, 23, 24, 29, 39 ]$$
+    is a base of length 18 for $G$. Below, we bold the stickers in $B$.
+
+    \begin{center}
+        \includegraphics{sections/group_concepts/rubiks_cube_net_base_greedy.tikz}
+    \end{center}
+
+    Similar to the example in \autoref{eg:rubiks_group_random}, it also contains a sticker from each of 7 corners and 11 edges; the only difference is that the base computed by \texttt{BaseOfGroup} contains 31 instead of 39 (both edge stickers).
+
+    Using \texttt{GAP}, we verify that $B$ is indeed a base, by seeing that $G_{(B)} = 1$. Also, we see that if we omit 39 from $B$, we get that the pointwise stabiliser is $\langle(31,45)(39,47)\rangle \neq 1$, so the resulting list is not a base for $G$. Thus, if we fix 7 corners and only 10 edges (including orientation), there is a valid nontrivial Rubik's cube move that interchanges only the two remaining edges. Similarly, if we omit 29 from $B$, we get that the pointwise stabiliser is $\langle(29,36)(31,45)\rangle \neq 1$, so the resulting list is not a base for $G$. Thus, if we fix 11 edges and only 6 corners (including orientation), there is a valid nontrivial Rubik's cube move that interchanges only the two remaining corners. (See the \hyperref[app:rubiks_group]{appendix} for \texttt{GAP} code relating to this example.)
+\end{example}
+
+These observations show that $b(G) = 18$; this is an original result.
+
+\begin{theorem}\label{thm:rubiks_group_base}
+    Let $G$ be the Rubik's group. Then $b(G) = 18$.
+\end{theorem}
+
+\begin{proof}
+    First, note that \autoref{eg:rubiks_group_greedy} shows that $b(G) \leq 18$. Now, it suffices to include one sticker per corner or edge in a base (as fixing the sticker fixes the entire corner or edge). Moreover, if we fix any 7 corners (and all edges), then the remaining corner is fixed too, including orientation, by symmetry and \autoref{eg:rubiks_group_greedy}. Similarly, fixing any 11 edges (and all corners) fixes the remaining edge, including orientation.
+
+    If a ``partial'' base $\tilde B$ for $G$ contains 17 stickers, with $v$ vertex stickers and $e$ edge stickers, then $v + e = 17$ with $v \leq 7$ and $e \leq 11$ from above. So $(v,e) \in \{(6,11),(7,10)\}$, but from \autoref{eg:rubiks_group_greedy} and by symmetry (there is nothing else special about the elements of the base $B$), we know that these cases do not lead to a trivial pointwise stabiliser for $\tilde B$. Thus $b(G) > 17$, and the result follows.
+\end{proof}
+
 \section{The general case}
 
 \subsection{NP-hardness of the minimum base problem for cyclic groups}

@@ -1,3 +1,7 @@
+gap> Base := BaseOfGroup( G );
+[ 1, 3, 6, 8, 2, 4, 5, 7, 12, 13, 14, 15, 16, 21, 23, 24, 29, 31 ]
+gap> Length( Base );
+18
 gap> H := FreeGroup("u","l","f","r","b","d");
 <free group on the generators [ u, l, f, r, b, d ]>
 gap> h := GroupHomomorphismByImages( H, G, GeneratorsOfGroup( H ), GeneratorsOfGroup( G ) );

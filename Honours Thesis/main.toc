@@ -19,14 +19,14 @@
 \contentsline {subsection}{The classes P and NP}{27}{section*.11}%
 \contentsline {subsection}{Reducibility and NP-completeness}{28}{section*.12}%
 \contentsline {chapter}{\numberline {4}Blaha: computing minimum bases is NP-hard}{30}{chapter.4}%
-\contentsline {section}{\numberline {4.1}The general case}{31}{section.4.1}%
-\contentsline {subsection}{NP-hardness of the minimum base problem for cyclic groups}{31}{section*.13}%
-\contentsline {subsection}{Greedy base analysis for cyclic groups}{32}{section*.14}%
-\contentsline {section}{\numberline {4.2}The case of bounded orbits}{32}{section.4.2}%
-\contentsline {subsection}{NP-hardness of the minimum base problem for elementary abelian groups}{34}{section*.15}%
-\contentsline {section}{\numberline {4.3}Sharp bounds for sizes of bases}{35}{section.4.3}%
-\contentsline {subsection}{A sharp bound for nonredundant bases}{35}{section*.16}%
-\contentsline {subsection}{A sharp bound for greedy bases}{35}{section*.17}%
+\contentsline {section}{\numberline {4.1}The general case}{32}{section.4.1}%
+\contentsline {subsection}{NP-hardness of the minimum base problem for cyclic groups}{32}{section*.13}%
+\contentsline {subsection}{Greedy base analysis for cyclic groups}{33}{section*.14}%
+\contentsline {section}{\numberline {4.2}The case of bounded orbits}{33}{section.4.2}%
+\contentsline {subsection}{NP-hardness of the minimum base problem for elementary abelian groups}{35}{section*.15}%
+\contentsline {section}{\numberline {4.3}Sharp bounds for sizes of bases}{36}{section.4.3}%
+\contentsline {subsection}{A sharp bound for nonredundant bases}{36}{section*.16}%
+\contentsline {subsection}{A sharp bound for greedy bases}{36}{section*.17}%
 \contentsline {chapter}{\numberline {5}Classification results for permutation groups}{37}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Classification of finite simple groups}{37}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Semidirect products and wreath products}{39}{section.5.2}%
@@ -47,7 +47,7 @@
 \contentsline {section}{\numberline {A.1}Rubik's group}{58}{section.A.1}%
 \contentsline {section}{\numberline {A.2}Random elements and the constructive membership problem}{60}{section.A.2}%
 \contentsline {subsection}{Stabiliser chain for automorphism group of graph}{62}{section*.26}%
-\contentsline {section}{\numberline {A.3}Wreath product and dihedral group}{63}{section.A.3}%
+\contentsline {section}{\numberline {A.3}Wreath product and dihedral group}{64}{section.A.3}%
 \contentsline {chapter}{\numberline {B}Appendix --- computing bases of subgroups of affine groups}{66}{appendix.B}%
 \contentsline {section}{\numberline {B.1}Greedy base algorithm}{66}{section.B.1}%
 \contentsline {section}{\numberline {B.2}Program to find primitive subgroups with given minimal base size}{67}{section.B.2}%

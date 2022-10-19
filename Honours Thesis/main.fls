@@ -2569,6 +2569,12 @@ INPUT .\sections\blaha.tex
 INPUT sections\blaha.tex
 INPUT .\sections\blaha.tex
 INPUT sections\blaha.tex
+INPUT .\sections\group_concepts\rubiks_cube_net_base_greedy.tikz
+INPUT sections\group_concepts\rubiks_cube_net_base_greedy.tikz
+INPUT .\sections\group_concepts\rubiks_cube_net_base_greedy.tikz
+INPUT sections\group_concepts\rubiks_cube_net_base_greedy.tikz
+INPUT .\sections\group_concepts\rubiks_cube_net_base_greedy.tikz
+INPUT sections\group_concepts\rubiks_cube_net_base_greedy.tikz
 INPUT .\sections\perm_group_theory.tex
 INPUT sections\perm_group_theory.tex
 INPUT .\sections\perm_group_theory.tex
@@ -2620,6 +2626,12 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\inconsolata\ts1
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\inconsolata\ts1zi4.fd
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\inconsolata\ts1zi4.fd
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\inconsolata\ts1-zi4r.tfm
+INPUT .\txt_files\rubiks_group_greedy.gap
+INPUT txt_files\rubiks_group_greedy.gap
+INPUT .\txt_files\rubiks_group_greedy.gap
+INPUT txt_files\rubiks_group_greedy.gap
+INPUT .\txt_files\rubiks_group_greedy.gap
+INPUT txt_files\rubiks_group_greedy.gap
 INPUT .\gap_code\random_elt.gap
 INPUT gap_code\random_elt.gap
 INPUT .\gap_code\random_elt.gap
