@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.22)  19 OCT 2022 13:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.22)  19 OCT 2022 22:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1466,9 +1466,9 @@ File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
- (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-graph\tkz-graph.sty
-2021/01/20 v 2.00 tkz-graph.sty
-Package: tkz-graph 2021/01/20 2.00 base for graphs
+ (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-base\tkz-base.sty
+2022/01/28 4.05b tkz-base.sty
+Package: tkz-base 2022/01/28 4.05b tkz-base
 (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/utilities\pgffor.sty (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/utilities\pgfkeys.sty (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pgfkeys.code.tex)) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/math\pgfmath.sty (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmath.code.tex)) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pgffor.code.tex
 Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmath.code.tex)
@@ -1508,35 +1508,250 @@ File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \tikz@expandcount=\count388
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-))) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryarrows.code.tex
+))) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryangles.code.tex
+File: tikzlibraryangles.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryarrows.code.tex
 File: tikzlibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries\pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \arrowsize=\dimen355
-))
-\c@tkz@gr@a=\count389
-\c@tkz@gr@b=\count390
-\c@tkz@gr@c=\count391
-\c@tkz@gr@e=\count392
-\c@tkz@gr@d=\count393
-\c@tkz@gr@p=\count394
-\c@tkz@gr@i=\count395
-\c@tkz@gr@n=\count396
-\c@tkz@gr@ta=\count397
-\c@tkz@gr@tb=\count398
-) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tikz-cd\tikz-cd.sty
-Package: tikz-cd 2021/05/04 v1.0 Commutative diagrams with TikZ
- (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tikz-cd\tikzlibrarycd.code.tex (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarymatrix.code.tex
-File: tikzlibrarymatrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryquotes.code.tex
-File: tikzlibraryquotes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries\pgflibraryarrows.meta.code.tex
+)) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries\pgflibraryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfarrowinset=\dimen356
 \pgfarrowlength=\dimen357
 \pgfarrowwidth=\dimen358
 \pgfarrowlinewidth=\dimen359
-))) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tocbibind\tocbibind.sty
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.code.tex (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modules\pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen360
+\pgfdecoratedremainingdistance=\dimen361
+\pgfdecoratedinputsegmentcompleteddistance=\dimen362
+\pgfdecoratedinputsegmentremainingdistance=\dimen363
+\pgf@decorate@distancetomove=\dimen364
+\pgf@decorate@repeatstate=\count389
+\pgfdecorationsegmentamplitude=\dimen365
+\pgfdecorationsegmentlength=\dimen366
+)
+\tikz@lib@dec@box=\box142
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.markings.code.tex (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.markings.code.tex)) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathreplacing.code.tex (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathreplacing.code.tex)) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.shapes.code.tex (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.shapes.code.tex)) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.text.code.tex (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.text.code.tex
+\pgf@lib@dec@text@box=\box143
+)
+\tikz@lib@dec@te@box=\box144
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathmorphing.code.tex (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathmorphing.code.tex)) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryintersections.code.tex (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries\pgflibraryintersections.code.tex (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries\pgflibraryfpu.code.tex)
+\pgf@intersect@solutions=\count390
+)) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries\pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryquotes.code.tex
+File: tikzlibraryquotes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries/shapes\pgflibraryshapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshadows.code.tex
+File: tikzlibraryshadows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries\pgflibraryfadings.code.tex
+File: pgflibraryfadings.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypatterns.code.tex
+File: tikzlibrarypatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries\pgflibrarypatterns.code.tex
+File: pgflibrarypatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarythrough.code.tex
+File: tikzlibrarythrough.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/numprint\numprint.sty
+Package: numprint 2012/08/20 v1.39 Print numbers (HH)
+\c@nprt@mantissa@digitsbefore=\count391
+\c@nprt@mantissa@digitsafter=\count392
+\c@nprt@exponent@digitsbefore=\count393
+\c@nprt@exponent@digitsafter=\count394
+\nprt@digitwidth=\skip116
+\nprt@sepwidth=\skip117
+\nprt@decimalwidth=\skip118
+\nprt@blockwidth=\skip119
+\nprt@digittoks=\toks84
+\nprt@pretoks=\toks85
+\nprt@posttoks=\toks86
+\nprt@thisdigit=\count395
+\nprt@curpos=\count396
+\nprt@rndpos=\count397
+\c@nprt@digitsfirstblock=\count398
+\c@nprt@blockcnt=\count399
+\c@nprt@cntprint=\count400
+ No configuration file `numprint.cfg' found.) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3packages/xfp\xfp.sty
+Package: xfp 2022-01-12 L3 Floating point unit
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp.sty
+Package: fp 1995/04/02
+ `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\defpattern.sty
+Package: defpattern 1994/10/12
+\actioncount=\count401
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-basic.sty
+Package: fp-basic 1996/05/13
+\FP@xs=\count402
+\FP@xia=\count403
+\FP@xib=\count404
+\FP@xfa=\count405
+\FP@xfb=\count406
+\FP@rega=\count407
+\FP@regb=\count408
+\FP@regs=\count409
+\FP@times=\count410
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-addons.sty
+Package: fp-addons 1995/03/15
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-snap.sty
+Package: fp-snap 1995/04/05
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-exp.sty
+Package: fp-exp 1995/04/03
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-trigo.sty
+Package: fp-trigo 1995/04/14
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-pas.sty
+Package: fp-pas 1994/08/29
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-random.sty
+Package: fp-random 1995/02/23
+\FPseed=\count411
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-eqn.sty
+Package: fp-eqn 1995/04/03
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-upn.sty
+Package: fp-upn 1996/10/21
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-eval.sty
+Package: fp-eval 1995/04/03
+))
+\tkz@ax=\dimen367
+\tkz@ay=\dimen368
+\tkz@bx=\dimen369
+\tkz@by=\dimen370
+\tkz@cx=\dimen371
+\tkz@cy=\dimen372
+\tkz@dx=\dimen373
+\tkz@dy=\dimen374
+\tkz@tax=\dimen375
+\tkz@tay=\dimen376
+\tkz@tbx=\dimen377
+\tkz@tby=\dimen378
+\tkz@tcx=\dimen379
+\tkz@tcy=\dimen380
+\tkz@tdx=\dimen381
+\tkz@tdy=\dimen382
+\tkz@cntmk=\count412
+
+Local configuration file tkz-base.cfg found and used
+(C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-base\tkz-base.cfg
+2022/01/28 4.05b tkz-base.cfg
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-base\tkz-tools-modules.tex
+2022/01/28 4.05b tkz-tools-modules.tex
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-base\tkz-lib-marks.tex
+2022/01/28 4.05b tkz-lib-marks.tex
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-base\tkz-lib-shape.tex
+2022/01/28 4.05b tkz-lib-shape.tex
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-base\tkz-tools-base.tex
+2022/01/28 4.05b tkz-tools-base.tex
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-base\tkz-tools-utilities.tex
+2022/01/28 4.05b tkz-tools-utilities.tex
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-base\tkz-tools-colors.tex
+2022/01/28 4.05b tkz-tools-colors
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-base\tkz-tools-text.tex
+2022/01/28 4.05b tkz-tools-text.tex
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-base\tkz-tools-BB.tex
+2022/01/28 4.05b tkz-obj-BB.tex
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-base\tkz-tools-arith.tex
+2022/01/28 4.05b tkz-tools-arith.tex
+File: tkz-tool-arith.tex tkz-tool-arith 3.02 c
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-base\tkz-tools-print.tex
+2022/01/28 4.05b tkz-tools-print
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-base\tkz-tools-misc.tex
+2022/01/28 4.05b tkz-tools-misc.tex
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-base\tkz-obj-axes.tex
+2022/01/28 4.05b tkz-obj-axes
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-base\tkz-obj-grids.tex
+2022/01/28 4.05b tkz-obj-grids.tex
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-base\tkz-obj-marks.tex
+2022/01/28 4.05b tkz-obj-marks.tex
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-base\tkz-obj-points.tex
+2022/01/28 4.05b tkz-obj-eu-points.tex
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-base\tkz-obj-rep.tex
+2022/01/28 4.05b tkz-obj-rep.tex
+)) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-graph\tkz-graph.sty
+2021/01/20 v 2.00 tkz-graph.sty
+Package: tkz-graph 2021/01/20 2.00 base for graphs
+\c@tkz@gr@a=\count413
+\c@tkz@gr@b=\count414
+\c@tkz@gr@c=\count415
+\c@tkz@gr@e=\count416
+\c@tkz@gr@d=\count417
+\c@tkz@gr@p=\count418
+\c@tkz@gr@i=\count419
+\c@tkz@gr@n=\count420
+\c@tkz@gr@ta=\count421
+\c@tkz@gr@tb=\count422
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-euclide\tkz-euclide.sty
+2022/02/25 4.051b tkz-euclide.sty
+Package: tkz-euclide  2022/02/25 4.051b for pure Euclidean Geometry 
+\tkzRadius=\dimen383
+\tkzLength=\dimen384
+\tkz@radi=\dimen385
+(C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-euclide\tkz-tools-eu-math.tex
+2022/02/25 4.051b tkz-tools-eu-math.tex
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-euclide\tkz-tools-eu-intersections.tex
+2022/01/22 4.04 tkz-tools-intersections.tex
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-euclide\tkz-tools-eu-angles.tex
+2022/02/25 4.051b tkz-tools-angles.tex
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-euclide\tkz-obj-eu-compass.tex
+2022/02/25 4.051b tkz-obj-eu-compass.tex
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-euclide\tkz-obj-eu-circles.tex
+2022/02/25 4.051b tkz-obj-eu-circles.tex
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-euclide\tkz-obj-eu-circles-by.tex
+2022/02/25 4.051b tkz-obj-eu-circles.tex
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-euclide\tkz-obj-eu-draw-angles.tex
+2022/02/25 4.051b tkz-tool-eu-angles.tex
+\tkz@arcsize=\dimen386
+\tkz@fillsize=\dimen387
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-euclide\tkz-obj-eu-draw-circles.tex
+2022/02/25 4.051b tkz-obj-eu-draw-circles.tex
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-euclide\tkz-obj-eu-draw-lines.tex
+2022/02/25 4.051b tkz-obj-eu-draw-lines.tex
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-euclide\tkz-obj-eu-draw-polygons.tex
+2022/02/25 4.051b tkz-obj-eu-polygons.tex
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-euclide\tkz-obj-eu-draw-triangles.tex
+2022/02/25 4.051b tkz-obj-eu-draw-triangles.tex
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-euclide\tkz-obj-eu-lines.tex
+2022/02/25 4.051b tkz-obj-eu-lines.tex
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-euclide\tkz-obj-eu-points-by.tex
+2022/02/25 4.051b tkz-tools-el-points-by.tex
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-euclide\tkz-obj-eu-points-rnd.tex
+2022/02/25 4.051b tkz-obj-el-points-rnd.tex
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-euclide\tkz-obj-eu-points-spc.tex
+2022/02/25 4.051b tkz-obj-el-points.tex
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-euclide\tkz-obj-eu-points-with.tex
+2022/02/25 4.051b tkz-obj-el-points-with.tex
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-euclide\tkz-obj-eu-polygons.tex
+2022/02/25 4.051b tkz-obj-eu-polygons.tex
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-euclide\tkz-obj-eu-protractor.tex
+2022/02/25 4.051b tkz-obj-eu-protractor.tex
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-euclide\tkz-obj-eu-sectors.tex
+2022/02/25 4.051b tkz-obj-eu-sectors.tex
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-euclide\tkz-obj-eu-show.tex
+2022/02/25 4.051b tkz-obj-eu-show.tex
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tkz-euclide\tkz-obj-eu-triangles.tex
+2022/02/25 4.051b tkz-obj-eu-triangles.tex
+)) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tikz-cd\tikz-cd.sty
+Package: tikz-cd 2021/05/04 v1.0 Commutative diagrams with TikZ
+ (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tikz-cd\tikzlibrarycd.code.tex (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarymatrix.code.tex
+File: tikzlibrarymatrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tikzscale\tikzscale.sty
+Package: tikzscale 2013/05/22 v0.2.6 tikzscale LaTeX package
+ (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xstring\xstring.sty (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xstring\xstring.tex
+\integerpart=\count423
+\decimalpart=\count424
+)
+Package: xstring 2019/02/06 v1.83 String manipulations (CT)
+)
+\tikzscale@measuredSize=\box145
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tocbibind\tocbibind.sty
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
 Package tocbibind Info: The document has chapter divisions on input line 50.
 
@@ -1545,13 +1760,13 @@ Package tocbibind Note: Using chapter style headings, unless overridden.
 
 ) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/scalerel\scalerel.sty
 Package: scalerel 2016/12/29 v1.8 Routines for constrained scaling and stretching of objects, relative to a reference object or in absolute terms
-\thesrwidth=\skip116
-\thesrheight=\skip117
-\srblobheight=\skip118
-\srblobdepth=\skip119
-\mnxsrwidth=\skip120
-\LMex=\skip121
-\LMpt=\skip122
+\thesrwidth=\skip120
+\thesrheight=\skip121
+\srblobheight=\skip122
+\srblobdepth=\skip123
+\mnxsrwidth=\skip124
+\LMex=\skip125
+\LMpt=\skip126
 ) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/doi\doi.sty
 Package: doi 2018/09/09 handle doi numbers
 ) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/accsupp\accsupp.sty
@@ -1559,30 +1774,30 @@ Package: accsupp 2019/12/05 v0.6 Accessibility support by marked content (HO)
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/accsupp\accsupp-pdftex.def
 File: accsupp-pdftex.def 2019/12/05 v0.6 accsupp driver for pdfTeX (HO)
 )) (C:/Users/lawre/OneDrive/Documents/LaTeX\tex/latex\commands.tex) (C:/Users/lawre/OneDrive/Documents/LaTeX\tex/latex\commands_tables.tex) (preamble/settings.tex
-\c@currdefinitionctr=\count399
-\c@enddefinitionctr=\count400
-\c@definition=\count401
-\c@curraxiomctr=\count402
-\c@endaxiomctr=\count403
-\c@axiom=\count404
-\c@currpropositionctr=\count405
-\c@endpropositionctr=\count406
-\c@currtheoremctr=\count407
-\c@endtheoremctr=\count408
-\c@currcorollaryctr=\count409
-\c@endcorollaryctr=\count410
-\c@currlemmactr=\count411
-\c@endlemmactr=\count412
-\c@currremarkctr=\count413
-\c@endremarkctr=\count414
-\c@curralgorithmctr=\count415
-\c@endalgorithmctr=\count416
-\c@currconjecturectr=\count417
-\c@endconjecturectr=\count418
-\c@currexamplectr=\count419
-\c@endexamplectr=\count420
-\c@currquestionctr=\count421
-\c@endquestionctr=\count422
+\c@currdefinitionctr=\count425
+\c@enddefinitionctr=\count426
+\c@definition=\count427
+\c@curraxiomctr=\count428
+\c@endaxiomctr=\count429
+\c@axiom=\count430
+\c@currpropositionctr=\count431
+\c@endpropositionctr=\count432
+\c@currtheoremctr=\count433
+\c@endtheoremctr=\count434
+\c@currcorollaryctr=\count435
+\c@endcorollaryctr=\count436
+\c@currlemmactr=\count437
+\c@endlemmactr=\count438
+\c@currremarkctr=\count439
+\c@endremarkctr=\count440
+\c@curralgorithmctr=\count441
+\c@endalgorithmctr=\count442
+\c@currconjecturectr=\count443
+\c@endconjecturectr=\count444
+\c@currexamplectr=\count445
+\c@endexamplectr=\count446
+\c@currquestionctr=\count447
+\c@endquestionctr=\count448
 Package hyperref Info: Option `colorlinks' set `true' on input line 69.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tcolorbox\tcbbreakable.code.tex
 Library (tcolorbox): 'tcbbreakable.code.tex' version '5.0.2'
@@ -1590,67 +1805,72 @@ Library (tcolorbox): 'tcbbreakable.code.tex' version '5.0.2'
 Package: pdfcol 2019/12/29 v1.6 Handle new color stacks for pdfTeX (HO)
 )
 Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
-\tcb@testbox=\box142
-\tcb@totalupperbox=\box143
-\tcb@totallowerbox=\box144
+\tcb@testbox=\box146
+\tcb@totalupperbox=\box147
+\tcb@totallowerbox=\box148
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang2.sty
+File: lstlang2.sty 2020/03/24 1.8d listings language file
 ))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'australian'.
-LaTeX Font Info:    Trying to load font information for OT1+LinuxLibertineT-TLF on input line 61.
+\tikzscale@accuracy=\skip127
+LaTeX Font Info:    Trying to load font information for OT1+LinuxLibertineT-TLF on input line 65.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/libertine\ot1linuxlibertinet-tlf.fd
 File: OT1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for OT1/LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 61.
+(Font)              scaled to size 10.0pt on input line 65.
  (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/nxlmi/m/it on input line 61.
-LaTeX Font Info:    Trying to load font information for OML+nxlmi on input line 61.
+LaTeX Font Info:    Checking defaults for OML/nxlmi/m/it on input line 65.
+LaTeX Font Info:    Trying to load font information for OML+nxlmi on input line 65.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/newtx\omlnxlmi.fd
 File: omlnxlmi.fd 2013/11/19 Fontinst v1.933 font definitions for OML/nxlmi.
 )
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 61.
-LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 61.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 65.
+LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 65.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/newtx\untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 61.
-LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 61.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 65.
+LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 65.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cbfonts-fd\lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 61.
-LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 61.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 65.
+LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 65.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/newtx\lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 61.
-LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 61.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 65.
+LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 65.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/newtx\lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    ... okay on input line 65.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1688,39 +1908,39 @@ LaTeX Font Info:    ... okay on input line 61.
 
 (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count423
-\scratchdimen=\dimen360
-\scratchbox=\box145
-\nofMPsegments=\count424
-\nofMParguments=\count425
-\everyMPshowfont=\toks84
-\MPscratchCnt=\count426
-\MPscratchDim=\dimen361
-\MPnumerator=\count427
-\makeMPintoPDFobject=\count428
-\everyMPtoPDFconversion=\toks85
+\scratchcounter=\count449
+\scratchdimen=\dimen388
+\scratchbox=\box149
+\nofMPsegments=\count450
+\nofMParguments=\count451
+\everyMPshowfont=\toks87
+\MPscratchCnt=\count452
+\MPscratchDim=\dimen389
+\MPnumerator=\count453
+\makeMPintoPDFobject=\count454
+\everyMPtoPDFconversion=\toks88
 ) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \microtypecontext on input line 61.
-Package microtype Info: Applying patch `item' on input line 61.
-Package microtype Info: Applying patch `toc' on input line 61.
+LaTeX Info: Redefining \microtypecontext on input line 65.
+Package microtype Info: Applying patch `item' on input line 65.
+Package microtype Info: Applying patch `toc' on input line 65.
 Package microtype Info: The `eqnum' patch may not be effective because you are
 (microtype)             using the mathtools package. Make sure to insert
 (microtype)             `\leftprotrusion' and `\rightprotrusion' as
 (microtype)             appropriate in mathtools's `\newtagform' command.
-Package microtype Info: Applying patch `eqnum' on input line 61.
-Package microtype Info: Applying patch `footnote' on input line 61.
+Package microtype Info: Applying patch `eqnum' on input line 65.
+Package microtype Info: Applying patch `footnote' on input line 65.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 61.
+LaTeX Info: Redefining \showhyphens on input line 65.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1728,7 +1948,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinuxLibertineT-TLF' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-Package hyperref Info: Link coloring ON on input line 61.
+Package hyperref Info: Link coloring ON on input line 65.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/refcount\refcount.sty
@@ -1736,17 +1956,17 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count429
+\c@section@level=\count455
 )
-LaTeX Info: Redefining \ref on input line 61.
-LaTeX Info: Redefining \pageref on input line 61.
-LaTeX Info: Redefining \nameref on input line 61.
-\c@mv@tabular=\count430
-\c@mv@boldtabular=\count431
+LaTeX Info: Redefining \ref on input line 65.
+LaTeX Info: Redefining \pageref on input line 65.
+LaTeX Info: Redefining \nameref on input line 65.
+\c@mv@tabular=\count456
+\c@mv@boldtabular=\count457
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/upquote\upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
 )
-\c@lstlisting=\count432
+\c@lstlisting=\count458
  (sections/titlepage.tex
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 24.88pt on input line 5.
@@ -1758,7 +1978,7 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 17.28pt on input line 11.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 14.4pt on input line 13.
-<monash_university_logo.png, id=6, 756.57657pt x 221.32687pt>
+<monash_university_logo.png, id=30, 756.57657pt x 221.32687pt>
 File: monash_university_logo.png Graphic file (type png)
 <use monash_university_logo.png>
 Package pdftex.def Info: monash_university_logo.png  used on input line 23.
@@ -1823,7 +2043,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 ] (main.toc
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 2.
+(Font)              scaled to size 10.0pt on input line 3.
  [4
 
 ])
@@ -1832,7 +2052,7 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
 
  [5]
 Chapter 1.
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 77.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 81.
 (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\mt-ptm.cfg
@@ -1875,18 +2095,24 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 8.0pt on input line 1.
 ) [10]
 Package hyperref Info: bookmark level for unknown remark defaults to 0 on input line 320.
- [11] [12]) (sections/group_concepts/bases_stabiliser_chains.tex
-LaTeX Font Info:    Trying to load font information for TS1+LinuxLibertineT-TLF on input line 18.
+ [11] (sections/group_concepts/rubiks_cube_net.tikz
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 27.
+)
+LaTeX Font Info:    Trying to load font information for TS1+LinuxLibertineT-TLF on input line 357.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/libertine\ts1linuxlibertinet-tlf.fd
 File: TS1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for TS1/LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 18.
+(Font)              scaled to size 10.0pt on input line 357.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinuxLibertineT-TLF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [13] [14] [15] [16]
+ [12]) (sections/group_concepts/bases_stabiliser_chains.tex
+Underfull \vbox (badness 1270) has occurred while \output is active []
+
+ [13] [14] [15] [16] [17]
 Missing character: There is no 7 in font nullfont!
 Missing character: There is no N in font nullfont!
 Missing character: There is no o in font nullfont!
@@ -1894,59 +2120,56 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no l in font nullfont!
-
-Underfull \vbox (badness 1009) has occurred while \output is active []
-
- [17]
+[18]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 242.
- [18] (txt_files/automorphism_group_graph_bsgs_gap.gap) (txt_files/automorphism_group_graph_bsgs_gap_2.gap)
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/scit' will be
-(Font)              scaled to size 10.0pt on input line 272.
-
+ (txt_files/automorphism_group_graph_bsgs_gap.gap
 
 LaTeX Font Warning: Font shape `OT1/zi4/m/it' undefined
-(Font)              using `OT1/zi4/m/n' instead on input line 277.
+(Font)              using `OT1/zi4/m/n' instead on input line 1.
 
 LaTeX Font Info:    Font shape `OT1/zi4/m/it' will be
-(Font)              scaled to size 10.0pt on input line 281.
-(txt_files/automorphism_group_graph_bsgs_gap_3.gap [19]) [20]) (sections/group_concepts/classification_results.tex [21] (txt_files/klein_4_blocks.gap))) [22]
+(Font)              scaled to size 10.0pt on input line 1.
+) (txt_files/automorphism_group_graph_bsgs_gap_2.gap) [19]
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/scit' will be
+(Font)              scaled to size 10.0pt on input line 272.
+ (txt_files/automorphism_group_graph_bsgs_gap_3.gap) [20]) [21] (sections/group_concepts/classification_results.tex (txt_files/klein_4_blocks.gap [22]))) [23]
 Chapter 3.
-(sections/complexity_concepts.tex [23
+(sections/complexity_concepts.tex [24
 
-] [24]
+] [25]
 Overfull \hbox (1.89429pt too wide) in paragraph at lines 86--87
-[]\OT1/LinuxLibertineT-TLF/m/n/10 (-20) Recall the mem-ber-ship test al-gorithm ([][]Al-gorithm 2.67[][][]) for $\OML/nxlmi/m/it/10 g \LMS/ntxsy/m/n/10 2 \OML/nxlmi/m/it/10 G$ \OT1/LinuxLibertineT-TLF/m/n/10 (-20) runs in $\OML/nxlmi/m/it/10 O\LMS/ntxsy/m/n/10 ¹\OML/nxlmi/m/it/10 r [][] \LMS/ntxsy/m/n/10 j\OML/nxlmi/m/it/10 T[]\LMS/ntxsy/m/n/10 jº$
+[]\OT1/LinuxLibertineT-TLF/m/n/10 (-20) Recall the mem-ber-ship test al-gorithm ([][]Al-gorithm 2.68[][][]) for $\OML/nxlmi/m/it/10 g \LMS/ntxsy/m/n/10 2 \OML/nxlmi/m/it/10 G$ \OT1/LinuxLibertineT-TLF/m/n/10 (-20) runs in $\OML/nxlmi/m/it/10 O\LMS/ntxsy/m/n/10 ¹\OML/nxlmi/m/it/10 r [][] \LMS/ntxsy/m/n/10 j\OML/nxlmi/m/it/10 T[]\LMS/ntxsy/m/n/10 jº$
  []
 
-[25]
+[26]
 Package hyperref Info: bookmark level for unknown conjecture defaults to 0 on input line 113.
- [26]) [27]
+ [27]) [28]
 Chapter 4.
-(sections/blaha.tex [28
+(sections/blaha.tex [29
 
-] [29] [30] [31] [32] [33]) [34]
+] [30] [31] [32] [33] [34]) [35]
 Chapter 5.
-(sections/perm_group_theory.tex [35
+(sections/perm_group_theory.tex [36
 
-] [36] [37] [38] [39]
+] [37] [38] [39] [40]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [40] [41] [42] [43] [44] [45] [46] [47]) [48]
+ [41] [42] [43] [44] [45] [46] [47] [48]) [49]
 Chapter 6.
 (sections/lit_review.tex
 Underfull \vbox (badness 1383) has occurred while \output is active []
 
- [49
+ [50
 
-] [50]
+] [51]
 Package hyperref Info: bookmark level for unknown question defaults to 0 on input line 63.
- [51]
+ [52]
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/sc' will be
 (Font)              scaled to size 10.0pt on input line 109.
 Package microtype Info: Character `013' is missing
 (microtype)             in font `OT1/LinuxLibertineT-TLF/m/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
- [52]) (main.bbl [53]
+ [53]) (main.bbl [54]
 LaTeX Font Info:    Font shape `OT1/zi4/m/n' will be
 (Font)              scaled to size 7.3pt on input line 34.
 LaTeX Font Info:    Font shape `OT1/zi4/m/n' will be
@@ -1956,26 +2179,26 @@ Underfull \hbox (badness 1221) in paragraph at lines 81--86
 []\OT1/LinuxLibertineT-TLF/m/n/10 (+20) John D. Dixon and Brian Mor-timer.  \OT1/LinuxLibertineT-TLF/m/it/10 (+20) Per-muta-tion Groups\OT1/LinuxLibertineT-TLF/m/n/10 (+20) .  Springer New York, 1996.  [][]$\OT1/zi4/m/it/10 doi : 10 . 1007 /
  []
 
-[54
+[55
 
 ]
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 10.0pt on input line 199.
-) (sections/appendix.tex [55]
+) (sections/appendix.tex [56]
 Appendix A.
-(gap_code/random_elt.gap) (gap_code/membership.gap [56
+(gap_code/random_elt.gap) (gap_code/membership.gap [57
 
-]) (gap_code/random_elt_print.gap) (gap_code/membership_print.gap [57]) (txt_files/automorphism_group_graph_bsgs_gap_appendix.gap [58])
+]) (gap_code/random_elt_print.gap) (gap_code/membership_print.gap [58]) (txt_files/automorphism_group_graph_bsgs_gap_appendix.gap [59])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [59] (gap_code/d8_wreath_product.gap) [60] (txt_files/d8_wreath_product_gap_output.gap) [61]
+ [60] (gap_code/d8_wreath_product.gap) [61] (txt_files/d8_wreath_product_gap_output.gap) [62]
 Appendix B.
-(gap_code/greedy_base.gap) (txt_files/greedy_better_than_default.gap [62
+(gap_code/greedy_base.gap) (txt_files/greedy_better_than_default.gap [63
 
-]) (gap_code/subgrps_base_len.gap [63]
+]) (gap_code/subgrps_base_len.gap [64]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [64]
+ [65]
 LaTeX Font Info:    Trying to load font information for TS1+zi4 on input line 58.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/inconsolata\ts1zi4.fd
 File: ts1zi4.fd 2018/01/14 TS1/zi4 (Inconsolata)
@@ -1986,11 +2209,11 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `zi4' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-) (txt_files/agl_base_gap_output/2.gap) (txt_files/agl_base_gap_output/3.gap [65]) (txt_files/agl_base_gap_output/4.gap) (txt_files/agl_base_gap_output/5.gap) (txt_files/agl_base_gap_output/6.gap [66]) (txt_files/agl_base_gap_output/7.gap) (txt_files/agl_base_gap_output/8.gap) (txt_files/agl_base_gap_output/9.gap [67]) (txt_files/agl_base_gap_output/10.gap))
+) (txt_files/agl_base_gap_output/2.gap) (txt_files/agl_base_gap_output/3.gap [66]) (txt_files/agl_base_gap_output/4.gap) (txt_files/agl_base_gap_output/5.gap) (txt_files/agl_base_gap_output/6.gap [67]) (txt_files/agl_base_gap_output/7.gap) (txt_files/agl_base_gap_output/8.gap) (txt_files/agl_base_gap_output/9.gap [68]) (txt_files/agl_base_gap_output/10.gap))
 \tf@thm=\write5
 \openout5 = `main.thm'.
 
- [68] (main.aux)
+ [69] (main.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
@@ -2000,17 +2223,17 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 44273 strings out of 478582
- 843456 string characters out of 2842422
- 1494347 words of memory out of 3000000
- 59893 multiletter control sequences out of 15000+600000
- 565194 words of font info for 411 fonts, out of 8000000 for 9000
+ 51031 strings out of 478582
+ 1005432 string characters out of 2842422
+ 1838597 words of memory out of 3000000
+ 66371 multiletter control sequences out of 15000+600000
+ 566891 words of font info for 414 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 101i,18n,105p,2371b,2049s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 101i,18n,105p,2371b,2053s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-ts1.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_u7qtuy.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_n3gv2c.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_hmhe76.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_ks2ukx.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-ot1-0.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_kijugd.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_lyu3x3.enc}<C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathMI.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathMI5.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathMI7.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathRM.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineTBI.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/NewTXMI.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/NewTXMI7.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txexas.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txexs.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txsya.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txsyb.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txsyc.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txsys.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (73 pages, 1141747 bytes).
+Output written on main.pdf (74 pages, 1160235 bytes).
 PDF statistics:
- 2302 PDF objects out of 2487 (max. 8388607)
- 1130 named destinations out of 1200 (max. 500000)
- 82858 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 2332 PDF objects out of 2487 (max. 8388607)
+ 1133 named destinations out of 1200 (max. 500000)
+ 85002 words of extra memory for PDF output out of 89155 (max. 10000000)
 

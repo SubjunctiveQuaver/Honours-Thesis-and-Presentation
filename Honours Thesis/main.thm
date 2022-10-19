@@ -47,156 +47,157 @@
 \contentsline {definition}{{Definition}{2.{38}}{}}{11}{definition.2.38}%
 \contentsline {lemma}{{Lemma}{2.{39}}{}}{11}{lemma.2.39}%
 \contentsline {proof}{{\proofname }{10}{}}{11}{proof.10}%
-\contentsline {proposition}{{Proposition}{2.{40}}{}}{12}{proposition.2.40}%
+\contentsline {example}{{Example}{2.{40}}{Rubik's group}}{12}{example.2.40}%
+\contentsline {proposition}{{Proposition}{2.{41}}{}}{12}{proposition.2.41}%
 \contentsline {proof}{{\proofname }{11}{}}{12}{proof.11}%
-\contentsline {example}{{Example}{2.{41}}{}}{12}{example.2.41}%
-\contentsline {example}{{Example}{2.{42}}{}}{12}{example.2.42}%
-\contentsline {proposition}{{Proposition}{2.{43}}{}}{12}{proposition.2.43}%
-\contentsline {proof}{{\proofname }{12}{}}{12}{proof.12}%
-\contentsline {proposition}{{Proposition}{2.{44}}{}}{12}{proposition.2.44}%
-\contentsline {proposition}{{Proposition}{2.{45}}{Theorem 1.6A in \cite {dixon_mortimer_perm_groups1996}}}{13}{proposition.2.45}%
+\contentsline {example}{{Example}{2.{42}}{}}{13}{example.2.42}%
+\contentsline {example}{{Example}{2.{43}}{}}{13}{example.2.43}%
+\contentsline {proposition}{{Proposition}{2.{44}}{}}{13}{proposition.2.44}%
+\contentsline {proof}{{\proofname }{12}{}}{13}{proof.12}%
+\contentsline {proposition}{{Proposition}{2.{45}}{}}{13}{proposition.2.45}%
+\contentsline {proposition}{{Proposition}{2.{46}}{Theorem 1.6A in \cite {dixon_mortimer_perm_groups1996}}}{13}{proposition.2.46}%
 \contentsline {proof}{{\proofname }{13}{}}{13}{proof.13}%
-\contentsline {definition}{{Definition}{2.{46}}{}}{13}{definition.2.46}%
-\contentsline {example}{{Example}{2.{47}}{}}{13}{example.2.47}%
-\contentsline {lemma}{{Lemma}{2.{48}}{}}{14}{lemma.2.48}%
+\contentsline {definition}{{Definition}{2.{47}}{}}{14}{definition.2.47}%
+\contentsline {example}{{Example}{2.{48}}{}}{14}{example.2.48}%
+\contentsline {lemma}{{Lemma}{2.{49}}{}}{14}{lemma.2.49}%
 \contentsline {proof}{{\proofname }{14}{}}{14}{proof.14}%
-\contentsline {definition}{{Definition}{2.{49}}{}}{14}{definition.2.49}%
-\contentsline {corollary}{{Corollary}{2.{50}}{}}{14}{corollary.2.50}%
-\contentsline {proof}{{\proofname }{15}{}}{14}{proof.15}%
-\contentsline {lemma}{{Lemma}{2.{51}}{}}{14}{lemma.2.51}%
-\contentsline {example}{{Example}{2.{52}}{}}{14}{example.2.52}%
-\contentsline {proposition}{{Proposition}{2.{53}}{}}{15}{proposition.2.53}%
-\contentsline {definition}{{Definition}{2.{54}}{}}{15}{definition.2.54}%
-\contentsline {lemma}{{Lemma}{2.{55}}{Lemma 4.1 in \cite {blaha1992}}}{15}{lemma.2.55}%
+\contentsline {definition}{{Definition}{2.{50}}{}}{14}{definition.2.50}%
+\contentsline {corollary}{{Corollary}{2.{51}}{}}{15}{corollary.2.51}%
+\contentsline {proof}{{\proofname }{15}{}}{15}{proof.15}%
+\contentsline {lemma}{{Lemma}{2.{52}}{}}{15}{lemma.2.52}%
+\contentsline {example}{{Example}{2.{53}}{}}{15}{example.2.53}%
+\contentsline {proposition}{{Proposition}{2.{54}}{}}{15}{proposition.2.54}%
+\contentsline {definition}{{Definition}{2.{55}}{}}{15}{definition.2.55}%
+\contentsline {lemma}{{Lemma}{2.{56}}{Lemma 4.1 in \cite {blaha1992}}}{15}{lemma.2.56}%
 \contentsline {proof}{{\proofname }{16}{}}{15}{proof.16}%
-\contentsline {lemma}{{Lemma}{2.{56}}{}}{15}{lemma.2.56}%
-\contentsline {proof}{{\proofname }{17}{}}{15}{proof.17}%
-\contentsline {example}{{Example}{2.{57}}{symmetric groups}}{15}{example.2.57}%
-\contentsline {example}{{Example}{2.{58}}{alternating groups}}{16}{example.2.58}%
-\contentsline {example}{{Example}{2.{59}}{cyclic subgroups of $\Sym (n)$}}{16}{example.2.59}%
-\contentsline {proposition}{{Proposition}{2.{60}}{}}{16}{proposition.2.60}%
-\contentsline {proof}{{\proofname }{18}{}}{16}{proof.18}%
-\contentsline {lemma}{{Lemma}{2.{61}}{}}{16}{lemma.2.61}%
-\contentsline {proof}{{\proofname }{19}{}}{16}{proof.19}%
+\contentsline {lemma}{{Lemma}{2.{57}}{}}{16}{lemma.2.57}%
+\contentsline {proof}{{\proofname }{17}{}}{16}{proof.17}%
+\contentsline {example}{{Example}{2.{58}}{symmetric groups}}{16}{example.2.58}%
+\contentsline {example}{{Example}{2.{59}}{alternating groups}}{16}{example.2.59}%
+\contentsline {example}{{Example}{2.{60}}{cyclic subgroups of $\Sym (n)$}}{16}{example.2.60}%
+\contentsline {proposition}{{Proposition}{2.{61}}{}}{17}{proposition.2.61}%
+\contentsline {proof}{{\proofname }{18}{}}{17}{proof.18}%
 \contentsline {lemma}{{Lemma}{2.{62}}{}}{17}{lemma.2.62}%
+\contentsline {proof}{{\proofname }{19}{}}{17}{proof.19}%
+\contentsline {lemma}{{Lemma}{2.{63}}{}}{17}{lemma.2.63}%
 \contentsline {proof}{{\proofname }{20}{}}{17}{proof.20}%
-\contentsline {example}{{Example}{2.{63}}{}}{17}{example.2.63}%
-\contentsline {example}{{Example}{2.{64}}{}}{17}{example.2.64}%
-\contentsline {algorithm}{{Algorithm}{2.{65}}{random element}}{18}{algorithm.2.65}%
-\contentsline {example}{{Example}{2.{66}}{}}{19}{example.2.66}%
-\contentsline {algorithm}{{Algorithm}{2.{67}}{membership test}}{19}{algorithm.2.67}%
-\contentsline {proof}{{Proof of correctness}{21}{}}{19}{proof.21}%
-\contentsline {example}{{Example}{2.{68}}{}}{19}{example.2.68}%
-\contentsline {algorithm}{{Algorithm}{2.{69}}{orbit-stabiliser}}{20}{algorithm.2.69}%
+\contentsline {example}{{Example}{2.{64}}{}}{18}{example.2.64}%
+\contentsline {example}{{Example}{2.{65}}{}}{18}{example.2.65}%
+\contentsline {algorithm}{{Algorithm}{2.{66}}{random element}}{19}{algorithm.2.66}%
+\contentsline {example}{{Example}{2.{67}}{}}{19}{example.2.67}%
+\contentsline {algorithm}{{Algorithm}{2.{68}}{membership test}}{20}{algorithm.2.68}%
+\contentsline {proof}{{Proof of correctness}{21}{}}{20}{proof.21}%
+\contentsline {example}{{Example}{2.{69}}{}}{20}{example.2.69}%
+\contentsline {algorithm}{{Algorithm}{2.{70}}{orbit-stabiliser}}{21}{algorithm.2.70}%
 \contentsline {proof}{{\proofname }{22}{}}{21}{proof.22}%
-\contentsline {corollary}{{Corollary}{2.{70}}{}}{21}{corollary.2.70}%
-\contentsline {definition}{{Definition}{2.{71}}{}}{21}{definition.2.71}%
-\contentsline {theorem}{{Theorem}{2.{72}}{basis for finite abelian groups}}{22}{theorem.2.72}%
-\contentsline {corollary}{{Corollary}{2.{73}}{}}{22}{corollary.2.73}%
+\contentsline {corollary}{{Corollary}{2.{71}}{}}{21}{corollary.2.71}%
+\contentsline {definition}{{Definition}{2.{72}}{}}{22}{definition.2.72}%
+\contentsline {theorem}{{Theorem}{2.{73}}{basis for finite abelian groups}}{22}{theorem.2.73}%
+\contentsline {corollary}{{Corollary}{2.{74}}{}}{22}{corollary.2.74}%
 \contentsline {proof}{{\proofname }{23}{}}{22}{proof.23}%
-\contentsline {example}{{Example}{2.{74}}{}}{22}{example.2.74}%
 \contentsline {example}{{Example}{2.{75}}{}}{22}{example.2.75}%
-\contentsline {definition}{{Definition}{3.{1}}{big-O notation}}{23}{definition.3.1}%
-\contentsline {definition}{{Definition}{3.{2}}{}}{23}{definition.3.2}%
-\contentsline {example}{{Example}{3.{3}}{membership test}}{24}{example.3.3}%
-\contentsline {example}{{Example}{3.{4}}{orbit-stabiliser algorithm}}{24}{example.3.4}%
-\contentsline {definition}{{Definition}{3.{5}}{}}{24}{definition.3.5}%
-\contentsline {definition}{{Definition}{3.{6}}{}}{25}{definition.3.6}%
-\contentsline {lemma}{{Lemma}{3.{7}}{}}{25}{lemma.3.7}%
-\contentsline {proof}{{\proofname }{24}{}}{25}{proof.24}%
-\contentsline {example}{{Example}{3.{8}}{membership test}}{25}{example.3.8}%
-\contentsline {example}{{Example}{3.{9}}{orbit-stabiliser algorithm}}{25}{example.3.9}%
-\contentsline {example}{{Example}{3.{10}}{Schreier-Sims algorithm}}{25}{example.3.10}%
-\contentsline {definition}{{Definition}{3.{11}}{}}{25}{definition.3.11}%
-\contentsline {example}{{Example}{3.{12}}{}}{26}{example.3.12}%
-\contentsline {conjecture}{{Conjecture}{3.{13}}{P versus NP problem}}{26}{conjecture.3.13}%
-\contentsline {definition}{{Definition}{3.{14}}{}}{26}{definition.3.14}%
-\contentsline {definition}{{Definition}{3.{15}}{}}{26}{definition.3.15}%
-\contentsline {theorem}{{Theorem}{3.{16}}{}}{26}{theorem.3.16}%
-\contentsline {definition}{{Definition}{3.{17}}{}}{26}{definition.3.17}%
-\contentsline {example}{{Example}{3.{18}}{X3C}}{27}{example.3.18}%
-\contentsline {lemma}{{Lemma}{4.{1}}{}}{28}{lemma.4.1}%
-\contentsline {proof}{{\proofname }{25}{}}{28}{proof.25}%
-\contentsline {algorithm}{{Algorithm}{4.{2}}{Greedy base algorithm}}{28}{algorithm.4.2}%
-\contentsline {lemma}{{Lemma}{4.{3}}{Lemma 2.1 in \cite {blaha1992}}}{29}{lemma.4.3}%
-\contentsline {proof}{{\proofname }{26}{}}{29}{proof.26}%
-\contentsline {lemma}{{Lemma}{4.{4}}{}}{29}{lemma.4.4}%
-\contentsline {proof}{{\proofname }{27}{}}{29}{proof.27}%
-\contentsline {theorem}{{Theorem}{4.{5}}{Blaha, 1992}}{30}{theorem.4.5}%
-\contentsline {proof}{{\proofname }{28}{}}{30}{proof.28}%
-\contentsline {remark}{{Remark}{4.{6}}{}}{30}{remark.4.6}%
-\contentsline {example}{{Example}{4.{7}}{}}{30}{example.4.7}%
-\contentsline {example}{{Example}{4.{8}}{}}{31}{example.4.8}%
-\contentsline {lemma}{{Lemma}{4.{9}}{}}{31}{lemma.4.9}%
-\contentsline {proof}{{\proofname }{29}{}}{32}{proof.29}%
-\contentsline {lemma}{{Lemma}{4.{10}}{Lemma 2.2 in \cite {blaha1992}}}{32}{lemma.4.10}%
-\contentsline {proof}{{\proofname }{30}{}}{32}{proof.30}%
-\contentsline {lemma}{{Lemma}{4.{11}}{Lemma 2.3 in \cite {blaha1992}}}{32}{lemma.4.11}%
-\contentsline {proof}{{\proofname }{31}{}}{32}{proof.31}%
-\contentsline {theorem}{{Theorem}{4.{12}}{Blaha, 1992}}{32}{theorem.4.12}%
-\contentsline {proof}{{\proofname }{32}{}}{32}{proof.32}%
-\contentsline {remark}{{Remark}{4.{13}}{}}{33}{remark.4.13}%
-\contentsline {lemma}{{Lemma}{4.{14}}{Lemma 4.2 in \cite {blaha1992}}}{33}{lemma.4.14}%
-\contentsline {lemma}{{Lemma}{4.{15}}{Lemma 4.3 in \cite {blaha1992}}}{33}{lemma.4.15}%
-\contentsline {proof}{{\proofname }{33}{}}{33}{proof.33}%
-\contentsline {theorem}{{Theorem}{4.{16}}{Blaha, 1992}}{33}{theorem.4.16}%
-\contentsline {theorem}{{Theorem}{4.{17}}{Blaha, 1992}}{34}{theorem.4.17}%
-\contentsline {definition}{{Definition}{5.{1}}{}}{35}{definition.5.1}%
-\contentsline {definition}{{Definition}{5.{2}}{}}{35}{definition.5.2}%
-\contentsline {definition}{{Definition}{5.{3}}{}}{36}{definition.5.3}%
-\contentsline {example}{{Example}{5.{4}}{}}{36}{example.5.4}%
-\contentsline {theorem}{{Theorem}{5.{5}}{Jordan-H\"older}}{36}{theorem.5.5}%
-\contentsline {corollary}{{Corollary}{5.{6}}{Fundamental theorem of arithmetic}}{36}{corollary.5.6}%
-\contentsline {proof}{{\proofname }{34}{}}{36}{proof.34}%
-\contentsline {theorem}{{Theorem}{5.{7}}{Classification of finite simple groups}}{37}{theorem.5.7}%
-\contentsline {definition}{{Definition}{5.{8}}{}}{37}{definition.5.8}%
-\contentsline {example}{{Example}{5.{9}}{}}{37}{example.5.9}%
-\contentsline {definition}{{Definition}{5.{10}}{}}{38}{definition.5.10}%
-\contentsline {lemma}{{Lemma}{5.{11}}{}}{38}{lemma.5.11}%
-\contentsline {proof}{{\proofname }{35}{}}{38}{proof.35}%
-\contentsline {definition}{{Definition}{5.{12}}{}}{38}{definition.5.12}%
-\contentsline {definition}{{Definition}{5.{13}}{}}{38}{definition.5.13}%
-\contentsline {definition}{{Definition}{5.{14}}{}}{39}{definition.5.14}%
-\contentsline {proposition}{{Proposition}{5.{15}}{}}{39}{proposition.5.15}%
-\contentsline {proof}{{\proofname }{36}{}}{39}{proof.36}%
-\contentsline {lemma}{{Lemma}{5.{16}}{}}{39}{lemma.5.16}%
-\contentsline {proof}{{\proofname }{37}{}}{39}{proof.37}%
-\contentsline {example}{{Example}{5.{17}}{}}{40}{example.5.17}%
-\contentsline {definition}{{Definition}{5.{18}}{}}{40}{definition.5.18}%
-\contentsline {example}{{Example}{5.{19}}{}}{41}{example.5.19}%
-\contentsline {proposition}{{Proposition}{5.{20}}{}}{41}{proposition.5.20}%
-\contentsline {definition}{{Definition}{5.{21}}{}}{41}{definition.5.21}%
-\contentsline {definition}{{Definition}{5.{22}}{}}{42}{definition.5.22}%
-\contentsline {definition}{{Definition}{5.{23}}{}}{42}{definition.5.23}%
-\contentsline {definition}{{Definition}{5.{24}}{}}{42}{definition.5.24}%
-\contentsline {lemma}{{Lemma}{5.{25}}{}}{42}{lemma.5.25}%
-\contentsline {proof}{{\proofname }{38}{}}{42}{proof.38}%
-\contentsline {proposition}{{Proposition}{5.{26}}{}}{43}{proposition.5.26}%
-\contentsline {proof}{{\proofname }{39}{}}{43}{proof.39}%
-\contentsline {proposition}{{Proposition}{5.{27}}{}}{43}{proposition.5.27}%
-\contentsline {proof}{{\proofname }{40}{}}{43}{proof.40}%
-\contentsline {proposition}{{Proposition}{5.{28}}{}}{44}{proposition.5.28}%
-\contentsline {proof}{{\proofname }{41}{}}{44}{proof.41}%
-\contentsline {definition}{{Definition}{5.{29}}{}}{45}{definition.5.29}%
-\contentsline {definition}{{Definition}{5.{30}}{}}{45}{definition.5.30}%
-\contentsline {theorem}{{Theorem}{5.{31}}{}}{45}{theorem.5.31}%
-\contentsline {definition}{{Definition}{5.{32}}{}}{45}{definition.5.32}%
-\contentsline {example}{{Example}{5.{33}}{}}{46}{example.5.33}%
-\contentsline {lemma}{{Lemma}{5.{34}}{}}{46}{lemma.5.34}%
-\contentsline {proof}{{\proofname }{42}{}}{46}{proof.42}%
-\contentsline {lemma}{{Lemma}{5.{35}}{}}{46}{lemma.5.35}%
-\contentsline {proof}{{\proofname }{43}{}}{46}{proof.43}%
-\contentsline {proposition}{{Proposition}{5.{36}}{}}{46}{proposition.5.36}%
-\contentsline {proof}{{\proofname }{44}{}}{46}{proof.44}%
-\contentsline {proposition}{{Proposition}{5.{37}}{}}{47}{proposition.5.37}%
-\contentsline {proof}{{\proofname }{45}{}}{47}{proof.45}%
-\contentsline {theorem}{{Theorem}{5.{38}}{}}{47}{theorem.5.38}%
-\contentsline {theorem}{{Theorem}{5.{39}}{O'Nan-Scott}}{47}{theorem.5.39}%
-\contentsline {definition}{{Definition}{6.{1}}{}}{49}{definition.6.1}%
-\contentsline {theorem}{{Theorem}{6.{2}}{Liebeck, 1984}}{49}{theorem.6.2}%
-\contentsline {theorem}{{Theorem}{6.{3}}{Moscatiello and Roney-Dougal, 2021}}{50}{theorem.6.3}%
-\contentsline {theorem}{{Theorem}{6.{4}}{Moscatiello and Roney-Dougal, 2021}}{50}{theorem.6.4}%
-\contentsline {question}{{Question}{6.{5}}{Moscatiello and Roney-Dougal, 2021}}{51}{question.6.5}%
-\contentsline {theorem}{{Theorem}{6.{6}}{}}{51}{theorem.6.6}%
-\contentsline {proof}{{Proof of main theorem}{46}{}}{51}{proof.46}%
-\contentsline {conjecture}{{Conjecture}{6.{7}}{}}{53}{conjecture.6.7}%
+\contentsline {example}{{Example}{2.{76}}{}}{22}{example.2.76}%
+\contentsline {definition}{{Definition}{3.{1}}{big-O notation}}{24}{definition.3.1}%
+\contentsline {definition}{{Definition}{3.{2}}{}}{24}{definition.3.2}%
+\contentsline {example}{{Example}{3.{3}}{membership test}}{25}{example.3.3}%
+\contentsline {example}{{Example}{3.{4}}{orbit-stabiliser algorithm}}{25}{example.3.4}%
+\contentsline {definition}{{Definition}{3.{5}}{}}{25}{definition.3.5}%
+\contentsline {definition}{{Definition}{3.{6}}{}}{26}{definition.3.6}%
+\contentsline {lemma}{{Lemma}{3.{7}}{}}{26}{lemma.3.7}%
+\contentsline {proof}{{\proofname }{24}{}}{26}{proof.24}%
+\contentsline {example}{{Example}{3.{8}}{membership test}}{26}{example.3.8}%
+\contentsline {example}{{Example}{3.{9}}{orbit-stabiliser algorithm}}{26}{example.3.9}%
+\contentsline {example}{{Example}{3.{10}}{Schreier-Sims algorithm}}{26}{example.3.10}%
+\contentsline {definition}{{Definition}{3.{11}}{}}{26}{definition.3.11}%
+\contentsline {example}{{Example}{3.{12}}{}}{27}{example.3.12}%
+\contentsline {conjecture}{{Conjecture}{3.{13}}{P versus NP problem}}{27}{conjecture.3.13}%
+\contentsline {definition}{{Definition}{3.{14}}{}}{27}{definition.3.14}%
+\contentsline {definition}{{Definition}{3.{15}}{}}{27}{definition.3.15}%
+\contentsline {theorem}{{Theorem}{3.{16}}{}}{27}{theorem.3.16}%
+\contentsline {definition}{{Definition}{3.{17}}{}}{27}{definition.3.17}%
+\contentsline {example}{{Example}{3.{18}}{X3C}}{28}{example.3.18}%
+\contentsline {lemma}{{Lemma}{4.{1}}{}}{29}{lemma.4.1}%
+\contentsline {proof}{{\proofname }{25}{}}{29}{proof.25}%
+\contentsline {algorithm}{{Algorithm}{4.{2}}{Greedy base algorithm}}{29}{algorithm.4.2}%
+\contentsline {lemma}{{Lemma}{4.{3}}{Lemma 2.1 in \cite {blaha1992}}}{30}{lemma.4.3}%
+\contentsline {proof}{{\proofname }{26}{}}{30}{proof.26}%
+\contentsline {lemma}{{Lemma}{4.{4}}{}}{30}{lemma.4.4}%
+\contentsline {proof}{{\proofname }{27}{}}{30}{proof.27}%
+\contentsline {theorem}{{Theorem}{4.{5}}{Blaha, 1992}}{31}{theorem.4.5}%
+\contentsline {proof}{{\proofname }{28}{}}{31}{proof.28}%
+\contentsline {remark}{{Remark}{4.{6}}{}}{31}{remark.4.6}%
+\contentsline {example}{{Example}{4.{7}}{}}{31}{example.4.7}%
+\contentsline {example}{{Example}{4.{8}}{}}{32}{example.4.8}%
+\contentsline {lemma}{{Lemma}{4.{9}}{}}{32}{lemma.4.9}%
+\contentsline {proof}{{\proofname }{29}{}}{33}{proof.29}%
+\contentsline {lemma}{{Lemma}{4.{10}}{Lemma 2.2 in \cite {blaha1992}}}{33}{lemma.4.10}%
+\contentsline {proof}{{\proofname }{30}{}}{33}{proof.30}%
+\contentsline {lemma}{{Lemma}{4.{11}}{Lemma 2.3 in \cite {blaha1992}}}{33}{lemma.4.11}%
+\contentsline {proof}{{\proofname }{31}{}}{33}{proof.31}%
+\contentsline {theorem}{{Theorem}{4.{12}}{Blaha, 1992}}{33}{theorem.4.12}%
+\contentsline {proof}{{\proofname }{32}{}}{33}{proof.32}%
+\contentsline {remark}{{Remark}{4.{13}}{}}{34}{remark.4.13}%
+\contentsline {lemma}{{Lemma}{4.{14}}{Lemma 4.2 in \cite {blaha1992}}}{34}{lemma.4.14}%
+\contentsline {lemma}{{Lemma}{4.{15}}{Lemma 4.3 in \cite {blaha1992}}}{34}{lemma.4.15}%
+\contentsline {proof}{{\proofname }{33}{}}{34}{proof.33}%
+\contentsline {theorem}{{Theorem}{4.{16}}{Blaha, 1992}}{34}{theorem.4.16}%
+\contentsline {theorem}{{Theorem}{4.{17}}{Blaha, 1992}}{35}{theorem.4.17}%
+\contentsline {definition}{{Definition}{5.{1}}{}}{36}{definition.5.1}%
+\contentsline {definition}{{Definition}{5.{2}}{}}{36}{definition.5.2}%
+\contentsline {definition}{{Definition}{5.{3}}{}}{37}{definition.5.3}%
+\contentsline {example}{{Example}{5.{4}}{}}{37}{example.5.4}%
+\contentsline {theorem}{{Theorem}{5.{5}}{Jordan-H\"older}}{37}{theorem.5.5}%
+\contentsline {corollary}{{Corollary}{5.{6}}{Fundamental theorem of arithmetic}}{37}{corollary.5.6}%
+\contentsline {proof}{{\proofname }{34}{}}{37}{proof.34}%
+\contentsline {theorem}{{Theorem}{5.{7}}{Classification of finite simple groups}}{38}{theorem.5.7}%
+\contentsline {definition}{{Definition}{5.{8}}{}}{38}{definition.5.8}%
+\contentsline {example}{{Example}{5.{9}}{}}{38}{example.5.9}%
+\contentsline {definition}{{Definition}{5.{10}}{}}{39}{definition.5.10}%
+\contentsline {lemma}{{Lemma}{5.{11}}{}}{39}{lemma.5.11}%
+\contentsline {proof}{{\proofname }{35}{}}{39}{proof.35}%
+\contentsline {definition}{{Definition}{5.{12}}{}}{39}{definition.5.12}%
+\contentsline {definition}{{Definition}{5.{13}}{}}{39}{definition.5.13}%
+\contentsline {definition}{{Definition}{5.{14}}{}}{40}{definition.5.14}%
+\contentsline {proposition}{{Proposition}{5.{15}}{}}{40}{proposition.5.15}%
+\contentsline {proof}{{\proofname }{36}{}}{40}{proof.36}%
+\contentsline {lemma}{{Lemma}{5.{16}}{}}{40}{lemma.5.16}%
+\contentsline {proof}{{\proofname }{37}{}}{40}{proof.37}%
+\contentsline {example}{{Example}{5.{17}}{}}{41}{example.5.17}%
+\contentsline {definition}{{Definition}{5.{18}}{}}{41}{definition.5.18}%
+\contentsline {example}{{Example}{5.{19}}{}}{42}{example.5.19}%
+\contentsline {proposition}{{Proposition}{5.{20}}{}}{42}{proposition.5.20}%
+\contentsline {definition}{{Definition}{5.{21}}{}}{42}{definition.5.21}%
+\contentsline {definition}{{Definition}{5.{22}}{}}{43}{definition.5.22}%
+\contentsline {definition}{{Definition}{5.{23}}{}}{43}{definition.5.23}%
+\contentsline {definition}{{Definition}{5.{24}}{}}{43}{definition.5.24}%
+\contentsline {lemma}{{Lemma}{5.{25}}{}}{43}{lemma.5.25}%
+\contentsline {proof}{{\proofname }{38}{}}{43}{proof.38}%
+\contentsline {proposition}{{Proposition}{5.{26}}{}}{44}{proposition.5.26}%
+\contentsline {proof}{{\proofname }{39}{}}{44}{proof.39}%
+\contentsline {proposition}{{Proposition}{5.{27}}{}}{44}{proposition.5.27}%
+\contentsline {proof}{{\proofname }{40}{}}{44}{proof.40}%
+\contentsline {proposition}{{Proposition}{5.{28}}{}}{45}{proposition.5.28}%
+\contentsline {proof}{{\proofname }{41}{}}{45}{proof.41}%
+\contentsline {definition}{{Definition}{5.{29}}{}}{46}{definition.5.29}%
+\contentsline {definition}{{Definition}{5.{30}}{}}{46}{definition.5.30}%
+\contentsline {theorem}{{Theorem}{5.{31}}{}}{46}{theorem.5.31}%
+\contentsline {definition}{{Definition}{5.{32}}{}}{46}{definition.5.32}%
+\contentsline {example}{{Example}{5.{33}}{}}{47}{example.5.33}%
+\contentsline {lemma}{{Lemma}{5.{34}}{}}{47}{lemma.5.34}%
+\contentsline {proof}{{\proofname }{42}{}}{47}{proof.42}%
+\contentsline {lemma}{{Lemma}{5.{35}}{}}{47}{lemma.5.35}%
+\contentsline {proof}{{\proofname }{43}{}}{47}{proof.43}%
+\contentsline {proposition}{{Proposition}{5.{36}}{}}{47}{proposition.5.36}%
+\contentsline {proof}{{\proofname }{44}{}}{47}{proof.44}%
+\contentsline {proposition}{{Proposition}{5.{37}}{}}{48}{proposition.5.37}%
+\contentsline {proof}{{\proofname }{45}{}}{48}{proof.45}%
+\contentsline {theorem}{{Theorem}{5.{38}}{}}{48}{theorem.5.38}%
+\contentsline {theorem}{{Theorem}{5.{39}}{O'Nan-Scott}}{48}{theorem.5.39}%
+\contentsline {definition}{{Definition}{6.{1}}{}}{50}{definition.6.1}%
+\contentsline {theorem}{{Theorem}{6.{2}}{Liebeck, 1984}}{50}{theorem.6.2}%
+\contentsline {theorem}{{Theorem}{6.{3}}{Moscatiello and Roney-Dougal, 2021}}{51}{theorem.6.3}%
+\contentsline {theorem}{{Theorem}{6.{4}}{Moscatiello and Roney-Dougal, 2021}}{51}{theorem.6.4}%
+\contentsline {question}{{Question}{6.{5}}{Moscatiello and Roney-Dougal, 2021}}{52}{question.6.5}%
+\contentsline {theorem}{{Theorem}{6.{6}}{}}{52}{theorem.6.6}%
+\contentsline {proof}{{Proof of main theorem}{46}{}}{52}{proof.46}%
+\contentsline {conjecture}{{Conjecture}{6.{7}}{}}{54}{conjecture.6.7}%

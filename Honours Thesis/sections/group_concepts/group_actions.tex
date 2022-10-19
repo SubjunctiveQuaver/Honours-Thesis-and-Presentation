@@ -343,7 +343,27 @@ If a transitive $G$-action on $\Omega$ has a block system $\Sigma = \{\Delta^g :
     If $\Sigma$ is maximal, then suppose $\Gamma$ is a nontrivial block under the action on $\Sigma$. Then $\Delta_\Gamma$ is a block under the action on $\Omega$ that properly contains $\Delta$, and by maximality of $\Delta$ with respect to inclusion (of blocks), we have $\Delta_\Gamma = \Omega$, so that $\Gamma = \Sigma$. Thus there are no nontrivial blocks under the action on $\Sigma$, and $G$ acts primitively on $\Sigma$.
 \end{proof}
 
-Analysing the kernel of this action on blocks tells us the elements of $G$ that fix every $\Omega$-block $\Delta \in \Sigma$ setwise. By a similar argument to \autoref{prop:kernel_action_stabiliser}, we see that it is the intersection of the \textit{setwise stabilisers} $G_{\Delta}$ for $\Delta \in \Sigma$. This action on blocks is useful in analysing permutation groups such as the Rubik's group $G$ of degree 48 and its action on the Rubik's cube, where we label each small cube (except the centres) by a number from 1 to 48. This is done in \texttt{GAP} in \cite{schonert_GAP}. Now, the Rubik's group has two orbits (representing edge and corner stickers) under its natural action, so $G$ acts transitively on the 24 corner stickers. Then the 3 stickers in each corner form a maximal block, so $G$ acts primitively on the 8 corners themselves under the action on blocks; it can be shown that the image of this action is the symmetric group $\Sym(8)$ of degree 8, and the kernel is isomorphic to $(\Z/3\Z)^7$ \cite{schonert_GAP}.
+Analysing the kernel of this action on blocks tells us the elements of $G$ that fix every $\Omega$-block $\Delta \in \Sigma$ setwise. By a similar argument to \autoref{prop:kernel_action_stabiliser}, we see that it is the intersection of the \textit{setwise stabilisers} $G_{\Delta}$ for $\Delta \in \Sigma$.
+
+\begin{example}[Rubik's group]\label{eg:rubiks_group}
+    This action on blocks is useful in analysing permutation groups such as the Rubik's group $G$ of degree 48 and its action on the Rubik's cube, where we label each small cube (except the centres) by a number from 1 to 48, as below.
+    
+    \begin{center}
+        \includegraphics{sections/group_concepts/rubiks_cube_net.tikz}
+    \end{center}
+
+    We define $G = \langle U,L,F,R,B,D \rangle$ where
+    \begin{itemize}
+        \item $U = ( 1, 3, 8, 6)( 2, 5, 7, 4)( 9,33,25,17)(10,34,26,18)(11,35,27,19)$,
+        \item $L = ( 9,11,16,14)(10,13,15,12)( 1,17,41,40)( 4,20,44,37)( 6,22,46,35)$,
+        \item $F = (17,19,24,22)(18,21,23,20)( 6,25,43,16)( 7,28,42,13)( 8,30,41,11)$,
+        \item $R = (25,27,32,30)(26,29,31,28)( 3,38,43,19)( 5,36,45,21)( 8,33,48,24)$,
+        \item $B = (33,35,40,38)(34,37,39,36)( 3, 9,46,32)( 2,12,47,29)( 1,14,48,27)$, and
+        \item $D = (41,43,48,46)(42,45,47,44)(14,22,30,38)(15,23,31,39)(16,24,32,40)$.
+    \end{itemize}
+    
+    Analysis on $G$ is done in \texttt{GAP} in \cite{schonert_GAP}. Now, the Rubik's group has two orbits (representing edge and corner stickers) under its natural action, so $G$ acts transitively on the 24 corner stickers. Then the 3 stickers in each corner form a maximal block, so $G$ acts primitively on the 8 corners themselves under the action on blocks; it can be shown that the image of this action is the symmetric group $\Sym(8)$ of degree 8, and the kernel is isomorphic to $(\Z/3\Z)^7$ \cite{schonert_GAP}.
+\end{example}
 
 By saying $G^\Omega$ is transitive, regular or primitive, we mean that the action of $G$ on $\Omega$ is transitive, regular or primitive. When $G \leq \Sym(\Omega)$ \added{3}{is a permutation group}, if we consider the natural action of $G$ on $\Omega$ as defined in \autoref{eg:natural_action}, we simply say that $G$ is \textbf{transitive}, \textbf{regular} or \textbf{primitive} (when the action is). Thus, by \autoref{lem:action_on_blocks_primitive_if_maximal}, if $G$ acts transitively on $\Omega$ and $\Sigma$ is a maximal system of imprimitivity, then the image of the action is a primitive (permutation) group.
 
