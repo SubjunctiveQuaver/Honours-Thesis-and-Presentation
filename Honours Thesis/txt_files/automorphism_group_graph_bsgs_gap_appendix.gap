@@ -1,9 +1,5 @@
 gap> G := Group([ (1,6)(2,7)(3,8)(4,5),(1,2),(1,3),(2,3),(6,7),(6,8),(7,8) ]); # generators
 Group([ (1,6)(2,7)(3,8)(4,5), (1,2), (1,3), (2,3), (6,7), (6,8), (7,8) ])
-gap> MinimalGeneratingSet( G );
-[ (7,8), (1,7,2,8,3,6)(4,5) ]
-gap> B := [ 4, 1, 2, 6, 7];
-[ 4, 1, 2, 6, 7 ]
 gap> SC := StabChain( G, B ); # stabiliser chain of G with respect to base B
 <stabilizer chain record, Base [ 4, 1, 2, 6, 7 ], Orbit length 2, Size: 72>
 gap> StrongGeneratorsStabChain( SC ); # get strong generating set for G

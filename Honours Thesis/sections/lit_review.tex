@@ -11,10 +11,20 @@ Improvements to these bounds have been made for primitive groups with certain ad
     $$\Alt(m)^r \unlhd G \leq \Sym(m) \wr \Sym(r),$$
     where $\Sym(m)$ \hyperref[eg:product_action_Sm_subsets]{acts on $k$-element subsets} of $\{1,\dotsc,m\}$ for some $k$, and the \hyperref[def:wreath_product]{wreath product} has the \hyperref[def:product_action]{product action} of degree $n = \binom{m}{k}^r$ if $r > 1$.
 
-    (Note that here we mean that $G$ contains a subgroup that is isomorphic to $\Alt(m)^r$, and $G$ is isomorphic to a subgroup of the wreath product $\Sym(m) \wr \Sym(r)$. Such convention is common in the literature, where inclusion is up to isomorphism.)
+    (Note that here we mean that $G$ contains a subgroup that is permutation isomorphic to $\Alt(m)^r$, and $G$ is permutation isomorphic to a subgroup of the wreath product $\Sym(m) \wr \Sym(r)$ with the product action. Such convention is common in permutation group literature, where inclusion is up to permutation isomorphism.)
 \end{definition}
 
-By this definition, $\Alt(n)$ and $\Sym(n)$ with their natural actions are large base, where we choose $m = n$ and $r = 1$; recall that $\Sym(n) \wr \Sym(1) \cong \Sym(n)$, and $\Alt(n) \unlhd \Sym(n)$. Thus, the non-large base primitive groups exclude $\Alt(n)$ and $\Sym(n)$, and there is no conflict with Bochert's result in \cite{bochert1889}. The following result by Liebeck is found in \cite{liebeck1984}.
+By this definition, $\Alt(n)$ and $\Sym(n)$ with their natural actions are large base, where we choose $m = n$ and $r = 1$; recall that $\Sym(n) \wr \Sym(1) \cong \Sym(n)$, and $\Alt(n) \unlhd \Sym(n)$. Thus, the non-large base primitive groups exclude $\Alt(n)$ and $\Sym(n)$, and there is no conflict with Bochert's result in \cite{bochert1889}.
+
+\begin{example}\label{eg:automorphism_group_graph_large_base}
+    Recall that in \autoref{eg:automorphism_group_graph_wreath}, we showed that $\Aut(\Gamma) \cong \Sym(3) \wr C_2$. TODO
+\end{example}
+
+\begin{example}\label{eg:rubiks_group_large_base}
+    Recall that in \autoref{eg:rubiks_cube_wreath}, we showed that the action of the Rubik's group on the corner stickers yields a homomorphism into a permutation group $\tilde G$ of degree 24, that is permutation isomorphic to $\Sym(8) \ltimes 3^7 \leq C_3 \wr \Sym(8)$ (with the imprimitive action). TODO
+\end{example}
+
+The following result by Liebeck is found in \cite{liebeck1984}, which is an improvement on Bochert's result.
 
 \begin{theorem}[Liebeck, 1984]\label{thm:liebeck1984}
     Let $G$ be a primitive group of degree $n$. Then one of the following holds:
@@ -24,7 +34,7 @@ By this definition, $\Alt(n)$ and $\Sym(n)$ with their natural actions are large
     \end{enumerate}
 \end{theorem}
 
-The result was proven in context improving lower bounds on $\mu(G)$, the \textbf{minimal degree} of $G \leq \Sym(\Omega)$, which is the smallest number of points moved by any non-identity element in $G$, i.e.
+Thus, if a primitive group is large base, then it has a ``large base'' in the sense that the minimal base size satisfies $b(G) \geq 9\log n$. The result was proven in context improving lower bounds on $\mu(G)$, the \textbf{minimal degree} of $G \leq \Sym(\Omega)$, which is the smallest number of points moved by any non-identity element in $G$, i.e.
 $$\mu(G) = \min_{g \in G \setminus \{1\}}|\{\alpha \in \Omega : \alpha^g \neq \alpha\}|.$$
 For example, $\mu(\Alt(n)) = 3$ for $n \geq 3$, since $\Alt(n)$ contains 3-cycles (which move 3 points) but no transpositions (which move 2 points). From the relation that $b(G)\mu(G) \geq n$ for any transitive group $G$ of degree $n$ (see \cite{cameron1984} for proof), Liebeck concludes that either $G$ is large base, or that $\mu(G) > n/(9 \log n)$. The best result that was previously available, due to Babai in \cite{babai1981}, was that $\mu(G) > (1/2)(\sqrt{n} - 1)$ as long as $\Alt(n) \not\leq G$ (which would give, by properties of \hyperref[def:big_O_notation]{big-O},
 $$b(G) < 2\sqrt{n}\left(1 - \frac{1}{\sqrt{n}}\right)^{-1} = 2\sqrt{n}\left(1 + O\left(\frac{1}{\sqrt{n}}\right)\right) = 2\sqrt{n} + O(1) = O(\sqrt{n}),$$

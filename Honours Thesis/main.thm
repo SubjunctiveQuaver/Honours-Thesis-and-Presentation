@@ -54,11 +54,11 @@
 \contentsline {example}{{Example}{2.{43}}{}}{13}{example.2.43}%
 \contentsline {proposition}{{Proposition}{2.{44}}{}}{13}{proposition.2.44}%
 \contentsline {proof}{{\proofname }{12}{}}{13}{proof.12}%
-\contentsline {proposition}{{Proposition}{2.{45}}{}}{13}{proposition.2.45}%
+\contentsline {proposition}{{Proposition}{2.{45}}{}}{14}{proposition.2.45}%
 \contentsline {proposition}{{Proposition}{2.{46}}{Theorem 1.6A in \cite {dixon_mortimer_perm_groups1996}}}{14}{proposition.2.46}%
 \contentsline {proof}{{\proofname }{13}{}}{14}{proof.13}%
 \contentsline {definition}{{Definition}{2.{47}}{}}{14}{definition.2.47}%
-\contentsline {example}{{Example}{2.{48}}{}}{14}{example.2.48}%
+\contentsline {example}{{Example}{2.{48}}{}}{15}{example.2.48}%
 \contentsline {lemma}{{Lemma}{2.{49}}{}}{15}{lemma.2.49}%
 \contentsline {proof}{{\proofname }{14}{}}{15}{proof.14}%
 \contentsline {definition}{{Definition}{2.{50}}{}}{15}{definition.2.50}%
@@ -78,16 +78,16 @@
 \contentsline {proposition}{{Proposition}{2.{61}}{}}{17}{proposition.2.61}%
 \contentsline {proof}{{\proofname }{18}{}}{17}{proof.18}%
 \contentsline {lemma}{{Lemma}{2.{62}}{}}{17}{lemma.2.62}%
-\contentsline {proof}{{\proofname }{19}{}}{17}{proof.19}%
+\contentsline {proof}{{\proofname }{19}{}}{18}{proof.19}%
 \contentsline {lemma}{{Lemma}{2.{63}}{}}{18}{lemma.2.63}%
 \contentsline {proof}{{\proofname }{20}{}}{18}{proof.20}%
 \contentsline {example}{{Example}{2.{64}}{}}{18}{example.2.64}%
-\contentsline {example}{{Example}{2.{65}}{}}{18}{example.2.65}%
+\contentsline {example}{{Example}{2.{65}}{}}{19}{example.2.65}%
 \contentsline {algorithm}{{Algorithm}{2.{66}}{random element}}{19}{algorithm.2.66}%
 \contentsline {example}{{Example}{2.{67}}{}}{20}{example.2.67}%
 \contentsline {algorithm}{{Algorithm}{2.{68}}{membership test}}{20}{algorithm.2.68}%
 \contentsline {proof}{{Proof of correctness}{21}{}}{20}{proof.21}%
-\contentsline {example}{{Example}{2.{69}}{}}{20}{example.2.69}%
+\contentsline {example}{{Example}{2.{69}}{}}{21}{example.2.69}%
 \contentsline {example}{{Example}{2.{70}}{}}{21}{example.2.70}%
 \contentsline {algorithm}{{Algorithm}{2.{71}}{orbit-stabiliser}}{22}{algorithm.2.71}%
 \contentsline {proof}{{\proofname }{22}{}}{23}{proof.22}%
@@ -171,38 +171,41 @@
 \contentsline {example}{{Example}{5.{19}}{}}{43}{example.5.19}%
 \contentsline {proposition}{{Proposition}{5.{20}}{}}{43}{proposition.5.20}%
 \contentsline {example}{{Example}{5.{21}}{}}{43}{example.5.21}%
-\contentsline {definition}{{Definition}{5.{22}}{}}{44}{definition.5.22}%
+\contentsline {example}{{Example}{5.{22}}{}}{44}{example.5.22}%
 \contentsline {definition}{{Definition}{5.{23}}{}}{44}{definition.5.23}%
-\contentsline {definition}{{Definition}{5.{24}}{}}{44}{definition.5.24}%
-\contentsline {definition}{{Definition}{5.{25}}{}}{44}{definition.5.25}%
-\contentsline {lemma}{{Lemma}{5.{26}}{}}{44}{lemma.5.26}%
-\contentsline {proof}{{\proofname }{39}{}}{44}{proof.39}%
-\contentsline {proposition}{{Proposition}{5.{27}}{}}{45}{proposition.5.27}%
-\contentsline {proof}{{\proofname }{40}{}}{45}{proof.40}%
-\contentsline {proposition}{{Proposition}{5.{28}}{}}{45}{proposition.5.28}%
-\contentsline {proof}{{\proofname }{41}{}}{45}{proof.41}%
+\contentsline {definition}{{Definition}{5.{24}}{}}{45}{definition.5.24}%
+\contentsline {definition}{{Definition}{5.{25}}{}}{45}{definition.5.25}%
+\contentsline {definition}{{Definition}{5.{26}}{}}{45}{definition.5.26}%
+\contentsline {lemma}{{Lemma}{5.{27}}{}}{45}{lemma.5.27}%
+\contentsline {proof}{{\proofname }{39}{}}{45}{proof.39}%
+\contentsline {proposition}{{Proposition}{5.{28}}{}}{46}{proposition.5.28}%
+\contentsline {proof}{{\proofname }{40}{}}{46}{proof.40}%
 \contentsline {proposition}{{Proposition}{5.{29}}{}}{46}{proposition.5.29}%
-\contentsline {proof}{{\proofname }{42}{}}{46}{proof.42}%
-\contentsline {definition}{{Definition}{5.{30}}{}}{47}{definition.5.30}%
-\contentsline {definition}{{Definition}{5.{31}}{}}{47}{definition.5.31}%
-\contentsline {theorem}{{Theorem}{5.{32}}{}}{47}{theorem.5.32}%
-\contentsline {definition}{{Definition}{5.{33}}{}}{48}{definition.5.33}%
-\contentsline {example}{{Example}{5.{34}}{}}{48}{example.5.34}%
-\contentsline {lemma}{{Lemma}{5.{35}}{}}{48}{lemma.5.35}%
-\contentsline {proof}{{\proofname }{43}{}}{48}{proof.43}%
-\contentsline {lemma}{{Lemma}{5.{36}}{}}{48}{lemma.5.36}%
-\contentsline {proof}{{\proofname }{44}{}}{48}{proof.44}%
-\contentsline {proposition}{{Proposition}{5.{37}}{}}{49}{proposition.5.37}%
-\contentsline {proof}{{\proofname }{45}{}}{49}{proof.45}%
+\contentsline {proof}{{\proofname }{41}{}}{46}{proof.41}%
+\contentsline {proposition}{{Proposition}{5.{30}}{}}{47}{proposition.5.30}%
+\contentsline {proof}{{\proofname }{42}{}}{47}{proof.42}%
+\contentsline {definition}{{Definition}{5.{31}}{}}{48}{definition.5.31}%
+\contentsline {definition}{{Definition}{5.{32}}{}}{48}{definition.5.32}%
+\contentsline {theorem}{{Theorem}{5.{33}}{}}{48}{theorem.5.33}%
+\contentsline {definition}{{Definition}{5.{34}}{}}{48}{definition.5.34}%
+\contentsline {example}{{Example}{5.{35}}{}}{49}{example.5.35}%
+\contentsline {lemma}{{Lemma}{5.{36}}{}}{49}{lemma.5.36}%
+\contentsline {proof}{{\proofname }{43}{}}{49}{proof.43}%
+\contentsline {lemma}{{Lemma}{5.{37}}{}}{49}{lemma.5.37}%
+\contentsline {proof}{{\proofname }{44}{}}{49}{proof.44}%
 \contentsline {proposition}{{Proposition}{5.{38}}{}}{49}{proposition.5.38}%
-\contentsline {proof}{{\proofname }{46}{}}{49}{proof.46}%
-\contentsline {theorem}{{Theorem}{5.{39}}{}}{49}{theorem.5.39}%
-\contentsline {theorem}{{Theorem}{5.{40}}{O'Nan-Scott}}{49}{theorem.5.40}%
-\contentsline {definition}{{Definition}{6.{1}}{}}{51}{definition.6.1}%
-\contentsline {theorem}{{Theorem}{6.{2}}{Liebeck, 1984}}{51}{theorem.6.2}%
-\contentsline {theorem}{{Theorem}{6.{3}}{Moscatiello and Roney-Dougal, 2021}}{52}{theorem.6.3}%
-\contentsline {theorem}{{Theorem}{6.{4}}{Moscatiello and Roney-Dougal, 2021}}{52}{theorem.6.4}%
-\contentsline {question}{{Question}{6.{5}}{Moscatiello and Roney-Dougal, 2021}}{53}{question.6.5}%
-\contentsline {theorem}{{Theorem}{6.{6}}{}}{53}{theorem.6.6}%
-\contentsline {proof}{{Proof of main theorem}{47}{}}{53}{proof.47}%
-\contentsline {conjecture}{{Conjecture}{6.{7}}{}}{55}{conjecture.6.7}%
+\contentsline {proof}{{\proofname }{45}{}}{49}{proof.45}%
+\contentsline {proposition}{{Proposition}{5.{39}}{}}{50}{proposition.5.39}%
+\contentsline {proof}{{\proofname }{46}{}}{50}{proof.46}%
+\contentsline {theorem}{{Theorem}{5.{40}}{}}{50}{theorem.5.40}%
+\contentsline {theorem}{{Theorem}{5.{41}}{O'Nan-Scott}}{50}{theorem.5.41}%
+\contentsline {definition}{{Definition}{6.{1}}{}}{52}{definition.6.1}%
+\contentsline {example}{{Example}{6.{2}}{}}{52}{example.6.2}%
+\contentsline {example}{{Example}{6.{3}}{}}{52}{example.6.3}%
+\contentsline {theorem}{{Theorem}{6.{4}}{Liebeck, 1984}}{53}{theorem.6.4}%
+\contentsline {theorem}{{Theorem}{6.{5}}{Moscatiello and Roney-Dougal, 2021}}{53}{theorem.6.5}%
+\contentsline {theorem}{{Theorem}{6.{6}}{Moscatiello and Roney-Dougal, 2021}}{54}{theorem.6.6}%
+\contentsline {question}{{Question}{6.{7}}{Moscatiello and Roney-Dougal, 2021}}{54}{question.6.7}%
+\contentsline {theorem}{{Theorem}{6.{8}}{}}{54}{theorem.6.8}%
+\contentsline {proof}{{Proof of main theorem}{47}{}}{55}{proof.47}%
+\contentsline {conjecture}{{Conjecture}{6.{9}}{}}{56}{conjecture.6.9}%

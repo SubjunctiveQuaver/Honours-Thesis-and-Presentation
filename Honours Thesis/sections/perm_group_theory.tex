@@ -255,12 +255,44 @@ In the case that $\Omega = [n]$, we may identify $\Gamma^\Omega$ with $\Gamma^n$
         \end{enumerate}
     \end{proposition}}
 
-We conclude with an application of wreath products to the Rubik's group $G \leq \Sym(48)$ from \autoref{eg:rubiks_group}.
+We conclude with two applications of wreath products to the automorphism group of the graph $\Gamma$ from \autoref{eg:automorphism_group_graph_bsgs} and Rubik's group $G \leq \Sym(48)$ from \autoref{eg:rubiks_group}.
+
+\begin{example}\label{eg:automorphism_group_graph_wreath}
+    Consider the graph $\Gamma$ from \autoref{eg:automorphism_group_graph_bsgs}, shown below.
+
+    \begin{center}
+        \begin{tikzpicture}
+            \GraphInit[vstyle=Welsh]
+            \tikzset{VertexStyle/.append style={minimum size=8pt}}
+            \Vertex[x=-1, y=1, Lpos=180]{1}
+            \Vertex[x=-1, y=0, Lpos=180]{2}
+            \Vertex[x=-1, y=-1, Lpos=180]{3}
+            \Vertex[x=0, y=0, Lpos=-90]{4}
+            \Vertex[x=1, y=0, Lpos=-90]{5}
+            \Vertex[x=2, y=1]{6}
+            \Vertex[x=2, y=0]{7}
+            \Vertex[x=2, y=-1]{8}
+            \Edges(1,4,5,6)
+            \Edges(2,4,3)
+            \Edges(7,5,8)
+        \end{tikzpicture}
+    \end{center}
+
+    Recall that $\Gamma$ has automorphism group
+    $$\Aut(\Gamma) = \langle (1,6)(2,7)(3,8)(4,5), (1,2), (1,3), (2,3), (6,7), (6,8), (7,8) \rangle.$$
+    Using \texttt{GAP}, we perform the following computations:
+
+    \lstinputlisting{txt_files/automorphism_group_graph_wreath.gap}
+
+    Thus, we see that $\Aut(\Gamma) \cong C_2 \ltimes \Sym(3)^2 = \Sym(3) \wr C_2$, where we consider $C_2 = \langle(1,2)\rangle \leq \Sym(2)$. (This is not a permutation isomorphism, since $\Sym(3) \wr C_2$ has degree 6; it is instead the transitive action of $\Aut(\Gamma)$ on the leaf vertices $\{1,2,3,6,7,8\}$.) Thus, we may permute the two ``sides'' of the graph (representing the $C_2$ in $\Sym(3) \wr C_2$), and within each ``side'', freely permute the leaf vertices in $\{1,2,3\}$ or $\{6,7,8\}$ (representing the $\Sym(3)$ in $\Sym(3) \wr C_2$).
+\end{example}
 
 \begin{example}\label{eg:rubiks_cube_wreath}
     Recall that from \autoref{eg:rubiks_group}, the Rubik's group $G$ acts transitively on the corner stickers $1^G$ via $\varphi$, and primitively on the corners $\Sigma$ of the Rubik's cube under the action on blocks. Let $\tilde G$ denote the image of the transitive $G$-action on $1^G$; it is a permutation group of degree $24$ with order $|\tilde G| = 88\,179\,840 = 8! \cdot 3^7$, and represents possible Rubik's cube moves if we ignore edge stickers. Then we have a surjective homomorphism $G/\ker\varphi \cong \tilde G \to \Sym(\Sigma)$, which is a primitive action (compare this with the quotient action from \autoref{eg:quotient_action}).
-    
-    In \cite{schonert_GAP}, it is noted that the kernel of this action is isomorphic to the elementary abelian group $3^7$. In fact, $\tilde G \cong \Sym(8) \ltimes 3^7$, and moreover, $\tilde G$ is a subgroup of $C_3 \wr \Sym(8) \cong \Sym(8) \ltimes 3^8$ of index 3; this shows we do not have complete freedom in turning the 8 corners --- if we turn one corner clockwise, we must turn another anticlockwise \cite{schonert_GAP}.
+
+    In \cite{schonert_GAP}, it is noted that the kernel of this action is isomorphic to the elementary abelian group $3^7$. In fact, $\tilde G \cong \Sym(8) \ltimes 3^7$, and moreover, $\tilde G$ is a subgroup of the wreath product $C_3 \wr \Sym(8) \cong \Sym(8) \ltimes 3^8$ (with the imprimitive action of degree $8 \cdot 3 = 24$) of index 3; this shows we do not have complete freedom in turning the 8 corners --- if we turn one corner clockwise, we must turn another anticlockwise \cite{schonert_GAP}.
+
+    Similarly, it can be shown that $G$ acts transitively on edge stickers $2^G$ via $\hat\varphi$ and primitively on the edges (which are maximal blocks) \cite{schonert_GAP}. The transitive action on edge stickers yields a homomorphism into a group $\hat G$ of order $980\,995\,276\,800 = 12! \cdot 2^{11} \approx 9.8 \cdot 10^{11}$ that is permutation isomorphic to $\Sym(11) \ltimes 2^{11}$ which is a subgroup of $C_2 \wr \Sym(12)$. So if an edge is flipped, then another edge is flipped. Also, we can see that $G$ is a subdirect product of its transitive constituents $\tilde G$ and $\hat G$ (see Cameron \cite{cameron_permutation_groups1999}), i.e. a subgroup of $\tilde G \times \hat G$, which is a group of order $2|G|$; the index 2 of $G$ in this direct product shows that we cannot operate of corners and edges completely independently --- if we exchange a pair of corners, we must exchange a pair of edges \cite{schonert_GAP}.
 \end{example}
 
 \section{Matrix groups and affine groups}
