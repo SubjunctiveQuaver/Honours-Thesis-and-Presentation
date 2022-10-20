@@ -1,0 +1,96 @@
+\subsection{Bases and stabiliser chains}
+
+\begin{slide}
+    \begin{definition}[Base, stabiliser chain]
+        \vspace{0pt}
+        If $G \leq \Sym(n)$, distinct elts $B = [\beta_1,\dotsc,\beta_r] \subseteq [n]$ is \textbf{base} for $G$ if $G_{\beta_1,\dotsc,\beta_r} = 1$. (\textit{Recall:} $G_{\beta_1,\dotsc,\beta_r} = \{g \in G : \beta_1^g = \beta_1,\dotsc,\beta_r^g = \beta_r\}$.) \pause
+
+        Corresponding \textbf{stabiliser chain} is
+        \[G = G^0 \geq G^1 \geq \dotsb \geq G^r = 1\]
+        where $G^i = G^{i-1}_{\beta_i} = G_{\beta_1,\dotsc,\beta_i}$.
+    \end{definition} \pause
+
+    Base $B$ contains elts of $[n]$ such that only $1 \in G$ fixes every $\beta_i \in B$. (Short base desirable: how to compute \textbf{min base} of length $b(G)$?) \pause
+
+    \begin{theorem}[Blaha, 1992]
+        \vspace{0pt}
+        Problem of finding minimum base for $G$ is NP-complete, even for cyclic groups (if $\mathrm{P} \neq \mathrm{NP}$, then no polynomial time algorithm).
+    \end{theorem}
+\end{slide}
+
+\begin{slide}
+    \begin{example}[Rubik's group]
+        \vspace{0pt}
+        Using \texttt{BaseOfGroup} cmd in \texttt{GAP}, base of $\mathcal{G}$ of size 18 is
+        % \lstinputlisting{code/rubiks_group_base.gap} \pause
+        $$B = [ 1, 3, 6, 8, 2, 4, 5, 7, 12, 13, 14, 15, 16, 21, 23, 24, 29, 31 ].$$ \pause
+        Contains: 7 corner stickers (from 7 of 8 corners), 11 edge stickers (from 11 of 12 edges).
+    \end{example}
+
+    \begin{theorem}
+        \vspace{0pt}
+        For Rubik's group $\RC$, $b(\RC) = 18$.
+    \end{theorem}
+\end{slide}
+
+\begin{slide}
+    Stabiliser chain can be implemented computationally; useful in algorithms.
+
+    Let $G = \langle X \rangle \leq \Sym(n)$ have base $B$ and stabiliser chain
+    $$G = G^0 \geq G^1 \geq \dotsb \geq G^r = 1.$$
+
+    \begin{alertblock}{Problem (random element generation)}
+        \vspace{0pt}
+        Generate uniformly random element of $G$.
+
+        (\textit{Alternative:} random product of generators in $X$; distribution?)
+    \end{alertblock}
+
+    \begin{alertblock}{Problem (membership testing)}
+        \vspace{0pt}
+        For $\sigma \in \Sym(n)$, test if $\sigma \in G$.
+
+        (\textit{Application}: check if restickering of Rubik's cube is valid state.)
+    \end{alertblock}
+\end{slide}
+
+\subsection{Greedy bases}
+
+\begin{slide}
+    % \begin{example}[Rubik's group]
+    %     \vspace{0pt}
+    %     Using \texttt{GAP}:
+
+    %     \lstinputlisting{code/rubiks_group_base.gap} \pause
+
+    %     Base of $\mathcal{G}$ of size 18 is
+    %     $$B = [ 1, 3, 6, 8, 2, 4, 5, 7, 12, 13, 14, 15, 16, 21, 23, 24, 29, 31 ].$$ \pause
+    %     If move $\sigma \in \mathcal{G}$ fixes every $\beta_i \in B$ then $\sigma = 1$ is empty move.
+    % \end{example}
+
+
+\end{slide}
+
+\subsection{What is the size of the Rubik's group?}
+
+\begin{slide}
+    \begin{theorem}[size of perm group]
+        \vspace{0pt}
+        If $B = [\beta_1,\dotsc,\beta_r]$ is base for $G \leq \Sym(n)$ with stabiliser chain $G = G^0 \geq G^1 \geq \dotsb \geq G^r = 1$, then
+        $$|G| = |\beta_1^{G^0}||\beta_2^{G^1}| \dotsb |\beta_r^{G^{r-1}}|.$$
+    \end{theorem}
+
+    \onslide<2->
+    Orbits and stabilisers can be easily computed (e.g. using \texttt{GAP}).
+
+    \onslide<3->{Implementing base and stabiliser chain for Rubik's group $\RC$ (using \texttt{BaseOfGroup} and \texttt{StabChain} cmds), \texttt{GAP} computes:}
+
+    \onslide<4->{
+        \begin{corollary}
+            \vspace{0pt}
+            $|\RC| = 43\,252\,003\,274\,489\,856\,000 \approx 4.3 \cdot 10^{19}$.
+        \end{corollary}
+
+        % (\textit{Note:} $|\RC| = 2^{27} \cdot 3^{14} \cdot 5^3 \cdot 7^2 \cdot 11$. Thus no move of order 13.)
+    }
+\end{slide}

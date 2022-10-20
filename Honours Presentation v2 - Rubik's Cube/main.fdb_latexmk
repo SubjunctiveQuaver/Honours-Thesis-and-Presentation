@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1665358934 "c:/Users/lawre/OneDrive/Education/Monash University/2022/MTH4100 Research Project/Honours Thesis and Presentation/Honours Presentation v2 - Rubik's Cube/main.tex" "main.pdf" "main" 1665358958
-  "C:/Users/lawre/AppData/Local/MiKTeX/2.9/fonts/map/pdftex/pdftex.map" 1665128607 414848 f8bf8b93cb4ded28a23b8e1d5a484817 ""
+["pdflatex"] 1666263633 "c:/Users/lawre/OneDrive/Education/Monash University/2022/MTH4100 Research Project/Honours Thesis and Presentation/Honours Presentation v2 - Rubik's Cube/main.tex" "main.pdf" "main" 1666263661
+  "C:/Users/lawre/AppData/Local/MiKTeX/2.9/fonts/map/pdftex/pdftex.map" 1666057522 466148 bf77eda5a46d60a6983271fbe0c424d3 ""
   "C:/Users/lawre/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1647931139 10248883 8606a39bd149ad75b2a87bf0cfebaa61 ""
   "C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc" 1421694697 2083 60e36f8eac802fcaf19eabe2633b406e ""
   "C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/tex-gyre/q-ts1.enc" 1525744214 3124 3813fd4c981d99822890a2861b0d274c ""
@@ -393,7 +393,7 @@
   "C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/tex/latex/xcolor/xcolor.sty" 1636284872 56029 3f7889dab51d620aa43177c391b7b190 ""
   "C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/tex/latex/xkeyval/xkeyval.sty" 1623009290 4902 efb3d66683a2da2a232f71e3a571a899 ""
   "C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/tex/latex/xstring/xstring.sty" 1543858404 123 a302f2c651a95033260db60e51527ae8 ""
-  "C:/Users/lawre/OneDrive/Documents/LaTeX/tex/latex/commands.tex" 1664209408 7114 9ab49bddc035384d14d897865ffea60b ""
+  "C:/Users/lawre/OneDrive/Documents/LaTeX/tex/latex/commands.tex" 1665939574 7170 0a795097afff95935ec507b2a60ae793 ""
   "c1_group_theory.tex" 1665328923 16069 9fd069725f048f938e76093260b3fc62 ""
   "c2_rubiks_group.tex" 1665358721 11150 3588bad1e2ee23b66558645153a79208 ""
   "c:/Users/lawre/OneDrive/Education/Monash University/2022/MTH4100 Research Project/Honours Thesis and Presentation/Honours Presentation v2 - Rubik's Cube/main.tex" 1665358909 3291 4c4a74a432ce5eb96236c2ef3fdbc0ab ""
@@ -401,10 +401,10 @@
   "graphics/rubiks_cube_net.tikz" 1665046898 2044 4a5212a201fd8457bad14a5cc33d3a6f ""
   "graphics/rubiks_cube_net_front.tikz" 1665047121 2565 f91ab9cf566b5f970f9b85fd9a704790 ""
   "graphics/rubiks_cube_title.png" 1664971565 211149 be985f38d9f7150218b3f444a07f75df ""
-  "main.aux" 1665358957 13812 43807b4112f3e8351bf3b26d93f9e57e "pdflatex"
-  "main.nav" 1665358957 5047 c7eec3cbfee8f48782bac549cdd0ef7e "pdflatex"
+  "main.aux" 1666263659 13812 43807b4112f3e8351bf3b26d93f9e57e "pdflatex"
+  "main.nav" 1666263659 5047 c7eec3cbfee8f48782bac549cdd0ef7e "pdflatex"
   "main.tex" 1665358909 3291 4c4a74a432ce5eb96236c2ef3fdbc0ab ""
-  "main.toc" 1665358957 956 90c0e0fbde0d19515edfbb40f7f37b45 "pdflatex"
+  "main.toc" 1666263659 956 90c0e0fbde0d19515edfbb40f7f37b45 "pdflatex"
   "preamble/preamble.tex" 1665326093 3303 61a5648868ccc686e154ef4e624da63e ""
   (generated)
   "main.aux"

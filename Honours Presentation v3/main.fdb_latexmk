@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1666255160 "c:/Users/lawre/OneDrive/Education/Monash University/2022/MTH4100 Research Project/Honours Thesis and Presentation/Honours Presentation v3/main.tex" "main.pdf" "main" 1666255179
+["pdflatex"] 1666264584 "c:/Users/lawre/OneDrive/Education/Monash University/2022/MTH4100 Research Project/Honours Thesis and Presentation/Honours Presentation v3/main.tex" "main.pdf" "main" 1666264598
   "C:/Users/lawre/AppData/Local/MiKTeX/2.9/fonts/map/pdftex/pdftex.map" 1666057522 466148 bf77eda5a46d60a6983271fbe0c424d3 ""
   "C:/Users/lawre/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1647931139 10248883 8606a39bd149ad75b2a87bf0cfebaa61 ""
   "C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-ot1-0.enc" 1561074652 2496 4d35740f3a177992ff7b134746c0a1db ""
@@ -54,6 +54,7 @@
   "C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathMI.pfb" 1568226580 35829 e5b81ebdef873b4e07e10dde7ac213f2 ""
   "C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathMI7.pfb" 1575230262 36894 5faa3d8244e2228f0a366635240ed4d4 ""
   "C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathRM.pfb" 1568250668 17941 ddba6afdead1586dc42d18763749eddd ""
+  "C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/NewTXMI.pfb" 1572040923 32409 eee1344d05b8bec92e60a2ec9a7f49e3 ""
   "C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txmiaX.pfb" 1634843949 56686 3d6d86b0a770bb2c243f4c4351685fc2 ""
   "C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txsys.pfb" 1568327340 40320 2f25747178fd77dc1d402345c8ce5bfc ""
   "C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txsyb.pfb" 977342760 24244 c0c6d4f670336eb16cb9427cd12a40c2 ""
@@ -403,13 +404,14 @@
   "C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/tex/latex/xkeyval/xkeyval.sty" 1623009290 4902 efb3d66683a2da2a232f71e3a571a899 ""
   "C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/tex/latex/xstring/xstring.sty" 1543858404 123 a302f2c651a95033260db60e51527ae8 ""
   "C:/Users/lawre/OneDrive/Documents/LaTeX/tex/latex/commands.tex" 1665939574 7170 0a795097afff95935ec507b2a60ae793 ""
-  "c1_group_theory.tex" 1666255137 16069 9fd069725f048f938e76093260b3fc62 ""
-  "c:/Users/lawre/OneDrive/Education/Monash University/2022/MTH4100 Research Project/Honours Thesis and Presentation/Honours Presentation v3/main.tex" 1666254768 3286 b35e5321bac39153116b119d5408f4c1 ""
+  "c1_group_theory.tex" 1666264581 15000 79367c608bf8d74cdcde5bb3ee605034 ""
+  "c4_research.tex" 1666260273 429 34de4bdb8ebe09f0fc6ec17d5e6679d8 ""
+  "c:/Users/lawre/OneDrive/Education/Monash University/2022/MTH4100 Research Project/Honours Thesis and Presentation/Honours Presentation v3/main.tex" 1666263560 3173 9cb9c99043f04e9501d8182fbdbdb577 ""
   "graphics/rubiks_cube_title.png" 1664971565 211149 be985f38d9f7150218b3f444a07f75df ""
-  "main.aux" 1666255178 10248 512ab746a3042c821e1c6529b0a18472 "pdflatex"
-  "main.nav" 1666255178 3632 fea57a4be88622695c9826c0a4e6d1f5 "pdflatex"
-  "main.tex" 1666254768 3286 b35e5321bac39153116b119d5408f4c1 ""
-  "main.toc" 1666255178 727 772e6f5542e08c4030706d3723584404 "pdflatex"
+  "main.aux" 1666264596 12932 9f8524c92f2d9550eec00b056f782ca2 "pdflatex"
+  "main.nav" 1666264596 4743 cc8bc69fb71917845b9a1a9f0a9fb303 "pdflatex"
+  "main.tex" 1666263560 3173 9cb9c99043f04e9501d8182fbdbdb577 ""
+  "main.toc" 1666264596 932 3886d3f4474d24d5b7d17810f2596370 "pdflatex"
   "preamble/preamble.tex" 1666254770 3390 5a73d4277868a935a138786f4c0a235b ""
   (generated)
   "main.aux"

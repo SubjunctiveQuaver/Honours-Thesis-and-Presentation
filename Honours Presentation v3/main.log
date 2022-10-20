@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.22)  20 OCT 2022 19:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.22)  20 OCT 2022 22:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1336,48 +1336,48 @@ LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/b/n' will be
  [2
 
 ]
-LaTeX Font Info:    Trying to load font information for TS1+LinuxBiolinumT-TLF on input line 59.
+LaTeX Font Info:    Trying to load font information for TS1+LinuxBiolinumT-TLF on input line 57.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/libertine\ts1linuxbiolinumt-tlf.fd
 File: TS1LinuxBiolinumT-TLF.fd 2017/03/20 (autoinst) Font definitions for TS1/LinuxBiolinumT-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 59.
+(Font)              scaled to size 10.95pt on input line 57.
 LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 59.
+(Font)              scaled to size 10.95pt on input line 57.
 LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 59.
+(Font)              scaled to size 10.95pt on input line 57.
 LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 4.0pt on input line 59.
+(Font)              scaled to size 4.0pt on input line 57.
  [3
 
 ]
-LaTeX Font Info:    Trying to load font information for OT1+LinuxLibertineT-TLF on input line 61.
+LaTeX Font Info:    Trying to load font information for OT1+LinuxLibertineT-TLF on input line 59.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/libertine\ot1linuxlibertinet-tlf.fd
 File: OT1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for OT1/LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 61.
+(Font)              scaled to size 10.95pt on input line 59.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 61.
+(Font)              scaled to size 8.0pt on input line 59.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.1pt on input line 61.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 61.
+(Font)              scaled to size 6.1pt on input line 59.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 59.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 61.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 59.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 61.
+LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 59.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/newtx\untxmia.fd
 File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
 )
-LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 61.
+LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 59.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/newtx\untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
-LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 61.
+LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 59.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/newtx\untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 ) [4
@@ -1392,40 +1392,48 @@ Overfull \vbox (25.51036pt too high) detected at line 32
 
 ] [7
 
-]
-Overfull \vbox (11.56868pt too high) detected at line 144
- []
-
-[8
+] [8
 
 ] [9
 
-] [10
-
 ]
-Overfull \vbox (24.97134pt too high) detected at line 266
+Overfull \vbox (24.97134pt too high) detected at line 245
  []
 
-[11
+[10
+
+] [11
 
 ] [12
 
-] [13
+]) [13
 
-]) [14
+] [14
 
 ] [15
 
-] [16
+] (c4_research.tex [16
+
+] [17
+
+] [18
+
+] [19
+
+] [20
+
+] [21
+
+]) [22
 
 ]
-LaTeX Font Info:    Trying to load font information for OT1+zi4 on input line 86.
+LaTeX Font Info:    Trying to load font information for OT1+zi4 on input line 88.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/inconsolata\ot1zi4.fd
 File: ot1zi4.fd 2018/01/14 OT1/zi4 (Inconsolata)
 )
 LaTeX Font Info:    Font shape `OT1/zi4/m/n' will be
-(Font)              scaled to size 10.95pt on input line 86.
- [17
+(Font)              scaled to size 10.95pt on input line 88.
+ [23
 
 ]
 \tf@nav=\write5
@@ -1439,17 +1447,17 @@ LaTeX Font Info:    Font shape `OT1/zi4/m/n' will be
 
  (main.aux) ) 
 Here is how much of TeX's memory you used:
- 43203 strings out of 478582
- 914483 string characters out of 2842422
+ 43191 strings out of 478582
+ 913803 string characters out of 2842422
  1337960 words of memory out of 3000000
- 60292 multiletter control sequences out of 15000+600000
+ 60262 multiletter control sequences out of 15000+600000
  513923 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,13n,122p,1997b,1824s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-ot1-0.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_edcawa.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_afusau.enc}<C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathMI.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathMI7.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathRM.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinBiolinumT.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinBiolinumTB.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinBiolinumTI.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txsyb.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txsys.pfb>
-Output written on main.pdf (17 pages, 516518 bytes).
+{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-ot1-0.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_edcawa.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_afusau.enc}<C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathMI.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathMI7.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathRM.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinBiolinumT.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinBiolinumTB.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinBiolinumTI.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/NewTXMI.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txsyb.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txsys.pfb>
+Output written on main.pdf (23 pages, 538523 bytes).
 PDF statistics:
- 270 PDF objects out of 1000 (max. 8388607)
- 47 named destinations out of 1000 (max. 500000)
- 240 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 324 PDF objects out of 1000 (max. 8388607)
+ 62 named destinations out of 1000 (max. 500000)
+ 264 words of extra memory for PDF output out of 10000 (max. 10000000)
 
