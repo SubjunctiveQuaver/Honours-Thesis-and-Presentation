@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex main"] 1666235520 "main.aux" "main.bbl" "main" 1666236599
+["bibtex main"] 1666235520 "main.aux" "main.bbl" "main" 1666241413
   "C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/bibtex/bst/urlbst/plainurl.bst" 1562009950 33034 6f80d55ce824a32ed5562a5220ff287a ""
-  "main.aux" 1666236597 111006 bb00cb37a3a3d866054c0aca116ee820 "pdflatex"
+  "main.aux" 1666241411 111006 bb00cb37a3a3d866054c0aca116ee820 "pdflatex"
   "references.bib" 1666144849 11743 5424e2ab6fb684ec77c55edcf7f4850f ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1666236577 "c:/Users/lawre/OneDrive/Education/Monash University/2022/MTH4100 Research Project/Honours Thesis and Presentation/Honours Thesis/main.tex" "main.pdf" "main" 1666236599
+["pdflatex"] 1666241380 "c:/Users/lawre/OneDrive/Education/Monash University/2022/MTH4100 Research Project/Honours Thesis and Presentation/Honours Thesis/main.tex" "main.pdf" "main" 1666241413
   "C:/Users/lawre/AppData/Local/MiKTeX/2.9/fonts/map/pdftex/pdftex.map" 1666057522 466148 bf77eda5a46d60a6983271fbe0c424d3 ""
   "C:/Users/lawre/AppData/Local/MiKTeX/2.9/fonts/tfm/public/esvect/vect10.tfm" 1590418453 372 07da2e555f4c8dac959d0bb59cacb4dc ""
   "C:/Users/lawre/AppData/Local/MiKTeX/2.9/fonts/tfm/public/esvect/vect5.tfm" 1590418455 372 28e18d88a38be26cb20dc1302f0fdc04 ""
@@ -471,10 +471,10 @@
   "gap_code/random_elt_print.gap" 1665797260 506 f9eb165d786fb7a2d488f4acd5089657 ""
   "gap_code/rubiks_def.gap" 1665317450 475 736e067fa62e125bfddac153d29b7b21 ""
   "gap_code/subgrps_base_len.gap" 1665995172 2910 e63a1cd7338a056ad70d45cb7c67a30d ""
-  "main.aux" 1666236597 111006 bb00cb37a3a3d866054c0aca116ee820 "pdflatex"
+  "main.aux" 1666241411 111006 bb00cb37a3a3d866054c0aca116ee820 "pdflatex"
   "main.bbl" 1666235520 9304 325ad5f92a7db6b45470e60e4ce6183d "bibtex main"
   "main.tex" 1666177880 2939 ec01dc7cfa5299c28cf0520cd15228e9 ""
-  "main.toc" 1666236597 4646 836609e67038837d219a3aae224d63d0 "pdflatex"
+  "main.toc" 1666241411 4646 836609e67038837d219a3aae224d63d0 "pdflatex"
   "monash_university_logo.png" 1666057707 45155 6c14bdee666c9e5bba73d410002dbfbe ""
   "preamble/settings.tex" 1666178583 3362 d121ef5102e8215ffa068fee6251c065 ""
   "sections/abstract.tex" 1666194758 2202 bc04510d9a2594a92c34e734a01a217d ""
@@ -492,7 +492,7 @@
   "sections/group_concepts/rubiks_cube_net_random.tikz" 1666186486 8214 a0f98b2caee9e3e83d3fc367a030280e ""
   "sections/introduction.tex" 1666229769 11277 deac755a8794dabe9022418bf4dfafab ""
   "sections/lit_review.tex" 1666236576 25917 795ab139465657929dc44d2d7fbaf326 ""
-  "sections/perm_group_theory.tex" 1666236294 74901 c6db5d4fc84a73acb11ede416a350ed2 ""
+  "sections/perm_group_theory.tex" 1666241346 74918 f3504ee0fabbd1a5ca3eb028689f45b5 ""
   "sections/titlepage.tex" 1666057768 636 0e64eb431f819c36c19b77fc8acc3f85 ""
   "txt_files/agl_base_gap_output/10.gap" 1665995172 704 3b7b5aac85e1bb3fbe6d6fdf6ef9a19a ""
   "txt_files/agl_base_gap_output/2.gap" 1665995172 307 9bb7be5deb2b46d9cd6c073a0fd61e59 ""
