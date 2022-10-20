@@ -19,14 +19,14 @@
 \contentsline {proof}{{\proofname }{2}{}}{7}{proof.2}%
 \contentsline {corollary}{{Corollary}{2.{18}}{}}{7}{corollary.2.18}%
 \contentsline {proposition}{{Proposition}{2.{19}}{}}{7}{proposition.2.19}%
-\contentsline {proof}{{\proofname }{3}{}}{7}{proof.3}%
-\contentsline {example}{{Example}{2.{20}}{}}{7}{example.2.20}%
+\contentsline {proof}{{\proofname }{3}{}}{8}{proof.3}%
+\contentsline {example}{{Example}{2.{20}}{}}{8}{example.2.20}%
 \contentsline {example}{{Example}{2.{21}}{}}{8}{example.2.21}%
 \contentsline {example}{{Example}{2.{22}}{}}{8}{example.2.22}%
 \contentsline {theorem}{{Theorem}{2.{23}}{orbit-stabiliser (OST); \added {1}{Fact 1 in \cite {blaha1992}}}}{8}{theorem.2.23}%
 \contentsline {proof}{{\proofname }{4}{}}{8}{proof.4}%
 \contentsline {example}{{Example}{2.{24}}{conjugation}}{8}{example.2.24}%
-\contentsline {example}{{Example}{2.{25}}{}}{8}{example.2.25}%
+\contentsline {example}{{Example}{2.{25}}{}}{9}{example.2.25}%
 \contentsline {lemma}{{Lemma}{2.{26}}{}}{9}{lemma.2.26}%
 \contentsline {proof}{{\proofname }{5}{}}{9}{proof.5}%
 \contentsline {lemma}{{Lemma}{2.{27}}{}}{9}{lemma.2.27}%
@@ -35,24 +35,24 @@
 \contentsline {proof}{{\proofname }{7}{}}{9}{proof.7}%
 \contentsline {example}{{Example}{2.{29}}{right coset action}}{9}{example.2.29}%
 \contentsline {definition}{{Definition}{2.{30}}{}}{9}{definition.2.30}%
-\contentsline {example}{{Example}{2.{31}}{}}{9}{example.2.31}%
+\contentsline {example}{{Example}{2.{31}}{}}{10}{example.2.31}%
 \contentsline {example}{{Example}{2.{32}}{}}{10}{example.2.32}%
 \contentsline {definition}{{Definition}{2.{33}}{}}{10}{definition.2.33}%
-\contentsline {example}{{Example}{2.{34}}{}}{10}{example.2.34}%
-\contentsline {proposition}{{Proposition}{2.{35}}{}}{10}{proposition.2.35}%
-\contentsline {proof}{{\proofname }{8}{}}{10}{proof.8}%
+\contentsline {example}{{Example}{2.{34}}{}}{11}{example.2.34}%
+\contentsline {proposition}{{Proposition}{2.{35}}{}}{11}{proposition.2.35}%
+\contentsline {proof}{{\proofname }{8}{}}{11}{proof.8}%
 \contentsline {definition}{{Definition}{2.{36}}{}}{11}{definition.2.36}%
 \contentsline {lemma}{{Lemma}{2.{37}}{}}{11}{lemma.2.37}%
 \contentsline {proof}{{\proofname }{9}{}}{11}{proof.9}%
 \contentsline {remark}{{Remark}{2.{38}}{}}{11}{remark.2.38}%
-\contentsline {definition}{{Definition}{2.{39}}{}}{11}{definition.2.39}%
+\contentsline {definition}{{Definition}{2.{39}}{}}{12}{definition.2.39}%
 \contentsline {lemma}{{Lemma}{2.{40}}{}}{12}{lemma.2.40}%
 \contentsline {proof}{{\proofname }{10}{}}{12}{proof.10}%
 \contentsline {example}{{Example}{2.{41}}{Rubik's group}}{12}{example.2.41}%
 \contentsline {proposition}{{Proposition}{2.{42}}{}}{13}{proposition.2.42}%
-\contentsline {proof}{{\proofname }{11}{}}{13}{proof.11}%
-\contentsline {example}{{Example}{2.{43}}{}}{13}{example.2.43}%
-\contentsline {example}{{Example}{2.{44}}{}}{13}{example.2.44}%
+\contentsline {proof}{{\proofname }{11}{}}{14}{proof.11}%
+\contentsline {example}{{Example}{2.{43}}{}}{14}{example.2.43}%
+\contentsline {example}{{Example}{2.{44}}{}}{14}{example.2.44}%
 \contentsline {proposition}{{Proposition}{2.{45}}{}}{14}{proposition.2.45}%
 \contentsline {proof}{{\proofname }{12}{}}{14}{proof.12}%
 \contentsline {proposition}{{Proposition}{2.{46}}{}}{14}{proposition.2.46}%
@@ -63,20 +63,20 @@
 \contentsline {lemma}{{Lemma}{2.{50}}{}}{15}{lemma.2.50}%
 \contentsline {proof}{{\proofname }{14}{}}{15}{proof.14}%
 \contentsline {definition}{{Definition}{2.{51}}{}}{15}{definition.2.51}%
-\contentsline {corollary}{{Corollary}{2.{52}}{}}{15}{corollary.2.52}%
-\contentsline {proof}{{\proofname }{15}{}}{15}{proof.15}%
+\contentsline {corollary}{{Corollary}{2.{52}}{}}{16}{corollary.2.52}%
+\contentsline {proof}{{\proofname }{15}{}}{16}{proof.15}%
 \contentsline {lemma}{{Lemma}{2.{53}}{}}{16}{lemma.2.53}%
 \contentsline {example}{{Example}{2.{54}}{}}{16}{example.2.54}%
 \contentsline {proposition}{{Proposition}{2.{55}}{}}{16}{proposition.2.55}%
 \contentsline {definition}{{Definition}{2.{56}}{}}{16}{definition.2.56}%
 \contentsline {lemma}{{Lemma}{2.{57}}{Lemma 4.1 in \cite {blaha1992}}}{16}{lemma.2.57}%
-\contentsline {proof}{{\proofname }{16}{}}{16}{proof.16}%
+\contentsline {proof}{{\proofname }{16}{}}{17}{proof.16}%
 \contentsline {lemma}{{Lemma}{2.{58}}{}}{17}{lemma.2.58}%
 \contentsline {proof}{{\proofname }{17}{}}{17}{proof.17}%
 \contentsline {example}{{Example}{2.{59}}{symmetric groups}}{17}{example.2.59}%
 \contentsline {example}{{Example}{2.{60}}{alternating groups}}{17}{example.2.60}%
 \contentsline {example}{{Example}{2.{61}}{cyclic subgroups of $\Sym (n)$}}{17}{example.2.61}%
-\contentsline {proposition}{{Proposition}{2.{62}}{}}{17}{proposition.2.62}%
+\contentsline {proposition}{{Proposition}{2.{62}}{}}{18}{proposition.2.62}%
 \contentsline {proof}{{\proofname }{18}{}}{18}{proof.18}%
 \contentsline {lemma}{{Lemma}{2.{63}}{}}{18}{lemma.2.63}%
 \contentsline {proof}{{\proofname }{19}{}}{18}{proof.19}%
@@ -86,11 +86,11 @@
 \contentsline {example}{{Example}{2.{66}}{}}{19}{example.2.66}%
 \contentsline {algorithm}{{Algorithm}{2.{67}}{random element}}{20}{algorithm.2.67}%
 \contentsline {example}{{Example}{2.{68}}{}}{20}{example.2.68}%
-\contentsline {algorithm}{{Algorithm}{2.{69}}{membership test}}{20}{algorithm.2.69}%
+\contentsline {algorithm}{{Algorithm}{2.{69}}{membership test}}{21}{algorithm.2.69}%
 \contentsline {proof}{{Proof of correctness}{21}{}}{21}{proof.21}%
 \contentsline {example}{{Example}{2.{70}}{}}{21}{example.2.70}%
 \contentsline {example}{{Example}{2.{71}}{}}{21}{example.2.71}%
-\contentsline {algorithm}{{Algorithm}{2.{72}}{orbit-stabiliser}}{22}{algorithm.2.72}%
+\contentsline {algorithm}{{Algorithm}{2.{72}}{orbit-stabiliser}}{23}{algorithm.2.72}%
 \contentsline {proof}{{\proofname }{22}{}}{23}{proof.22}%
 \contentsline {corollary}{{Corollary}{2.{73}}{}}{23}{corollary.2.73}%
 \contentsline {definition}{{Definition}{2.{74}}{}}{24}{definition.2.74}%
@@ -98,7 +98,7 @@
 \contentsline {corollary}{{Corollary}{2.{76}}{}}{24}{corollary.2.76}%
 \contentsline {proof}{{\proofname }{23}{}}{24}{proof.23}%
 \contentsline {example}{{Example}{2.{77}}{}}{24}{example.2.77}%
-\contentsline {example}{{Example}{2.{78}}{}}{24}{example.2.78}%
+\contentsline {example}{{Example}{2.{78}}{}}{25}{example.2.78}%
 \contentsline {definition}{{Definition}{3.{1}}{big-O notation}}{26}{definition.3.1}%
 \contentsline {definition}{{Definition}{3.{2}}{}}{26}{definition.3.2}%
 \contentsline {example}{{Example}{3.{3}}{membership test}}{27}{example.3.3}%

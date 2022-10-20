@@ -1,0 +1,365 @@
+% \documentclass{beamer}
+\documentclass[handout]{beamer}
+
+% Settings and commands
+\input{preamble/preamble.tex}
+\input{commands.tex}
+
+\title{\textbf{Computing in permutation groups}}
+\author{\textbf{Lawrence Chen}}
+\institute{\textbf{M40110 Honours presentation}}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}[plain, noframenumbering]
+    \titlepage
+\end{frame}
+
+\begin{frame}[plain, noframenumbering]{Contents}
+    \tableofcontents
+\end{frame}
+
+\section{Introduction -- computational group theory}
+
+% \subsection{Computational group theory}
+
+% \begin{slide}
+%     Lol
+% \end{slide}
+
+\subsection{Permutations and graph automorphisms}
+
+\begin{slide}
+    Consider the \textbf{permutation} $\sigma = (1,6,2,7,3,8)(4,5) \in \Sym(8)$. Instead of $\sigma(n)$, write $n^\sigma$: so $1^\sigma = 6$, $2^\sigma = 7$, $4^\sigma = 5$, etc. \pause
+
+    Let $\Gamma$ be the graph below with vertex set $V = \{1,\dotsc,8\}$:
+
+    \begin{center}
+        \begin{tikzpicture}
+            \GraphInit
+            \Vertex[x=-1, y=1, Lpos=180]{1}
+            \Vertex[x=-1, y=0, Lpos=180]{2}
+            \Vertex[x=-1, y=-1, Lpos=180]{3}
+            \Vertex[x=0, y=0, Lpos=-90]{4}
+            \Vertex[x=1, y=0, Lpos=-90]{5}
+            \Vertex[x=2, y=1]{6}
+            \Vertex[x=2, y=0]{7}
+            \Vertex[x=2, y=-1]{8}
+            \Edges(1,4,5,6)
+            \Edges(2,4,3)
+            \Edges(7,5,8)
+            \node at (0.5,0.5){$\Gamma$};
+        \end{tikzpicture} \pause \quad $\underset{\sigma^{-1}}{\overset{\sigma}{\rightleftarrows}}$ \quad
+        \begin{tikzpicture}
+            \GraphInit
+            \Vertex[x=-1, y=1, Lpos=180]{6}
+            \Vertex[x=-1, y=0, Lpos=180]{7}
+            \Vertex[x=-1, y=-1, Lpos=180]{8}
+            \Vertex[x=0, y=0, Lpos=-90]{5}
+            \Vertex[x=1, y=0, Lpos=-90]{4}
+            \Vertex[x=2, y=1]{2}
+            \Vertex[x=2, y=0]{3}
+            \Vertex[x=2, y=-1]{1}
+            \Edges(1,4,5,6)
+            \Edges(2,4,3)
+            \Edges(7,5,8)
+            \node at (0.5,0.5){$\Gamma$};
+        \end{tikzpicture} \pause
+    \end{center}
+
+    % Applying $\sigma$ to the vertices of $\Gamma$, we get the right relabelling of $\Gamma$ above, which preserves edges. The map $\sigma$ is a \textbf{graph automorphism}.
+
+    The map $\sigma$ is a \textbf{graph automorphism}. Recall $1 = () \in \Sym(8)$.
+
+    Automorphisms of $\Gamma$ form a \textbf{(permutation) group} $G = \Aut(\Gamma)$. Read $gh$ as ``first $g$, then $h$''. Here, $\sigma^{-1} = (1,8,3,7,2,6)(4,5)$. % If $g,h \in G$, then $gh,g^{-1} \in G$, where $gh$ is ``first $g$, then $h$'', and $g^{-1}$ satisfies $gg^{-1} = g^{-1}g = 1$. 
+\end{slide}
+
+\begin{slide}
+    Consider again $\sigma = (1,6,2,7,3,8)(4,5) \in G$. Let $\tau = (2,3)(6,7,8) \in G$. Then $\sigma\tau = (1,7,2,8)(3,6)(4,5) \in G$: \pause
+
+    \begin{center}
+        \begin{tikzpicture}[scale=0.67]
+            \GraphInit
+            \Vertex[x=-1, y=1, Lpos=180]{1}
+            \Vertex[x=-1, y=0, Lpos=180]{2}
+            \Vertex[x=-1, y=-1, Lpos=180]{3}
+            \Vertex[x=0, y=0, Lpos=-90]{4}
+            \Vertex[x=1, y=0, Lpos=-90]{5}
+            \Vertex[x=2, y=1]{6}
+            \Vertex[x=2, y=0]{7}
+            \Vertex[x=2, y=-1]{8}
+            \Edges(1,4,5,6)
+            \Edges(2,4,3)
+            \Edges(7,5,8)
+            \node at (0.5,0.5){$\Gamma$};
+        \end{tikzpicture} $\overset{\sigma}{\to}$
+        \begin{tikzpicture}[scale=0.67]
+            \GraphInit
+            \Vertex[x=-1, y=1, Lpos=180]{6}
+            \Vertex[x=-1, y=0, Lpos=180]{7}
+            \Vertex[x=-1, y=-1, Lpos=180]{8}
+            \Vertex[x=0, y=0, Lpos=-90]{5}
+            \Vertex[x=1, y=0, Lpos=-90]{4}
+            \Vertex[x=2, y=1]{2}
+            \Vertex[x=2, y=0]{3}
+            \Vertex[x=2, y=-1]{1}
+            \Edges(1,4,5,6)
+            \Edges(2,4,3)
+            \Edges(7,5,8)
+            \node at (0.5,0.5){$\Gamma$};
+        \end{tikzpicture} $\overset{\tau}{\to}$ \pause
+        \begin{tikzpicture}[scale=0.67]
+            \GraphInit
+            \Vertex[x=-1, y=1, Lpos=180]{7}
+            \Vertex[x=-1, y=0, Lpos=180]{8}
+            \Vertex[x=-1, y=-1, Lpos=180]{6}
+            \Vertex[x=0, y=0, Lpos=-90]{5}
+            \Vertex[x=1, y=0, Lpos=-90]{4}
+            \Vertex[x=2, y=1]{3}
+            \Vertex[x=2, y=0]{2}
+            \Vertex[x=2, y=-1]{1}
+            \Edges(1,4,5,6)
+            \Edges(2,4,3)
+            \Edges(7,5,8)
+            \node at (0.5,0.5){$\Gamma$};
+        \end{tikzpicture} \pause
+    \end{center}
+
+    \begin{center}
+        \begin{tikzpicture}
+            \GraphInit
+            \Vertex[x=-1, y=1, Lpos=180]{1}
+            \Vertex[x=-1, y=0, Lpos=180]{2}
+            \Vertex[x=-1, y=-1, Lpos=180]{3}
+            \Vertex[x=0, y=0, Lpos=-90]{4}
+            \Vertex[x=1, y=0, Lpos=-90]{5}
+            \Vertex[x=2, y=1]{6}
+            \Vertex[x=2, y=0]{7}
+            \Vertex[x=2, y=-1]{8}
+            \Edges(1,4,5,6)
+            \Edges(2,4,3)
+            \Edges(7,5,8)
+            \node at (0.5,0.5){$\Gamma$};
+        \end{tikzpicture} \quad $\overset{\sigma\tau}{\to}$ \quad \pause
+        \begin{tikzpicture}
+            \GraphInit
+            \Vertex[x=-1, y=1, Lpos=180]{7}
+            \Vertex[x=-1, y=0, Lpos=180]{8}
+            \Vertex[x=-1, y=-1, Lpos=180]{6}
+            \Vertex[x=0, y=0, Lpos=-90]{5}
+            \Vertex[x=1, y=0, Lpos=-90]{4}
+            \Vertex[x=2, y=1]{3}
+            \Vertex[x=2, y=0]{2}
+            \Vertex[x=2, y=-1]{1}
+            \Edges(1,4,5,6)
+            \Edges(2,4,3)
+            \Edges(7,5,8)
+            \node at (0.5,0.5){$\Gamma$};
+        \end{tikzpicture}
+    \end{center}
+
+    We say $G = \Aut(\Gamma)$ \textbf{acts (naturally)} on $\Omega = V$.
+
+    % Instead of $\tau(v)$ for $v \in V$, write $v^\tau$, e.g. $1^\tau = 1$, $2^\tau = 3$, and $6^\tau = 7$.
+
+    % Applying $1 = ()$ to the vertices of $\Gamma$ clearly results in $\Gamma$, so $1 \in G$. % Each $g \in G$ permutes the vertices in $\Gamma$ such that the resulting graph is stil $\Gamma$.
+\end{slide}
+
+\subsection{Group actions and the OST}
+
+\begin{slide}
+    The \textbf{orbit} of $1 \in V$ is $1^G = \{1^g : g \in G\} = \{1,2,3,6,7,8\}$ and the \textbf{stabiliser} of $1 \in V$ is $\Stab_G(1) = \{g \in G : 1^g = 1\}$, which contains $\tau = (2,3)(6,7,8)$: % , with $v^g \in V$ for $v \in V$ and $g \in G$. Then $v^{gh} = (v^g)^h \in V$ if $h \in G$ also; $1 \in G$ acts \textit{trivially}. \pause
+
+    % An \textbf{orbit} is $1^G = \{1^g : g \in G\} = \{1,2,3,6,7,8\}$ and a \textbf{stabiliser} is $\Stab_G(1) = \{g \in G : 1^g = 1\}$, which contains $\tau = (2,3)(6,7,8)$.
+
+    \begin{center}
+        \begin{tikzpicture}
+            \GraphInit
+            \Vertex[x=-1, y=1, Lpos=180]{1}
+            \Vertex[x=-1, y=0, Lpos=180]{2}
+            \Vertex[x=-1, y=-1, Lpos=180]{3}
+            \Vertex[x=0, y=0, Lpos=-90]{4}
+            \Vertex[x=1, y=0, Lpos=-90]{5}
+            \Vertex[x=2, y=1]{6}
+            \Vertex[x=2, y=0]{7}
+            \Vertex[x=2, y=-1]{8}
+            \Edges(1,4,5,6)
+            \Edges(2,4,3)
+            \Edges(7,5,8)
+            \node at (0.5,0.5){$\Gamma$};
+        \end{tikzpicture} \quad $\overset{\tau}{\to}$ \quad
+        \begin{tikzpicture}
+            \GraphInit
+            \Vertex[x=-1, y=1, Lpos=180]{1}
+            \Vertex[x=-1, y=0, Lpos=180]{3}
+            \Vertex[x=-1, y=-1, Lpos=180]{2}
+            \Vertex[x=0, y=0, Lpos=-90]{4}
+            \Vertex[x=1, y=0, Lpos=-90]{5}
+            \Vertex[x=2, y=1]{7}
+            \Vertex[x=2, y=0]{8}
+            \Vertex[x=2, y=-1]{6}
+            \Edges(1,4,5,6)
+            \Edges(2,4,3)
+            \Edges(7,5,8)
+            \node at (0.5,0.5){$\Gamma$};
+        \end{tikzpicture} \pause
+    \end{center}
+
+    The \textbf{orbit-stabiliser theorem (OST)} says that $|G| = |\alpha^G||\Stab_G(\alpha)|$ for $\alpha \in \Omega$, if $G$ \textit{acts} on $\Omega$. But what is $|G| = |\Aut(\Gamma)|$ here?
+\end{slide}
+
+% \begin{slide}
+%     We consider a stabiliser chain for $G$ (and find $|G|$ and transversals:
+%     \begin{itemize}
+%         \item Let $G_1 = \Stab_{G_0}(4)$. Then $4^{G_0} = \{4,5\}$, and take $T_1 = \{(),(1,6)(2,7)(3,8)(4,5)\}$.
+%         \item Let $G_2 = \Stab_{G_1}(1) = \Stab_G(4,1)$. Then $1^{G_1} = \{1,2,3\}$, and take $T_1 = \{(),(1,2),(1,3)\}$.
+%         \item Let $G_3 = \Stab_{G_2}(2) = \Stab_G(4,1,2)$. Then $2^{G_2} = \{2,3\}$, and take $T_2 = \{(),(2,3)\}$.
+%         \item Let $G_4 = \Stab_{G_3}(6) = \Stab_G(4,1,2,6)$. Then $6^{G_3} = \{6,7,8\}$, and take $T_3 = \{(),(6,7),(6,8)\}$.
+%         \item Let $G_5 = \Stab_{G_4}(7) = \Stab_G(4,1,2,6,7) = 1$. Then $7^{G_4} = \{7,8\}$, and take $T_4 = \{(),(7,8)\}$.
+%     \end{itemize}
+%     So we see that $B = [4,1,2,6,7]$ is a base for $G$ with stabiliser chain $G = G_0 > G_1 > G_2 > G_3 > G_4 > G_5 = 1$ and associated transversals $T_1,\dotsc,T_5$. Moreover, from \autoref{prop:stabiliser_chain_indexes}, we see that $|G| = |T_1| \dotsb |T_5| = 2 \cdot 3 \cdot 2 \cdot 3 \cdot 2 = 72$, so there are 72 automorphisms (relabellings) of $\Gamma$. From \autoref{lem:transversal_gives_bsgs}, $\{(1,6)(2,7)(3,8)(4,5),(1,2),(1,3),(2,3),(6,7),(6,8),(7,8)\}$ is a strong generating set $S$ for $G$ relative to $B$ with size $\sum_i |T_i| - 5 = 7$.
+% \end{slide}
+
+\section{Computing with permutation groups}
+
+\subsection{Bases and stabiliser chains}
+
+\begin{slide}
+    A \textbf{base} for $G$ is $B = [\beta_1,\dotsc,\beta_r] \subseteq \Omega$ such that only $1 \in G$ fixes all of $B$. Its \textbf{stabiliser chain} is $G = G_0 \geq G_1 \geq \dotsb \geq G_r = \{1\}$, where $G_i = \Stab_{G_{i - 1}}(\beta_i) = \Stab_G(\beta_1,\dotsc,\beta_i)$. \pause
+
+    We can find \textbf{transversals} $T_1,\dotsc,T_r$ with each $1 \ni T_i \subseteq G_{i - 1}$ and $|T_i| = |\beta_i^{G_{i - 1}}|$, such that $g \in G$ is uniquely $g = t_r t_{r - 1} \dotsb t_1$ with $t_i \in T_i$. \pause
+
+    \begin{center}
+        \begin{tikzpicture}
+            \GraphInit
+            \Vertex[x=-1, y=1, Lpos=180]{1}
+            \Vertex[x=-1, y=0, Lpos=180]{2}
+            \Vertex[x=-1, y=-1, Lpos=180]{3}
+            \Vertex[x=0, y=0, Lpos=-90]{4}
+            \Vertex[x=1, y=0, Lpos=-90]{5}
+            \Vertex[x=2, y=1]{6}
+            \Vertex[x=2, y=0]{7}
+            \Vertex[x=2, y=-1]{8}
+            \Edges(1,4,5,6)
+            \Edges(2,4,3)
+            \Edges(7,5,8)
+            \node at (0.5,0.5){$\Gamma$};
+        \end{tikzpicture}
+    \end{center}
+
+    A base for $G = \Aut(\Gamma)$ is $B = [4,1,2,6,7]$. The stabiliser chain is $G = G_0 \geq G_1 \geq G_2 \geq G_3 \geq G_4 \geq G_5 = \{1\}$. (Can use \texttt{GAP}.)
+\end{slide}
+
+\subsection{The size of the group}
+
+\begin{slide}
+    Let $T_1,\dotsc,T_r$ be transversals. Then the OST says $|G| = |T_1| \dotsb |T_r|$. \pause Recall that $G_0 = G$, $G_i = \Stab_G(\beta_1,\dotsc,\beta_i)$ and $B = [4,1,2,6,7]$.
+
+    \begin{center}
+        \begin{tikzpicture}[scale=0.75]
+            \GraphInit
+            \Vertex[x=-1, y=1, Lpos=180]{1}
+            \Vertex[x=-1, y=0, Lpos=180]{2}
+            \Vertex[x=-1, y=-1, Lpos=180]{3}
+            \Vertex[x=0, y=0, Lpos=-90]{4}
+            \Vertex[x=1, y=0, Lpos=-90]{5}
+            \Vertex[x=2, y=1]{6}
+            \Vertex[x=2, y=0]{7}
+            \Vertex[x=2, y=-1]{8}
+            \Edges(1,4,5,6)
+            \Edges(2,4,3)
+            \Edges(7,5,8)
+            \node at (0.5,0.5){$\Gamma$};
+        \end{tikzpicture}
+    \end{center}
+    $$\begin{array}{c|c|c|c}
+            G_i & \beta_i & \beta_i^{G_{i - 1}} & T_i \subseteq G_{i - 1}                              \\ \hline
+            G_1 & 4       & \{4,5\}             & \{(),(1,6)(2,7)(3,8)(4,\textcolor{red}{5})\}         \\ \pause
+            G_2 & 1       & \{1,2,3\}           & \{(),(1,\textcolor{red}{2}),(1,\textcolor{red}{3})\} \\ \pause
+            G_3 & 2       & \{2,3\}             & \{(),(2,\textcolor{red}{3})\}                        \\ \pause
+            G_4 & 6       & \{6,7,8\}           & \{(),(6,\textcolor{red}{7}),(6,\textcolor{red}{8})\} \\ \pause
+            G_5 & 7       & \{7,8\}             & \{(),(7,\textcolor{red}{8})\} \pause
+        \end{array}$$
+
+    So $|G| = |\Aut(\Gamma)| = 2 \cdot 3 \cdot 2 \cdot 3 \cdot 2 = 72$ and $|\Stab_G(1)| = 72/6 = 12$.
+\end{slide}
+
+\subsection{Generating random elements}
+
+\begin{slide}
+    We can get a random element $g = t_r t_{r - 1} \dotsb t_1 \in G$ where each $t_i \in T_i$. \pause
+    $$\begin{array}{c|c|c}
+            i & T_i \subseteq G_{i - 1}                      & g_i = \textcolor{red}{t_i} g_{i - 1} \\ \hline
+            1 & \{(),\textcolor{red}{(1,6)(2,7)(3,8)(4,5)}\} & (1,6)(2,7)(3,8)(4,5)                 \\ \pause
+            2 & \{(),\textcolor{red}{(1,2)},(1,3)\}          & (1,7,2,6)(3,8)(4,5)                  \\ \pause
+            3 & \{(),\textcolor{red}{(2,3)}\}                & (1,7,2,8,3,6)(4,5)                   \\ \pause
+            4 & \{\textcolor{red}{()},(6,7),(6,8)\}          & (1,7,2,8,3,6)(4,5)                   \\ \pause
+            5 & \{(),\textcolor{red}{(7,8)}\}                & (1,7,3,6)(2,8)(4,5)  \pause
+        \end{array}$$
+
+    Our random automorphism of $\Gamma$ is $g = (1,7,3,6)(2,8)(4,5)$: \pause
+
+    \begin{center}
+        \begin{tikzpicture}
+            \GraphInit
+            \Vertex[x=-1, y=1, Lpos=180]{1}
+            \Vertex[x=-1, y=0, Lpos=180]{2}
+            \Vertex[x=-1, y=-1, Lpos=180]{3}
+            \Vertex[x=0, y=0, Lpos=-90]{4}
+            \Vertex[x=1, y=0, Lpos=-90]{5}
+            \Vertex[x=2, y=1]{6}
+            \Vertex[x=2, y=0]{7}
+            \Vertex[x=2, y=-1]{8}
+            \Edges(1,4,5,6)
+            \Edges(2,4,3)
+            \Edges(7,5,8)
+            \node at (0.5,0.5){$\Gamma$};
+        \end{tikzpicture} \quad $\overset{g}{\to}$ \quad
+        \begin{tikzpicture}
+            \GraphInit
+            \Vertex[x=-1, y=1, Lpos=180]{7}
+            \Vertex[x=-1, y=0, Lpos=180]{8}
+            \Vertex[x=-1, y=-1, Lpos=180]{6}
+            \Vertex[x=0, y=0, Lpos=-90]{5}
+            \Vertex[x=1, y=0, Lpos=-90]{4}
+            \Vertex[x=2, y=1]{1}
+            \Vertex[x=2, y=0]{3}
+            \Vertex[x=2, y=-1]{2}
+            \Edges(1,4,5,6)
+            \Edges(2,4,3)
+            \Edges(7,5,8)
+            \node at (0.5,0.5){$\Gamma$};
+        \end{tikzpicture}
+    \end{center}
+\end{slide}
+
+\section{Concluding remarks}
+
+% \subsection{Membership testing}
+
+% \begin{slide}
+%     Test
+% \end{slide}
+
+% \subsection{References}
+
+% \begin{slide}
+%     \begin{itemize}
+%         \item Dirichlet convolution: \url{https://www.johndcook.com/blog/2021/10/24/dirichlet-mobius/}
+%         \item Dirichlet convolution: \url{https://en.wikipedia.org/wiki/Dirichlet_convolution}
+%         \item M\"obius function: \url{https://en.wikipedia.org/wiki/M\%C3\%B6bius_function}
+%         \item M\"obius inversion revisited (USC): \url{https://dornsife.usc.edu/assets/sites/1176/docs/PDF/430F19/430_Lecture_25.pdf}
+%     \end{itemize}
+% \end{slide}
+
+% \subsection{References}
+
+% \begin{slide}
+%     \nocite{*}
+%     \renewcommand{\bibname}{References}
+%     \bibliographystyle{plain} % BibTeX only
+%     \bibliography{references} % BibTeX only
+% \end{slide}
+
+\end{document}

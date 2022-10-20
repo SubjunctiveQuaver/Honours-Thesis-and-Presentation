@@ -1,0 +1,97 @@
+% \documentclass{beamer}
+\documentclass[handout]{beamer}
+
+% Settings and commands
+\input{preamble/preamble.tex}
+\input{commands.tex}
+
+\title{\textbf{Minimum bases in permutation groups}}
+\author{\textbf{Lawrence Chen}}
+\institute{\textbf{Honours presentation}}
+\date{\today}
+
+\titlegraphic{
+\vspace{3.75cm}\flushright\includegraphics[width=0.4\textwidth]{graphics/rubiks_cube_title.png}
+}
+
+\setbeamerfont{subsection in toc}{size=\footnotesize}
+\newcommand{\RC}{\mathcal{G}}
+\newcommand{\RS}{\mathcal{S}}
+% \metroset{block=fill}
+
+\begin{document}
+
+\begin{frame}[plain, noframenumbering]
+    \titlepage
+\end{frame}
+
+\begin{frame}[plain, noframenumbering]{Contents}
+    % \tableofcontents[hideallsubsections]
+    \begin{columns}[t]
+        \begin{column}{.5\textwidth}
+            \tableofcontents[sections={1-2}]
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \tableofcontents[sections={3-4}]
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\subsection{Questions about Rubik's cube}
+
+\begin{slide}
+    \begin{itemize}
+        \item How can we represent \textit{move sequences} and \textit{states} of a cube? \pause
+        \item How can we tell \textit{how many} states a Rubik's cube can take? \pause
+        \item If we repeat a move, do we eventually \textit{get back to the start}? \pause
+        \item If a Rubik's cube is \textit{restickered}, is it \textit{solvable}? \pause
+        \item How can we use maths to \textit{solve} a Rubik's cube? \pause
+    \end{itemize}
+
+    \textit{One answer:} using permutations and \textit{computational group theory}! \pause
+
+    \begin{alertblock}{(J. A. Paulos, Innumeracy)}
+        \vspace{4pt}
+        \begin{quotation}
+            Ideal Toy Company stated on the package of the original Rubik cube that there were more than three billion possible states the cube could attain. It's analogous to McDonald's proudly announcing that they've sold more than 120 hamburgers.
+        \end{quotation}
+    \end{alertblock}
+\end{slide}
+
+\section{Some basic group theory}
+
+\input{c1_group_theory.tex}
+
+\section{The Rubik's group}
+
+% \input{c2_rubiks_group.tex}
+
+\section{Analysing the Rubik's group}
+
+% \input{c3_analysis.tex}
+
+\section{Concluding remarks}
+
+\subsection{References and resources}
+
+\begin{slide}
+    \begin{itemize}
+        \item Analyzing Rubik's cube with \texttt{GAP}: \url{https://www.gap-system.org/Doc/Examples/rubik.html}
+        \item J.A. Paulos --- \textit{Innumeracy} (book)
+        \item Holt --- \textit{Handbook of Computational Group Theory} (textbook)
+        \item Dixon and Mortimer --- \textit{Permutation Groups} (textbook)
+        \item Orders of elements in Rubik's group (1260 largest, 13 smallest without, 11 rarest, 60 most common, median 67.3, 73 options): \url{https://www.jaapsch.net/puzzles/cubic3.htm\#p34}
+        \item Thistlethwaite's 52 move algorithm (using group theory): \url{https://www.jaapsch.net/puzzles/thistle.htm}
+    \end{itemize}
+\end{slide}
+
+% \subsection{References}
+
+% \begin{slide}
+%     \nocite{*}
+%     \renewcommand{\bibname}{References}
+%     \bibliographystyle{plain} % BibTeX only
+%     \bibliography{references} % BibTeX only
+% \end{slide}
+
+\end{document}

@@ -103,6 +103,77 @@ If $\varphi$ is faithful, then $1$ is the only element of $G$ that does not perm
 \begin{example}\label{eg:action_D8_on_square}
     Consider $D_8 = \{1,r,r^2,r^3,s,\added{2}{sr,sr^2,sr^3}\}$, the dihedral group of order 8. It ``is'' the \added{2}{symmetry} group of a square $S$ (with vertices $V = \{v_1,v_2,v_3,v_4\}$ labelled anticlockwise) in the following sense: let $r \mapsto (v_1,v_2,v_3,v_4)$ and $s \mapsto (v_1,v_4)(v_2,v_3)$ generate the (faithful) action of $D_8$ on $V$. For example, $v_4^{rs} = (v_4^r)^s = v_1^s = v_4$. \added{1}{By renaming elements of $V$, we see that this is equivalent} to the action of $D_8$ on the set $\{1,2,3,4\}$ defined by $r \mapsto (1,2,3,4)$ and $s \mapsto (1,4)(2,3)$, so we see that \added{1}{$D_8$ is isomorphic to a subgroup of $\Sym(4)$}.
 
+    \begin{center}
+        \begin{tikzpicture}[x=1cm,y=1cm]
+            \GraphInit[vstyle=Classic]
+            \tikzset{VertexStyle/.append style={minimum size=1pt}}
+            % TOP LEFT
+            \tkzDefPoint(0.5,0.25){l2}
+            \tkzDefPoint(0.5,-1.25){l3}
+            \tkzDefPoint(-0.25,0.25){l4}
+            \tkzDefPoint(1.25,-1.25){l5}
+            \tikzset{EdgeStyle/.style={dotted}}
+            \Edge(l2)(l3) % s
+            \Edge(l4)(l5) % sr
+            \tikzset{EdgeStyle/.style={-}}
+            {\Vertex[Lpos=180]{1} \SO[Lpos=180](1){2} \EA(2){3} \NO(3){4}
+                \AddVertexColor{red}{1}
+                \AddVertexColor{green}{2}
+                \AddVertexColor{blue}{3}
+                \AddVertexColor{yellow}{4}}
+            \Edges(1,2,3,4,1)
+            \tikzset{EdgeStyle/.style={->}}
+            \tkzDefPoint(1.5,-0.5){a1}
+            \tkzDefPoint(3.5,-0.5){a2}
+            \Edge[label=$r$](a1)(a2)
+            \tkzDefPoint(2.5,0){l1}\tkzLabelPoint[centered](l1){$\curvearrowleft$}
+            % TOP RIGHT
+            \tkzDefPoint(3.75,-0.5){l2}
+            \tkzDefPoint(5.25,-0.5){l3}
+            \tikzset{EdgeStyle/.style={dotted}}
+            \Edge(l2)(l3) % sr^2
+            \tikzset{EdgeStyle/.style={-}}
+            \Vertex[x=4,y=0,Lpos=180]{1} \SO[Lpos=180](1){2} \EA(2){3} \NO(3){4}
+            \AddVertexColor{yellow}{1}
+            \AddVertexColor{red}{2}
+            \AddVertexColor{green}{3}
+            \AddVertexColor{blue}{4}
+            \Edges(1,2,3,4,1)
+            \tikzset{EdgeStyle/.style={->}}
+            \tkzDefPoint(0.5,-1.5){a1}
+            \tkzDefPoint(0.5,-2.5){a2}
+            \Edge[label=$s$](a1)(a2)
+            % BOTTOM LEFT
+            \tikzset{EdgeStyle/.style={-}}
+            \Vertex[x=0,y=-3,Lpos=180]{1} \SO[Lpos=180](1){2} \EA(2){3} \NO(3){4}
+            \AddVertexColor{yellow}{1}
+            \AddVertexColor{blue}{2}
+            \AddVertexColor{green}{3}
+            \AddVertexColor{red}{4}
+            \Edges(1,2,3,4,1)
+            \tikzset{EdgeStyle/.style={->}}
+            \tkzDefPoint(1.5,-3.5){a1}
+            \tkzDefPoint(3.5,-3.5){a2}
+            \Edge[label=$r$](a1)(a2)
+            \tkzDefPoint(2.5,-3){l1}\tkzLabelPoint[centered](l1){$\curvearrowleft$}
+            % BOTTOM RIGHT
+            \tikzset{EdgeStyle/.style={-}}
+            \Vertex[x=4,y=-3,Lpos=180]{1} \SO[Lpos=180](1){2} \EA(2){3} \NO(3){4}
+            \AddVertexColor{red}{1}
+            \AddVertexColor{yellow}{2}
+            \AddVertexColor{blue}{3}
+            \AddVertexColor{green}{4}
+            \Edges(1,2,3,4,1)
+            \tikzset{EdgeStyle/.style={->}}
+            \tkzDefPoint(4.5,-1.5){a1}
+            \tkzDefPoint(4.5,-2.5){a2}
+            \Edge[label=$sr^2$](a1)(a2)
+            \tkzDefPoint(1.5,-1.5){a1}
+            \tkzDefPoint(3.5,-2.5){a2}
+            \Edge[label=$sr$](a1)(a2)
+        \end{tikzpicture}
+    \end{center}
+
     Now let $D = \{d_1,d_2\}$ be the set of diagonals of $S$, where $d_1$ joins $v_1$ and $v_3$, and $d_2$ joins $v_2$ and $v_4$. A corresponding action $\varphi$ of $D_8$ on $D$ is given by $\varphi(r) = \varphi(s) = (d_1,d_2)$: for example, $d_1^{rs} = (d_1^r)^s = d_2^s = d_1$. Then the kernel of $\varphi$ is $\{1,r^2,\added{2}{sr,sr^3}\} \trianglelefteq D_8$; the action is not faithful.
 
     Now consider the corresponding action of $D_8$ on $\Omega = \{S,v\}$, where $v$ is the centre of $S$. Every \added{2}{symmetry} of $S$ fixes $S$ and its centre, so $S^g = S$ and $v^g = v$ for all $g \in D_8$, so $D_8$ acts trivially on $\Omega$.
