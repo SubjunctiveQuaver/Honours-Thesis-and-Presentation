@@ -7,7 +7,7 @@
 \contentsline {section}{\numberline {2.1}Group actions}{5}{section.2.1}%
 \contentsline {subsection}{Orbits and stabilisers}{7}{section*.4}%
 \contentsline {subsection}{Conjugacy, centralisers and normalisers}{8}{section*.5}%
-\contentsline {subsection}{Transitivity and primitivity}{9}{section*.6}%
+\contentsline {subsection}{Transitivity and primitivity}{10}{section*.6}%
 \contentsline {section}{\numberline {2.2}Bases and stabiliser chains}{15}{section.2.2}%
 \contentsline {subsection}{Sizes of bases and the group}{16}{section*.7}%
 \contentsline {subsection}{Strong generating sets}{18}{section*.8}%

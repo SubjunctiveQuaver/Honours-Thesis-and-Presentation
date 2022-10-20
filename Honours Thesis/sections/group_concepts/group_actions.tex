@@ -90,18 +90,8 @@ If $\varphi$ is faithful, then $1$ is the only element of $G$ that does not perm
     Let $G \leq \Sym(\Omega)$ be a permutation group. The \textbf{natural action} $\varphi : G \to \Sym(\Omega)$ of $G$ on $\Omega$ is given by the inclusion map $g \mapsto g$ (so that for $\alpha \in \Omega$ \added{4}{and $g \in G$}, $\added{4}{\alpha^{\varphi(g)}} := \alpha^g$, the image of $\alpha$ under $g$); this is faithful. (Note that the image $G^\Omega \leq \Sym(\Omega)$ of an arbitrary $G$-action on $\Omega$ takes the natural action; it yields a homomorphism $G \to G^\Omega$, and $G^\Omega$ is a \textit{homomorphic image} of $G$ that acts faithfully on $\Omega$.)
 \end{example}
 
-\begin{example}[quotient action]\label{eg:quotient_action}
-    Let $G$ act on $\Omega$ via $\varphi$. If $N \unlhd G$ is contained in $\Ker\varphi$, then the quotient group $G/N$ acts on $\Omega$ by $\alpha^{gN} := \alpha^g$ for $\alpha \in \Omega$ and $gN \in G/N$. This is well-defined: if $\alpha \in \Omega$ and $gN = hN$ then $gh^{-1} \in N$ (since $N$ is normal in $G$), so $gh^{-1} \in \ker\varphi$, so $\alpha^{gh^{-1}} = \alpha$, which implies $\alpha^g = \alpha^h$. Also, we verify that $\alpha^{1_{G/N}} = \alpha^{1N} = \alpha^1 = \alpha$ and $(\alpha^{gN})^{hN} = (\alpha^g)^h = \alpha^{gh} = \alpha^{ghN} = \alpha^{(gN)(hN)}$ for $\alpha \in \Omega$ and $gN,hN \in G/N$.
-
-    Note that the $G/N$-action $\hat\varphi$ on $\Omega$ is faithful if and only if $N = \Ker\varphi$. This is because
-    $$\Ker\hat\varphi = \{gN \in G/N : \alpha^{gN} = \alpha^g = \alpha\ \text{for all}\ \alpha \in \Omega\} = \{gN \in G/N : g \in \Ker\varphi\} = \Ker\varphi/N,$$
-    and $\Ker\varphi/N = 1$ if and only if $N = \Ker\varphi$. (Then if $K = \Ker\varphi$, then $G/K$ and $G^\Omega \leq \Sym(\Omega)$ are permutation isomorphic, via the identity relabelling $\tau : \Omega \to \Omega$ and the natural isomorphism $\psi : G/K \to G^\Omega$ (see \autoref{thm:FIT}), $gK \mapsto \varphi(g)$, since for $\alpha \in \Omega$ and $gK \in G/K$, we have $\tau(\alpha^{gK}) = \alpha^{gK} = \alpha^{\varphi(g)} = \tau(\alpha)^{\psi(gK)}$.)
-\end{example}
-
-% If $G \leq \Sym(\Omega)$ is a permutation group that acts on $\tilde\Omega$ via $\varphi : G \to \Sym(\tilde\Omega)$ that is not the natural action, then $\varphi$ may not be faithful. However, the above shows that $G/\Ker\varphi$ acts faithfully on $\tilde\Omega$. By the first isomorphism theorem, $G/\Ker\varphi$ is isomorphic to a subgroup of $\Sym(\tilde\Omega)$, so we may identify $G/\Ker\varphi$ as a permutation group on $\tilde\Omega$, where the action is induced by $\varphi$. % (This is useful in the analysis of certain permutation groups such as the Rubik's group.)
-
 \begin{example}\label{eg:action_D8_on_square}
-    Consider $D_8 = \{1,r,r^2,r^3,s,\added{2}{sr,sr^2,sr^3}\}$, the dihedral group of order 8. It ``is'' the \added{2}{symmetry} group of a square $S$ (with vertices $V = \{v_1,v_2,v_3,v_4\}$ labelled anticlockwise) in the following sense: let $r \mapsto (v_1,v_2,v_3,v_4)$ and $s \mapsto (v_1,v_4)(v_2,v_3)$ generate the (faithful) action of $D_8$ on $V$. For example, $v_4^{sr} = (v_4^s)^r = v_1^r = v_2$. Below is a diagram that visualises the $D_8$-action on $V$; $g \in D_8$ sends vertex $v_i$ to $v_i^g$ (follow the colours).
+    Consider $D_8 = \langle r,s \rangle = \{1,r,r^2,r^3,s,sr,sr^2,sr^3\}$, the dihedral group of order 8. It ``is'' the \added{2}{symmetry} group of a square $S$ (with vertices $V = \{v_1,v_2,v_3,v_4\}$ labelled anticlockwise) in the following sense: let $r \mapsto (v_1,v_2,v_3,v_4)$ and $s \mapsto (v_1,v_4)(v_2,v_3)$ generate the (faithful) action of $D_8$ on $V$. Then $r$ represents anticlockwise rotation by $\pi/2$ and $s$ represents horizontal reflection; the product in $D_8$ mimics composition of these symmetries. For example, $v_4^{sr} = (v_4^s)^r = v_1^r = v_2$. Below is a diagram that visualises this $D_8$-action on $V$; the element $g \in D_8$ sends vertex $v_i$ to $v_i^g$ (follow the colours; note that $sr \mapsto (v_2,v_4)$ and $sr^2 \mapsto (v_1,v_2)(v_3,v_4)$).
 
     \begin{center}
         \begin{tikzpicture}[x=1cm,y=1cm]
@@ -180,6 +170,16 @@ If $\varphi$ is faithful, then $1$ is the only element of $G$ that does not perm
 
     Now consider the corresponding action of $D_8$ on $\Omega = \{S,v\}$, where $v$ is the centre of $S$. Every \added{2}{symmetry} of $S$ fixes $S$ and its centre, so $S^g = S$ and $v^g = v$ for all $g \in D_8$, so $D_8$ acts trivially on $\Omega$.
 \end{example}
+
+\begin{example}[quotient action]\label{eg:quotient_action}
+    Let $G$ act on $\Omega$ via $\varphi$. If $N \unlhd G$ is contained in $\Ker\varphi$, then the quotient group $G/N$ acts on $\Omega$ by $\alpha^{gN} := \alpha^g$ for $\alpha \in \Omega$ and $gN \in G/N$. This is well-defined: if $\alpha \in \Omega$ and $gN = hN$ then $gh^{-1} \in N$ (since $N$ is normal in $G$), so $gh^{-1} \in \ker\varphi$, so $\alpha^{gh^{-1}} = \alpha$, which implies $\alpha^g = \alpha^h$. Also, we verify that $\alpha^{1_{G/N}} = \alpha^{1N} = \alpha^1 = \alpha$ and $(\alpha^{gN})^{hN} = (\alpha^g)^h = \alpha^{gh} = \alpha^{ghN} = \alpha^{(gN)(hN)}$ for $\alpha \in \Omega$ and $gN,hN \in G/N$.
+
+    Note that the $G/N$-action $\hat\varphi$ on $\Omega$ is faithful if and only if $N = \Ker\varphi$. This is because
+    $$\Ker\hat\varphi = \{gN \in G/N : \alpha^{gN} = \alpha^g = \alpha\ \text{for all}\ \alpha \in \Omega\} = \{gN \in G/N : g \in \Ker\varphi\} = \Ker\varphi/N,$$
+    and $\Ker\varphi/N = 1$ if and only if $N = \Ker\varphi$. (Then if $K = \Ker\varphi$, then $G/K$ and $G^\Omega \leq \Sym(\Omega)$ are permutation isomorphic, via the identity relabelling $\tau : \Omega \to \Omega$ and the natural isomorphism $\psi : G/K \to G^\Omega$ (see \autoref{thm:FIT}), $gK \mapsto \varphi(g)$, since for $\alpha \in \Omega$ and $gK \in G/K$, we have $\tau(\alpha^{gK}) = \alpha^{gK} = \alpha^{\varphi(g)} = \tau(\alpha)^{\psi(gK)}$.)
+\end{example}
+
+% If $G \leq \Sym(\Omega)$ is a permutation group that acts on $\tilde\Omega$ via $\varphi : G \to \Sym(\tilde\Omega)$ that is not the natural action, then $\varphi$ may not be faithful. However, the above shows that $G/\Ker\varphi$ acts faithfully on $\tilde\Omega$. By the first isomorphism theorem, $G/\Ker\varphi$ is isomorphic to a subgroup of $\Sym(\tilde\Omega)$, so we may identify $G/\Ker\varphi$ as a permutation group on $\tilde\Omega$, where the action is induced by $\varphi$. % (This is useful in the analysis of certain permutation groups such as the Rubik's group.)
 
 \subsection{Orbits and stabilisers}
 

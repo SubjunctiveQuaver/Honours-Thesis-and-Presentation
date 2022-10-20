@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.22)  20 OCT 2022 20:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.22)  20 OCT 2022 22:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2109,7 +2109,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinuxLibertineT-TLF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [12] [13]) (sections/group_concepts/bases_stabiliser_chains.tex [14] [15] [16] [17] [18] [19]
+ [12] [13] [14]) (sections/group_concepts/bases_stabiliser_chains.tex [15] [16] [17] [18] [19]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 243.
  (txt_files/automorphism_group_graph_bsgs_gap.gap
 
@@ -2118,10 +2118,10 @@ LaTeX Font Warning: Font shape `OT1/zi4/m/it' undefined
 
 LaTeX Font Info:    Font shape `OT1/zi4/m/it' will be
 (Font)              scaled to size 10.0pt on input line 1.
-) (txt_files/automorphism_group_graph_bsgs_gap_2.gap) [20]
+) (txt_files/automorphism_group_graph_bsgs_gap_2.gap [20])
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/scit' will be
 (Font)              scaled to size 10.0pt on input line 273.
- (txt_files/automorphism_group_graph_bsgs_gap_3.gap) (sections/group_concepts/rubiks_cube_net_base.tikz
+ (txt_files/automorphism_group_graph_bsgs_gap_3.gap) [21] (sections/group_concepts/rubiks_cube_net_base.tikz
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
 (Font)              scaled to size 9.0pt on input line 38.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
@@ -2129,15 +2129,9 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
 (Font)              scaled to size 5.5pt on input line 38.
 )
-Underfull \vbox (badness 2495) has occurred while \output is active []
-
- [21]
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
 (Font)              scaled to size 10.0pt on input line 319.
- (sections/group_concepts/rubiks_cube_net_random.tikz)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [22] [23]) (sections/group_concepts/classification_results.tex [24] (txt_files/klein_4_blocks.gap))) [25]
+ (sections/group_concepts/rubiks_cube_net_random.tikz) [22] [23]) (sections/group_concepts/classification_results.tex [24] (txt_files/klein_4_blocks.gap))) [25]
 Chapter 3.
 (sections/complexity_concepts.tex [26
 
@@ -2242,9 +2236,9 @@ Here is how much of TeX's memory you used:
  66532 multiletter control sequences out of 15000+600000
  582083 words of font info for 447 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 101i,18n,105p,2466b,1917s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 101i,18n,105p,2466b,2066s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-ts1.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_u7qtuy.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_n3gv2c.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_fygcup.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_hmhe76.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_ks2ukx.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-ot1-0.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_kijugd.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_lyu3x3.enc}<C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathMI.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathMI5.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathMI7.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathRM.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineTBI.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineTZ.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/NewTXMI.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/NewTXMI7.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txexas.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txexs.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txsya.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txsyb.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txsyc.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txsys.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (80 pages, 1311087 bytes).
+Output written on main.pdf (80 pages, 1311802 bytes).
 PDF statistics:
  2537 PDF objects out of 2984 (max. 8388607)
  1251 named destinations out of 1440 (max. 500000)
