@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.22)  20 OCT 2022 11:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.22)  20 OCT 2022 14:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2087,31 +2087,31 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
 Package hyperref Info: bookmark level for unknown proposition defaults to 0 on input line 126.
 Package hyperref Info: bookmark level for unknown corollary defaults to 0 on input line 140.
  [7] [8] [9]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 262.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 269.
  (txt_files/klein_4_transitivity.gap
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 1.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 8.0pt on input line 1.
 ) [10]
-Package hyperref Info: bookmark level for unknown remark defaults to 0 on input line 320.
+Package hyperref Info: bookmark level for unknown remark defaults to 0 on input line 327.
  [11] (sections/group_concepts/rubiks_cube_net.tikz
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 9.0pt on input line 28.
 )
-LaTeX Font Info:    Trying to load font information for TS1+LinuxLibertineT-TLF on input line 357.
+LaTeX Font Info:    Trying to load font information for TS1+LinuxLibertineT-TLF on input line 364.
  (C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex/latex/libertine\ts1linuxlibertinet-tlf.fd
 File: TS1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for TS1/LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 357.
+(Font)              scaled to size 10.0pt on input line 364.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinuxLibertineT-TLF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [12] [13]) (sections/group_concepts/bases_stabiliser_chains.tex [14] [15] [16] [17] [18]
+ [12] [13]) (sections/group_concepts/bases_stabiliser_chains.tex [14] [15] [16] [17] [18] [19]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 243.
- [19] (txt_files/automorphism_group_graph_bsgs_gap.gap
+ (txt_files/automorphism_group_graph_bsgs_gap.gap
 
 LaTeX Font Warning: Font shape `OT1/zi4/m/it' undefined
 (Font)              using `OT1/zi4/m/n' instead on input line 1.
@@ -2131,47 +2131,50 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
 )
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
 (Font)              scaled to size 10.0pt on input line 319.
- [21] (sections/group_concepts/rubiks_cube_net_random.tikz) [22]) (sections/group_concepts/classification_results.tex [23] (txt_files/klein_4_blocks.gap))) [24]
-Chapter 3.
-(sections/complexity_concepts.tex [25
+ [21] (sections/group_concepts/rubiks_cube_net_random.tikz) [22]) (sections/group_concepts/classification_results.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-] [26]
+ [23] (txt_files/klein_4_blocks.gap [24]))) [25]
+Chapter 3.
+(sections/complexity_concepts.tex [26
+
+] [27]
 Overfull \hbox (1.89429pt too wide) in paragraph at lines 86--87
-[]\OT1/LinuxLibertineT-TLF/m/n/10 (-20) Recall the mem-ber-ship test al-gorithm ([][]Al-gorithm 2.68[][][]) for $\OML/nxlmi/m/it/10 g \LMS/ntxsy/m/n/10 2 \OML/nxlmi/m/it/10 G$ \OT1/LinuxLibertineT-TLF/m/n/10 (-20) runs in $\OML/nxlmi/m/it/10 O\LMS/ntxsy/m/n/10 ¹\OML/nxlmi/m/it/10 r [][] \LMS/ntxsy/m/n/10 j\OML/nxlmi/m/it/10 T[]\LMS/ntxsy/m/n/10 jº$
+[]\OT1/LinuxLibertineT-TLF/m/n/10 (-20) Recall the mem-ber-ship test al-gorithm ([][]Al-gorithm 2.69[][][]) for $\OML/nxlmi/m/it/10 g \LMS/ntxsy/m/n/10 2 \OML/nxlmi/m/it/10 G$ \OT1/LinuxLibertineT-TLF/m/n/10 (-20) runs in $\OML/nxlmi/m/it/10 O\LMS/ntxsy/m/n/10 ¹\OML/nxlmi/m/it/10 r [][] \LMS/ntxsy/m/n/10 j\OML/nxlmi/m/it/10 T[]\LMS/ntxsy/m/n/10 jº$
  []
 
-[27]
+[28]
 Package hyperref Info: bookmark level for unknown conjecture defaults to 0 on input line 113.
- [28]) [29]
+ [29]) [30]
 Chapter 4.
-(sections/blaha.tex [30
+(sections/blaha.tex [31
 
 ] (sections/group_concepts/rubiks_cube_net_base_greedy.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [31] [32] [33] [34] [35]) [36]
+ [32] [33] [34] [35] [36]) [37]
 Chapter 5.
-(sections/perm_group_theory.tex [37
+(sections/perm_group_theory.tex [38
 
-] [38] [39] [40] [41]
+] [39] [40] [41] [42]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [42] [43] (txt_files/automorphism_group_graph_wreath.gap) [44] [45] [46]
+ [43] [44] (txt_files/automorphism_group_graph_wreath.gap) [45] [46] [47]
 Underfull \vbox (badness 2253) has occurred while \output is active []
 
- [47] [48] [49] [50]) [51]
+ [48] [49] [50] [51]) [52]
 Chapter 6.
-(sections/lit_review.tex [52
+(sections/lit_review.tex [53
 
-] [53]
-Package hyperref Info: bookmark level for unknown question defaults to 0 on input line 73.
- [54]
+] [54]
+Package hyperref Info: bookmark level for unknown question defaults to 0 on input line 77.
+ [55] [56]
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/sc' will be
-(Font)              scaled to size 10.0pt on input line 119.
+(Font)              scaled to size 10.0pt on input line 123.
 Package microtype Info: Character `013' is missing
 (microtype)             in font `OT1/LinuxLibertineT-TLF/m/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
- [55]) (main.bbl [56]
+ [57]) (main.bbl [58]
 LaTeX Font Info:    Font shape `OT1/zi4/m/n' will be
 (Font)              scaled to size 7.3pt on input line 34.
 LaTeX Font Info:    Font shape `OT1/zi4/m/n' will be
@@ -2181,14 +2184,14 @@ Underfull \hbox (badness 1221) in paragraph at lines 81--86
 []\OT1/LinuxLibertineT-TLF/m/n/10 (+20) John D. Dixon and Brian Mor-timer.  \OT1/LinuxLibertineT-TLF/m/it/10 (+20) Per-muta-tion Groups\OT1/LinuxLibertineT-TLF/m/n/10 (+20) .  Springer New York, 1996.  [][]$\OT1/zi4/m/it/10 doi : 10 . 1007 /
  []
 
-[57
+[59
 
 ]
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 10.0pt on input line 199.
-) (sections/appendix.tex [58]
+) (sections/appendix.tex [60]
 Appendix A.
-(gap_code/rubiks_def.gap) (txt_files/rubiks_group.gap [59
+(gap_code/rubiks_def.gap) (txt_files/rubiks_group.gap [61
 
 ]) (txt_files/rubiks_group_membership.gap
 LaTeX Font Info:    Trying to load font information for TS1+zi4 on input line 13.
@@ -2206,21 +2209,21 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `zi4' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-[60]) (txt_files/rubiks_group_greedy.gap) (gap_code/random_elt.gap) (gap_code/membership.gap [61]) (gap_code/random_elt_print.gap) (gap_code/membership_print.gap [62]) (txt_files/automorphism_group_graph_bsgs_gap_appendix.gap [63]
+[62]) (txt_files/rubiks_group_greedy.gap) (gap_code/random_elt.gap) (gap_code/membership.gap [63]) (gap_code/random_elt_print.gap) (gap_code/membership_print.gap [64]) (txt_files/automorphism_group_graph_bsgs_gap_appendix.gap [65]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [64]) (gap_code/d8_wreath_product.gap [65]) (txt_files/d8_wreath_product_gap_output.gap) [66]
+ [66]) (gap_code/d8_wreath_product.gap [67]) (txt_files/d8_wreath_product_gap_output.gap) [68]
 Appendix B.
-(gap_code/greedy_base.gap) (txt_files/greedy_better_than_default.gap [67
+(gap_code/greedy_base.gap) (txt_files/greedy_better_than_default.gap [69
 
-]) (gap_code/subgrps_base_len.gap [68]
+]) (gap_code/subgrps_base_len.gap [70]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [69]) (txt_files/agl_base_gap_output/2.gap) [70] (txt_files/agl_base_gap_output/3.gap) (txt_files/agl_base_gap_output/4.gap) (txt_files/agl_base_gap_output/5.gap) (txt_files/agl_base_gap_output/6.gap [71]) (txt_files/agl_base_gap_output/7.gap) (txt_files/agl_base_gap_output/8.gap) [72] (txt_files/agl_base_gap_output/9.gap) (txt_files/agl_base_gap_output/10.gap))
+ [71]) (txt_files/agl_base_gap_output/2.gap) [72] (txt_files/agl_base_gap_output/3.gap) (txt_files/agl_base_gap_output/4.gap) (txt_files/agl_base_gap_output/5.gap) (txt_files/agl_base_gap_output/6.gap [73]) (txt_files/agl_base_gap_output/7.gap) (txt_files/agl_base_gap_output/8.gap) [74] (txt_files/agl_base_gap_output/9.gap) (txt_files/agl_base_gap_output/10.gap))
 \tf@thm=\write5
 \openout5 = `main.thm'.
 
- [73] (main.aux)
+ [75] (main.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
@@ -2230,17 +2233,17 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 51291 strings out of 478582
- 1011792 string characters out of 2842422
+ 51296 strings out of 478582
+ 1011867 string characters out of 2842422
  1851154 words of memory out of 3000000
- 66462 multiletter control sequences out of 15000+600000
+ 66463 multiletter control sequences out of 15000+600000
  581706 words of font info for 445 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 101i,18n,105p,2466b,1917s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 101i,18n,105p,2466b,2076s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-ts1.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_u7qtuy.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_n3gv2c.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_fygcup.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_hmhe76.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_ks2ukx.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-ot1-0.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_kijugd.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_lyu3x3.enc}<C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathMI.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathMI5.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathMI7.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathRM.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineTBI.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineTZ.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/NewTXMI.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/NewTXMI7.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txexas.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txexs.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txsya.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txsyb.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txsyc.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txsys.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (78 pages, 1301231 bytes).
+Output written on main.pdf (80 pages, 1308715 bytes).
 PDF statistics:
- 2519 PDF objects out of 2984 (max. 8388607)
- 1247 named destinations out of 1440 (max. 500000)
+ 2537 PDF objects out of 2984 (max. 8388607)
+ 1251 named destinations out of 1440 (max. 500000)
  97298 words of extra memory for PDF output out of 106986 (max. 10000000)
 

@@ -227,33 +227,33 @@ so $(\phi^{(g,\omega)})^{(h,\eta)} = \phi^{(gh,\omega^h\eta)}$. The degree of th
 
 In the case that $\Omega = [n]$, we may identify $\Gamma^\Omega$ with $\Gamma^n$ via $(\phi : \Omega \to \Gamma) \mapsto (\phi(1),\dotsc,\phi(n)) \in \Gamma^n$. Then the product action corresponds to $(\phi_1,\dotsc,\phi_n)^{(g,\omega_1,\dotsc,\omega_n)} = (\phi_{1_g}^{\omega_1},\dotsc,\phi_{n_g}^{\omega_n})$ for $(\phi_1,\dotsc,\phi_n) \in \Gamma^n$, $g \in G$ and $(\omega_1,\dotsc,\omega_n) \in H^n$, where each $i_g = i^{g^{-1}}$. Thus, we permute the components of $(\phi_1,\dotsc,\phi_n)$ according to $g$, then apply the permutations $\omega_i$ to each component.}
 
-\added{3}{\begin{example}\label{eg:product_action_Sm_subsets}
-        Let $k \leq m$ and define an action of $\Sym(m)$ on $\binom{[m]}{k}$, the $k$-element subsets of $[m]$, by the following: for $\sigma \in \Sym(m)$ and $\{i_1,\dotsc,i_k\} \subseteq [m]$, let
-        $$\{i_1,\dotsc,i_k\}^\sigma = \{i_1^\sigma,\dotsc,i_k^\sigma\}.$$
-        This is an action: for $\{i_1,\dotsc,i_k\} \subseteq [m]$ and $\sigma,\tau \in \Sym(m)$, $\{i_1,\dotsc,i_k\}^1 = \{i_1^1,\dotsc,i_k^1\} = \{i_1,\dotsc,i_k\}$ and
-        $$\{i_1,\dotsc,i_k\}^{\sigma\tau} = \{i_1^{\sigma\tau},\dotsc,i_k^{\sigma\tau}\} = \{i_1^\sigma,\dotsc,i_k^\sigma\}^\tau = (\{i_1,\dotsc,i_k\}^\sigma)^\tau.$$
-        The degree of the action is $\binom{m}{k}$.
+\begin{example}\label{eg:product_action_Sm_subsets}
+    Let $k \leq m$ and define an action of $\Sym(m)$ on $\binom{[m]}{k}$, the $k$-element subsets of $[m]$, by the following: for $\sigma \in \Sym(m)$ and $\{i_1,\dotsc,i_k\} \subseteq [m]$, let
+    $$\{i_1,\dotsc,i_k\}^\sigma = \{i_1^\sigma,\dotsc,i_k^\sigma\}.$$
+    This is an action: for $\{i_1,\dotsc,i_k\} \subseteq [m]$ and $\sigma,\tau \in \Sym(m)$, $\{i_1,\dotsc,i_k\}^1 = \{i_1^1,\dotsc,i_k^1\} = \{i_1,\dotsc,i_k\}$ and
+    $$\{i_1,\dotsc,i_k\}^{\sigma\tau} = \{i_1^{\sigma\tau},\dotsc,i_k^{\sigma\tau}\} = \{i_1^\sigma,\dotsc,i_k^\sigma\}^\tau = (\{i_1,\dotsc,i_k\}^\sigma)^\tau.$$
+    The degree of the action is $\binom{m}{k}$.
 
-        Now consider the wreath product $\Sym(m) \wr \Sym(r)$ with the product action, where the action of $H = \Sym(m)$ is the above action on $k$-element subsets $\Gamma = \binom{[m]}{k}$ of $[m]$, and the action of $G = \Sym(r)$ is the natural action on $\Omega = [r]$. Here, the product action of the wreath product has degree $|\binom{[m]}{k}|^{|[r]|} = \binom{m}{k}^r$.
+    Now consider the wreath product $\Sym(m) \wr \Sym(r)$ with the product action, where the action of $H = \Sym(m)$ is the above action on $k$-element subsets $\Gamma = \binom{[m]}{k}$ of $[m]$, and the action of $G = \Sym(r)$ is the natural action on $\Omega = [r]$. Here, the product action of the wreath product has degree $|\binom{[m]}{k}|^{|[r]|} = \binom{m}{k}^r$; this example is important for the definition of a \hyperref[def:large_base]{large base} permutation group. (Note that $|\Sym(m) \wr \Sym(r)| = (m!)^r r!$.)
 
-        For example, if $m = 3$, $r = 4$ and $k = 2$, with $g = (1,2,4) \in G$ and $(\omega_1,\omega_2,\omega_3,\omega_4) = ((),(1,2),(1,2,3),(2,3)) \in H^4$, we have (using the identification for $\Omega = [r]$) that
-        \begin{multline*}
-            (\underbrace{\{1,2\}}_{\phi_1},\underbrace{\{2,3\}}_{\phi_2},\underbrace{\{1,2\}}_{\phi_3},\underbrace{\{1,3\}}_{\phi_4})^{((1,2,4),(),(1,2),(1,2,3),(2,3))} = ({\underbrace{\{1,3\}}_{\phi_4}}^{()},{\underbrace{\{1,2\}}_{\phi_1}}^{(1,2)},{\underbrace{\{1,2\}}_{\phi_3}}^{(1,2,3)},{\underbrace{\{2,3\}}_{\phi_2}}^{(2,3)}) \\
-            = (\{1^{()},3^{()}\},\{1^{(1,2)},2^{(1,2)}\},\{1^{(1,3,2)},2^{(1,3,2)}\},\{2^{(2,3)},3^{(2,3)}\}) = (\{1,3\},\{2,1\},\{3,1\},\{3,2\}) \in \Gamma^4.
-        \end{multline*}
-    \end{example}
+    For example, if $m = 3$, $r = 4$ and $k = 2$, with $g = (1,2,4) \in G$ and $(\omega_1,\omega_2,\omega_3,\omega_4) = ((),(1,2),(1,2,3),(2,3)) \in H^4$, we have (using the identification for $\Omega = [r]$) that
+    \begin{multline*}
+        (\underbrace{\{1,2\}}_{\phi_1},\underbrace{\{2,3\}}_{\phi_2},\underbrace{\{1,2\}}_{\phi_3},\underbrace{\{1,3\}}_{\phi_4})^{((1,2,4),(),(1,2),(1,2,3),(2,3))} = ({\underbrace{\{1,3\}}_{\phi_4}}^{()},{\underbrace{\{1,2\}}_{\phi_1}}^{(1,2)},{\underbrace{\{1,2\}}_{\phi_3}}^{(1,2,3)},{\underbrace{\{2,3\}}_{\phi_2}}^{(2,3)}) \\
+        = (\{1^{()},3^{()}\},\{1^{(1,2)},2^{(1,2)}\},\{1^{(1,3,2)},2^{(1,3,2)}\},\{2^{(2,3)},3^{(2,3)}\}) = (\{1,3\},\{2,1\},\{3,1\},\{3,2\}) \in \Gamma^4.
+    \end{multline*}
+\end{example}
 
-    % TODO: PRODUCT ACTION FAITHFUL IFF ACTIONS OF EACH GROUP FAITHFUL?
+% TODO: PRODUCT ACTION FAITHFUL IFF ACTIONS OF EACH GROUP FAITHFUL?
 
-    The following result gives a simple criterion for the product action of a wreath group to be primitive; see Lemma 2.7A in \cite{dixon_mortimer_perm_groups1996} for a proof.
+The following result gives a simple criterion for the product action of a wreath group to be primitive; see Lemma 2.7A in \cite{dixon_mortimer_perm_groups1996} for a proof.
 
-    \begin{proposition}
-        If nontrivial groups $G$ and $H$ act on $\Omega$ and $\Gamma$, then the wreath product $W = H \wr_\Omega G$ is primitive in the product action on $\Gamma^\Omega$ if and only if
-        \begin{enumerate}[(i)]
-            \item $H$ acts primitively but not regularly on $\Gamma$, and
-            \item $\Omega$ is finite and $G$ acts transitively on $\Omega$.
-        \end{enumerate}
-    \end{proposition}}
+\begin{proposition}
+    If nontrivial groups $G$ and $H$ act on $\Omega$ and $\Gamma$, then the wreath product $W = H \wr_\Omega G$ is primitive in the product action on $\Gamma^\Omega$ if and only if
+    \begin{enumerate}[(i)]
+        \item $H$ acts primitively but not regularly on $\Gamma$, and
+        \item $\Omega$ is finite and $G$ acts transitively on $\Omega$.
+    \end{enumerate}
+\end{proposition}
 
 We conclude with two applications of wreath products to the automorphism group of the graph $\Gamma$ from \autoref{eg:automorphism_group_graph_bsgs} and Rubik's group $G \leq \Sym(48)$ from \autoref{eg:rubiks_group}.
 
