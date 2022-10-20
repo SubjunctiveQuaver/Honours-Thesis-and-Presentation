@@ -55,7 +55,7 @@ There is a natural notion of equivalence of actions \added{2}{on a fixed group $
         Two permutation groups $G \leq \Sym(\Omega)$ and $H \leq \Sym(\tilde\Omega)$ are \textbf{permutation isomorphic} if there is a bijection $\tau : \Omega \to \tilde\Omega$ and an isomorphism $\psi : G \to H$ such that $\tau(\alpha^g) = \tau(\alpha)^{\psi(g)}$ for all $g \in G$ and $\alpha \in \Omega$.
     \end{definition}
 
-    The condition on $\tau,\psi$ says that the following diagram commutes \added{4}{for all $g \in G$}:}
+    The pair $(\tau,\psi)$ is a \textbf{permutation isomorphism} from $G$ to $H$; then $(\tau^{-1},\psi^{-1})$ is a permutation isomorphism from $H$ to $G$ (so that permutation isomorphism is an equivalence relation). The condition on $\tau,\psi$ says that the following diagram commutes \added{4}{for all $g \in G$}:}
 
 % https://q.uiver.app/?q=WzAsNCxbMCwwLCJcXE9tZWdhXzEiXSxbMCwyLCJcXE9tZWdhXzIiXSxbMiwwLCJcXE9tZWdhXzEiXSxbMiwyLCJcXE9tZWdhXzIiXSxbMCwxLCJcXHRhdSJdLFsyLDMsIlxcdGF1IiwyXSxbMSwzLCJcXHBzaShnKSBcXGluIEgiXSxbMCwyLCJnIFxcaW4gRyIsMl1d
 \[\begin{tikzcd}
@@ -339,7 +339,7 @@ Recall the condition for equality of right cosets: for $H \leq G$, $Hg = Hk$ if 
 
     However, if we impose that $G \leq \Sym(\Omega)$ and $H \leq \Sym(\tilde\Omega)$ are \textit{permutation isomorphic} via $\tau : \Omega \to \tilde\Omega$ and $\psi : G \to H$, then transitivity is preserved. This is because if $G$ is transitive, then for arbitrary $\tilde\alpha,\tilde\beta \in \tilde\Omega$ with $\tilde\alpha = \tau(\alpha)$ and $\tilde\beta = \tau(\beta)$ for some $\alpha,\beta \in \Omega$, there is $g \in G$ such that
     $$\tilde\beta = \tau(\beta) = \tau(\alpha^g) = \tau(\alpha)^{\psi(g)} = \tilde\alpha^{\psi(g)},$$
-    so $H$ is transitive. The converse direction follows since $\tau^{-1}$ and $\psi^{-1}$ give a permutation isomorphism from $H$ to $G$. From this, we conclude that the isomorphic groups $G,H \leq \Sym(4)$ as defined above are \textit{not} permutation isomorphic; moreover, it suggests that for permutation groups, the stronger form of permutation isomorphism is needed to ensure that various properties are preserved.}
+    so $H$ is transitive. The converse direction follows since $(\tau^{-1},\psi^{-1})$ give a permutation isomorphism from $H$ to $G$. From this, we conclude that the isomorphic groups $G,H \leq \Sym(4)$ as defined above are \textit{not} permutation isomorphic; moreover, it suggests that for permutation groups, the stronger form of permutation isomorphism is needed to ensure that various properties are preserved.}
 
 %% TODO: Result on conjugacy? Prop 2.23 in book
 

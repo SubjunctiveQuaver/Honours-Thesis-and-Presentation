@@ -67,15 +67,15 @@
 \subsection{Permutation groups}
 
 \begin{slide}
-    \textit{Note:} for $\sigma,\tau,\pi \in \Sym(n)$, (i) $\sigma\tau \in \Sym(n)$, (ii) $1 = () \in \Sym(n)$, (iii) $\sigma^{-1} \in \Sym(n)$, (iv) $(\sigma\tau)\pi = \sigma(\tau\pi)$. If true for subset:
+    \textit{Note:} for $g,h,k \in \Sym(n)$, (i) $gh \in \Sym(n)$, (ii) $1 = () \in \Sym(n)$, (iii) $g^{-1} \in \Sym(n)$, (iv) $(gh)k = g(hk)$. If true for subset:
 
     \begin{definition}[permutation group]
         \vspace{0pt}
         \textbf{Permutation group} of degree $n$ is subset $G \leq \Sym(n)$ satisfying:
         \begin{enumerate}[(i)]
-            \item \textbf{(closure)} $\sigma\tau \in G$ for $\sigma,\tau \in G$; \pause
+            \item \textbf{(closure)} $gh \in G$ for $g,h \in G$; \pause
             \item \textbf{(identity)} $1 = () \in G$; \pause
-            \item \textbf{(inverses)} $\sigma^{-1} \in G$ for $\sigma \in G$.
+            \item \textbf{(inverses)} $g^{-1} \in G$ for $g \in G$.
         \end{enumerate}
     \end{definition}
 
@@ -91,12 +91,12 @@
 % \begin{slide}
 %     \begin{definition}[order]
 %         \vspace{0pt}
-%         \textbf{Order} of $\sigma \in G$ is least $k \in \Z_+$ with $\sigma^k = \sigma \dotsb \sigma = 1$.
+%         \textbf{Order} of $g \in G$ is least $k \in \Z_+$ with $g^k = g \dotsb g = 1$.
 %     \end{definition} \pause
 
 %     \begin{example}
 %         \vspace{0pt}
-%         Consider $\sigma = (1,4,5)(2,6) \in \Sym(6)$.
+%         Consider $g = (1,4,5)(2,6) \in \Sym(6)$.
 %         \begin{center}
 %             \begin{tikzpicture}[x=0.6cm,y=0.6cm]
 %                 \GraphInit[vstyle=Normal]
@@ -109,14 +109,14 @@
 %                 \tikzset{EdgeStyle/.style={->,bend right}}
 %                 \Edges(1,4,5,1)
 %                 \Edges[style={bend right=60}](2,6,2)
-%                 \tkzDefPoint(-3,0){lab}\tkzLabelPoint[centered](lab){$\sigma$}
+%                 \tkzDefPoint(-3,0){lab}\tkzLabelPoint[centered](lab){$g$}
 %             \end{tikzpicture}
 %         \end{center} \pause
-%         Then $1^{\sigma^3} = 4^{\sigma^2} = 5^\sigma = 1$, \pause $4^{\sigma^3} = 4$, $5^{\sigma^3} = 5$, $2^{\sigma^2} = 2$, $6^{\sigma^2} = 6$ so \pause $\sigma^6 = () = 1$; order of $\sigma$ is 6. \pause
+%         Then $1^{g^3} = 4^{g^2} = 5^g = 1$, \pause $4^{g^3} = 4$, $5^{g^3} = 5$, $2^{g^2} = 2$, $6^{g^2} = 6$ so \pause $g^6 = () = 1$; order of $g$ is 6. \pause
 %     \end{example}
 
 %     \begin{proposition}
-%         Order of $\sigma \in \Sym(n)$ is lcm of cycle lengths.
+%         Order of $g \in \Sym(n)$ is lcm of cycle lengths.
 %     \end{proposition}
 % \end{slide}
 
@@ -125,7 +125,7 @@
 \begin{slide}
     \begin{definition}[generator]
         \vspace{0pt}
-        Set $X$ \textbf{generates} $G$ if every $\sigma \in G$ is $\sigma = x_1^{\pm 1} \dotsb x_r^{\pm 1}$ for some $r \in \N$, $x_i \in X$ \textbf{generators}; write $G = \langle X \rangle$. \pause
+        Set $X$ \textbf{generates} $G$ if every $g \in G$ is $g = x_1^{\pm 1} \dotsb x_r^{\pm 1}$ for some $r \in \N$, $x_i \in X$ \textbf{generators}; write $G = \langle X \rangle$. \pause
 
         (If $G = \langle X \rangle$ for some $X$ with $|X| = 1$, $G$ is \textbf{cyclic}.)
     \end{definition} \pause
@@ -148,19 +148,19 @@
 \begin{slide}
     \begin{definition}[group action]
         \vspace{0pt}
-        For permutation group $G$ and set $\Omega \neq \emptyset$, a \textbf{$G$-action} is map $\Omega \times G \to \Omega$, $(\alpha,\sigma) \mapsto \alpha^\sigma$ s.t. $\alpha^1 = \alpha$ and $\alpha^{\sigma\tau} = (\alpha^\sigma)^\tau$ for $\alpha \in \Omega$ and $\sigma,\tau \in G$.
+        For permutation group $G$ and set $\Omega \neq \emptyset$, a \textbf{$G$-action} is map $\Omega \times G \to \Omega$, $(\alpha,g) \mapsto \alpha^g$ s.t. $\alpha^1 = \alpha$ and $\alpha^{gh} = (\alpha^g)^h$ for $\alpha \in \Omega$ and $g,h \in G$.
     \end{definition}
 
-    \textit{Idea:} $\alpha \in \Omega$ is \textit{state}, apply \textit{move} $\sigma \in G$ to get state $\alpha^\sigma \in \Omega$, in way that respects permutation product. \pause
+    \textit{Idea:} $\alpha \in \Omega$ is \textit{state}, apply \textit{move} $g \in G$ to get state $\alpha^g \in \Omega$, in way that respects permutation product. \pause
 
     \begin{example}[natural action]
         \vspace{0pt}
-        $G \leq \Sym(n)$ acts on $\Omega = [n]$ by $\alpha^\sigma := \alpha^\sigma$ (image) for $\alpha \in [n]$, $\sigma \in G$.
+        $G \leq \Sym(n)$ acts on $\Omega = [n]$ by $\alpha^g := \alpha^g$ (image) for $\alpha \in [n]$, $g \in G$.
     \end{example} \pause
 
     \begin{example}[right regular action]
         \vspace{0pt}
-        Perm group $G$ acts on $\Omega = G$ (itself) via $\alpha^\sigma := \alpha\sigma$ for $\alpha,\sigma \in G$. (\textit{Check:} $\alpha^1 = \alpha 1 = \alpha$ and $\alpha^{\sigma\tau} = \alpha(\sigma\tau) = (\alpha\sigma)\tau = (\alpha^\sigma)^\tau$.)
+        Perm group $G$ acts on $\Omega = G$ (itself) via $\alpha^g := \alpha g$ for $\alpha,g \in G$. (\textit{Check:} $\alpha^1 = \alpha 1 = \alpha$ and $\alpha^{gh} = \alpha(gh) = (\alpha g)h = (\alpha^g)^h$.)
     \end{example}
 \end{slide}
 
@@ -169,7 +169,7 @@
         \vspace{0pt}
         Let $r = (1,2,3,4),s = (1,4)(2,3) \in \Sym(4)$. \textbf{Dihedral group} is $D_8 := \langle r,s \rangle = \{1,r,r^2,r^3,s,sr,sr^2,sr^3\}$, \textit{``symmetries of square''}.
 
-        \onslide<2->{\textit{Note:} $sr = (2,4)$, $sr^2 = (1,2)(3,4)$. Action of $D_8$ on vertices of square (labelled by $[4]$): $\sigma \in D_8$ sends vertex at $i$ to $i^\sigma$.}
+        \onslide<2->{\textit{Note:} $sr = (2,4)$, $sr^2 = (1,2)(3,4)$. Action of $D_8$ on vertices of square (labelled by $[4]$): $g \in D_8$ sends vertex at $i$ to $i^g$.}
 
         \begin{center}
             \begin{tikzpicture}[x=1cm,y=1cm]
@@ -249,14 +249,14 @@
 \begin{slide}
     \begin{definition}[orbit]
         \vspace{0pt}
-        If $G$ acts on $\Omega$, then \textbf{orbit} of $\alpha \in \Omega$ is $\alpha^G := \{\alpha^\sigma : \sigma \in G\}$. \\
-        \textit{Idea:} states $\alpha^\sigma \in \Omega$ reachable from fixed $\alpha \in \Omega$ by moves $\sigma \in G$. \pause
+        If $G$ acts on $\Omega$, then \textbf{orbit} of $\alpha \in \Omega$ is $\alpha^G := \{\alpha^g : g \in G\}$. \\
+        \textit{Idea:} states $\alpha^g \in \Omega$ reachable from fixed $\alpha \in \Omega$ by moves $g \in G$. \pause
     \end{definition}
 
     \begin{definition}[stabiliser]
         \vspace{0pt}
-        If $G$ acts on $\Omega$, then \textbf{stabiliser} of $\alpha \in \Omega$ is $G_\alpha := \{\sigma \in G : \alpha^\sigma = \alpha\}$. \\
-        \textit{Idea:} moves $\sigma \in G$ that fix given $\alpha \in \Omega$. \pause
+        If $G$ acts on $\Omega$, then \textbf{stabiliser} of $\alpha \in \Omega$ is $G_\alpha := \{g \in G : \alpha^g = \alpha\}$. \\
+        \textit{Idea:} moves $g \in G$ that fix given $\alpha \in \Omega$. \pause
     \end{definition}
 
     \begin{example}[natural action]
@@ -269,8 +269,8 @@
 \end{slide}
 
 \begin{slide}
-    Orbit $\alpha^G$: states $\alpha^\sigma \in \Omega$ reachable from fixed $\alpha$ by moves $\sigma \in G$. \\
-    Stabiliser $G_\alpha$: moves $\sigma \in G$ that fix given $\alpha$.
+    Orbit $\alpha^G$: states $\alpha^g \in \Omega$ reachable from fixed $\alpha$ by moves $g \in G$. \\
+    Stabiliser $G_\alpha$: moves $g \in G$ that fix given $\alpha$.
 
     \begin{example}[dihedral group]
         \vspace{0pt}
@@ -287,4 +287,29 @@
         \vspace{0pt}
         If $G$ acts on $\Omega$, then for $\alpha \in \Omega$, $|\alpha^G||G_\alpha| = |G|$.
     \end{theorem}
+\end{slide}
+
+\subsection{Blocks and primitivity}
+
+\begin{slide}
+    \begin{definition}[block]
+        \vspace{0pt}
+        If $G$ acts transitively on $\Omega$ and $\Delta \subseteq \Omega$, let $\Delta^g := \{\alpha^g : \alpha \in \Delta\}$. \\
+        A \textbf{block} is $\Delta \subseteq \Omega$ with $\Delta^g = \Delta$ or $\Delta^g \cap \Delta = \emptyset$ for all $g \in G$.
+
+        Block is \textbf{nontrivial} if $|\Delta| > 1$ and $\Delta \neq \Omega$.
+    \end{definition}
+
+    \textit{Examples of blocks:} singletons, $\Omega$, orbits.
+
+    For block $\Delta$, define \textbf{block system} $\Sigma = \{\Delta^g : g \in G\}$ (partitions $\Omega$).
+
+    \begin{definition}[primitivity]
+        \vspace{0pt}
+        A \textit{transitive} $G$-action is \textbf{primitive} if there are no nontrivial blocks; otherwise it is \textbf{imprimitive}.
+    \end{definition}
+\end{slide}
+
+\begin{slide}
+    Dihedral group
 \end{slide}

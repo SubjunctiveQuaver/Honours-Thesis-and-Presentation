@@ -23,10 +23,12 @@
 
     \vspace{-1cm}
     \onslide<2->{\begin{multline*}
-        F = (17,19,24,22)(18,21,23,20)( 6,25,43,16)\\
-        ( 7,28,42,13)( 8,30,41,11) \in \Sym(48).
-    \end{multline*}}
+            F = (17,19,24,22)(18,21,23,20)( 6,25,43,16)\\
+            ( 7,28,42,13)( 8,30,41,11) \in \Sym(48).
+        \end{multline*}}
 \end{slide}
+
+\subsection{The Rubik's group of permutations}
 
 \begin{slide}
     Generators as permutations of labels $[48]$:
@@ -41,9 +43,14 @@
         \item $D = (41,43,48,46)(42,45,47,44)(14,22,30,38)(15,23,31,39)(16,24,32,40)$
     \end{itemize}} \pause
 
-    \textbf{Operation} is sequence of generators and inverses. E.g. $RUR^{-1}U^{-1}$, \pause $URU^{-1}L^{-1}UR^{-1}U^{-1}L$, \pause $RUR^{-1}URU^2R^{-1}U^2$.
+    \textbf{Operation} is sequence of generators and inverses. E.g. $RUR^{-1}U^{-1}$, \pause $URU^{-1}L^{-1}UR^{-1}U^{-1}L$, \pause $RUR^{-1}URU^2R^{-1}U^2$, \pause $1 = ()$.
 
-    \textbf{Empty operation} is $1 = ()$.
+    \begin{definition}[Rubik's group]
+        \vspace{0pt}
+        $\RC = \langle U,L,F,R,B,D \rangle \leq \Sym(48)$ is permutation group of degree 48, called \textbf{Rubik's group}.
+    \end{definition}
+
+    Clearly $\RC$ is finite, but what is $|\RC|$?
 \end{slide}
 
 % \begin{slide}
@@ -62,21 +69,6 @@
 %     \vspace{-1cm}
 %     $$19^{RU} = \pause (19^R)^U = \pause 3^U = \pause 8 \quad\text{but}\quad 19^{UR} = \pause (19^U)^R = \pause 11^R = \pause 11.$$
 % \end{slide}
-
-\subsection{The Rubik's group of permutations}
-
-\begin{slide}
-    For set of operations $\RC$: product of operations is operations; identity $1 = () \in \RC$, inverse operations exist (undo generators/inverses). \pause
-
-    \begin{definition}[Rubik's group]
-        \vspace{0pt}
-        $\RC \leq \Sym(48)$ is permutation group of degree 48, called \textbf{Rubik's group}. \textit{Note:} $\RC = \langle U,L,F,R,B,D \rangle$.
-    \end{definition} \pause
-
-    $\RC$ acts on non-centre stickers labelled by $[48]$: for $\sigma \in \RC$, $i^\sigma$ is $1$-label on sticker that $\sigma$ sends facelet $i$ to, from solved state $1$. (This corresponds to \textit{natural action} as perm group; c.f. $D_8$-action earlier.) \pause
-
-    Clearly $\RC$ finite, but what is $|\RC|$?
-\end{slide}
 
 \begin{slide}
     \texttt{GAP} code to define generators and $\RC = \langle U,L,F,R,B,D \rangle$ (as \texttt{G}):
@@ -130,16 +122,8 @@
 %     \end{overprint}
 % \end{slide}
 
-\subsection{Transitivity and primitivity}
+
 
 \begin{slide}
-    Transitive
-\end{slide}
-
-\begin{slide}
-    Blocks, primitive
-\end{slide}
-
-\begin{slide}
-    Example for Rubik's group
+    Blocks/transitivity example for Rubik's group
 \end{slide}
