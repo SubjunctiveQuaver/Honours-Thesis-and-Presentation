@@ -101,7 +101,7 @@ If $\varphi$ is faithful, then $1$ is the only element of $G$ that does not perm
 % If $G \leq \Sym(\Omega)$ is a permutation group that acts on $\tilde\Omega$ via $\varphi : G \to \Sym(\tilde\Omega)$ that is not the natural action, then $\varphi$ may not be faithful. However, the above shows that $G/\Ker\varphi$ acts faithfully on $\tilde\Omega$. By the first isomorphism theorem, $G/\Ker\varphi$ is isomorphic to a subgroup of $\Sym(\tilde\Omega)$, so we may identify $G/\Ker\varphi$ as a permutation group on $\tilde\Omega$, where the action is induced by $\varphi$. % (This is useful in the analysis of certain permutation groups such as the Rubik's group.)
 
 \begin{example}\label{eg:action_D8_on_square}
-    Consider $D_8 = \{1,r,r^2,r^3,s,\added{2}{sr,sr^2,sr^3}\}$, the dihedral group of order 8. It ``is'' the \added{2}{symmetry} group of a square $S$ (with vertices $V = \{v_1,v_2,v_3,v_4\}$ labelled anticlockwise) in the following sense: let $r \mapsto (v_1,v_2,v_3,v_4)$ and $s \mapsto (v_1,v_4)(v_2,v_3)$ generate the (faithful) action of $D_8$ on $V$. For example, $v_4^{rs} = (v_4^r)^s = v_1^s = v_4$. \added{1}{By renaming elements of $V$, we see that this is equivalent} to the action of $D_8$ on the set $\{1,2,3,4\}$ defined by $r \mapsto (1,2,3,4)$ and $s \mapsto (1,4)(2,3)$, so we see that \added{1}{$D_8$ is isomorphic to a subgroup of $\Sym(4)$}.
+    Consider $D_8 = \{1,r,r^2,r^3,s,\added{2}{sr,sr^2,sr^3}\}$, the dihedral group of order 8. It ``is'' the \added{2}{symmetry} group of a square $S$ (with vertices $V = \{v_1,v_2,v_3,v_4\}$ labelled anticlockwise) in the following sense: let $r \mapsto (v_1,v_2,v_3,v_4)$ and $s \mapsto (v_1,v_4)(v_2,v_3)$ generate the (faithful) action of $D_8$ on $V$. For example, $v_4^{sr} = (v_4^s)^r = v_1^r = v_2$. Below is a diagram that visualises the $D_8$-action on $V$; $g \in D_8$ sends vertex $v_i$ to $v_i^g$ (follow the colours).
 
     \begin{center}
         \begin{tikzpicture}[x=1cm,y=1cm]
@@ -114,9 +114,9 @@ If $\varphi$ is faithful, then $1$ is the only element of $G$ that does not perm
             \tkzDefPoint(1.25,-1.25){l5}
             \tikzset{EdgeStyle/.style={dotted}}
             \Edge(l2)(l3) % s
-            \Edge(l4)(l5) % sr
+            \Edge[color=magenta](l4)(l5) % sr
             \tikzset{EdgeStyle/.style={-}}
-            {\Vertex[Lpos=180]{1} \SO[Lpos=180](1){2} \EA(2){3} \NO(3){4}
+            {\Vertex[L={v_1},Lpos=180]{1} \SO[L={v_2},Lpos=180](1){2} \EA[L={v_3}](2){3} \NO[L={v_4}](3){4}
                 \AddVertexColor{red}{1}
                 \AddVertexColor{green}{2}
                 \AddVertexColor{blue}{3}
@@ -133,7 +133,7 @@ If $\varphi$ is faithful, then $1$ is the only element of $G$ that does not perm
             \tikzset{EdgeStyle/.style={dotted}}
             \Edge(l2)(l3) % sr^2
             \tikzset{EdgeStyle/.style={-}}
-            \Vertex[x=4,y=0,Lpos=180]{1} \SO[Lpos=180](1){2} \EA(2){3} \NO(3){4}
+            \Vertex[x=4,y=0,L={v_1},Lpos=180]{1} \SO[L={v_2},Lpos=180](1){2} \EA[L={v_3}](2){3} \NO[L={v_4}](3){4}
             \AddVertexColor{yellow}{1}
             \AddVertexColor{red}{2}
             \AddVertexColor{green}{3}
@@ -145,7 +145,7 @@ If $\varphi$ is faithful, then $1$ is the only element of $G$ that does not perm
             \Edge[label=$s$](a1)(a2)
             % BOTTOM LEFT
             \tikzset{EdgeStyle/.style={-}}
-            \Vertex[x=0,y=-3,Lpos=180]{1} \SO[Lpos=180](1){2} \EA(2){3} \NO(3){4}
+            \Vertex[x=0,y=-3,L={v_1},Lpos=180]{1} \SO[L={v_2},Lpos=180](1){2} \EA[L={v_3}](2){3} \NO[L={v_4}](3){4}
             \AddVertexColor{yellow}{1}
             \AddVertexColor{blue}{2}
             \AddVertexColor{green}{3}
@@ -158,7 +158,7 @@ If $\varphi$ is faithful, then $1$ is the only element of $G$ that does not perm
             \tkzDefPoint(2.5,-3){l1}\tkzLabelPoint[centered](l1){$\curvearrowleft$}
             % BOTTOM RIGHT
             \tikzset{EdgeStyle/.style={-}}
-            \Vertex[x=4,y=-3,Lpos=180]{1} \SO[Lpos=180](1){2} \EA(2){3} \NO(3){4}
+            \Vertex[x=4,y=-3,L={v_1},Lpos=180]{1} \SO[L={v_2},Lpos=180](1){2} \EA[L={v_3}](2){3} \NO[L={v_4}](3){4}
             \AddVertexColor{red}{1}
             \AddVertexColor{yellow}{2}
             \AddVertexColor{blue}{3}
@@ -170,9 +170,11 @@ If $\varphi$ is faithful, then $1$ is the only element of $G$ that does not perm
             \Edge[label=$sr^2$](a1)(a2)
             \tkzDefPoint(1.5,-1.5){a1}
             \tkzDefPoint(3.5,-2.5){a2}
-            \Edge[label=$sr$](a1)(a2)
+            \Edge[label=$sr$,labeltext=magenta,color=magenta](a1)(a2)
         \end{tikzpicture}
     \end{center}
+
+    \added{1}{By renaming elements of $V$, we see that this action is equivalent} to the action of $D_8$ on the set $\{1,2,3,4\}$ defined by $r \mapsto (1,2,3,4)$ and $s \mapsto (1,4)(2,3)$, so we see that \added{1}{$D_8$ is isomorphic to a subgroup of $\Sym(4)$}.
 
     Now let $D = \{d_1,d_2\}$ be the set of diagonals of $S$, where $d_1$ joins $v_1$ and $v_3$, and $d_2$ joins $v_2$ and $v_4$. A corresponding action $\varphi$ of $D_8$ on $D$ is given by $\varphi(r) = \varphi(s) = (d_1,d_2)$: for example, $d_1^{rs} = (d_1^r)^s = d_2^s = d_1$. Then the kernel of $\varphi$ is $\{1,r^2,\added{2}{sr,sr^3}\} \trianglelefteq D_8$; the action is not faithful.
 
