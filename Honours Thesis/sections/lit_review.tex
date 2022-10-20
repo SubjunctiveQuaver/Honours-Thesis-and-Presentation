@@ -104,7 +104,7 @@ The remainder of this section is dedicated to our approach to proving \autoref{t
 \begin{proof}[Proof of main theorem]
     First, we consider $d = 1$ in case (i). First note that $|\AGL_1(2)| = 2^1(2^1 - 1) = 2$, so if $G$ is a primitive subgroup then $G = \AGL_1(2)$ (the trivial subgroup is not transitive, thus not primitive). By \autoref{prop:agl_as_subgrp_of_gl}, $b(\AGL_1(2)) = 1 < d + 1$. This proves the result for case (i).
 
-    Fix $2 \leq d \leq 10$; first, note that if $G$ is the affine group $\AGL_d(2)$, then by \autoref{prop:agl_as_subgrp_of_gl} $b(G) = d + 1$. It remains to check proper primitive subgroups $G$ of $\AGL_d(2)$ to identify those with $b(G) = d + 1$. To do so, we adopt a ``brute force approach'' with a number of optimisations. It uses the following observations to avoid checking \textit{all} primitive subgroups of $\AGL_d(2)$, especially at any given stage in the process:
+    Fix $2 \leq d \leq 10$; first, note that if $G$ is the affine group $\AGL_d(2)$, then by \autoref{prop:agl_as_subgrp_of_gl}, $b(G) = d + 1$. It remains to check proper primitive subgroups $G$ of $\AGL_d(2)$ to identify those with $b(G) = d + 1$. To do so, we adopt a ``brute force approach'' with a number of optimisations. It uses the following observations to avoid checking \textit{all} primitive subgroups of $\AGL_d(2)$, especially at any given stage in the process:
 
     \begin{enumerate}
         \item \textit{Once we find a subgroup $G$ with $b(G) < d + 1$, we do not need to consider any of its (proper) subgroups.} This is due to \autoref{lem:base_of_subgroup}, which says that if $H \leq G$, then $b(H) \leq b(G) < d + 1$.
