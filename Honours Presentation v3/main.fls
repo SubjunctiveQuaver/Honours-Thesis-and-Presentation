@@ -2535,6 +2535,36 @@ INPUT code\rubiks_def.gap
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinBiolinumTI-tlf-ot1.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\libertine\LinBiolinumTI-tlf-ot1.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinBiolinumTI-tlf-ot1--base.tfm
+INPUT .\graphics\rubiks_cube_net.tikz
+INPUT graphics\rubiks_cube_net.tikz
+INPUT .\graphics\rubiks_cube_net.tikz
+INPUT graphics\rubiks_cube_net.tikz
+INPUT .\graphics\rubiks_cube_net.tikz
+INPUT graphics\rubiks_cube_net.tikz
+INPUT .\code\rubiks_orbit_stab.gap
+INPUT code\rubiks_orbit_stab.gap
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\inconsolata\ot1-zi4r-0.tfm
+INPUT .\code\rubiks_orbit_stab.gap
+INPUT code\rubiks_orbit_stab.gap
+INPUT .\code\rubiks_orbit_stab.gap
+INPUT code\rubiks_orbit_stab.gap
+INPUT .\code\rubiks_orbit_stab_2.gap
+INPUT code\rubiks_orbit_stab_2.gap
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\inconsolata\ot1-zi4r-0.tfm
+INPUT .\code\rubiks_orbit_stab_2.gap
+INPUT code\rubiks_orbit_stab_2.gap
+INPUT .\code\rubiks_orbit_stab_2.gap
+INPUT code\rubiks_orbit_stab_2.gap
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinLibertineT-tlf-ot1.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\nxlmi.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxsy.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxexx.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\nxlmia.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxsym.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxsyc.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxexa.tfm
 INPUT .\c4_research.tex
 INPUT c4_research.tex
 INPUT .\c4_research.tex

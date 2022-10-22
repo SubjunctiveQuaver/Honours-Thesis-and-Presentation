@@ -78,28 +78,28 @@
     \texttt{Order} cmd: $|\RC| = 43\,252\,003\,274\,489\,856\,000 \approx 4.3 \cdot 10^{19}$. \textit{How?}
 \end{slide}
 
-% \subsection{Orbits and stabilisers}
+\subsection{Orbits and stabilisers}
 
-% % UPDATE TOGETHER WITH BELOW
-% \begin{slide}
-%     \begin{overprint}
-%         \begin{center}
-%             \scalebox{0.6}{\includegraphics{graphics/rubiks_cube_net.tikz}}
-%         \end{center}
+% UPDATE TOGETHER WITH BELOW
+\begin{slide}
+    \begin{overprint}
+        \begin{center}
+            \scalebox{0.6}{\includegraphics{graphics/rubiks_cube_net.tikz}}
+        \end{center}
 
-%         \onslide<1>
-%         \scriptsize\lstinputlisting{code/rubiks_orbit_stab.gap}
+        \onslide<1>
+        \scriptsize\lstinputlisting{code/rubiks_orbit_stab.gap}
 
-%         \normalsize Two $\RC$-orbits: corner pieces $1^\RC$, edge pieces $2^\RC$.
+        \normalsize Two $\RC$-orbits: corner pieces $1^\RC$, edge pieces $2^\RC$.
 
-%         \onslide<2-|handout:0>
-%         Moves in $\mathcal{H} = \RC_{1,3,6,8} = (((\RC_1)_3)_6)_8$ fix white corners $1,3,6,8$.
+        \onslide<2-|handout:0>
+        Moves in $\mathcal{H} = \RC_{1,3,6,8} = (((\RC_1)_3)_6)_8$ fix white corners $1,3,6,8$.
 
-%         \onslide<3-|handout:0>{{\tiny\lstinputlisting{code/rubiks_orbit_stab_2.gap}}
+        \onslide<3-|handout:0>{{\tiny\lstinputlisting{code/rubiks_orbit_stab_2.gap}}
 
-%                 {\footnotesize Some $\mathcal{H}$-orbits: $17^{\mathcal{H}} = \{17\}$, bottom corner pieces $24^{\mathcal{H}}$, edge pieces $2^{\mathcal{H}} = 2^\RC$.}}
-%     \end{overprint}
-% \end{slide}
+                {\footnotesize Some $\mathcal{H}$-orbits: $17^{\mathcal{H}} = \{17\}$, bottom corner stickers $24^{\mathcal{H}}$, edge stickers $2^{\mathcal{H}} = 2^\RC$.}}
+    \end{overprint}
+\end{slide}
 
 % % UPDATE TOGETHER WITH ABOVE
 % \begin{slide}<beamer:0>
@@ -118,12 +118,21 @@
 
 %         \onslide<3->{{\tiny\lstinputlisting{code/rubiks_orbit_stab_2.gap}}
 
-%                 {\footnotesize Some $\mathcal{H}$-orbits: $17^{\mathcal{H}} = \{17\}$, bottom corner pieces $24^{\mathcal{H}}$, edge pieces $2^{\mathcal{H}} = 2^\RC$.}}
+%                 {\footnotesize Some $\mathcal{H}$-orbits: $17^{\mathcal{H}} = \{17\}$, bottom corner stickers $24^{\mathcal{H}}$, edge stickers $2^{\mathcal{H}} = 2^\RC$.}}
 %     \end{overprint}
 % \end{slide}
 
-
+\subsection{Transitive action of Rubik's group on corners}
 
 \begin{slide}
-    Blocks/transitivity example for Rubik's group
+    $\RC$ acts transitively on corner stickers $1^\RC$. In this action:
+
+    $FRU$ corner $\{8,25,19\}$ is block (3 stickers never separate);
+    \begin{multline*}
+        \Sigma = \{\{1,35,9\},\{6,11,17\},\{40,46,14\},\{27,3,33\},\\
+        \{8,25,19\},\{16,41,22\},\{32,48,38\},\{24,43,30\}\}
+    \end{multline*}
+    is system of imprimitivity (containing 8 corners).
+
+    $\RC$ acts primitively on $\Sigma$; result
 \end{slide}
