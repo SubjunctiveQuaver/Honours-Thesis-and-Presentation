@@ -3,14 +3,14 @@
 \begin{slide}
     \begin{definition}[Base, stabiliser chain]
         \vspace{0pt}
-        If $G \leq \Sym(n)$, distinct elts $B = [\beta_1,\dotsc,\beta_r] \subseteq [n]$ is \textbf{base} for $G$ if $G_{\beta_1,\dotsc,\beta_r} = 1$. (\textit{Recall:} $G_{\beta_1,\dotsc,\beta_r} = \{g \in G : \beta_1^g = \beta_1,\dotsc,\beta_r^g = \beta_r\}$.) \pause
+        If $G \leq \Sym(\Omega)$, distinct elts $B = [\beta_1,\dotsc,\beta_r] \subseteq \Omega$ is \textbf{base} for $G$ if $G_{\beta_1,\dotsc,\beta_r} = 1$. (\textit{Recall:} $G_{\beta_1,\dotsc,\beta_r} = \{g \in G : \beta_1^g = \beta_1,\dotsc,\beta_r^g = \beta_r\}$.) \pause
 
         Corresponding \textbf{stabiliser chain} is
         \[G = G^0 \geq G^1 \geq \dotsb \geq G^r = 1\]
         where $G^i = G^{i-1}_{\beta_i} = G_{\beta_1,\dotsc,\beta_i}$.
     \end{definition} \pause
 
-    Base $B$ contains elts of $[n]$ such that only $1 \in G$ fixes every $\beta_i \in B$. (Short base desirable: how to compute \textbf{min base} of length $b(G)$?) \pause
+    Base $B$ contains elts of $\Omega$ such that only $1 \in G$ fixes every $\beta_i \in B$. (Short base desirable: how to compute \textbf{min base} of length $b(G)$?) \pause
 
     \begin{theorem}[Blaha, 1992]
         \vspace{0pt}
@@ -25,7 +25,7 @@
         % \lstinputlisting{code/rubiks_group_base.gap} \pause
         $$B = [ 1, 3, 6, 8, 2, 4, 5, 7, 12, 13, 14, 15, 16, 21, 23, 24, 29, 31 ].$$ \pause
         Contains: 7 corner stickers (from 7 of 8 corners), 11 edge stickers (from 11 of 12 edges).
-    \end{example}
+    \end{example} \pause
 
     \begin{theorem}
         \vspace{0pt}
@@ -34,41 +34,45 @@
 \end{slide}
 
 \begin{slide}
-    Stabiliser chain can be implemented computationally; useful in algorithms.
+    Stabiliser chain implemented in \texttt{GAP}; useful in algorithms. \pause
 
-    Let $G = \langle X \rangle \leq \Sym(n)$ have base $B$ and stabiliser chain
-    $$G = G^0 \geq G^1 \geq \dotsb \geq G^r = 1.$$
+    Let $G = \langle X \rangle \leq \Sym(\Omega)$ have base $B$ and stabiliser chain
+    $$G = G^0 \geq G^1 \geq \dotsb \geq G^r = 1.$$ \pause
 
     \begin{alertblock}{Problem (random element generation)}
         \vspace{0pt}
         Generate uniformly random element of $G$.
 
-        (\textit{Alternative:} random product of generators in $X$; distribution?)
-    \end{alertblock}
+        (\textit{Alternative:} \pause random product of generators in $X$; transitive Markov chain on Cayley graph (find mixing time?); distribution?)
+    \end{alertblock} \pause
 
     \begin{alertblock}{Problem (membership testing)}
         \vspace{0pt}
-        For $\sigma \in \Sym(n)$, test if $\sigma \in G$.
+        For $g \in \Sym(\Omega)$, test if $g \in G$.
 
-        (\textit{Application}: check if restickering of Rubik's cube is valid state.)
+        (\textit{Application}: \pause check if restickering of Rubik's cube is valid state.)
     \end{alertblock}
 \end{slide}
 
 \subsection{Greedy bases}
 
 \begin{slide}
-    % \begin{example}[Rubik's group]
-    %     \vspace{0pt}
-    %     Using \texttt{GAP}:
+    \begin{alertblock}{Algorithm (greedy base;  Brown, Finkelstein \& Purdom, 1989)}
+        \vspace{0pt}
+        Construct base $B = [\beta_1,\dotsc,\beta_r]$ for $G \leq \Sym(\Omega)$ by \pause choosing $\beta_i \in \Omega$ from largest orbit of $G^i$ ($G^0 = G$), then setting $G^i = G^{i-1}_{\beta_i}$ until $G^r = 1$. \\
+        Then $G = G^0 \geq G^1 \geq \dotsb \geq G^r = 1$ is stabiliser chain.
+    \end{alertblock} \pause
 
-    %     \lstinputlisting{code/rubiks_group_base.gap} \pause
+    \begin{proposition}[Blaha, 1992]
+        \vspace{0pt}
+        Greedy base algorithm does not necessarily find minimum base, even for cyclic groups.
+    \end{proposition} \pause
 
-    %     Base of $\mathcal{G}$ of size 18 is
-    %     $$B = [ 1, 3, 6, 8, 2, 4, 5, 7, 12, 13, 14, 15, 16, 21, 23, 24, 29, 31 ].$$ \pause
-    %     If move $\sigma \in \mathcal{G}$ fixes every $\beta_i \in B$ then $\sigma = 1$ is empty move.
-    % \end{example}
-
-
+    \begin{theorem}[Blaha, 1992]
+        \vspace{0pt}
+        Size of greedy base for $G \leq \Sym(n)$ is at most $O(b(G)\log\log n)$. \pause \\
+        (Compared to arbitrary \textit{nonredundant} base, with size $O(b(G)\log n)$.)
+    \end{theorem}
 \end{slide}
 
 \subsection{What is the size of the Rubik's group?}

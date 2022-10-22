@@ -1,20 +1,23 @@
 \beamer@subsectionintoc {0}{1}{Motivation: understanding the Rubik's cube}{3}{0}{0}
-\beamer@sectionintoc {1}{Some basic (permutation) group theory}{4}{0}{1}
+\beamer@sectionintoc {1}{Some basic group theory}{4}{0}{1}
 \beamer@subsectionintoc {1}{1}{Permutations}{5}{0}{1}
 \beamer@subsectionintoc {1}{2}{Permutation groups}{7}{0}{1}
 \beamer@subsectionintoc {1}{3}{Generating a group}{8}{0}{1}
 \beamer@subsectionintoc {1}{4}{Group actions}{9}{0}{1}
 \beamer@subsectionintoc {1}{5}{Orbits and stabilisers}{11}{0}{1}
 \beamer@subsectionintoc {1}{6}{Blocks and primitivity}{13}{0}{1}
-\beamer@sectionintoc {2}{The Rubik's group (an application)}{15}{0}{2}
+\beamer@sectionintoc {2}{The Rubik's group}{15}{0}{2}
 \beamer@subsectionintoc {2}{1}{Representing the cube and its operations}{16}{0}{2}
 \beamer@subsectionintoc {2}{2}{The Rubik's group of permutations}{18}{0}{2}
 \beamer@subsectionintoc {2}{3}{Orbits in the Rubik's group}{20}{0}{2}
 \beamer@subsectionintoc {2}{4}{Transitive action on corners}{21}{0}{2}
 \beamer@sectionintoc {3}{Bases and stabiliser chains}{23}{0}{3}
-\beamer@sectionintoc {4}{Primitive subgroups of affine groups}{24}{0}{4}
-\beamer@subsectionintoc {4}{1}{Affine groups}{25}{0}{4}
-\beamer@subsectionintoc {4}{2}{Large base permutation groups}{26}{0}{4}
-\beamer@subsectionintoc {4}{3}{Main result}{28}{0}{4}
-\beamer@sectionintoc {5}{Concluding remarks}{31}{0}{5}
-\beamer@subsectionintoc {5}{1}{References and resources}{32}{0}{5}
+\beamer@subsectionintoc {3}{1}{Bases and stabiliser chains}{24}{0}{3}
+\beamer@subsectionintoc {3}{2}{Greedy bases}{27}{0}{3}
+\beamer@subsectionintoc {3}{3}{What is the size of the Rubik's group?}{28}{0}{3}
+\beamer@sectionintoc {4}{Base sizes of primitive groups}{29}{0}{4}
+\beamer@subsectionintoc {4}{1}{Affine groups}{30}{0}{4}
+\beamer@subsectionintoc {4}{2}{Large base permutation groups}{31}{0}{4}
+\beamer@subsectionintoc {4}{3}{Main result in thesis}{33}{0}{4}
+\beamer@sectionintoc {5}{Concluding remarks}{36}{0}{5}
+\beamer@subsectionintoc {5}{1}{References and resources}{37}{0}{5}
