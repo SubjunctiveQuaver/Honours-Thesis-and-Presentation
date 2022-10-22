@@ -2424,19 +2424,19 @@ INPUT .\c1_group_theory.tex
 INPUT c1_group_theory.tex
 INPUT .\c1_group_theory.tex
 INPUT c1_group_theory.tex
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntxsy.vf
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txsys.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txex-bar.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\nxlmia.vf
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\LibertineMathRM.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txmiaSTbb.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txmiaX.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\nxlmi.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\LibertineMathMI.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\NewTXMI.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\stxscr.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\libertine\LinLibertineT-tlf-ot1.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinLibertineT-tlf-ot1--base.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\nxlmia.vf
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\LibertineMathRM.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txmiaSTbb.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txmiaX.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntxsy.vf
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txsys.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txex-bar.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\nxlmi7.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\LibertineMathMI7.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\NewTXMI7.tfm
@@ -2548,23 +2548,26 @@ INPUT .\code\rubiks_orbit_stab.gap
 INPUT code\rubiks_orbit_stab.gap
 INPUT .\code\rubiks_orbit_stab.gap
 INPUT code\rubiks_orbit_stab.gap
-INPUT .\code\rubiks_orbit_stab_2.gap
-INPUT code\rubiks_orbit_stab_2.gap
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\inconsolata\ot1-zi4r-0.tfm
-INPUT .\code\rubiks_orbit_stab_2.gap
-INPUT code\rubiks_orbit_stab_2.gap
-INPUT .\code\rubiks_orbit_stab_2.gap
-INPUT code\rubiks_orbit_stab_2.gap
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinLibertineT-tlf-ot1.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\nxlmi.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxsy.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxexx.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\nxlmia.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxsym.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxsyc.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxexa.tfm
+INPUT .\graphics\rubiks_cube_net_corners.tikz
+INPUT graphics\rubiks_cube_net_corners.tikz
+INPUT .\graphics\rubiks_cube_net_corners.tikz
+INPUT graphics\rubiks_cube_net_corners.tikz
+INPUT .\graphics\rubiks_cube_net_corners.tikz
+INPUT graphics\rubiks_cube_net_corners.tikz
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntxexx.vf
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txexs.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntxexa.vf
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txexas.tfm
+INPUT .\graphics\rubiks_cube_net_corners.tikz
+INPUT graphics\rubiks_cube_net_corners.tikz
+INPUT .\graphics\rubiks_cube_net_corners.tikz
+INPUT graphics\rubiks_cube_net_corners.tikz
+INPUT .\graphics\rubiks_cube_net_corners.tikz
+INPUT graphics\rubiks_cube_net_corners.tikz
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\nxlmi5.vf
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\LibertineMathMI5.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\NewTXMI5.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\stxscr.tfm
 INPUT .\c4_research.tex
 INPUT c4_research.tex
 INPUT .\c4_research.tex
@@ -2581,6 +2584,8 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\incons
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\inconsolata\Inconsolata-zi4r.pfb
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\newtx\LibertineMathMI.pfb
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\newtx\LibertineMathMI.pfb
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\newtx\LibertineMathMI5.pfb
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\newtx\LibertineMathMI5.pfb
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\newtx\LibertineMathMI7.pfb
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\newtx\LibertineMathMI7.pfb
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\newtx\LibertineMathRM.pfb
@@ -2595,6 +2600,10 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\libert
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\libertine\LinLibertineT.pfb
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\newtx\NewTXMI.pfb
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\newtx\NewTXMI.pfb
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\newtx\txexas.pfb
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\newtx\txexas.pfb
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\newtx\txexs.pfb
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\newtx\txexs.pfb
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\newtx\txmiaX.pfb
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\newtx\txmiaX.pfb
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\txfonts\txsyb.pfb

@@ -78,62 +78,42 @@
     \texttt{Order} cmd: $|\RC| = 43\,252\,003\,274\,489\,856\,000 \approx 4.3 \cdot 10^{19}$. \textit{How?}
 \end{slide}
 
-\subsection{Orbits and stabilisers}
+\subsection{Orbits in the Rubik's group}
 
-% UPDATE TOGETHER WITH BELOW
 \begin{slide}
-    \begin{overprint}
-        \begin{center}
-            \scalebox{0.6}{\includegraphics{graphics/rubiks_cube_net.tikz}}
-        \end{center}
+    \begin{center}
+        \scalebox{0.6}{\includegraphics{graphics/rubiks_cube_net.tikz}}
+    \end{center}
 
-        \onslide<1>
-        \scriptsize\lstinputlisting{code/rubiks_orbit_stab.gap}
+    \onslide<1>
+    \scriptsize\lstinputlisting{code/rubiks_orbit_stab.gap}
 
-        \normalsize Two $\RC$-orbits: corner pieces $1^\RC$, edge pieces $2^\RC$.
-
-        \onslide<2-|handout:0>
-        Moves in $\mathcal{H} = \RC_{1,3,6,8} = (((\RC_1)_3)_6)_8$ fix white corners $1,3,6,8$.
-
-        \onslide<3-|handout:0>{{\tiny\lstinputlisting{code/rubiks_orbit_stab_2.gap}}
-
-                {\footnotesize Some $\mathcal{H}$-orbits: $17^{\mathcal{H}} = \{17\}$, bottom corner stickers $24^{\mathcal{H}}$, edge stickers $2^{\mathcal{H}} = 2^\RC$.}}
-    \end{overprint}
+    \normalsize Two $\RC$-orbits: corner stickers $1^\RC$, edge stickers $2^\RC$.
 \end{slide}
 
-% % UPDATE TOGETHER WITH ABOVE
-% \begin{slide}<beamer:0>
-%     \begin{overprint}
-%         \begin{center}
-%             \scalebox{0.6}{\includegraphics{graphics/rubiks_cube_net.tikz}}
-%         \end{center}
-
-%         \onslide<1|handout:0>
-%         \scriptsize\lstinputlisting{code/rubiks_orbit_stab.gap}
-
-%         \normalsize Two $\RC$-orbits: corner pieces $1^\RC$, edge pieces $2^\RC$.
-
-%         \onslide<2->
-%         Moves in $\mathcal{H} = \RC_{1,3,6,8} = (((\RC_1)_3)_6)_8$ fix white corners $1,3,6,8$.
-
-%         \onslide<3->{{\tiny\lstinputlisting{code/rubiks_orbit_stab_2.gap}}
-
-%                 {\footnotesize Some $\mathcal{H}$-orbits: $17^{\mathcal{H}} = \{17\}$, bottom corner stickers $24^{\mathcal{H}}$, edge stickers $2^{\mathcal{H}} = 2^\RC$.}}
-%     \end{overprint}
-% \end{slide}
-
-\subsection{Transitive action of Rubik's group on corners}
+\subsection{Transitive action on corners}
 
 \begin{slide}
     $\RC$ acts transitively on corner stickers $1^\RC$. In this action:
 
-    $FRU$ corner $\{8,25,19\}$ is \textit{maximal} block (3 stickers never separate);
-    \begin{multline*}
-        \Sigma = \{\{1,35,9\},\{6,11,17\},\{40,46,14\},\{27,3,33\},\\
-        \{8,25,19\},\{16,41,22\},\{32,48,38\},\{24,43,30\}\}
-    \end{multline*}
-    is system of imprimitivity (containing 8 corners).
+    \begin{center}
+        \scalebox{0.6}{\includegraphics{graphics/rubiks_cube_net_corners.tikz}}
+    \end{center}
 
-    $\RC$ acts primitively on $\Sigma$ (degree 8); $g \in \RC$ induces permutation of $\Sigma$.\\
-    Overall, $\RC$ induces every perm of $\Sigma$ (so $\Sym(8)$ ``is inside'' $\RC$).
+    \vspace{-1cm}
+    \begin{multline*}
+        \Sigma = \{\overbrace{\{1,35,9\}}^{UBL},\overbrace{\{6,11,17\}}^{ULF},\overbrace{\{40,46,14\}}^{BDL},\overbrace{\{27,3,33\}}^{RUB},\\
+        \underbrace{\{8,25,19\}}_{URF},\underbrace{\{16,41,22\}}_{LDF},\underbrace{\{32,48,38\}}_{RDB},\underbrace{\{24,43,30\}}_{FDR}\}
+    \end{multline*}
+    is block system for \textit{maximal} block $\{8,25,19\}$ ($URF$ corner).
+\end{slide}
+
+\begin{slide}
+    \begin{center}
+        \scalebox{0.6}{\includegraphics{graphics/rubiks_cube_net_corners.tikz}}
+    \end{center}
+
+    $\RC$ acts primitively on $\Sigma$ (degree 8); $g \in \RC$ induces perm of $\Sigma$, e.g.
+    $$F \mapsto (\underbrace{FUL}_{FDL^F},\underbrace{FUR}_{FUL^F},\underbrace{FDR}_{FUR^F},\underbrace{FDL}_{FDR^F}) \in \Sym(\Sigma).$$
+    Overall, $\RC$ induces every perm of $\Sigma$ (so $\Sym(8)$ ``is'' quotient of $\RC$).
 \end{slide}

@@ -9,12 +9,12 @@
 \beamer@sectionintoc {2}{The Rubik's group (an application)}{15}{0}{2}
 \beamer@subsectionintoc {2}{1}{Representing the cube and its operations}{16}{0}{2}
 \beamer@subsectionintoc {2}{2}{The Rubik's group of permutations}{18}{0}{2}
-\beamer@subsectionintoc {2}{3}{Orbits and stabilisers}{20}{0}{2}
-\beamer@subsectionintoc {2}{4}{Transitive action of Rubik's group on corners}{21}{0}{2}
-\beamer@sectionintoc {3}{Bases and stabiliser chains}{22}{0}{3}
-\beamer@sectionintoc {4}{Primitive subgroups of affine groups}{23}{0}{4}
-\beamer@subsectionintoc {4}{1}{Affine groups}{24}{0}{4}
-\beamer@subsectionintoc {4}{2}{Large base permutation groups}{25}{0}{4}
-\beamer@subsectionintoc {4}{3}{Main result}{27}{0}{4}
-\beamer@sectionintoc {5}{Concluding remarks}{30}{0}{5}
-\beamer@subsectionintoc {5}{1}{References and resources}{31}{0}{5}
+\beamer@subsectionintoc {2}{3}{Orbits in the Rubik's group}{20}{0}{2}
+\beamer@subsectionintoc {2}{4}{Transitive action on corners}{21}{0}{2}
+\beamer@sectionintoc {3}{Bases and stabiliser chains}{23}{0}{3}
+\beamer@sectionintoc {4}{Primitive subgroups of affine groups}{24}{0}{4}
+\beamer@subsectionintoc {4}{1}{Affine groups}{25}{0}{4}
+\beamer@subsectionintoc {4}{2}{Large base permutation groups}{26}{0}{4}
+\beamer@subsectionintoc {4}{3}{Main result}{28}{0}{4}
+\beamer@sectionintoc {5}{Concluding remarks}{31}{0}{5}
+\beamer@subsectionintoc {5}{1}{References and resources}{32}{0}{5}
