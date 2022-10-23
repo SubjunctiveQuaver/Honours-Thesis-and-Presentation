@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1666523461 "c:/Users/lawre/OneDrive/Education/Monash University/2022/MTH4100 Research Project/Honours Thesis and Presentation/Honours Presentation v4/main.tex" "main.pdf" "main" 1666523602
+["pdflatex"] 1666529217 "c:/Users/lawre/OneDrive/Education/Monash University/2022/MTH4100 Research Project/Honours Thesis and Presentation/Honours Presentation v4/main.tex" "main.pdf" "main" 1666529274
   "C:/Users/lawre/AppData/Local/MiKTeX/2.9/fonts/map/pdftex/pdftex.map" 1666057522 466148 bf77eda5a46d60a6983271fbe0c424d3 ""
   "C:/Users/lawre/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1647931139 10248883 8606a39bd149ad75b2a87bf0cfebaa61 ""
   "C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-ot1-0.enc" 1561074652 2496 4d35740f3a177992ff7b134746c0a1db ""
@@ -418,9 +418,9 @@
   "C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/tex/latex/xkeyval/xkeyval.sty" 1623009290 4902 efb3d66683a2da2a232f71e3a571a899 ""
   "C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/tex/latex/xstring/xstring.sty" 1543858404 123 a302f2c651a95033260db60e51527ae8 ""
   "C:/Users/lawre/OneDrive/Documents/LaTeX/tex/latex/commands.tex" 1665939574 7170 0a795097afff95935ec507b2a60ae793 ""
-  "c1_group_theory.tex" 1666523302 15638 6bead84ccdc758c16babc1fc987e38b5 ""
+  "c1_group_theory.tex" 1666529215 15584 1315e16ac2b932f7e4f4a561c88e04a5 ""
   "c2_rubiks_group.tex" 1666429034 4961 560cf40b879d20afbd239fcd3b06a5f6 ""
-  "c3_bases.tex" 1666515379 3375 7f2b519ea9cf54e247399be2cca20181 ""
+  "c3_bases.tex" 1666528186 3380 44751de1ecd1e097089c0dd4d7d41826 ""
   "c4_research.tex" 1666515431 3996 4f1896232010ae21d7b20d8692696cce ""
   "c:/Users/lawre/OneDrive/Education/Monash University/2022/MTH4100 Research Project/Honours Thesis and Presentation/Honours Presentation v4/main.tex" 1666429920 3646 06c4761e846c96fb4229f851d04a620b ""
   "code/rubiks_def.gap" 1665317450 475 736e067fa62e125bfddac153d29b7b21 ""
@@ -430,10 +430,10 @@
   "graphics/rubiks_cube_net_empty.tikz" 1665042414 1558 93b2eb5dbfb0543e8956095f946d2fae ""
   "graphics/rubiks_cube_net_front.tikz" 1665047121 2565 f91ab9cf566b5f970f9b85fd9a704790 ""
   "graphics/rubiks_cube_title.png" 1664971565 211149 be985f38d9f7150218b3f444a07f75df ""
-  "main.aux" 1666523599 19623 f08e4b45d05203c40253d002edafd1bf "pdflatex"
-  "main.nav" 1666523599 7121 ab1becc6ecffd2d31e1d459e1f6bf7fd "pdflatex"
+  "main.aux" 1666529273 19619 d5891c0a0c036f2a3a47a4c020a84dd2 "pdflatex"
+  "main.nav" 1666529273 7117 b7872d42b2bc2312174e841c04759487 "pdflatex"
   "main.tex" 1666429920 3646 06c4761e846c96fb4229f851d04a620b ""
-  "main.toc" 1666523599 1396 1c39731f076f753b2b0d97441a95a237 "pdflatex"
+  "main.toc" 1666529273 1396 80f324a40e5b356c301cfa92c943704d "pdflatex"
   "preamble/preamble.tex" 1666428417 3443 2ad884a872bb1450b1b74a49bdd7cdbe ""
   (generated)
   "main.aux"

@@ -127,15 +127,15 @@
 \begin{slide}
     \begin{definition}[group action]
         \vspace{0pt}
-        For (perm) group $G$ and set $\Omega \neq \emptyset$, a \textbf{$G$-action} is map $\Omega \times G \to \Omega$, $(\alpha,g) \mapsto \alpha^g$ s.t. $\alpha^1 = \alpha$ and $\alpha^{gh} = (\alpha^g)^h$ for $\alpha \in \Omega$ and $g,h \in G$. \textbf{Degree} of action is $|\Omega|$.
+        For $G \Sym (\Omega)$ and $\RS \neq \emptyset$, a \textbf{$G$-action} is map $\RS \times G \to \RS$, $(\alpha,g) \mapsto \alpha^g$ s.t. $\alpha^1 = \alpha$ and $\alpha^{gh} = (\alpha^g)^h$ for $\alpha \in \RS$ and $g,h \in G$. \textbf{Degree} of action is $|\RS|$.
     \end{definition}
 
-    \textit{Idea:} $\alpha \in \Omega$ is \textit{state}, apply \textit{move} $g \in G$ to get state $\alpha^g \in \Omega$, in way that respects permutation product. \pause
+    \textit{Idea:} $\alpha \in \RS$ is \textit{state}, apply \textit{move} $g \in G$ to get state $\alpha^g \in \Omega$, in way that respects permutation product. \pause
 
     \begin{example}[natural action]
         \vspace{0pt}
-        $G \leq \Sym(\Omega)$ acts on $\Omega$ by $\alpha^g := \alpha^g$ (image) for $\alpha \in \Omega$, $g \in G$.
-    \end{example} \pause
+        $G \leq \Sym(\Omega)$ acts on $\RS = \Omega$ by $\alpha^g := \alpha^g$ (image) for $\alpha \in \Omega$, $g \in G$.
+    \end{example}
 
     % $G$-action on $\Omega$ yields \textit{homomorphism}
     % $$\varphi : G \to \Sym(\Omega), \quad g \mapsto \varphi(g) = (\alpha \mapsto \alpha^g) \in \Sym(\Omega);$$
@@ -146,9 +146,9 @@
 \begin{slide}
     \begin{example}[dihedral group]
         \vspace{0pt}
-        Recall $D_8 = \langle r,s \rangle = \{1,r,r^2,r^3,s,sr,sr^2,sr^3\} \leq \Sym(4)$.
+        Recall $D_8 = \langle r,s \rangle = \{1,r,r^2,r^3,s,sr,sr^2,sr^3\}$ acts naturally on $[4]$.
 
-        \onslide<2->{\textit{Note:} $r = (1,2,3,4)$, $s = (1,4)(2,3)$, $sr = (2,4)$. Action of $D_8$ on vertices of square (labelled by $[4]$): $g \in D_8$ sends vertex at $i$ to $i^g$.}
+        \onslide<2->{\textit{Note:} $r = (1,2,3,4)$, $s = (1,4)(2,3)$, $sr = (2,4)$. Visualise $D_8$-action by labelling vertices of square by $[4]$: $g \in D_8$ sends vertex at $i$ to $i^g$.}
 
         \begin{center}
             \begin{tikzpicture}[x=1cm,y=1cm]
@@ -212,21 +212,21 @@
 \begin{slide}
     \begin{definition}[orbit]
         \vspace{0pt}
-        If $G$ acts on $\Omega$, then \textbf{orbit} of $\alpha \in \Omega$ is $\alpha^G := \{\alpha^g : g \in G\}$. \\
-        \textit{Idea:} states $\alpha^g \in \Omega$ reachable from fixed $\alpha \in \Omega$ by moves $g \in G$.
+        If $G$ acts on $\RS$, then \textbf{orbit} of $\alpha \in \RS$ is $\alpha^G := \{\alpha^g : g \in G\}$. \\
+        \textit{Idea:} states $\alpha^g \in \RS$ reachable from fixed $\alpha \in \RS$ by moves $g \in G$.
     \end{definition}
 
     One orbit only: \textbf{transitive} action. \pause
 
     \begin{definition}[stabiliser]
         \vspace{0pt}
-        If $G$ acts on $\Omega$, then \textbf{stabiliser} of $\alpha \in \Omega$ is $G_\alpha := \{g \in G : \alpha^g = \alpha\}$. \\
-        \textit{Idea:} moves $g \in G$ that fix given $\alpha \in \Omega$. \pause
+        If $G$ acts on $\RS$, then \textbf{stabiliser} of $\alpha \in \RS$ is $G_\alpha := \{g \in G : \alpha^g = \alpha\}$. \\
+        \textit{Idea:} moves $g \in G$ that fix given $\alpha \in \RS$.
     \end{definition}
 \end{slide}
 
 \begin{slide}
-    Orbit $\alpha^G$: states $\alpha^g \in \Omega$ reachable from fixed $\alpha$ by moves $g \in G$. \\
+    Orbit $\alpha^G$: states $\alpha^g \in \RS$ reachable from fixed $\alpha$ by moves $g \in G$. \\
     Stabiliser $G_\alpha$: moves $g \in G$ that fix given $\alpha$.
 
     \begin{example}[dihedral group]
@@ -242,7 +242,7 @@
 
     \begin{theorem}[orbit-stabiliser]
         \vspace{0pt}
-        If $G$ acts on $\Omega$, then for $\alpha \in \Omega$, $|\alpha^G||G_\alpha| = |G|$.
+        If $G$ acts on $\RS$, then for $\alpha \in \RS$, $|\alpha^G||G_\alpha| = |G|$.
     \end{theorem}
 \end{slide}
 
@@ -251,10 +251,10 @@
 \begin{slide}
     \begin{definition}[block]
         \vspace{0pt}
-        If $G$ acts transitively on $\Omega$ and $\Delta \subseteq \Omega$, let $\Delta^g := \{\alpha^g : \alpha \in \Delta\}$. \\
-        A \textbf{block} is $\Delta \subseteq \Omega$ with $\Delta^g = \Delta$ or $\Delta^g \cap \Delta = \emptyset$ for all $g \in G$. \pause
+        If $G$ acts transitively on $\RS$ and $\Delta \subseteq \RS$, let $\Delta^g := \{\alpha^g : \alpha \in \Delta\}$. \\
+        A \textbf{block} is $\Delta \subseteq \RS$ with $\Delta^g = \Delta$ or $\Delta^g \cap \Delta = \emptyset$ for all $g \in G$. \pause
 
-        Block is \textbf{nontrivial} if $|\Delta| > 1$ and $\Delta \neq \Omega$.
+        Block is \textbf{nontrivial} if $|\Delta| > 1$ and $\Delta \neq \RS$.
     \end{definition}
 
     \textit{Examples of blocks:} singletons, $\Omega$, orbits. \pause
