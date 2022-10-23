@@ -1,0 +1,119 @@
+\subsection{Representing the cube and its operations}
+
+\begin{slide}
+    Rubik's cube has 6 faces, each with $3 \times 3$ small \textit{stickers}.
+
+    \onslide<2->{In \textbf{solved state} $1$, label stickers (except each centre) using $[48]$:}
+
+    \begin{center}
+        \includegraphics<1|handout:0>{graphics/rubiks_cube_net_empty.tikz}%
+        \includegraphics<2->{graphics/rubiks_cube_net.tikz}%
+    \end{center}
+
+    \onslide<3->{6 \textbf{generators} (\textit{moves} in CC): $U,L,F,R,B,D$ (rot. \textit{clockwise}).}
+\end{slide}
+
+\begin{slide}
+    From \textit{solved state} $1$, consider $F$ which rotates front face clockwise:
+
+    \begin{center}
+        \includegraphics<1|handout:0>{graphics/rubiks_cube_net.tikz}%
+        \includegraphics<2->{graphics/rubiks_cube_net_front.tikz}%
+    \end{center}
+
+    \vspace{-1cm}
+    \onslide<2->{\begin{multline*}
+            F = (17,19,24,22)(18,21,23,20)( 6,25,43,16)\\
+            ( 7,28,42,13)( 8,30,41,11) \in \Sym(48).
+        \end{multline*}}
+\end{slide}
+
+\subsection{The Rubik's group of permutations}
+
+\begin{slide}
+    Generators as permutations of labels $[48]$:
+
+    {\scriptsize
+    \begin{itemize}
+        \item $U = ( 1, 3, 8, 6)( 2, 5, 7, 4)( 9,33,25,17)(10,34,26,18)(11,35,27,19)$
+        \item $L = ( 9,11,16,14)(10,13,15,12)( 1,17,41,40)( 4,20,44,37)( 6,22,46,35)$
+        \item $F = (17,19,24,22)(18,21,23,20)( 6,25,43,16)( 7,28,42,13)( 8,30,41,11)$
+        \item $R = (25,27,32,30)(26,29,31,28)( 3,38,43,19)( 5,36,45,21)( 8,33,48,24)$
+        \item $B = (33,35,40,38)(34,37,39,36)( 3, 9,46,32)( 2,12,47,29)( 1,14,48,27)$
+        \item $D = (41,43,48,46)(42,45,47,44)(14,22,30,38)(15,23,31,39)(16,24,32,40)$
+    \end{itemize}} \pause
+
+    \textbf{Operation} is sequence of generators and inverses. E.g. $RUR^{-1}U^{-1}$, \pause $URU^{-1}L^{-1}UR^{-1}U^{-1}L$, \pause $RUR^{-1}URU^2R^{-1}U^2$, \pause $1 = ()$.
+
+    \begin{definition}[Rubik's group]
+        \vspace{0pt}
+        $\RC = \langle U,L,F,R,B,D \rangle \leq \Sym(48)$ is permutation group of degree 48, called \textbf{Rubik's group}.
+    \end{definition}
+
+    Clearly $\RC$ is finite, but what is $|\RC|$?
+\end{slide}
+
+% \begin{slide}
+%     \textit{In cubing community:} operations called \textit{move sequences}. Inverse generators (also \textit{``moves''} in CC) written $U',L',F',R',B',D'$ (instead of $U^{-1}$ etc.); powers written $U2,R2$ etc. (instead of $U^2,R^2$). \pause
+
+%     \textit{Recall:} $\sigma = \tau$ in $\Sym(n)$ iff $i^\sigma = i^\tau$ for all $i \in [n]$. \pause
+
+%     Operations \textit{don't generally commute}: $RU \neq UR$ since
+
+%         {\scriptsize
+%             \begin{itemize}
+%                 \item $R = (25,27,32,30)(26,29,31,28)( 3,38,43,19)( 5,36,45,21)( 8,33,48,24)$
+%                 \item $U = ( 1, 3, 8, 6)( 2, 5, 7, 4)( 9,33,25,17)(10,34,26,18)(11,35,27,19)$
+%             \end{itemize}}
+
+%     \vspace{-1cm}
+%     $$19^{RU} = \pause (19^R)^U = \pause 3^U = \pause 8 \quad\text{but}\quad 19^{UR} = \pause (19^U)^R = \pause 11^R = \pause 11.$$
+% \end{slide}
+
+\begin{slide}
+    \texttt{GAP} code to define generators and $\RC = \langle U,L,F,R,B,D \rangle$ (as \texttt{G}):
+
+    {\footnotesize\lstinputlisting{code/rubiks_def.gap}} \pause
+
+    \texttt{Order} cmd: $|\RC| = 43\,252\,003\,274\,489\,856\,000 \approx 4.3 \cdot 10^{19}$. \textit{How?}
+\end{slide}
+
+\subsection{Orbits in the Rubik's group}
+
+\begin{slide}
+    \begin{center}
+        \scalebox{0.6}{\includegraphics{graphics/rubiks_cube_net.tikz}}
+    \end{center}
+
+    \onslide<1>
+    \scriptsize\lstinputlisting{code/rubiks_orbit_stab.gap}
+
+    \normalsize Two $\RC$-orbits: corner stickers $1^\RC$, edge stickers $2^\RC$.
+\end{slide}
+
+\subsection{Transitive action on corners}
+
+\begin{slide}
+    $\RC$ acts transitively on corner stickers $1^\RC$. In this action:
+
+    \begin{center}
+        \scalebox{0.6}{\includegraphics{graphics/rubiks_cube_net_corners.tikz}}
+    \end{center} \pause
+
+    \vspace{-1cm}
+    \begin{multline*}
+        \Sigma = \{\overbrace{\{1,35,9\}}^{UBL},\overbrace{\{6,11,17\}}^{ULF},\overbrace{\{40,46,14\}}^{BDL},\overbrace{\{27,3,33\}}^{RUB},\\
+        \underbrace{\{8,25,19\}}_{URF},\underbrace{\{16,41,22\}}_{LDF},\underbrace{\{32,48,38\}}_{RDB},\underbrace{\{24,43,30\}}_{FDR}\}
+    \end{multline*}
+    is block system for \textit{maximal} block $\{8,25,19\}$ ($URF$ corner).
+\end{slide}
+
+\begin{slide}
+    \begin{center}
+        \scalebox{0.6}{\includegraphics{graphics/rubiks_cube_net_corners.tikz}}
+    \end{center}
+
+    $\RC$ acts primitively on $\Sigma$ (degree 8); $g \in \RC$ induces perm of $\Sigma$, e.g. \pause
+    $$F \mapsto (\underbrace{FUL}_{FDL^F},\underbrace{FUR}_{FUL^F},\underbrace{FDR}_{FUR^F},\underbrace{FDL}_{FDR^F}) \in \Sym(\Sigma).$$ \pause
+    $\RC$ induces every perm of $\Sigma$ (so $\Sym(8)$ ``is'' \textit{primitive} quotient of $\RC$).
+\end{slide}

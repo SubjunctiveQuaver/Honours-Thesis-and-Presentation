@@ -1,0 +1,101 @@
+\subsection{Affine groups}
+
+\begin{slide}
+    \begin{definition}
+        \vspace{0pt}
+        Let $K$ be field. \textbf{Affine transformation} of $K^d$ is map
+        $$t_{a,v} : K^d \to K^d, \quad u \mapsto ua + v$$
+        for $a \in \GL_d(K)$ and $v \in K^d$. (Treat $u,v$ as row vectors.)
+    \end{definition} \pause
+
+    \textit{Note:} $t_{a,v} \in \Sym(K^d)$ (bijection). \pause
+
+    \begin{definition}
+        \vspace{0pt}
+        \textbf{Affine group} $\AGL_d(K) \leq \Sym(K^d)$ of dim $d$ is affine transfs of $K^d$. \\
+        For $K = \F_q$ finite field, write $\AGL_d(q)$ (perm group of deg $q^d$).
+    \end{definition} \pause
+
+    Interested in $q = 2$, i.e. field $\F_2 = \{0,1\}$ with $1 + 1 = 0$, $1 \cdot 1 = 1$, etc.
+\end{slide}
+
+\subsection{Large base permutation groups}
+
+\begin{slide}
+    \begin{definition}
+        \vspace{0pt}
+        Perm group $G$ of degree $n$ is \textbf{large base} if
+        $$\Alt(m)^r \unlhd G \leq \Sym(m) \wr \Sym(r)$$
+        for some $m,r,k$, where $\Sym(m)$ acts on $\binom{[m]}{k}$ and $n = \binom{m}{k}^r$.
+    \end{definition} \pause
+
+    \begin{theorem}[Liebeck, 1984]
+        \vspace{0pt}
+        For primitive perm group $G$ of degree $n$, either:
+        \begin{enumerate}[(i)]
+            \item $G$ is large base; or
+            \item $b(G) < 9\log n$.
+        \end{enumerate}
+    \end{theorem} \pause
+
+    ``Remarkable'' proof used \textit{classification of finite simple groups}, \textit{O'Nan-Scott theorem} (classifies primitive groups).
+\end{slide}
+
+\begin{slide}
+    \begin{theorem}[Moscatiello \& Roney-Dougal, 2021]
+        \vspace{0pt}
+        For primitive perm group $G$ of degree $n$, and $G$ is non-large base:
+        \begin{enumerate}[(i)]
+            \item $G$ is the Mathieu group $M_{24}$ (degree 24); or
+            \item $b(G) \leq \lceil\log n\rceil + 1$.
+        \end{enumerate} \pause
+
+        Moreover, if $b(G) = \log n + 1$ then $G \leq \AGL_d(2)$ with $n = 2^d$.
+    \end{theorem} \pause
+
+    \begin{alertblock}{Question (Moscatiello \& Roney-Dougal, 2021)}
+        \vspace{0pt}
+        Which primitive groups $G \leq \Sym(n)$ satisfy $b(G) = \log n + 1$?
+    \end{alertblock}
+\end{slide}
+
+\subsection{Main result in thesis}
+
+\begin{slide}
+    \begin{theorem}
+        \vspace{0pt}
+        Let $G \leq \AGL_d(2)$ be primitive for some $d$ with natural action on $K^d$ with $b(G) = d + 1$. (Then $G$ is perm group of degree $n = 2^d$.)
+        \begin{enumerate}[(i)]
+            \item For $d = 1$, there is no such $G$. \pause
+            \item For odd $3 \leq d \leq 9$ and $d = 2$, then $G$ is $\AGL_d(2)$. \pause
+            \item For even $4 \leq d \leq 10$, then $G$ is $\AGL_d(2)$ or $2^d : \Sp_d(2)$.
+        \end{enumerate}
+    \end{theorem}
+\end{slide}
+
+\begin{slide}
+    \begin{proof}[Proof (idea)]
+        \begin{itemize}
+            \item Find representatives $M$ of conjugacy classes of primitive maximal subgroups of $\AGL_d(2)$. \pause
+            \item Use \textit{greedy base algorithm} to find base for $M$; if base of length at most $d$ is found then $b(M) \leq d$ and discard. \pause
+            \item Otherwise, recursively check for each representative $M$.
+        \end{itemize} \pause
+
+        Every primitive $G \leq \AGL_d(2)$ with $b(G) = d + 1$ is found by process (plus perhaps false positives), up to conjugacy.
+    \end{proof}
+
+    Greedy base algorithm performed better than \texttt{BaseOfGroup} in testing; found no false positives.
+\end{slide}
+
+\begin{slide}
+    From above theorem, we conjecture the following:
+
+    \begin{alertblock}{Conjecture}
+        \vspace{0pt}
+        Primitive group $G \leq \Sym(n)$ satisfies $b(G) = \log n + 1$ iff: \pause
+        \begin{itemize}
+            \item $n = 2^d$ with $d \geq 2$, and $G$ is $\AGL_d(2)$; or
+            \item $n = 2^d$ with $d \geq 4$, and $G$ is $2^d : \Sp_d(2)$.
+        \end{itemize}
+    \end{alertblock}
+\end{slide}

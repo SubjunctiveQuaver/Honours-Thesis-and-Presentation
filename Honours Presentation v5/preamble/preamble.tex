@@ -1,0 +1,103 @@
+\usepackage[utf8]{inputenc} % Accept different input encodings
+\usepackage{mathtools} % Extra symbols and fixes to amsmath
+\usepackage{thmtools} % Theorem tools
+\usepackage{graphicx}
+% \usepackage[shortlabels]{enumitem} % Customising lists - incompatible with beamer
+\usepackage{centernot} % Centred negation slash
+\usepackage{hyperref}
+\usepackage{tcolorbox} % Boxes surrounding text
+\usepackage{tikz-cd} % Commutative diagrams
+% \usepackage{newtx} % Nicer font
+\usepackage{libertine}
+\usepackage[libertine]{newtxmath}
+\usepackage{bookmark} % Hyperlinks and bookmarks
+\usepackage{inconsolata}
+\usepackage{xcolor}
+\usepackage{tkz-base}
+\usepackage{tkz-graph}
+\usepackage{tkz-euclide}
+\usepackage{tikzscale}
+\usepackage{listings}
+\usepackage{csquotes}
+\usepackage{accsupp}
+\newcommand{\emptyaccsupp}[1]{\BeginAccSupp{ActualText={}}#1\EndAccSupp{}}
+
+\usetheme[progressbar=frametitle]{metropolis}
+\usefonttheme{professionalfonts}
+\newcounter{insub}
+\AtBeginSubsection[]{\setcounter{insub}{0}}
+\AtBeginEnvironment{slide}{\addtocounter{insub}{1}}
+\newenvironment<>{slide}{\begin{frame}#1%
+        \frametitle{\subsecname{}\ifthenelse{\theinsub=1}{}{\enskip(\roman{insub})}}
+        }{\end{frame}}
+% \setbeamertemplate{theorems}[numbered]
+\definecolor{metropolis}{HTML}{FAFAFA}
+\definecolor{metrogreen}{HTML}{14B03D}
+\definecolor{metrorange}{HTML}{EB811B}
+
+% ---------------------------------------- %
+% SETTINGS
+
+\tcbuselibrary{breakable}
+\newtcolorbox{framedbox}{standard jigsaw, opacityback=0, boxrule=1pt, breakable, before skip=8pt, after skip=8pt}
+\hypersetup{colorlinks,linkcolor=,urlcolor=magenta}
+
+% \let \originalLeft \left % Fixing \left and \right
+% \let \originalRight \right
+% \renewcommand{\left}{\mathopen{} \mathclose \bgroup \originalLeft}
+% \renewcommand{\right}{\aftergroup \egroup \originalRight}
+
+\newtheorem{proposition}{Proposition}
+
+%% tkz-graph
+% \GraphInit[vstyle=Hasse]
+% \GraphInit[vstyle=Welsh]
+% \GraphInit[vstyle=Normal]
+% \GraphInit[vstyle=Classic]
+\SetGraphUnit{1}
+\SetVertexMath
+\tikzset{VertexStyle/.append style={minimum size=8pt}}
+
+%% listings
+% Code block styles (listings)
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\lstdefinestyle{default}{
+    basewidth={.5em,0.5em},
+    basicstyle=\ttfamily,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    xleftmargin=15pt,
+    framexleftmargin=2pt,
+    framexrightmargin=2pt,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    tabsize=4,
+    columns=fullflexible,
+    backgroundcolor=\color{backcolour},
+    commentstyle=\itshape\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\footnotesize\itshape\color{black}\emptyaccsupp,
+    stringstyle=\color{codepurple}
+}
+% \lstdefinelanguage{GAP}{%
+%     morekeywords={%
+%             Assert,Info,IsBound,QUIT,%
+%             TryNextMethod,Unbind,and,break,%
+%             continue,do,elif,%
+%             else,end,false,fi,for,%
+%             function,if,in,local,%
+%             mod,not,od,or,%
+%             quit,rec,repeat,return,%
+%             then,true,until,while%
+%         },%
+%     sensitive,%
+%     morecomment=[l]\#,%
+%     morestring=[b]",%
+%     morestring=[b]',%
+% }[keywords,comments,strings]
+\lstset{style=default,language=GAP}

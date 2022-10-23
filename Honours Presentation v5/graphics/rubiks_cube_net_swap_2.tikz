@@ -1,0 +1,47 @@
+\begin{tikzpicture}[x=1cm,y=1cm,scale=0.6]
+    \tikzset{VertexStyle/.style={draw=none,font=\small}}
+    \foreach \c in {-1,0,1,2} {
+    \foreach \d in {-1,0,1} {
+    \foreach \i in {0,1,2} {
+    \foreach \j in {0,1,2} {
+    \tkzDefPoints{{\i+3*\c}/{\j+3*\d}/A,{\i+3*\c+1}/{\j+3*\d}/B,{\i+3*\c+1}/{\j+3*\d+1}/C,{\i+3*\c}/{\j+3*\d+1}/D}
+    \ifthenelse{\c=0 \AND \d=-1}{
+        \tkzDrawPolygon[rounded corners=2pt,line width=0pt,fill=yellow,opacity=0.6](A,B,C,D)
+        \tkzDrawPolygon[rounded corners=2pt,line width=2pt](A,B,C,D)}{}
+    \ifthenelse{\c=-1 \AND \d=0}{
+        \tkzDrawPolygon[rounded corners=2pt,line width=0pt,fill=green,opacity=0.6](A,B,C,D)
+        \tkzDrawPolygon[rounded corners=2pt,line width=2pt](A,B,C,D)}{}
+    \ifthenelse{\c=0 \AND \d=0}{
+        \ifthenelse{\i=1 \AND \j=2}{
+            \tkzDrawPolygon[rounded corners=2pt,line width=0pt,fill=blue,opacity=0.6](A,B,C,D)
+        }{
+            \ifthenelse{\i=2 \AND \j=1}{
+                \tkzDrawPolygon[rounded corners=2pt,line width=0pt,fill=white,opacity=0.6](A,B,C,D)
+            }{\tkzDrawPolygon[rounded corners=2pt,line width=0pt,fill=red,opacity=0.6](A,B,C,D)}
+        }
+        \tkzDrawPolygon[rounded corners=2pt,line width=2pt](A,B,C,D)}{}
+    \ifthenelse{\c=1 \AND \d=0}{
+        \ifthenelse{\i=0 \AND \j=1}{
+            \tkzDrawPolygon[rounded corners=2pt,line width=0pt,fill=red,opacity=0.6](A,B,C,D)
+        }{\tkzDrawPolygon[rounded corners=2pt,line width=0pt,fill=blue,opacity=0.6](A,B,C,D)}
+        \tkzDrawPolygon[rounded corners=2pt,line width=2pt](A,B,C,D)}{}
+    \ifthenelse{\c=2 \AND \d=0}{
+        \tkzDrawPolygon[rounded corners=2pt,line width=0pt,fill=orange,opacity=0.6](A,B,C,D)
+        \tkzDrawPolygon[rounded corners=2pt,line width=2pt](A,B,C,D)}{}
+    \ifthenelse{\c=0 \AND \d=1}{
+        \ifthenelse{\i=1 \AND \j=0}{
+            \tkzDrawPolygon[rounded corners=2pt,line width=0pt,fill=red,opacity=0.6](A,B,C,D)
+        }{\tkzDrawPolygon[rounded corners=2pt,line width=0pt,fill=white,opacity=0.6](A,B,C,D)}
+        \tkzDrawPolygon[rounded corners=2pt,line width=2pt](A,B,C,D)}{}
+    }}}}
+    \Vertices[x=0.5,y=5.5]{line}{1, 2,3}
+    \Vertices[x=0.5,y=4.5]{line}{4, U,5}
+    \Vertices[x=0.5,y=3.5]{line}{6,21,8}
+    \Vertices[x=-2.5,y=2.5]{line}{9 ,10,11,17,28,19,25,26,27,33,34,35}
+    \Vertices[x=-2.5,y=1.5]{line}{12, L,13,20, F, 7,18, R,29,36, B,37}
+    \Vertices[x=-2.5,y=0.5]{line}{14,15,16,22,23,24,30,31,32,38,39,40}
+    \Vertices[x=0.5,y=-0.5]{line}{41,42,43}
+    \Vertices[x=0.5,y=-1.5]{line}{44, D,45}
+    \Vertices[x=0.5,y=-2.5]{line}{46,47,48}
+    \Vertex[x=6,y=-1.5,L={(18,28)(7,21)}]{lab}
+\end{tikzpicture}
