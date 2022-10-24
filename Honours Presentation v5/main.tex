@@ -89,9 +89,30 @@
         \item Blaha --- \textit{Minimum bases for permutation groups: The greedy approximation}, 1992: \url{https://doi:10.1016/0196-6774(92)90020-D}
         \item Liebeck --- \textit{On minimal degrees and base sizes of primitive permutation groups}, 1984: \url{https://doi.org/10.1007/bf01193603}
         \item Moscatiello and Roney-Dougal: \textit{Base sizes of primitive permutation groups}, 2021: \url{https://doi.org/10.1007/s00605-021-01599-5}
-              % \item Orders of elements in Rubik's group (1260 largest, 13 smallest without, 11 rarest, 60 most common, median 67.3, 73 options): \url{https://www.jaapsch.net/puzzles/cubic3.htm\#p34}
-              % \item Thistlethwaite's 52 move algorithm (using group theory): \url{https://www.jaapsch.net/puzzles/thistle.htm}
     \end{itemize}
+\end{slide}
+
+\begin{slide}
+    The \textbf{order} of $g \in G \leq \Sym(\Omega)$ is smallest $k \in \Z_+$ such that $g^k = 1$. \textit{Fact:} order of $g$ is lcm of cycle lengths; it divides $|G|$.
+
+    \textit{Note:} for Rubik's group, $R$ has order 4, $RUR^{-1}U^{-1}$ has order 6, $RU$ has order 105 (\texttt{GAP}). Order 7? \pause $(RU)^{15}$. Order 13? \pause None; $|\RC| = 2^{27} \cdot 3^{14} \cdot 5^3 \cdot 7^2 \cdot 11$. 
+
+    \small
+    \begin{itemize}
+        \item \textit{Bonus:} Orders of elements in Rubik's group (1260 largest, 13 smallest without, 11 rarest, 60 most common, median 67.3, 73 options): \url{https://www.jaapsch.net/puzzles/cubic3.htm\#p34}
+        \item \textit{Bonus:} Thistlethwaite's 52 move algorithm (using group theory): \url{https://www.jaapsch.net/puzzles/thistle.htm}
+    \end{itemize}
+\end{slide}
+
+\subsection{Large base definition}
+
+\begin{slide}
+    \begin{definition}
+        \vspace{0pt}
+        Perm group $G$ of degree $n$ is \textbf{large base} if
+        $$\Alt(m)^r \unlhd G \leq \Sym(m) \wr \Sym(r)$$
+        for some $m,r,k$, where $\Sym(m)$ acts on $\binom{[m]}{k}$, and if $r > 1$ then wreath product has \textit{product action} of degree $n = \binom{m}{k}^r$.
+    \end{definition}
 \end{slide}
 
 % \subsection{References}

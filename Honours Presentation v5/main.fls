@@ -2621,6 +2621,26 @@ INPUT .\c3_bases.tex
 INPUT c3_bases.tex
 INPUT .\c3_bases.tex
 INPUT c3_bases.tex
+INPUT .\graphics\rubiks_cube_net_base.tikz
+INPUT graphics\rubiks_cube_net_base.tikz
+INPUT .\graphics\rubiks_cube_net_base.tikz
+INPUT graphics\rubiks_cube_net_base.tikz
+INPUT .\graphics\rubiks_cube_net_base.tikz
+INPUT graphics\rubiks_cube_net_base.tikz
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinLibertineTZ-tlf-ot1.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinLibertineTZ-tlf-ot1.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinLibertineTZ-tlf-ot1.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\libertine\LinLibertineTZ-tlf-ot1.vf
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinLibertineTZ-tlf-ot1--base.tfm
+INPUT .\graphics\rubiks_cube_net_base.tikz
+INPUT graphics\rubiks_cube_net_base.tikz
+INPUT .\graphics\rubiks_cube_net_base.tikz
+INPUT graphics\rubiks_cube_net_base.tikz
+INPUT .\graphics\rubiks_cube_net_base.tikz
+INPUT graphics\rubiks_cube_net_base.tikz
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinLibertineTZ-tlf-ot1.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinLibertineTZ-tlf-ot1.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinLibertineTZ-tlf-ot1.tfm
 INPUT .\graphics\rubiks_cube_net_random.tikz
 INPUT graphics\rubiks_cube_net_random.tikz
 INPUT .\graphics\rubiks_cube_net_random.tikz
@@ -2651,6 +2671,7 @@ OUTPUT main.nav
 OUTPUT main.toc
 OUTPUT main.snm
 INPUT main.aux
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\libertine\lbtn_fygcup.enc
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\inconsolata\i4-ot1-0.enc
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\libertine\lbtn_oexx6f.enc
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\libertine\lbtn_edcawa.enc
@@ -2675,6 +2696,8 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\libert
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\libertine\LinBiolinumTI.pfb
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\libertine\LinLibertineT.pfb
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\libertine\LinLibertineT.pfb
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\libertine\LinLibertineTZ.pfb
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\libertine\LinLibertineTZ.pfb
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\newtx\NewTXMI.pfb
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\newtx\NewTXMI.pfb
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\newtx\txexas.pfb
