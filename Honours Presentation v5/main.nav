@@ -31,90 +31,90 @@
 \headcommand {\beamer@subsectionentry {0}{1}{4}{36}{Orbits and stabilisers}}
 \headcommand {\slideentry {1}{4}{1}{36/37}{Orbits and stabilisers}{0}}
 \headcommand {\beamer@framepages {36}{37}}
-\headcommand {\slideentry {1}{4}{2}{38/41}{Orbits and stabilisers}{0}}
-\headcommand {\beamer@framepages {38}{41}}
-\headcommand {\beamer@sectionpages {8}{41}}
-\headcommand {\beamer@subsectionpages {36}{41}}
-\headcommand {\sectionentry {2}{The Rubik's group}{42}{The Rubik's group}{0}}
-\headcommand {\slideentry {2}{0}{1}{42/42}{}{0}}
-\headcommand {\beamer@framepages {42}{42}}
-\headcommand {\beamer@subsectionpages {42}{42}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{43}{Representing the cube and its operations}}
-\headcommand {\slideentry {2}{1}{1}{43/45}{Representing the cube and its operations}{0}}
-\headcommand {\beamer@framepages {43}{45}}
-\headcommand {\slideentry {2}{1}{2}{46/47}{Representing the cube and its operations}{0}}
-\headcommand {\beamer@framepages {46}{47}}
-\headcommand {\beamer@subsectionpages {43}{47}}
-\headcommand {\beamer@subsectionentry {0}{2}{2}{48}{The Rubik's group of permutations}}
-\headcommand {\slideentry {2}{2}{1}{48/52}{The Rubik's group of permutations}{0}}
-\headcommand {\beamer@framepages {48}{52}}
-\headcommand {\slideentry {2}{2}{2}{53/54}{The Rubik's group of permutations}{0}}
-\headcommand {\beamer@framepages {53}{54}}
-\headcommand {\beamer@subsectionpages {48}{54}}
-\headcommand {\beamer@subsectionentry {0}{2}{3}{55}{Orbits in the Rubik's group}}
-\headcommand {\slideentry {2}{3}{1}{55/55}{Orbits in the Rubik's group}{0}}
-\headcommand {\beamer@framepages {55}{55}}
-\headcommand {\beamer@subsectionpages {55}{55}}
-\headcommand {\beamer@subsectionentry {0}{2}{4}{56}{Transitive action on corners}}
-\headcommand {\slideentry {2}{4}{1}{56/59}{Transitive action on corners}{0}}
-\headcommand {\beamer@framepages {56}{59}}
-\headcommand {\slideentry {2}{4}{2}{60/61}{Transitive action on corners}{0}}
-\headcommand {\beamer@framepages {60}{61}}
-\headcommand {\slideentry {2}{4}{3}{62/64}{Transitive action on corners}{0}}
-\headcommand {\beamer@framepages {62}{64}}
-\headcommand {\beamer@sectionpages {42}{64}}
-\headcommand {\beamer@subsectionpages {56}{64}}
-\headcommand {\sectionentry {3}{Bases and stabiliser chains}{65}{Bases and stabiliser chains}{0}}
-\headcommand {\slideentry {3}{0}{1}{65/65}{}{0}}
-\headcommand {\beamer@framepages {65}{65}}
-\headcommand {\beamer@subsectionpages {65}{65}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{66}{Bases and stabiliser chains}}
-\headcommand {\slideentry {3}{1}{1}{66/69}{Bases and stabiliser chains}{0}}
-\headcommand {\beamer@framepages {66}{69}}
-\headcommand {\slideentry {3}{1}{2}{70/72}{Bases and stabiliser chains}{0}}
-\headcommand {\beamer@framepages {70}{72}}
-\headcommand {\slideentry {3}{1}{3}{73/76}{Bases and stabiliser chains}{0}}
-\headcommand {\beamer@framepages {73}{76}}
-\headcommand {\slideentry {3}{1}{4}{77/78}{Bases and stabiliser chains}{0}}
-\headcommand {\beamer@framepages {77}{78}}
-\headcommand {\beamer@subsectionpages {66}{78}}
-\headcommand {\beamer@subsectionentry {0}{3}{2}{79}{What is the size of the Rubik's group?}}
-\headcommand {\slideentry {3}{2}{1}{79/82}{What is the size of the Rubik's group?}{0}}
-\headcommand {\beamer@framepages {79}{82}}
-\headcommand {\beamer@sectionpages {65}{82}}
-\headcommand {\beamer@subsectionpages {79}{82}}
-\headcommand {\sectionentry {4}{Base sizes of primitive groups}{83}{Base sizes of primitive groups}{0}}
-\headcommand {\slideentry {4}{0}{1}{83/83}{}{0}}
-\headcommand {\beamer@framepages {83}{83}}
-\headcommand {\beamer@subsectionpages {83}{83}}
-\headcommand {\beamer@subsectionentry {0}{4}{1}{84}{Affine groups}}
-\headcommand {\slideentry {4}{1}{1}{84/87}{Affine groups}{0}}
-\headcommand {\beamer@framepages {84}{87}}
+\headcommand {\slideentry {1}{4}{2}{38/40}{Orbits and stabilisers}{0}}
+\headcommand {\beamer@framepages {38}{40}}
+\headcommand {\beamer@sectionpages {8}{40}}
+\headcommand {\beamer@subsectionpages {36}{40}}
+\headcommand {\sectionentry {2}{The Rubik's group}{41}{The Rubik's group}{0}}
+\headcommand {\slideentry {2}{0}{1}{41/41}{}{0}}
+\headcommand {\beamer@framepages {41}{41}}
+\headcommand {\beamer@subsectionpages {41}{41}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{42}{Representing the cube and its operations}}
+\headcommand {\slideentry {2}{1}{1}{42/44}{Representing the cube and its operations}{0}}
+\headcommand {\beamer@framepages {42}{44}}
+\headcommand {\slideentry {2}{1}{2}{45/46}{Representing the cube and its operations}{0}}
+\headcommand {\beamer@framepages {45}{46}}
+\headcommand {\beamer@subsectionpages {42}{46}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{47}{The Rubik's group of permutations}}
+\headcommand {\slideentry {2}{2}{1}{47/51}{The Rubik's group of permutations}{0}}
+\headcommand {\beamer@framepages {47}{51}}
+\headcommand {\slideentry {2}{2}{2}{52/53}{The Rubik's group of permutations}{0}}
+\headcommand {\beamer@framepages {52}{53}}
+\headcommand {\beamer@subsectionpages {47}{53}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{54}{Orbits in the Rubik's group}}
+\headcommand {\slideentry {2}{3}{1}{54/54}{Orbits in the Rubik's group}{0}}
+\headcommand {\beamer@framepages {54}{54}}
+\headcommand {\beamer@subsectionpages {54}{54}}
+\headcommand {\beamer@subsectionentry {0}{2}{4}{55}{Transitive action on corners}}
+\headcommand {\slideentry {2}{4}{1}{55/58}{Transitive action on corners}{0}}
+\headcommand {\beamer@framepages {55}{58}}
+\headcommand {\slideentry {2}{4}{2}{59/60}{Transitive action on corners}{0}}
+\headcommand {\beamer@framepages {59}{60}}
+\headcommand {\slideentry {2}{4}{3}{61/63}{Transitive action on corners}{0}}
+\headcommand {\beamer@framepages {61}{63}}
+\headcommand {\beamer@sectionpages {41}{63}}
+\headcommand {\beamer@subsectionpages {55}{63}}
+\headcommand {\sectionentry {3}{Bases and stabiliser chains}{64}{Bases and stabiliser chains}{0}}
+\headcommand {\slideentry {3}{0}{1}{64/64}{}{0}}
+\headcommand {\beamer@framepages {64}{64}}
+\headcommand {\beamer@subsectionpages {64}{64}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{65}{Bases and stabiliser chains}}
+\headcommand {\slideentry {3}{1}{1}{65/68}{Bases and stabiliser chains}{0}}
+\headcommand {\beamer@framepages {65}{68}}
+\headcommand {\slideentry {3}{1}{2}{69/71}{Bases and stabiliser chains}{0}}
+\headcommand {\beamer@framepages {69}{71}}
+\headcommand {\slideentry {3}{1}{3}{72/75}{Bases and stabiliser chains}{0}}
+\headcommand {\beamer@framepages {72}{75}}
+\headcommand {\slideentry {3}{1}{4}{76/77}{Bases and stabiliser chains}{0}}
+\headcommand {\beamer@framepages {76}{77}}
+\headcommand {\beamer@subsectionpages {65}{77}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{78}{What is the size of the Rubik's group?}}
+\headcommand {\slideentry {3}{2}{1}{78/80}{What is the size of the Rubik's group?}{0}}
+\headcommand {\beamer@framepages {78}{80}}
+\headcommand {\beamer@sectionpages {64}{80}}
+\headcommand {\beamer@subsectionpages {78}{80}}
+\headcommand {\sectionentry {4}{Base sizes of primitive groups}{81}{Base sizes of primitive groups}{0}}
+\headcommand {\slideentry {4}{0}{1}{81/81}{}{0}}
+\headcommand {\beamer@framepages {81}{81}}
+\headcommand {\beamer@subsectionpages {81}{81}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{82}{Affine groups}}
+\headcommand {\slideentry {4}{1}{1}{82/83}{Affine groups}{0}}
+\headcommand {\beamer@framepages {82}{83}}
+\headcommand {\beamer@subsectionpages {82}{83}}
+\headcommand {\beamer@subsectionentry {0}{4}{2}{84}{Non-large base permutation groups}}
+\headcommand {\slideentry {4}{2}{1}{84/85}{Non-large base permutation groups}{0}}
+\headcommand {\beamer@framepages {84}{85}}
+\headcommand {\slideentry {4}{2}{2}{86/87}{Non-large base permutation groups}{0}}
+\headcommand {\beamer@framepages {86}{87}}
 \headcommand {\beamer@subsectionpages {84}{87}}
-\headcommand {\beamer@subsectionentry {0}{4}{2}{88}{Non-large base permutation groups}}
-\headcommand {\slideentry {4}{2}{1}{88/89}{Non-large base permutation groups}{0}}
-\headcommand {\beamer@framepages {88}{89}}
-\headcommand {\slideentry {4}{2}{2}{90/92}{Non-large base permutation groups}{0}}
-\headcommand {\beamer@framepages {90}{92}}
-\headcommand {\beamer@subsectionpages {88}{92}}
-\headcommand {\beamer@subsectionentry {0}{4}{3}{93}{Main result in thesis}}
-\headcommand {\slideentry {4}{3}{1}{93/94}{Main result in thesis}{0}}
-\headcommand {\beamer@framepages {93}{94}}
-\headcommand {\slideentry {4}{3}{2}{95/98}{Main result in thesis}{0}}
-\headcommand {\beamer@framepages {95}{98}}
-\headcommand {\slideentry {4}{3}{3}{99/100}{Main result in thesis}{0}}
-\headcommand {\beamer@framepages {99}{100}}
-\headcommand {\beamer@sectionpages {83}{100}}
-\headcommand {\beamer@subsectionpages {93}{100}}
-\headcommand {\sectionentry {5}{Concluding remarks}{101}{Concluding remarks}{0}}
-\headcommand {\slideentry {5}{0}{1}{101/101}{}{0}}
-\headcommand {\beamer@framepages {101}{101}}
-\headcommand {\beamer@subsectionpages {101}{101}}
-\headcommand {\beamer@subsectionentry {0}{5}{1}{102}{References and resources}}
-\headcommand {\slideentry {5}{1}{1}{102/102}{References and resources}{0}}
-\headcommand {\beamer@framepages {102}{102}}
-\headcommand {\beamer@partpages {1}{102}}
-\headcommand {\beamer@subsectionpages {102}{102}}
-\headcommand {\beamer@sectionpages {101}{102}}
-\headcommand {\beamer@documentpages {102}}
+\headcommand {\beamer@subsectionentry {0}{4}{3}{88}{Main result in thesis}}
+\headcommand {\slideentry {4}{3}{1}{88/88}{Main result in thesis}{0}}
+\headcommand {\beamer@framepages {88}{88}}
+\headcommand {\slideentry {4}{3}{2}{89/92}{Main result in thesis}{0}}
+\headcommand {\beamer@framepages {89}{92}}
+\headcommand {\slideentry {4}{3}{3}{93/93}{Main result in thesis}{0}}
+\headcommand {\beamer@framepages {93}{93}}
+\headcommand {\beamer@sectionpages {81}{93}}
+\headcommand {\beamer@subsectionpages {88}{93}}
+\headcommand {\sectionentry {5}{Concluding remarks}{94}{Concluding remarks}{0}}
+\headcommand {\slideentry {5}{0}{1}{94/94}{}{0}}
+\headcommand {\beamer@framepages {94}{94}}
+\headcommand {\beamer@subsectionpages {94}{94}}
+\headcommand {\beamer@subsectionentry {0}{5}{1}{95}{References and resources}}
+\headcommand {\slideentry {5}{1}{1}{95/95}{References and resources}{0}}
+\headcommand {\beamer@framepages {95}{95}}
+\headcommand {\beamer@partpages {1}{95}}
+\headcommand {\beamer@subsectionpages {95}{95}}
+\headcommand {\beamer@sectionpages {94}{95}}
+\headcommand {\beamer@documentpages {95}}
 \headcommand {\gdef \inserttotalframenumber {28}}

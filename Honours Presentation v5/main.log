@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.22)  24 OCT 2022 19:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.22)  24 OCT 2022 19:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1539,15 +1539,13 @@ Overfull \vbox (10.48314pt too high) detected at line 208
 
 ] [40
 
-] [41
-
-]) [42
+]) [41
 
 ] (c2_rubiks_group.tex (graphics/rubiks_cube_net_empty.tikz)
 Overfull \vbox (19.37112pt too high) detected at line 14
  []
 
-[43
+[42
 
 ] (graphics/rubiks_cube_net.tikz
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
@@ -1560,40 +1558,40 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 Overfull \vbox (19.37112pt too high) detected at line 14
  []
 
-[44
+[43
 
 ] (graphics/rubiks_cube_net.tikz)
 Overfull \vbox (19.37112pt too high) detected at line 14
  []
 
-[45
+[44
 
 ] (graphics/rubiks_cube_net.tikz)
 Overfull \vbox (29.10426pt too high) detected at line 29
  []
 
-[46
+[45
 
 ] (graphics/rubiks_cube_net_front.tikz)
 Overfull \vbox (29.10426pt too high) detected at line 29
  []
 
-[47
+[46
 
 ]
 LaTeX Font Info:    Font shape `TS1/LinuxBiolinumT-TLF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 54.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 6.2pt on input line 54.
- [48
+ [47
+
+] [48
 
 ] [49
 
 ] [50
 
 ] [51
-
-] [52
 
 ]
 LaTeX Font Info:    Trying to load font information for OT1+zi4 on input line 79.
@@ -1607,14 +1605,16 @@ LaTeX Font Info:    Font shape `OT1/zi4/m/n' will be
  (code/rubiks_def.gap
 LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/it' will be
 (Font)              scaled to size 9.0pt on input line 1.
-) [53
+) [52
 
-] (code/rubiks_def.gap) [54
+] (code/rubiks_def.gap) [53
 
 ] (graphics/rubiks_cube_net.tikz)
 LaTeX Font Info:    Font shape `OT1/zi4/m/n' will be
 (Font)              scaled to size 8.0pt on input line 92.
- (code/rubiks_orbit_stab.gap) [55
+ (code/rubiks_orbit_stab.gap) [54
+
+] [55
 
 ] [56
 
@@ -1622,7 +1622,11 @@ LaTeX Font Info:    Font shape `OT1/zi4/m/n' will be
 
 ] [58
 
-] [59
+] (graphics/rubiks_cube_net_corners.tikz)
+Overfull \vbox (13.13072pt too high) detected at line 129
+ []
+
+[59
 
 ] (graphics/rubiks_cube_net_corners.tikz)
 Overfull \vbox (13.13072pt too high) detected at line 129
@@ -1630,21 +1634,17 @@ Overfull \vbox (13.13072pt too high) detected at line 129
 
 [60
 
-] (graphics/rubiks_cube_net_corners.tikz)
-Overfull \vbox (13.13072pt too high) detected at line 129
- []
-
-[61
+] (graphics/rubiks_cube_net_corners.tikz) [61
 
 ] (graphics/rubiks_cube_net_corners.tikz) [62
 
 ] (graphics/rubiks_cube_net_corners.tikz) [63
 
-] (graphics/rubiks_cube_net_corners.tikz) [64
+]) [64
 
-]) [65
+] (c3_bases.tex [65
 
-] (c3_bases.tex [66
+] [66
 
 ] [67
 
@@ -1664,23 +1664,31 @@ Overfull \vbox (13.13072pt too high) detected at line 129
 
 ] [75
 
-] [76
+] (graphics/rubiks_cube_net_random.tikz)
+Overfull \vbox (0.93735pt too high) detected at line 63
+ []
 
-] (graphics/rubiks_cube_net_random.tikz) [77
+[76
 
-] (graphics/rubiks_cube_net_random.tikz) [78
+] (graphics/rubiks_cube_net_random.tikz)
+Overfull \vbox (0.93735pt too high) detected at line 63
+ []
+
+[77
+
+] [78
 
 ] [79
 
 ] [80
 
-] [81
+]) [81
 
-] [82
+] (c4_research.tex [82
 
-]) [83
+] [83
 
-] (c4_research.tex [84
+] [84
 
 ] [85
 
@@ -1700,21 +1708,7 @@ Overfull \vbox (13.13072pt too high) detected at line 129
 
 ] [93
 
-] [94
-
-] [95
-
-] [96
-
-] [97
-
-] [98
-
-] [99
-
-] [100
-
-]) [101
+]) [94
 
 ]
 LaTeX Font Info:    Font shape `TS1/LinuxBiolinumT-TLF/m/n' will be
@@ -1723,7 +1717,7 @@ LaTeX Font Info:    Font shape `OT1/zi4/m/n' will be
 (Font)              scaled to size 10.0pt on input line 95.
 LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/it' will be
 (Font)              scaled to size 10.0pt on input line 95.
- [102
+ [95
 
 ]
 \tf@nav=\write5
@@ -1737,17 +1731,17 @@ LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/it' will be
 
  (main.aux) ) 
 Here is how much of TeX's memory you used:
- 44251 strings out of 478582
- 929246 string characters out of 2842422
+ 44237 strings out of 478582
+ 929106 string characters out of 2842422
  1591814 words of memory out of 3000000
  61087 multiletter control sequences out of 15000+600000
  545349 words of font info for 174 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,1997b,1835s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-ot1-0.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_edcawa.enc}{C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_afusau.enc}<C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathMI.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathMI5.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathMI7.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/LibertineMathRM.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinBiolinumT.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinBiolinumTB.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinBiolinumTBO.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinBiolinumTI.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/NewTXMI.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txexas.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txexs.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txsya.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txsyb.pfb><C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txsys.pfb>
-Output written on main.pdf (102 pages, 907496 bytes).
+Output written on main.pdf (95 pages, 891583 bytes).
 PDF statistics:
- 820 PDF objects out of 1000 (max. 8388607)
- 225 named destinations out of 1000 (max. 500000)
+ 779 PDF objects out of 1000 (max. 8388607)
+ 211 named destinations out of 1000 (max. 500000)
  304 words of extra memory for PDF output out of 10000 (max. 10000000)
 

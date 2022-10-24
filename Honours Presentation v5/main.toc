@@ -4,17 +4,17 @@
 \beamer@subsectionintoc {1}{2}{Permutation groups}{23}{0}{1}
 \beamer@subsectionintoc {1}{3}{Group actions}{28}{0}{1}
 \beamer@subsectionintoc {1}{4}{Orbits and stabilisers}{36}{0}{1}
-\beamer@sectionintoc {2}{The Rubik's group}{42}{0}{2}
-\beamer@subsectionintoc {2}{1}{Representing the cube and its operations}{43}{0}{2}
-\beamer@subsectionintoc {2}{2}{The Rubik's group of permutations}{48}{0}{2}
-\beamer@subsectionintoc {2}{3}{Orbits in the Rubik's group}{55}{0}{2}
-\beamer@subsectionintoc {2}{4}{Transitive action on corners}{56}{0}{2}
-\beamer@sectionintoc {3}{Bases and stabiliser chains}{65}{0}{3}
-\beamer@subsectionintoc {3}{1}{Bases and stabiliser chains}{66}{0}{3}
-\beamer@subsectionintoc {3}{2}{What is the size of the Rubik's group?}{79}{0}{3}
-\beamer@sectionintoc {4}{Base sizes of primitive groups}{83}{0}{4}
-\beamer@subsectionintoc {4}{1}{Affine groups}{84}{0}{4}
-\beamer@subsectionintoc {4}{2}{Non-large base permutation groups}{88}{0}{4}
-\beamer@subsectionintoc {4}{3}{Main result in thesis}{93}{0}{4}
-\beamer@sectionintoc {5}{Concluding remarks}{101}{0}{5}
-\beamer@subsectionintoc {5}{1}{References and resources}{102}{0}{5}
+\beamer@sectionintoc {2}{The Rubik's group}{41}{0}{2}
+\beamer@subsectionintoc {2}{1}{Representing the cube and its operations}{42}{0}{2}
+\beamer@subsectionintoc {2}{2}{The Rubik's group of permutations}{47}{0}{2}
+\beamer@subsectionintoc {2}{3}{Orbits in the Rubik's group}{54}{0}{2}
+\beamer@subsectionintoc {2}{4}{Transitive action on corners}{55}{0}{2}
+\beamer@sectionintoc {3}{Bases and stabiliser chains}{64}{0}{3}
+\beamer@subsectionintoc {3}{1}{Bases and stabiliser chains}{65}{0}{3}
+\beamer@subsectionintoc {3}{2}{What is the size of the Rubik's group?}{78}{0}{3}
+\beamer@sectionintoc {4}{Base sizes of primitive groups}{81}{0}{4}
+\beamer@subsectionintoc {4}{1}{Affine groups}{82}{0}{4}
+\beamer@subsectionintoc {4}{2}{Non-large base permutation groups}{84}{0}{4}
+\beamer@subsectionintoc {4}{3}{Main result in thesis}{88}{0}{4}
+\beamer@sectionintoc {5}{Concluding remarks}{94}{0}{5}
+\beamer@subsectionintoc {5}{1}{References and resources}{95}{0}{5}

@@ -58,7 +58,7 @@
     \end{alertblock}
 
     \begin{center}
-        \scalebox{0.6}{\includegraphics{graphics/rubiks_cube_net_random.tikz}}
+        \scalebox{0.8}{\includegraphics{graphics/rubiks_cube_net_random.tikz}}
     \end{center}
 \end{slide}
 
@@ -71,12 +71,12 @@
         $$|G| = |\beta_1^{G^0}||\beta_2^{G^1}| \dotsb |\beta_r^{G^{r-1}}|.$$
     \end{theorem}
 
-    \onslide<2->
+    \onslide<2->{
     Orbits and stabilisers can be easily computed (e.g. using \texttt{GAP}).
+    
+    Implementing base and stabiliser chain for Rubik's group $\RC$ (using \texttt{BaseOfGroup} and \texttt{StabChain} cmds), \texttt{GAP} computes:}
 
-    \onslide<3->{Implementing base and stabiliser chain for Rubik's group $\RC$ (using \texttt{BaseOfGroup} and \texttt{StabChain} cmds), \texttt{GAP} computes:}
-
-    \onslide<4->{
+    \onslide<3->{
         \begin{corollary}
             \vspace{0pt}
             For Rubik's group $\RC$, $|\RC| = 43\,252\,003\,274\,489\,856\,000 \approx 4.3 \cdot 10^{19}$.
