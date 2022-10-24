@@ -79,12 +79,12 @@
 
     \begin{definition}[generator]
         \vspace{0pt}
-        Set $X$ \textbf{generates} $G$ if every $g \in G$ is $g = x_1^{\pm 1} \dotsb x_r^{\pm 1}$ for some $r \in \N$, $x_i \in X$ \textbf{generators}; write $G = \langle X \rangle$.
+        Set $X$ \textbf{generates} $G$ if every $g \in G$ is $g = x_1^{\varepsilon_1} \dotsb x_r^{\varepsilon_r}$ for some $r \in \N$, $x_i \in X$ \textbf{generators}, $\varepsilon_i \in \{\pm 1\}$; write $G = \langle X \rangle$.
     \end{definition} \pause
 
     \begin{example}[dihedral group]
         \vspace{0pt}
-        Let $r = (1,2,3,4),s = (1,4)(2,3) \in \Sym(4)$. \textbf{Dihedral group} is $D_8 := \langle r,s \rangle = \{1,r,r^2,r^3,s,sr,sr^2,sr^3\}$, \textit{``symmetries of square''} (e.g. $srsr^2 = r$).
+        Let $r = (1,2,3,4),s = (1,4)(2,3) \in \Sym(4)$. \textbf{Dihedral group} is $D_8 := \langle r,s \rangle = \{1,r,r^2,r^3,s,sr,sr^2,sr^3\}$ (e.g. $srs^{-1}r^2 = r$), \textit{``symmetries of square''} .
     \end{example}
 \end{slide}
 
