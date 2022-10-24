@@ -17,5 +17,6 @@
 \beamer@subsectionintoc {4}{2}{Non-large base permutation groups}{29}{0}{4}
 \beamer@subsectionintoc {4}{3}{Main result in thesis}{31}{0}{4}
 \beamer@sectionintoc {5}{Concluding remarks}{34}{0}{5}
-\beamer@subsectionintoc {5}{1}{References and resources}{35}{0}{5}
-\beamer@subsectionintoc {5}{2}{Large base definition}{37}{0}{5}
+\beamer@subsectionintoc {5}{1}{Acknowledgements}{35}{0}{5}
+\beamer@subsectionintoc {5}{2}{References and resources}{36}{0}{5}
+\beamer@subsectionintoc {5}{3}{Large base definition}{38}{0}{5}

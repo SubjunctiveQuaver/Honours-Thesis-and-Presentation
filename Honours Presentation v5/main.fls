@@ -2606,6 +2606,9 @@ INPUT .\c4_research.tex
 INPUT c4_research.tex
 INPUT .\c4_research.tex
 INPUT c4_research.tex
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinBiolinumTI-tlf-ot1.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\libertine\LinBiolinumTI-tlf-ot1.vf
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinBiolinumTI-tlf-ot1--base.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinBiolinumT-tlf-ts1.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\inconsolata\ot1-zi4r-0.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinBiolinumTI-tlf-ot1.tfm
