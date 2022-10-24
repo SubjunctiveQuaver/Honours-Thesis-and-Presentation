@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1666606573 "c:/Users/lawre/OneDrive/Education/Monash University/2022/MTH4100 Research Project/Honours Thesis and Presentation/Honours Presentation v5/main.tex" "main.pdf" "main" 1666606695
+["pdflatex"] 1666607353 "c:/Users/lawre/OneDrive/Education/Monash University/2022/MTH4100 Research Project/Honours Thesis and Presentation/Honours Presentation v5/main.tex" "main.pdf" "main" 1666607436
   "C:/Users/lawre/AppData/Local/MiKTeX/2.9/fonts/map/pdftex/pdftex.map" 1666057522 466148 bf77eda5a46d60a6983271fbe0c424d3 ""
   "C:/Users/lawre/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1647931139 10248883 8606a39bd149ad75b2a87bf0cfebaa61 ""
   "C:/Users/lawre/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-ot1-0.enc" 1561074652 2496 4d35740f3a177992ff7b134746c0a1db ""
@@ -431,7 +431,7 @@
   "c2_rubiks_group.tex" 1666596596 6048 28feb5030bb8719cf970118925ba8dd5 ""
   "c3_bases.tex" 1666604832 3700 8f8d26c2e4a3640950272b444c63fcb4 ""
   "c4_research.tex" 1666601053 3992 e4f052f5787211270e2256d465520376 ""
-  "c:/Users/lawre/OneDrive/Education/Monash University/2022/MTH4100 Research Project/Honours Thesis and Presentation/Honours Presentation v5/main.tex" 1666606375 4838 2f1c83954005b00af9d5246c9189d830 ""
+  "c:/Users/lawre/OneDrive/Education/Monash University/2022/MTH4100 Research Project/Honours Thesis and Presentation/Honours Presentation v5/main.tex" 1666607351 4844 24cae9c674fd4d31953b223356951ff3 ""
   "code/rubiks_def.gap" 1665317450 475 736e067fa62e125bfddac153d29b7b21 ""
   "code/rubiks_orbit_stab.gap" 1665064593 231 cac6b5d00f98bb90fc1cf33c2166b4bd ""
   "graphics/rubiks_cube_net.tikz" 1666409216 2044 4a5212a201fd8457bad14a5cc33d3a6f ""
@@ -441,10 +441,10 @@
   "graphics/rubiks_cube_net_front.tikz" 1665047121 2565 f91ab9cf566b5f970f9b85fd9a704790 ""
   "graphics/rubiks_cube_net_random.tikz" 1665153978 8183 b066cde66114b60dbf4b5b9323942f12 ""
   "graphics/rubiks_cube_title.png" 1664971565 211149 be985f38d9f7150218b3f444a07f75df ""
-  "main.aux" 1666606694 19944 71ffcc26a7ef99ccf37a5ad3477e4918 "pdflatex"
-  "main.nav" 1666606694 7342 7f9eb4bfce46f1daf0a2d8740d6151ea "pdflatex"
-  "main.tex" 1666606375 4838 2f1c83954005b00af9d5246c9189d830 ""
-  "main.toc" 1666606694 1397 5f122b980583fc246549e654683d480c "pdflatex"
+  "main.aux" 1666607435 19944 07a20b858cdd2ba9aca720bf8b7b0f0a "pdflatex"
+  "main.nav" 1666607435 7342 7f9eb4bfce46f1daf0a2d8740d6151ea "pdflatex"
+  "main.tex" 1666607351 4844 24cae9c674fd4d31953b223356951ff3 ""
+  "main.toc" 1666607435 1397 5f122b980583fc246549e654683d480c "pdflatex"
   "preamble/preamble.tex" 1666428417 3443 2ad884a872bb1450b1b74a49bdd7cdbe ""
   (generated)
   "main.aux"
