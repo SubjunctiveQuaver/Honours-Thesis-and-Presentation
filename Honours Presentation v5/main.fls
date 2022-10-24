@@ -2336,6 +2336,8 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\libertine
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinBiolinumT-tlf-ot1--base.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\libertine\LinBiolinumTB-tlf-ot1.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinBiolinumTB-tlf-ot1--base.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\libertine\LinBiolinumT-tlf-ot1.vf
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinBiolinumT-tlf-ot1--base.tfm
 INPUT .\main.toc
 INPUT main.toc
 INPUT main.toc
@@ -2343,6 +2345,7 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertin
 INPUT .\main.toc
 INPUT main.toc
 INPUT main.toc
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinBiolinumTI-tlf-ot1.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinBiolinumT-tlf-ot1.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinBiolinumTB-tlf-ot1.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\libertine\LinBiolinumTB-tlf-ot1.vf
@@ -2351,22 +2354,19 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\libertine
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinBiolinumT-tlf-ot1--base.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\libertine\LinBiolinumT-tlf-ot1.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinBiolinumT-tlf-ot1--base.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\libertine\LinBiolinumTI-tlf-ot1.vf
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinBiolinumTI-tlf-ot1--base.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\libertine\ts1linuxbiolinumt-tlf.fd
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\libertine\ts1linuxbiolinumt-tlf.fd
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\libertine\ts1linuxbiolinumt-tlf.fd
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\libertine\ts1linuxbiolinumt-tlf.fd
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinBiolinumT-tlf-ts1.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinBiolinumTI-tlf-ot1.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinBiolinumTB-tlf-ot1.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinBiolinumT-tlf-ot1.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\libertine\LinBiolinumT-tlf-ts1.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinBiolinumT-tlf-ts1--base.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\libertine\LinBiolinumTI-tlf-ot1.vf
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinBiolinumTI-tlf-ot1--base.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\libertine\LinBiolinumTB-tlf-ot1.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinBiolinumTB-tlf-ot1--base.tfm
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\libertine\LinBiolinumT-tlf-ot1.vf
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinBiolinumT-tlf-ot1--base.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\libertine\ot1linuxlibertinet-tlf.fd
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\libertine\ot1linuxlibertinet-tlf.fd
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\libertine\ot1linuxlibertinet-tlf.fd
@@ -2647,8 +2647,8 @@ OUTPUT main.snm
 INPUT main.aux
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\inconsolata\i4-ot1-0.enc
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\libertine\lbtn_oexx6f.enc
-INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\libertine\lbtn_edcawa.enc
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\libertine\lbtn_afusau.enc
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\libertine\lbtn_edcawa.enc
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\inconsolata\Inconsolata-zi4r.pfb
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\inconsolata\Inconsolata-zi4r.pfb
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\newtx\LibertineMathMI.pfb

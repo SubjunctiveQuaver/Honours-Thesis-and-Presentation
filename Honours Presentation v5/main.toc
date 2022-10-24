@@ -16,5 +16,5 @@
 \beamer@subsectionintoc {4}{1}{Affine groups}{84}{0}{4}
 \beamer@subsectionintoc {4}{2}{Non-large base permutation groups}{88}{0}{4}
 \beamer@subsectionintoc {4}{3}{Main result in thesis}{93}{0}{4}
-\beamer@sectionintoc {5}{Concluding remarks}{102}{0}{5}
-\beamer@subsectionintoc {5}{1}{References and resources}{103}{0}{5}
+\beamer@sectionintoc {5}{Concluding remarks}{101}{0}{5}
+\beamer@subsectionintoc {5}{1}{References and resources}{102}{0}{5}
