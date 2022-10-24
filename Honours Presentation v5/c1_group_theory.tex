@@ -84,7 +84,7 @@
 
     \begin{example}[dihedral group]
         \vspace{0pt}
-        Let $r = (1,2,3,4),s = (1,4)(2,3) \in \Sym(4)$. \textbf{Dihedral group} is $D_8 := \langle r,s \rangle = \{1,r,r^2,r^3,s,sr,sr^2,sr^3\}$, \textit{``symmetries of square''}.
+        Let $r = (1,2,3,4),s = (1,4)(2,3) \in \Sym(4)$. \textbf{Dihedral group} is $D_8 := \langle r,s \rangle = \{1,r,r^2,r^3,s,sr,sr^2,sr^3\}$, \textit{``symmetries of square''} (e.g. $srsr^2 = r$).
     \end{example}
 \end{slide}
 
@@ -244,74 +244,4 @@
         \vspace{0pt}
         If $G$ acts on $\RS$, then for $\alpha \in \RS$, $|\alpha^G||G_\alpha| = |G|$.
     \end{theorem}
-\end{slide}
-
-\subsection{Blocks and primitivity}
-
-\begin{slide}
-    \begin{definition}[block]
-        \vspace{0pt}
-        If $G$ acts transitively on $\RS$ and $\Delta \subseteq \RS$, let $\Delta^g := \{\alpha^g : \alpha \in \Delta\}$. \\
-        A \textbf{block} is $\Delta \subseteq \RS$ with $\Delta^g = \Delta$ or $\Delta^g \cap \Delta = \emptyset$ for all $g \in G$. \pause
-
-        Block is \textbf{nontrivial} if $|\Delta| > 1$ and $\Delta \neq \RS$.
-    \end{definition}
-
-    \textit{Examples of blocks:} singletons, $\RS$, orbits. \pause
-
-    \begin{definition}[primitivity]
-        \vspace{0pt}
-        A \textit{transitive} $G$-action is \textbf{primitive} if there are no nontrivial blocks; otherwise it is \textbf{imprimitive}.
-
-        If $G$ is perm group with primitive natural action, $G$ is \textbf{primitive}.
-    \end{definition} \pause
-
-    For block $\Delta$, define \textbf{block system} $\Sigma = \{\Delta^g : g \in G\}$ (partitions $\RS$); then $G$ acts on $\Sigma$; if $\Delta$ is \textit{maximal}, then acts primitively.
-\end{slide}
-
-\begin{slide}
-    \begin{example}[dihedral group]
-        \vspace{0pt}
-        Recall $G = D_8 = \langle r,s \rangle = \{1,r,r^2,r^3,s,sr,sr^2,sr^3\} \leq \Sym(4)$ where $r = (1,2,3,4)$, $s = (1,4)(2,3)$, $sr = (2,4)$.
-
-        Block is $\Delta = \{1,3\}$ (nontrivial) with block system $\Sigma = \{\{1,3\},\{2,4\}\}$ (opposite vertices stay opposite):
-        \begin{center}
-            \begin{tikzpicture}[x=1cm,y=1cm]
-                \GraphInit[vstyle=Classic]
-                \tikzset{VertexStyle/.append style={minimum size=1pt}}
-                % TOP LEFT
-                \tkzDefPoint(0.5,0.25){l2}
-                \tkzDefPoint(0.5,-1.25){l3}
-                \tkzDefPoint(-0.25,0.25){l4}
-                \tkzDefPoint(1.25,-1.25){l5}
-                \tikzset{EdgeStyle/.style={dotted}}
-                \tikzset{EdgeStyle/.style={-}}
-                {\Vertex[Lpos=180]{1} \SO[Lpos=180](1){2} \EA(2){3} \NO(3){4}
-                    \AddVertexColor{red}{1}
-                    \AddVertexColor{green}{2}
-                    \AddVertexColor{red}{3}
-                    \AddVertexColor{green}{4}}
-                \Edges(1,2,3,4,1)
-                \tikzset{EdgeStyle/.style={->}}
-                \tkzDefPoint(1.5,-0.5){a1}
-                \tkzDefPoint(3.5,-0.5){a2}
-                \Edge[label=$r$,labelcolor=metropolis](a1)(a2)
-                \tkzDefPoint(2.5,0){l1}\tkzLabelPoint[centered](l1){$\curvearrowleft$}
-                % TOP RIGHT
-                \tkzDefPoint(3.75,-0.5){l2}
-                \tkzDefPoint(5.25,-0.5){l3}
-                \tikzset{EdgeStyle/.style={dotted}}
-                \tikzset{EdgeStyle/.style={-}}
-                \Vertex[x=4,y=0,Lpos=180]{1} \SO[Lpos=180](1){2} \EA(2){3} \NO(3){4}
-                \AddVertexColor{green}{1}
-                \AddVertexColor{red}{2}
-                \AddVertexColor{green}{3}
-                \AddVertexColor{red}{4}
-                \Edges(1,2,3,4,1)
-            \end{tikzpicture}
-        \end{center}
-        e.g. $\Delta^r = \{2,4\}$, \pause $\Delta^s = \{4,2\}$, $\Delta^{sr} = \{1,3\} = \Delta$.
-
-        $D_8$ acts imprimitively on $[4]$ but primitively on $\Sigma$ (degree 2).
-    \end{example}
 \end{slide}

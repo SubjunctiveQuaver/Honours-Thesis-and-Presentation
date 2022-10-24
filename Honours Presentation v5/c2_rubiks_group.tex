@@ -94,6 +94,27 @@
 \subsection{Transitive action on corners}
 
 \begin{slide}
+    \begin{definition}[block]
+        \vspace{0pt}
+        If $G$ acts transitively on $\RS$ and $\Delta \subseteq \RS$, let $\Delta^g := \{\alpha^g : \alpha \in \Delta\}$. \\
+        A \textbf{block} is $\Delta \subseteq \RS$ with $\Delta^g = \Delta$ or $\Delta^g \cap \Delta = \emptyset$ for all $g \in G$. \pause
+
+        Block is \textbf{nontrivial} if $|\Delta| > 1$ and $\Delta \neq \RS$.
+    \end{definition}
+
+    \textit{Examples of blocks:} singletons, $\RS$, orbits. \pause
+
+    \begin{definition}[primitivity]
+        \vspace{0pt}
+        A \textit{transitive} $G$-action is \textbf{primitive} if there are no nontrivial blocks; otherwise it is \textbf{imprimitive}.
+
+        If $G$ is perm group with primitive natural action, $G$ is \textbf{primitive}.
+    \end{definition} \pause
+
+    For block $\Delta$, define \textbf{block system} $\Sigma = \{\Delta^g : g \in G\}$ (partitions $\RS$); then $G$ acts on $\Sigma$; if $\Delta$ is \textit{maximal}, then acts primitively.
+\end{slide}
+
+\begin{slide}
     $\RC$ acts transitively on corner stickers $1^\RC$. In this action:
 
     \begin{center}
@@ -105,7 +126,7 @@
         \Sigma = \{\overbrace{\{1,35,9\}}^{UBL},\overbrace{\{6,11,17\}}^{ULF},\overbrace{\{40,46,14\}}^{BDL},\overbrace{\{27,3,33\}}^{RUB},\\
         \underbrace{\{8,25,19\}}_{URF},\underbrace{\{16,41,22\}}_{LDF},\underbrace{\{32,48,38\}}_{RDB},\underbrace{\{24,43,30\}}_{FDR}\}
     \end{multline*}
-    is block system for \textit{maximal} block $\{8,25,19\}$ ($URF$ corner).
+    is block system for \textit{maximal} block $\{8,25,19\}$ ($URF$ corner); corner stickers stay together.
 \end{slide}
 
 \begin{slide}

@@ -19,24 +19,26 @@
     Interested in $q = 2$, i.e. field $\F_2 = \{0,1\}$ with $1 + 1 = 0$, $1 \cdot 1 = 1$, etc.
 \end{slide}
 
-\subsection{Large base permutation groups}
+\subsection{Non-large base permutation groups}
 
 \begin{slide}
-    \begin{definition}
-        \vspace{0pt}
-        Perm group $G$ of degree $n$ is \textbf{large base} if
-        $$\Alt(m)^r \unlhd G \leq \Sym(m) \wr \Sym(r)$$
-        for some $m,r,k$, where $\Sym(m)$ acts on $\binom{[m]}{k}$ and $n = \binom{m}{k}^r$.
-    \end{definition} \pause
+    % \begin{definition}
+    %     \vspace{0pt}
+    %     Perm group $G$ of degree $n$ is \textbf{large base} if
+    %     $$\Alt(m)^r \unlhd G \leq \Sym(m) \wr \Sym(r)$$
+    %     for some $m,r,k$, where $\Sym(m)$ acts on $\binom{[m]}{k}$ and $n = \binom{m}{k}^r$.
+    % \end{definition} \pause
 
     \begin{theorem}[Liebeck, 1984]
         \vspace{0pt}
         For primitive perm group $G$ of degree $n$, either:
         \begin{enumerate}[(i)]
-            \item $G$ is large base; or
+            \item $G$ is \textit{``large base''}; or
             \item $b(G) < 9\log n$.
         \end{enumerate}
     \end{theorem} \pause
+
+    \textit{Previous best result (Babai, 1981):} $b(G) < O(\sqrt{n})$ if not containing $\Alt(n)$.
 
     ``Remarkable'' proof used \textit{classification of finite simple groups}, \textit{O'Nan-Scott theorem} (classifies primitive groups).
 \end{slide}

@@ -1,6 +1,6 @@
-PWD c:\Users\lawre\OneDrive\Education\Monash University\2022\MTH4100 Research Project\Honours Thesis and Presentation\Honours Presentation v4
+PWD c:\Users\lawre\OneDrive\Education\Monash University\2022\MTH4100 Research Project\Honours Thesis and Presentation\Honours Presentation v5
 INPUT C:\Users\lawre\AppData\Local\MiKTeX\2.9\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\lawre\OneDrive\Education\Monash University\2022\MTH4100 Research Project\Honours Thesis and Presentation\Honours Presentation v4\main.tex
+INPUT c:\Users\lawre\OneDrive\Education\Monash University\2022\MTH4100 Research Project\Honours Thesis and Presentation\Honours Presentation v5\main.tex
 OUTPUT main.log
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamer.cls
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamer.cls
@@ -2615,6 +2615,18 @@ INPUT .\c3_bases.tex
 INPUT c3_bases.tex
 INPUT .\c3_bases.tex
 INPUT c3_bases.tex
+INPUT .\graphics\rubiks_cube_net_random.tikz
+INPUT graphics\rubiks_cube_net_random.tikz
+INPUT .\graphics\rubiks_cube_net_random.tikz
+INPUT graphics\rubiks_cube_net_random.tikz
+INPUT .\graphics\rubiks_cube_net_random.tikz
+INPUT graphics\rubiks_cube_net_random.tikz
+INPUT .\graphics\rubiks_cube_net_random.tikz
+INPUT graphics\rubiks_cube_net_random.tikz
+INPUT .\graphics\rubiks_cube_net_random.tikz
+INPUT graphics\rubiks_cube_net_random.tikz
+INPUT .\graphics\rubiks_cube_net_random.tikz
+INPUT graphics\rubiks_cube_net_random.tikz
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntxsy5.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txsys.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txex-bar.tfm
