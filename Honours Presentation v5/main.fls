@@ -2463,12 +2463,6 @@ INPUT .\c2_rubiks_group.tex
 INPUT c2_rubiks_group.tex
 INPUT .\c2_rubiks_group.tex
 INPUT c2_rubiks_group.tex
-INPUT .\graphics\rubiks_cube_net_empty.tikz
-INPUT graphics\rubiks_cube_net_empty.tikz
-INPUT .\graphics\rubiks_cube_net_empty.tikz
-INPUT graphics\rubiks_cube_net_empty.tikz
-INPUT .\graphics\rubiks_cube_net_empty.tikz
-INPUT graphics\rubiks_cube_net_empty.tikz
 INPUT .\graphics\rubiks_cube_net.tikz
 INPUT graphics\rubiks_cube_net.tikz
 INPUT .\graphics\rubiks_cube_net.tikz
@@ -2511,18 +2505,6 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\nxl
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\LibertineMathMI.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\NewTXMI.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\stxscr.tfm
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
-INPUT .\graphics\rubiks_cube_net.tikz
-INPUT graphics\rubiks_cube_net.tikz
 INPUT .\graphics\rubiks_cube_net_front.tikz
 INPUT graphics\rubiks_cube_net_front.tikz
 INPUT .\graphics\rubiks_cube_net_front.tikz
@@ -2561,12 +2543,6 @@ INPUT code\rubiks_def.gap
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinBiolinumTI-tlf-ot1.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\libertine\LinBiolinumTI-tlf-ot1.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinBiolinumTI-tlf-ot1--base.tfm
-INPUT .\code\rubiks_def.gap
-INPUT code\rubiks_def.gap
-INPUT .\code\rubiks_def.gap
-INPUT code\rubiks_def.gap
-INPUT .\code\rubiks_def.gap
-INPUT code\rubiks_def.gap
 INPUT .\graphics\rubiks_cube_net.tikz
 INPUT graphics\rubiks_cube_net.tikz
 INPUT .\graphics\rubiks_cube_net.tikz
@@ -2599,24 +2575,6 @@ INPUT .\graphics\rubiks_cube_net_corners.tikz
 INPUT graphics\rubiks_cube_net_corners.tikz
 INPUT .\graphics\rubiks_cube_net_corners.tikz
 INPUT graphics\rubiks_cube_net_corners.tikz
-INPUT .\graphics\rubiks_cube_net_corners.tikz
-INPUT graphics\rubiks_cube_net_corners.tikz
-INPUT .\graphics\rubiks_cube_net_corners.tikz
-INPUT graphics\rubiks_cube_net_corners.tikz
-INPUT .\graphics\rubiks_cube_net_corners.tikz
-INPUT graphics\rubiks_cube_net_corners.tikz
-INPUT .\graphics\rubiks_cube_net_corners.tikz
-INPUT graphics\rubiks_cube_net_corners.tikz
-INPUT .\graphics\rubiks_cube_net_corners.tikz
-INPUT graphics\rubiks_cube_net_corners.tikz
-INPUT .\graphics\rubiks_cube_net_corners.tikz
-INPUT graphics\rubiks_cube_net_corners.tikz
-INPUT .\graphics\rubiks_cube_net_corners.tikz
-INPUT graphics\rubiks_cube_net_corners.tikz
-INPUT .\graphics\rubiks_cube_net_corners.tikz
-INPUT graphics\rubiks_cube_net_corners.tikz
-INPUT .\graphics\rubiks_cube_net_corners.tikz
-INPUT graphics\rubiks_cube_net_corners.tikz
 INPUT .\c3_bases.tex
 INPUT c3_bases.tex
 INPUT .\c3_bases.tex
@@ -2632,27 +2590,15 @@ INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertin
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinLibertineTZ-tlf-ot1.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\libertine\LinLibertineTZ-tlf-ot1.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinLibertineTZ-tlf-ot1--base.tfm
-INPUT .\graphics\rubiks_cube_net_base.tikz
-INPUT graphics\rubiks_cube_net_base.tikz
-INPUT .\graphics\rubiks_cube_net_base.tikz
-INPUT graphics\rubiks_cube_net_base.tikz
-INPUT .\graphics\rubiks_cube_net_base.tikz
-INPUT graphics\rubiks_cube_net_base.tikz
+INPUT .\graphics\rubiks_cube_net_random.tikz
+INPUT graphics\rubiks_cube_net_random.tikz
+INPUT .\graphics\rubiks_cube_net_random.tikz
+INPUT graphics\rubiks_cube_net_random.tikz
+INPUT .\graphics\rubiks_cube_net_random.tikz
+INPUT graphics\rubiks_cube_net_random.tikz
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinLibertineTZ-tlf-ot1.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinLibertineTZ-tlf-ot1.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\libertine\LinLibertineTZ-tlf-ot1.tfm
-INPUT .\graphics\rubiks_cube_net_random.tikz
-INPUT graphics\rubiks_cube_net_random.tikz
-INPUT .\graphics\rubiks_cube_net_random.tikz
-INPUT graphics\rubiks_cube_net_random.tikz
-INPUT .\graphics\rubiks_cube_net_random.tikz
-INPUT graphics\rubiks_cube_net_random.tikz
-INPUT .\graphics\rubiks_cube_net_random.tikz
-INPUT graphics\rubiks_cube_net_random.tikz
-INPUT .\graphics\rubiks_cube_net_random.tikz
-INPUT graphics\rubiks_cube_net_random.tikz
-INPUT .\graphics\rubiks_cube_net_random.tikz
-INPUT graphics\rubiks_cube_net_random.tikz
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntxsy5.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txsys.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txex-bar.tfm

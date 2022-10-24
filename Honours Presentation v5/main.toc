@@ -1,21 +1,21 @@
 \beamer@subsectionintoc {0}{1}{Motivation: understanding the Rubik's cube}{3}{0}{0}
-\beamer@sectionintoc {1}{Some basic group theory}{8}{0}{1}
-\beamer@subsectionintoc {1}{1}{Permutations}{9}{0}{1}
-\beamer@subsectionintoc {1}{2}{Permutation groups}{23}{0}{1}
-\beamer@subsectionintoc {1}{3}{Group actions}{28}{0}{1}
-\beamer@subsectionintoc {1}{4}{Orbits and stabilisers}{36}{0}{1}
-\beamer@sectionintoc {2}{The Rubik's group}{41}{0}{2}
-\beamer@subsectionintoc {2}{1}{Representing the cube and its operations}{42}{0}{2}
-\beamer@subsectionintoc {2}{2}{The Rubik's group of permutations}{47}{0}{2}
-\beamer@subsectionintoc {2}{3}{Orbits in the Rubik's group}{54}{0}{2}
-\beamer@subsectionintoc {2}{4}{Transitive action on corners}{55}{0}{2}
-\beamer@sectionintoc {3}{Bases and stabiliser chains}{64}{0}{3}
-\beamer@subsectionintoc {3}{1}{Bases and stabiliser chains}{65}{0}{3}
-\beamer@subsectionintoc {3}{2}{What is the size of the Rubik's group?}{77}{0}{3}
-\beamer@sectionintoc {4}{Base sizes of primitive groups}{80}{0}{4}
-\beamer@subsectionintoc {4}{1}{Affine groups}{81}{0}{4}
-\beamer@subsectionintoc {4}{2}{Non-large base permutation groups}{83}{0}{4}
-\beamer@subsectionintoc {4}{3}{Main result in thesis}{87}{0}{4}
-\beamer@sectionintoc {5}{Concluding remarks}{93}{0}{5}
-\beamer@subsectionintoc {5}{1}{References and resources}{94}{0}{5}
-\beamer@subsectionintoc {5}{2}{Large base definition}{98}{0}{5}
+\beamer@sectionintoc {1}{Some basic group theory}{4}{0}{1}
+\beamer@subsectionintoc {1}{1}{Permutations}{5}{0}{1}
+\beamer@subsectionintoc {1}{2}{Permutation groups}{7}{0}{1}
+\beamer@subsectionintoc {1}{3}{Group actions}{8}{0}{1}
+\beamer@subsectionintoc {1}{4}{Orbits and stabilisers}{10}{0}{1}
+\beamer@sectionintoc {2}{The Rubik's group}{12}{0}{2}
+\beamer@subsectionintoc {2}{1}{Representing the cube and its operations}{13}{0}{2}
+\beamer@subsectionintoc {2}{2}{The Rubik's group of permutations}{15}{0}{2}
+\beamer@subsectionintoc {2}{3}{Orbits in the Rubik's group}{17}{0}{2}
+\beamer@subsectionintoc {2}{4}{Transitive action on corners}{18}{0}{2}
+\beamer@sectionintoc {3}{Bases and stabiliser chains}{21}{0}{3}
+\beamer@subsectionintoc {3}{1}{Bases and stabiliser chains}{22}{0}{3}
+\beamer@subsectionintoc {3}{2}{What is the size of the Rubik's group?}{26}{0}{3}
+\beamer@sectionintoc {4}{Base sizes of primitive groups}{27}{0}{4}
+\beamer@subsectionintoc {4}{1}{Affine groups}{28}{0}{4}
+\beamer@subsectionintoc {4}{2}{Non-large base permutation groups}{29}{0}{4}
+\beamer@subsectionintoc {4}{3}{Main result in thesis}{31}{0}{4}
+\beamer@sectionintoc {5}{Concluding remarks}{34}{0}{5}
+\beamer@subsectionintoc {5}{1}{References and resources}{35}{0}{5}
+\beamer@subsectionintoc {5}{2}{Large base definition}{37}{0}{5}
