@@ -24,13 +24,13 @@
         \tkzDrawPolygon[rounded corners=2pt,line width=0pt,fill=white,opacity=0.6](A,B,C,D)
         \tkzDrawPolygon[rounded corners=2pt,line width=2pt](A,B,C,D)}{}
     }}}}
-    \Vertices[x=0.5,y=5.5]{line}{1,U,3}
-    \Vertices[x=0.5,y=4.5]{line}{U,U,U}
-    \Vertices[x=0.5,y=3.5]{line}{6,U,8}
-    \Vertices[x=-2.5,y=2.5]{line}{ 9,L,11,17,F,19,25,R,27,33,B,35}
-    \Vertices[x=-2.5,y=1.5]{line}{ L,L, L, F,F, F, R,R, R, B,B, B}
-    \Vertices[x=-2.5,y=0.5]{line}{14,L,16,22,F,24,30,R,32,38,B,40}
-    \Vertices[x=0.5,y=-0.5]{line}{41,D,43}
-    \Vertices[x=0.5,y=-1.5]{line}{ D,D, D}
-    \Vertices[x=0.5,y=-2.5]{line}{46,D,48}
+    \Vertices[x=0.5,y=5.5]{line}{1,-,3}
+    \Vertices[x=0.5,y=4.5]{line}{-,U,-}
+    \Vertices[x=0.5,y=3.5]{line}{6,-,8}
+    \Vertices[x=-2.5,y=2.5]{line}{ 9,-,11,17,-,19,25,-,27,33,-,35}
+    \Vertices[x=-2.5,y=1.5]{line}{ -,L, -, -,F, -, -,R, -, -,B, -}
+    \Vertices[x=-2.5,y=0.5]{line}{14,-,16,22,-,24,30,-,32,38,-,40}
+    \Vertices[x=0.5,y=-0.5]{line}{41,-,43}
+    \Vertices[x=0.5,y=-1.5]{line}{ -,D, -}
+    \Vertices[x=0.5,y=-2.5]{line}{46,-,48}
 \end{tikzpicture}

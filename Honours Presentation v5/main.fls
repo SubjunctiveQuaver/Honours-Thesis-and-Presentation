@@ -2586,6 +2586,9 @@ INPUT .\graphics\rubiks_cube_net_corners.tikz
 INPUT graphics\rubiks_cube_net_corners.tikz
 INPUT .\graphics\rubiks_cube_net_corners.tikz
 INPUT graphics\rubiks_cube_net_corners.tikz
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntxsy.vf
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txsys.tfm
+INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txex-bar.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntxexx.vf
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txexs.tfm
 INPUT C:\Users\lawre\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntxexa.vf
